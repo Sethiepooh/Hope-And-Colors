@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 441531614}
   - component: {fileID: 441531620}
   - component: {fileID: 441531619}
+  - component: {fileID: 441531621}
   m_Layer: 0
   m_Name: Evie
   m_TagString: Untagged
@@ -183,7 +184,19 @@ MonoBehaviour:
     m_ActionId: 351f2ccd-1f9f-44bf-9bec-d62ac5c5f408
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 441531613}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 6c2ab1b8-8984-453a-af3d-a3c78ae1679a
     m_ActionName: 'Player/Attack[/Mouse/leftButton]'
   - m_PersistentCalls:
@@ -419,6 +432,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+--- !u!114 &441531621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441531613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fc639b33e62fc24db1d45a8917e8368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseDamage: 10
+  damageIncreasePerCombo: 2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,7 +927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66148d0abe3bb9b43886a843218187c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bpm: 90
+  bpm: 60
   audioSource: {fileID: 670559694}
   intervals:
   - steps: 1
@@ -919,6 +946,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  attackWindow: 1
 --- !u!4 &1442664500
 Transform:
   m_ObjectHideFlags: 0
