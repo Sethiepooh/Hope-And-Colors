@@ -8,9 +8,15 @@ public class PlayerAttack : MonoBehaviour
     int comboStep = 0;
     int maxComboStep = 4;
 
-    public int baseDamage = 10;
-    public int damageIncreasePerCombo = 2;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    int currentDamage;
+    [SerializeField] int baseDamage = 10;
+    [SerializeField] int damageIncreasePerCombo = 2;
+    
+    void Awake()
+    {
+        currentDamage = baseDamage;
+    }
+
     void Start()
     {
         bpmInteract = GameObject.Find("Rhythm Manager").GetComponent<BPMInteract>();
@@ -24,13 +30,27 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack(InputAction.CallbackContext context)
     {
-        if (context.performed && bpmInteract.attackWindow)
+        if (context.performed)
         {
-            Debug.Log("On Beat!");
-        }
-        else if(context.performed && !bpmInteract.attackWindow)
-        {
-            Debug.Log("Missed Beat!");
+            if (bpmInteract.CheckInput())
+            {
+                if(comboStep < maxComboStep)
+                {
+                    comboStep++;
+                    currentDamage = baseDamage + damageIncreasePerCombo;
+                }
+                else
+                {
+                    comboStep = 1;
+                    currentDamage = baseDamage;
+                }
+            }
+            else
+            {
+                comboStep = 0;
+                currentDamage = baseDamage;
+            }
+            
         }
     }
 }
