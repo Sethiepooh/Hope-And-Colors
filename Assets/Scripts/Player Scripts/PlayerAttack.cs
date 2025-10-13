@@ -49,8 +49,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 comboStep = 0;
                 currentDamage = baseDamage;
-            }
-            
+            }            
         }
     }
 }
