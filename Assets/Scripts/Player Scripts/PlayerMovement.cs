@@ -42,4 +42,9 @@ public class PlayerMovement : MonoBehaviour
             currentSpeed = walkSpeed;
         }
     }
+
+    public Vector2 GetMovement()
+    {
+        return movement;
+    }
 }
