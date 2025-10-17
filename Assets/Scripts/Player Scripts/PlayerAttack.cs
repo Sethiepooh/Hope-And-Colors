@@ -24,6 +24,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] int inspirationDamagePerCombo = 5;
     [SerializeField] int inspirationPerfectDamagePerCombo = 8;
     [SerializeField] Transform facedDirection;
+    bool canAttack = true;
     float attackRange;
     int currentDamage;
 
@@ -63,7 +64,7 @@ public class PlayerAttack : MonoBehaviour
     void Update()
     {
         if(p_Mov.GetMovement() != Vector2.zero)
-            facedDirection.transform.position = new Vector2(transform.position.x + (p_Mov.GetMovement().x * 1.5f), transform.position.y + (p_Mov.GetMovement().y * 1.5f));
+            facedDirection.transform.position = new Vector2(transform.position.x + (p_Mov.GetMovement().x * 1.5f), transform.position.y + (p_Mov.GetMovement().y * 1.5f));    
 
         if (allegroMode)
         {
@@ -180,6 +181,13 @@ public class PlayerAttack : MonoBehaviour
                 }
             }
         }
+
+        canAttack = false;
+    }
+
+    public void SetCanAttack(bool b)
+    {
+        canAttack = b;
     }
 
     public void Allegro(InputAction.CallbackContext context)
