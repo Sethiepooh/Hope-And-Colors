@@ -31,16 +31,20 @@ public class BPMInteract : MonoBehaviour
         clipLengthInBeats = (audioSource.timeSamples / (audioSource.clip.frequency * intervals[0].GetIntervalLength(bpm)));
     }
 
-    public bool CheckInput()
+    public int CheckInput()
     {
         float sampledTime = (audioSource.timeSamples / (audioSource.clip.frequency * intervals[0].GetIntervalLength(bpm)));
         if(sampledTime  < intervals[0].GetLastInterval() - .1f || sampledTime > intervals[0].GetLastInterval() + .9f)
         {
-            return true;
+            return 0;
+        }
+        else if(sampledTime < intervals[0].GetLastInterval() - .2f || sampledTime > intervals[0].GetLastInterval() + .9f)
+        {
+            return 1;
         }
         else
         {
-            return false;
+            return 2;
         }
     }
 }

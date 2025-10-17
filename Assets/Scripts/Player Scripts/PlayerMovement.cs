@@ -8,10 +8,17 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
 
     // Movement variables
-    float currentSpeed;
+    [Header("Movement Stats")]
     public float walkSpeed;
     public float sprintSpeed;
-    bool sprinting;
+    float currentSpeed;
+
+    // Dash variables
+    [Header("Dash Stats")]
+    public float dashSpeed;
+    public float maxDashTime;
+    float dashTime;
+    bool dashing;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -21,14 +28,29 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(movement.x * currentSpeed, movement.y * currentSpeed);
+        if (!dashing)
+        {
+            dashTime = 0f;
+            rb.linearVelocity = new Vector2(movement.x * currentSpeed, movement.y * currentSpeed);
+        }
+        else
+        {
+            dashTime += Time.fixedDeltaTime;
+            if (dashTime >= maxDashTime)
+            {
+                rb.linearVelocity = Vector2.zero;
+                dashing = false;               
+            }
+        }
+            
     }
 
     public void Move(InputAction.CallbackContext context)
     {
-        movement = context.ReadValue<Vector2>();
+        if (!dashing)
+            movement = context.ReadValue<Vector2>();
     }
 
     public void Sprint(InputAction.CallbackContext context)
@@ -40,6 +62,15 @@ public class PlayerMovement : MonoBehaviour
         else if (context.canceled)
         {
             currentSpeed = walkSpeed;
+        }
+    }
+
+    public void Dash(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            dashing = true;
+            rb.AddForce(movement * dashSpeed, ForceMode2D.Impulse);
         }
     }
 
