@@ -232,7 +232,19 @@ MonoBehaviour:
     m_ActionId: 641cd816-40e6-41b4-8c3d-04687c349290
     m_ActionName: 'Player/Sprint[/Keyboard/leftShift]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1343899466568195588}
+        m_TargetAssemblyTypeName: PlayerAttack, Assembly-CSharp
+        m_MethodName: HyperdriveRiff
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 28016d53-2ae7-404d-880c-4604b9091ddc
     m_ActionName: 'Player/Hyperdrive Riff[/Mouse/rightButton]'
   - m_PersistentCalls:
@@ -364,12 +376,15 @@ MonoBehaviour:
   inspirationDamagePerCombo: 5
   inspirationPerfectDamagePerCombo: 8
   facedDirection: {fileID: 2125546132979403559}
+  canAttack: 1
   inspirationGainOnBeat: 5
   inspirationgainOffBeat: 1
   maxInspiration: 100
   inspirationConsumptionRate: 5
   inspirationBar: {fileID: 1217245171944948475}
-  riffProjectile: {fileID: 0}
+  riffProjectile: {fileID: 8608247141467209458, guid: 8c306108a4934a4498c6f3c855612df8, type: 3}
+  maxRiffTime: 0.5
+  riffSpawnPoint: {fileID: 2125546132979403559}
 --- !u!1 &1933273669095906292
 GameObject:
   m_ObjectHideFlags: 0

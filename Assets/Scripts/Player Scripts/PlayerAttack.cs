@@ -24,7 +24,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] int inspirationDamagePerCombo = 5;
     [SerializeField] int inspirationPerfectDamagePerCombo = 8;
     [SerializeField] Transform facedDirection;
-    bool canAttack = true;
+    [SerializeField] bool canAttack = true;
     float attackRange;
     int currentDamage;
 
@@ -102,7 +102,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && canAttack)
         {
             if (bpmInteract.CheckInput() == 0)
             {
@@ -180,9 +180,8 @@ public class PlayerAttack : MonoBehaviour
                     }
                 }
             }
+            canAttack = false;
         }
-
-        canAttack = false;
     }
 
     public void SetCanAttack(bool b)

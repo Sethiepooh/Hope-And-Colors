@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public float maxDashTime;
     float dashTime;
     bool dashing;
+    bool canDash;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -70,10 +71,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void Dash(InputAction.CallbackContext context)
     {
-        if (context.performed && !freeze)
+        if (context.performed && !freeze && canDash)
         {
             dashing = true;
             rb.AddForce(movement * dashSpeed, ForceMode2D.Impulse);
+            canDash = false;
         }
     }
 
@@ -85,5 +87,10 @@ public class PlayerMovement : MonoBehaviour
     public void SetFreeze(bool b)
     {
         freeze = b;
+    }
+
+    public void SetCanDash(bool b)
+    {
+        canDash = b;
     }
 }
