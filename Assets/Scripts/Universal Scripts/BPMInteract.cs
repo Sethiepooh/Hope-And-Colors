@@ -1,3 +1,4 @@
+using NUnit.Framework.Constraints;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -7,20 +8,60 @@ public class BPMInteract : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private Intervals[] intervals;
 
+    float clipLengthInBeats;
+
+    public bool attackWindow;
+
+    private void Awake()
+    {
+        GetAudioLength(audioSource.clip);
+    }
+
     private void Update()
     {
         foreach(Intervals interval in intervals)
         {
             float sampledTime = (audioSource.timeSamples / (audioSource.clip.frequency * interval.GetIntervalLength(bpm)));
-            interval.CheckForNewInterval(sampledTime);
+            interval.CheckForNewInterval(sampledTime);           
+        }
+
+        Check();
+    }
+
+    void GetAudioLength(AudioClip clip)
+    {
+        clipLengthInBeats = (audioSource.timeSamples / (audioSource.clip.frequency * intervals[0].GetIntervalLength(bpm)));
+    }
+
+    public int CheckInput()
+    {
+        float sampledTime = (audioSource.timeSamples / (audioSource.clip.frequency * intervals[0].GetIntervalLength(bpm)));
+        if(sampledTime  < intervals[0].GetLastInterval() - .1f || sampledTime > intervals[0].GetLastInterval() + .9f)
+        {
+            return 0;
+        }
+        else if(sampledTime < intervals[0].GetLastInterval() - .2f || sampledTime > intervals[0].GetLastInterval() + .9f)
+        {
+            return 1;
+        }
+        else
+        {
+            return 2;
         }
     }
 
-    public float GetBPM()
+    public void Check()
     {
-        return bpm;
+        float sampledTime = (audioSource.timeSamples / (audioSource.clip.frequency * intervals[0].GetIntervalLength(bpm)));
+        if(sampledTime < intervals[0].GetLastInterval() - .2f || sampledTime > intervals[0].GetLastInterval() + .8f)
+        {
+            attackWindow = true;
+        }
+        else
+        {
+            attackWindow = false;
+        }
     }
-
 }
 
 [System.Serializable]
@@ -42,5 +83,10 @@ public class Intervals
             lastInterval = Mathf.FloorToInt(interval);
             trigger.Invoke();
         }
+    }
+
+    public int GetLastInterval()
+    {
+        return lastInterval;
     }
 }

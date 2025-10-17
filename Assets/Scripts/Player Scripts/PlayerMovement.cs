@@ -8,10 +8,19 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
 
     // Movement variables
-    float currentSpeed;
+    [Header("Movement Stats")]
     public float walkSpeed;
     public float sprintSpeed;
-    bool sprinting;
+    float currentSpeed;
+    bool freeze;
+
+    // Dash variables
+    [Header("Dash Stats")]
+    public float dashSpeed;
+    public float maxDashTime;
+    float dashTime;
+    bool dashing;
+    bool canDash;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -21,14 +30,31 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(movement.x * currentSpeed, movement.y * currentSpeed);
+        if (!dashing)
+        {
+            dashTime = 0f;
+            if(!freeze)
+                rb.linearVelocity = new Vector2(movement.x * currentSpeed, movement.y * currentSpeed);
+            else
+                rb.linearVelocity = Vector2.zero;
+        }
+        else
+        {
+            dashTime += Time.fixedDeltaTime;
+            if (dashTime >= maxDashTime)
+            {
+                rb.linearVelocity = Vector2.zero;
+                dashing = false;               
+            }
+        }           
     }
 
     public void Move(InputAction.CallbackContext context)
     {
-        movement = context.ReadValue<Vector2>();
+        if (!dashing)
+            movement = context.ReadValue<Vector2>();
     }
 
     public void Sprint(InputAction.CallbackContext context)
@@ -41,5 +67,30 @@ public class PlayerMovement : MonoBehaviour
         {
             currentSpeed = walkSpeed;
         }
+    }
+
+    public void Dash(InputAction.CallbackContext context)
+    {
+        if (context.performed && !freeze && canDash)
+        {
+            dashing = true;
+            rb.AddForce(movement * dashSpeed, ForceMode2D.Impulse);
+            canDash = false;
+        }
+    }
+
+    public Vector2 GetMovement()
+    {
+        return movement;
+    }
+
+    public void SetFreeze(bool b)
+    {
+        freeze = b;
+    }
+
+    public void SetCanDash(bool b)
+    {
+        canDash = b;
     }
 }
