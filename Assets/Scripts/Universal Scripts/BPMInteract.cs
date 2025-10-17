@@ -10,7 +10,7 @@ public class BPMInteract : MonoBehaviour
 
     float clipLengthInBeats;
 
-    public bool attackWindow = true;
+    public bool attackWindow;
 
     private void Awake()
     {
@@ -24,6 +24,8 @@ public class BPMInteract : MonoBehaviour
             float sampledTime = (audioSource.timeSamples / (audioSource.clip.frequency * interval.GetIntervalLength(bpm)));
             interval.CheckForNewInterval(sampledTime);           
         }
+
+        Check();
     }
 
     void GetAudioLength(AudioClip clip)
@@ -45,6 +47,19 @@ public class BPMInteract : MonoBehaviour
         else
         {
             return 2;
+        }
+    }
+
+    public void Check()
+    {
+        float sampledTime = (audioSource.timeSamples / (audioSource.clip.frequency * intervals[0].GetIntervalLength(bpm)));
+        if(sampledTime < intervals[0].GetLastInterval() - .2f || sampledTime > intervals[0].GetLastInterval() + .8f)
+        {
+            attackWindow = true;
+        }
+        else
+        {
+            attackWindow = false;
         }
     }
 }

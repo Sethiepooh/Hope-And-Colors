@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public float walkSpeed;
     public float sprintSpeed;
     float currentSpeed;
+    bool freeze;
 
     // Dash variables
     [Header("Dash Stats")]
@@ -33,7 +34,10 @@ public class PlayerMovement : MonoBehaviour
         if (!dashing)
         {
             dashTime = 0f;
-            rb.linearVelocity = new Vector2(movement.x * currentSpeed, movement.y * currentSpeed);
+            if(!freeze)
+                rb.linearVelocity = new Vector2(movement.x * currentSpeed, movement.y * currentSpeed);
+            else
+                rb.linearVelocity = Vector2.zero;
         }
         else
         {
@@ -43,8 +47,7 @@ public class PlayerMovement : MonoBehaviour
                 rb.linearVelocity = Vector2.zero;
                 dashing = false;               
             }
-        }
-            
+        }           
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -67,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Dash(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && !freeze)
         {
             dashing = true;
             rb.AddForce(movement * dashSpeed, ForceMode2D.Impulse);
@@ -77,5 +80,10 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 GetMovement()
     {
         return movement;
+    }
+
+    public void SetFreeze(bool b)
+    {
+        freeze = b;
     }
 }
