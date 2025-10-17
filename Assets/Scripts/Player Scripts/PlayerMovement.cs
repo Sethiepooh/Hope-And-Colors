@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public float maxDashTime;
     float dashTime;
     bool dashing;
-    bool canDash;
+    [SerializeField] bool canDash;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
