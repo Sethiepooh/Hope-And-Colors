@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public float maxDashTime;
     float dashTime;
     bool dashing;
-    [SerializeField] bool canDash;
+    bool canDash = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -46,7 +46,8 @@ public class PlayerMovement : MonoBehaviour
             if (dashTime >= maxDashTime)
             {
                 rb.linearVelocity = Vector2.zero;
-                dashing = false;               
+                dashing = false;
+                canDash = true;
             }
         }           
     }

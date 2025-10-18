@@ -39,9 +39,7 @@ public class PlayerAttack : MonoBehaviour
 
     [Header("Hyperdrive Riff Stats")]
     [SerializeField] GameObject riffProjectile;
-    [SerializeField] float maxRiffTime;
     [SerializeField] Transform riffSpawnPoint;
-    float riffTime;
 
     bool allegroMode;
     bool hyperdriveRiff;
@@ -74,28 +72,6 @@ public class PlayerAttack : MonoBehaviour
             {
                 inspirationBar.value = 0;
                 allegroMode = false;
-            }
-        }
-
-        if (hyperdriveRiff)
-        {
-            p_Mov.SetFreeze(true);
-            riffTime += Time.deltaTime;
-            if (riffTime >= maxRiffTime)
-            {
-                if(currentInspiration >= (maxInspiration / 4))
-                {
-                    currentInspiration -= (maxInspiration / 4);
-                    inspirationBar.value = currentInspiration / maxInspiration;
-                    var blast = Instantiate(riffProjectile, riffSpawnPoint.position, Quaternion.identity);
-                    blast.GetComponent<Projectile>().direction = facedDirection.localPosition.normalized;
-                }
-                else
-                {
-                    p_Mov.SetFreeze(false);
-                    hyperdriveRiff = false;
-                }
-                riffTime = 0f;
             }
         }
     }
@@ -211,14 +187,30 @@ public class PlayerAttack : MonoBehaviour
             if (context.performed)
             {
                 hyperdriveRiff = true;
+                p_Mov.SetFreeze(true);
             }
             else if (context.canceled)
             {
                 p_Mov.SetFreeze(false);
                 hyperdriveRiff = false;
-                riffTime = 0f;
             }
         }       
+    }
+    
+    public void FireHyperdriveRiff()
+    {
+        if (currentInspiration >= (maxInspiration / 4) && hyperdriveRiff)
+        {
+            currentInspiration -= (maxInspiration / 4);
+            inspirationBar.value = currentInspiration / maxInspiration;
+            var blast = Instantiate(riffProjectile, riffSpawnPoint.position, Quaternion.identity);
+            blast.GetComponent<Projectile>().direction = facedDirection.localPosition.normalized;
+        }
+        else
+        {
+            p_Mov.SetFreeze(false);
+            hyperdriveRiff = false;
+        }
     }
 
     private void OnDrawGizmos()
