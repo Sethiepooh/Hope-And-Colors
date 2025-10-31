@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     // Components
     Rigidbody2D rb;
     Vector2 movement;
+    PulseManager pulseManager;
 
     // Movement variables
     [Header("Movement Stats")]
@@ -26,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
+        pulseManager.AddEntity(this.gameObject);
         currentSpeed = walkSpeed;
     }
 
