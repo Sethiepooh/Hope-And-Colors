@@ -15,7 +15,7 @@ public class GlitchChild : EnemyBase
     [SerializeField] float moveSpeed = 3.0f;
     Rigidbody2D rb;
     GameObject player;
-    LayerMask playerLayer;
+    [SerializeField]LayerMask playerLayer;
 
     EnemyManager enemyManager;
     PulseManager pulseManager;
@@ -42,6 +42,8 @@ public class GlitchChild : EnemyBase
                 if (hitPlayers[0].CompareTag("Player"))
                 {
                     player.GetComponent<Health>().TakeDamage(damage);
+                    Debug.Log("Player Hit!");
+                    slash = false;
                 }
             }          
         }
