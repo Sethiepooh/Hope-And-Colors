@@ -10,6 +10,7 @@ public class Health : MonoBehaviour
     [SerializeField] bool isPlayer = false;
     SpriteRenderer sRend;
     Color defaultColor;
+    bool damagable = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -34,16 +35,24 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        StartCoroutine(HitFlash());
-        if (isPlayer && healthBar != null)
+        if (damagable)
         {
-            healthBar.value = (float)currentHealth / maxHealth;
-        }
-        if (currentHealth <= 0)
-        {
-            Die();
+            currentHealth -= damage;
+            StartCoroutine(HitFlash());
+            if (isPlayer && healthBar != null)
+            {
+                healthBar.value = (float)currentHealth / maxHealth;
+            }
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
         }      
+    }
+
+    public void SetDamagable(bool b)
+    {
+        damagable = b;
     }
 
     IEnumerator HitFlash()

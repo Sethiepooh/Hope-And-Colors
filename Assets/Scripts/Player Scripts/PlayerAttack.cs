@@ -46,6 +46,8 @@ public class PlayerAttack : MonoBehaviour
     SpriteRenderer sRend;
     Color defaultColor;
     TrailRenderer trail;
+    [SerializeField] GameObject attackIndicator;
+    AttackIndicator aIndicator;
 
     bool allegroMode;
     bool hyperdriveRiff;
@@ -54,6 +56,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Awake()
     {
+        aIndicator = attackIndicator.GetComponent<AttackIndicator>();
         sRend = GetComponent<SpriteRenderer>();
         defaultColor = sRend.color;
         trail = GetComponent<TrailRenderer>();
@@ -71,7 +74,14 @@ public class PlayerAttack : MonoBehaviour
     void Update()
     {
         if(p_Mov.GetMovement() != Vector2.zero)
-            facedDirection.transform.position = new Vector2(transform.position.x + (p_Mov.GetMovement().x * 1.5f), transform.position.y + (p_Mov.GetMovement().y * 1.5f));    
+        {
+            facedDirection.transform.position = new Vector2(transform.position.x + (p_Mov.GetMovement().x * 1.5f), transform.position.y + (p_Mov.GetMovement().y * 1.5f));
+            attackIndicator.transform.rotation = Quaternion.LookRotation(Vector3.forward, p_Mov.GetMovement());
+        }
+            
+
+
+        
 
         if (allegroMode)
         {
@@ -89,8 +99,10 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack(InputAction.CallbackContext context)
     {
+       
         if (context.performed && canAttack)
         {
+            aIndicator.AttackFlash();
             if (bpmInteract.CheckInput() == 0)
             {
                 inspirationGainOnHit = inspirationGainOnBeat;

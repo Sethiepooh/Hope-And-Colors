@@ -5,12 +5,14 @@ public class AttackIndicator : MonoBehaviour
     SpriteRenderer sRend;
     Color activeColor;
     float alpha = 0;
+    public float fadeStep;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         sRend = GetComponent<SpriteRenderer>();
         activeColor = sRend.color;
+        sRend.color = new Color(activeColor.r, activeColor.g, activeColor.b, alpha);
     }
 
     // Update is called once per frame
@@ -18,7 +20,7 @@ public class AttackIndicator : MonoBehaviour
     {
         if(alpha > 0)
         {
-            alpha -= 10;
+            alpha -= fadeStep;
             if(alpha < 0)
             {
                 alpha = 0;
@@ -30,7 +32,6 @@ public class AttackIndicator : MonoBehaviour
 
     public void AttackFlash()
     {
-        sRend.color = activeColor;
         alpha = 225;
     }
 }

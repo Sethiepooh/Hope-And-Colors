@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D rb;
     Vector2 movement;
     PulseManager pulseManager;
+    Health health;
 
     // Movement variables
     [Header("Movement Stats")]
@@ -19,13 +21,13 @@ public class PlayerMovement : MonoBehaviour
     [Header("Dash Stats")]
     public float dashSpeed;
     public float maxDashTime;
-    float dashTime;
     bool dashing;
     bool canDash = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        health = GetComponent<Health>();
         rb = GetComponent<Rigidbody2D>();
         pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
         pulseManager.AddEntity(this.gameObject);
@@ -37,22 +39,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!dashing)
         {
-            dashTime = 0f;
             if(!freeze)
                 rb.linearVelocity = new Vector2(movement.x * currentSpeed, movement.y * currentSpeed);
             else
                 rb.linearVelocity = Vector2.zero;
-        }
-        else
-        {
-            dashTime += Time.fixedDeltaTime;
-            if (dashTime >= maxDashTime)
-            {
-                rb.linearVelocity = Vector2.zero;
-                dashing = false;
-                canDash = true;
-            }
-        }           
+        } 
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -77,10 +68,19 @@ public class PlayerMovement : MonoBehaviour
     {
         if (context.performed && !freeze && canDash)
         {
-            dashing = true;
-            rb.AddForce(movement * dashSpeed, ForceMode2D.Impulse);
-            canDash = false;
+            StartCoroutine(HandleDash());
         }
+    }
+
+    IEnumerator HandleDash()
+    {
+        dashing = true;
+        rb.AddForce(movement * dashSpeed, ForceMode2D.Impulse);
+        canDash = false;
+        yield return new WaitForSeconds(maxDashTime);
+        rb.linearVelocity = Vector2.zero;
+        dashing = false;
+        canDash = true;
     }
 
     public Vector2 GetMovement()

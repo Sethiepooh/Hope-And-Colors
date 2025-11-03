@@ -19,6 +19,7 @@ public class GlitchFather : EnemyBase
     [Header("Effects")]
     [SerializeField] Color attackColor;
     [SerializeField] GameObject attackIndicator;
+    [SerializeField]ParticleSystem telegraph;
     AttackIndicator aIndicate;
     TrailRenderer tRend;
     Color defaultColor;
@@ -89,6 +90,11 @@ public class GlitchFather : EnemyBase
 
     public override void AddToBeatCount()
     {
+        if(beatCount == 5)
+        {
+            telegraph.Play();
+        }
+
         if (beatCount == 7)
         {
             sRend.color = attackColor;
