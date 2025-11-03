@@ -29,6 +29,7 @@ public class Projectile : MonoBehaviour
             {
                 collision.gameObject.GetComponent<Health>().TakeDamage(damage);
             }
+            Destroy(gameObject);
         }
         else
         {
@@ -38,5 +39,7 @@ public class Projectile : MonoBehaviour
             }
             Destroy(gameObject);
         }
+       
+       
     }
 }
