@@ -47,6 +47,8 @@ public class PlayerAttack : MonoBehaviour
     Color defaultColor;
     TrailRenderer trail;
     [SerializeField] GameObject attackIndicator;
+    [SerializeField] GameObject criticalIndicator;
+    AttackIndicator cIndicator;
     AttackIndicator aIndicator;
 
     bool allegroMode;
@@ -56,6 +58,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Awake()
     {
+        cIndicator = criticalIndicator.GetComponent<AttackIndicator>();
         aIndicator = attackIndicator.GetComponent<AttackIndicator>();
         sRend = GetComponent<SpriteRenderer>();
         defaultColor = sRend.color;
@@ -77,12 +80,9 @@ public class PlayerAttack : MonoBehaviour
         {
             facedDirection.transform.position = new Vector2(transform.position.x + (p_Mov.GetMovement().x * 1.5f), transform.position.y + (p_Mov.GetMovement().y * 1.5f));
             attackIndicator.transform.rotation = Quaternion.LookRotation(Vector3.forward, p_Mov.GetMovement());
+            criticalIndicator.transform.rotation = Quaternion.LookRotation(Vector3.forward, p_Mov.GetMovement());
         }
             
-
-
-        
-
         if (allegroMode)
         {
             sRend.color = allegroColor;
@@ -102,9 +102,10 @@ public class PlayerAttack : MonoBehaviour
        
         if (context.performed && canAttack)
         {
-            aIndicator.AttackFlash();
+           
             if (bpmInteract.CheckInput() == 0)
             {
+                cIndicator.AttackFlash();
                 inspirationGainOnHit = inspirationGainOnBeat;
                 if(comboStep < maxComboStep)
                 {
@@ -125,6 +126,7 @@ public class PlayerAttack : MonoBehaviour
             }
             else if (bpmInteract.CheckInput() == 1)
             {
+                aIndicator.AttackFlash();
                 inspirationGainOnHit = inspirationGainOnBeat;
                 if (comboStep < maxComboStep)
                 {
@@ -145,6 +147,7 @@ public class PlayerAttack : MonoBehaviour
             }
             else
             {
+                aIndicator.AttackFlash();
                 inspirationGainOnHit = inspirationgainOffBeat;
                 comboStep = 0;
                 if(allegroMode)
