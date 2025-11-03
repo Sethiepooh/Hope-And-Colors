@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,10 +8,14 @@ public class Health : MonoBehaviour
     int currentHealth;
     [SerializeField] Slider healthBar;
     [SerializeField] bool isPlayer = false;
+    SpriteRenderer sRend;
+    Color defaultColor;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        sRend = GetComponent<SpriteRenderer>();
+        defaultColor = sRend.color;
         currentHealth = maxHealth;
     }
 
@@ -30,6 +35,7 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        StartCoroutine(HitFlash());
         if (isPlayer && healthBar != null)
         {
             healthBar.value = (float)currentHealth / maxHealth;
@@ -38,6 +44,13 @@ public class Health : MonoBehaviour
         {
             Die();
         }      
+    }
+
+    IEnumerator HitFlash()
+    {
+        sRend.color = Color.white;
+        yield return new WaitForSeconds(.1f);
+        sRend.color = defaultColor;
     }
 
     void Die()
