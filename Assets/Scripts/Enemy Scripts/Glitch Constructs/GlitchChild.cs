@@ -19,10 +19,19 @@ public class GlitchChild : EnemyBase
 
     EnemyManager enemyManager;
     PulseManager pulseManager;
+    [Header("Effects")]
+    [SerializeField] Color attackColor;
+    TrailRenderer tRend;
+    Color defaultColor;
+    SpriteRenderer sRend;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        sRend = GetComponent<SpriteRenderer>();
+        defaultColor = sRend.color;
+        tRend = GetComponent<TrailRenderer>();
+        tRend.emitting = false;
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
         enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
@@ -51,12 +60,14 @@ public class GlitchChild : EnemyBase
 
     IEnumerator DashTowardsPlayer()
     {
+        tRend.emitting = true;
         Vector2 playerPos = player.transform.position;
         Vector2 direction = (playerPos - rb.position).normalized;
         rb.linearVelocity = direction * moveSpeed;
         yield return new WaitForSeconds(dashDuration);
         rb.linearVelocity = Vector2.zero;
         slash = false;
+        tRend.emitting = false;
     }
 
     public override void Attack()
@@ -78,7 +89,12 @@ public class GlitchChild : EnemyBase
 
         if(beatCount > 4)
         {
+            sRend.color = attackColor;
             Attack();
+        }
+        else
+        {
+            sRend.color = defaultColor;
         }
     }
 

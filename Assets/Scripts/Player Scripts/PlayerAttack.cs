@@ -41,6 +41,12 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] GameObject riffProjectile;
     [SerializeField] Transform riffSpawnPoint;
 
+    [Header("Effects")]
+    [SerializeField]Color allegroColor;
+    SpriteRenderer sRend;
+    Color defaultColor;
+    TrailRenderer trail;
+
     bool allegroMode;
     bool hyperdriveRiff;
 
@@ -48,6 +54,9 @@ public class PlayerAttack : MonoBehaviour
 
     void Awake()
     {
+        sRend = GetComponent<SpriteRenderer>();
+        defaultColor = sRend.color;
+        trail = GetComponent<TrailRenderer>();
         p_Mov = GetComponent<PlayerMovement>();
         currentDamage = baseDamage;
         attackRange = Vector2.Distance(transform.position, facedDirection.position);
@@ -66,10 +75,12 @@ public class PlayerAttack : MonoBehaviour
 
         if (allegroMode)
         {
+            sRend.color = allegroColor;
             currentInspiration -= inspirationConsumptionRate * Time.deltaTime;
             inspirationBar.value = currentInspiration / maxInspiration;
             if (inspirationBar.value <= 0)
             {
+                sRend.color = defaultColor;
                 inspirationBar.value = 0;
                 allegroMode = false;
             }
