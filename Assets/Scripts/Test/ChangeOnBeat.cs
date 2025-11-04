@@ -10,25 +10,20 @@ public class ChangeOnBeat : MonoBehaviour
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-        sr.material.color = colorOne;
+        sr.color = colorOne;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        if(sr.color != colorOne)
+        {
+            //sr.color = Color.Lerp(sr.color, colorOne, 0.1f);
+        }
     }
 
     public void ChangeColor()
     {
-        if (toggle)
-        {
-            sr.material.color = colorOne;
-        }
-        else
-        {
-            sr.material.color = colorTwo;
-        }
-        toggle = !toggle;
+        sr.material.color = colorTwo;
     }
 }

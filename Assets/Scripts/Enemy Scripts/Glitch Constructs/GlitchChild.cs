@@ -8,6 +8,7 @@ public class GlitchChild : EnemyBase
     [SerializeField] int damage = 5;
     [SerializeField] Transform attackPoint;
     [SerializeField] float dashDuration = 0.5f;
+    public bool alternate = false;
     int beatCount = 0;
     bool slash = false;
 
@@ -97,15 +98,31 @@ public class GlitchChild : EnemyBase
             beatCount++;
         }
 
-        if(beatCount > 4)
+        if (alternate)
         {
-            sRend.color = attackColor;
-            Attack();
+            if (beatCount > 4)
+            {
+                sRend.color = attackColor;
+                Attack();
+            }
+            else
+            {
+                sRend.color = defaultColor;
+            }
         }
         else
         {
-            sRend.color = defaultColor;
+            if (beatCount <= 4)
+            {
+                sRend.color = attackColor;
+                Attack();
+            }
+            else
+            {
+                sRend.color = defaultColor;
+            }
         }
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
