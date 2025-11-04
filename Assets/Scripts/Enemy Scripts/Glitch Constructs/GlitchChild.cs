@@ -16,6 +16,7 @@ public class GlitchChild : EnemyBase
     Rigidbody2D rb;
     GameObject player;
     [SerializeField]LayerMask playerLayer;
+    bool clutter;
 
     EnemyManager enemyManager;
     PulseManager pulseManager;
@@ -60,9 +61,18 @@ public class GlitchChild : EnemyBase
 
     IEnumerator DashTowardsPlayer()
     {
+        Vector2 direction;
+        if (!clutter)
+        {
+            Vector2 playerPos = player.transform.position;
+            direction = (playerPos - rb.position).normalized;          
+        }
+        else
+        {
+            direction = new Vector2(Random.Range(-1, 1), Random.Range(-1, 1));
+        }
+
         tRend.emitting = true;
-        Vector2 playerPos = player.transform.position;
-        Vector2 direction = (playerPos - rb.position).normalized;
         rb.linearVelocity = direction * moveSpeed;
         yield return new WaitForSeconds(dashDuration);
         rb.linearVelocity = Vector2.zero;
@@ -95,6 +105,22 @@ public class GlitchChild : EnemyBase
         else
         {
             sRend.color = defaultColor;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            clutter = true;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            clutter = false;
         }
     }
 

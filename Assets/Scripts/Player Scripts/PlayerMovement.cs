@@ -20,7 +20,8 @@ public class PlayerMovement : MonoBehaviour
     // Dash variables
     [Header("Dash Stats")]
     public float dashSpeed;
-    public float maxDashTime;
+    public float dashTime;
+    public float dashCooldown;
     bool dashing;
     bool canDash = true;
 
@@ -77,9 +78,15 @@ public class PlayerMovement : MonoBehaviour
         dashing = true;
         rb.AddForce(movement * dashSpeed, ForceMode2D.Impulse);
         canDash = false;
-        yield return new WaitForSeconds(maxDashTime);
+        yield return new WaitForSeconds(dashTime);
         rb.linearVelocity = Vector2.zero;
         dashing = false;
+        StartCoroutine(DashCooldown());
+    }
+
+    IEnumerator DashCooldown()
+    {
+        yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
 
