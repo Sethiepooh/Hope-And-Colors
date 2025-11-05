@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - EnemyManager
   - RhythmManager
+  - Obstacle
+  - Bomb
   layers:
   - Default
   - TransparentFX

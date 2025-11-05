@@ -47,30 +47,34 @@ public class GlitchMother : EnemyBase
 
     public override void AddToBeatCount()
     {
-        if (beatCount == 8)
+        if (!death)
         {
-            beatCount = 0;
-        }
+            if (beatCount == 8)
+            {
+                beatCount = 0;
+            }
 
-        if(beatCount == 7)
-        {
-            Teleport();
-            beatCount++;
-        }
-        else
-        {
-            beatCount++;
-        }
+            if (beatCount == 7)
+            {
+                Teleport();
+                beatCount++;
+            }
+            else
+            {
+                beatCount++;
+            }
 
-        if(beatCount == 1 ||  beatCount == 3)
-        {
-            telegraph.Play();
-        }
+            if (beatCount == 1 || beatCount == 3)
+            {
+                telegraph.Play();
+            }
 
-        if(beatCount%2 == 0 && beatCount < 5)
-        {
-            Attack();
+            if (beatCount % 2 == 0 && beatCount < 5)
+            {
+                Attack();
+            }
         }
+       
     }
 
     void Teleport()

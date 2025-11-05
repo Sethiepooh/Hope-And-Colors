@@ -90,27 +90,31 @@ public class GlitchFather : EnemyBase
 
     public override void AddToBeatCount()
     {
-        if(beatCount == 5)
+        if (!death)
         {
-            telegraph.Play();
-        }
+            if (beatCount == 5)
+            {
+                telegraph.Play();
+            }
 
-        if (beatCount == 7)
-        {
-            sRend.color = attackColor;
-            Attack();
-            beatCount = 0;
-        }
-        else
-        {
-            sRend.color = defaultColor;
-            beatCount++;
-        }
+            if (beatCount == 7)
+            {
+                sRend.color = attackColor;
+                Attack();
+                beatCount = 0;
+            }
+            else
+            {
+                sRend.color = defaultColor;
+                beatCount++;
+            }
 
-        if (beatCount == 4)
-        {
-            StartCoroutine(DashTowardsPlayer());
+            if (beatCount == 4)
+            {
+                StartCoroutine(DashTowardsPlayer());
+            }
         }
+       
     }
 
     private void OnDrawGizmosSelected()

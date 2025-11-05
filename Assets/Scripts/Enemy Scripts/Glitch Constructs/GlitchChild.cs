@@ -89,40 +89,43 @@ public class GlitchChild : EnemyBase
 
     public override void AddToBeatCount()
     {
-        if(beatCount == 8)
+        if (!death)
         {
-            beatCount = 1;
-        }
-        else
-        {
-            beatCount++;
-        }
+            if (beatCount == 8)
+            {
+                beatCount = 1;
+            }
+            else
+            {
+                beatCount++;
+            }
 
-        if (alternate)
-        {
-            if (beatCount > 4)
+            if (alternate)
             {
-                sRend.color = attackColor;
-                Attack();
+                if (beatCount > 4)
+                {
+                    sRend.color = attackColor;
+                    Attack();
+                }
+                else
+                {
+                    sRend.color = defaultColor;
+                }
             }
             else
             {
-                sRend.color = defaultColor;
+                if (beatCount <= 4)
+                {
+                    sRend.color = attackColor;
+                    Attack();
+                }
+                else
+                {
+                    sRend.color = defaultColor;
+                }
             }
+
         }
-        else
-        {
-            if (beatCount <= 4)
-            {
-                sRend.color = attackColor;
-                Attack();
-            }
-            else
-            {
-                sRend.color = defaultColor;
-            }
-        }
-        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

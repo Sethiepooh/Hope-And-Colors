@@ -25,6 +25,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] int inspirationPerfectDamagePerCombo = 8;
     [SerializeField] Transform facedDirection;
     [SerializeField] bool canAttack = true;
+    public LayerMask enemyLayer;
+    [SerializeField] float strikeForce;
     float attackRange;
     int currentDamage;
 
@@ -157,7 +159,7 @@ public class PlayerAttack : MonoBehaviour
             }
 
             // Detect enemies in range of attack
-            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange);
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayer);
             foreach (Collider2D enemy in hitEnemies)
             {
                 if (enemy.gameObject.CompareTag("Enemy"))
@@ -176,9 +178,18 @@ public class PlayerAttack : MonoBehaviour
                             currentInspiration = maxInspiration;
                         inspirationBar.value = currentInspiration / maxInspiration;
                     }
-                    else
+                }
+                else if (enemy.gameObject.CompareTag("Obstacle") || enemy.gameObject.CompareTag("Bomb"))
+                {
+                    // Check if enemy is in front of player
+                    Vector2 relativePos = enemy.transform.position - transform.position;
+                    Vector2 forward = (Vector2)facedDirection.position - (Vector2)transform.position;
+                    Rigidbody2D enemyRb = enemy.gameObject.GetComponent<Rigidbody2D>();
+                    float angle = Vector3.Angle(relativePos, forward);
+                    if (angle < 90f)
                     {
-                        Debug.Log("Missed!");
+                        enemyRb.AddForce(forward * strikeForce, ForceMode2D.Impulse);
+                        enemy.gameObject.GetComponent<Health>().TakeDamage(currentDamage);
                     }
                 }
             }
