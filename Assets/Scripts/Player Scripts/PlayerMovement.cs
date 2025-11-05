@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
         health = GetComponent<Health>();
         rb = GetComponent<Rigidbody2D>();
         pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
-        pulseManager.AddEntity(this.gameObject);
+        pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
         currentSpeed = walkSpeed;
     }
 

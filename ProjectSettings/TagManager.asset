@@ -9,6 +9,7 @@ TagManager:
   - RhythmManager
   - Obstacle
   - Bomb
+  - RespawnManager
   layers:
   - Default
   - TransparentFX

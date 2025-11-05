@@ -4,27 +4,17 @@ using System.Collections.Generic;
 
 public class PulseManager : MonoBehaviour
 {
-    List<GameObject> entitiesToPulse = new List<GameObject>();
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public List<GameObject> entitiesToPulse = new List<GameObject>();
+    public List<GameObject> entitiesToFlash = new List<GameObject>();
+
+    public void AddEntity(GameObject entity, List<GameObject> list)
     {
-        
+        list.Add(entity);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RemoveEntity(GameObject entity, List<GameObject> list)
     {
-        
-    }
-
-    public void AddEntity(GameObject entity)
-    {
-        entitiesToPulse.Add(entity);
-    }
-
-    public void RemoveEntity(GameObject entity)
-    {
-        entitiesToPulse.Remove(entity);
+        list.Remove(entity);
     }
 
     public void PulseAll()
@@ -33,6 +23,15 @@ public class PulseManager : MonoBehaviour
         {
             if (entity != null)
                 entity.GetComponent<BeatPulse>().Pulse();
+        }
+    }
+
+    public void FlashAll()
+    {
+        foreach(GameObject entity in entitiesToFlash)
+        {
+            if (entity != null)
+                entity.GetComponent<ChangeOnBeat>().ChangeColor();
         }
     }
 }

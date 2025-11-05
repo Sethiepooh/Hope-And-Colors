@@ -18,12 +18,16 @@ public class Health : MonoBehaviour
     Color defaultColor;
     bool damagable = true;
 
+    RespawnManager r_Man;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
         sRend = GetComponent<SpriteRenderer>();
         defaultColor = sRend.color;
         currentHealth = maxHealth;
+        deathParticles.startColor = defaultColor;
+        r_Man = GameObject.FindWithTag("RespawnManager").GetComponent<RespawnManager>();
     }
 
     public void Heal(int heal)
@@ -63,9 +67,12 @@ public class Health : MonoBehaviour
                 {
                     StartCoroutine(DeathBlast());
                 }
+                else if (gameObject.CompareTag("Player"))
+                {
+                    HandlePlayerDeath();
+                }
                 else
                 {
-                    deathParticles.startColor = defaultColor;
                     StartCoroutine(HandleDeath());
                 }
                     
@@ -103,6 +110,18 @@ public class Health : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void HandlePlayerDeath()
+    {
+        //handle player death
+        sRend.enabled = false;
+        var col = gameObject.GetComponent<Collider2D>();
+        col.enabled = false;
+        var rb = gameObject.GetComponent<Rigidbody2D>();
+        rb.linearVelocity = Vector3.zero;
+        deathParticles.Play();
+        r_Man.ResetPlayer();
+    }
+
     IEnumerator HandleDeath()
     {
         if (gameObject.CompareTag("Enemy"))
@@ -122,10 +141,6 @@ public class Health : MonoBehaviour
             var rb = gameObject.GetComponent<Rigidbody2D>();
             rb.linearVelocity = Vector3.zero;
             deathParticles.Play();
-        }
-        else
-        {
-            //handle player death
         }
         yield return new WaitForSeconds(.5f);
         Destroy(gameObject);

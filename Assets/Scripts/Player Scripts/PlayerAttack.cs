@@ -37,7 +37,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] float inspirationConsumptionRate = 5f;
     [SerializeField] Slider inspirationBar;
     float inspirationGainOnHit;
-    float currentInspiration = 0f;
+    [HideInInspector]public float currentInspiration = 0f;
 
     [Header("Hyperdrive Riff Stats")]
     [SerializeField] GameObject riffProjectile;

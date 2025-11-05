@@ -29,7 +29,7 @@ public class GlitchMother : EnemyBase
         enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
         enemyManager.AddEnemy(this.gameObject);
         pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
-        pulseManager.AddEntity(this.gameObject);
+        pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
     }
 
     // Update is called once per frame
