@@ -6,17 +6,25 @@ public class EnemyManager : MonoBehaviour
 {
     //public List<GameObject> enemies = new List<GameObject>();
     public EnemyGroup[] enemyGroups;
+    RespawnManager respawnManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        SetEnemyStartingPos();
+        SetEnemies();
+        respawnManager = GameObject.FindWithTag("RespawnManager").GetComponent<RespawnManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(CheckGroupDefeated(respawnManager.spawnIndex))
+        {
+            if (enemyGroups[respawnManager.spawnIndex].door != null)
+            {
+                enemyGroups[respawnManager.spawnIndex].door.SetActive(false);
+            } 
+        }
     }
 
     //public void AddEnemy(GameObject enemy)
@@ -29,34 +37,59 @@ public class EnemyManager : MonoBehaviour
     //    enemies.Remove(enemy);
     //}
 
-    void SetEnemyStartingPos()
+    void SetEnemies()
     {
-        foreach (EnemyGroup enemy in enemyGroups)
+        foreach (EnemyGroup enemyGroup in enemyGroups)
         {
-            foreach(Enemy e in enemy.enemies)
+           for (int i = 0; i < enemyGroup.enemies.Length; i++)
             {
-                e.SetStartingPos(e.enemyObject.transform.position);
+                enemyGroup.enemies[i] = NewEnenemy(enemyGroup.enemies[i]);
             }
         }
+    }
+
+    Enemy NewEnenemy(Enemy e)
+    {
+        return new Enemy(e.enemyObject, e.enemyObject.transform.position);
     }
 
     public void RespawnEnemies(int i)
     {
         for (int j = i; j < enemyGroups.Length; j++)
         {
-            foreach (Enemy e in enemyGroups[j].enemies)
+            for(int x = 0; x < enemyGroups[j].enemies.Length; x++)
             {
-                Respawn(e.enemyObject);
-                e.enemyObject.transform.position = e.startingPos;
+                enemyGroups[j].enemies[x].enemyObject.GetComponent<Health>().Heal(1000);
+                enemyGroups[j].enemies[x].enemyObject.GetComponent<SpriteRenderer>().enabled = true;
+                enemyGroups[j].enemies[x].enemyObject.GetComponent<Collider2D>().enabled = true;
+
+                if(j == i)
+                    enemyGroups[j].enemies[x].enemyObject.GetComponent<EnemyBase>().active = true;
+
+                enemyGroups[j].enemies[x].enemyObject.SetActive(true);
+                enemyGroups[j].enemies[x].enemyObject.transform.position = enemyGroups[j].enemies[x].startingPos;
             }
         }
     }
 
-    void Respawn(GameObject enemy)
+    public void ActivateGroup(int i)
     {
-        enemy.GetComponent<Health>().Heal(1000);
-        enemy.SetActive(true);
+        for (int x = 0; x < enemyGroups[i].enemies.Length; x++)
+        {
+            enemyGroups[i].enemies[x].enemyObject.GetComponent<EnemyBase>().active = true;
+        }
     }
+
+    bool CheckGroupDefeated(int i)
+    {
+        foreach (Enemy e in enemyGroups[i].enemies)
+        {
+            if (e.enemyObject.activeInHierarchy)
+                return false;
+        }
+        return true;
+    }
+
 
     public void AddBeatToAll()
     {
@@ -68,8 +101,7 @@ public class EnemyManager : MonoBehaviour
                 {
                     if(e.enemyObject.activeInHierarchy)
                         e.enemyObject.GetComponent<EnemyBase>().AddToBeatCount();
-                }
-                    
+                }                  
             }              
         }
     }
@@ -78,6 +110,7 @@ public class EnemyManager : MonoBehaviour
     public struct EnemyGroup
     {
         public Enemy[] enemies;
+        public GameObject door;
     }
 
     [System.Serializable]
@@ -86,8 +119,9 @@ public class EnemyManager : MonoBehaviour
         public GameObject enemyObject;
         public Vector2 startingPos;
 
-        public void SetStartingPos( Vector2 pos)
+        public Enemy( GameObject obj, Vector2 pos)
         {
+            enemyObject = obj;
             startingPos = pos;
         }
     }

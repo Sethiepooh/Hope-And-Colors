@@ -365,6 +365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   sprintSpeed: 10
+  controlable: 1
   dashSpeed: 30
   dashTime: 0
   dashCooldown: 0
@@ -1605,11 +1606,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.994621
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.23098
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
       propertyPath: m_LocalPosition.z

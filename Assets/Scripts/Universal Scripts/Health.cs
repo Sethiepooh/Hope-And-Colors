@@ -127,7 +127,7 @@ public class Health : MonoBehaviour
         if (gameObject.CompareTag("Enemy"))
         {
             var enemyScript = gameObject.GetComponent<EnemyBase>();
-            enemyScript.death = true;
+            enemyScript.active = false;
             sRend.enabled = false;
             var col = gameObject.GetComponent<Collider2D>();
             col.enabled = false;

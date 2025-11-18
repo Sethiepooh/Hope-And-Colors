@@ -9,7 +9,7 @@ public class RespawnManager : MonoBehaviour
     [SerializeField] List<GameObject> spawnPoints = new List<GameObject>();
     [SerializeField] float resetSpeed;
     GameObject player;
-    int spawnIndex;
+    public int spawnIndex;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,12 +23,12 @@ public class RespawnManager : MonoBehaviour
     {
         Vector2 spawnPos = spawnPoints[0].transform.position;
         Vector2 playerPos = player.transform.position;
-        Debug.Log(Vector2.Distance(spawnPos, playerPos));
     }
 
     public void SetSpawnIndex(GameObject spawnPoint)
     {
         spawnIndex = spawnPoints.IndexOf(spawnPoint);
+        enemyManager.ActivateGroup(spawnIndex);
     }
 
     public void ResetPlayer()

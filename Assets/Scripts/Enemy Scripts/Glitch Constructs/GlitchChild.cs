@@ -89,7 +89,7 @@ public class GlitchChild : EnemyBase
 
     public override void AddToBeatCount()
     {
-        if (!death)
+        if (active)
         {
             if (beatCount == 8)
             {
