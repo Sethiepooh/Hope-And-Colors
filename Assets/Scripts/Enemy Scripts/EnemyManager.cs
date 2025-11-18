@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class EnemyManager : MonoBehaviour
 {
-    public List<GameObject> enemies = new List<GameObject>();
+    //public List<GameObject> enemies = new List<GameObject>();
     public EnemyGroup[] enemyGroups;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -19,15 +19,15 @@ public class EnemyManager : MonoBehaviour
         
     }
 
-    public void AddEnemy(GameObject enemy)
-    {
-        enemies.Add(enemy);
-    }
+    //public void AddEnemy(GameObject enemy)
+    //{
+    //    enemies.Add(enemy);
+    //}
 
-    public void RemoveEnemy(GameObject enemy)
-    {
-        enemies.Remove(enemy);
-    }
+    //public void RemoveEnemy(GameObject enemy)
+    //{
+    //    enemies.Remove(enemy);
+    //}
 
     void SetEnemyStartingPos()
     {
@@ -60,18 +60,27 @@ public class EnemyManager : MonoBehaviour
 
     public void AddBeatToAll()
     {
-        foreach (GameObject enemy in enemies)
+        foreach (EnemyGroup enemy in enemyGroups)
         {
-            if (enemy != null)
-                enemy.GetComponent<EnemyBase>().AddToBeatCount();
+            foreach (Enemy e in enemy.enemies)
+            {
+                if (e.enemyObject != null)
+                {
+                    if(e.enemyObject.activeInHierarchy)
+                        e.enemyObject.GetComponent<EnemyBase>().AddToBeatCount();
+                }
+                    
+            }              
         }
     }
 
+    [System.Serializable]
     public struct EnemyGroup
     {
         public Enemy[] enemies;
     }
 
+    [System.Serializable]
     public struct Enemy
     {
         public GameObject enemyObject;

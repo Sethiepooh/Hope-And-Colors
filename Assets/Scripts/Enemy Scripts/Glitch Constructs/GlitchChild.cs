@@ -37,7 +37,7 @@ public class GlitchChild : EnemyBase
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
         enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
-        enemyManager.AddEnemy(this.gameObject);
+       // enemyManager.AddEnemy(this.gameObject);
         pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
         pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
     }
