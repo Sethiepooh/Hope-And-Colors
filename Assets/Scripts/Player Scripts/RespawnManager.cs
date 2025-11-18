@@ -5,7 +5,8 @@ using System.Collections.Generic;
 
 public class RespawnManager : MonoBehaviour
 {
-    [SerializeField] List<GameObject> spawnPoints = new List<GameObject>() ;
+    EnemyManager enemyManager;
+    [SerializeField] List<GameObject> spawnPoints = new List<GameObject>();
     [SerializeField] float resetSpeed;
     GameObject player;
     int spawnIndex;
@@ -13,13 +14,16 @@ public class RespawnManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
+        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Vector2 spawnPos = spawnPoints[0].transform.position;
+        Vector2 playerPos = player.transform.position;
+        Debug.Log(Vector2.Distance(spawnPos, playerPos));
     }
 
     public void SetSpawnIndex(GameObject spawnPoint)
@@ -29,25 +33,26 @@ public class RespawnManager : MonoBehaviour
 
     public void ResetPlayer()
     {
-        player.GetComponent<PlayerAttack>().currentInspiration = 0;
-        player.GetComponent<Health>().Heal(100);
-        StartCoroutine(MovePlayerToSpawnPoint(spawnIndex));
+        StartCoroutine(Respawn());
     }
 
-    IEnumerator MovePlayerToSpawnPoint(int i)
+    IEnumerator Respawn()
     {
+        player.GetComponent<PlayerMovement>().controlable = false;
         Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();
-        Vector2 spawnPos = spawnPoints[i].transform.position;
-        Vector2 playerPos = player.transform.position;
-        Vector2 direction = spawnPos - playerPos;
+        playerRb.linearVelocity = Vector2.zero;
+        Vector2 spawnPos = spawnPoints[spawnIndex].transform.position;
+        player.transform.position = spawnPos;
+        player.GetComponent<TrailRenderer>().Clear();
 
-        if(Vector2.Distance(spawnPos, playerPos) > 1)
-        {
-            playerRb.linearVelocity = direction * resetSpeed;
-        }
+        yield return new WaitForSeconds(1f);
+
         player.GetComponent<SpriteRenderer>().enabled = true;
         player.GetComponent<Collider2D>().enabled = true;
+        player.GetComponent<PlayerAttack>().currentInspiration = 0;
+        player.GetComponent<Health>().Heal(100);
+        player.GetComponent<PlayerMovement>().controlable = true;
 
-        yield return null;
+        enemyManager.RespawnEnemies(spawnIndex);
     }
 }

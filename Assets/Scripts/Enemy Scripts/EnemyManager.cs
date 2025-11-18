@@ -5,11 +5,12 @@ using System.Collections.Generic;
 public class EnemyManager : MonoBehaviour
 {
     public List<GameObject> enemies = new List<GameObject>();
+    public EnemyGroup[] enemyGroups;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        SetEnemyStartingPos();
     }
 
     // Update is called once per frame
@@ -28,12 +29,57 @@ public class EnemyManager : MonoBehaviour
         enemies.Remove(enemy);
     }
 
+    void SetEnemyStartingPos()
+    {
+        foreach (EnemyGroup enemy in enemyGroups)
+        {
+            foreach(Enemy e in enemy.enemies)
+            {
+                e.SetStartingPos(e.enemyObject.transform.position);
+            }
+        }
+    }
+
+    public void RespawnEnemies(int i)
+    {
+        for (int j = i; j < enemyGroups.Length; j++)
+        {
+            foreach (Enemy e in enemyGroups[j].enemies)
+            {
+                Respawn(e.enemyObject);
+                e.enemyObject.transform.position = e.startingPos;
+            }
+        }
+    }
+
+    void Respawn(GameObject enemy)
+    {
+        enemy.GetComponent<Health>().Heal(1000);
+        enemy.SetActive(true);
+    }
+
     public void AddBeatToAll()
     {
         foreach (GameObject enemy in enemies)
         {
             if (enemy != null)
                 enemy.GetComponent<EnemyBase>().AddToBeatCount();
+        }
+    }
+
+    public struct EnemyGroup
+    {
+        public Enemy[] enemies;
+    }
+
+    public struct Enemy
+    {
+        public GameObject enemyObject;
+        public Vector2 startingPos;
+
+        public void SetStartingPos( Vector2 pos)
+        {
+            startingPos = pos;
         }
     }
 }

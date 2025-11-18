@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public float sprintSpeed;
     float currentSpeed;
     bool freeze;
+    [HideInInspector] public bool controlable = true;
 
     // Dash variables
     [Header("Dash Stats")]
@@ -38,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (!dashing)
+        if (!dashing && controlable)
         {
             if(!freeze)
                 rb.linearVelocity = new Vector2(movement.x * currentSpeed, movement.y * currentSpeed);

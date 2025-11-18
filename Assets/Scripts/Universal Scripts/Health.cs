@@ -143,7 +143,7 @@ public class Health : MonoBehaviour
             deathParticles.Play();
         }
         yield return new WaitForSeconds(.5f);
-        Destroy(gameObject);
+        this.gameObject.SetActive(false);
     }
 
     private void OnDrawGizmosSelected()
