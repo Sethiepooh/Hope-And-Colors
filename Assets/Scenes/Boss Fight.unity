@@ -1879,7 +1879,7 @@ GameObject:
   - component: {fileID: 1180964112}
   m_Layer: 0
   m_Name: Alix
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1901,7 +1901,9 @@ MonoBehaviour:
   damage: 5
   attackPoint: {fileID: 1180964110}
   dashDuration: 0.2
-  shockwavePrefab: {fileID: 0}
+  shockwavePrefab: {fileID: 6346115159475032783, guid: a2bb4388f7f08f34fb341972a294ab65, type: 3}
+  spawnRange: 10
+  activeShockwaves: []
   moveSpeed: 20
   playerLayer:
     serializedVersion: 2
@@ -3479,6 +3481,22 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 1
+          m_CallState: 2
+  - steps: 0.25
+    trigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1180964106}
+          m_TargetAssemblyTypeName: AlixBoss, Assembly-CSharp
+          m_MethodName: AddToBarBeatCount
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
           m_CallState: 2
   attackWindow: 1
 --- !u!4 &2077714267

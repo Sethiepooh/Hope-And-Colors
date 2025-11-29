@@ -62,10 +62,7 @@ public class AlixBoss : EnemyBase
         {
             sRend.color = defaultColor;
         }
-    }
 
-    public override void Attack()
-    {
         if (slash)
         {
             Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
@@ -79,6 +76,11 @@ public class AlixBoss : EnemyBase
                 }
             }
         }
+    }
+
+    public override void Attack()
+    {
+      
     }
 
     void GetRicochetPoints()
@@ -182,7 +184,14 @@ public class AlixBoss : EnemyBase
         if (active)
         {
             barBeatCount++;
-            if (barBeatCount == 8)
+            foreach (GameObject shock in activeShockwaves)
+            {
+                if (shock != null)
+                {
+                    shock.GetComponent<Shockwave>().AddToBeatCount();
+                }
+            }
+            if (barBeatCount %8 == 0)
             {
                 section = !section;
             }
