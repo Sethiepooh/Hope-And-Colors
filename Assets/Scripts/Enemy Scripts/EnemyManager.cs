@@ -74,6 +74,11 @@ public class EnemyManager : MonoBehaviour
 
     public void ActivateGroup(int i)
     {
+        if (enemyGroups.Length == 0 || i >= enemyGroups.Length)
+        {
+            return;
+        }
+
         for (int x = 0; x < enemyGroups[i].enemies.Length; x++)
         {
             enemyGroups[i].enemies[x].enemyObject.GetComponent<EnemyBase>().active = true;
@@ -82,6 +87,11 @@ public class EnemyManager : MonoBehaviour
 
     bool CheckGroupDefeated(int i)
     {
+        if(enemyGroups.Length == 0 || i >= enemyGroups.Length)
+        {
+            return false;
+        }
+
         foreach (Enemy e in enemyGroups[i].enemies)
         {
             if (e.enemyObject.activeInHierarchy)

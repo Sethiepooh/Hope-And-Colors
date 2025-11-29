@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        if (!dashing)
+        if (!dashing && context.performed)
             movement = context.ReadValue<Vector2>();
     }
 

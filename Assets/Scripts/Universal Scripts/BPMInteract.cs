@@ -62,6 +62,11 @@ public class BPMInteract : MonoBehaviour
             attackWindow = false;
         }
     }
+
+    public float GetBPM()
+    {
+        return bpm;
+    }
 }
 
 [System.Serializable]

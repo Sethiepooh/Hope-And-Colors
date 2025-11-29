@@ -10,6 +10,7 @@ TagManager:
   - Obstacle
   - Bomb
   - RespawnManager
+  - Boss
   layers:
   - Default
   - TransparentFX

@@ -923,11 +923,13 @@ MonoBehaviour:
       startingPos: {x: 0, y: 0}
     - enemyObject: {fileID: 768990111}
       startingPos: {x: 0, y: 0}
+    door: {fileID: 0}
   - enemies:
     - enemyObject: {fileID: 711119757}
       startingPos: {x: 0, y: 0}
     - enemyObject: {fileID: 329278735}
       startingPos: {x: 0, y: 0}
+    door: {fileID: 0}
 --- !u!4 &665742344
 Transform:
   m_ObjectHideFlags: 0
@@ -971,9 +973,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: a82c0a7945b40bf4bb79321debd3c3b8, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3dac2e1ff36a5d84a9b8daf3d79fd31f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1690,7 +1692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66148d0abe3bb9b43886a843218187c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bpm: 120
+  bpm: 125
   audioSource: {fileID: 670559694}
   intervals:
   - steps: 1
