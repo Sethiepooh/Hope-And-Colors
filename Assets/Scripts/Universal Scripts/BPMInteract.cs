@@ -15,6 +15,7 @@ public class BPMInteract : MonoBehaviour
     private void Awake()
     {
         GetAudioLength(audioSource.clip);
+       
     }
 
     private void Update()
@@ -30,17 +31,38 @@ public class BPMInteract : MonoBehaviour
 
     void GetAudioLength(AudioClip clip)
     {
-        clipLengthInBeats = (audioSource.timeSamples / (audioSource.clip.frequency * intervals[0].GetIntervalLength(bpm)));
+        clipLengthInBeats = Mathf.FloorToInt(audioSource.clip.samples / (audioSource.clip.frequency * intervals[3].GetIntervalLength(bpm)));
+        Debug.Log("Clip Length in Beats: " + clipLengthInBeats);
+    }
+
+    public void CheckSegmentEnd()
+    {
+        Debug.Log("Segment End Reached");
+    }
+
+    public int GetCurrentSection()
+    {
+        float sampledTime = (audioSource.timeSamples / (audioSource.clip.frequency * intervals[3].GetIntervalLength(bpm)));
+        return Mathf.FloorToInt(sampledTime);
+    }
+
+    public void PlayAudioFromSection(float section)
+    {
+        audioSource.time = (60f / section * bpm);
     }
 
     public int CheckInput()
     {
         float sampledTime = (audioSource.timeSamples / (audioSource.clip.frequency * intervals[0].GetIntervalLength(bpm)));
-        if(sampledTime  < intervals[0].GetLastInterval() - .1f || sampledTime > intervals[0].GetLastInterval() + .9f)
+
+        float lastInterval = intervals[0].GetLastInterval();
+        float nextInterval = lastInterval + 1;
+
+        if (sampledTime > lastInterval + .3f && sampledTime < nextInterval - .3f)
         {
             return 0;
         }
-        else if(sampledTime < intervals[0].GetLastInterval() - .2f || sampledTime > intervals[0].GetLastInterval() + .9f)
+        else if(sampledTime > lastInterval + .2f && sampledTime < nextInterval - .2f)
         {
             return 1;
         }

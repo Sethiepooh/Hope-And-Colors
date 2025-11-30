@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement Stats")]
     public float walkSpeed;
     public float sprintSpeed;
+    public bool allegro;
     float currentSpeed;
     bool freeze;
     [HideInInspector] public bool controlable = true;
@@ -39,10 +40,20 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+
         if (!dashing && controlable)
         {
-            if(!freeze)
-                rb.linearVelocity = new Vector2(movement.x * currentSpeed, movement.y * currentSpeed);
+            if (!freeze)
+            {
+                if (allegro)
+                {
+                    rb.linearVelocity = new Vector2(movement.x * currentSpeed, movement.y * currentSpeed * 2);
+                }
+                else
+                {
+                    rb.linearVelocity = new Vector2(movement.x * currentSpeed, movement.y * currentSpeed);
+                }
+            }
             else
                 rb.linearVelocity = Vector2.zero;
         } 
@@ -50,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        if (!dashing && context.performed)
+        if (!dashing)
             movement = context.ReadValue<Vector2>();
     }
 

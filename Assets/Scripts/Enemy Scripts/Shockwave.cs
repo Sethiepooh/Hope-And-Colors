@@ -24,7 +24,7 @@ public class Shockwave : MonoBehaviour
     public void AddToBeatCount()
     {
         beatCount++;
-        if (beatCount == 2)
+        if (beatCount == 3)
         {
             aIndicate.AttackFlash();
             foreach (Collider2D hit in Physics2D.OverlapCircleAll(transform.position, range))
@@ -36,7 +36,7 @@ public class Shockwave : MonoBehaviour
             }
         }
 
-        if(beatCount >= 4)
+        if(beatCount >= 5)
         {
             Destroy(gameObject);
         }

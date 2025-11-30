@@ -6,29 +6,36 @@ using System.Collections;
 public class AlixBoss : EnemyBase
 {
     [Header("Attack Stats")]
+    [SerializeField]bool section;
     [SerializeField] float attackRange = 1.0f;
     [SerializeField] int damage = 5;
     [SerializeField] Transform attackPoint;
     int beatCount = 0;
     int barBeatCount = 0;
-    int attackPhase = 0;
-    bool section;
     bool slash = false;
     [SerializeField] float dashDuration = 0.5f;
+
+    [Header("Shockwave Spawn Stats")]
     [SerializeField] GameObject shockwavePrefab;
     [SerializeField] float spawnRange = 3.0f;
     [HideInInspector]public List<GameObject> activeShockwaves = new List<GameObject>();
+
+    [Header("Enemy Spawn Stats")]
+    [SerializeField] GameObject[] enemyPrefabs;
+    [SerializeField] SpawnPoint[] enemySpawnPoints;
+    [SerializeField] Transform arenaCenter;
+
+    [Header("Phase Management")]
+    Health bossHealth;
+    [SerializeField] int attackPhase = 0;
+
 
     [Header("Movement Stats")]
     [SerializeField] float moveSpeed = 15.0f;
     Rigidbody2D rb;
     GameObject player;
     [SerializeField] LayerMask playerLayer;
-    [SerializeField] RicochetPoint[] ricochetPoints;
-    List<RicochetPoint> orderedRicochetPoints = new List<RicochetPoint>();
-    List<Vector2> targetOrder = new List<Vector2>();
-    int targetIndex = 0;
-
+  
     EnemyManager enemyManager;
     [Header("Effects")]
     [SerializeField] Color attackColor;
@@ -49,12 +56,37 @@ public class AlixBoss : EnemyBase
         player = GameObject.FindGameObjectWithTag("Player");
         enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
         bpmInteract = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<BPMInteract>();
+        bossHealth = GetComponent<Health>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!section)
+        if(bossHealth.GetHealthPercent() <= .66f && attackPhase == 0)
+        {
+            attackPhase = 1;
+
+            if (bpmInteract.GetCurrentSection() == 12)
+            {
+                bpmInteract.PlayAudioFromSection(7);
+            }
+        }
+        else if (bossHealth.GetHealthPercent() <= .33f && attackPhase == 1)
+        {
+            attackPhase = 2;
+            
+        }
+        else
+        {
+            if(bpmInteract.GetCurrentSection() == 7)
+            {
+                bpmInteract.PlayAudioFromSection(2);
+            }
+        }
+
+
+
+        if (!section)
         {
             sRend.color = attackColor;
         }
@@ -83,47 +115,66 @@ public class AlixBoss : EnemyBase
       
     }
 
-    void GetRicochetPoints()
+    //void GetRicochetPoints()
+    //{
+    //    targetOrder.Clear();
+    //    orderedRicochetPoints.Clear();
+    //    for (int i = 0; i < ricochetPoints.Length; i++)
+    //    {
+    //        int index = Random.Range(0, ricochetPoints.Length);
+    //        if(targetOrder.Contains(ricochetPoints[index].GetPosition()))
+    //        {
+    //            i--;
+    //            continue;
+    //        }
+    //        targetOrder.Add(ricochetPoints[index].GetPosition());
+    //        orderedRicochetPoints.Add(ricochetPoints[index]);
+    //       // Debug.Log("Added Ricochet Point at: " + ricochetPoints[index].gameObject.name);
+    //    }    
+    //}
+
+    //IEnumerator RicochetAttack()
+    //{
+    //    slash = true;
+    //    //Debug.Log("Ricochet Attack Initiated");
+    //    if (targetIndex >= targetOrder.Count)
+    //    {
+    //        targetIndex = 0;
+    //    }
+
+    //    int currentIndex = targetIndex;
+    //    targetIndex++;
+
+    //    tRend.emitting = true;
+    //    Vector2 direction = (targetOrder[currentIndex] - (Vector2)transform.position).normalized;
+    //    orderedRicochetPoints[currentIndex].ActivatePoint();
+    //    this.transform.position = Vector2.Lerp(this.transform.position, targetOrder[currentIndex], (60f / bpmInteract.GetBPM() * 2 ));
+
+
+    //    slash = false;
+    //    tRend.emitting = false;
+    //    orderedRicochetPoints[currentIndex].DeactivatePoint();
+    //    slash = false;
+    //    yield return null;
+    //}
+
+    void SpawnEnemies()
     {
-        targetOrder.Clear();
-        orderedRicochetPoints.Clear();
-        for (int i = 0; i < ricochetPoints.Length; i++)
+        for (int i = 0; i < 3; i++)
         {
-            int index = Random.Range(0, ricochetPoints.Length);
-            if(targetOrder.Contains(ricochetPoints[index].GetPosition()))
-            {
-                i--;
-                continue;
-            }
-            targetOrder.Add(ricochetPoints[index].GetPosition());
-            orderedRicochetPoints.Add(ricochetPoints[index]);
-           // Debug.Log("Added Ricochet Point at: " + ricochetPoints[index].gameObject.name);
-        }    
+            int randEnemy = Random.Range(0, enemyPrefabs.Length);
+            int randPoint = Random.Range(0, enemySpawnPoints.Length);
+            enemySpawnPoints[randPoint].PlayEffect();
+            StartCoroutine(enemySpawnPoints[randPoint].SpawnEnemy(enemyPrefabs[randEnemy]));
+        }
     }
 
-    IEnumerator RicochetAttack()
+    void DestroyEnemies()
     {
-        slash = true;
-        //Debug.Log("Ricochet Attack Initiated");
-        if (targetIndex >= targetOrder.Count)
+        foreach(SpawnPoint spawnPoint in enemySpawnPoints)
         {
-            targetIndex = 0;
+            spawnPoint.DestroyEnemy();
         }
-
-        int currentIndex = targetIndex;
-        targetIndex++;
-
-        tRend.emitting = true;
-        Vector2 direction = (targetOrder[currentIndex] - (Vector2)transform.position).normalized;
-        orderedRicochetPoints[currentIndex].ActivatePoint();
-        this.transform.position = Vector2.Lerp(this.transform.position, targetOrder[currentIndex], (60f / bpmInteract.GetBPM() * 2 ));
-
-
-        slash = false;
-        tRend.emitting = false;
-        orderedRicochetPoints[currentIndex].DeactivatePoint();
-        slash = false;
-        yield return null;
     }
 
     IEnumerator DashTowardsPlayer()
@@ -131,6 +182,7 @@ public class AlixBoss : EnemyBase
         Vector2 direction;
         Vector2 playerPos = player.transform.position;
         direction = (playerPos - rb.position).normalized;
+        slash = true;
 
         tRend.emitting = true;
         rb.linearVelocity = direction * moveSpeed;
@@ -149,33 +201,28 @@ public class AlixBoss : EnemyBase
 
     void SpawnShockwaveNearBoss()
     {
-        Vector2 spawnPos = (Vector2)this.transform.position + UnityEngine.Random.insideUnitCircle * spawnRange;
+        Vector2 spawnPos = (Vector2)this.transform.position + UnityEngine.Random.insideUnitCircle * spawnRange / 1.5f;
         GameObject shock = Instantiate(shockwavePrefab, spawnPos, Quaternion.identity);
         activeShockwaves.Add(shock);
     }
 
     public override void AddToBeatCount()
     {
-        if (active && !section)
+        foreach (GameObject shock in activeShockwaves)
         {
-            beatCount++;
-            foreach (GameObject shock in activeShockwaves)
+            if (shock != null)
             {
-                if (shock != null)
-                {
-                    shock.GetComponent<Shockwave>().AddToBeatCount();
-                }
+                shock.GetComponent<Shockwave>().AddToBeatCount();
             }
-
-            if(beatCount %2 == 0)
-                SpawnShockwaveNearPlayer();
-            StartCoroutine(DashTowardsPlayer());
         }
-        if (active && section)
+
+        if(attackPhase == 0)
         {
-            beatCount++;
-            if (beatCount % 2 == 0)
-                SpawnShockwaveNearBoss();
+            PhaseOneAttackRotation();
+        }
+        else if (attackPhase == 1)
+        {
+            PhaseTwoAttackRotation();
         }
     }
 
@@ -184,18 +231,56 @@ public class AlixBoss : EnemyBase
         if (active)
         {
             barBeatCount++;
-            foreach (GameObject shock in activeShockwaves)
-            {
-                if (shock != null)
-                {
-                    shock.GetComponent<Shockwave>().AddToBeatCount();
-                }
-            }
             if (barBeatCount %8 == 0)
             {
                 section = !section;
-            }
-            
+            }           
+        }
+    }
+
+    void PhaseOneAttackRotation()
+    {
+        if (active && !section)
+        {
+            beatCount++;
+
+
+            if (beatCount % 2 == 0)
+                SpawnShockwaveNearPlayer();
+            StartCoroutine(DashTowardsPlayer());
+        }
+        if (active && section)
+        {
+            beatCount++;
+            transform.position = arenaCenter.position;
+            if (beatCount % 2 == 0)
+                SpawnShockwaveNearBoss();
+        }
+    }
+
+    void PhaseTwoAttackRotation()
+    {
+        if (active && !section)
+        {
+            beatCount++;
+
+            DestroyEnemies();
+
+            if (beatCount % 2 == 0)
+                SpawnShockwaveNearPlayer();
+            if (beatCount % 8 == 0)
+                transform.position = player.transform.position + (Vector3)(UnityEngine.Random.insideUnitCircle.normalized * spawnRange );
+
+            StartCoroutine(DashTowardsPlayer());
+        }
+        if (active && section)
+        {
+            beatCount++;
+            transform.position = arenaCenter.position;
+            if (beatCount % 2 == 0)
+                SpawnShockwaveNearBoss();
+            if (beatCount % 32 == 0)
+                SpawnEnemies();
         }
     }
 }

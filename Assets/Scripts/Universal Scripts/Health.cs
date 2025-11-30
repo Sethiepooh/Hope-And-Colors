@@ -85,6 +85,11 @@ public class Health : MonoBehaviour
         damagable = b;
     }
 
+    public float GetHealthPercent()
+    {
+        return (float)currentHealth / maxHealth;
+    }
+
     IEnumerator HitFlash(Color flashColor)
     {
         sRend.color = flashColor;

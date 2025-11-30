@@ -38,6 +38,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] Slider inspirationBar;
     float inspirationGainOnHit;
     [HideInInspector]public float currentInspiration = 0f;
+    PlayerMovement playerMovement;
 
     [Header("Hyperdrive Riff Stats")]
     [SerializeField] GameObject riffProjectile;
@@ -68,6 +69,7 @@ public class PlayerAttack : MonoBehaviour
         p_Mov = GetComponent<PlayerMovement>();
         currentDamage = baseDamage;
         attackRange = Vector2.Distance(transform.position, facedDirection.position);
+        playerMovement = GetComponent<PlayerMovement>();
     }
 
     void Start()
@@ -149,7 +151,7 @@ public class PlayerAttack : MonoBehaviour
             }
             else
             {
-                aIndicator.AttackFlash();
+                //aIndicator.AttackFlash();
                 inspirationGainOnHit = inspirationgainOffBeat;
                 comboStep = 0;
                 if(allegroMode)
@@ -162,8 +164,9 @@ public class PlayerAttack : MonoBehaviour
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, attackRange, enemyLayer);
             foreach (Collider2D enemy in hitEnemies)
             {
-                if (enemy.gameObject.CompareTag("Enemy"))
+                if (enemy.gameObject.CompareTag("Enemy") || enemy.gameObject.CompareTag("Boss"))
                 {
+                    Debug.Log("Enemy Hit Detected");
                     // Check if enemy is in front of player
                     Vector2 relativePos = enemy.transform.position - transform.position;
                     Vector2 forward = (Vector2)facedDirection.position - (Vector2)transform.position;
@@ -206,13 +209,15 @@ public class PlayerAttack : MonoBehaviour
     {
         if (context.performed)
         {
-            if (inspirationBar.value >= (maxInspiration / 4) / maxInspiration && !allegroMode)
+            if (inspirationBar.value >= .25f && !allegroMode)
             {
                 allegroMode = true;
+                playerMovement.allegro = true;
             }
             else if (allegroMode)
             {
                 allegroMode = false;
+                playerMovement.allegro = false;
             }           
         }
     }
