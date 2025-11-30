@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    public int maxHealth = 100;
-    int currentHealth;
+    public float maxHealth = 100;
+    float currentHealth;
     [SerializeField] Slider healthBar;
     [SerializeField] bool isPlayer = false;
     [SerializeField] ParticleSystem deathParticles;
@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
     public float blastRadius;
     SpriteRenderer sRend;
     Color defaultColor;
-    bool damagable = true;
+     public bool damagable = true;
 
     RespawnManager r_Man;
 
@@ -30,7 +30,7 @@ public class Health : MonoBehaviour
         r_Man = GameObject.FindWithTag("RespawnManager").GetComponent<RespawnManager>();
     }
 
-    public void Heal(int heal)
+    public void Heal(float heal)
     {
         currentHealth += heal;
         if (currentHealth > maxHealth)

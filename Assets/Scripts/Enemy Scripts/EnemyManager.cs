@@ -6,6 +6,7 @@ public class EnemyManager : MonoBehaviour
 {
     //public List<GameObject> enemies = new List<GameObject>();
     public EnemyGroup[] enemyGroups;
+    public List<GameObject> spawnedEnemies = new List<GameObject>();
     RespawnManager respawnManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -98,6 +99,15 @@ public class EnemyManager : MonoBehaviour
                 return false;
         }
         return true;
+    }
+
+    public void AddBeatToNew()
+    {
+        for(int i = 0; i < spawnedEnemies.Count; i++)
+        {
+            if (spawnedEnemies[i] != null && spawnedEnemies[i].activeInHierarchy)
+                spawnedEnemies[i].GetComponent<EnemyBase>().AddToBeatCount();
+        }
     }
 
 

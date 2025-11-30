@@ -89,6 +89,7 @@ public class PlayerAttack : MonoBehaviour
             
         if (allegroMode)
         {
+            GetComponent<Health>().Heal(1 * Time.deltaTime);
             sRend.color = allegroColor;
             currentInspiration -= inspirationConsumptionRate * Time.deltaTime;
             inspirationBar.value = currentInspiration / maxInspiration;
@@ -154,10 +155,7 @@ public class PlayerAttack : MonoBehaviour
                 //aIndicator.AttackFlash();
                 inspirationGainOnHit = inspirationgainOffBeat;
                 comboStep = 0;
-                if(allegroMode)
-                    currentDamage = baseInspirationDamage;
-                else
-                    currentDamage = baseDamage;
+               return;
             }
 
             // Detect enemies in range of attack

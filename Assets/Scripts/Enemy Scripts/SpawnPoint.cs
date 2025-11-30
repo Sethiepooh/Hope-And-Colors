@@ -4,8 +4,13 @@ using UnityEngine;
 public class SpawnPoint : MonoBehaviour
 {
     [SerializeField] ParticleSystem spawnEffect;
+    EnemyManager enemyManager;
     GameObject currentEnemy;
 
+    private void Start()
+    {
+        enemyManager = GameObject.FindWithTag("EnemyManager").GetComponent<EnemyManager>();
+    }
     public IEnumerator SpawnEnemy(GameObject enemy)
     {
         if(currentEnemy != null)
@@ -17,12 +22,14 @@ public class SpawnPoint : MonoBehaviour
         GameObject spawnedEnemy =  Instantiate(enemy, transform.position, Quaternion.identity);
         currentEnemy = spawnedEnemy;
         spawnedEnemy.GetComponent<EnemyBase>().active = true;
+        enemyManager.spawnedEnemies.Add(spawnedEnemy);
     }
 
     public void DestroyEnemy()
     {
         if (currentEnemy != null)
         {
+            enemyManager.spawnedEnemies.Remove(currentEnemy);
             Destroy(currentEnemy);
             currentEnemy = null;
         }    

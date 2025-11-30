@@ -89,6 +89,7 @@ public class GlitchChild : EnemyBase
 
     public override void AddToBeatCount()
     {
+        Debug.Log("Glitch Child Beat Added");
         if (active)
         {
             if (beatCount == 8)

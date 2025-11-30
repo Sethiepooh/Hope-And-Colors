@@ -11,9 +11,12 @@ public class AlixBoss : EnemyBase
     [SerializeField] int damage = 5;
     [SerializeField] Transform attackPoint;
     int beatCount = 0;
-    int barBeatCount = 0;
+    int barBeatCount = -1;
     bool slash = false;
     [SerializeField] float dashDuration = 0.5f;
+    [SerializeField] Transform projectileSpawn;
+    [SerializeField] GameObject projectile;
+    [SerializeField] ParticleSystem telegraphEffect;
 
     [Header("Shockwave Spawn Stats")]
     [SerializeField] GameObject shockwavePrefab;
@@ -62,25 +65,44 @@ public class AlixBoss : EnemyBase
     // Update is called once per frame
     void Update()
     {
-        if(bossHealth.GetHealthPercent() <= .66f && attackPhase == 0)
+        Vector3 offset = player.transform.position - transform.position;
+        transform.rotation = Quaternion.LookRotation(Vector3.forward, offset);
+
+        if(bpmInteract.GetCurrentSection() == 2 && !active)
         {
             attackPhase = 1;
+            active = true;
+            bossHealth.SetDamagable(true);
+        }
+        if (bossHealth.GetHealthPercent() <= .66f && attackPhase == 1)
+        {
+            attackPhase = 2;        
+        }
+        else if (bossHealth.GetHealthPercent() <= .33f && attackPhase == 2)
+        {
+            attackPhase = 3;
+        }
+       
 
-            if (bpmInteract.GetCurrentSection() == 12)
+        if(attackPhase == 1)
+        {
+            if (bpmInteract.GetCurrentSection() >= 7)
+            {
+                bpmInteract.PlayAudioFromSection(2);
+            }
+        }
+        else if (attackPhase == 2)
+        {
+            if (bpmInteract.GetCurrentSection() >= 13)
             {
                 bpmInteract.PlayAudioFromSection(7);
             }
         }
-        else if (bossHealth.GetHealthPercent() <= .33f && attackPhase == 1)
+        else if(attackPhase == 3)
         {
-            attackPhase = 2;
-            
-        }
-        else
-        {
-            if(bpmInteract.GetCurrentSection() == 7)
+            if (bpmInteract.GetCurrentSection() >= 22)
             {
-                bpmInteract.PlayAudioFromSection(2);
+                bpmInteract.PlayAudioFromSection(13);
             }
         }
 
@@ -160,13 +182,10 @@ public class AlixBoss : EnemyBase
 
     void SpawnEnemies()
     {
-        for (int i = 0; i < 3; i++)
-        {
-            int randEnemy = Random.Range(0, enemyPrefabs.Length);
-            int randPoint = Random.Range(0, enemySpawnPoints.Length);
-            enemySpawnPoints[randPoint].PlayEffect();
-            StartCoroutine(enemySpawnPoints[randPoint].SpawnEnemy(enemyPrefabs[randEnemy]));
-        }
+        int randEnemy = Random.Range(0, enemyPrefabs.Length);
+        int randPoint = Random.Range(0, enemySpawnPoints.Length);
+        enemySpawnPoints[randPoint].PlayEffect();
+        StartCoroutine(enemySpawnPoints[randPoint].SpawnEnemy(enemyPrefabs[randEnemy]));
     }
 
     void DestroyEnemies()
@@ -206,6 +225,14 @@ public class AlixBoss : EnemyBase
         activeShockwaves.Add(shock);
     }
 
+    void FireProjectile()
+    {
+        Vector2 direction = (player.transform.position - transform.position).normalized;
+        GameObject proj = Instantiate(projectile, projectileSpawn.position, Quaternion.identity);
+        proj.GetComponent<Projectile>().direction = direction;
+        proj.GetComponent<Projectile>().speed = 15;
+    }
+
     public override void AddToBeatCount()
     {
         foreach (GameObject shock in activeShockwaves)
@@ -216,19 +243,23 @@ public class AlixBoss : EnemyBase
             }
         }
 
-        if(attackPhase == 0)
+        if(attackPhase == 1)
         {
             PhaseOneAttackRotation();
         }
-        else if (attackPhase == 1)
+        else if (attackPhase == 2)
         {
             PhaseTwoAttackRotation();
+        }
+        else if (attackPhase == 3)
+        {
+            PhaseThreeAttackRotation();
         }
     }
 
     public void AddToBarBeatCount()
     {
-        if (active)
+        if (active && attackPhase > 0)
         {
             barBeatCount++;
             if (barBeatCount %8 == 0)
@@ -244,9 +275,6 @@ public class AlixBoss : EnemyBase
         {
             beatCount++;
 
-
-            if (beatCount % 2 == 0)
-                SpawnShockwaveNearPlayer();
             StartCoroutine(DashTowardsPlayer());
         }
         if (active && section)
@@ -268,8 +296,6 @@ public class AlixBoss : EnemyBase
 
             if (beatCount % 2 == 0)
                 SpawnShockwaveNearPlayer();
-            if (beatCount % 8 == 0)
-                transform.position = player.transform.position + (Vector3)(UnityEngine.Random.insideUnitCircle.normalized * spawnRange );
 
             StartCoroutine(DashTowardsPlayer());
         }
@@ -279,8 +305,33 @@ public class AlixBoss : EnemyBase
             transform.position = arenaCenter.position;
             if (beatCount % 2 == 0)
                 SpawnShockwaveNearBoss();
-            if (beatCount % 32 == 0)
+            if (beatCount % 16 == 0)
                 SpawnEnemies();
+        }
+    }
+
+    void PhaseThreeAttackRotation()
+    {
+        if (active && !section)
+        {
+            beatCount++;
+
+            DestroyEnemies();
+
+            if (beatCount % 2 == 0)
+                SpawnShockwaveNearPlayer();
+            StartCoroutine(DashTowardsPlayer());
+        }
+        if (active && section)
+        {
+            beatCount++;
+            transform.position = arenaCenter.position;
+            if (beatCount % 2 == 0)
+                SpawnShockwaveNearBoss();
+            if (beatCount % 8 == 0)
+                SpawnEnemies();
+            if (beatCount % 4 == 0)
+                FireProjectile();
         }
     }
 }

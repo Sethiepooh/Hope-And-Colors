@@ -48,7 +48,9 @@ public class BPMInteract : MonoBehaviour
 
     public void PlayAudioFromSection(float section)
     {
-        audioSource.time = (60f / section * bpm);
+        float secondsPerBeat = 60f / bpm;
+        float targetTime = (section * 32) * secondsPerBeat;
+        audioSource.time = Mathf.Clamp(targetTime, 0f, audioSource.clip.length);
     }
 
     public int CheckInput()
