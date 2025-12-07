@@ -66,10 +66,9 @@ public class GlitchChild : EnemyBase
                     {
                         player.GetComponent<Health>().TakeDamage(damage);
                         slash = false;
-                    }
+                    }                   
                 }
-            }
-      
+            }     
         }
     }
 
@@ -83,7 +82,11 @@ public class GlitchChild : EnemyBase
         }
         else
         {
-            direction = new Vector2(Random.Range(-1, 1), Random.Range(-1, 1));
+            int randomInt = Random.Range(0, 2);
+            Vector2 playerPos = player.transform.position;
+            direction = (playerPos - rb.position).normalized;
+            if(randomInt == 0)
+                direction = -direction;
         }
 
         tRend.emitting = true;
@@ -102,7 +105,7 @@ public class GlitchChild : EnemyBase
 
     public override void AddToBeatCount()
     {
-        Debug.Log("Glitch Child Beat Added");
+        //Debug.Log("Glitch Child Beat Added");
         if (active)
         {
             if (beatCount == 8)
@@ -144,7 +147,7 @@ public class GlitchChild : EnemyBase
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Wall"))
+        if (collision.gameObject.CompareTag("Enemy")/* || collision.gameObject.CompareTag("Wall")*/)
         {
             clutter = true;
         }
@@ -152,7 +155,7 @@ public class GlitchChild : EnemyBase
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy")|| collision.gameObject.CompareTag("Wall"))
+        if (collision.gameObject.CompareTag("Enemy")/*|| collision.gameObject.CompareTag("Wall")*/)
         {
             clutter = false;
         }

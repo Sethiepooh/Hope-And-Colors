@@ -86,7 +86,7 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
-    bool CheckGroupDefeated(int i)
+    public bool CheckGroupDefeated(int i)
     {
         if(enemyGroups.Length == 0 || i >= enemyGroups.Length)
         {

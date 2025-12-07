@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 
 public class RespawnManager : MonoBehaviour
@@ -10,6 +11,7 @@ public class RespawnManager : MonoBehaviour
     [SerializeField] float resetSpeed;
     GameObject player;
     public int spawnIndex;
+    public int lives = 3;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -27,17 +29,28 @@ public class RespawnManager : MonoBehaviour
 
     public void SetSpawnIndex(GameObject spawnPoint)
     {
-        spawnIndex = spawnPoints.IndexOf(spawnPoint);
-        enemyManager.ActivateGroup(spawnIndex);
+        if (enemyManager.CheckGroupDefeated(spawnIndex))
+        {
+            spawnPoint.GetComponent<RespawnPoint>().active = true;
+            spawnPoint.GetComponent<RespawnPoint>().SwitchColor();  
+            spawnIndex = spawnPoints.IndexOf(spawnPoint);
+            enemyManager.ActivateGroup(spawnIndex);
+        }        
     }
 
     public void ResetPlayer()
     {
+        if (lives <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            return;
+        }
+        lives--;
         StartCoroutine(Respawn());
     }
 
     IEnumerator Respawn()
-    {
+    {        
         player.GetComponent<PlayerMovement>().controlable = false;
         Rigidbody2D playerRb = player.GetComponent<Rigidbody2D>();
         playerRb.linearVelocity = Vector2.zero;

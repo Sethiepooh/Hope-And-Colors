@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -25,6 +26,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] int inspirationPerfectDamagePerCombo = 8;
     [SerializeField] Transform facedDirection;
     [SerializeField] bool canAttack = true;
+    bool stumble;
     public LayerMask enemyLayer;
     [SerializeField] float strikeForce;
     float attackRange;
@@ -46,6 +48,7 @@ public class PlayerAttack : MonoBehaviour
 
     [Header("Effects")]
     [SerializeField]Color allegroColor;
+    [SerializeField] Color stumbleColor;
     SpriteRenderer sRend;
     Color defaultColor;
     TrailRenderer trail;
@@ -102,16 +105,18 @@ public class PlayerAttack : MonoBehaviour
         }
         else
         {
-            sRend.color = defaultColor;
+            if(!stumble)
+                sRend.color = defaultColor;
         }
     }
 
     public void Attack(InputAction.CallbackContext context)
     {
-       
-        if (context.performed && canAttack)
-        {
-           
+        if (!canAttack)
+            return;
+
+        if (context.performed)
+        {         
             if (bpmInteract.CheckInput() == 0)
             {
                 cIndicator.AttackFlash();
@@ -154,9 +159,11 @@ public class PlayerAttack : MonoBehaviour
                         currentDamage = baseDamage;
                 }
             }
-            else
+            else if(bpmInteract.CheckInput() == 2)
             {
-                //aIndicator.AttackFlash();
+                Debug.Log("Missed Attack");
+                StopCoroutine(AttackCooldown());    
+                StartCoroutine(AttackCooldown());
                 inspirationGainOnHit = inspirationgainOffBeat;
                 comboStep = 0;
                return;
@@ -204,11 +211,27 @@ public class PlayerAttack : MonoBehaviour
 
     public void SetCanAttack(bool b)
     {
+        if(stumble)
+            return;
         canAttack = b;
+    }
+
+    IEnumerator AttackCooldown()
+    {
+        sRend.color = stumbleColor;
+        stumble = true;
+        canAttack = false;
+        yield return new WaitForSeconds(1f);
+        stumble = false;
+        canAttack = true;
+        sRend.color = defaultColor;
     }
 
     public void Allegro(InputAction.CallbackContext context)
     {
+        if(stumble)
+            return;
+
         if (context.performed)
         {
             if (inspirationBar.value >= .25f && !allegroMode)

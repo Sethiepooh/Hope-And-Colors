@@ -168,12 +168,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 5
   healthBar: {fileID: 0}
   isPlayer: 0
   deathParticles: {fileID: 1242498882784088164}
   blastParticles: {fileID: 7740997876832393360}
-  blastRadius: 2
+  blastRadius: 4
+  damagable: 1
 --- !u!1 &7569980808906041635
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,7 +203,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 2.1879}
+  m_LocalScale: {x: 8, y: 8, z: 4.3845506}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8411412352301729073}
@@ -364,7 +365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4925802194667023970, guid: 77eab5c6b19bd5a47882ab8a2922edca, type: 3}
       propertyPath: ShapeModule.radius.value
-      value: 1.43
+      value: 3.97
       objectReference: {fileID: 0}
     - target: {fileID: 4925802194667023970, guid: 77eab5c6b19bd5a47882ab8a2922edca, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar

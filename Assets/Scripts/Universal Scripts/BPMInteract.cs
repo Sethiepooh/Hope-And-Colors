@@ -9,16 +9,17 @@ public class BPMInteract : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private Intervals[] intervals;
 
+    public int sectionCheckIndex;
+    public int currentMovement;
+    [SerializeField] float[] sectionBookmarks;
+
     float clipLengthInBeats;
 
     public bool attackWindow;
 
     private void Awake()
     {
-        if(SceneManager.GetActiveScene().buildIndex == 2)
-             GetAudioLength(audioSource.clip);
 
-       
     }
 
     private void Update()
@@ -29,23 +30,41 @@ public class BPMInteract : MonoBehaviour
             interval.CheckForNewInterval(sampledTime);           
         }
 
+        //ResetMovement();
+
         Check();
     }
 
     void GetAudioLength(AudioClip clip)
     {
-        clipLengthInBeats = Mathf.FloorToInt(audioSource.clip.samples / (audioSource.clip.frequency * intervals[3].GetIntervalLength(bpm)));
+        clipLengthInBeats = Mathf.FloorToInt(audioSource.clip.samples / (audioSource.clip.frequency * intervals[sectionCheckIndex].GetIntervalLength(bpm)));
         Debug.Log("Clip Length in Beats: " + clipLengthInBeats);
     }
 
-    public void CheckSegmentEnd()
+    //Managing the section of the song currently playing
+    public void ResetMovement()
     {
-        Debug.Log("Segment End Reached");
+        int currentSection = GetCurrentSection();
+
+        if(currentSection > sectionBookmarks[currentMovement])
+        {
+            PlayAudioFromSection(sectionBookmarks[currentMovement - 1]);
+        }
+    }
+
+    public void NextMovement()
+    {
+        currentMovement++;
+        if (currentMovement >= sectionBookmarks.Length)
+        {
+            currentMovement = 0;
+        }
+        PlayAudioFromSection(sectionBookmarks[currentMovement]);
     }
 
     public int GetCurrentSection()
     {
-        float sampledTime = (audioSource.timeSamples / (audioSource.clip.frequency * intervals[3].GetIntervalLength(bpm)));
+        float sampledTime = (audioSource.timeSamples / (audioSource.clip.frequency * intervals[sectionCheckIndex].GetIntervalLength(bpm)));
         return Mathf.FloorToInt(sampledTime);
     }
 
@@ -56,6 +75,8 @@ public class BPMInteract : MonoBehaviour
         audioSource.time = Mathf.Clamp(targetTime, 0f, audioSource.clip.length);
     }
 
+
+    //Player Input Check
     public int CheckInput()
     {
         float sampledTime = (audioSource.timeSamples / (audioSource.clip.frequency * intervals[0].GetIntervalLength(bpm)));

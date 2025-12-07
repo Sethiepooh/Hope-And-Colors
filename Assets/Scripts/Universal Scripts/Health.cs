@@ -105,12 +105,10 @@ public class Health : MonoBehaviour
         Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, blastRadius);
         foreach (Collider2D target in targets)
         {
-            if(target.CompareTag("Wall"))
-            {
-                continue;
-            }
             var health = target.GetComponent<Health>();
-            health.TakeDamage(20);
+
+            if(health != null)
+                health.TakeDamage(20);
         }
         var aIndicate = transform.GetChild(0).GetComponent<AttackIndicator>();
         sRend.enabled = false;
