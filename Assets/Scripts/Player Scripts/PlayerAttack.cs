@@ -100,6 +100,10 @@ public class PlayerAttack : MonoBehaviour
                 allegroMode = false;
             }
         }
+        else
+        {
+            sRend.color = defaultColor;
+        }
     }
 
     public void Attack(InputAction.CallbackContext context)

@@ -1,6 +1,7 @@
 using NUnit.Framework.Constraints;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class BPMInteract : MonoBehaviour
 {
@@ -14,7 +15,9 @@ public class BPMInteract : MonoBehaviour
 
     private void Awake()
     {
-        GetAudioLength(audioSource.clip);
+        if(SceneManager.GetActiveScene().buildIndex == 2)
+             GetAudioLength(audioSource.clip);
+
        
     }
 
@@ -60,11 +63,11 @@ public class BPMInteract : MonoBehaviour
         float lastInterval = intervals[0].GetLastInterval();
         float nextInterval = lastInterval + 1;
 
-        if (sampledTime > lastInterval + .3f && sampledTime < nextInterval - .3f)
+        if (sampledTime < lastInterval + .2f || sampledTime > nextInterval - .2f)
         {
             return 0;
         }
-        else if(sampledTime > lastInterval + .2f && sampledTime < nextInterval - .2f)
+        else if(sampledTime < lastInterval + .4f || sampledTime > nextInterval - .4f)
         {
             return 1;
         }

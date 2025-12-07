@@ -50,13 +50,26 @@ public class GlitchChild : EnemyBase
             Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
             if (hitPlayers.Length > 0)
             {
-                if (hitPlayers[0].CompareTag("Player"))
+                foreach (Collider2D player in hitPlayers)
                 {
-                    player.GetComponent<Health>().TakeDamage(damage);
-                    Debug.Log("Player Hit!");
-                    slash = false;
+                    if (player.CompareTag("Player"))
+                    {
+                        player.GetComponent<Health>().TakeDamage(damage);
+                        slash = false;
+                    }
+                    else if (player.CompareTag("Obstacle"))
+                    {
+                        player.GetComponent<Health>().TakeDamage(damage);
+                        slash = false;
+                    }
+                    else if(player.CompareTag("Bomb"))
+                    {
+                        player.GetComponent<Health>().TakeDamage(damage);
+                        slash = false;
+                    }
                 }
-            }          
+            }
+      
         }
     }
 
@@ -131,7 +144,7 @@ public class GlitchChild : EnemyBase
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Wall"))
         {
             clutter = true;
         }
@@ -139,7 +152,7 @@ public class GlitchChild : EnemyBase
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy")|| collision.gameObject.CompareTag("Wall"))
         {
             clutter = false;
         }

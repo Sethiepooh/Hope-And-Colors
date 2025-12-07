@@ -305,7 +305,7 @@ public class AlixBoss : EnemyBase
             transform.position = arenaCenter.position;
             if (beatCount % 2 == 0)
                 SpawnShockwaveNearBoss();
-            if (beatCount % 16 == 0)
+            if (beatCount % 20 == 0)
                 SpawnEnemies();
         }
     }

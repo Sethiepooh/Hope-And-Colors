@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -104,6 +105,10 @@ public class Health : MonoBehaviour
         Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, blastRadius);
         foreach (Collider2D target in targets)
         {
+            if(target.CompareTag("Wall"))
+            {
+                continue;
+            }
             var health = target.GetComponent<Health>();
             health.TakeDamage(20);
         }
