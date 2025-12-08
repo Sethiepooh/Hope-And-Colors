@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Health : MonoBehaviour
@@ -140,6 +141,11 @@ public class Health : MonoBehaviour
             var col = gameObject.GetComponent<Collider2D>();
             col.enabled = false;
             deathParticles.Play();
+            if(SceneManager.GetActiveScene().buildIndex == 1)
+            {
+                WaveSpawner waveSpawner = GameObject.FindFirstObjectByType<WaveSpawner>();
+                waveSpawner.enemiesSpawnedInCurrentWave--;
+            }
         }
         else if (gameObject.CompareTag("Obstacle"))
         {
