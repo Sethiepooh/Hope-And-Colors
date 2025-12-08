@@ -521,7 +521,7 @@ MonoBehaviour:
   - {fileID: 5601313213131780542, guid: 3ada33bbebcb19244bca5e96f31cc147, type: 3}
   - {fileID: 5690663883746622439, guid: 6ae9e09401086a04d992ff0b5fc7917a, type: 3}
   - {fileID: 2342308305547420243, guid: 406a03fb2ba1eb546a5daafe73773be2, type: 3}
-  enemiesPerWave: 5
+  enemiesPerWave: 6
   enemiesSpawnedInCurrentWave: 0
 --- !u!4 &508741407
 Transform:

@@ -21,8 +21,11 @@ public class SpawnPoint : MonoBehaviour
         yield return new WaitForSeconds(4);
         GameObject spawnedEnemy =  Instantiate(enemy, transform.position, Quaternion.identity);
         currentEnemy = spawnedEnemy;
-        spawnedEnemy.GetComponent<EnemyBase>().active = true;
-        enemyManager.spawnedEnemies.Add(spawnedEnemy);
+        if(spawnedEnemy.GetComponent<EnemyBase>() != null)
+        {
+            spawnedEnemy.GetComponent<EnemyBase>().active = true;
+            enemyManager.spawnedEnemies.Add(spawnedEnemy);
+        }
     }
 
     public void DestroyEnemy()
