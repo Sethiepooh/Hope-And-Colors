@@ -29,7 +29,10 @@ public class WaveSpawner : MonoBehaviour
 
         if (spawning == false && enemiesSpawnedInCurrentWave == 0)
         {
-            enemiesPerWave += 3;
+            if(enemiesPerWave < spawnPoints.Length)
+            {
+                enemiesPerWave += 3;
+            }
             spawning = true;
             StartCoroutine(SpawnGroup());
         }
