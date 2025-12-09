@@ -33,6 +33,7 @@ public class SpawnPoint : MonoBehaviour
         if (currentEnemy != null)
         {
             enemyManager.spawnedEnemies.Remove(currentEnemy);
+            currentEnemy.GetComponent<Health>().TakeDamage(1000);
             Destroy(currentEnemy);
             currentEnemy = null;
         }    

@@ -24,7 +24,10 @@ public class BPMInteract : MonoBehaviour
 
     private void Update()
     {
-        foreach(Intervals interval in intervals)
+        if (audioSource == null)
+            return;
+
+        foreach (Intervals interval in intervals)
         {
             float sampledTime = (audioSource.timeSamples / (audioSource.clip.frequency * interval.GetIntervalLength(bpm)));
             interval.CheckForNewInterval(sampledTime);           
@@ -46,7 +49,12 @@ public class BPMInteract : MonoBehaviour
     {
         int currentSection = GetCurrentSection();
 
-        if(currentSection > sectionBookmarks[currentMovement])
+        if(currentMovement >= sectionBookmarks.Length)
+        {
+            currentMovement = sectionBookmarks.Length - 1;
+        }
+
+        if (currentSection > sectionBookmarks[currentMovement])
         {
             PlayAudioFromSection(sectionBookmarks[currentMovement - 1]);
         }
@@ -79,6 +87,8 @@ public class BPMInteract : MonoBehaviour
     //Player Input Check
     public int CheckInput()
     {
+        if (audioSource == null)
+            return -1;
         float sampledTime = (audioSource.timeSamples / (audioSource.clip.frequency * intervals[0].GetIntervalLength(bpm)));
 
         float lastInterval = intervals[0].GetLastInterval();

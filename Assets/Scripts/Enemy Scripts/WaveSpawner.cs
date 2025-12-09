@@ -10,6 +10,7 @@ public class WaveSpawner : MonoBehaviour
     public NextLevel nextLevel;
 
     int wavesCompleted = 0;
+    bool done = false;
 
     bool spawning = true;
 
@@ -22,17 +23,21 @@ public class WaveSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(wavesCompleted >= 2)
+        if(wavesCompleted >= 3 && !done)
         {
+            Debug.Log("All waves completed!");
             nextLevel.LoadNextLevel();
+            done = true;
         }
 
-        if (spawning == false && enemiesSpawnedInCurrentWave == 0)
+        if (spawning == false && enemiesSpawnedInCurrentWave == 0 && !done)
         {
             if(enemiesPerWave < spawnPoints.Length)
             {
                 enemiesPerWave += 3;
             }
+            wavesCompleted++;
+            Debug.Log("Wave " + wavesCompleted + " completed!");
             spawning = true;
             StartCoroutine(SpawnGroup());
         }
@@ -56,7 +61,7 @@ public class WaveSpawner : MonoBehaviour
                 {
                     i--; // Do not count this enemy towards the wave total
                 }
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(1f);
             }
             else
             {

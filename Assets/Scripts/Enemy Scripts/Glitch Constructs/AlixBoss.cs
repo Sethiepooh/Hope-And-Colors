@@ -42,6 +42,7 @@ public class AlixBoss : EnemyBase
     EnemyManager enemyManager;
     [Header("Effects")]
     [SerializeField] Color attackColor;
+    [SerializeField] ParticleSystem chargeEffect;
     TrailRenderer tRend;
     Color defaultColor;
     SpriteRenderer sRend;
@@ -169,9 +170,19 @@ public class AlixBoss : EnemyBase
 
     void DestroyEnemies()
     {
-        foreach(SpawnPoint spawnPoint in enemySpawnPoints)
+        int enemiesDestroyed = 0;
+
+        foreach (SpawnPoint spawnPoint in enemySpawnPoints)
         {
-            spawnPoint.DestroyEnemy();
+            if(enemiesDestroyed >= 3)
+            {
+                break;
+            }
+            if (spawnPoint.HasEnemy())
+            {
+                spawnPoint.DestroyEnemy();
+
+            }
         }
     }
 
@@ -199,6 +210,7 @@ public class AlixBoss : EnemyBase
 
     void SpawnShockwaveNearBoss()
     {
+        chargeEffect.Play();
         Vector2 spawnPos = (Vector2)this.transform.position + UnityEngine.Random.insideUnitCircle * spawnRange / 1.5f;
         GameObject shock = Instantiate(shockwavePrefab, spawnPos, Quaternion.identity);
         activeShockwaves.Add(shock);
@@ -250,13 +262,13 @@ public class AlixBoss : EnemyBase
 
     void PhaseOneAttackRotation()
     {
-        if (active && section)
+        if (active && !section)
         {
             beatCount++;
-
+            chargeEffect.Stop();
             StartCoroutine(DashTowardsPlayer());
         }
-        if (active && !section)
+        if (active && section)
         {
             beatCount++;
             transform.position = arenaCenter.position;
@@ -270,7 +282,7 @@ public class AlixBoss : EnemyBase
         if (active && !section)
         {
             beatCount++;
-
+            chargeEffect.Stop();
             DestroyEnemies();
 
             if (beatCount % 2 == 0)
@@ -294,9 +306,7 @@ public class AlixBoss : EnemyBase
         if (active && !section)
         {
             beatCount++;
-
-            DestroyEnemies();
-
+            chargeEffect.Stop();
             if (beatCount % 2 == 0)
                 SpawnShockwaveNearPlayer();
             StartCoroutine(DashTowardsPlayer());
@@ -312,5 +322,11 @@ public class AlixBoss : EnemyBase
             if (beatCount % 4 == 0)
                 FireProjectile();
         }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 }

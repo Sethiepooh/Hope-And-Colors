@@ -25,9 +25,10 @@ public class Projectile : MonoBehaviour
     {
         if (fireFromPlayer)
         {
-            if (collision.gameObject.CompareTag("Enemy"))
+            if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss"))
             {
-                collision.gameObject.GetComponent<Health>().TakeDamage(damage);
+                if(collision.gameObject.GetComponent<Health>().damagable)
+                    collision.gameObject.GetComponent<Health>().TakeDamage(damage);
             }
             Destroy(gameObject);
         }

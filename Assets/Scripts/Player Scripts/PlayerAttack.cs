@@ -94,7 +94,8 @@ public class PlayerAttack : MonoBehaviour
         if (allegroMode)
         {
             GetComponent<Health>().Heal(healthRegenRate * Time.deltaTime);
-            sRend.color = allegroColor;
+            if(!stumble)
+                sRend.color = allegroColor;
             currentInspiration -= inspirationConsumptionRate * Time.deltaTime;
             inspirationBar.value = currentInspiration / maxInspiration;
             if (inspirationBar.value <= 0)
@@ -267,9 +268,9 @@ public class PlayerAttack : MonoBehaviour
     
     public void FireHyperdriveRiff()
     {
-        if (currentInspiration >= (maxInspiration / 4) && hyperdriveRiff)
+        if (currentInspiration >= (maxInspiration / 8) && hyperdriveRiff)
         {
-            currentInspiration -= (maxInspiration / 4);
+            currentInspiration -= (maxInspiration / 8);
             inspirationBar.value = currentInspiration / maxInspiration;
             var blast = Instantiate(riffProjectile, riffSpawnPoint.position, Quaternion.identity);
             blast.GetComponent<Projectile>().direction = facedDirection.localPosition.normalized;

@@ -9,9 +9,13 @@ using UnityEngine.Rendering;
 using System;
 using UnityEngine.UIElements;
 using Object = UnityEngine.Object;
+using UnityEngine.InputSystem;
 
 public class Dialogue : MonoBehaviour
 {
+    NextLevel nextLevel;
+    [SerializeField]PlayerMovement playerMovement;
+
     [Header("Dialogue Settings")]
     [SerializeField] lines[] dialogue;
     public speakerAttributes[] speakers;
@@ -21,28 +25,37 @@ public class Dialogue : MonoBehaviour
     [SerializeField] float delay;
     [SerializeField] GameObject interactionPrompt;
     [SerializeField] GameObject dialogueCanvas;
-    [SerializeField] GameObject dialogueHUD;
-    [SerializeField] UnityEngine.UI.Image profile;
+    //[SerializeField] GameObject dialogueHUD;
+    //[SerializeField] UnityEngine.UI.Image profile;
     [SerializeField] TMP_Text text;
     [SerializeField] TMP_Text title;
-    bool canInteract;
+    [SerializeField]bool canInteract;
+    bool changingLevels;
 
-    [Header("Motion")]
-    [SerializeField] Transform revealPos;
-    [SerializeField] Transform hiddenPos;
-    [SerializeField] float speed;
- 
+    //[Header("Motion")]
+    //[SerializeField] Transform revealPos;
+    //[SerializeField] Transform hiddenPos;
+    //[SerializeField] float speed;
+
 
     void Start()
     {
-        
+        nextLevel = GameObject.FindFirstObjectByType<NextLevel>();
     }
 
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+       
+    }
+
+    public void Interact(InputAction.CallbackContext context)
+    {
+        if (context.performed)
         {
+            Debug.Log("Interacted with dialogue");
+            if (changingLevels)
+                return;
             if (canInteract)
             {
                 text.text = "";
@@ -61,12 +74,17 @@ public class Dialogue : MonoBehaviour
     #region Dialogue Management
     private void HandleDialogue()
     {
-        if(readNum >= dialogue.Length)
+        playerMovement.controlable = false;
+        playerMovement.GetComponent< Rigidbody2D > ().linearVelocity = Vector2.zero;
+
+        if (readNum >= dialogue.Length)
         {
+            nextLevel.LoadNextLevel();
             readNum = 0;
             text.text = "";
             dialogueCanvas.SetActive(false);
             canInteract = true;
+            changingLevels = true;
         }
         else
         {
@@ -75,7 +93,7 @@ public class Dialogue : MonoBehaviour
                 dialogueCanvas.SetActive(true);
             }
             StartCoroutine(RollingText(delay, SkipCommands(readNum)));
-            profile.sprite = dialogue[readNum].profileSprite;
+            //profile.sprite = dialogue[readNum].profileSprite;
             readNum++;
         }
     }
@@ -165,7 +183,8 @@ public class Dialogue : MonoBehaviour
             interactionPrompt.SetActive(false);
         }
 
-        dialogueCanvas.SetActive(false);
+        if (dialogueCanvas != null)
+            dialogueCanvas.SetActive(false);
         canInteract = false;
         StopAllCoroutines();
         readNum = 0;
