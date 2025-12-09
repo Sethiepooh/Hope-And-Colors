@@ -76,34 +76,13 @@ public class AlixBoss : EnemyBase
         }
         if (bossHealth.GetHealthPercent() <= .66f && attackPhase == 1)
         {
-            attackPhase = 2;        
+            attackPhase = 2;
+            bpmInteract.currentMovement++;
         }
         else if (bossHealth.GetHealthPercent() <= .33f && attackPhase == 2)
         {
             attackPhase = 3;
-        }
-       
-
-        if(attackPhase == 1)
-        {
-            if (bpmInteract.GetCurrentSection() >= 7)
-            {
-                bpmInteract.PlayAudioFromSection(2);
-            }
-        }
-        else if (attackPhase == 2)
-        {
-            if (bpmInteract.GetCurrentSection() >= 13)
-            {
-                bpmInteract.PlayAudioFromSection(7);
-            }
-        }
-        else if(attackPhase == 3)
-        {
-            if (bpmInteract.GetCurrentSection() >= 22)
-            {
-                bpmInteract.PlayAudioFromSection(13);
-            }
+            bpmInteract.currentMovement++;
         }
 
 
@@ -271,13 +250,13 @@ public class AlixBoss : EnemyBase
 
     void PhaseOneAttackRotation()
     {
-        if (active && !section)
+        if (active && section)
         {
             beatCount++;
 
             StartCoroutine(DashTowardsPlayer());
         }
-        if (active && section)
+        if (active && !section)
         {
             beatCount++;
             transform.position = arenaCenter.position;

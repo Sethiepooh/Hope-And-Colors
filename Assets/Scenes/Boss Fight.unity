@@ -1825,7 +1825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5940960966160364567, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -113.02
+      value: -117.43
       objectReference: {fileID: 0}
     - target: {fileID: 5940960966160364567, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2879,7 +2879,7 @@ Transform:
   m_GameObject: {fileID: 1281278037}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -113.02, y: -13.97, z: -10}
+  m_LocalPosition: {x: -117.43, y: -13.97, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3027,7 +3027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6783e8915671874d8505f3d308d03ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
 --- !u!4 &1388918328 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
@@ -3184,7 +3184,7 @@ Transform:
   m_GameObject: {fileID: 1483774367}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -113.02, y: -13.97, z: -10}
+  m_LocalPosition: {x: -117.43, y: -13.97, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3952,7 +3952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66148d0abe3bb9b43886a843218187c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bpm: 125
+  bpm: 124
   audioSource: {fileID: 876259237}
   intervals:
   - steps: 1
@@ -4079,8 +4079,8 @@ MonoBehaviour:
     trigger:
       m_PersistentCalls:
         m_Calls: []
-  sectionCheckIndex: 1
-  currentMovement: 3
+  sectionCheckIndex: 3
+  currentMovement: 2
   sectionBookmarks:
   - 0
   - 2
