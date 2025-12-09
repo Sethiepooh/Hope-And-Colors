@@ -30777,22 +30777,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: stumbleColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: stumbleColor.b
-      value: 0.277
-      objectReference: {fileID: 0}
-    - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: stumbleColor.g
-      value: 0.277
-      objectReference: {fileID: 0}
-    - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: stumbleColor.r
-      value: 0.277
-      objectReference: {fileID: 0}
-    - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: enemyLayer.m_Bits
       value: 64
       objectReference: {fileID: 0}

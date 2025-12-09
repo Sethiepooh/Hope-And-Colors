@@ -4081,8 +4081,12 @@ MonoBehaviour:
         m_Calls: []
   sectionCheckIndex: 1
   currentMovement: 3
-  sectionBookmarks: []
-  attackWindow: 1
+  sectionBookmarks:
+  - 0
+  - 2
+  - 7
+  - 13
+  attackWindow: 0
 --- !u!4 &2077714267
 Transform:
   m_ObjectHideFlags: 0

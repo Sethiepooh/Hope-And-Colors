@@ -30,7 +30,7 @@ public class BPMInteract : MonoBehaviour
             interval.CheckForNewInterval(sampledTime);           
         }
 
-        //ResetMovement();
+        ResetMovement();
 
         Check();
     }
