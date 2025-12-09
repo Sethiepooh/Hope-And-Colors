@@ -174,7 +174,7 @@ public class AlixBoss : EnemyBase
 
         foreach (SpawnPoint spawnPoint in enemySpawnPoints)
         {
-            if(enemiesDestroyed >= 3)
+            if(enemiesDestroyed >= 4)
             {
                 break;
             }

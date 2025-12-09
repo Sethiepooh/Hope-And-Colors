@@ -156,7 +156,18 @@ public class Health : MonoBehaviour
             rb.linearVelocity = Vector3.zero;
             deathParticles.Play();
         }
-        yield return new WaitForSeconds(.5f);
+        else if (gameObject.CompareTag("Boss"))
+        {
+            sRend.enabled = false;
+            var col = gameObject.GetComponent<Collider2D>();
+            col.enabled = false;
+            var rb = gameObject.GetComponent<Rigidbody2D>();
+            rb.linearVelocity = Vector3.zero;
+            deathParticles.Play();
+            NextLevel nextLevel = GameObject.FindFirstObjectByType<NextLevel>();
+            nextLevel.LoadNextLevel();
+        }
+            yield return new WaitForSeconds(.5f);
         this.gameObject.SetActive(false);
     }
 

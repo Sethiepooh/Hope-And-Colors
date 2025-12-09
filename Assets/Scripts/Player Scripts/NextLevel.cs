@@ -6,7 +6,7 @@ public class NextLevel : MonoBehaviour
 {
     public Image blackFade;
     int fade = 0;
-
+    bool restart = false;
 
     private void Start()
     {
@@ -45,6 +45,11 @@ public class NextLevel : MonoBehaviour
                 }
                 else
                 {
+                    if (restart)
+                    {
+                        SceneManager.LoadScene(0);
+                        return;
+                    }
                     int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
                     SceneManager.LoadScene(currentSceneIndex + 1);
                 }
@@ -55,7 +60,8 @@ public class NextLevel : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
+        restart = true;
+        fade = 1;
     }
 
     public void LoadNextLevel()
