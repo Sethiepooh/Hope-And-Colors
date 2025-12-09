@@ -24,15 +24,21 @@ public class NextLevel : MonoBehaviour
                     Color color = blackFade.color;
                     color.a -= Time.deltaTime / 2;
                     blackFade.color = color;
+                    
                 }
                 else
                 {
+                    blackFade.gameObject.SetActive(false);
                     fade = 2;
                 }
                 break;
             case 1:
                 if(blackFade.color.a < 1)
                 {
+                    if(!blackFade.gameObject.activeSelf)
+                    {
+                        blackFade.gameObject.SetActive(true);
+                    }
                     Color color = blackFade.color;
                     color.a += Time.deltaTime / 2;
                     blackFade.color = color;
