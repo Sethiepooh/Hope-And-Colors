@@ -22,7 +22,7 @@ public class WaveSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(wavesCompleted >= 3)
+        if(wavesCompleted >= 2)
         {
             nextLevel.LoadNextLevel();
         }
