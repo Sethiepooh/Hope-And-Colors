@@ -394,13 +394,14 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 0
-  strikeForce: 0
+  strikeForce: 5
   inspirationGainOnBeat: 5
   inspirationgainOffBeat: 1
   maxInspiration: 100
   inspirationConsumptionRate: 5
   inspirationBar: {fileID: 1217245171944948475}
   currentInspiration: 0
+  healthRegenRate: 3
   riffProjectile: {fileID: 8608247141467209458, guid: 8c306108a4934a4498c6f3c855612df8, type: 3}
   riffSpawnPoint: {fileID: 2125546132979403559}
   allegroColor: {r: 0.97394437, g: 0.61698115, b: 1, a: 1}

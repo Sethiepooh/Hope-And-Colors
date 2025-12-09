@@ -1,0 +1,73 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+public class NextLevel : MonoBehaviour
+{
+    public Image blackFade;
+    int fade = 0;
+
+
+    private void Start()
+    {
+        fade = 0;
+    }
+
+    private void Update()
+    {
+        switch(fade)
+        {
+            case 0:
+
+                if (blackFade.color.a > 0)
+                {
+                    Color color = blackFade.color;
+                    color.a -= Time.deltaTime / 2;
+                    blackFade.color = color;
+                }
+                else
+                {
+                    fade = 2;
+                }
+                break;
+            case 1:
+                if(blackFade.color.a < 1)
+                {
+                    Color color = blackFade.color;
+                    color.a += Time.deltaTime / 2;
+                    blackFade.color = color;
+                }
+                else
+                {
+                    int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+                    SceneManager.LoadScene(currentSceneIndex + 1);
+                }
+                break;
+            case 2:
+                break;
+        }
+    }
+    public void StartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void LoadNextLevel()
+    {
+        fade = 1;
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quit");
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            LoadNextLevel();
+        }
+    }
+}

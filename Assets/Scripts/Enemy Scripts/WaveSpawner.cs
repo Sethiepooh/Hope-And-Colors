@@ -7,6 +7,7 @@ public class WaveSpawner : MonoBehaviour
     public GameObject[] enemies;
     public int enemiesPerWave;
     public int enemiesSpawnedInCurrentWave = 0;
+    public NextLevel nextLevel;
 
     int wavesCompleted = 0;
 
@@ -23,7 +24,7 @@ public class WaveSpawner : MonoBehaviour
     {
         if(wavesCompleted >= 3)
         {
-            return;
+            nextLevel.LoadNextLevel();
         }
 
         if (spawning == false && enemiesSpawnedInCurrentWave == 0)

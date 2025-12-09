@@ -41,6 +41,7 @@ public class PlayerAttack : MonoBehaviour
     float inspirationGainOnHit;
     [HideInInspector]public float currentInspiration = 0f;
     PlayerMovement playerMovement;
+    public float healthRegenRate;
 
     [Header("Hyperdrive Riff Stats")]
     [SerializeField] GameObject riffProjectile;
@@ -92,7 +93,7 @@ public class PlayerAttack : MonoBehaviour
             
         if (allegroMode)
         {
-            GetComponent<Health>().Heal(1 * Time.deltaTime);
+            GetComponent<Health>().Heal(healthRegenRate * Time.deltaTime);
             sRend.color = allegroColor;
             currentInspiration -= inspirationConsumptionRate * Time.deltaTime;
             inspirationBar.value = currentInspiration / maxInspiration;
