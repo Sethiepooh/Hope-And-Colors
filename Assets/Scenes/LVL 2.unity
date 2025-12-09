@@ -559,7 +559,7 @@ MonoBehaviour:
   - {fileID: 5690663883746622439, guid: 6ae9e09401086a04d992ff0b5fc7917a, type: 3}
   - {fileID: 2342308305547420243, guid: 406a03fb2ba1eb546a5daafe73773be2, type: 3}
   - {fileID: 4940310255883831610, guid: f6dc610fb2aecae4383b92331128d1f0, type: 3}
-  enemiesPerWave: 6
+  enemiesPerWave: 3
   enemiesSpawnedInCurrentWave: 0
   nextLevel: {fileID: 848884027}
 --- !u!4 &508741407
