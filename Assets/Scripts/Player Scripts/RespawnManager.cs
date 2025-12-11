@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 
 public class RespawnManager : MonoBehaviour
@@ -12,6 +13,7 @@ public class RespawnManager : MonoBehaviour
     GameObject player;
     public int spawnIndex;
     public int lives = 3;
+    public Image[] lifeCount;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,8 +36,8 @@ public class RespawnManager : MonoBehaviour
             spawnPoint.GetComponent<RespawnPoint>().active = true;
             spawnPoint.GetComponent<RespawnPoint>().SwitchColor();  
             spawnIndex = spawnPoints.IndexOf(spawnPoint);
-            enemyManager.ActivateGroup(spawnIndex);
         }        
+            enemyManager.ActivateGroup(spawnPoints.IndexOf(spawnPoint));
     }
 
     public void ResetPlayer()
@@ -46,6 +48,11 @@ public class RespawnManager : MonoBehaviour
             return;
         }
         lives--;
+        if(lives > 0)
+        {
+            lifeCount[lives].enabled = false;
+        }
+       
         StartCoroutine(Respawn());
     }
 

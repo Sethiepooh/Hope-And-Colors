@@ -141,7 +141,7 @@ public class Health : MonoBehaviour
             var col = gameObject.GetComponent<Collider2D>();
             col.enabled = false;
             deathParticles.Play();
-            if(SceneManager.GetActiveScene().buildIndex == 2)
+            if(SceneManager.GetActiveScene().buildIndex == 4)
             {
                 WaveSpawner waveSpawner = GameObject.FindFirstObjectByType<WaveSpawner>();
                 waveSpawner.enemiesSpawnedInCurrentWave--;

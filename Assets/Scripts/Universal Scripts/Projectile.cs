@@ -23,6 +23,12 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if(collision.gameObject.CompareTag("Obstacle"))
+        {
+            collision.gameObject.GetComponent<Health>().TakeDamage(damage);
+            Destroy(gameObject);
+        }
+
         if (fireFromPlayer)
         {
             if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss"))

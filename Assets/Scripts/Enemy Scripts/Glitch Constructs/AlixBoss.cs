@@ -45,8 +45,10 @@ public class AlixBoss : EnemyBase
     [SerializeField] ParticleSystem chargeEffect;
     TrailRenderer tRend;
     Color defaultColor;
+    public Color disabledColor = Color.purple;
     SpriteRenderer sRend;
     BPMInteract bpmInteract;
+    public GameObject[] spikes;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -61,6 +63,7 @@ public class AlixBoss : EnemyBase
         enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
         bpmInteract = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<BPMInteract>();
         bossHealth = GetComponent<Health>();
+        ChangeColor(disabledColor);
     }
 
     // Update is called once per frame
@@ -71,10 +74,12 @@ public class AlixBoss : EnemyBase
 
         if(bpmInteract.GetCurrentSection() == 2 && !active)
         {
+            ChangeColor(defaultColor);
             attackPhase = 1;
             active = true;
             bossHealth.SetDamagable(true);
         }
+
         if (bossHealth.GetHealthPercent() <= .66f && attackPhase == 1)
         {
             attackPhase = 2;
@@ -87,15 +92,18 @@ public class AlixBoss : EnemyBase
         }
 
 
-
-        if (!section)
+        if(attackPhase > 0)
         {
-            sRend.color = attackColor;
+            if (!section)
+            {
+                ChangeColor(attackColor);
+            }
+            else
+            {
+               ChangeColor(defaultColor);
+            }
         }
-        else
-        {
-            sRend.color = defaultColor;
-        }
+        
 
         if (slash)
         {
@@ -112,53 +120,20 @@ public class AlixBoss : EnemyBase
         }
     }
 
+    public void ChangeColor(Color newColor)
+    {
+        sRend.color = newColor;
+
+        foreach(GameObject spike in spikes)
+        {
+            spike.GetComponent<SpriteRenderer>().color = newColor;
+        }
+    }
+
     public override void Attack()
     {
       
     }
-
-    //void GetRicochetPoints()
-    //{
-    //    targetOrder.Clear();
-    //    orderedRicochetPoints.Clear();
-    //    for (int i = 0; i < ricochetPoints.Length; i++)
-    //    {
-    //        int index = Random.Range(0, ricochetPoints.Length);
-    //        if(targetOrder.Contains(ricochetPoints[index].GetPosition()))
-    //        {
-    //            i--;
-    //            continue;
-    //        }
-    //        targetOrder.Add(ricochetPoints[index].GetPosition());
-    //        orderedRicochetPoints.Add(ricochetPoints[index]);
-    //       // Debug.Log("Added Ricochet Point at: " + ricochetPoints[index].gameObject.name);
-    //    }    
-    //}
-
-    //IEnumerator RicochetAttack()
-    //{
-    //    slash = true;
-    //    //Debug.Log("Ricochet Attack Initiated");
-    //    if (targetIndex >= targetOrder.Count)
-    //    {
-    //        targetIndex = 0;
-    //    }
-
-    //    int currentIndex = targetIndex;
-    //    targetIndex++;
-
-    //    tRend.emitting = true;
-    //    Vector2 direction = (targetOrder[currentIndex] - (Vector2)transform.position).normalized;
-    //    orderedRicochetPoints[currentIndex].ActivatePoint();
-    //    this.transform.position = Vector2.Lerp(this.transform.position, targetOrder[currentIndex], (60f / bpmInteract.GetBPM() * 2 ));
-
-
-    //    slash = false;
-    //    tRend.emitting = false;
-    //    orderedRicochetPoints[currentIndex].DeactivatePoint();
-    //    slash = false;
-    //    yield return null;
-    //}
 
     void SpawnEnemies()
     {
@@ -168,20 +143,20 @@ public class AlixBoss : EnemyBase
         StartCoroutine(enemySpawnPoints[randPoint].SpawnEnemy(enemyPrefabs[randEnemy]));
     }
 
-    void DestroyEnemies()
+    void DestroyEnemies(int enemiesToDestroy)
     {
         int enemiesDestroyed = 0;
 
         foreach (SpawnPoint spawnPoint in enemySpawnPoints)
         {
-            if(enemiesDestroyed >= 4)
+            if(enemiesDestroyed >= enemiesToDestroy)
             {
                 break;
             }
             if (spawnPoint.HasEnemy())
             {
                 spawnPoint.DestroyEnemy();
-
+                enemiesDestroyed++;
             }
         }
     }
@@ -283,7 +258,7 @@ public class AlixBoss : EnemyBase
         {
             beatCount++;
             chargeEffect.Stop();
-            DestroyEnemies();
+            DestroyEnemies(4);
 
             if (beatCount % 2 == 0)
                 SpawnShockwaveNearPlayer();
@@ -307,6 +282,7 @@ public class AlixBoss : EnemyBase
         {
             beatCount++;
             chargeEffect.Stop();
+            DestroyEnemies(2);
             if (beatCount % 2 == 0)
                 SpawnShockwaveNearPlayer();
             StartCoroutine(DashTowardsPlayer());

@@ -186,8 +186,10 @@ public class PlayerAttack : MonoBehaviour
                     {
                         //Apply damage to enemy & add inspiration to Player
                         Debug.Log("Hit " + enemy.name + " for " + currentDamage + " damage!");
-                        enemy.gameObject.GetComponent<Health>().TakeDamage(currentDamage);
-                        currentInspiration += inspirationGainOnHit;
+                        Health hp = enemy.gameObject.GetComponent<Health>();
+                        hp.TakeDamage(currentDamage);
+                        if(hp.damagable)
+                            currentInspiration += inspirationGainOnHit;
                         if (currentInspiration > maxInspiration)
                             currentInspiration = maxInspiration;
                         inspirationBar.value = currentInspiration / maxInspiration;

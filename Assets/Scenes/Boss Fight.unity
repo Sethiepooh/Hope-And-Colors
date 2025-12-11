@@ -1967,6 +1967,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5940960966160364567, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
   m_PrefabInstance: {fileID: 915683173}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &915683176 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3734539131353021963, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+  m_PrefabInstance: {fileID: 915683173}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &915683177 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8051296837351268726, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+  m_PrefabInstance: {fileID: 915683173}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &915683178 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9019614820453966975, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+  m_PrefabInstance: {fileID: 915683173}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &957743794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,6 +2461,16 @@ MonoBehaviour:
     m_Bits: 8
   attackColor: {r: 0.050980397, g: 0.5137255, b: 1, a: 1}
   chargeEffect: {fileID: 2118155699}
+  disabledColor: {r: 0.11654413, g: 0.07058823, b: 0.34117648, a: 1}
+  spikes:
+  - {fileID: 1500412086}
+  - {fileID: 595026238}
+  - {fileID: 134492687}
+  - {fileID: 359828733}
+  - {fileID: 1662205464}
+  - {fileID: 1171112619}
+  - {fileID: 630661019}
+  - {fileID: 609900974}
 --- !u!50 &1180964107
 Rigidbody2D:
   serializedVersion: 5
@@ -3736,6 +3779,10 @@ MonoBehaviour:
   resetSpeed: 5
   spawnIndex: 0
   lives: 3
+  lifeCount:
+  - {fileID: 915683178}
+  - {fileID: 915683177}
+  - {fileID: 915683176}
 --- !u!4 &1690355401
 Transform:
   m_ObjectHideFlags: 0
