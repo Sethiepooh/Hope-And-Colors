@@ -235,6 +235,11 @@ public class AlixBoss : EnemyBase
         }
     }
 
+    public void ReduceBarBeatCount()
+    {
+        barBeatCount--;
+    }
+
     void PhaseOneAttackRotation()
     {
         if (active && !section)
