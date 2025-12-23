@@ -18,6 +18,8 @@ public class BPMInteract : MonoBehaviour
     public bool attackWindow;
     public bool adaptive;
 
+    [SerializeField]AlixBoss alixBoss;
+
     private void Awake()
     {
 
@@ -50,6 +52,7 @@ public class BPMInteract : MonoBehaviour
     public void ResetMovement()
     {
         int currentSection = GetCurrentSection();
+       
 
         if(currentMovement >= sectionBookmarks.Length)
         {
@@ -58,6 +61,10 @@ public class BPMInteract : MonoBehaviour
 
         if (currentSection > sectionBookmarks[currentMovement])
         {
+            if (alixBoss != null)
+            {
+                alixBoss.ReduceBarBeatCount();
+            }
             PlayAudioFromSection(sectionBookmarks[currentMovement - 1]);
         }
     }

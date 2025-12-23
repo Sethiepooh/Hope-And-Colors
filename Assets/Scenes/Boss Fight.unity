@@ -1727,7 +1727,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 3dac2e1ff36a5d84a9b8daf3d79fd31f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1941,6 +1941,10 @@ PrefabInstance:
     - target: {fileID: 6148187784822204541, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: m_SortingOrder
       value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8362512198487849142, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.1628418
       objectReference: {fileID: 0}
     - target: {fileID: 8550052404127597592, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: m_AnchorMax.y
@@ -4323,6 +4327,7 @@ MonoBehaviour:
   - 5
   - 12
   attackWindow: 0
+  alixBoss: {fileID: 1180964106}
 --- !u!4 &2077714267
 Transform:
   m_ObjectHideFlags: 0
