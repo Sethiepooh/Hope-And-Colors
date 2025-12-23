@@ -14,13 +14,12 @@ public class CallAndResponse : MonoBehaviour
     void Start()
     {
         rhythmPatterns[currentPatternIndex].Initialize(this);
-        playerInput.SwitchCurrentActionMap("CallResponse");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+            
     }
 
     public void OnRhythmInput(InputAction.CallbackContext context)
@@ -58,6 +57,13 @@ public class CallAndResponse : MonoBehaviour
     public void AddToCurrentPatternIndex()
     {
         currentPatternIndex++;
+
+
+        if (currentPatternIndex >= rhythmPatterns.Length)
+        {
+            Debug.Log("Challenge Complete");
+            playerInput.SwitchCurrentActionMap("Player");
+        }
     }
 
     public void AddBeatToCurrentPattern()
