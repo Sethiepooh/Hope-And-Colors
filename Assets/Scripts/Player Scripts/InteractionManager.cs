@@ -15,8 +15,8 @@ public class InteractionManager : MonoBehaviour
     bool interacting;
     InputDirection lastInputDirection;
 
-    CallAndResponse nearbyCallAndResponse;
-    Dialogue nearbyDialogue;
+    public CallAndResponse nearbyCallAndResponse;
+    public Dialogue nearbyDialogue;
 
 
 
@@ -32,7 +32,7 @@ public class InteractionManager : MonoBehaviour
         {
             FindNearbyInteractables();
 
-            if (nearbyDialogue != null || nearbyCallAndResponse != null)
+            if (nearbyDialogue != null && !nearbyDialogue.active || nearbyCallAndResponse != null && !nearbyCallAndResponse.active)
             {
                 if (interactionPrompt.activeSelf == false)
                     SetInteractionPrompt(true);
@@ -63,7 +63,7 @@ public class InteractionManager : MonoBehaviour
             return;
         }
 
-        if (nearbyDialogue != null && nearbyDialogue.canInteract)
+        if (nearbyDialogue != null)
         {
             nearbyDialogue.InteractWith();
             return;
@@ -95,7 +95,7 @@ public class InteractionManager : MonoBehaviour
 
             //Find closest Dialogue
             Dialogue dialogue = col.GetComponent<Dialogue>();
-            if (dialogue != null && dialogue.canInteract)
+            if (dialogue != null)
             {
                 float distance = Vector2.Distance(transform.position, dialogue.transform.position);
                 if (distance < closestDialogueDistance)
@@ -133,6 +133,7 @@ public class InteractionManager : MonoBehaviour
                 lastInputDirection = InputDirection.Right;
             }
 
+            //Debug.Log(nearbyCallAndResponse);
             nearbyCallAndResponse.rhythmPatterns[nearbyCallAndResponse.currentPatternIndex].CheckHitBeat(lastInputDirection);
         }
         else

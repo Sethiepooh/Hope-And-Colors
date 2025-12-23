@@ -10,7 +10,7 @@ public class CallAndResponse : MonoBehaviour
 
     public int currentPatternIndex = 0;
 
-    bool active;
+    public bool active;
     public bool canInteract;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,22 +27,36 @@ public class CallAndResponse : MonoBehaviour
 
     public void InteractWith()
     {
-        active = true;
-        playerMovement.controlable = false;
-        playerMovement.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-        playerInput.SwitchCurrentActionMap("CallResponse");
-        rhythmPatterns[currentPatternIndex].Initialize(this);
+        if (!active)
+        {
+            active = true;
+            //canInteract = false;
+            playerMovement.controlable = false;
+            playerMovement.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            playerInput.SwitchCurrentActionMap("CallResponse");
+            rhythmPatterns[currentPatternIndex].Initialize(this);
+        }
+        else
+        {
+            //canInteract = true;
+            playerMovement.controlable = true;
+            playerInput.SwitchCurrentActionMap("Player");
+            active = false;
+            rhythmPatterns[currentPatternIndex].Deactivate();
+        }    
     }
 
     public void AddToCurrentPatternIndex()
     {
+        Debug.Log("Pattern Complete!");
         currentPatternIndex++;
 
-
-        if (currentPatternIndex >= rhythmPatterns.Length)
+        if (currentPatternIndex == rhythmPatterns.Length)
         {
             Debug.Log("Challenge Complete");
             canInteract = false;
+            active = false;
+            playerMovement.controlable = true;
             playerInput.SwitchCurrentActionMap("Player");
         }
     }
@@ -175,13 +189,14 @@ public struct RhythmPattern
     public void AddBeat()
     {
         currentBeat++;
-        Debug.Log("Current Beat: " + currentBeat);
+        //Debug.Log("Current Beat: " + currentBeat);
         if (currentBeat == finalBeat)
         {
+            Debug.Log("Pattern Ended. Successful Hits: " + successfulHits + " / " + beatsToHit);
             if (successfulHits == beatsToHit)
             {
-                Debug.Log("Pattern Complete!");
-                parentScript.AddBeatToCurrentPattern();
+                Debug.Log("Pattern Successful!");
+                parentScript.AddToCurrentPatternIndex();
             }
             else
             {
@@ -214,7 +229,7 @@ public struct RhythmPattern
                     if (!pattern[i].revealed)
                     {
                         pattern[i].CheckReveal(currentBeat, this);
-                        Debug.Log("Checking Reveal for Input Index: " + i);
+                       // Debug.Log("Checking Reveal for Input Index: " + i);
                     }
                     else
                         pattern[i].CheckActivate(currentBeat, this);
@@ -276,11 +291,20 @@ public struct RhythmPattern
             pattern[nextExpectedInputIndex].SetHit(true);
             successfulHits++;
             nextExpectedInputIndex++;
+            Debug.Log("Successful Hits: " + successfulHits + " / " + beatsToHit);
         }
         else if (expectedInput.isActive && inputDirection != expectedInput.expectedInput)
         {
             Debug.Log("Miss!");
             inputPromptObjects[expectedInput.index].GetComponent<SpriteRenderer>().color = Color.red;
+        }
+    }
+
+    public void Deactivate()
+    {
+        foreach (var input in inputPromptObjects)
+        {
+            input.SetActive(false);
         }
     }
 }

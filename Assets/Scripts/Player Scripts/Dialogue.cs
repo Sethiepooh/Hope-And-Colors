@@ -12,6 +12,7 @@ public class Dialogue : MonoBehaviour
     [Header("Dialogue Settings")]
     [SerializeField] lines[] dialogue;
     public speakerAttributes[] speakers;
+    public bool transitionDialogue;
     int readNum;
 
     [Header("Setup")]
@@ -22,6 +23,7 @@ public class Dialogue : MonoBehaviour
     [SerializeField] TMP_Text text;
     [SerializeField] TMP_Text title;
     public bool canInteract;
+    public bool active;
     bool changingLevels;
 
 
@@ -39,17 +41,20 @@ public class Dialogue : MonoBehaviour
 
     public void InteractWith()
     {
-        Debug.Log("Interacted with dialogue");
+        
         if (changingLevels)
             return;
         if (canInteract)
         {
+            active = true;
+            canInteract = false;
             text.text = "";
             ReadDialogueForCommands();
             HandleDialogue();
         }
         else
         {
+            Debug.Log("Skip dialogue");
             StopAllCoroutines();
             SkipRollingText();
         }
@@ -64,12 +69,18 @@ public class Dialogue : MonoBehaviour
 
         if (readNum >= dialogue.Length)
         {
-            nextLevel.LoadNextLevel();
+            if (transitionDialogue)
+            {
+                nextLevel.LoadNextLevel();
+                changingLevels = true;
+            }
+   
             readNum = 0;
             text.text = "";
             dialogueCanvas.SetActive(false);
             canInteract = true;
-            changingLevels = true;
+            active = false;
+            playerMovement.controlable = true;
         }
         else
         {
