@@ -16,6 +16,7 @@ public class BPMInteract : MonoBehaviour
     float clipLengthInBeats;
 
     public bool attackWindow;
+    public bool adaptive;
 
     private void Awake()
     {
@@ -33,7 +34,8 @@ public class BPMInteract : MonoBehaviour
             interval.CheckForNewInterval(sampledTime);           
         }
 
-        ResetMovement();
+        if(adaptive)
+            ResetMovement();
 
         Check();
     }
