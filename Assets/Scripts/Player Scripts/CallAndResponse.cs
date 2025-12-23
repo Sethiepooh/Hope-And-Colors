@@ -6,14 +6,17 @@ public class CallAndResponse : MonoBehaviour
     public Sprite[] directionSprite; // 0: Up, 1: Down, 2: Left, 3: Right
     public RhythmPattern[] rhythmPatterns;
     public PlayerInput playerInput;
+    public PlayerMovement playerMovement;
 
-    InputDirection lastInputDirection;
-    int currentPatternIndex = 0;
+    public int currentPatternIndex = 0;
+
+    bool active;
+    public bool canInteract;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rhythmPatterns[currentPatternIndex].Initialize(this);
+        
     }
 
     // Update is called once per frame
@@ -22,36 +25,13 @@ public class CallAndResponse : MonoBehaviour
             
     }
 
-    public void OnRhythmInput(InputAction.CallbackContext context)
+    public void InteractWith()
     {
-        Vector2 dir = context.ReadValue<Vector2>();
-
-        if (context.performed)
-        {
-            if (dir == Vector2.up)
-            {
-                lastInputDirection = InputDirection.Up;
-            }
-            else if (dir == Vector2.down)
-            {
-                lastInputDirection = InputDirection.Down;
-            }
-            else if (dir == Vector2.left)
-            {
-                lastInputDirection = InputDirection.Left;
-            }
-            else if (dir == Vector2.right)
-            {
-                lastInputDirection = InputDirection.Right;
-            }
-
-            rhythmPatterns[currentPatternIndex].CheckHitBeat(lastInputDirection);
-        }
-        else
-        {
-            lastInputDirection = InputDirection.None;
-        }
-
+        active = true;
+        playerMovement.controlable = false;
+        playerMovement.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+        playerInput.SwitchCurrentActionMap("CallResponse");
+        rhythmPatterns[currentPatternIndex].Initialize(this);
     }
 
     public void AddToCurrentPatternIndex()
@@ -62,12 +42,15 @@ public class CallAndResponse : MonoBehaviour
         if (currentPatternIndex >= rhythmPatterns.Length)
         {
             Debug.Log("Challenge Complete");
+            canInteract = false;
             playerInput.SwitchCurrentActionMap("Player");
         }
     }
 
     public void AddBeatToCurrentPattern()
     {
+        if (!active)
+            return;
         rhythmPatterns[currentPatternIndex].AddBeat();
     }
 }
@@ -177,6 +160,7 @@ public struct RhythmPattern
     {
         parentScript = callAndResponse;
         successfulHits = 0;
+        currentBeat = 0;
 
         for (int i = 0; i < pattern.Length; i++)
         {
@@ -191,6 +175,7 @@ public struct RhythmPattern
     public void AddBeat()
     {
         currentBeat++;
+        Debug.Log("Current Beat: " + currentBeat);
         if (currentBeat == finalBeat)
         {
             if (successfulHits == beatsToHit)

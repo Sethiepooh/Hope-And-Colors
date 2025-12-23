@@ -1,14 +1,7 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-using System.Linq;
 using System.Collections;
-using static System.Net.Mime.MediaTypeNames;
-using System.Collections.Generic;
-using UnityEngine.Rendering;
 using System;
-using UnityEngine.UIElements;
-using Object = UnityEngine.Object;
 using UnityEngine.InputSystem;
 
 public class Dialogue : MonoBehaviour
@@ -23,19 +16,14 @@ public class Dialogue : MonoBehaviour
 
     [Header("Setup")]
     [SerializeField] float delay;
-    [SerializeField] GameObject interactionPrompt;
     [SerializeField] GameObject dialogueCanvas;
     //[SerializeField] GameObject dialogueHUD;
     //[SerializeField] UnityEngine.UI.Image profile;
     [SerializeField] TMP_Text text;
     [SerializeField] TMP_Text title;
-    [SerializeField]bool canInteract;
+    public bool canInteract;
     bool changingLevels;
 
-    //[Header("Motion")]
-    //[SerializeField] Transform revealPos;
-    //[SerializeField] Transform hiddenPos;
-    //[SerializeField] float speed;
 
 
     void Start()
@@ -49,24 +37,21 @@ public class Dialogue : MonoBehaviour
        
     }
 
-    public void Interact(InputAction.CallbackContext context)
+    public void InteractWith()
     {
-        if (context.performed)
+        Debug.Log("Interacted with dialogue");
+        if (changingLevels)
+            return;
+        if (canInteract)
         {
-            Debug.Log("Interacted with dialogue");
-            if (changingLevels)
-                return;
-            if (canInteract)
-            {
-                text.text = "";
-                ReadDialogueForCommands();
-                HandleDialogue();
-            }
-            else
-            {
-                StopAllCoroutines();
-                SkipRollingText();
-            }
+            text.text = "";
+            ReadDialogueForCommands();
+            HandleDialogue();
+        }
+        else
+        {
+            StopAllCoroutines();
+            SkipRollingText();
         }
     }
 
@@ -75,7 +60,7 @@ public class Dialogue : MonoBehaviour
     private void HandleDialogue()
     {
         playerMovement.controlable = false;
-        playerMovement.GetComponent< Rigidbody2D > ().linearVelocity = Vector2.zero;
+        playerMovement.GetComponent<Rigidbody2D> ().linearVelocity = Vector2.zero;
 
         if (readNum >= dialogue.Length)
         {
@@ -167,22 +152,12 @@ public class Dialogue : MonoBehaviour
     #region Collision Handling
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (interactionPrompt != null)
-        {
-           interactionPrompt.SetActive(true);
-        }
-
         canInteract = true;
         text.text = "";
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (interactionPrompt != null)
-        {
-            interactionPrompt.SetActive(false);
-        }
-
         if (dialogueCanvas != null)
             dialogueCanvas.SetActive(false);
         canInteract = false;
