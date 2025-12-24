@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
         pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
-        currentSpeed = walkSpeed;
+        currentSpeed = sprintSpeed;
     }
 
     // Update is called once per frame
@@ -69,11 +69,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (context.performed)
         {
-            currentSpeed = sprintSpeed;
+            currentSpeed = walkSpeed;
         }
         else if (context.canceled)
         {
-            currentSpeed = walkSpeed;
+            currentSpeed = sprintSpeed;
         }
     }
 

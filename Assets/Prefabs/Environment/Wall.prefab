@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f37615505c5d9b45bf2c13332560148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorOne: {r: 0, g: 0, b: 0.106000006, a: 1}
+  colorOne: {r: 0, g: 0, b: 0.20754719, a: 1}
   minAlpha: 50
   fadeStep: 10
 --- !u!61 &1161797349111702812

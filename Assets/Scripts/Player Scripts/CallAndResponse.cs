@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 public class CallAndResponse : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class CallAndResponse : MonoBehaviour
 
     public bool active;
     public bool canInteract;
+
+    public UnityEvent completionEvent;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -58,7 +61,13 @@ public class CallAndResponse : MonoBehaviour
             active = false;
             playerMovement.controlable = true;
             playerInput.SwitchCurrentActionMap("Player");
+            completionEvent.Invoke();
         }
+    }
+
+    public void DeactivateObject()
+    {
+        this.gameObject.SetActive(false);
     }
 
     public void AddBeatToCurrentPattern()
@@ -175,6 +184,7 @@ public struct RhythmPattern
         parentScript = callAndResponse;
         successfulHits = 0;
         currentBeat = 0;
+        beatsToHit = 0;
 
         for (int i = 0; i < pattern.Length; i++)
         {

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ChangeOnBeat : MonoBehaviour
 {
-    public Color colorOne = Color.blue;
+    public Color colorOne;
     //public Color colorTwo = Color.red;
     float alpha = 0;
     public float minAlpha = 0;
