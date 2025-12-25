@@ -494,6 +494,8 @@ MonoBehaviour:
   - 3
   - 7.125
   attackWindow: 1
+  adaptive: 1
+  alixBoss: {fileID: 0}
 --- !u!4 &402285514
 Transform:
   m_ObjectHideFlags: 0

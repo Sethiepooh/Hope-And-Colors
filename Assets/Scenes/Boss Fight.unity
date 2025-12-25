@@ -4327,7 +4327,7 @@ MonoBehaviour:
   - 5
   - 12
   attackWindow: 0
-  adaptive: 0
+  adaptive: 1
   alixBoss: {fileID: 1180964106}
 --- !u!4 &2077714267
 Transform:
