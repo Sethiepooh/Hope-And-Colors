@@ -34,4 +34,9 @@ public class AttackIndicator : MonoBehaviour
     {
         alpha = 225;
     }
+
+    public bool Flashing()
+    {
+        return alpha > 0;
+    }
 }

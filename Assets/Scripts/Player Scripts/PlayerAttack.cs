@@ -47,6 +47,9 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] GameObject riffProjectile;
     [SerializeField] Transform riffSpawnPoint;
 
+    [Header("Sonic Eruption Stats")]
+    public SonicEruption sErupt;
+
     [Header("Effects")]
     [SerializeField]Color allegroColor;
     [SerializeField] Color stumbleColor;
@@ -282,6 +285,24 @@ public class PlayerAttack : MonoBehaviour
             p_Mov.SetFreeze(false);
             hyperdriveRiff = false;
         }
+    }
+
+    public void SonicEruption(InputAction.CallbackContext context)
+    {
+        if(currentInspiration < (maxInspiration / 4))
+            return;
+
+        if (context.performed)
+            sErupt.StartExpansion();
+
+        if (context.canceled)
+        {
+            sErupt.ReleaseAttack();
+            currentInspiration -= (maxInspiration / 4);
+            inspirationBar.value = currentInspiration / maxInspiration;
+        }
+
+
     }
 
     private void OnDrawGizmos()

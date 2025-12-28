@@ -67,6 +67,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Sonic Eruption",
+                    "type": "Button",
+                    "id": "f56b04d5-6225-4c2e-8f23-28a001b9d7fd",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -281,22 +290,33 @@
                 },
                 {
                     "name": "",
-                    "id": "24e042ac-92aa-48b3-bef5-8140192e1ad4",
-                    "path": "<Mouse>/rightButton",
+                    "id": "61dfdfc7-ad9a-4537-83b0-6f114aef86c4",
+                    "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Gamepad",
                     "action": "Hyperdrive Riff",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "61dfdfc7-ad9a-4537-83b0-6f114aef86c4",
-                    "path": "<Gamepad>/buttonNorth",
+                    "id": "13228a27-014a-4564-b22c-7e3d182e431a",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Hyperdrive Riff",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6d515671-e314-418e-b775-38fe6b4f4a54",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
                     "action": "Hyperdrive Riff",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -320,6 +340,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Allegro",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "463a9181-aaff-4dab-a9e4-f56d82275972",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sonic Eruption",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -19,6 +19,9 @@ public class Projectile : MonoBehaviour
     void FixedUpdate()
     {
         rb.linearVelocity = direction * speed;
+
+        Vector3 offset = direction;
+        transform.rotation = Quaternion.LookRotation(Vector3.forward, offset);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
