@@ -25,6 +25,9 @@ public class Dialogue : MonoBehaviour
     public bool canInteract;
     public bool active;
     bool changingLevels;
+    public bool triggerOnEnter;
+    public bool disableAfterUse;
+    [HideInInspector] public bool disabled;
 
 
 
@@ -42,8 +45,9 @@ public class Dialogue : MonoBehaviour
     public void InteractWith()
     {
         
-        if (changingLevels)
+        if (changingLevels || disabled)
             return;
+
         if (canInteract)
         {
             active = true;
@@ -64,6 +68,7 @@ public class Dialogue : MonoBehaviour
     #region Dialogue Management
     private void HandleDialogue()
     {
+
         playerMovement.controlable = false;
         playerMovement.GetComponent<Rigidbody2D> ().linearVelocity = Vector2.zero;
 
@@ -81,6 +86,11 @@ public class Dialogue : MonoBehaviour
             canInteract = true;
             active = false;
             playerMovement.controlable = true;
+
+            if(disableAfterUse)
+            {
+                disabled = true;
+            }
         }
         else
         {
@@ -163,12 +173,23 @@ public class Dialogue : MonoBehaviour
     #region Collision Handling
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(disabled)
+            return;
+
         canInteract = true;
         text.text = "";
+
+        if(triggerOnEnter)
+        {
+            InteractWith();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        if(disabled)
+            return;
+
         if (dialogueCanvas != null)
             dialogueCanvas.SetActive(false);
         canInteract = false;

@@ -14,15 +14,11 @@ public class SonicEruption : MonoBehaviour
     [SerializeField] int maxDamage = 25;
     int currentDamage;
 
-
     Vector3 originalScale;
-    [SerializeField]bool multiply;
-    public bool recovery;
 
     private void Awake()
     {
         originalScale = transform.localScale;
-        multiply = false;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -56,13 +52,6 @@ public class SonicEruption : MonoBehaviour
         currentDamage = maxDamage;
     }
 
-
-
-    public void ToggleMultiply()
-    {
-        multiply = !multiply;
-    }
-
     public void ReleaseAttack()
     {
         StopCoroutine(ExpandSonicEruption());
@@ -75,6 +64,5 @@ public class SonicEruption : MonoBehaviour
                 enemy.GetComponent<Health>().TakeDamage(currentDamage);
             }
         }
-        ToggleMultiply();
     }
 }

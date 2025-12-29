@@ -32,7 +32,7 @@ public class InteractionManager : MonoBehaviour
         {
             FindNearbyInteractables();
 
-            if (nearbyDialogue != null && !nearbyDialogue.active || nearbyCallAndResponse != null && !nearbyCallAndResponse.active)
+            if (nearbyDialogue != null && !nearbyDialogue.active && !nearbyDialogue.disabled && !nearbyDialogue.disableAfterUse || nearbyCallAndResponse != null && !nearbyCallAndResponse.active)
             {
                 if (interactionPrompt.activeSelf == false)
                     SetInteractionPrompt(true);

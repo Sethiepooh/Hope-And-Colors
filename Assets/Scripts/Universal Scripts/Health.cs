@@ -59,6 +59,11 @@ public class Health : MonoBehaviour
                 StartCoroutine(HitFlash(Color.white));
             }
 
+            if(isPlayer)
+            {
+                StartCoroutine(SetPlayerHitStun());
+            }
+
             if (isPlayer && healthBar != null)
             {
                 healthBar.value = (float)currentHealth / maxHealth;
@@ -80,6 +85,14 @@ public class Health : MonoBehaviour
                     
             }
         }      
+    }
+
+    IEnumerator SetPlayerHitStun()
+    {
+        damagable = false;
+        yield return new WaitForSeconds(.2f);
+        Debug.Log("Player can be damaged again");   
+        damagable = true;
     }
 
     public void SetDamagable(bool b)
