@@ -33,7 +33,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Hyperdrive Riff",
+                    "name": "Heartthrob's Solo",
                     "type": "Button",
                     "id": "28016d53-2ae7-404d-880c-4604b9091ddc",
                     "expectedControlType": "",
@@ -69,7 +69,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Sonic Eruption",
+                    "name": "Stage Dive",
                     "type": "Button",
                     "id": "f56b04d5-6225-4c2e-8f23-28a001b9d7fd",
                     "expectedControlType": "",
@@ -295,7 +295,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Hyperdrive Riff",
+                    "action": "Heartthrob's Solo",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -306,7 +306,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Hyperdrive Riff",
+                    "action": "Heartthrob's Solo",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -317,7 +317,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Hyperdrive Riff",
+                    "action": "Heartthrob's Solo",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -350,7 +350,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Sonic Eruption",
+                    "action": "Stage Dive",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

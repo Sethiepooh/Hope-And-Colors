@@ -43,9 +43,11 @@ public class PlayerAttack : MonoBehaviour
     PlayerMovement playerMovement;
     public float healthRegenRate;
 
-    [Header("Hyperdrive Riff Stats")]
-    [SerializeField] GameObject riffProjectile;
-    [SerializeField] Transform riffSpawnPoint;
+    [Header("Heartthrob's Solo Stats")]
+    [SerializeField] GameObject projectile;
+    [SerializeField] Transform projectileSpawnPoint;
+    bool soloActive;
+    bool comboButton;
 
     [Header("Sonic Eruption Stats")]
     public SonicEruption sErupt;
@@ -254,55 +256,39 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    public void HyperdriveRiff(InputAction.CallbackContext context)
+    public void HeartthrobsSolo(InputAction.CallbackContext context)
     {
-        if(currentInspiration >= (maxInspiration / 4))
+        if(soloActive)
+            return;
+
+        if (currentInspiration >= (maxInspiration / 4))
         {
             if (context.performed)
             {
-                hyperdriveRiff = true;
-                p_Mov.SetFreeze(true);
-            }
-            else if (context.canceled)
-            {
-                p_Mov.SetFreeze(false);
-                hyperdriveRiff = false;
+                currentInspiration -= (maxInspiration / 4);
+                inspirationBar.value = currentInspiration / maxInspiration;
+                var proj = Instantiate(projectile, projectileSpawnPoint.position, Quaternion.identity);
+                proj.GetComponent<HeartthrobSoloProjectile>().Initialize(this, (facedDirection.position - transform.position).normalized, this.gameObject);
+                soloActive = true;
             }
         }       
     }
-    
-    public void FireHyperdriveRiff()
+
+    public void ResetHearttrhobSolo()
     {
-        if (currentInspiration >= (maxInspiration / 8) && hyperdriveRiff)
-        {
-            currentInspiration -= (maxInspiration / 8);
-            inspirationBar.value = currentInspiration / maxInspiration;
-            var blast = Instantiate(riffProjectile, riffSpawnPoint.position, Quaternion.identity);
-            blast.GetComponent<Projectile>().direction = facedDirection.localPosition.normalized;
-        }
-        else
-        {
-            p_Mov.SetFreeze(false);
-            hyperdriveRiff = false;
-        }
+        soloActive = false;
     }
 
-    public void SonicEruption(InputAction.CallbackContext context)
+    public void StageDive(InputAction.CallbackContext context)
     {
-        if(currentInspiration < (maxInspiration / 4))
-            return;
-
-        if (context.performed)
-            sErupt.StartExpansion();
-
-        if (context.canceled)
+        if (currentInspiration >= (maxInspiration / 4))
         {
-            sErupt.ReleaseAttack();
-            currentInspiration -= (maxInspiration / 4);
-            inspirationBar.value = currentInspiration / maxInspiration;
+            if (context.performed)
+            {
+                playerMovement.Dive();
+            }
         }
-
-
+       
     }
 
     private void OnDrawGizmos()

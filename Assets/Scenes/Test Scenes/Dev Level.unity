@@ -216,6 +216,67 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &963602815
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5635293635434902850, guid: bf000f4e2a26cd144a41ccd5d8aa4b54, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -212.48233
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635293635434902850, guid: bf000f4e2a26cd144a41ccd5d8aa4b54, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.997344
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635293635434902850, guid: bf000f4e2a26cd144a41ccd5d8aa4b54, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635293635434902850, guid: bf000f4e2a26cd144a41ccd5d8aa4b54, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635293635434902850, guid: bf000f4e2a26cd144a41ccd5d8aa4b54, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635293635434902850, guid: bf000f4e2a26cd144a41ccd5d8aa4b54, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635293635434902850, guid: bf000f4e2a26cd144a41ccd5d8aa4b54, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635293635434902850, guid: bf000f4e2a26cd144a41ccd5d8aa4b54, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635293635434902850, guid: bf000f4e2a26cd144a41ccd5d8aa4b54, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635293635434902850, guid: bf000f4e2a26cd144a41ccd5d8aa4b54, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805231480708514669, guid: bf000f4e2a26cd144a41ccd5d8aa4b54, type: 3}
+      propertyPath: m_Name
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805231480708514669, guid: bf000f4e2a26cd144a41ccd5d8aa4b54, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf000f4e2a26cd144a41ccd5d8aa4b54, type: 3}
 --- !u!114 &975056172 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9019614820453966975, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
@@ -227,56 +288,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1004339013
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1004339015}
-  - component: {fileID: 1004339014}
-  m_Layer: 0
-  m_Name: Enemy Manager
-  m_TagString: EnemyManager
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1004339014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004339013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a050192bc9fd45d4d89e6783f732fcf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyGroups:
-  - enemies:
-    - enemyObject: {fileID: 0}
-      startingPos: {x: 0, y: 0}
-    door: {fileID: 0}
-  spawnedEnemies: []
---- !u!4 &1004339015
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004339013}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -85.50561, y: -13.57845, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1028770237
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +350,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 34
-    OrthographicSize: 8.061081
+    OrthographicSize: 10
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -452,34 +463,6 @@ PrefabInstance:
     - target: {fileID: 1790186746024444953, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: m_ActionEvents.Array.data[19].m_ActionName
       value: 'Player/Sonic Eruption[/Keyboard/r]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1790186746024444953, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: m_ActionEvents.Array.data[19].m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1790186746024444953, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: m_ActionEvents.Array.data[19].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1790186746024444953, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: m_ActionEvents.Array.data[19].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 437403600}
-    - target: {fileID: 1790186746024444953, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: m_ActionEvents.Array.data[19].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1790186746024444953, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: m_ActionEvents.Array.data[19].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SonicEruption
-      objectReference: {fileID: 0}
-    - target: {fileID: 1790186746024444953, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: m_ActionEvents.Array.data[19].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerAttack, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1790186746024444953, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: m_ActionEvents.Array.data[19].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 2184088789803479037, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: m_AnchorMax.x
@@ -876,18 +859,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 437403600}
-          m_TargetAssemblyTypeName: PlayerAttack, Assembly-CSharp
-          m_MethodName: FireHyperdriveRiff
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 1638605851}
           m_TargetAssemblyTypeName: PulseManager, Assembly-CSharp
           m_MethodName: FlashAll
@@ -900,7 +871,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1004339014}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: EnemyManager, Assembly-CSharp
           m_MethodName: AddBeatToAll
           m_Mode: 1
@@ -1106,7 +1077,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 8.061081
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1760,9 +1731,9 @@ SceneRoots:
   - {fileID: 2136911076}
   - {fileID: 1355740494}
   - {fileID: 1577589870}
-  - {fileID: 1004339015}
   - {fileID: 2112601871}
   - {fileID: 1059098837}
   - {fileID: 8608007468235694722}
   - {fileID: 2062358033}
   - {fileID: 2043452857}
+  - {fileID: 963602815}

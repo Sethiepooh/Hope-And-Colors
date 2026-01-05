@@ -244,7 +244,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1343899466568195588}
         m_TargetAssemblyTypeName: PlayerAttack, Assembly-CSharp
-        m_MethodName: HyperdriveRiff
+        m_MethodName: HeartthrobsSolo
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -376,6 +376,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 4f9dc063-4c2a-4a8d-bb55-8c972f8e211d
     m_ActionName: 'CallResponse/Interact[/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1343899466568195588}
+        m_TargetAssemblyTypeName: PlayerAttack, Assembly-CSharp
+        m_MethodName: StageDive
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: f56b04d5-6225-4c2e-8f23-28a001b9d7fd
+    m_ActionName: 'Player/Sonic Eruption[/Keyboard/r]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -450,8 +466,8 @@ MonoBehaviour:
   inspirationBar: {fileID: 1217245171944948475}
   currentInspiration: 0
   healthRegenRate: 3
-  riffProjectile: {fileID: 8608247141467209458, guid: 8c306108a4934a4498c6f3c855612df8, type: 3}
-  riffSpawnPoint: {fileID: 2125546132979403559}
+  projectile: {fileID: 5588636457592541432, guid: f50cf0eda1572914cbf4ae80473409e6, type: 3}
+  projectileSpawnPoint: {fileID: 2125546132979403559}
   sErupt: {fileID: 6712881601377951083}
   allegroColor: {r: 0.97394437, g: 0.61698115, b: 1, a: 1}
   stumbleColor: {r: 0.277, g: 0.277, b: 0.277, a: 1}
@@ -1815,7 +1831,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 5, y: 5, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5940960966160364567}
@@ -1888,10 +1904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   indicator: {fileID: 10872343133135846}
-  sizeMultiplier: 1
-  maxSize: 5
   damage: 15
-  maxDamage: 25
 --- !u!114 &10872343133135846
 MonoBehaviour:
   m_ObjectHideFlags: 0

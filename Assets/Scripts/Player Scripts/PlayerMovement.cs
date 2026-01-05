@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     Vector2 movement;
     PulseManager pulseManager;
     Health health;
+    PlayerAttack playerAttack;
 
     // Movement variables
     [Header("Movement Stats")]
@@ -30,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        playerAttack = GetComponent<PlayerAttack>();
         health = GetComponent<Health>();
         rb = GetComponent<Rigidbody2D>();
         pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
@@ -85,6 +87,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void Dive()
+    {
+        if (!freeze && canDash)
+        {
+            StartCoroutine(HandleDive());
+        }
+    }
+
     IEnumerator HandleDash()
     {
         dashing = true;
@@ -94,6 +104,18 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         dashing = false;
         StartCoroutine(DashCooldown());
+    }
+
+    IEnumerator HandleDive()
+    {
+        dashing = true;
+        rb.AddForce(movement * (dashSpeed / .75f), ForceMode2D.Impulse);
+        canDash = false;
+        yield return new WaitForSeconds(dashTime * 2);
+        rb.linearVelocity = Vector2.zero;
+        dashing = false;
+        canDash = true;
+        playerAttack.sErupt.ReleaseAttack();
     }
 
     IEnumerator DashCooldown()
