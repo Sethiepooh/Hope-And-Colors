@@ -58,7 +58,9 @@ public class PlayerMovement : MonoBehaviour
             }
             else
                 rb.linearVelocity = Vector2.zero;
-        } 
+        }
+
+        Debug.Log(dashing);
     }
 
     public void Move(InputAction.CallbackContext context)
@@ -86,6 +88,8 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(HandleDash());
         }
     }
+
+   
 
     public void Dive()
     {

@@ -76,6 +76,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Combo Button",
+                    "type": "Button",
+                    "id": "98d4a7fd-2a4c-4c21-8706-acc23cde13aa",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -346,11 +355,22 @@
                 {
                     "name": "",
                     "id": "463a9181-aaff-4dab-a9e4-f56d82275972",
-                    "path": "<Keyboard>/r",
+                    "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Stage Dive",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1740dd5c-fdcc-4d86-b936-b0dfc43c5721",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Combo Button",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

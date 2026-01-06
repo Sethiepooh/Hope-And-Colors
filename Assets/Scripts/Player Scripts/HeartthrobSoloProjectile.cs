@@ -4,7 +4,7 @@ using UnityEngine;
 public class HeartthrobSoloProjectile : MonoBehaviour
 {
     [SerializeField] float speed = 10f;
-    [SerializeField] float damage = 25f;
+    [SerializeField] int damage = 25;
     [SerializeField] float lifetime = 5f;
     [HideInInspector] public GameObject player;
     [HideInInspector]public Vector3 direction;
@@ -54,6 +54,7 @@ public class HeartthrobSoloProjectile : MonoBehaviour
         if (collision.CompareTag("Enemy") || collision.CompareTag("Obstacle"))
         {
             Health hp = collision.GetComponent<Health>();
+            hp.TakeDamage(damage);
         }
 
         if (!returning)

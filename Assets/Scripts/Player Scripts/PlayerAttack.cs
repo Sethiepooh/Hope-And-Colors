@@ -119,7 +119,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void Attack(InputAction.CallbackContext context)
     {
-        if (!canAttack)
+        if (!canAttack || soloActive)
             return;
 
         if (context.performed)
@@ -243,6 +243,11 @@ public class PlayerAttack : MonoBehaviour
 
         if (context.performed)
         {
+            if (comboButton && inspirationBar.value >= 1 && !allegroMode)
+            {
+                Time.timeScale = 0.3f;
+            }
+
             if (inspirationBar.value >= .25f && !allegroMode)
             {
                 allegroMode = true;
@@ -256,9 +261,25 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+    //IEnumerator ResetAngelBreak()
+    //{
+
+    //}
+
+    public void AngelBreak(InputAction.CallbackContext context)
+    {
+        if (!comboButton)
+            return;
+
+        if (context.performed)
+        {
+            Time.timeScale = 0.5f;
+        }
+    }
+
     public void HeartthrobsSolo(InputAction.CallbackContext context)
     {
-        if(soloActive)
+        if(soloActive || !comboButton)
             return;
 
         if (currentInspiration >= (maxInspiration / 4))
@@ -274,6 +295,18 @@ public class PlayerAttack : MonoBehaviour
         }       
     }
 
+    public void SetComboButton(InputAction.CallbackContext context)
+    {
+        if(context.performed)
+        {
+            comboButton = true;
+        }
+        else if (context.canceled)
+        {
+            comboButton = false;
+        }
+    }
+
     public void ResetHearttrhobSolo()
     {
         soloActive = false;
@@ -281,8 +314,14 @@ public class PlayerAttack : MonoBehaviour
 
     public void StageDive(InputAction.CallbackContext context)
     {
+        if(comboButton)
+            return;
+
         if (currentInspiration >= (maxInspiration / 4))
         {
+            currentInspiration -= (maxInspiration / 4);
+            inspirationBar.value = currentInspiration / maxInspiration;
+
             if (context.performed)
             {
                 playerMovement.Dive();
