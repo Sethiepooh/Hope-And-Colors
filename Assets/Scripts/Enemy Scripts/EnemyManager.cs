@@ -8,6 +8,7 @@ public class EnemyManager : MonoBehaviour
     public EnemyGroup[] enemyGroups;
     public List<GameObject> spawnedEnemies = new List<GameObject>();
     RespawnManager respawnManager;
+    [HideInInspector]public bool angelBreak = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -103,6 +104,9 @@ public class EnemyManager : MonoBehaviour
 
     public void AddBeatToNew()
     {
+        if (angelBreak)
+            return;
+
         for(int i = 0; i < spawnedEnemies.Count; i++)
         {
             if (spawnedEnemies[i] != null && spawnedEnemies[i].activeInHierarchy)
@@ -113,6 +117,9 @@ public class EnemyManager : MonoBehaviour
 
     public void AddBeatToAll()
     {
+        if (angelBreak)
+            return;
+
         foreach (EnemyGroup enemy in enemyGroups)
         {
             foreach (Enemy e in enemy.enemies)

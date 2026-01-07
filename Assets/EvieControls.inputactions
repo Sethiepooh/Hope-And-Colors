@@ -85,6 +85,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Angel Break",
+                    "type": "Button",
+                    "id": "403ea17b-1a15-47c6-9ae2-a412ead775ac",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -371,6 +380,17 @@
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
                     "action": "Combo Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3d2ef2e3-411b-4df2-92f4-44a92a11f2df",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Angel Break",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

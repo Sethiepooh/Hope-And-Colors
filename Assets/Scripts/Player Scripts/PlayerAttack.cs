@@ -9,6 +9,7 @@ public class PlayerAttack : MonoBehaviour
 {
     PlayerMovement p_Mov;
     BPMInteract bpmInteract;
+    EnemyManager enemyManager;
 
     //Combo system variables
     int comboStep = 0;
@@ -48,9 +49,11 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] Transform projectileSpawnPoint;
     bool soloActive;
     bool comboButton;
-
-    [Header("Sonic Eruption Stats")]
     public SonicEruption sErupt;
+
+    [Header("Angel Break Stats")]
+    public float angelBreakTime;
+
 
     [Header("Effects")]
     [SerializeField]Color allegroColor;
@@ -64,7 +67,6 @@ public class PlayerAttack : MonoBehaviour
     AttackIndicator aIndicator;
 
     bool allegroMode;
-    bool hyperdriveRiff;
 
 
 
@@ -84,6 +86,7 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         bpmInteract = GameObject.Find("Rhythm Manager").GetComponent<BPMInteract>();
+        enemyManager = GameObject.FindWithTag("EnemyManager").GetComponent<EnemyManager>();
     }
 
     // Update is called once per frame
@@ -271,10 +274,23 @@ public class PlayerAttack : MonoBehaviour
         if (!comboButton)
             return;
 
-        if (context.performed)
+        if (currentInspiration >= maxInspiration)
         {
-            Time.timeScale = 0.5f;
+            if (context.performed)
+            {
+                currentInspiration -= maxInspiration;
+                inspirationBar.value = currentInspiration / maxInspiration;
+                StartCoroutine(AngelBreakTimer());
+            }
         }
+       
+    }
+
+    IEnumerator AngelBreakTimer()
+    {
+        enemyManager.angelBreak = true;
+        yield return new WaitForSeconds(angelBreakTime);
+        enemyManager.angelBreak = false;
     }
 
     public void HeartthrobsSolo(InputAction.CallbackContext context)
