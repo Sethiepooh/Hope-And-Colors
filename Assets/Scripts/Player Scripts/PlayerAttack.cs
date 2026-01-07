@@ -241,16 +241,11 @@ public class PlayerAttack : MonoBehaviour
 
     public void Allegro(InputAction.CallbackContext context)
     {
-        if(stumble)
+        if(stumble || comboButton)
             return;
 
         if (context.performed)
         {
-            if (comboButton && inspirationBar.value >= 1 && !allegroMode)
-            {
-                Time.timeScale = 0.3f;
-            }
-
             if (inspirationBar.value >= .25f && !allegroMode)
             {
                 allegroMode = true;
@@ -278,9 +273,9 @@ public class PlayerAttack : MonoBehaviour
         {
             if (context.performed)
             {
+                StartCoroutine(AngelBreakTimer());
                 currentInspiration -= maxInspiration;
                 inspirationBar.value = currentInspiration / maxInspiration;
-                StartCoroutine(AngelBreakTimer());
             }
         }
        
@@ -289,6 +284,7 @@ public class PlayerAttack : MonoBehaviour
     IEnumerator AngelBreakTimer()
     {
         enemyManager.angelBreak = true;
+        Debug.Log("Angel Break State: " + enemyManager.angelBreak);
         yield return new WaitForSeconds(angelBreakTime);
         enemyManager.angelBreak = false;
     }
@@ -302,11 +298,11 @@ public class PlayerAttack : MonoBehaviour
         {
             if (context.performed)
             {
-                currentInspiration -= (maxInspiration / 4);
-                inspirationBar.value = currentInspiration / maxInspiration;
                 var proj = Instantiate(projectile, projectileSpawnPoint.position, Quaternion.identity);
                 proj.GetComponent<HeartthrobSoloProjectile>().Initialize(this, (facedDirection.position - transform.position).normalized, this.gameObject);
                 soloActive = true;
+                currentInspiration -= (maxInspiration / 4);
+                inspirationBar.value = currentInspiration / maxInspiration;
             }
         }       
     }
@@ -335,15 +331,13 @@ public class PlayerAttack : MonoBehaviour
 
         if (currentInspiration >= (maxInspiration / 4))
         {
-            currentInspiration -= (maxInspiration / 4);
-            inspirationBar.value = currentInspiration / maxInspiration;
-
             if (context.performed)
             {
                 playerMovement.Dive();
+                currentInspiration -= (maxInspiration / 4);
+                inspirationBar.value = currentInspiration / maxInspiration;
             }
-        }
-       
+        }      
     }
 
     private void OnDrawGizmos()

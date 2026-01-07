@@ -457,17 +457,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Evie
       objectReference: {fileID: 0}
-    - target: {fileID: 1790186746024444953, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: m_ActionEvents.Array.size
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 1790186746024444953, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: m_ActionEvents.Array.data[19].m_ActionId
-      value: f56b04d5-6225-4c2e-8f23-28a001b9d7fd
-      objectReference: {fileID: 0}
-    - target: {fileID: 1790186746024444953, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: m_ActionEvents.Array.data[19].m_ActionName
-      value: 'Player/Sonic Eruption[/Keyboard/r]'
+    - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: angelBreakTime
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2184088789803479037, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: m_AnchorMax.x
@@ -578,6 +570,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3267928717474017988, guid: 3ada33bbebcb19244bca5e96f31cc147, type: 3}
+      propertyPath: active
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3982889337910326974, guid: 3ada33bbebcb19244bca5e96f31cc147, type: 3}
       propertyPath: m_LocalPosition.x
       value: -221.48274
@@ -786,6 +782,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3267928717474017988, guid: 3ada33bbebcb19244bca5e96f31cc147, type: 3}
+      propertyPath: active
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3982889337910326974, guid: 3ada33bbebcb19244bca5e96f31cc147, type: 3}
       propertyPath: m_LocalPosition.x
       value: -202.3158
@@ -843,6 +843,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3267928717474017988, guid: 3ada33bbebcb19244bca5e96f31cc147, type: 3}
+      propertyPath: active
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3982889337910326974, guid: 3ada33bbebcb19244bca5e96f31cc147, type: 3}
       propertyPath: m_LocalPosition.x
       value: -197.69855

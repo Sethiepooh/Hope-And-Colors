@@ -408,6 +408,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 98d4a7fd-2a4c-4c21-8706-acc23cde13aa
     m_ActionName: 'Player/Combo Button[/Keyboard/shift]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1343899466568195588}
+        m_TargetAssemblyTypeName: PlayerAttack, Assembly-CSharp
+        m_MethodName: AngelBreak
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 403ea17b-1a15-47c6-9ae2-a412ead775ac
+    m_ActionName: 'Player/Angel Break[/Keyboard/q]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -485,6 +501,7 @@ MonoBehaviour:
   projectile: {fileID: 5588636457592541432, guid: f50cf0eda1572914cbf4ae80473409e6, type: 3}
   projectileSpawnPoint: {fileID: 2125546132979403559}
   sErupt: {fileID: 6712881601377951083}
+  angelBreakTime: 0
   allegroColor: {r: 0.97394437, g: 0.61698115, b: 1, a: 1}
   stumbleColor: {r: 0.277, g: 0.277, b: 0.277, a: 1}
   attackIndicator: {fileID: 2004006489262682754}

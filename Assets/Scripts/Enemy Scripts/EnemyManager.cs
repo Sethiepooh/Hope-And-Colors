@@ -29,16 +29,6 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
-    //public void AddEnemy(GameObject enemy)
-    //{
-    //    enemies.Add(enemy);
-    //}
-
-    //public void RemoveEnemy(GameObject enemy)
-    //{
-    //    enemies.Remove(enemy);
-    //}
-
     void SetEnemies()
     {
         foreach (EnemyGroup enemyGroup in enemyGroups)

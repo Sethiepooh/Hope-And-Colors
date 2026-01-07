@@ -8,6 +8,7 @@ public class Projectile : MonoBehaviour
     [SerializeField] Rigidbody2D rb;
 
     public bool fireFromPlayer = true;
+    bool freeze = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,10 +19,21 @@ public class Projectile : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(freeze)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
         rb.linearVelocity = direction * speed;
 
         Vector3 offset = direction;
         transform.rotation = Quaternion.LookRotation(Vector3.forward, offset);
+    }
+
+    public void ToggleFreeze(bool b)
+    {
+        freeze = b;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

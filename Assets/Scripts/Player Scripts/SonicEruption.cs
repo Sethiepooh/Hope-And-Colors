@@ -34,6 +34,8 @@ public class SonicEruption : MonoBehaviour
             if (enemy.CompareTag("Enemy") || enemy.CompareTag("Boss") || enemy.CompareTag("Obstacle"))
             {
                 enemy.GetComponent<Health>().TakeDamage(damage);
+                enemy.GetComponent<EnemyBase>().active = false;
+                enemy.GetComponent<EnemyBase>().ResetActiveForEnemy(1);
             }
         }
     }
