@@ -284,6 +284,7 @@ public class PlayerAttack : MonoBehaviour
     IEnumerator AngelBreakTimer()
     {
         enemyManager.angelBreak = true;
+        Projectile activeProjectiles[] = FindObjectsOfType<Projectile>();
         Debug.Log("Angel Break State: " + enemyManager.angelBreak);
         yield return new WaitForSeconds(angelBreakTime);
         enemyManager.angelBreak = false;
