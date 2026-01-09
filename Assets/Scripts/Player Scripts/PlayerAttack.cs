@@ -54,6 +54,11 @@ public class PlayerAttack : MonoBehaviour
     [Header("Angel Break Stats")]
     public float angelBreakTime;
 
+    [Header("Progression")]
+    public bool hasHeartthrobsSolo;
+    public bool hasAngelBreak;
+    public bool hasStageDive;
+
 
     [Header("Effects")]
     [SerializeField]Color allegroColor;
@@ -266,7 +271,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void AngelBreak(InputAction.CallbackContext context)
     {
-        if (!comboButton)
+        if (!comboButton || !hasAngelBreak)
             return;
 
         if (currentInspiration >= maxInspiration)
@@ -284,15 +289,32 @@ public class PlayerAttack : MonoBehaviour
     IEnumerator AngelBreakTimer()
     {
         enemyManager.angelBreak = true;
-        Projectile activeProjectiles[] = FindObjectsOfType<Projectile>();
+        Projectile[] activeProjectiles = FindObjectsOfType<Projectile>();
+
+        foreach (Projectile projectile in activeProjectiles)
+        {
+            if (!projectile.fireFromPlayer)
+            {
+                projectile.ToggleFreeze(true);
+            }
+        }
         Debug.Log("Angel Break State: " + enemyManager.angelBreak);
+        
         yield return new WaitForSeconds(angelBreakTime);
+
+        foreach (Projectile projectile in activeProjectiles)
+        {
+            if (!projectile.fireFromPlayer)
+            {
+                projectile.ToggleFreeze(false);
+            }
+        }
         enemyManager.angelBreak = false;
     }
 
     public void HeartthrobsSolo(InputAction.CallbackContext context)
     {
-        if(soloActive || !comboButton)
+        if(soloActive || !comboButton || !hasHeartthrobsSolo)
             return;
 
         if (currentInspiration >= (maxInspiration / 4))
@@ -327,7 +349,7 @@ public class PlayerAttack : MonoBehaviour
 
     public void StageDive(InputAction.CallbackContext context)
     {
-        if(comboButton)
+        if(comboButton || !hasStageDive)
             return;
 
         if (currentInspiration >= (maxInspiration / 4))

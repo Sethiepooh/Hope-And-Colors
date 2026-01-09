@@ -205,6 +205,63 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8079256793535258815, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
   m_PrefabInstance: {fileID: 1125140983}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &558361982
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1825169678386118306, guid: ff15283dda326f940b28024e8309f641, type: 3}
+      propertyPath: m_Name
+      value: Turret
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878997031610495625, guid: ff15283dda326f940b28024e8309f641, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -214.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878997031610495625, guid: ff15283dda326f940b28024e8309f641, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -19.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878997031610495625, guid: ff15283dda326f940b28024e8309f641, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878997031610495625, guid: ff15283dda326f940b28024e8309f641, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878997031610495625, guid: ff15283dda326f940b28024e8309f641, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878997031610495625, guid: ff15283dda326f940b28024e8309f641, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878997031610495625, guid: ff15283dda326f940b28024e8309f641, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878997031610495625, guid: ff15283dda326f940b28024e8309f641, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878997031610495625, guid: ff15283dda326f940b28024e8309f641, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8878997031610495625, guid: ff15283dda326f940b28024e8309f641, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ff15283dda326f940b28024e8309f641, type: 3}
 --- !u!1 &608163736 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4217528599749421691, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
@@ -458,8 +515,20 @@ PrefabInstance:
       value: Evie
       objectReference: {fileID: 0}
     - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: hasStageDive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: hasAngelBreak
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: angelBreakTime
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: hasHeartthrobsSolo
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2184088789803479037, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: m_AnchorMax.x
@@ -557,6 +626,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1195282489 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1825169678386118306, guid: ff15283dda326f940b28024e8309f641, type: 3}
+  m_PrefabInstance: {fileID: 558361982}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1202334275 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5601313213131780542, guid: 3ada33bbebcb19244bca5e96f31cc147, type: 3}
@@ -1355,6 +1429,8 @@ MonoBehaviour:
       startingPos: {x: 0, y: 0}
     - enemyObject: {fileID: 378730718}
       startingPos: {x: 0, y: 0}
+    - enemyObject: {fileID: 1195282489}
+      startingPos: {x: 0, y: 0}
     door: {fileID: 0}
   spawnedEnemies: []
   angelBreak: 0
@@ -1986,3 +2062,4 @@ SceneRoots:
   - {fileID: 1515457453}
   - {fileID: 1486555907}
   - {fileID: 1905973543}
+  - {fileID: 558361982}
