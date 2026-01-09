@@ -363,11 +363,33 @@
                 },
                 {
                     "name": "",
+                    "id": "9c351daf-a475-4a6d-aec3-82b141b69310",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Allegro",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "463a9181-aaff-4dab-a9e4-f56d82275972",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Stage Dive",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "70e3a287-ea07-494f-adb9-660d3a13fc5f",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
                     "action": "Stage Dive",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -385,11 +407,33 @@
                 },
                 {
                     "name": "",
+                    "id": "3af5f73d-e9ca-4c01-8443-1d429dfcfe7f",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Combo Button",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "3d2ef2e3-411b-4df2-92f4-44a92a11f2df",
                     "path": "<Keyboard>/q",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Angel Break",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "16b030a7-122f-4686-b838-cdf260ef2c4b",
+                    "path": "<Gamepad>/rightTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
                     "action": "Angel Break",
                     "isComposite": false,
                     "isPartOfComposite": false

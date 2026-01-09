@@ -26,9 +26,15 @@ public class Turret : EnemyBase
     // Update is called once per frame
     void Update()
     {
+        if(!active) return;
         playerPos = player.transform.position;
         Vector3 offset = playerPos - transform.position;
         transform.rotation = Quaternion.LookRotation(Vector3.forward, offset);
+    }
+
+    public void DeactivateTurret()
+    {
+        active = false;
     }
 
     public override void Attack()

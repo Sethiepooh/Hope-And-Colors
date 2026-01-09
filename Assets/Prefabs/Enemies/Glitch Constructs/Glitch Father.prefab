@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de801039f91c0f4449667748f7cac55b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  active: 0
   attackRange: 2.5
   damage: 20
   dashDuration: 0.5
@@ -130,10 +131,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onDeathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4055398398140777308}
+        m_TargetAssemblyTypeName: Health, Assembly-CSharp
+        m_MethodName: HandleEnemyDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   maxHealth: 70
   healthBar: {fileID: 0}
   isPlayer: 0
   deathParticles: {fileID: 2108140741415770571}
+  blastParticles: {fileID: 0}
+  blastRadius: 0
+  damagable: 1
 --- !u!61 &903979013842618495
 BoxCollider2D:
   m_ObjectHideFlags: 0

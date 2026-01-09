@@ -441,6 +441,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onDeathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5503930085471042008}
+        m_TargetAssemblyTypeName: Health, Assembly-CSharp
+        m_MethodName: HandlePlayerDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   maxHealth: 100
   healthBar: {fileID: 8462071036095440008}
   isPlayer: 1
@@ -502,6 +517,9 @@ MonoBehaviour:
   projectileSpawnPoint: {fileID: 2125546132979403559}
   sErupt: {fileID: 6712881601377951083}
   angelBreakTime: 0
+  hasHeartthrobsSolo: 0
+  hasAngelBreak: 0
+  hasStageDive: 0
   allegroColor: {r: 0.97394437, g: 0.61698115, b: 1, a: 1}
   stumbleColor: {r: 0.277, g: 0.277, b: 0.277, a: 1}
   attackIndicator: {fileID: 2004006489262682754}
