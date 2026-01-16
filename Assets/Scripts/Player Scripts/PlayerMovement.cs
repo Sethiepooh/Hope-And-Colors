@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement Stats")]
     public float walkSpeed;
     public float sprintSpeed;
+    bool slowed = true;
+    public bool sprintByDefault;
     public bool allegro;
     float currentSpeed;
     bool freeze;
@@ -42,6 +44,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (slowed)
+        {
+            canDash = false;
+            currentSpeed = walkSpeed;
+        }
+            
 
         if (!dashing && controlable)
         {
@@ -69,13 +77,30 @@ public class PlayerMovement : MonoBehaviour
 
     public void Sprint(InputAction.CallbackContext context)
     {
+        if(!canSprint) return;
+
         if (context.performed)
         {
-            currentSpeed = walkSpeed;
+            if (sprintByDefault)
+            {
+                currentSpeed = walkSpeed;
+            }
+            else
+            {
+                currentSpeed = sprintSpeed;
+            }
+           
         }
         else if (context.canceled)
         {
-            currentSpeed = sprintSpeed;
+            if (sprintByDefault)
+            {
+                currentSpeed = sprintSpeed;
+            }
+            else
+            {
+                currentSpeed = walkSpeed;
+            }
         }
     }
 

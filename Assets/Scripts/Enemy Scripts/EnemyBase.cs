@@ -5,6 +5,8 @@ using UnityEngine;
 public abstract class EnemyBase : MonoBehaviour
 {
     public bool active = false;
+
+    public bool empowered = false;
     public abstract void Attack();
     public abstract void AddToBeatCount();
 
