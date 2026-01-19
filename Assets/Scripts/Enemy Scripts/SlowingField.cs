@@ -5,10 +5,12 @@ public class SlowingField : MonoBehaviour
     [SerializeField] float slowSpeed = 5f;
     [SerializeField] PlayerMovement playerMovement;
     bool playerInField = false;
+    bool initialized = false;
     public void Initialize(PlayerMovement pMove, float speed)
     {
         playerMovement = pMove;
         slowSpeed = speed;
+        initialized = true;
     }
 
     public void DeactivateField()
@@ -22,15 +24,20 @@ public class SlowingField : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player") == false) return;
-        playerMovement.Slowdown(slowSpeed);
-        playerInField = true;
+        if (collision.CompareTag("Player") && initialized)
+        {
+            playerMovement.Slowdown(slowSpeed);
+            playerInField = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player") == false) return;
-        playerMovement.Speedup();
-        playerInField = false;
+        if (collision.CompareTag("Player") && initialized)
+        {
+            playerMovement.Speedup();
+            playerInField = false;
+        }
+       
     }
 }

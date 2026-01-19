@@ -6,7 +6,9 @@ public class Enforcer : EnemyBase
 {
     [Header("Attack Stats")]
     [SerializeField] float attackRange = 1.0f;
-    [SerializeField] int damage = 5;
+    [SerializeField] int defaultDamage = 5;
+    [SerializeField] int empoweredDamage = 10;
+    int damage;
     [SerializeField] float dashDuration = 0.5f;
     int beatCount = 0;
 
@@ -46,7 +48,14 @@ public class Enforcer : EnemyBase
     // Update is called once per frame
     void Update()
     {
-
+        if(empowered)
+        {
+            damage = empoweredDamage;
+        }
+        else
+        {
+            damage = defaultDamage;
+        }
     }
 
     IEnumerator DashTowardsPlayer()
