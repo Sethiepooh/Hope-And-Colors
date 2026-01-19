@@ -477,6 +477,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   sprintSpeed: 10
+  slowed: 0
+  sprintByDefault: 1
   allegro: 0
   controlable: 1
   dashSpeed: 30

@@ -10,6 +10,7 @@ public class Bishop : EnemyBase
     [Header("Slowing Fields")]
     [SerializeField] GameObject slowingFieldPrefab;
     [SerializeField] ParticleSystem slowingFieldTelegraphEffect;
+    [SerializeField] float slowingSpeed = 5f;
 
     GameObject player;
     PlayerMovement PlayerMovement;
@@ -23,6 +24,7 @@ public class Bishop : EnemyBase
     void Start()
     {
         player = GameObject.FindWithTag("Player");
+        PlayerMovement = player.GetComponent<PlayerMovement>();
         protectedEnemyHealth = protectedEnemy.GetComponent<Health>();
         protectedEnemyBase = protectedEnemy.GetComponent<EnemyBase>();
     }
@@ -56,9 +58,11 @@ public class Bishop : EnemyBase
 
     IEnumerator SpawnSlowingField()
     {
+        slowingFieldTelegraphEffect.transform.position = player.transform.position;
         slowingFieldTelegraphEffect.Play();
         yield return new WaitForSeconds(slowingFieldTelegraphEffect.duration);
         GameObject field = Instantiate(slowingFieldPrefab, player.transform.position, Quaternion.identity);
+        field.GetComponent<SlowingField>().Initialize(PlayerMovement, slowingSpeed);
         StartCoroutine(RemoveSlowingField(field));
         // Implementation for spawning slowing field goes here
     }

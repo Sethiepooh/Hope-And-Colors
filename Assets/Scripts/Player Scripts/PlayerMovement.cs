@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement Stats")]
     public float walkSpeed;
     public float sprintSpeed;
-    bool slowed = true;
+    public bool slowed = false;
     public bool sprintByDefault;
     public bool allegro;
     float currentSpeed;
@@ -69,6 +69,20 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void Slowdown(float slowSpeed)
+    {
+        slowed = true;
+        canDash = false;
+        currentSpeed = slowSpeed;
+    }
+
+    public void Speedup()
+    {
+        slowed = false;
+        canDash = true;
+        currentSpeed = sprintByDefault ? sprintSpeed : walkSpeed;
+    }
+
     public void Move(InputAction.CallbackContext context)
     {
         if (!dashing)
@@ -77,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Sprint(InputAction.CallbackContext context)
     {
-        if(!canSprint) return;
+        if(!slowed) return;
 
         if (context.performed)
         {
