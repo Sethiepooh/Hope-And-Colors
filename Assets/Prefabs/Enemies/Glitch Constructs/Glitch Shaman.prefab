@@ -141,6 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 1
+  empowered: 0
   protectedEnemy: {fileID: 0}
   shieldEffectPrefab: {fileID: 3434116371356178159, guid: 8fbeb78f9dc3c494bad7501f4b367685, type: 3}
 --- !u!114 &2772393510789411756
@@ -170,7 +171,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  maxHealth: 100
+  maxHealth: 40
   healthBar: {fileID: 0}
   isPlayer: 0
   deathParticles: {fileID: 9148174929730696254}

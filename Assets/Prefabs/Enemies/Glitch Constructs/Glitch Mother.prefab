@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 0
+  empowered: 0
   projectileSpawn: {fileID: 4933937155545608081}
   projectile: {fileID: 8608247141467209458, guid: 52da29d0bd4ad894c8202ada0d1f493d, type: 3}
   telegraph: {fileID: 17395424686764818, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
@@ -277,11 +278,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.38637334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.31774002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
       propertyPath: m_LocalPosition.z

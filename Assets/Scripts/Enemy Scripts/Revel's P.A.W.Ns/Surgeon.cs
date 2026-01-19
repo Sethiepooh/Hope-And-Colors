@@ -6,6 +6,7 @@ public class Surgeon : EnemyBase
     [Header("Attack Stats")]
     [SerializeField] Transform projectileSpawn;
     [SerializeField] GameObject projectile;
+    [SerializeField] GameObject grenade;
     int beatCount = 0;
 
     [Header("Movement Stats")]
@@ -42,19 +43,36 @@ public class Surgeon : EnemyBase
         projectileInstance.GetComponent<Projectile>().direction = (player.transform.position - transform.position).normalized;
     }
 
+    public void ThrowGrenade()
+    {
+        var grenadeInstance = Instantiate(grenade, projectileSpawn.position, Quaternion.identity);
+        grenadeInstance.GetComponent<Grenade>().direction = (player.transform.position - transform.position).normalized;
+    }
+
     public override void AddToBeatCount()
     {
         if (active)
         {
             beatCount++;
+            if(beatCount == 11)
+            {
+                telegraph.Play();
+            }
+
             if (beatCount == 12)
             {
+                Teleport();
                 beatCount = 0;
             }
 
-            if (beatCount < 5)
+            if (beatCount < 5 && beatCount > 0)
             {
                 Attack();
+            }
+
+            if(beatCount > 5 && beatCount < 9 && beatCount % 2 == 0)
+            {
+                ThrowGrenade();
             }
         }
 
