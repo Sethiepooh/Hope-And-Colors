@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 6467115956518268884}
   - component: {fileID: 4012962148229241249}
   - component: {fileID: 5273532119478774267}
+  - component: {fileID: 7968955089435760685}
   m_Layer: 0
   m_Name: Surgeon
   m_TagString: Untagged
@@ -67,6 +68,7 @@ Transform:
   m_Children:
   - {fileID: 1077764988887791448}
   - {fileID: 1781518995112427135}
+  - {fileID: 1890595003166033873}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3528851947963576425
@@ -233,6 +235,119 @@ MonoBehaviour:
   projectile: {fileID: 8608247141467209458, guid: 5fc164d93c9ff7446b45c0f230521b67, type: 3}
   grenade: {fileID: 8608247141467209458, guid: 588f07bd275502f4a8881acc84203ad8, type: 3}
   telegraph: {fileID: 787776708865328561}
+--- !u!114 &7968955089435760685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039325892668053576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDeathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7968955089435760685}
+        m_TargetAssemblyTypeName: Health, Assembly-CSharp
+        m_MethodName: HandleEnemyDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  maxHealth: 50
+  healthBar: {fileID: 0}
+  isPlayer: 0
+  deathParticles: {fileID: 2085114992980904170}
+  blastParticles: {fileID: 0}
+  blastRadius: 0
+  damagable: 1
+--- !u!1001 &2076753173176663032
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2274909547810357622}
+    m_Modifications:
+    - target: {fileID: 17395424686764818, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.56078434
+      objectReference: {fileID: 0}
+    - target: {fileID: 17395424686764818, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.9960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 17395424686764818, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.9960785
+      objectReference: {fileID: 0}
+    - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 913681549521919451, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: m_Name
+      value: Death Particles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+--- !u!4 &1890595003166033873 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+  m_PrefabInstance: {fileID: 2076753173176663032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &2085114992980904170 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 17395424686764818, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+  m_PrefabInstance: {fileID: 2076753173176663032}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5671518751108443091
 PrefabInstance:
   m_ObjectHideFlags: 0

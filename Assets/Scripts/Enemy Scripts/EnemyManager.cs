@@ -33,7 +33,7 @@ public class EnemyManager : MonoBehaviour
     {
         foreach (EnemyGroup enemyGroup in enemyGroups)
         {
-           for (int i = 0; i < enemyGroup.enemies.Length; i++)
+            for (int i = 0; i < enemyGroup.enemies.Length; i++)
             {
                 enemyGroup.enemies[i] = NewEnenemy(enemyGroup.enemies[i]);
             }
