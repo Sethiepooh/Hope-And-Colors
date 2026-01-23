@@ -82,7 +82,7 @@ public class Vanguard : EnemyBase
                         //Apply damage to player
                         Health hp = objects.gameObject.GetComponent<Health>();
                         hp.TakeDamage(damage);
-                        enemyManager.TriggerSpeedUp();
+                        enemyManager.TriggerDoubleTime(5f);
                     }
                 }
             }

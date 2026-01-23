@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class EnemyManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class EnemyManager : MonoBehaviour
     RespawnManager respawnManager;
     BPMInteract bpmInteract;
     [HideInInspector]public bool angelBreak = false;
+    bool doubleTimeActive = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -96,7 +98,7 @@ public class EnemyManager : MonoBehaviour
 
     public void AddBeatToNew()
     {
-        if (angelBreak)
+        if (angelBreak || doubleTimeActive)
             return;
 
         for(int i = 0; i < spawnedEnemies.Count; i++)
@@ -106,10 +108,22 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
+    public void DoubleTimeAddBeatToNew()
+    {
+        if (angelBreak || !doubleTimeActive)
+            return;
+
+        for (int i = 0; i < spawnedEnemies.Count; i++)
+        {
+            if (spawnedEnemies[i] != null && spawnedEnemies[i].activeInHierarchy)
+                spawnedEnemies[i].GetComponent<EnemyBase>().AddToBeatCount();
+        }
+    }
+
 
     public void AddBeatToAll()
     {
-        if (angelBreak)
+        if (angelBreak || doubleTimeActive)
             return;
 
         foreach (EnemyGroup enemy in enemyGroups)
@@ -125,10 +139,39 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
-    public void TriggerSpeedUp()
+    public void DoubleTime()
     {
-        bpmInteract.TriggerSpeedUp();
+        if(angelBreak || !doubleTimeActive)
+            return;
+
+        foreach (EnemyGroup enemy in enemyGroups)
+        {
+            foreach (Enemy e in enemy.enemies)
+            {
+                if (e.enemyObject != null)
+                {
+                    if (e.enemyObject.activeInHierarchy)
+                        e.enemyObject.GetComponent<EnemyBase>().AddToBeatCount();
+                }
+            }
+        }
     }
+
+    public void TriggerDoubleTime(float sec)
+    {
+        StartCoroutine(DoubleTimeForSeconds(sec));
+    }
+
+    IEnumerator DoubleTimeForSeconds(float sec)
+    {
+        if (doubleTimeActive)
+            yield return null;
+
+        doubleTimeActive = true;
+        yield return new WaitForSeconds(sec);
+        doubleTimeActive = false;
+    }
+
 
     [System.Serializable]
     public struct EnemyGroup

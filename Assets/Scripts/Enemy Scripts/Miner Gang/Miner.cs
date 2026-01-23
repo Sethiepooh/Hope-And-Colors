@@ -1,17 +1,17 @@
-using UnityEngine;
 using System.Collections;
-using static EnemyManager;
+using UnityEngine;
 
-public class Enforcer : EnemyBase
+public class Miner : EnemyBase
 {
     [Header("Attack Stats")]
     [SerializeField] float attackRange = 1.0f;
-    [SerializeField] int defaultDamage = 5;
-    [SerializeField] int empoweredDamage = 10;
-    int damage;
+    [SerializeField] int damage = 5;
+    [SerializeField] Transform attackPoint;
     [SerializeField] float dashDuration = 0.5f;
+    public bool alternate = false;
     int beatCount = 0;
-    bool swing;
+    bool slash = false;
+    bool alt = false;
 
     [Header("Movement Stats")]
     [SerializeField] float moveSpeed = 3.0f;
@@ -19,7 +19,6 @@ public class Enforcer : EnemyBase
     GameObject player;
     [SerializeField] LayerMask playerLayer;
     bool clutter;
-    public Transform facedDirection;
 
     EnemyManager enemyManager;
     PulseManager pulseManager;
@@ -28,8 +27,6 @@ public class Enforcer : EnemyBase
     TrailRenderer tRend;
     Color defaultColor;
     SpriteRenderer sRend;
-    public GameObject attackIndicator;
-    public AttackIndicator aIndicator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -49,37 +46,30 @@ public class Enforcer : EnemyBase
     // Update is called once per frame
     void Update()
     {
-        if(empowered)
+        if (slash)
         {
-            damage = empoweredDamage;
-        }
-        else
-        {
-            damage = defaultDamage;
-        }
-
-        if (swing)
-        {
-            Collider2D[] hitObjects = Physics2D.OverlapCircleAll(transform.position, attackRange, playerLayer);
-            foreach (Collider2D objects in hitObjects)
+            Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
+            if (hitPlayers.Length > 0)
             {
-                if (objects.gameObject.CompareTag("Player") || objects.gameObject.CompareTag("Bomb") || objects.gameObject.CompareTag("Obstacle"))
+                foreach (Collider2D player in hitPlayers)
                 {
-                    Debug.Log("Hit Detected");
-                    // Check if enemy is in front of player
-                    Vector2 relativePos = objects.transform.position - transform.position;
-                    Vector2 forward = (Vector2)facedDirection.position - (Vector2)transform.position;
-                    float angle = Vector3.Angle(relativePos, forward);
-                    if (angle < 90f)
+                    if (player.CompareTag("Player"))
                     {
-                        //Apply damage to player
-                        Health hp = objects.gameObject.GetComponent<Health>();
-                        hp.TakeDamage(damage);
-                        enemyManager.TriggerDoubleTime(5f);
+                        player.GetComponent<Health>().TakeDamage(damage);
+                        slash = false;
+                    }
+                    else if (player.CompareTag("Obstacle"))
+                    {
+                        player.GetComponent<Health>().TakeDamage(damage);
+                        slash = false;
+                    }
+                    else if (player.CompareTag("Bomb"))
+                    {
+                        player.GetComponent<Health>().TakeDamage(damage);
+                        slash = false;
                     }
                 }
             }
-            aIndicator.AttackFlash();
         }
     }
 
@@ -100,30 +90,49 @@ public class Enforcer : EnemyBase
                 direction = -direction;
         }
 
-        facedDirection.position = new Vector2(transform.position.x + direction.normalized.x,transform.position.y + direction.normalized.y);
-        attackIndicator.transform.rotation = Quaternion.LookRotation(Vector3.forward, facedDirection.position - transform.position);
-        
         tRend.emitting = true;
         rb.linearVelocity = direction * moveSpeed;
-        swing = true;
-
-        
         yield return new WaitForSeconds(dashDuration);
-        swing = false;
         rb.linearVelocity = Vector2.zero;
+        slash = false;
         tRend.emitting = false;
     }
 
     public override void Attack()
     {
         StartCoroutine(DashTowardsPlayer());
+        slash = true;
+    }
+
+    public void GroundPound(float radius)
+    {
+        Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
+        if (hitPlayers.Length > 0)
+        {
+            foreach (Collider2D player in hitPlayers)
+            {
+                if (player.CompareTag("Player"))
+                {
+                    player.GetComponent<Health>().TakeDamage(damage);
+                }
+                else if (player.CompareTag("Obstacle"))
+                {
+                    player.GetComponent<Health>().TakeDamage(damage);
+                }
+                else if (player.CompareTag("Bomb"))
+                {
+                    player.GetComponent<Health>().TakeDamage(damage);
+                }
+            }
+        }
     }
 
     public override void AddToBeatCount()
     {
+        //Debug.Log("Glitch Child Beat Added");
         if (active)
         {
-            if (beatCount == 16)
+            if (beatCount == 8)
             {
                 beatCount = 1;
             }
@@ -132,17 +141,37 @@ public class Enforcer : EnemyBase
                 beatCount++;
             }
 
-            if(beatCount %2 == 0 && beatCount < 9)
+            if (alternate)
             {
-                sRend.color = attackColor;
-                Attack();
+                if (beatCount > 4)
+                {
+                    sRend.color = attackColor;
+                    Attack();
+                }
+                else
+                {
+                    sRend.color = defaultColor;
+                }
             }
+            else
+            {
+                if (beatCount <= 4)
+                {
+                    sRend.color = attackColor;
+                    Attack();
+                }
+                else
+                {
+                    sRend.color = defaultColor;
+                }
+            }
+
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy")/* || collision.gameObject.CompareTag("Wall")*/)
         {
             clutter = true;
         }
@@ -150,7 +179,7 @@ public class Enforcer : EnemyBase
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy")/*|| collision.gameObject.CompareTag("Wall")*/)
         {
             clutter = false;
         }
@@ -159,6 +188,6 @@ public class Enforcer : EnemyBase
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 }
