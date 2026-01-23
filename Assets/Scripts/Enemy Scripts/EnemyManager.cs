@@ -8,12 +8,14 @@ public class EnemyManager : MonoBehaviour
     public EnemyGroup[] enemyGroups;
     public List<GameObject> spawnedEnemies = new List<GameObject>();
     RespawnManager respawnManager;
+    BPMInteract bpmInteract;
     [HideInInspector]public bool angelBreak = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         SetEnemies();
+        bpmInteract = GameObject.FindWithTag("RhythmManager").GetComponent<BPMInteract>();
         respawnManager = GameObject.FindWithTag("RespawnManager").GetComponent<RespawnManager>();
     }
 
@@ -121,6 +123,11 @@ public class EnemyManager : MonoBehaviour
                 }                  
             }              
         }
+    }
+
+    public void TriggerSpeedUp()
+    {
+        bpmInteract.TriggerSpeedUp();
     }
 
     [System.Serializable]

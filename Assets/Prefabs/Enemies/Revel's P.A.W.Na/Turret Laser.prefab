@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -7720408383684513645}
   - component: {fileID: -5287567749873081189}
   - component: {fileID: 8701586198916234718}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Turret Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +150,7 @@ CircleCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

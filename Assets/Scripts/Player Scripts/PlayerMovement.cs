@@ -29,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
     public float dashCooldown;
     bool dashing;
     bool canDash = true;
+    Collider2D playerCollider;
+    [SerializeField] LayerMask dodgeLayer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -36,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
         playerAttack = GetComponent<PlayerAttack>();
         health = GetComponent<Health>();
         rb = GetComponent<Rigidbody2D>();
+        playerCollider = GetComponent<Collider2D>();
         pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
         pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
         currentSpeed = sprintSpeed;
@@ -139,10 +142,14 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator HandleDash()
     {
         dashing = true;
+        playerCollider.excludeLayers = dodgeLayer;
+        health.damagable = false;
         rb.AddForce(movement * dashSpeed, ForceMode2D.Impulse);
         canDash = false;
         yield return new WaitForSeconds(dashTime);
         rb.linearVelocity = Vector2.zero;
+        playerCollider.excludeLayers = 0;
+        health.damagable = true;
         dashing = false;
         StartCoroutine(DashCooldown());
     }

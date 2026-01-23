@@ -1,3 +1,4 @@
+using System.Collections;
 using NUnit.Framework.Constraints;
 using UnityEngine;
 using UnityEngine.Events;
@@ -19,6 +20,8 @@ public class BPMInteract : MonoBehaviour
     public bool adaptive;
 
     [SerializeField]AlixBoss alixBoss;
+
+    bool speedUp = false;
 
     private void Awake()
     {
@@ -46,6 +49,27 @@ public class BPMInteract : MonoBehaviour
     {
         clipLengthInBeats = Mathf.FloorToInt(audioSource.clip.samples / (audioSource.clip.frequency * intervals[sectionCheckIndex].GetIntervalLength(bpm)));
         Debug.Log("Clip Length in Beats: " + clipLengthInBeats);
+    }
+
+    public void TriggerSpeedUp()
+    {
+        if (!speedUp)
+        {
+            StartCoroutine(SpeedUpAudio());
+        }
+    }
+
+    IEnumerator SpeedUpAudio()
+    {
+        audioSource.pitch = 1.25f;
+        bpm *= 1.25f;
+        speedUp = true;
+
+        yield return new WaitForSeconds(5f);
+
+        audioSource.pitch = 1f;
+        bpm /= 1.25f;
+        speedUp = false;
     }
 
     //Managing the section of the song currently playing

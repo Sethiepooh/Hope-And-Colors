@@ -1,8 +1,8 @@
-using UnityEngine;
+using System;
 using System.Collections;
-using static EnemyManager;
+using UnityEngine;
 
-public class Enforcer : EnemyBase
+public class Vanguard : EnemyBase
 {
     [Header("Attack Stats")]
     [SerializeField] float attackRange = 1.0f;
@@ -11,7 +11,13 @@ public class Enforcer : EnemyBase
     int damage;
     [SerializeField] float dashDuration = 0.5f;
     int beatCount = 0;
-    bool swing;
+    bool alt;
+    bool charging;
+
+    [Header("Shotgun Settings")]
+    [SerializeField] GameObject shotgunPrefab;
+    [SerializeField] int pelletCount = 5;
+    [SerializeField] float spreadAngle = 45f;
 
     [Header("Movement Stats")]
     [SerializeField] float moveSpeed = 3.0f;
@@ -49,7 +55,7 @@ public class Enforcer : EnemyBase
     // Update is called once per frame
     void Update()
     {
-        if(empowered)
+        if (empowered)
         {
             damage = empoweredDamage;
         }
@@ -58,8 +64,9 @@ public class Enforcer : EnemyBase
             damage = defaultDamage;
         }
 
-        if (swing)
+        if (charging)
         {
+            // Detect Player in range
             Collider2D[] hitObjects = Physics2D.OverlapCircleAll(transform.position, attackRange, playerLayer);
             foreach (Collider2D objects in hitObjects)
             {
@@ -86,32 +93,81 @@ public class Enforcer : EnemyBase
     IEnumerator DashTowardsPlayer()
     {
         Vector2 direction;
-        if (!clutter)
+        Vector2 playerPos = player.transform.position;
+        direction = (playerPos - (Vector2)transform.position).normalized;
+        Vector2 rigidDir =  CheckChargeDirection(direction);
+
+        tRend.emitting = true;
+        rb.linearVelocity = rigidDir * moveSpeed;
+        charging = true;
+
+
+        yield return new WaitForSeconds(dashDuration);
+        charging = false;
+        rb.linearVelocity = Vector2.zero;
+        tRend.emitting = false;
+        alt = !alt;
+    }
+
+    void FireShotgun()
+    {
+        Vector2 playerPos = player.transform.position;
+        Vector2 direction = (playerPos - (Vector2)transform.position).normalized;
+        Vector2 rigidDir = CheckChargeDirection(direction);
+        Vector2 fireDir = facedDirection.localPosition;
+        float angleStep = spreadAngle / (pelletCount - 1);
+
+        for (int i = 0; i < pelletCount; i++)
         {
-            Vector2 playerPos = player.transform.position;
-            direction = (playerPos - rb.position).normalized;
+            float angle = -spreadAngle / 2 + angleStep * i;
+            Quaternion rotation = Quaternion.Euler(0, 0, angle);
+            Vector2 pelletDir = rotation * fireDir;
+
+            GameObject pellet = Instantiate(shotgunPrefab, facedDirection.position, Quaternion.identity);
+            Projectile pelletScript = pellet.GetComponent<Projectile>();
+            pelletScript.direction = pelletDir.normalized;
+        }
+        alt = !alt;
+    }
+
+    Vector2 CheckChargeDirection(Vector2 dir)
+    {
+        if (MathF.Abs(dir.x) > MathF.Abs(dir.y))
+        {
+            dir.y = 0;
+            if (dir.x < 0)
+            {
+                facedDirection.localPosition = new Vector2(-1, 0);
+                attackIndicator.transform.rotation = Quaternion.Euler(0, 0, 90f);
+            }
+            else
+            {
+                facedDirection.localPosition = new Vector2(1, 0);
+                attackIndicator.transform.rotation = Quaternion.Euler(0, 0, -90f);
+            }
+            dir = facedDirection.localPosition;
+            Debug.Log(dir);
+            return dir;
         }
         else
         {
-            int randomInt = Random.Range(0, 2);
-            Vector2 playerPos = player.transform.position;
-            direction = (playerPos - rb.position).normalized;
-            if (randomInt == 0)
-                direction = -direction;
+            dir.x = 0;
+            if (dir.y < 0)
+            {
+                facedDirection.localPosition = new Vector2(0, -1);
+                
+                attackIndicator.transform.rotation = Quaternion.Euler(0, 0, 180f);
+            }
+            else
+            {
+                facedDirection.localPosition = new Vector2(0, 1);
+                
+                attackIndicator.transform.rotation = Quaternion.Euler(0, 0, 0f);
+            }
+            dir = facedDirection.localPosition;
+            Debug.Log(dir);
+            return dir;
         }
-
-        facedDirection.position = new Vector2(transform.position.x + direction.normalized.x,transform.position.y + direction.normalized.y);
-        attackIndicator.transform.rotation = Quaternion.LookRotation(Vector3.forward, facedDirection.position - transform.position);
-        
-        tRend.emitting = true;
-        rb.linearVelocity = direction * moveSpeed;
-        swing = true;
-
-        
-        yield return new WaitForSeconds(dashDuration);
-        swing = false;
-        rb.linearVelocity = Vector2.zero;
-        tRend.emitting = false;
     }
 
     public override void Attack()
@@ -123,7 +179,7 @@ public class Enforcer : EnemyBase
     {
         if (active)
         {
-            if (beatCount == 16)
+            if (beatCount == 4)
             {
                 beatCount = 1;
             }
@@ -132,11 +188,24 @@ public class Enforcer : EnemyBase
                 beatCount++;
             }
 
-            if(beatCount %2 == 0 && beatCount < 9)
+            if (alt)
             {
-                sRend.color = attackColor;
-                Attack();
+                if(beatCount % 4 == 0)
+                {
+                    sRend.color = attackColor;
+                    Attack();
+                }
             }
+            else
+            {
+                if (beatCount % 4 == 0)
+                {
+                    sRend.color = attackColor;
+                    FireShotgun();
+                }
+            }
+
+
         }
     }
 
