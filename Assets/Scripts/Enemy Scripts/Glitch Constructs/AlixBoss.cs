@@ -18,6 +18,21 @@ public class AlixBoss : EnemyBase
     [SerializeField] GameObject projectile;
     [SerializeField] ParticleSystem telegraphEffect;
 
+    //Onslaught Settings
+    [Header("Onslaught")]
+    [SerializeField] GameObject OnslaughtPrefab;
+
+    [Header("Scatter Onslaught Stats")]
+    [SerializeField] int numberOfScatterProjectiles = 16;
+
+    [Header("Single Slash Onslaught Stats")]
+    [SerializeField] int numberOfProjectiles = 4;
+    [SerializeField] float spreadAngle = 30f;
+
+    [Header("Teleportation")]
+    [SerializeField] Transform[] teleportPoints;
+    [SerializeField] Transform arenaCenter;
+
     [Header("Shockwave Spawn Stats")]
     [SerializeField] GameObject shockwavePrefab;
     [SerializeField] float spawnRange = 3.0f;
@@ -26,11 +41,13 @@ public class AlixBoss : EnemyBase
     [Header("Enemy Spawn Stats")]
     [SerializeField] GameObject[] enemyPrefabs;
     [SerializeField] SpawnPoint[] enemySpawnPoints;
-    [SerializeField] Transform arenaCenter;
 
     [Header("Phase Management")]
-    Health bossHealth;
     [SerializeField] int attackPhase = 0;
+    [SerializeField] int attackType = 0;
+    [SerializeField] int attacksTillChange = 4;
+    Health bossHealth;
+    int attacksDone = 0;
 
 
     [Header("Movement Stats")]
@@ -120,6 +137,24 @@ public class AlixBoss : EnemyBase
         }
     }
 
+    public void AddToAttacksDone()
+    {
+        Debug.Log("Attack Completed");
+        attacksDone++;
+        if (attacksDone >= attacksTillChange)
+        {
+            if (attackType >= 1)
+            {
+                attackType = 0;
+            }
+            else
+            {
+                attackType++;
+            }
+            attacksDone = 0;
+        }
+    }
+
     public void ChangeColor(Color newColor)
     {
         sRend.color = newColor;
@@ -199,6 +234,54 @@ public class AlixBoss : EnemyBase
         proj.GetComponent<Projectile>().speed = 15;
     }
 
+    //Onslaught Methods
+    void FireScatterOnslaught()
+    {
+        float angleStep = 360f / numberOfScatterProjectiles;
+        float angle = 0f;
+        for (int i = 0; i < numberOfScatterProjectiles; i++)
+        {
+            float projectileDirXPosition = transform.position.x + Mathf.Sin((angle * Mathf.PI) / 180);
+            float projectileDirYPosition = transform.position.y + Mathf.Cos((angle * Mathf.PI) / 180);
+            Vector3 projectileVector = new Vector3(projectileDirXPosition, projectileDirYPosition, 0);
+            Vector3 projectileMoveDirection = (projectileVector - transform.position).normalized;
+            GameObject tmpObj = Instantiate(OnslaughtPrefab, attackPoint.position + (projectileMoveDirection * 4), Quaternion.identity);
+            tmpObj.GetComponent<Projectile>().direction = projectileMoveDirection;
+            tmpObj.transform.rotation = Quaternion.LookRotation(Vector3.forward, projectileMoveDirection);
+            angle += angleStep;
+        }
+    }
+
+    void FireSingleSlashOnslaught()
+    {
+        Vector2 playerPos = player.transform.position;
+        Vector2 direction = (playerPos - (Vector2)transform.position).normalized;
+        float angleStep = spreadAngle / (numberOfProjectiles - 1);
+
+        for (int i = 0; i < numberOfProjectiles; i++)
+        {
+            float angle = -spreadAngle / 2 + angleStep * i;
+            Quaternion rotation = Quaternion.Euler(0, 0, angle);
+            Vector2 pelletDir = rotation * direction;
+
+            GameObject pellet = Instantiate(OnslaughtPrefab, (Vector2)transform.position + (direction * 4), Quaternion.identity);
+            Projectile pelletScript = pellet.GetComponent<Projectile>();
+            pelletScript.direction = pelletDir.normalized;
+        }
+    }
+
+    // Teleportation Methods
+    void Teleport()
+    {
+        int randPoint = Random.Range(0, teleportPoints.Length);
+        transform.position = teleportPoints[randPoint].position;
+    }
+
+    void TeleportToCenter()
+    {
+        transform.position = arenaCenter.position;
+    }
+
     public override void AddToBeatCount()
     {
         foreach (GameObject shock in activeShockwaves)
@@ -230,7 +313,7 @@ public class AlixBoss : EnemyBase
             barBeatCount++;
             if (barBeatCount %8 == 0)
             {
-                section = !section;
+               // section = !section;
             }           
         }
     }
@@ -242,19 +325,43 @@ public class AlixBoss : EnemyBase
 
     void PhaseOneAttackRotation()
     {
-        if (active && !section)
+        beatCount++;
+
+        switch(attackType)
         {
-            beatCount++;
-            chargeEffect.Stop();
-            StartCoroutine(DashTowardsPlayer());
+            case 0:
+                if(beatCount % 4 == 0)
+                {
+                    TeleportToCenter();
+                    FireScatterOnslaught();
+                }
+                break;
+            case 1:
+                if(beatCount % 8 == 0)
+                {
+                    Teleport();
+                }
+                if (beatCount % 4 == 0)
+                {
+                    FireSingleSlashOnslaught();
+                }
+                break;
         }
-        if (active && section)
-        {
-            beatCount++;
-            transform.position = arenaCenter.position;
-            if (beatCount % 2 == 0)
-                SpawnShockwaveNearBoss();
-        }
+
+       
+        //if (active && !section)
+        //{
+        //    beatCount++;
+        //    chargeEffect.Stop();
+        //    StartCoroutine(DashTowardsPlayer());
+        //}
+        //if (active && section)
+        //{
+        //    beatCount++;
+        //    transform.position = arenaCenter.position;
+        //    if (beatCount % 2 == 0)
+        //        SpawnShockwaveNearBoss();
+        //}
     }
 
     void PhaseTwoAttackRotation()

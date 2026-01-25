@@ -7,10 +7,12 @@ using UnityEngine.Events;
 public class Health : MonoBehaviour
 {
     public UnityEvent onDeathEvent;
+    public UnityEvent onDamageEvent;
     public float maxHealth = 100;
     float currentHealth;
     [SerializeField] Slider healthBar;
     [SerializeField] bool isPlayer = false;
+    [SerializeField] bool isBoss = false;
     [SerializeField] ParticleSystem deathParticles;
 
     [Header("Bomb settings")]
@@ -58,6 +60,11 @@ public class Health : MonoBehaviour
             else
             {
                 StartCoroutine(HitFlash(Color.white));
+            }
+
+            if (isBoss)
+            {
+                onDamageEvent.Invoke();
             }
 
             if(isPlayer)
