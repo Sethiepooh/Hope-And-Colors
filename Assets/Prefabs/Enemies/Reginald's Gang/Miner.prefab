@@ -1,36 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1206755784696435007
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1986479172131149982}
-  m_Layer: 6
-  m_Name: AttackPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1986479172131149982
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1206755784696435007}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3982889337910326974}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5601313213131780542
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,13 +11,13 @@ GameObject:
   - component: {fileID: 3982889337910326974}
   - component: {fileID: 3934159157247676804}
   - component: {fileID: 6223652972056061716}
-  - component: {fileID: 3267928717474017988}
   - component: {fileID: 1509623737287629639}
   - component: {fileID: 2507205772552818112}
   - component: {fileID: 8291094305311024947}
   - component: {fileID: 1647247700484166753}
+  - component: {fileID: 508896836888952755}
   m_Layer: 6
-  m_Name: Glitch Child
+  m_Name: Miner
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +36,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1986479172131149982}
   - {fileID: 2437171735678074384}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -116,7 +84,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0.24903771, b: 0.509434, a: 1}
+  m_Color: {r: 0, g: 0.6226415, b: 0.22384225, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -153,30 +121,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &3267928717474017988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5601313213131780542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65df45f570ba9cb48b0bb9d75bdb34bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  active: 0
-  empowered: 0
-  attackRange: 0.7
-  damage: 10
-  attackPoint: {fileID: 1986479172131149982}
-  dashDuration: 0.2
-  alternate: 0
-  moveSpeed: 20
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  attackColor: {r: 0.050980397, g: 0.5137255, b: 1, a: 1}
 --- !u!114 &1509623737287629639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -377,6 +321,35 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!114 &508896836888952755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5601313213131780542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f44bc0a48a7aa20499d34f50760f69df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  active: 0
+  empowered: 0
+  groundPoundRadiusIncrease: 2
+  groundPoundBaseRadius: 2
+  groundPoundBaseDamage: 3
+  groundPoundDamageIncrease: 2
+  groundPoundEffect: {fileID: 8274104577857069958, guid: d1d8fc17717816a4cb2de1ad4ff066cd, type: 3}
+  attackRange: 0.5
+  damage: 5
+  attackPoint: {fileID: 3982889337910326974}
+  dashDuration: 0.5
+  alternate: 0
+  moveSpeed: 3
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  attackColor: {r: 0, g: 0.62352943, b: 0.22352943, a: 1}
 --- !u!1001 &2827188432986276409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -385,6 +358,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3982889337910326974}
     m_Modifications:
+    - target: {fileID: 17395424686764818, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.21960786
+      objectReference: {fileID: 0}
+    - target: {fileID: 17395424686764818, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.62352943
+      objectReference: {fileID: 0}
     - target: {fileID: 499514873391823913, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

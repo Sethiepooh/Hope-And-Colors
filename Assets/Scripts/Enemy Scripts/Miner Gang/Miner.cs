@@ -3,8 +3,17 @@ using UnityEngine;
 
 public class Miner : EnemyBase
 {
-    [Header("Attack Stats")]
-    [SerializeField] float attackRange = 1.0f;
+    [Header("Ground Pound Stats")]
+    [SerializeField] float groundPoundRadiusIncrease = 2.0f;
+    [SerializeField] float groundPoundBaseRadius = 4f;
+    [SerializeField] int groundPoundBaseDamage = 5;
+    [SerializeField] int groundPoundDamageIncrease = 2;
+    [SerializeField] GameObject groundPoundEffect;
+    int currentGroundPoundDamage;
+    float currentGroundPoundRadius;
+
+    [Header("Dash Stats")]
+    [SerializeField] float attackRange = 0.5f;
     [SerializeField] int damage = 5;
     [SerializeField] Transform attackPoint;
     [SerializeField] float dashDuration = 0.5f;
@@ -41,6 +50,8 @@ public class Miner : EnemyBase
         // enemyManager.AddEnemy(this.gameObject);
         pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
         pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
+        currentGroundPoundRadius = groundPoundBaseRadius;
+        currentGroundPoundDamage = groundPoundBaseDamage;
     }
 
     // Update is called once per frame
@@ -106,25 +117,29 @@ public class Miner : EnemyBase
 
     public void GroundPound(float radius)
     {
-        Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
+        Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, radius, playerLayer);
         if (hitPlayers.Length > 0)
         {
             foreach (Collider2D player in hitPlayers)
             {
                 if (player.CompareTag("Player"))
                 {
-                    player.GetComponent<Health>().TakeDamage(damage);
+                    player.GetComponent<Health>().TakeDamage(currentGroundPoundDamage);
                 }
                 else if (player.CompareTag("Obstacle"))
                 {
-                    player.GetComponent<Health>().TakeDamage(damage);
+                    player.GetComponent<Health>().TakeDamage(currentGroundPoundDamage);
                 }
                 else if (player.CompareTag("Bomb"))
                 {
-                    player.GetComponent<Health>().TakeDamage(damage);
+                    player.GetComponent<Health>().TakeDamage(currentGroundPoundDamage);
                 }
             }
         }
+        GameObject effect = Instantiate(groundPoundEffect, attackPoint.position, Quaternion.identity);
+        effect.transform.localScale = new Vector3(radius, radius, 1);
+
+        Destroy(effect, 1f);
     }
 
     public override void AddToBeatCount()
@@ -132,40 +147,38 @@ public class Miner : EnemyBase
         //Debug.Log("Glitch Child Beat Added");
         if (active)
         {
-            if (beatCount == 8)
+            beatCount++;
+            
+
+            if (beatCount == 12)
             {
-                beatCount = 1;
+                beatCount = 0;
+            }
+
+
+            if (beatCount < 3)
+            {
+                sRend.color = attackColor;
+               // StopAllCoroutines();
+                Attack();               
             }
             else
             {
-                beatCount++;
+                sRend.color = defaultColor;
             }
 
-            if (alternate)
+            if (beatCount > 3 && beatCount < 7)
             {
-                if (beatCount > 4)
-                {
-                    sRend.color = attackColor;
-                    Attack();
-                }
-                else
-                {
-                    sRend.color = defaultColor;
-                }
+                GroundPound(currentGroundPoundRadius);
+                currentGroundPoundRadius += groundPoundRadiusIncrease;
+                currentGroundPoundDamage += groundPoundDamageIncrease;
+                Debug.Log("Miner Attack on beat " + beatCount);
             }
-            else
+            else if (beatCount == 7)
             {
-                if (beatCount <= 4)
-                {
-                    sRend.color = attackColor;
-                    Attack();
-                }
-                else
-                {
-                    sRend.color = defaultColor;
-                }
+                currentGroundPoundRadius = groundPoundBaseRadius;
+                currentGroundPoundDamage = groundPoundBaseDamage;
             }
-
         }
     }
 
@@ -188,6 +201,6 @@ public class Miner : EnemyBase
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        Gizmos.DrawWireSphere(attackPoint.position, currentGroundPoundRadius);
     }
 }
