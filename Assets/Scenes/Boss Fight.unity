@@ -485,6 +485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Spawn Point (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2112700188305242003, guid: 157514ed347a68548b3789dd038b1989, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1627,6 +1631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Spawn Point (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2112700188305242003, guid: 157514ed347a68548b3789dd038b1989, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.55
@@ -1854,22 +1862,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Evie
       objectReference: {fileID: 0}
-    - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: strikeForce
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: enemyLayer.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: baseInspirationDamage
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: damageIncreasePerCombo
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2184088789803479037, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -1886,13 +1878,9 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -2
       objectReference: {fileID: 0}
-    - target: {fileID: 3835980306546884593, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: dashTime
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3835980306546884593, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-      propertyPath: dashCooldown
-      value: 0.2
+    - target: {fileID: 3702473962071426232, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.20275879
       objectReference: {fileID: 0}
     - target: {fileID: 4727956636468998831, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: m_SortingOrder
@@ -1966,11 +1954,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc639b33e62fc24db1d45a8917e8368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &915683175 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5940960966160364567, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
-  m_PrefabInstance: {fileID: 915683173}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &915683176 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3734539131353021963, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
@@ -2065,6 +2048,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy Spawn Point (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2112700188305242003, guid: 157514ed347a68548b3789dd038b1989, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.46
@@ -2125,6 +2112,10 @@ PrefabInstance:
     - target: {fileID: 307196571392144453, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_Name
       value: Enemy Spawn Point (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112700188305242003, guid: 157514ed347a68548b3789dd038b1989, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2437,7 +2428,7 @@ MonoBehaviour:
   section: 0
   attackRange: 1.31
   damage: 5
-  attackPoint: {fileID: 1180964110}
+  attackPoint: {fileID: 2020594440}
   dashDuration: 0.2
   projectileSpawn: {fileID: 3231384068776722847, guid: 52da29d0bd4ad894c8202ada0d1f493d, type: 3}
   projectile: {fileID: 8608247141467209458, guid: 52da29d0bd4ad894c8202ada0d1f493d, type: 3}
@@ -2457,12 +2448,13 @@ MonoBehaviour:
   - {fileID: 1388918328}
   arenaCenter: {fileID: 1851982028}
   shockwavePrefab: {fileID: 6346115159475032783, guid: a2bb4388f7f08f34fb341972a294ab65, type: 3}
-  spawnRange: 10
+  spawnRange: 20
   activeShockwaves: []
   enemyPrefabs:
+  - {fileID: 8921412870381785649, guid: 903fe4b295cc2fb479c624cd04e52364, type: 3}
   - {fileID: 5601313213131780542, guid: 3ada33bbebcb19244bca5e96f31cc147, type: 3}
-  - {fileID: 5690663883746622439, guid: 6ae9e09401086a04d992ff0b5fc7917a, type: 3}
   - {fileID: 2342308305547420243, guid: 406a03fb2ba1eb546a5daafe73773be2, type: 3}
+  - {fileID: 5690663883746622439, guid: 6ae9e09401086a04d992ff0b5fc7917a, type: 3}
   enemySpawnPoints:
   - {fileID: 366088979}
   - {fileID: 1517978058}
@@ -2633,6 +2625,7 @@ Transform:
   - {fileID: 609900975}
   - {fileID: 1946994904}
   - {fileID: 2043507718}
+  - {fileID: 2020594440}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1180964111
@@ -2795,7 +2788,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  maxHealth: 1500
+  maxHealth: 1100
   healthBar: {fileID: 91612183}
   isPlayer: 1
   isBoss: 1
@@ -2890,6 +2883,10 @@ PrefabInstance:
     - target: {fileID: 307196571392144453, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_Name
       value: Enemy Spawn Point (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112700188305242003, guid: 157514ed347a68548b3789dd038b1989, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3079,7 +3076,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 8.061081
+  orthographic size: 14.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3104,7 +3101,7 @@ Transform:
   m_GameObject: {fileID: 1281278037}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -117.43, y: -13.97, z: -10}
+  m_LocalPosition: {x: -99.32, y: -13.13, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3378,12 +3375,12 @@ MonoBehaviour:
   m_StreamingVersion: 20241001
   m_LegacyPriority: 0
   Target:
-    TrackingTarget: {fileID: 915683175}
+    TrackingTarget: {fileID: 0}
     LookAtTarget: {fileID: 0}
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 34
-    OrthographicSize: 8.061081
+    OrthographicSize: 14.5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -3410,7 +3407,7 @@ Transform:
   m_GameObject: {fileID: 1483774367}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -117.43, y: -13.97, z: -10}
+  m_LocalPosition: {x: -99.32, y: -13.13, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3565,6 +3562,10 @@ PrefabInstance:
     - target: {fileID: 307196571392144453, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_Name
       value: Enemy Spawn Point (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112700188305242003, guid: 157514ed347a68548b3789dd038b1989, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3849,6 +3850,10 @@ PrefabInstance:
     - target: {fileID: 307196571392144453, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_Name
       value: Enemy Spawn Point (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112700188305242003, guid: 157514ed347a68548b3789dd038b1989, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4153,6 +4158,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf000f4e2a26cd144a41ccd5d8aa4b54, type: 3}
+--- !u!1 &2020594439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2020594440}
+  m_Layer: 6
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2020594440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020594439}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1180964110}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2043507717
 GameObject:
   m_ObjectHideFlags: 0
@@ -4457,6 +4493,10 @@ PrefabInstance:
     - target: {fileID: 307196571392144453, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_Name
       value: Enemy Spawn Point
+      objectReference: {fileID: 0}
+    - target: {fileID: 2112700188305242003, guid: 157514ed347a68548b3789dd038b1989, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.x

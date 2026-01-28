@@ -506,7 +506,7 @@ MonoBehaviour:
   baseDamage: 10
   damageIncreasePerCombo: 2
   perfectDamageIncreasePerCombo: 2
-  baseInspirationDamage: 10
+  baseInspirationDamage: 12
   inspirationDamagePerCombo: 5
   inspirationPerfectDamagePerCombo: 8
   facedDirection: {fileID: 2125546132979403559}

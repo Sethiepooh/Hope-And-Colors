@@ -35,12 +35,12 @@ public class PlayerAttack : MonoBehaviour
 
     [Header("Inspiration Stats")]
     [SerializeField] float inspirationGainOnBeat = 5f;
-    [SerializeField] float inspirationgainOffBeat = 1f;
+    [SerializeField] float inspirationGainOffBeat = 1f;
     [SerializeField] float maxInspiration = 100f;
     [SerializeField] float inspirationConsumptionRate = 5f;
     [SerializeField] Slider inspirationBar;
     float inspirationGainOnHit;
-    [HideInInspector]public float currentInspiration = 0f;
+     public float currentInspiration = 0f;
     PlayerMovement playerMovement;
     public float healthRegenRate;
 
@@ -179,7 +179,7 @@ public class PlayerAttack : MonoBehaviour
                 Debug.Log("Missed Attack");
                 StopCoroutine(AttackCooldown());    
                 StartCoroutine(AttackCooldown());
-                inspirationGainOnHit = inspirationgainOffBeat;
+                inspirationGainOnHit = inspirationGainOffBeat;
                 comboStep = 0;
                return;
             }

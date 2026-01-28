@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 1.17, z: 0.4}
+  m_LocalScale: {x: 0.6, y: 1.8, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,8 +102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd6b57ed7f51cbb4a94bbdcc03ef6234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  damage: 5
+  speed: 15
+  damage: 15
   direction: {x: 0, y: 0}
   rb: {fileID: -5287567749873081189}
   fireFromPlayer: 0

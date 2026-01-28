@@ -67,7 +67,7 @@ public class Health : MonoBehaviour
                 onDamageEvent.Invoke();
             }
 
-            if(isPlayer)
+            if(isPlayer && !isBoss)
             {
                 StartCoroutine(SetPlayerHitStun());
             }

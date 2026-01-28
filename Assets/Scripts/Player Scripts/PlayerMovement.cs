@@ -88,7 +88,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        if (!dashing)
             movement = context.ReadValue<Vector2>();
     }
 
@@ -141,17 +140,19 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator HandleDash()
     {
+        Vector2 dir = movement;
         dashing = true;
         playerCollider.excludeLayers = dodgeLayer;
         health.damagable = false;
-        rb.AddForce(movement * dashSpeed, ForceMode2D.Impulse);
+        rb.AddForce(dir * dashSpeed, ForceMode2D.Impulse);
         canDash = false;
         yield return new WaitForSeconds(dashTime);
         rb.linearVelocity = Vector2.zero;
-        playerCollider.excludeLayers = 0;
-        health.damagable = true;
         dashing = false;
         StartCoroutine(DashCooldown());
+        yield return new WaitForSeconds(.1f);
+        playerCollider.excludeLayers = 0;
+        health.damagable = true;
     }
 
     IEnumerator HandleDive()

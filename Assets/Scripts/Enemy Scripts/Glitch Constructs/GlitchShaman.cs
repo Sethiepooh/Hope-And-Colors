@@ -10,7 +10,8 @@ public class GlitchShaman : EnemyBase
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        protectedEnemyHealth = protectedEnemy.GetComponent<Health>();
+        if(protectedEnemy != null)
+            protectedEnemyHealth = protectedEnemy.GetComponent<Health>();
     }
 
     // Update is called once per frame
@@ -27,6 +28,12 @@ public class GlitchShaman : EnemyBase
                 shieldEffect.transform.localScale = protectedEnemy.transform.localScale * 1.5f;
             }
         }
+    }
+
+    public void SetProtectionTarget(GameObject enemy)
+    {
+        protectedEnemy = enemy;
+        protectedEnemyHealth = protectedEnemy.GetComponent<Health>();
     }
 
     public void DeactivateShaman()

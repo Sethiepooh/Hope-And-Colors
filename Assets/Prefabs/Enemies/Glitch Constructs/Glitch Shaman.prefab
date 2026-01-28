@@ -159,21 +159,37 @@ MonoBehaviour:
   onDeathEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2772393510789411756}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: HandleShamanDeath
-        m_Mode: 2
+      - m_Target: {fileID: 7868360748076545916}
+        m_TargetAssemblyTypeName: GlitchShaman, Assembly-CSharp
+        m_MethodName: DeactivateShaman
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 7868360748076545916}
-          m_ObjectArgumentAssemblyTypeName: GlitchShaman, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2772393510789411756}
+        m_TargetAssemblyTypeName: Health, Assembly-CSharp
+        m_MethodName: HandleEnemyDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
   maxHealth: 40
   healthBar: {fileID: 0}
   isPlayer: 0
+  isBoss: 0
   deathParticles: {fileID: 9148174929730696254}
   blastParticles: {fileID: 0}
   blastRadius: 0
