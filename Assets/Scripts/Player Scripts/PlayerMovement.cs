@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     PulseManager pulseManager;
     Health health;
     PlayerAttack playerAttack;
+    Vector2 lastPos;
 
     // Movement variables
     [Header("Movement Stats")]
@@ -176,6 +177,20 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 GetMovement()
     {
         return movement;
+    }
+
+    public Vector2 GetMovementLateral()
+    {
+        if(movement.x < 0)
+        {
+            lastPos = new Vector2(-1, 0);
+        }
+        else if(movement.x > 0)
+        {
+            lastPos = new Vector2(1, 0);
+        }
+
+        return lastPos;
     }
 
     public void SetFreeze(bool b)

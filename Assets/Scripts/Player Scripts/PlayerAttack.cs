@@ -97,11 +97,11 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(p_Mov.GetMovement() != Vector2.zero)
+        if(p_Mov.GetMovement() != null)
         {
-            facedDirection.transform.position = new Vector2(transform.position.x + (p_Mov.GetMovement().x * 1.5f), transform.position.y + (p_Mov.GetMovement().y * 1.5f));
-            attackIndicator.transform.rotation = Quaternion.LookRotation(Vector3.forward, p_Mov.GetMovement());
-            criticalIndicator.transform.rotation = Quaternion.LookRotation(Vector3.forward, p_Mov.GetMovement());
+            facedDirection.transform.position = new Vector2(transform.position.x + (p_Mov.GetMovementLateral().x * 1.5f), transform.position.y + (p_Mov.GetMovementLateral().y * 1.5f));
+            attackIndicator.transform.rotation = Quaternion.LookRotation(Vector3.forward, p_Mov.GetMovementLateral());
+            criticalIndicator.transform.rotation = Quaternion.LookRotation(Vector3.forward, p_Mov.GetMovementLateral());
         }
             
         if (allegroMode)
@@ -180,6 +180,7 @@ public class PlayerAttack : MonoBehaviour
                 StopCoroutine(AttackCooldown());    
                 StartCoroutine(AttackCooldown());
                 inspirationGainOnHit = inspirationGainOffBeat;
+                currentDamage = baseDamage;
                 comboStep = 0;
                return;
             }
