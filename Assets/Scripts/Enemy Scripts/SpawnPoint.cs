@@ -7,6 +7,7 @@ public class SpawnPoint : MonoBehaviour
     [SerializeField] ParticleSystem spawnEffect;
     EnemyManager enemyManager;
     public GameObject currentEnemy;
+    public bool hasEnemy;
 
     private void Start()
     {
@@ -19,6 +20,8 @@ public class SpawnPoint : MonoBehaviour
         {
             yield break;
         }
+
+        hasEnemy = true;
 
         yield return new WaitForSeconds(4);
         GameObject spawnedEnemy =  Instantiate(enemy, transform.position, Quaternion.identity);
@@ -37,6 +40,8 @@ public class SpawnPoint : MonoBehaviour
             yield break;
         }
 
+        hasEnemy = true;
+
         yield return new WaitForSeconds(4);
         GameObject spawnedEnemy = Instantiate(shaman, transform.position, Quaternion.identity);
         currentEnemy = spawnedEnemy;
@@ -54,8 +59,10 @@ public class SpawnPoint : MonoBehaviour
     {
         if (currentEnemy != null)
         {
+            hasEnemy = false;
             enemyManager.spawnedEnemies.Remove(currentEnemy);
-            currentEnemy.GetComponent<Health>().TakeDamage(1000);
+            if(currentEnemy.activeSelf)
+                currentEnemy.GetComponent<Health>().HandleEnemyDeath();
             Destroy(currentEnemy);
             currentEnemy = null;
         }    

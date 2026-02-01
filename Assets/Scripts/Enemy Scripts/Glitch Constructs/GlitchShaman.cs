@@ -22,11 +22,14 @@ public class GlitchShaman : EnemyBase
         if(protectedEnemyHealth != null)
         {
             if(protectedEnemyHealth.damagable)
-            {
                 protectedEnemyHealth.damagable = false;
+
+            if(shieldEffect == null)
+            {
                 shieldEffect = Instantiate(shieldEffectPrefab, protectedEnemy.transform.position, Quaternion.identity, protectedEnemy.transform);
                 shieldEffect.transform.localScale = protectedEnemy.transform.localScale * 1.5f;
             }
+          
         }
     }
 

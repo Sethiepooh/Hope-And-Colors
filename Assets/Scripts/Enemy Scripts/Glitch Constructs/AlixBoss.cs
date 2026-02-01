@@ -38,6 +38,7 @@ public class AlixBoss : EnemyBase
     [Header("Shockwave Spawn Stats")]
     [SerializeField] GameObject shockwavePrefab;
     [SerializeField] float spawnRange = 3.0f;
+    [SerializeField] float nearSpawnRange = 1.0f;
     [HideInInspector]public List<GameObject> activeShockwaves = new List<GameObject>();
 
     [Header("Enemy Spawn Stats")]
@@ -97,7 +98,9 @@ public class AlixBoss : EnemyBase
             ChangeColor(defaultColor);
             attackPhase = 1;
             beatCount = 0;
+            attacksDone = 0;
             StartCoroutine(PushPlayerAway());
+            SpawnShamanDefense(1);
             active = true;
             bossHealth.SetDamagable(true);
         }
@@ -107,8 +110,9 @@ public class AlixBoss : EnemyBase
             attackPhase = 2;
             attackType = 0;
             beatCount = 0;
+            attacksDone = 0;
             StartCoroutine(PushPlayerAway());
-            SpawnShamanDefense();
+            SpawnShamanDefense(2);
             bpmInteract.currentMovement++;
         }
         else if (bossHealth.GetHealthPercent() <= .33f && attackPhase == 2)
@@ -116,7 +120,11 @@ public class AlixBoss : EnemyBase
             attackPhase = 3;
             attackType = 0;
             beatCount = 0;
+            attacksDone = 0;
             StartCoroutine(PushPlayerAway());
+            SpawnShamanDefense(2);
+            SpawnEnemies(1, 2);
+            numberOfProjectiles++;
             bpmInteract.currentMovement++;
         }
 
@@ -173,24 +181,71 @@ public class AlixBoss : EnemyBase
             beatCount = 0;  
         }
 
-        if(attackPhase == 1 && attackType == 0 && attacksDone == 0)
+        //Phase one actions
+        if(bossHealth.GetHealthPercent() >= .66f)
         {
-            TeleportToCenter();
-            StartCoroutine(PushPlayerAway());
+            if (attackPhase == 1 && attackType == 0 && attacksDone == 0)
+            {
+                StopAllCoroutines();
+                DestroyEnemies();
+                TeleportToCenter();
+                StartCoroutine(PushPlayerAway());
+                SpawnShamanDefense(1);
+            }
+
+            if (attackPhase == 1 && attackType == 1 && attacksDone == 0)
+            {
+                StopAllCoroutines();
+                DestroyEnemies();
+                Teleport();
+            }
         }
 
 
-        if (attackPhase == 1 && attackType == 1 && attacksDone == 0)
+        //Phase Two actions
+        if (bossHealth.GetHealthPercent() >= .33f)
         {
-            Teleport();
+            if (attackPhase == 2 && attackType == 0 && attacksDone == 0)
+            {
+                StopAllCoroutines();
+                DestroyEnemies();
+                TeleportToCenter();
+                StartCoroutine(PushPlayerAway());
+                SpawnShamanDefense(2);
+            }
+
+            if (attackPhase == 2 && attackType == 1 && attacksDone == 0)
+            {
+                StopAllCoroutines();
+                DestroyEnemies();
+                Teleport();
+                SpawnEnemies(1, 2);
+            }
         }
 
-        if(attackPhase == 2 && attackType == 0 && attacksDone == 0)
+
+        //Phase 3 Actions
+        if (bossHealth.GetHealthPercent() >= 0f)
         {
-            TeleportToCenter(); 
-            StartCoroutine(PushPlayerAway());
-            SpawnShamanDefense();
-        }
+            if (attackPhase == 3 && attackType == 0 && attacksDone == 0)
+            {
+                StopAllCoroutines();
+                DestroyEnemies();
+                TeleportToCenter();
+                StartCoroutine(PushPlayerAway());
+                SpawnShamanDefense(3);
+                SpawnEnemies(1, 2);
+            }
+
+            if (attackPhase == 3 && attackType == 1 && attacksDone == 0)
+            {
+                StopAllCoroutines();
+                DestroyEnemies();
+                Teleport();
+                SpawnEnemies(1, 2);
+                SpawnEnemies(2, 1);
+            }
+        }          
     }
 
     public void ChangeColor(Color newColor)
@@ -208,26 +263,39 @@ public class AlixBoss : EnemyBase
       
     }
 
-    void SpawnEnemies()
+    void SpawnEnemies(int spawnIndex, int enemyCount)
     {
-        int randEnemy = Random.Range(0, enemyPrefabs.Length);
-        int randPoint = Random.Range(0, enemySpawnPoints.Length);
-        enemySpawnPoints[randPoint].PlayEffect();
-        StartCoroutine(enemySpawnPoints[randPoint].SpawnEnemy(enemyPrefabs[randEnemy]));
+        for(int i = 0; i < enemyCount; i++)
+        {
+            int randPoint = Random.Range(0, enemySpawnPoints.Length);
+
+            if (!enemySpawnPoints[randPoint].HasEnemy())
+            {
+                enemySpawnPoints[randPoint].PlayEffect();
+                StartCoroutine(enemySpawnPoints[randPoint].SpawnEnemy(enemyPrefabs[spawnIndex]));
+
+            }
+            else
+            {
+                i--;
+                continue;
+            }
+           
+        }        
     }
 
-    void SpawnShamanDefense()
+    void SpawnShamanDefense(int spawnNum)
     {
 
         List<GameObject> shamans = new List<GameObject>();
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < spawnNum; i++)
         {
             int randIndex = Random.Range(0, enemySpawnPoints.Count());
             if (!enemySpawnPoints[randIndex].HasEnemy())
             {
                 enemySpawnPoints[randIndex].PlayEffect();
                 StartCoroutine(enemySpawnPoints[randIndex].SpawnAlixShaman(enemyPrefabs[0]));
-                shamans.Add(enemySpawnPoints[randIndex].currentEnemy);
+                //shamans.Add(enemySpawnPoints[randIndex].currentEnemy);
             }
             else
             {
@@ -238,21 +306,11 @@ public class AlixBoss : EnemyBase
         }
     }
 
-    void DestroyEnemies(int enemiesToDestroy)
+    void DestroyEnemies()
     {
-        int enemiesDestroyed = 0;
-
         foreach (SpawnPoint spawnPoint in enemySpawnPoints)
         {
-            if(enemiesDestroyed >= enemiesToDestroy)
-            {
-                break;
-            }
-            if (spawnPoint.HasEnemy())
-            {
-                spawnPoint.DestroyEnemy();
-                enemiesDestroyed++;
-            }
+            spawnPoint.DestroyEnemy();
         }
     }
 
@@ -273,7 +331,7 @@ public class AlixBoss : EnemyBase
 
     void SpawnShockwaveNearPlayer()
     {
-        Vector2 spawnPos = (Vector2)player.transform.position + UnityEngine.Random.insideUnitCircle * spawnRange;
+        Vector2 spawnPos = (Vector2)player.transform.position + UnityEngine.Random.insideUnitCircle * nearSpawnRange;
         GameObject shock =  Instantiate(shockwavePrefab, spawnPos, Quaternion.identity);
         activeShockwaves.Add(shock);
     }
@@ -314,7 +372,7 @@ public class AlixBoss : EnemyBase
     }
 
     //Onslaught Methods
-    void FireScatterOnslaught(float startAngle)
+    void FireScatterOnslaught()
     {
         float angleStep = 360f / numberOfScatterProjectiles;
         float angle = 0f;
@@ -443,7 +501,7 @@ public class AlixBoss : EnemyBase
                 if (beatCount % 4 == 0)
                 {
                     TeleportToCenter();
-                    ShockwaveRampage();
+                    SpawnShockwaveNearPlayer();
                 }
                 break;
         }
@@ -459,37 +517,67 @@ public class AlixBoss : EnemyBase
                 {
                     chargeEffect.Stop();
                     TeleportToCenter();
+                }
+                if(beatCount % 2 == 0)
+                {
                     FireScatterOnslaught();
                 }
                 break;
-            case 1:              
+            case 1:
+                if (beatCount % 8 == 0)
+                {
+                    Teleport();
+                    AddToAttacksDone();
+                }
+                if (beatCount % 4 == 0)
+                {
+                    FireSingleSlashOnslaught();
+                }
                 break;
-            case 2:              
+            case 2:
+                if (beatCount % 4 == 0)
+                {
+                    TeleportToCenter();
+                    ShockwaveRampage();
+                }
                 break;
         }
     }
 
     void PhaseThreeAttackRotation()
     {
-        if (active && !section)
+        beatCount++;
+        switch (attackType)
         {
-            beatCount++;
-            chargeEffect.Stop();
-            DestroyEnemies(2);
-            if (beatCount % 2 == 0)
-                SpawnShockwaveNearPlayer();
-            StartCoroutine(DashTowardsPlayer());
-        }
-        if (active && section)
-        {
-            beatCount++;
-            transform.position = arenaCenter.position;
-            if (beatCount % 2 == 0)
-                SpawnShockwaveNearBoss();
-            if (beatCount % 8 == 0)
-                SpawnEnemies();
-            if (beatCount % 4 == 0)
-                FireProjectile();
+            case 0:
+                if (beatCount % 4 == 0)
+                {
+                    chargeEffect.Stop();
+                    TeleportToCenter();
+                }
+                if (beatCount % 2 == 0)
+                {
+                    FireScatterOnslaught();
+                }
+                break;
+            case 1:
+                if (beatCount % 8 == 0)
+                {
+                    Teleport();
+                    AddToAttacksDone();
+                }
+                if (beatCount % 4 == 0)
+                {
+                    FireSingleSlashOnslaught();
+                }
+                break;
+            case 2:
+                if (beatCount % 4 == 0)
+                {
+                    TeleportToCenter();
+                    ShockwaveRampage();
+                }
+                break;
         }
     }
 
