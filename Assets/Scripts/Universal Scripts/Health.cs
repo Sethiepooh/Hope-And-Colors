@@ -62,7 +62,7 @@ public class Health : MonoBehaviour
                 StartCoroutine(HitFlash(Color.white));
             }
 
-            if (isBoss)
+            if (isBoss || isPlayer)
             {
                 onDamageEvent.Invoke();
             }

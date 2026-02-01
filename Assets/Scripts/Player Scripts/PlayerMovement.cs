@@ -123,12 +123,28 @@ public class PlayerMovement : MonoBehaviour
 
     public void Dash(InputAction.CallbackContext context)
     {
-        if (context.performed && !freeze && canDash)
+        if (context.performed && !freeze && canDash && controlable)
         {
             StartCoroutine(HandleDash());
         }
     }
 
+    public void ActivateHitStun()
+    {
+        StartCoroutine(HitStun());
+    }
+
+    IEnumerator HitStun()
+    {
+        freeze = true;
+        controlable = false;
+        rb.linearVelocity  = Vector2.zero;
+
+        yield return new WaitForSeconds(.2f);
+
+        freeze = false;
+        controlable = true;
+    }
    
 
     public void Dive()

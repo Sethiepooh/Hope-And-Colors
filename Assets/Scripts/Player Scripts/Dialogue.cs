@@ -3,6 +3,7 @@ using TMPro;
 using System.Collections;
 using System;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 public class Dialogue : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class Dialogue : MonoBehaviour
     [Header("Dialogue Settings")]
     [SerializeField] lines[] dialogue;
     public speakerAttributes[] speakers;
-    public bool transitionDialogue;
+    public bool eventDialogue;
     int readNum;
 
     [Header("Setup")]
@@ -28,6 +29,7 @@ public class Dialogue : MonoBehaviour
     public bool triggerOnEnter;
     public bool disableAfterUse;
     [HideInInspector] public bool disabled;
+    public UnityEvent DialogueTriggerEvent;
 
 
 
@@ -64,6 +66,12 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+    void ChangeLevel()
+    {
+        changingLevels = true;
+        nextLevel.LoadNextLevel();
+    }
+
     //DIALOGUE MANAGEMENT
     #region Dialogue Management
     private void HandleDialogue()
@@ -74,10 +82,9 @@ public class Dialogue : MonoBehaviour
 
         if (readNum >= dialogue.Length)
         {
-            if (transitionDialogue)
+            if (eventDialogue)
             {
-                nextLevel.LoadNextLevel();
-                changingLevels = true;
+                DialogueTriggerEvent.Invoke();
             }
    
             readNum = 0;

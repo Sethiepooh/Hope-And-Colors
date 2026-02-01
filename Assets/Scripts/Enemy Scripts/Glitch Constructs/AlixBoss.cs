@@ -58,6 +58,10 @@ public class AlixBoss : EnemyBase
     Rigidbody2D rb;
     GameObject player;
     [SerializeField] LayerMask playerLayer;
+
+    [Header("Dialogue")]
+    [SerializeField] Dialogue dialogueScript;
+    [SerializeField] InteractionManager interactManager;
   
     EnemyManager enemyManager;
     [Header("Effects")]
@@ -90,9 +94,6 @@ public class AlixBoss : EnemyBase
     // Update is called once per frame
     void Update()
     {
-        //Vector3 offset = player.transform.position - transform.position;
-        //transform.rotation = Quaternion.LookRotation(Vector3.forward, offset);
-
         if(bpmInteract.GetCurrentSection() == 2 && !active)
         {
             ChangeColor(defaultColor);
@@ -117,15 +118,10 @@ public class AlixBoss : EnemyBase
         }
         else if (bossHealth.GetHealthPercent() <= .33f && attackPhase == 2)
         {
+            active = false;
             attackPhase = 3;
-            attackType = 0;
-            beatCount = 0;
-            attacksDone = 0;
             StartCoroutine(PushPlayerAway());
-            SpawnShamanDefense(2);
-            SpawnEnemies(1, 2);
-            numberOfProjectiles++;
-            bpmInteract.currentMovement++;
+            
         }
 
 
@@ -140,21 +136,23 @@ public class AlixBoss : EnemyBase
                ChangeColor(defaultColor);
             }
         }
-        
+    }
 
-        if (slash)
-        {
-            Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
-            if (hitPlayers.Length > 0)
-            {
-                if (hitPlayers[0].CompareTag("Player"))
-                {
-                    player.GetComponent<Health>().TakeDamage(damage);
-                    Debug.Log("Player Hit!");
-                    slash = false;
-                }
-            }
-        }
+    public void BeginPhaseThree()
+    {
+        active = true;
+        attackType = 0;
+        beatCount = 0;
+        attacksDone = 0;
+        SpawnShamanDefense(2);
+        SpawnEnemies(1, 2);
+        numberOfProjectiles++;
+        bpmInteract.currentMovement++;
+    }
+
+    void TriggerDialogueBreak()
+    {
+        interactManager.ForceDialogueInteract(dialogueScript);
     }
 
     private void FixedUpdate()
@@ -165,6 +163,9 @@ public class AlixBoss : EnemyBase
 
     public void AddToAttacksDone()
     {
+        if(!active)
+            { return; }
+
        // Debug.Log("Attack Completed");
         attacksDone++;
         if (attacksDone >= attacksTillChange)
@@ -262,6 +263,19 @@ public class AlixBoss : EnemyBase
     {
       
     }
+    IEnumerator PushPlayerAway()
+    {
+        player.GetComponent<PlayerMovement>().controlable = false;
+        player.GetComponent<Rigidbody2D>().AddForce((player.transform.position - transform.position).normalized * 40, ForceMode2D.Impulse);
+        yield return new WaitForSeconds(.5f);
+        if(attackPhase == 3 && !active)
+        {
+            TriggerDialogueBreak();
+        }
+        player.GetComponent<PlayerMovement>().controlable = true;
+    }
+
+    #region Enemy Spawn Methods
 
     void SpawnEnemies(int spawnIndex, int enemyCount)
     {
@@ -313,34 +327,14 @@ public class AlixBoss : EnemyBase
             spawnPoint.DestroyEnemy();
         }
     }
+    #endregion
 
-    IEnumerator DashTowardsPlayer()
-    {
-        Vector2 direction;
-        Vector2 playerPos = player.transform.position;
-        direction = (playerPos - rb.position).normalized;
-        slash = true;
-
-        tRend.emitting = true;
-        rb.linearVelocity = direction * moveSpeed;
-        yield return new WaitForSeconds(dashDuration * 2);
-        rb.linearVelocity = Vector2.zero;
-        slash = false;
-        tRend.emitting = false;
-    }
+    #region Shockwave Methods
 
     void SpawnShockwaveNearPlayer()
     {
         Vector2 spawnPos = (Vector2)player.transform.position + UnityEngine.Random.insideUnitCircle * nearSpawnRange;
         GameObject shock =  Instantiate(shockwavePrefab, spawnPos, Quaternion.identity);
-        activeShockwaves.Add(shock);
-    }
-
-    void SpawnShockwaveNearBoss()
-    {
-        chargeEffect.Play();
-        Vector2 spawnPos = (Vector2)this.transform.position + UnityEngine.Random.insideUnitCircle * spawnRange / 1.5f;
-        GameObject shock = Instantiate(shockwavePrefab, spawnPos, Quaternion.identity);
         activeShockwaves.Add(shock);
     }
 
@@ -354,24 +348,9 @@ public class AlixBoss : EnemyBase
             activeShockwaves.Add(shock);
         }
     }
+    #endregion
 
-    IEnumerator PushPlayerAway()
-    {
-        player.GetComponent<PlayerMovement>().controlable = false;
-        player.GetComponent<Rigidbody2D>().AddForce((player.transform.position - transform.position).normalized * 40, ForceMode2D.Impulse);
-        yield return new WaitForSeconds(.5f);
-        player.GetComponent<PlayerMovement>().controlable = true;
-    }
-
-    void FireProjectile()
-    {
-        Vector2 direction = (player.transform.position - transform.position).normalized;
-        GameObject proj = Instantiate(projectile, projectileSpawn.position, Quaternion.identity);
-        proj.GetComponent<Projectile>().direction = direction;
-        proj.GetComponent<Projectile>().speed = 15;
-    }
-
-    //Onslaught Methods
+    #region Onslaught Methods
     void FireScatterOnslaught()
     {
         float angleStep = 360f / numberOfScatterProjectiles;
@@ -406,8 +385,9 @@ public class AlixBoss : EnemyBase
             pelletScript.direction = pelletDir.normalized;
         }
     }
+    #endregion
 
-    // Teleportation Methods
+    #region Teleportation Methods
     void Teleport()
     {
         int randPoint = Random.Range(0, teleportPoints.Length);
@@ -427,9 +407,13 @@ public class AlixBoss : EnemyBase
     {
         transform.position = arenaCenter.position;
     }
+    #endregion
 
     public override void AddToBeatCount()
     {
+        if(!active)
+            { return; }
+        
         foreach (GameObject shock in activeShockwaves)
         {
             if (shock != null)

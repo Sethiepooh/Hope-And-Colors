@@ -70,6 +70,12 @@ public class InteractionManager : MonoBehaviour
         }
     }
 
+    public void ForceDialogueInteract(Dialogue forcedDialogue)
+    {
+        nearbyDialogue = forcedDialogue;
+        nearbyDialogue.InteractWith();
+    }
+
     private void FindNearbyInteractables()
     {
         Collider2D[] nearby = Physics2D.OverlapCircleAll(transform.position, interactionRadius);

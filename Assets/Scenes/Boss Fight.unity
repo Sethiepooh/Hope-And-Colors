@@ -491,7 +491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1622,6 +1622,11 @@ PolygonCollider2D:
       - {x: -0.5, y: -0.28866667}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 0
+--- !u!1 &699952261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1127224231361425369, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+  m_PrefabInstance: {fileID: 915683173}
+  m_PrefabAsset: {fileID: 0}
 --- !u!198 &726737955 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 2528120033004858638, guid: 157514ed347a68548b3789dd038b1989, type: 3}
@@ -1649,7 +1654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.67
+      value: 12.18
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1894,6 +1899,34 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 5503930085471042008, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: onDamageEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503930085471042008, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: onDamageEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503930085471042008, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: onDamageEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2075132512}
+    - target: {fileID: 5503930085471042008, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: onDamageEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503930085471042008, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: onDamageEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivateHitStun
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503930085471042008, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: onDamageEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5503930085471042008, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: onDamageEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5940960966160364567, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: m_LocalPosition.x
       value: -117.43
@@ -1962,6 +1995,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fc639b33e62fc24db1d45a8917e8368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &915683175 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8468457668883025161, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+  m_PrefabInstance: {fileID: 915683173}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &915683176 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3734539131353021963, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
@@ -1993,6 +2037,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &915683179 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6719129043770744092, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+  m_PrefabInstance: {fileID: 915683173}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &957743794
@@ -2066,7 +2121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.65
+      value: -13.06
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2412,6 +2467,7 @@ GameObject:
   - component: {fileID: 1180964111}
   - component: {fileID: 1180964112}
   - component: {fileID: 1180964113}
+  - component: {fileID: 1180964114}
   m_Layer: 6
   m_Name: Alix
   m_TagString: Boss
@@ -2480,6 +2536,8 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
+  dialogueScript: {fileID: 1180964114}
+  interactManager: {fileID: 2075132514}
   attackColor: {r: 0.050980397, g: 0.5137255, b: 1, a: 1}
   chargeEffect: {fileID: 2118155699}
   disabledColor: {r: 0.11654413, g: 0.07058823, b: 0.34117648, a: 1}
@@ -2781,7 +2839,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onDeathEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1985376974}
+        m_TargetAssemblyTypeName: NextLevel, Assembly-CSharp
+        m_MethodName: LoadNextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDamageEvent:
     m_PersistentCalls:
       m_Calls:
@@ -2805,6 +2875,54 @@ MonoBehaviour:
   blastParticles: {fileID: 0}
   blastRadius: 0
   damagable: 0
+--- !u!114 &1180964114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180964105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a3da6d75de9ac84d8f9548b38bb03eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerMovement: {fileID: 2075132512}
+  dialogue:
+  - text: 'EVIE /What''s cookin good lookin''? '
+    profileSprite: {fileID: 0}
+  - text: '??? /What are you on about? '
+    profileSprite: {fileID: 0}
+  speakers:
+  - name: EVIE
+    textColor: {r: 0.86274517, g: 0.46274513, b: 0.9960785, a: 1}
+  - name: ???
+    textColor: {r: 0.027450982, g: 0.2784314, b: 0.5568628, a: 1}
+  eventDialogue: 1
+  delay: 0.05
+  dialogueCanvas: {fileID: 699952261}
+  text: {fileID: 915683179}
+  title: {fileID: 915683175}
+  canInteract: 1
+  active: 0
+  triggerOnEnter: 0
+  disableAfterUse: 1
+  disabled: 0
+  DialogueTriggerEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1180964106}
+        m_TargetAssemblyTypeName: AlixBoss, Assembly-CSharp
+        m_MethodName: BeginPhaseThree
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1190669844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2899,7 +3017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3582,11 +3700,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.79
+      value: 6.8
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 12.18
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3870,11 +3988,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.15
+      value: 6.8
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -13.06
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4237,6 +4355,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1180964110}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2075132512 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3835980306546884593, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+  m_PrefabInstance: {fileID: 915683173}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01d5d4eccc03df74095c617c2482671a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2075132514 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5244093815545858982, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+  m_PrefabInstance: {fileID: 915683173}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e551e4c9b13db846bb50fe873228dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2077714264
 GameObject:
   m_ObjectHideFlags: 0
@@ -4509,7 +4649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.46
+      value: 12.18
       objectReference: {fileID: 0}
     - target: {fileID: 3259959258782946846, guid: 157514ed347a68548b3789dd038b1989, type: 3}
       propertyPath: m_LocalPosition.z
