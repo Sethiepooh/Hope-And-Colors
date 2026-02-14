@@ -38,9 +38,10 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Obstacle"))
+        if(collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("Bomb"))
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(damage);
+            Debug.Log("Projectile hit: " + collision.gameObject.name);
             Destroy(gameObject);
         }
 
@@ -51,6 +52,7 @@ public class Projectile : MonoBehaviour
                 if(collision.gameObject.GetComponent<Health>().damagable)
                     collision.gameObject.GetComponent<Health>().TakeDamage(damage);
             }
+            Debug.Log("Projectile hit: " + collision.gameObject.name);
             Destroy(gameObject);
         }
         else
@@ -59,9 +61,11 @@ public class Projectile : MonoBehaviour
             {
                 collision.gameObject.GetComponent<Health>().TakeDamage(damage);
             }
+            Debug.Log("Projectile hit: " + collision.gameObject.name);
             Destroy(gameObject);
         }
        
-       
+        
+
     }
 }

@@ -125,15 +125,23 @@ public class Health : MonoBehaviour
         {
             var health = target.GetComponent<Health>();
 
-            if(health != null)
+            if (health != null)
                 health.TakeDamage(20);
+
         }
         var aIndicate = transform.GetChild(0).GetComponent<AttackIndicator>();
         sRend.enabled = false;
         blastParticles.Stop();
         aIndicate.AttackFlash();
+        onDamageEvent.Invoke();
         yield return new WaitForSeconds(.5f);
-        Destroy(gameObject);
+        this.gameObject.SetActive(false);
+    }
+
+    public void DeactivateCollision()
+    {
+        var col = gameObject.GetComponent<Collider2D>();
+        col.enabled = false;
     }
 
     public void HandlePlayerDeath()
@@ -183,7 +191,7 @@ public class Health : MonoBehaviour
         var col = gameObject.GetComponent<Collider2D>();
         col.enabled = false;
         var rb = gameObject.GetComponent<Rigidbody2D>();
-        rb.linearVelocity = Vector3.zero;
+       // rb.linearVelocity = Vector3.zero;
         deathParticles.Play();
 
         yield return new WaitForSeconds(.5f);

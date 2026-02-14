@@ -6,18 +6,18 @@ public class GlitchChild : EnemyBase
     [Header("Attack Stats")]
     [SerializeField] float attackRange = 1.0f;
     [SerializeField] int damage = 5;
-    [SerializeField] Transform attackPoint;
     [SerializeField] float dashDuration = 0.5f;
     public bool alternate = false;
     int beatCount = 0;
-    bool slash = false;
+    bool swing = false;
 
     [Header("Movement Stats")]
     [SerializeField] float moveSpeed = 3.0f;
     Rigidbody2D rb;
     GameObject player;
-    [SerializeField]LayerMask playerLayer;
+    [SerializeField] LayerMask playerLayer;
     bool clutter;
+    public Transform facedDirection;
 
     EnemyManager enemyManager;
     PulseManager pulseManager;
@@ -26,6 +26,8 @@ public class GlitchChild : EnemyBase
     TrailRenderer tRend;
     Color defaultColor;
     SpriteRenderer sRend;
+    public GameObject attackIndicator;
+    public AttackIndicator aIndicator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,70 +39,73 @@ public class GlitchChild : EnemyBase
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
         enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
-       // enemyManager.AddEnemy(this.gameObject);
+        // enemyManager.AddEnemy(this.gameObject);
         pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
         pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
     }
 
     // Update is called once per frame
     void Update()
-    {
-        if (slash)
+    {       
+        if (swing)
         {
-            Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayer);
-            if (hitPlayers.Length > 0)
+            Collider2D[] hitObjects = Physics2D.OverlapCircleAll(transform.position, attackRange, playerLayer);
+            foreach (Collider2D objects in hitObjects)
             {
-                foreach (Collider2D player in hitPlayers)
+                if (objects.gameObject.CompareTag("Player") || objects.gameObject.CompareTag("Bomb") || objects.gameObject.CompareTag("Obstacle"))
                 {
-                    if (player.CompareTag("Player"))
+                    // Check if enemy is in front of player
+                    Vector2 relativePos = objects.transform.position - transform.position;
+                    Vector2 forward = (Vector2)facedDirection.position - (Vector2)transform.position;
+                    float angle = Vector3.Angle(relativePos, forward);
+                    if (angle < 90f)
                     {
-                        player.GetComponent<Health>().TakeDamage(damage);
-                        slash = false;
+                        //Apply damage to player
+                        Health hp = objects.gameObject.GetComponent<Health>();
+                        hp.TakeDamage(damage); 
                     }
-                    else if (player.CompareTag("Obstacle"))
-                    {
-                        player.GetComponent<Health>().TakeDamage(damage);
-                        slash = false;
-                    }
-                    else if(player.CompareTag("Bomb"))
-                    {
-                        player.GetComponent<Health>().TakeDamage(damage);
-                        slash = false;
-                    }                   
                 }
-            }     
+            }
+            aIndicator.AttackFlash();
         }
     }
 
     IEnumerator DashTowardsPlayer()
     {
+        rb.bodyType = RigidbodyType2D.Dynamic;
         Vector2 direction;
         if (!clutter)
         {
             Vector2 playerPos = player.transform.position;
-            direction = (playerPos - rb.position).normalized;          
+            direction = (playerPos - rb.position).normalized;
         }
         else
         {
             int randomInt = Random.Range(0, 2);
             Vector2 playerPos = player.transform.position;
             direction = (playerPos - rb.position).normalized;
-            if(randomInt == 0)
+            if (randomInt == 0)
                 direction = -direction;
         }
 
+        facedDirection.position = new Vector2(transform.position.x + direction.normalized.x, transform.position.y + direction.normalized.y);
+        attackIndicator.transform.rotation = Quaternion.LookRotation(Vector3.forward, facedDirection.position - transform.position);
+
         tRend.emitting = true;
         rb.linearVelocity = direction * moveSpeed;
+        swing = true;
+
+
         yield return new WaitForSeconds(dashDuration);
+        swing = false;
         rb.linearVelocity = Vector2.zero;
-        slash = false;
         tRend.emitting = false;
+        rb.bodyType = RigidbodyType2D.Kinematic;
     }
 
     public override void Attack()
     {
         StartCoroutine(DashTowardsPlayer());
-        slash = true;
     }
 
     public override void AddToBeatCount()
@@ -122,6 +127,7 @@ public class GlitchChild : EnemyBase
                 if (beatCount > 4)
                 {
                     sRend.color = attackColor;
+                    StopAllCoroutines();
                     Attack();
                 }
                 else
@@ -134,6 +140,7 @@ public class GlitchChild : EnemyBase
                 if (beatCount <= 4)
                 {
                     sRend.color = attackColor;
+                    StopAllCoroutines();
                     Attack();
                 }
                 else
@@ -164,6 +171,6 @@ public class GlitchChild : EnemyBase
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        Gizmos.DrawWireSphere(this.transform.position, attackRange);
     }
 }

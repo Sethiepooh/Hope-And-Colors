@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 5547279847613206402}
   - component: {fileID: 5527854547837054269}
   - component: {fileID: 8547791182588152964}
-  m_Layer: 6
+  - component: {fileID: 3346215899805471154}
+  m_Layer: 8
   m_Name: Bomb
   m_TagString: Bomb
   m_Icon: {fileID: 0}
@@ -137,7 +138,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4940310255883831610}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -168,13 +169,70 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 5
+  onDeathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8547791182588152964}
+        m_TargetAssemblyTypeName: Health, Assembly-CSharp
+        m_MethodName: DeactivateCollision
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8547791182588152964}
+        m_TargetAssemblyTypeName: Health, Assembly-CSharp
+        m_MethodName: HandleBombDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDamageEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3346215899805471154}
+        m_TargetAssemblyTypeName: Bomb, Assembly-CSharp
+        m_MethodName: ScatterShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  maxHealth: 1
   healthBar: {fileID: 0}
   isPlayer: 0
+  isBoss: 0
   deathParticles: {fileID: 1242498882784088164}
   blastParticles: {fileID: 7740997876832393360}
   blastRadius: 4
   damagable: 1
+--- !u!114 &3346215899805471154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4940310255883831610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a8ddd992fa68f84caa3f5a71e913e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 8608247141467209458, guid: 4b96b9563396aa74ba9a3fcf2de4447c, type: 3}
+  projectileNum: 4
 --- !u!1 &7569980808906041635
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,7 +244,7 @@ GameObject:
   - component: {fileID: 6756473425010589669}
   - component: {fileID: 7376840042508236406}
   - component: {fileID: 8724145913559895276}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,6 +386,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Death Particles
       objectReference: {fileID: 0}
+    - target: {fileID: 913681549521919451, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -354,6 +416,10 @@ PrefabInstance:
     - target: {fileID: 448184027491620416, guid: 77eab5c6b19bd5a47882ab8a2922edca, type: 3}
       propertyPath: m_Name
       value: Bomb Effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 448184027491620416, guid: 77eab5c6b19bd5a47882ab8a2922edca, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4925802194667023970, guid: 77eab5c6b19bd5a47882ab8a2922edca, type: 3}
       propertyPath: lengthInSec

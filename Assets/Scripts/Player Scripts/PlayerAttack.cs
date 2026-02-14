@@ -214,11 +214,9 @@ public class PlayerAttack : MonoBehaviour
                     // Check if enemy is in front of player
                     Vector2 relativePos = enemy.transform.position - transform.position;
                     Vector2 forward = (Vector2)facedDirection.position - (Vector2)transform.position;
-                    Rigidbody2D enemyRb = enemy.gameObject.GetComponent<Rigidbody2D>();
                     float angle = Vector3.Angle(relativePos, forward);
                     if (angle < 90f)
                     {
-                        enemyRb.AddForce(forward * strikeForce, ForceMode2D.Impulse);
                         enemy.gameObject.GetComponent<Health>().TakeDamage(currentDamage);
                     }
                 }

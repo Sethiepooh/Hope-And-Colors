@@ -513,10 +513,10 @@ MonoBehaviour:
   canAttack: 1
   enemyLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 320
   strikeForce: 10
   inspirationGainOnBeat: 5
-  inspirationgainOffBeat: 1
+  inspirationGainOffBeat: 1
   maxInspiration: 100
   inspirationConsumptionRate: 5
   inspirationBar: {fileID: 1217245171944948475}

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5805231480708514669
+--- !u!1 &7814776392057685051
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5635293635434902850}
-  - component: {fileID: 271788575274417658}
-  - component: {fileID: 130054754708967042}
-  - component: {fileID: 1161797349111702812}
+  - component: {fileID: 6159017234479701061}
+  - component: {fileID: 856982214003901779}
+  - component: {fileID: 6930501206565693332}
+  - component: {fileID: 7741231565899930747}
   m_Layer: 0
-  m_Name: Wall
+  m_Name: Call & Response
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5635293635434902850
+--- !u!4 &6159017234479701061
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5805231480708514669}
+  m_GameObject: {fileID: 7814776392057685051}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 29.0619, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &271788575274417658
+--- !u!212 &856982214003901779
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5805231480708514669}
+  m_GameObject: {fileID: 7814776392057685051}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0.10588236, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -89,28 +89,91 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &130054754708967042
+--- !u!114 &6930501206565693332
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5805231480708514669}
+  m_GameObject: {fileID: 7814776392057685051}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f37615505c5d9b45bf2c13332560148, type: 3}
+  m_Script: {fileID: 11500000, guid: d65e9ab0a48b42844bcf12fa6594a718, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  colorOne: {r: 0, g: 0, b: 0.20754719, a: 1}
-  minAlpha: 50
-  fadeStep: 10
---- !u!61 &1161797349111702812
+  directionSprite:
+  - {fileID: 21300000, guid: ea0327bf835a44843b7a0e4482871947, type: 3}
+  - {fileID: 21300000, guid: 03f56b6ffd6e96044afb9a9a62bdba52, type: 3}
+  - {fileID: 21300000, guid: fb0623ac43d684547974c561763fb7b9, type: 3}
+  - {fileID: 21300000, guid: 4df6db2be4255944e95b5316e42f3d6f, type: 3}
+  rhythmPatterns:
+  - beatsToHit: 0
+    successfulHits: 0
+    pattern:
+    - index: 0
+      revealBeat: 4
+      activationBeat: 8
+      expectedInputBeat: 9
+      expectedInput: 2
+      isActive: 0
+      revealed: 0
+      hit: 0
+    - index: 0
+      revealBeat: 5
+      activationBeat: 9
+      expectedInputBeat: 10
+      expectedInput: 3
+      isActive: 0
+      revealed: 0
+      hit: 0
+    - index: 0
+      revealBeat: 6
+      activationBeat: 10
+      expectedInputBeat: 11
+      expectedInput: 1
+      isActive: 0
+      revealed: 0
+      hit: 0
+    - index: 0
+      revealBeat: 7
+      activationBeat: 11
+      expectedInputBeat: 12
+      expectedInput: 4
+      isActive: 0
+      revealed: 0
+      hit: 0
+    inputPromptObjects:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
+  playerInput: {fileID: 0}
+  playerMovement: {fileID: 0}
+  currentPatternIndex: 0
+  active: 0
+  canInteract: 1
+  completionEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6930501206565693332}
+        m_TargetAssemblyTypeName: CallAndResponse, Assembly-CSharp
+        m_MethodName: DeactivateObject
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!61 &7741231565899930747
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5805231480708514669}
+  m_GameObject: {fileID: 7814776392057685051}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1

@@ -1,4 +1,4 @@
-using NUnit.Framework;
+
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
@@ -55,12 +55,18 @@ public class EnemyManager : MonoBehaviour
         {
             for(int x = 0; x < enemyGroups[j].enemies.Length; x++)
             {
-                enemyGroups[j].enemies[x].enemyObject.GetComponent<Health>().Heal(1000);
+                enemyGroups[j].enemies[x].enemyObject.GetComponent<Health>()?.Heal(1000);
                 enemyGroups[j].enemies[x].enemyObject.GetComponent<SpriteRenderer>().enabled = true;
                 enemyGroups[j].enemies[x].enemyObject.GetComponent<Collider2D>().enabled = true;
 
                 if(j == i)
-                    enemyGroups[j].enemies[x].enemyObject.GetComponent<EnemyBase>().active = true;
+                {
+                    if (enemyGroups[j].enemies[x].enemyObject.CompareTag("Enemy"))
+                    {
+                        enemyGroups[j].enemies[x].enemyObject.GetComponent<EnemyBase>().active = true;
+                    }
+                }
+                    
 
                 enemyGroups[j].enemies[x].enemyObject.SetActive(true);
                 enemyGroups[j].enemies[x].enemyObject.transform.position = enemyGroups[j].enemies[x].startingPos;
@@ -77,7 +83,10 @@ public class EnemyManager : MonoBehaviour
 
         for (int x = 0; x < enemyGroups[i].enemies.Length; x++)
         {
-            enemyGroups[i].enemies[x].enemyObject.GetComponent<EnemyBase>().active = true;
+            if (enemyGroups[i].enemies[x].enemyObject.CompareTag("Enemy"))
+            {
+                enemyGroups[i].enemies[x].enemyObject.GetComponent<EnemyBase>().active = true;
+            }
         }
     }
 
@@ -90,6 +99,9 @@ public class EnemyManager : MonoBehaviour
 
         foreach (Enemy e in enemyGroups[i].enemies)
         {
+            if (!e.enemyObject.CompareTag("Enemy"))
+                continue;
+
             if (e.enemyObject.activeInHierarchy)
                 return false;
         }
@@ -133,7 +145,7 @@ public class EnemyManager : MonoBehaviour
                 if (e.enemyObject != null)
                 {
                     if(e.enemyObject.activeInHierarchy)
-                        e.enemyObject.GetComponent<EnemyBase>().AddToBeatCount();
+                        e.enemyObject.GetComponent<EnemyBase>()?.AddToBeatCount();
                 }                  
             }              
         }

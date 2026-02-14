@@ -109,8 +109,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 1
+  empowered: 0
   attackRange: 1.24
-  damage: 15
+  defaultDamage: 5
+  empoweredDamage: 10
   dashDuration: 0.5
   moveSpeed: 20
   playerLayer:
@@ -340,9 +342,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
   maxHealth: 50
   healthBar: {fileID: 0}
   isPlayer: 0
+  isBoss: 0
   deathParticles: {fileID: 8817992913405538041}
   blastParticles: {fileID: 0}
   blastRadius: 0
