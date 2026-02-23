@@ -109,13 +109,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 0
+  empowered: 0
   attackRange: 2.5
   damage: 20
   dashDuration: 0.5
-  moveSpeed: 10
+  moveSpeed: 20
   playerLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 776
   attackColor: {r: 0.08235294, g: 0.59607846, b: 0.9960785, a: 1}
   attackIndicator: {fileID: 6046962375557612737}
   telegraph: {fileID: 1879216858034227692}
@@ -146,9 +147,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
   maxHealth: 70
   healthBar: {fileID: 0}
   isPlayer: 0
+  isBoss: 0
   deathParticles: {fileID: 2108140741415770571}
   blastParticles: {fileID: 0}
   blastRadius: 0

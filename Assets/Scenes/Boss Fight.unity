@@ -2889,9 +2889,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 2075132512}
   dialogue:
-  - text: 'EVIE /What''s cookin good lookin''? '
+  - text: 'EVIE /You need to calm down! '
     profileSprite: {fileID: 0}
-  - text: '??? /What are you on about? '
+  - text: ??? /SHUT UP!!!
     profileSprite: {fileID: 0}
   speakers:
   - name: EVIE

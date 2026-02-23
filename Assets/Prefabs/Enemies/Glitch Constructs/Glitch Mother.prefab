@@ -149,9 +149,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  maxHealth: 60
+  onDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  maxHealth: 40
   healthBar: {fileID: 0}
   isPlayer: 0
+  isBoss: 0
   deathParticles: {fileID: 1726591705051126929}
   blastParticles: {fileID: 0}
   blastRadius: 0

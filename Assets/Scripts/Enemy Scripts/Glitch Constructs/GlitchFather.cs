@@ -8,7 +8,7 @@ public class GlitchFather : EnemyBase
     [SerializeField] int damage = 20;
     [SerializeField] float dashDuration = 0.5f;
     int beatCount = 0;
-    bool pound = false;
+    bool clutter = false;
 
     [Header("Movement Stats")]
     [SerializeField] float moveSpeed = 3.0f;
@@ -45,47 +45,43 @@ public class GlitchFather : EnemyBase
         pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (pound)
-        {
-            Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(transform.position, attackRange, playerLayer);
-            if (hitPlayers.Length > 0)
-            {
-                if (hitPlayers[0].CompareTag("Player"))
-                {
-                    player.GetComponent<Health>().TakeDamage(damage);
-                    Debug.Log("Player Hit!");
-                    pound = false;
-                }
-            }
-        }
-    }
-
     public override void Attack()
     {
         aIndicate.AttackFlash();
         Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(transform.position, attackRange, playerLayer);
-        if (hitPlayers.Length > 0)
+        foreach(Collider2D hitPlayer in hitPlayers)
         {
-            if (hitPlayers[0].CompareTag("Player"))
-            {
-                player.GetComponent<Health>().TakeDamage(damage);
-                Debug.Log("Player Hit!");
-            }
+            hitPlayer.gameObject.GetComponent<Health>().TakeDamage(damage);
         }
     }
 
     IEnumerator DashTowardsPlayer()
     {
+        rb.bodyType = RigidbodyType2D.Dynamic;
+        Vector2 direction;
+        if (!clutter)
+        {
+            Vector2 playerPos = player.transform.position;
+            direction = (playerPos - rb.position).normalized;
+        }
+        else
+        {
+            int randomInt = Random.Range(0, 2);
+            Vector2 playerPos = player.transform.position;
+            direction = (playerPos - rb.position).normalized;
+            if (randomInt == 0)
+                direction = -direction;
+        }
+
+
         tRend.emitting = true;
-        Vector2 playerPos = player.transform.position;
-        Vector2 direction = (playerPos - rb.position).normalized;
         rb.linearVelocity = direction * moveSpeed;
+
+
         yield return new WaitForSeconds(dashDuration);
         rb.linearVelocity = Vector2.zero;
         tRend.emitting = false;
+        rb.bodyType = RigidbodyType2D.Kinematic;
     }
 
     public override void AddToBeatCount()

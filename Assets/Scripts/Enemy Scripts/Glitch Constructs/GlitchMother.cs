@@ -86,6 +86,17 @@ public class GlitchMother : EnemyBase
 
         Vector2 playerPos = player.transform.position;
         Vector2 teleportLocation = new Vector2((playerPos.x + tpX), (playerPos.y + tpY));  
-        this.transform.position = teleportLocation;
+        Collider2D intersectingObjects = Physics2D.OverlapCircle(teleportLocation, 0.5f);
+        if (intersectingObjects == null)
+        {
+            this.transform.position = teleportLocation;
+            return;
+        }
+        else
+        {
+            Debug.Log("Teleport location obstructed, trying again...");
+            Teleport();
+        }
+            
     }
 }

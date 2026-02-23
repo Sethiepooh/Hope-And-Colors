@@ -9,24 +9,27 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 723340b4ef76bf84abca6b8f78469519
   - enabled: 1
-    path: Assets/Scenes/Pre - Alpha/Story 1.unity
-    guid: f06cbf5f8e45209478fc4c4a1229f736
-  - enabled: 1
-    path: Assets/Scenes/Pre - Alpha/LVL 1.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/Pre - Alpha/Story 2.unity
-    guid: ce122feb7cbc97340bd785b8e1c12ab1
-  - enabled: 1
-    path: Assets/Scenes/Pre - Alpha/LVL 2.unity
-    guid: 228c1952b8f7b2d429a514b1e9283637
-  - enabled: 1
-    path: Assets/Scenes/Pre - Alpha/Story 3.unity
-    guid: f246b04ce41aebe4cbd0abbaa6fe1eba
+    path: Assets/Scenes/Regis Mines 1.unity
+    guid: f4a51880a2243984f9dca9bf671bfe75
   - enabled: 1
     path: Assets/Scenes/Boss Fight.unity
     guid: 52d007cb3e19f3f42bb585bde941f46f
-  - enabled: 1
+  - enabled: 0
+    path: Assets/Scenes/Pre - Alpha/Story 1.unity
+    guid: f06cbf5f8e45209478fc4c4a1229f736
+  - enabled: 0
+    path: Assets/Scenes/Pre - Alpha/LVL 1.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 0
+    path: Assets/Scenes/Pre - Alpha/Story 2.unity
+    guid: ce122feb7cbc97340bd785b8e1c12ab1
+  - enabled: 0
+    path: Assets/Scenes/Pre - Alpha/LVL 2.unity
+    guid: 228c1952b8f7b2d429a514b1e9283637
+  - enabled: 0
+    path: Assets/Scenes/Pre - Alpha/Story 3.unity
+    guid: f246b04ce41aebe4cbd0abbaa6fe1eba
+  - enabled: 0
     path: Assets/Scenes/Pre - Alpha/Story 4.unity
     guid: 8507cfd22454f1941a5e351995b753d7
   m_configObjects:

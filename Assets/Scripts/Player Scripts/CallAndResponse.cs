@@ -97,7 +97,7 @@ public struct RhythmInput
 
     public void Initialize()
     {
-        expirationBeat = expectedInputBeat + 1;
+        expirationBeat = expectedInputBeat;
         isActive = false;
         revealed = false;
     }
