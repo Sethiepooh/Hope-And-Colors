@@ -4,19 +4,22 @@ using UnityEngine;
 public class RollingCrystals : MonoBehaviour
 {
     Vector2 slideTarget;
+    Vector2 originalPos;
     [SerializeField] float slideSpeed;
     [SerializeField] float slideDistance;
 
 
-    public RollingCrystals Initialize()
+    private void Start()
     {
-        GetSlideTarget();
-        return this;    
+        originalPos = transform.position;
+        slideTarget = (Vector2)transform.position + (Vector2)(transform.forward * slideDistance);
+        this.gameObject.SetActive(false);
     }
 
-    void GetSlideTarget()
+    public RollingCrystals Initialize()
     {
-        slideTarget = (Vector2)transform.position + (Vector2)(transform.forward * slideDistance);
+        transform.position = originalPos;
+        return this; 
     }
 
     public void StartSliding()
@@ -32,6 +35,6 @@ public class RollingCrystals : MonoBehaviour
             yield return null;
         }
 
-        Destroy(this.gameObject);
+        gameObject.SetActive(false);
     }
 }

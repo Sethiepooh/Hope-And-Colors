@@ -12,10 +12,7 @@ public class ReginaldBoss : EnemyBase
     int beatCount = 0;
     int barBeatCount = -1;
     [SerializeField] ParticleSystem telegraphEffect;
-
-    [Header("Enemy Spawn Stats")]
-    [SerializeField] GameObject[] enemyPrefabs;
-    [SerializeField] SpawnPoint[] enemySpawnPoints;
+    [SerializeField] GameObject player;
 
     [Header("Phase Management")]
     [SerializeField] int attackPhase = 0;
@@ -29,9 +26,7 @@ public class ReginaldBoss : EnemyBase
     [SerializeField] float crystalSpawnRadius;
 
     [Header("Rolling Crystal Stats")]
-    [SerializeField] RollingCrystals rollingCrystalPrefab;
-    [SerializeField] float rollingCrystalOffset;
-    List<RollingCrystals> rollingCrystals = new List<RollingCrystals>();
+    [SerializeField] List<RollingCrystals> rollingCrystals = new List<RollingCrystals>();
 
     [Header("Falling Fist Stats")]
     [SerializeField] FallingHazard fallingFistPrefab;
@@ -45,13 +40,6 @@ public class ReginaldBoss : EnemyBase
     [SerializeField] FallingHazard drillHazardPrefab;
     [SerializeField] int drillsPerSalvo = 5;
     [SerializeField] float drillSpawnRadius;
-
-
-    [Header("Movement Stats")]
-    [SerializeField] float moveSpeed = 15.0f;
-    Rigidbody2D rb;
-    GameObject player;
-    [SerializeField] LayerMask playerLayer;
 
     [Header("Dialogue")]
     [SerializeField] Dialogue dialogueScript;
@@ -67,10 +55,19 @@ public class ReginaldBoss : EnemyBase
     SpriteRenderer sRend;
     BPMInteract bpmInteract;
     public GameObject[] spikes;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        sRend = GetComponent<SpriteRenderer>();
+        defaultColor = sRend.color;
+        tRend = GetComponent<TrailRenderer>();
+        tRend.emitting = false;
+        player = GameObject.FindGameObjectWithTag("Player");
+        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
+        bpmInteract = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<BPMInteract>();
+        bossHealth = GetComponent<Health>();
+        ChangeColor(disabledColor);
     }
 
     // Update is called once per frame
@@ -98,7 +95,6 @@ public class ReginaldBoss : EnemyBase
         {
             active = false;
             attackPhase = 3;
-
         }
 
 
@@ -115,7 +111,45 @@ public class ReginaldBoss : EnemyBase
         }
     }
 
+
     #region Management
+    public void AddToAttacksDone()
+    {
+        if (!active)
+        { return; }
+
+        // Debug.Log("Attack Completed");
+        attacksDone++;
+        if (attacksDone >= attacksTillChange)
+        {
+            if (attackType >= 2)
+            {
+                attackType = 0;
+            }
+            else
+            {
+                attackType++;
+            }
+            attacksDone = 0;
+            beatCount = 0;
+        }
+
+        //Phase one actions
+        if (bossHealth.GetHealthPercent() >= .66f)
+        {
+            if (attackPhase == 1 && attackType == 0 && attacksDone == 0)
+            {
+                StopAllCoroutines();
+                StartCoroutine(PushPlayerAway());
+            }
+
+            if (attackPhase == 1 && attackType == 1 && attacksDone == 0)
+            {
+                StopAllCoroutines();
+            }
+        }
+    }
+
     public void ChangeColor(Color newColor)
     {
         sRend.color = newColor;
@@ -144,53 +178,37 @@ public class ReginaldBoss : EnemyBase
     }
     #endregion
 
+    //FRAGILE CRYSTAL
     void SpawnFragileCrystal()
     {
         Instantiate(fragileCrystalPrefab, (Vector2)transform.position + Random.insideUnitCircle * crystalSpawnRadius, Quaternion.identity).Initialize(transform);
     }
 
+    //ROLLING CRYSTAL
     void SpawnRollingCrystal()
     {
         int randDir = Random.Range(0, 4);
-        Vector2 spawnPos = Vector2.zero;
-        Quaternion spawnRot = Quaternion.identity;
-        switch (randDir)
-        {
-            case 0:
-                spawnPos = Vector2.right;
-                spawnRot = Quaternion.Euler(0, 0, -90);
-                break;
-            case 1:
-                spawnPos = Vector2.up;
-                spawnRot = Quaternion.Euler(0, 0, 180);
-                break;
-            case 2:
-                spawnPos = Vector2.left;
-                spawnRot = Quaternion.Euler(0, 0, 90);
-                break;
-            case 3:
-                spawnPos = Vector2.down;
-                break;
-        }
-
-        RollingCrystals roll = Instantiate(rollingCrystalPrefab, spawnPos, spawnRot).Initialize();
-        rollingCrystals.Add(roll);
+        rollingCrystals[randDir].gameObject.SetActive(true);
+        rollingCrystals[randDir].Initialize();
     }
 
     void TriggerRollingCrystals()
     {
         foreach (RollingCrystals roll in rollingCrystals)
         {
-            roll.StartSliding();
+            if(roll.gameObject.activeSelf)
+                roll.StartSliding();
         }
         rollingCrystals.Clear();
     }
 
+    //FALLING FIST
     void SpawnFallingFist()
     {
         Instantiate(fallingFistPrefab, player.transform.position, Quaternion.identity).Initialize();
     }
 
+    // JADE MISSILE
     void SpawnJadeMissile()
     {
         for (int i = 0; i < missilesPerSalvo; i++)
@@ -205,6 +223,7 @@ public class ReginaldBoss : EnemyBase
         jadeMissiles[i].Fire((player.transform.position - transform.position).normalized);
     }
 
+    // DRILL HAZARD
     void FireDrillSalvo()
     {
         for (int i = 0; i < drillsPerSalvo; i++)
