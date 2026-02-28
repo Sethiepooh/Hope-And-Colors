@@ -51,4 +51,4 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 264
-  hazard: {fileID: 0}
+  hazard: {fileID: 2045212265823196564, guid: 00ce7b1917241a14e98205bf99f6c183, type: 3}

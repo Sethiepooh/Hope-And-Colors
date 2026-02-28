@@ -15,12 +15,13 @@ public class FragileCrystal : MonoBehaviour
     {
         wanderCenterPoint = point;
         rb = GetComponent<Rigidbody2D>();
+        ChooseNewWanderPoint();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (rb = null) return;
+        if (rb == null) return;
 
         rb.linearVelocity = (currentTarget - (Vector2)transform.position).normalized * speed;
 
@@ -39,6 +40,7 @@ public class FragileCrystal : MonoBehaviour
     void ChooseNewWanderPoint()
     {
         currentTarget = (Vector2)wanderCenterPoint.position + UnityEngine.Random.insideUnitCircle * wanderRadius;
+        Debug.Log("New Wander Point: " + currentTarget);
     }
 
     public void ScatterShot()

@@ -8,6 +8,7 @@ public class JadeMissile : MonoBehaviour
     [SerializeField] float speed = 10f;
     [SerializeField] int damage = 10;
     [SerializeField] Projectile onHitProjectiles;
+    [SerializeField] LayerMask damageLayer;
 
     bool firing;
 
@@ -48,9 +49,9 @@ public class JadeMissile : MonoBehaviour
         }
     }
 
-    public void OnCollisionEnter(Collision collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (((1 << collision.gameObject.layer) & damageLayer) != 0)
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(damage);
             Destroy(gameObject);

@@ -8,7 +8,7 @@ public class DamageZone : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == damageLayer)
+        if (((1 << collision.gameObject.layer) & damageLayer) != 0)
         {
             StartCoroutine(DamageCoroutine(collision.gameObject));
         }

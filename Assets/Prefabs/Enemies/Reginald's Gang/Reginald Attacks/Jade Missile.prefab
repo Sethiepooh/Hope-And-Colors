@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 955572669190972112}
   - component: {fileID: 6551933183257439647}
   - component: {fileID: 2773639594806178105}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Jade Missile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ PolygonCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -152,9 +152,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c6167b6971dacf47b7bec917bf00cc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 20
   damage: 10
   onHitProjectiles: {fileID: -7720408383684513645, guid: 9c97f9594d4639743b4ff39cd126a5bf, type: 3}
+  damageLayer:
+    serializedVersion: 2
+    m_Bits: 264
 --- !u!50 &2773639594806178105
 Rigidbody2D:
   serializedVersion: 5
@@ -181,4 +184,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

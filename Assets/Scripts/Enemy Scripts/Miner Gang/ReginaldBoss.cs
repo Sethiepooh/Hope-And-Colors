@@ -143,7 +143,6 @@ public class ReginaldBoss : EnemyBase
     void SpawnRollingCrystal()
     {
         int randDir = Random.Range(0, 4);
-        rollingCrystals[randDir].gameObject.SetActive(true);
         rollingCrystals[randDir].Initialize();
     }
 
@@ -151,10 +150,11 @@ public class ReginaldBoss : EnemyBase
     {
         foreach (RollingCrystals roll in rollingCrystals)
         {
-            if(roll.gameObject.activeSelf)
+            if (!roll.sliding)
+            {
                 roll.StartSliding();
+            }
         }
-        rollingCrystals.Clear();
     }
 
     //FALLING FIST
@@ -229,16 +229,17 @@ public class ReginaldBoss : EnemyBase
             FireJadeMissile();
         }
     
-        if (barBeatCount % 16 == 0)
+        if (beatCount % 16 == 0)
         {
             FireDrillSalvo();
         }
 
+        TriggerRollingCrystals();
 
         switch (attackType)
         {
             case 0:
-                if (barBeatCount % 8 == 0)
+                if (beatCount % 8 == 0)
                 {
                     SpawnFragileCrystal();
                     SpawnJadeMissile();
@@ -246,7 +247,7 @@ public class ReginaldBoss : EnemyBase
                 }
                 break;
             case 1:
-                if (barBeatCount % 8 == 0)
+                if (beatCount % 8 == 0)
                 {
                     SpawnFragileCrystal();
                     SpawnRollingCrystal();

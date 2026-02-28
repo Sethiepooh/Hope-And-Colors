@@ -13,6 +13,7 @@ public class FallingHazard : MonoBehaviour
     public void Initialize()
     {
         GameObject telegraphInstance = Instantiate(telegraph, transform.position, Quaternion.identity);
+        Destroy(telegraphInstance, fallDelay);
         telegraphInstance.transform.localScale = Vector3.one * size;
     }
 
@@ -22,7 +23,7 @@ public class FallingHazard : MonoBehaviour
         fallTimer += Time.deltaTime;
         if (fallTimer >= fallDelay)
         {
-            Collider2D hit = Physics2D.OverlapCircle(transform.position, size, playerLayer);
+            Collider2D hit = Physics2D.OverlapCircle(transform.position, size / 2, playerLayer);
             if (hit != null)
             {
                 hit.GetComponent<Health>().TakeDamage(damage);
