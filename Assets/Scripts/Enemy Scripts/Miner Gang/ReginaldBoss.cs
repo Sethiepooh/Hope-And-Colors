@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ReginaldBoss : EnemyBase
@@ -8,7 +9,6 @@ public class ReginaldBoss : EnemyBase
     [SerializeField] bool section;
     [SerializeField] float attackRange = 1.0f;
     [SerializeField] int damage = 5;
-    [SerializeField] Transform attackPoint;
     int beatCount = 0;
     int barBeatCount = -1;
     [SerializeField] ParticleSystem telegraphEffect;
@@ -34,7 +34,7 @@ public class ReginaldBoss : EnemyBase
     [Header("Jade Missile Stats")]
     [SerializeField] JadeMissile jadeMissilePrefab;
     [SerializeField] int missilesPerSalvo = 5;
-    List<JadeMissile> jadeMissiles = new List<JadeMissile>();
+    Stack<JadeMissile> jadeMissiles = new Stack<JadeMissile>();
 
     [Header("Drill Hazard Stats")]
     [SerializeField] FallingHazard drillHazardPrefab;
@@ -54,41 +54,39 @@ public class ReginaldBoss : EnemyBase
     public Color disabledColor = Color.purple;
     SpriteRenderer sRend;
     BPMInteract bpmInteract;
-    public GameObject[] spikes;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         sRend = GetComponent<SpriteRenderer>();
         defaultColor = sRend.color;
-        tRend = GetComponent<TrailRenderer>();
-        tRend.emitting = false;
         player = GameObject.FindGameObjectWithTag("Player");
         enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
         bpmInteract = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<BPMInteract>();
         bossHealth = GetComponent<Health>();
         ChangeColor(disabledColor);
+        Initialize();
     }
+
+    void Initialize()
+    {
+        ChangeColor(defaultColor);
+        attackPhase = 1;
+        beatCount = 0;
+        attackType = 0;
+        active = true;
+        bossHealth.SetDamagable(true);
+    }
+
 
     // Update is called once per frame
     void Update()
     {
-        if (bpmInteract.GetCurrentSection() == 2 && !active)
-        {
-            ChangeColor(defaultColor);
-            attackPhase = 1;
-            beatCount = 0;
-            attacksDone = 0;
-            active = true;
-            bossHealth.SetDamagable(true);
-        }
-
         if (bossHealth.GetHealthPercent() <= .66f && attackPhase == 1)
         {
             attackPhase = 2;
             attackType = 0;
             beatCount = 0;
-            attacksDone = 0;
             bpmInteract.currentMovement++;
         }
         else if (bossHealth.GetHealthPercent() <= .33f && attackPhase == 2)
@@ -96,7 +94,6 @@ public class ReginaldBoss : EnemyBase
             active = false;
             attackPhase = 3;
         }
-
 
         if (attackPhase > 0)
         {
@@ -113,51 +110,9 @@ public class ReginaldBoss : EnemyBase
 
 
     #region Management
-    public void AddToAttacksDone()
-    {
-        if (!active)
-        { return; }
-
-        // Debug.Log("Attack Completed");
-        attacksDone++;
-        if (attacksDone >= attacksTillChange)
-        {
-            if (attackType >= 2)
-            {
-                attackType = 0;
-            }
-            else
-            {
-                attackType++;
-            }
-            attacksDone = 0;
-            beatCount = 0;
-        }
-
-        //Phase one actions
-        if (bossHealth.GetHealthPercent() >= .66f)
-        {
-            if (attackPhase == 1 && attackType == 0 && attacksDone == 0)
-            {
-                StopAllCoroutines();
-                StartCoroutine(PushPlayerAway());
-            }
-
-            if (attackPhase == 1 && attackType == 1 && attacksDone == 0)
-            {
-                StopAllCoroutines();
-            }
-        }
-    }
-
     public void ChangeColor(Color newColor)
     {
         sRend.color = newColor;
-
-        foreach (GameObject spike in spikes)
-        {
-            spike.GetComponent<SpriteRenderer>().color = newColor;
-        }
     }
 
     void TriggerDialogueBreak()
@@ -214,13 +169,14 @@ public class ReginaldBoss : EnemyBase
         for (int i = 0; i < missilesPerSalvo; i++)
         {
             JadeMissile missile = Instantiate(jadeMissilePrefab, transform.position, Quaternion.identity).Initialize(player);
-            jadeMissiles.Add(missile);
+            jadeMissiles.Push(missile);
         }
     }
 
-    void FireJadeMissile(int i)
+    void FireJadeMissile()
     {
-        jadeMissiles[i].Fire((player.transform.position - transform.position).normalized);
+        JadeMissile missile = jadeMissiles.Pop();
+        missile.Fire((player.transform.position - transform.position).normalized);
     }
 
     // DRILL HAZARD
@@ -259,25 +215,44 @@ public class ReginaldBoss : EnemyBase
         if (active && attackPhase > 0)
         {
             barBeatCount++;
-            if (barBeatCount % 8 == 0)
-            {
-                // section = !section;
-            }
-        }
-    }
 
-    public void ReduceBarBeatCount()
-    {
-        barBeatCount--;
+           
+        }
     }
 
     void PhaseOneAttackRotation()
     {
         beatCount++;
 
+        if (jadeMissiles.Count > 0)
+        {
+            FireJadeMissile();
+        }
+    
+        if (barBeatCount % 16 == 0)
+        {
+            FireDrillSalvo();
+        }
+
+
         switch (attackType)
         {
-            
+            case 0:
+                if (barBeatCount % 8 == 0)
+                {
+                    SpawnFragileCrystal();
+                    SpawnJadeMissile();
+                    attackType++;
+                }
+                break;
+            case 1:
+                if (barBeatCount % 8 == 0)
+                {
+                    SpawnFragileCrystal();
+                    SpawnRollingCrystal();
+                    attackType--;
+                }
+                break;
         }
     }
 

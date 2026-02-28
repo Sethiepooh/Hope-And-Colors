@@ -8,6 +8,8 @@ public class FragileCrystal : MonoBehaviour
     [SerializeField] float wanderRadius;
     [SerializeField] float speed;
     [SerializeField] GameObject projectile;
+    [SerializeField] float timeToLive;
+    float timer;
 
     public void Initialize(Transform point)
     {
@@ -26,6 +28,12 @@ public class FragileCrystal : MonoBehaviour
         {
             ChooseNewWanderPoint();
         }
+
+        timer += Time.fixedDeltaTime;
+        if (timer >= timeToLive)
+        {
+            ScatterShot();
+        }
     }
 
     void ChooseNewWanderPoint()
@@ -33,7 +41,7 @@ public class FragileCrystal : MonoBehaviour
         currentTarget = (Vector2)wanderCenterPoint.position + UnityEngine.Random.insideUnitCircle * wanderRadius;
     }
 
-    void ScatterShot()
+    public void ScatterShot()
     {
         float angleStep = 360f / 8;
         float angle = 0f;
