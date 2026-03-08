@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class FragileCrystal : MonoBehaviour
@@ -10,6 +11,12 @@ public class FragileCrystal : MonoBehaviour
     [SerializeField] ProjectilePool projectilePool;
     [SerializeField] float timeToLive;
     float timer;
+
+    [SerializeField] float scatterDelay;
+    float delayTimer;
+
+    [SerializeField] float triggerRadius;
+    [SerializeField] LayerMask playerLayer;
 
     public void Initialize(Transform point, ProjectilePool pool)
     {
@@ -26,6 +33,7 @@ public class FragileCrystal : MonoBehaviour
 
         rb.linearVelocity = (currentTarget - (Vector2)transform.position).normalized * speed;
 
+
         if (Vector2.Distance(transform.position, currentTarget) < .5)
         {
             ChooseNewWanderPoint();
@@ -35,6 +43,15 @@ public class FragileCrystal : MonoBehaviour
         if (timer >= timeToLive)
         {
             ScatterShot();
+        }
+
+        Collider2D[] hitObjects = Physics2D.OverlapCircleAll(transform.position, triggerRadius, playerLayer);
+        foreach (Collider2D objects in hitObjects)
+        {
+            if (objects.gameObject.CompareTag("Player"))
+            {
+                ScatterShot();
+            }
         }
     }
 
@@ -46,6 +63,14 @@ public class FragileCrystal : MonoBehaviour
 
     public void ScatterShot()
     {
+        StartCoroutine(ScatterShotCoroutine());
+    }
+
+    public IEnumerator ScatterShotCoroutine()
+    {
+        // Add a short delay before firing
+        yield return new WaitForSeconds(0.2f);
+
         float angleStep = 360f / 8;
         float angle = 0f;
         for (int i = 0; i < 8; i++)
@@ -63,5 +88,11 @@ public class FragileCrystal : MonoBehaviour
         }
 
         Destroy(this.gameObject);
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, triggerRadius);
     }
 }

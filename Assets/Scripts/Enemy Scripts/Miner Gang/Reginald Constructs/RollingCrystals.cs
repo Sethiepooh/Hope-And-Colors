@@ -11,6 +11,7 @@ public class RollingCrystals : MonoBehaviour
     [SerializeField] float slideDistance;
     List<GameObject> crystals = new List<GameObject>();
     public bool sliding = false;
+    public bool initialized;
 
 
     private void Start()
@@ -36,6 +37,7 @@ public class RollingCrystals : MonoBehaviour
     {
         ToggleCrystals(true);
         transform.position = originalPos;
+        initialized = true;
         return this; 
     }
 
@@ -56,6 +58,7 @@ public class RollingCrystals : MonoBehaviour
 
         ToggleCrystals(false);
         sliding = false;
+        initialized = false;
     }
 
     void ToggleCrystals(bool b)

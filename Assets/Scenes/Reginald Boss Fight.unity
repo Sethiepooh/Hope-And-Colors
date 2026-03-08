@@ -169,6 +169,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &927741
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -302,6 +304,7 @@ MonoBehaviour:
   slideSpeed: 25
   slideDistance: -23.9
   sliding: 0
+  initialized: 0
 --- !u!4 &105143802
 Transform:
   m_ObjectHideFlags: 0
@@ -382,6 +385,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &109807751
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -539,6 +544,14 @@ PrefabInstance:
     - target: {fileID: 907519279718243535, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: m_Name
       value: Evie
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: hasStageDive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: enemyLayer.m_Bits
+      value: 1344
       objectReference: {fileID: 0}
     - target: {fileID: 2184088789803479037, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: m_AnchorMax.x
@@ -890,6 +903,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &201684553
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1041,6 +1056,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &213369623
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1245,6 +1262,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &253798540
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1478,6 +1497,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &284890863
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1629,6 +1650,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &287663822
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1762,6 +1785,7 @@ MonoBehaviour:
   slideSpeed: 25
   slideDistance: -38
   sliding: 0
+  initialized: 0
 --- !u!4 &343918946
 Transform:
   m_ObjectHideFlags: 0
@@ -1835,6 +1859,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &362920896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1986,6 +2012,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &376820267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2137,6 +2165,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &424860498
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2288,6 +2318,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &435095835
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2589,6 +2621,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &455811365
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2740,6 +2774,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &463373640
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2891,6 +2927,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &481758312
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3042,6 +3080,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &481969915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3288,6 +3328,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &515698286
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3439,6 +3481,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &522684942
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3590,6 +3634,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &610798293
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3886,6 +3932,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &720506988
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4037,6 +4085,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &721413920
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4188,6 +4238,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &783610593
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4289,6 +4341,169 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &789495587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 789495589}
+  - component: {fileID: 789495588}
+  - component: {fileID: 789495590}
+  - component: {fileID: 789495591}
+  m_Layer: 10
+  m_Name: Jade Shield
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &789495588
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789495587}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Color: {r: 0, g: 0.6698113, b: 0.04208231, a: 0.36078432}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &789495589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789495587}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.9583576, y: 3.9583576, z: 3.9583576}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1488037788}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &789495590
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789495587}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5
+--- !u!114 &789495591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789495587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDeathEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1488037789}
+        m_TargetAssemblyTypeName: ReginaldBoss, Assembly-CSharp
+        m_MethodName: DisableShield
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  maxHealth: 100
+  healthBar: {fileID: 0}
+  isPlayer: 0
+  isBoss: 0
+  deathParticles: {fileID: 0}
+  blastParticles: {fileID: 0}
+  blastRadius: 0
+  damagable: 1
 --- !u!1 &793069756
 GameObject:
   m_ObjectHideFlags: 0
@@ -4339,6 +4554,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &793069759
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4565,6 +4782,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &903185585
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4716,6 +4935,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &917264950
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5037,6 +5258,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &959187025
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5188,6 +5411,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &967645750
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5339,6 +5564,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1000913694
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5472,6 +5699,7 @@ MonoBehaviour:
   slideSpeed: 25
   slideDistance: -23.5
   sliding: 0
+  initialized: 0
 --- !u!4 &1109591863
 Transform:
   m_ObjectHideFlags: 0
@@ -5641,6 +5869,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1160315175
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5792,6 +6022,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1182249268
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6138,6 +6370,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1242907216
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6338,6 +6572,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1283315848
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6536,6 +6772,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1352775167
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6687,6 +6925,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1365541524
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6873,6 +7113,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1374517879
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7024,6 +7266,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1437038432
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7217,6 +7461,7 @@ GameObject:
   - component: {fileID: 1488037789}
   - component: {fileID: 1488037790}
   - component: {fileID: 1488037791}
+  - component: {fileID: 1488037792}
   m_Layer: 6
   m_Name: Reginald
   m_TagString: Boss
@@ -7292,6 +7537,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 789495589}
   - {fileID: 437145262}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7315,6 +7561,7 @@ MonoBehaviour:
   telegraphEffect: {fileID: 0}
   player: {fileID: 0}
   projectilePool: {fileID: 442612501}
+  shield: {fileID: 789495587}
   attackPhase: 0
   attackType: 0
   attacksTillChange: 4
@@ -7350,13 +7597,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onDeathEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 115629901}
+        m_TargetAssemblyTypeName: NextLevel, Assembly-CSharp
+        m_MethodName: LoadNextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDamageEvent:
     m_PersistentCalls:
       m_Calls: []
   maxHealth: 1100
   healthBar: {fileID: 1144192278}
-  isPlayer: 0
+  isPlayer: 1
   isBoss: 1
   deathParticles: {fileID: 0}
   blastParticles: {fileID: 0}
@@ -7376,6 +7635,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pulseScale: 1.2
   returnSpeed: 5
+--- !u!58 &1488037792
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488037786}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5
 --- !u!1 &1500890304
 GameObject:
   m_ObjectHideFlags: 0
@@ -7555,6 +7850,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1530057533
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7846,6 +8143,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1664002611
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7997,6 +8296,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1664641581
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8148,6 +8449,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1666342708
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8299,6 +8602,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1780526218
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8450,6 +8755,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1825929402
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8760,6 +9067,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1924780541
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8893,6 +9202,7 @@ MonoBehaviour:
   slideSpeed: 25
   slideDistance: -38
   sliding: 0
+  initialized: 0
 --- !u!4 &1924997235
 Transform:
   m_ObjectHideFlags: 0
@@ -8966,6 +9276,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1925487924
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9117,6 +9429,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &1948360894
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9338,6 +9652,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &2057608991
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9525,6 +9841,8 @@ MonoBehaviour:
   damageLayer:
     serializedVersion: 2
     m_Bits: 8
+  decaying: 0
+  decayTime: 0
 --- !u!212 &2121975182
 SpriteRenderer:
   m_ObjectHideFlags: 0

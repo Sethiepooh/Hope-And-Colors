@@ -15,6 +15,11 @@ public class ReginaldBoss : EnemyBase
     [SerializeField] GameObject player;
     [SerializeField] ProjectilePool projectilePool;
 
+    [Header("Shield")]
+    [SerializeField] GameObject shield;
+    Color defaultShieldColor;
+    bool isShielded = true;
+
     [Header("Phase Management")]
     [SerializeField] int attackPhase = 0;
     [SerializeField] int attackType = 0;
@@ -77,6 +82,7 @@ public class ReginaldBoss : EnemyBase
         attackType = 0;
         active = true;
         bossHealth.SetDamagable(true);
+        EnableShield();
     }
 
 
@@ -85,15 +91,21 @@ public class ReginaldBoss : EnemyBase
     {
         if (bossHealth.GetHealthPercent() <= .66f && attackPhase == 1)
         {
+            EnableShield();
             attackPhase = 2;
             attackType = 0;
             beatCount = 0;
             bpmInteract.currentMovement++;
+            missilesPerSalvo += 1;
         }
         else if (bossHealth.GetHealthPercent() <= .33f && attackPhase == 2)
         {
+            EnableShield();
             active = false;
             attackPhase = 3;
+            attackType = 0;
+            beatCount = 0;
+            bpmInteract.currentMovement++;
         }
 
         if (attackPhase > 0)
@@ -144,6 +156,11 @@ public class ReginaldBoss : EnemyBase
     void SpawnRollingCrystal()
     {
         int randDir = Random.Range(0, 4);
+        if (rollingCrystals[randDir].initialized)
+        {
+           SpawnRollingCrystal();
+           return;
+        }
         rollingCrystals[randDir].Initialize();
     }
 
@@ -190,6 +207,23 @@ public class ReginaldBoss : EnemyBase
         }
     }
 
+    //SHIELD
+    void EnableShield()
+    {
+        isShielded = true;
+        shield.SetActive(true);
+        shield.GetComponent<SpriteRenderer>().color = defaultShieldColor;
+        shield.GetComponent<Health>().Heal(100);
+        bossHealth.SetDamagable(false);
+    }
+
+    public void DisableShield()
+    {
+        isShielded = false;
+        shield.SetActive(false);
+        bossHealth.SetDamagable(true);
+    }
+
     public override void AddToBeatCount()
     {
         if (!active)
@@ -229,11 +263,6 @@ public class ReginaldBoss : EnemyBase
         {
             FireJadeMissile();
         }
-    
-        if (beatCount % 16 == 0)
-        {
-            FireDrillSalvo();
-        }
 
         TriggerRollingCrystals();
 
@@ -261,18 +290,71 @@ public class ReginaldBoss : EnemyBase
     void PhaseTwoAttackRotation()
     {
         beatCount++;
+
+        if (jadeMissiles.Count > 0)
+        {
+            FireJadeMissile();
+        }
+
+        TriggerRollingCrystals();
+
         switch (attackType)
         {
-           
+            case 0:
+                if (beatCount % 8 == 0)
+                {
+                    SpawnFragileCrystal();
+                    SpawnFragileCrystal();  
+                    SpawnJadeMissile();
+                    FireDrillSalvo();
+                    attackType++;
+                }
+                break;
+            case 1:
+                if (beatCount % 8 == 0)
+                {
+                    SpawnFragileCrystal();
+                    SpawnRollingCrystal();
+                    SpawnRollingCrystal();
+                    attackType--;
+                }
+                break;
         }
     }
 
     void PhaseThreeAttackRotation()
     {
         beatCount++;
+
+        if (jadeMissiles.Count > 0)
+        {
+            FireJadeMissile();
+        }
+
+        TriggerRollingCrystals();
+
         switch (attackType)
         {
-            
+            case 0:
+                if (beatCount % 8 == 0)
+                {
+                    SpawnFragileCrystal();
+                    SpawnFragileCrystal();
+                    SpawnJadeMissile();
+                    FireDrillSalvo();
+                    attackType++;
+                }
+                break;
+            case 1:
+                if (beatCount % 8 == 0)
+                {
+                    SpawnFragileCrystal();
+                    SpawnRollingCrystal();
+                    SpawnRollingCrystal();
+                    SpawnFallingFist();
+                    attackType--;
+                }
+                break;
         }
     }
 

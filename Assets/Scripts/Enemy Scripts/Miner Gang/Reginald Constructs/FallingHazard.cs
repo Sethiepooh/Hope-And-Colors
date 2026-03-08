@@ -23,7 +23,7 @@ public class FallingHazard : MonoBehaviour
         fallTimer += Time.deltaTime;
         if (fallTimer >= fallDelay)
         {
-            Collider2D hit = Physics2D.OverlapCircle(transform.position, size / 2, playerLayer);
+            Collider2D hit = Physics2D.OverlapCircle(transform.position, size, playerLayer);
             if (hit != null)
             {
                 hit.GetComponent<Health>().TakeDamage(damage);
@@ -31,5 +31,11 @@ public class FallingHazard : MonoBehaviour
             Instantiate(hazard, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, size);
     }
 }

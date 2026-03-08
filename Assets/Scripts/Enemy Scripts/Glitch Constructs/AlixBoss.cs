@@ -21,7 +21,6 @@ public class AlixBoss : EnemyBase
 
     //Onslaught Settings
     [Header("Onslaught")]
-    [SerializeField] Projectile OnslaughtPrefab;
     [SerializeField] ProjectilePool projectilePool;
 
     [Header("Scatter Onslaught Stats")]

@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 7363575246422236937}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -12.37, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4864, y: 1.7922, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -106,7 +106,7 @@ PolygonCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 1216
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -154,10 +154,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   damage: 10
-  onHitProjectiles: {fileID: -7720408383684513645, guid: 9c97f9594d4639743b4ff39cd126a5bf, type: 3}
   damageLayer:
     serializedVersion: 2
     m_Bits: 264
+  projectilePool: {fileID: 0}
 --- !u!50 &2773639594806178105
 Rigidbody2D:
   serializedVersion: 5

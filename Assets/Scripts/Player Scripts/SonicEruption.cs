@@ -31,7 +31,7 @@ public class SonicEruption : MonoBehaviour
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, transform.localScale.x / 2);
         foreach (Collider2D enemy in hitEnemies)
         {
-            if (enemy.CompareTag("Enemy") || enemy.CompareTag("Boss") || enemy.CompareTag("Obstacle"))
+            if (enemy.CompareTag("Enemy") || enemy.CompareTag("Boss") || enemy.CompareTag("Obstacle") || enemy.CompareTag("Shield"))
             {
                 enemy.GetComponent<Health>().TakeDamage(damage);
                 enemy.GetComponent<EnemyBase>().active = false;

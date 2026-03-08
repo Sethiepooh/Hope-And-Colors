@@ -12,6 +12,7 @@ TagManager:
   - RespawnManager
   - Boss
   - Wall
+  - EnemyProjectilePool
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Projectile
   - Obstacle
   - Bomb
-  - 
+  - Shield
   - 
   - 
   - 

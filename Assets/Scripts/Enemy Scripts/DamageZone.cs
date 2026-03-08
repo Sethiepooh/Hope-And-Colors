@@ -5,6 +5,22 @@ public class DamageZone : MonoBehaviour
 {
     [SerializeField] int damage;
     [SerializeField] LayerMask damageLayer;
+    [SerializeField] bool decaying;
+
+    [SerializeField] float decayTime;
+    float decayTimer;
+
+    private void Update()
+    {
+        if (decaying)
+        {
+            decayTimer += Time.deltaTime;
+            if (decayTimer >= decayTime)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

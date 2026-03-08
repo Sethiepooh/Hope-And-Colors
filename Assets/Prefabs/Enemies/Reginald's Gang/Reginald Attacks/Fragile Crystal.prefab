@@ -103,10 +103,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 588ae018acca95747b40762a31468fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wanderRadius: 5
+  wanderRadius: 10
   speed: 2
-  projectile: {fileID: 8608247141467209458, guid: 9c97f9594d4639743b4ff39cd126a5bf, type: 3}
+  projectilePool: {fileID: 0}
   timeToLive: 30
+  scatterDelay: 0.5
+  triggerRadius: 1.27
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!60 &6524030146438128752
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -123,7 +128,7 @@ PolygonCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1344
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
