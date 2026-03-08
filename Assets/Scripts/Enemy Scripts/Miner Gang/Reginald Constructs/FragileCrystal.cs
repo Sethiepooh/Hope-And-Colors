@@ -7,13 +7,14 @@ public class FragileCrystal : MonoBehaviour
     Rigidbody2D rb;
     [SerializeField] float wanderRadius;
     [SerializeField] float speed;
-    [SerializeField] GameObject projectile;
+    [SerializeField] ProjectilePool projectilePool;
     [SerializeField] float timeToLive;
     float timer;
 
-    public void Initialize(Transform point)
+    public void Initialize(Transform point, ProjectilePool pool)
     {
         wanderCenterPoint = point;
+        projectilePool = pool;
         rb = GetComponent<Rigidbody2D>();
         ChooseNewWanderPoint();
     }
@@ -53,8 +54,11 @@ public class FragileCrystal : MonoBehaviour
             float projectileDirYPosition = transform.position.y + Mathf.Cos((angle * Mathf.PI) / 180);
             Vector3 projectileVector = new Vector3(projectileDirXPosition, projectileDirYPosition, 0);
             Vector3 projectileMoveDirection = (projectileVector - transform.position).normalized;
-            GameObject tmpObj = Instantiate(projectile, transform.position, Quaternion.identity);
-            tmpObj.GetComponent<Projectile>().direction = projectileMoveDirection;
+            Projectile projectileInstance = projectilePool.GetProjectile(
+                transform.position,
+                Quaternion.LookRotation(Vector3.forward, projectileVector)
+            );
+            projectileInstance.Initialize(projectilePool, false, projectileMoveDirection);
             angle += angleStep;
         }
 

@@ -8,7 +8,7 @@ public class ScatterBomb : MonoBehaviour
     [SerializeField] int blastDamage;
 
 
-    [SerializeField] GameObject projectile;
+    [SerializeField] ProjectilePool projectilePool;
     [SerializeField] GameObject explosionEffect;
     [SerializeField] LayerMask explosionTargetLayer;
 
@@ -63,8 +63,11 @@ public class ScatterBomb : MonoBehaviour
             float projectileDirYPosition = transform.position.y + Mathf.Cos((angle * Mathf.PI) / 180);
             Vector3 projectileVector = new Vector3(projectileDirXPosition, projectileDirYPosition, 0);
             Vector3 projectileMoveDirection = (projectileVector - transform.position).normalized;
-            GameObject tmpObj = Instantiate(projectile, transform.position, Quaternion.identity);
-            tmpObj.GetComponent<Projectile>().direction = projectileMoveDirection;
+            Projectile projectileInstance = projectilePool.GetProjectile(
+               transform.position,
+               Quaternion.LookRotation(Vector3.forward, projectileVector)
+           );
+            projectileInstance.Initialize(projectilePool, false, projectileMoveDirection);
             angle += angleStep;
         }
     }

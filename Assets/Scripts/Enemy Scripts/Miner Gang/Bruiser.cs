@@ -12,7 +12,7 @@ public class Bruiser : EnemyBase
     int beatCount = 0;
 
     [Header("Shotgun Settings")]
-    [SerializeField] GameObject shotgunPrefab;
+    [SerializeField] ProjectilePool projectilePool;
     [SerializeField] int pelletCount = 3;
     [SerializeField] float spreadAngle = 45f;
 
@@ -88,9 +88,11 @@ public class Bruiser : EnemyBase
             Quaternion rotation = Quaternion.Euler(0, 0, angle);
             Vector2 pelletDir = rotation * direction;
 
-            GameObject pellet = Instantiate(shotgunPrefab, direction + (Vector2)transform.position, Quaternion.identity);
-            Projectile pelletScript = pellet.GetComponent<Projectile>();
-            pelletScript.direction = pelletDir.normalized;
+            Projectile projectileInstance = projectilePool.GetProjectile(
+               transform.position,
+               Quaternion.LookRotation(Vector3.forward, pelletDir)
+           );
+            projectileInstance.Initialize(projectilePool, false, pelletDir);
         }
     }
 

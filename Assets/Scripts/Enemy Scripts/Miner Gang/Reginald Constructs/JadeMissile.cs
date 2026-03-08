@@ -7,15 +7,16 @@ public class JadeMissile : MonoBehaviour
     GameObject player;
     [SerializeField] float speed = 10f;
     [SerializeField] int damage = 10;
-    [SerializeField] Projectile onHitProjectiles;
     [SerializeField] LayerMask damageLayer;
+    [SerializeField] ProjectilePool projectilePool; // Add this line
 
     bool firing;
 
-    public JadeMissile Initialize(GameObject player)
+    public JadeMissile Initialize(GameObject player, ProjectilePool pool)
     {
         rb = GetComponent<Rigidbody2D>();
         this.player = player;
+        this.projectilePool = pool; // Set the pool reference
         return this;
     }
 
@@ -23,22 +24,26 @@ public class JadeMissile : MonoBehaviour
     {
         this.direction = direction.normalized;
         firing = true;
-    }   
+    }
 
     public void SpawnProjectiles()
     {
         for (int i = 0; i < 2; i++)
         {
-            var projectileInstance = Instantiate(onHitProjectiles, transform.position, Quaternion.identity);
             Vector2 projDirection = Quaternion.Euler(0, 0, i == 0 ? 45 : -45) * -direction;
-            projectileInstance.direction = projDirection.normalized;
+            // Use the pool to get a projectile
+            Projectile projectileInstance = projectilePool.GetProjectile(
+                transform.position,
+                Quaternion.LookRotation(Vector3.forward, projDirection)
+            );
+            projectileInstance.Initialize(projectilePool, false, projDirection.normalized);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(!firing)
+        if (!firing)
         {
             Vector3 offset = player.transform.position - transform.position;
             transform.rotation = Quaternion.LookRotation(Vector3.forward, offset);

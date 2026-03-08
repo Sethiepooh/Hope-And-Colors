@@ -13,6 +13,7 @@ public class ReginaldBoss : EnemyBase
     int barBeatCount = -1;
     [SerializeField] ParticleSystem telegraphEffect;
     [SerializeField] GameObject player;
+    [SerializeField] ProjectilePool projectilePool;
 
     [Header("Phase Management")]
     [SerializeField] int attackPhase = 0;
@@ -136,7 +137,7 @@ public class ReginaldBoss : EnemyBase
     //FRAGILE CRYSTAL
     void SpawnFragileCrystal()
     {
-        Instantiate(fragileCrystalPrefab, (Vector2)transform.position + Random.insideUnitCircle * crystalSpawnRadius, Quaternion.identity).Initialize(transform);
+        Instantiate(fragileCrystalPrefab, (Vector2)transform.position + Random.insideUnitCircle * crystalSpawnRadius, Quaternion.identity).Initialize(transform, projectilePool);
     }
 
     //ROLLING CRYSTAL
@@ -168,7 +169,7 @@ public class ReginaldBoss : EnemyBase
     {
         for (int i = 0; i < missilesPerSalvo; i++)
         {
-            JadeMissile missile = Instantiate(jadeMissilePrefab, transform.position, Quaternion.identity).Initialize(player);
+            JadeMissile missile = Instantiate(jadeMissilePrefab, transform.position, Quaternion.identity).Initialize(player, projectilePool);
             jadeMissiles.Push(missile);
         }
     }

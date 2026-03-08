@@ -6,7 +6,7 @@ public class GlitchMother : EnemyBase
 {
     [Header("Attack Stats")]
     [SerializeField] Transform projectileSpawn;
-    [SerializeField] GameObject projectile;
+    [SerializeField] ProjectilePool projectilePool;
     int beatCount = 0;
 
     [Header("Movement Stats")]
@@ -39,8 +39,11 @@ public class GlitchMother : EnemyBase
 
     public override void Attack()
     {
-        var projectileInstance = Instantiate(projectile, projectileSpawn.position, Quaternion.identity);
-        projectileInstance.GetComponent<Projectile>().direction =  (player.transform.position - transform.position).normalized;  
+        Projectile projectileInstance = projectilePool.GetProjectile(
+               transform.position,
+               Quaternion.LookRotation(Vector3.forward, (player.transform.position - transform.position).normalized)
+           );
+        projectileInstance.Initialize(projectilePool, false, (player.transform.position - transform.position).normalized);
     }
 
     public override void AddToBeatCount()

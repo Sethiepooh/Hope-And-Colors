@@ -2493,6 +2493,52 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &442612500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 442612502}
+  - component: {fileID: 442612501}
+  m_Layer: 0
+  m_Name: Jade Shard Projectile Pool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &442612501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442612500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b8c945f63f6374dab621aee0244950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: -7720408383684513645, guid: 46f3e2629d860d049a1b72812a66db78, type: 3}
+  poolSize: 20
+--- !u!4 &442612502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442612500}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -103.55189, y: -13.85557, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &455811362
 GameObject:
   m_ObjectHideFlags: 0
@@ -7268,6 +7314,7 @@ MonoBehaviour:
   damage: 5
   telegraphEffect: {fileID: 0}
   player: {fileID: 0}
+  projectilePool: {fileID: 442612501}
   attackPhase: 0
   attackType: 0
   attacksTillChange: 4
@@ -9601,3 +9648,4 @@ SceneRoots:
   - {fileID: 1924997235}
   - {fileID: 1488037788}
   - {fileID: 1374363840}
+  - {fileID: 442612502}

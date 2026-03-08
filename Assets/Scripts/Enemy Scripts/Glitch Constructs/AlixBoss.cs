@@ -21,7 +21,8 @@ public class AlixBoss : EnemyBase
 
     //Onslaught Settings
     [Header("Onslaught")]
-    [SerializeField] GameObject OnslaughtPrefab;
+    [SerializeField] Projectile OnslaughtPrefab;
+    [SerializeField] ProjectilePool projectilePool;
 
     [Header("Scatter Onslaught Stats")]
     [SerializeField] int numberOfScatterProjectiles = 16;
@@ -353,6 +354,7 @@ public class AlixBoss : EnemyBase
     #region Onslaught Methods
     void FireScatterOnslaught()
     {
+
         float angleStep = 360f / numberOfScatterProjectiles;
         float angle = 0f;
         for (int i = 0; i < numberOfScatterProjectiles; i++)
@@ -361,9 +363,14 @@ public class AlixBoss : EnemyBase
             float projectileDirYPosition = transform.position.y + Mathf.Cos((angle * Mathf.PI) / 180);
             Vector3 projectileVector = new Vector3(projectileDirXPosition, projectileDirYPosition, 0);
             Vector3 projectileMoveDirection = (projectileVector - transform.position).normalized;
-            GameObject tmpObj = Instantiate(OnslaughtPrefab, attackPoint.position + (projectileMoveDirection * 4), Quaternion.identity);
-            tmpObj.GetComponent<Projectile>().direction = projectileMoveDirection;
-            tmpObj.transform.rotation = Quaternion.LookRotation(Vector3.forward, projectileMoveDirection);
+
+            // Use the pool to get a projectile
+            Projectile proj = projectilePool.GetProjectile(
+                attackPoint.position + (projectileMoveDirection * 4),
+                Quaternion.LookRotation(Vector3.forward, projectileMoveDirection)
+            );
+            proj.Initialize(projectilePool, false, projectileMoveDirection);
+
             angle += angleStep;
         }
     }
@@ -380,9 +387,12 @@ public class AlixBoss : EnemyBase
             Quaternion rotation = Quaternion.Euler(0, 0, angle);
             Vector2 pelletDir = rotation * direction;
 
-            GameObject pellet = Instantiate(OnslaughtPrefab, (Vector2)transform.position + (direction * 4), Quaternion.identity);
-            Projectile pelletScript = pellet.GetComponent<Projectile>();
-            pelletScript.direction = pelletDir.normalized;
+            // Use the pool to get a projectile
+            Projectile pellet = projectilePool.GetProjectile(
+                (Vector2)transform.position + (direction * 4),
+                Quaternion.LookRotation(Vector3.forward, pelletDir)
+            );
+            pellet.Initialize(projectilePool, false, pelletDir.normalized);
         }
     }
     #endregion

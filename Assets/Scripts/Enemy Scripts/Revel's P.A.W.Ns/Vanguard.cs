@@ -13,6 +13,7 @@ public class Vanguard : EnemyBase
     int beatCount = 0;
     bool alt;
     bool charging;
+    [SerializeField] ProjectilePool projectilePool;
 
     [Header("Shotgun Settings")]
     [SerializeField] GameObject shotgunPrefab;
@@ -123,9 +124,11 @@ public class Vanguard : EnemyBase
             Quaternion rotation = Quaternion.Euler(0, 0, angle);
             Vector2 pelletDir = rotation * fireDir;
 
-            GameObject pellet = Instantiate(shotgunPrefab, facedDirection.position, Quaternion.identity);
-            Projectile pelletScript = pellet.GetComponent<Projectile>();
-            pelletScript.direction = pelletDir.normalized;
+            Projectile projectileInstance = projectilePool.GetProjectile(
+               transform.position,
+               Quaternion.LookRotation(Vector3.forward, pelletDir)
+           );
+            projectileInstance.Initialize(projectilePool, false, pelletDir);
         }
         alt = !alt;
     }

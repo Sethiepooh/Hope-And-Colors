@@ -10,16 +10,24 @@ public class Projectile : MonoBehaviour
     public bool fireFromPlayer = true;
     bool freeze = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
+    private ProjectilePool pool; // Reference to the pool
 
+    // Called by the pool when the projectile is spawned
+    public void Initialize(ProjectilePool pool, bool playerProj, Vector2 dir)
+    {
+        this.pool = pool;
+        fireFromPlayer = playerProj;
+        direction = dir.normalized;
     }
 
-    // Update is called once per frame
+    void OnEnable()
+    {
+        freeze = false;
+    }
+
     void FixedUpdate()
     {
-        if(freeze)
+        if (freeze)
         {
             rb.linearVelocity = Vector2.zero;
             return;
@@ -38,22 +46,23 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("Bomb"))
+        if (collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("Bomb"))
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(damage);
             Debug.Log("Projectile hit: " + collision.gameObject.name);
-            Destroy(gameObject);
+            ReturnToPool();
+            return;
         }
 
         if (fireFromPlayer)
         {
             if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Boss"))
             {
-                if(collision.gameObject.GetComponent<Health>().damagable)
+                if (collision.gameObject.GetComponent<Health>().damagable)
                     collision.gameObject.GetComponent<Health>().TakeDamage(damage);
             }
             Debug.Log("Projectile hit: " + collision.gameObject.name);
-            Destroy(gameObject);
+            ReturnToPool();
         }
         else
         {
@@ -62,10 +71,15 @@ public class Projectile : MonoBehaviour
                 collision.gameObject.GetComponent<Health>().TakeDamage(damage);
             }
             Debug.Log("Projectile hit: " + collision.gameObject.name);
-            Destroy(gameObject);
+            ReturnToPool();
         }
-       
-        
+    }
 
+    private void ReturnToPool()
+    {
+        if (pool != null)
+            pool.ReturnProjectile(this);
+        else
+            gameObject.SetActive(false); // Fallback if not pooled
     }
 }
