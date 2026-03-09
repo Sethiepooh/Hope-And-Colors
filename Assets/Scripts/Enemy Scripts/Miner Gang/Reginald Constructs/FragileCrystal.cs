@@ -1,14 +1,13 @@
 using System.Collections;
 using UnityEngine;
 
-public class FragileCrystal : MonoBehaviour
+public class FragileCrystal : ScatterShot
 {
     Transform wanderCenterPoint;
     Vector2 currentTarget;
     Rigidbody2D rb;
     [SerializeField] float wanderRadius;
     [SerializeField] float speed;
-    [SerializeField] ProjectilePool projectilePool;
     [SerializeField] float timeToLive;
     float timer;
 
@@ -42,7 +41,7 @@ public class FragileCrystal : MonoBehaviour
         timer += Time.fixedDeltaTime;
         if (timer >= timeToLive)
         {
-            ScatterShot();
+            FireScatterShot();
         }
 
         Collider2D[] hitObjects = Physics2D.OverlapCircleAll(transform.position, triggerRadius, playerLayer);
@@ -50,7 +49,7 @@ public class FragileCrystal : MonoBehaviour
         {
             if (objects.gameObject.CompareTag("Player"))
             {
-                ScatterShot();
+                FireScatterShot();
             }
         }
     }
@@ -61,7 +60,7 @@ public class FragileCrystal : MonoBehaviour
         Debug.Log("New Wander Point: " + currentTarget);
     }
 
-    public void ScatterShot()
+    protected override void FireScatterShot()
     {
         StartCoroutine(ScatterShotCoroutine());
     }

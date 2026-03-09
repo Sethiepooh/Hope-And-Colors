@@ -1,14 +1,14 @@
 using System.Collections;
 using UnityEngine;
 
-public class ScatterBomb : MonoBehaviour
+public class ScatterBomb : ScatterShot
 {
+    [Header("Bomb Settings")]
     [SerializeField] float timeToExplosion;
     [SerializeField] float blastRadius;
     [SerializeField] int blastDamage;
 
-
-    [SerializeField] ProjectilePool projectilePool;
+    [Header("Explosion Effect")]
     [SerializeField] GameObject explosionEffect;
     [SerializeField] LayerMask explosionTargetLayer;
 
@@ -21,7 +21,7 @@ public class ScatterBomb : MonoBehaviour
     IEnumerator Explode()
     {
         yield return new WaitForSeconds(timeToExplosion);
-        ScatterShot();
+        FireScatterShot();
         BombDamage();
         Destroy(this.gameObject);
     }
@@ -50,25 +50,6 @@ public class ScatterBomb : MonoBehaviour
                     player.GetComponent<Health>().TakeDamage(blastDamage);
                 }
             }
-        }
-    }
-
-    void ScatterShot()
-    {
-        float angleStep = 360f / 8;
-        float angle = 0f;
-        for (int i = 0; i < 8; i++)
-        {
-            float projectileDirXPosition = transform.position.x + Mathf.Sin((angle * Mathf.PI) / 180);
-            float projectileDirYPosition = transform.position.y + Mathf.Cos((angle * Mathf.PI) / 180);
-            Vector3 projectileVector = new Vector3(projectileDirXPosition, projectileDirYPosition, 0);
-            Vector3 projectileMoveDirection = (projectileVector - transform.position).normalized;
-            Projectile projectileInstance = projectilePool.GetProjectile(
-               transform.position,
-               Quaternion.LookRotation(Vector3.forward, projectileVector)
-           );
-            projectileInstance.Initialize(projectilePool, false, projectileMoveDirection);
-            angle += angleStep;
         }
     }
 }
