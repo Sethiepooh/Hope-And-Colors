@@ -14,11 +14,6 @@ public class ThorneBoss : EnemyBase
     [SerializeField] GameObject player;
     [SerializeField] ProjectilePool projectilePool;
 
-    [Header("Shield")]
-    [SerializeField] GameObject shield;
-    Color defaultShieldColor;
-    bool isShielded = true;
-
     [Header("Phase Management")]
     [SerializeField] int attackPhase = 0;
     [SerializeField] int attackType = 0;
