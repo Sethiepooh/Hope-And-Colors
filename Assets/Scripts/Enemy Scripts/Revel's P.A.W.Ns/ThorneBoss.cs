@@ -19,7 +19,6 @@ public class ThorneBoss : EnemyBase
     [SerializeField] int attackType = 0;
     [SerializeField] int attacksTillChange = 4;
     Health bossHealth;
-    int attacksDone = 0;
 
     [Header("Orbiting Daggers")]
     [SerializeField] GameObject[] orbitingDaggers;
