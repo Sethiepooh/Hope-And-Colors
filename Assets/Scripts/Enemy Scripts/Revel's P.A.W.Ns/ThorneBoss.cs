@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ThorneBoss : EnemyBase
@@ -13,12 +12,14 @@ public class ThorneBoss : EnemyBase
     [SerializeField] ParticleSystem telegraphEffect;
     [SerializeField] GameObject player;
     [SerializeField] ProjectilePool projectilePool;
+    [SerializeField] ProjectilePool shatterSwordPool;
 
     [Header("Phase Management")]
     [SerializeField] int attackPhase = 0;
     [SerializeField] int attackType = 0;
     [SerializeField] int attacksTillChange = 4;
     Health bossHealth;
+    bool attacking = false;
 
     [Header("Orbiting Daggers")]
     [SerializeField] GameObject[] orbitingDaggers;
@@ -33,11 +34,20 @@ public class ThorneBoss : EnemyBase
     [Header("Armament Rainfall")]
     [SerializeField] GameObject armamentRainfallPrefab;
     [SerializeField] float spawnRadius;
+    [SerializeField] float spawnBuffer;
     [SerializeField] int armamentCountPerVolley;
 
     [Header("Projectile Lightswords")]
+    [SerializeField] float scatterAngle;
     [SerializeField] int erraticBarrageProjectileCount;
-    [SerializeField] protected float scatterAngle = 360f;
+    [SerializeField] float swordOffset;
+
+    [Header("Greatsword")]
+    [SerializeField] JadeMissile greatswordPrefab;
+    [SerializeField] JadeMissile greatswordInstance;
+
+    [Header("Melodium Crystal Spawn")]
+    [SerializeField] Spawner melodiumSpawner;
 
     [Header("Dialogue")]
     [SerializeField] Dialogue dialogueScript;
@@ -47,7 +57,6 @@ public class ThorneBoss : EnemyBase
     [Header("Effects")]
     [SerializeField] Color attackColor;
     [SerializeField] ParticleSystem chargeEffect;
-    TrailRenderer tRend;
     Color defaultColor;
     public Color disabledColor = Color.purple;
     SpriteRenderer sRend;
@@ -64,6 +73,12 @@ public class ThorneBoss : EnemyBase
         bossHealth = GetComponent<Health>();
         ChangeColor(disabledColor);
         Initialize();
+        DeactivateClockworkSwords();
+        DeactivateOrbitingDaggers();
+        foreach (GameObject dagger in huntingDaggers)
+        {
+            dagger.GetComponent<HuntingDaggers>().DeactivateDagger();
+        }
     }
 
     void Initialize()
@@ -73,6 +88,7 @@ public class ThorneBoss : EnemyBase
         beatCount = 0;
         attackType = 0;
         active = true;
+        attacking = true ;
         bossHealth.SetDamagable(true);
     }
 
@@ -82,6 +98,9 @@ public class ThorneBoss : EnemyBase
     {
         if (bossHealth.GetHealthPercent() <= .66f && attackPhase == 1)
         {
+            DeactivateOrbitingDaggers();
+            DeactivateDaggers();
+            StartCoroutine(PhaseTransition());
             attackPhase = 2;
             attackType = 0;
             beatCount = 0;
@@ -89,7 +108,10 @@ public class ThorneBoss : EnemyBase
         }
         else if (bossHealth.GetHealthPercent() <= .33f && attackPhase == 2)
         {
-            active = false;
+            DeactivateOrbitingDaggers();
+            DeactivateDaggers();
+            DeactivateClockworkSwords();
+            StartCoroutine(PhaseTransition());
             attackPhase = 3;
             attackType = 0;
             beatCount = 0;
@@ -126,10 +148,6 @@ public class ThorneBoss : EnemyBase
         player.GetComponent<PlayerMovement>().controlable = false;
         player.GetComponent<Rigidbody2D>().AddForce((player.transform.position - transform.position).normalized * 40, ForceMode2D.Impulse);
         yield return new WaitForSeconds(.5f);
-        if (attackPhase == 3 && !active)
-        {
-            TriggerDialogueBreak();
-        }
         player.GetComponent<PlayerMovement>().controlable = true;
     }
     #endregion
@@ -159,6 +177,15 @@ public class ThorneBoss : EnemyBase
         }
     }
 
+    bool CheckIfOrbitingDaggersReady(int i)
+    {
+        if (orbitingDaggers[i].activeInHierarchy)
+        {
+            return false;
+        }
+        return true;
+    }
+
     //CLOCKWORK SWORDS
     void ActivateSingleClockworkSword(int i)
     {
@@ -185,6 +212,19 @@ public class ThorneBoss : EnemyBase
     }
 
     //HUNTING DAGGERS
+
+    bool CheckIfDaggersReady()
+    {
+        foreach (GameObject dagger in huntingDaggers)
+        {
+            if (!dagger.activeInHierarchy)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
     void SummonHuntingDaggers()
     {
         foreach (GameObject dagger in huntingDaggers)
@@ -198,27 +238,74 @@ public class ThorneBoss : EnemyBase
     {
         huntingDaggers[i].GetComponent<HuntingDaggers>().DashTowardsPlayer();
     }
+
+    void DeactivateDaggers()
+    {
+        foreach (GameObject dagger in huntingDaggers)
+        {
+            dagger.GetComponent<HuntingDaggers>().DeactivateDagger();
+        }
+    }
+
     //ARMAMENT RAINFALL
     void SummonArmament(Vector2 spawnPos)
     {
-        Instantiate(armamentRainfallPrefab, spawnPos, Quaternion.identity).GetComponent<ShatterSword>();
+        ShatterSword sword = Instantiate(armamentRainfallPrefab, spawnPos, Quaternion.identity).GetComponent<ShatterSword>();
     }
 
     void SummonArmamentVolley(int amount)
     {
         for (int i = 0; i < amount; i++)
         {
-            Vector2 spawnPos = (Vector2)transform.position + Random.insideUnitCircle.normalized * spawnRadius;
+            Vector2 spawnPos = (Vector2)transform.position + Random.insideUnitCircle * spawnRadius;
+            // Ensure spawnPos is outside the spawnBuffer range
+            if (Vector2.Distance(spawnPos, transform.position) < spawnBuffer)
+            {
+                i--;
+                continue;
+            }
+            if (CheckForObstruction(spawnPos))
+            {
+                i--;
+                continue;
+            }
             SummonArmament(spawnPos);
         }
-    }    
+    }
+
+    bool CheckForObstruction(Vector2 spawnPoint)
+    {
+        RaycastHit2D hit = Physics2D.Raycast(spawnPoint, Vector2.down, 10f, LayerMask.GetMask("Obstacle"));
+        return hit.collider != null;
+    }
 
     //PROJECTILE LIGHTSWORDS
     void ErraticBarrage()
     {
-        float angleStep = scatterAngle / erraticBarrageProjectileCount;
-        float angle = 0f;
         for (int i = 0; i < erraticBarrageProjectileCount; i++)
+        {
+            // Generate a random angle in degrees
+            float angle = Random.Range(0f, 360f);
+            // Convert angle to radians
+            float rad = angle * Mathf.Deg2Rad;
+            // Calculate direction vector
+            Vector3 direction = new Vector3(Mathf.Cos(rad), Mathf.Sin(rad), 0).normalized;
+
+            Vector3 spawnPosition = transform.position + direction * swordOffset;
+
+            Projectile projectileInstance = projectilePool.GetProjectile(
+                spawnPosition,
+                Quaternion.LookRotation(Vector3.forward, direction)
+            );
+            projectileInstance.Initialize(projectilePool, false, direction);
+        }
+    }
+
+    protected virtual void FireScatterShot(int amount)
+    {
+        float angleStep = scatterAngle / amount;
+        float angle = 0f;
+        for (int i = 0; i < amount; i++)
         {
             float projectileDirX = transform.position.x + Mathf.Sin((angle * Mathf.PI) / 180);
             float projectileDirY = transform.position.y + Mathf.Cos((angle * Mathf.PI) / 180);
@@ -245,10 +332,47 @@ public class ThorneBoss : EnemyBase
         projectileInstance.Initialize(projectilePool, false, moveDir);
     }
 
+    //GREATSWORD
+    void SpawnGreatsword()
+    {
+        JadeMissile missile = Instantiate(greatswordPrefab, transform.position, Quaternion.identity).Initialize(player, shatterSwordPool);
+        greatswordInstance = missile;
+    }
+
+    void FireGreatsword()
+    {
+        if (greatswordInstance == null) return;
+        greatswordInstance.Fire((player.transform.position - transform.position).normalized);
+        greatswordInstance = null;
+    }
+
+    //CRYSTAl
+    void SpawnMelodiumCrystal(int i)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            Vector2 spawnPos = (Vector2)transform.position + Random.insideUnitCircle * spawnRadius;
+            // Ensure spawnPos is outside the spawnBuffer range
+            if (Vector2.Distance(spawnPos, transform.position) < spawnBuffer)
+            {
+                j--;
+                continue;
+            }
+            if (CheckForObstruction(spawnPos))
+            {
+                j--;
+                continue;
+            }
+            Instantiate(melodiumSpawner, spawnPos, Quaternion.identity);
+        }
+    }
+
     public override void AddToBeatCount()
     {
         if (!active)
         { return; }
+
+        if (!attacking) return;
 
         if (attackPhase == 1)
         {
@@ -271,28 +395,49 @@ public class ThorneBoss : EnemyBase
         if (active && attackPhase > 0)
         {
             barBeatCount++;
-
-
         }
     }
 
     void PhaseOneAttackRotation()
     {
-        beatCount++;       
+        beatCount++;
 
         switch (attackType)
         {
             case 0:
-                if (beatCount % 8 == 0)
+                if(!CheckIfDaggersReady())
                 {
-                   
+                    SummonHuntingDaggers();
+                }              
+                if (beatCount % 2 == 0)
+                {
+                    FireScatterShot(10);
+                    Debug.Log("Triggering Dagger " + currentDaggerIndex);
+                    TriggerDagger(currentDaggerIndex);
+
+                    if(currentDaggerIndex >= huntingDaggers.Length - 1)
+                    {
+                        currentDaggerIndex = 0;
+                    }
+                    else
+                        currentDaggerIndex++;
+                }
+
+                if (beatCount % 32 == 0)
+                {
+                    DeactivateDaggers();
                     attackType++;
                 }
                 break;
             case 1:
-                if (beatCount % 8 == 0)
+                if(CheckIfOrbitingDaggersReady(0))
                 {
-                   
+                    ActivateSingleOrbitingDagger(0);
+                    SummonArmamentVolley(armamentCountPerVolley);
+                }
+                if (beatCount % 32 == 0)
+                {
+                    DeactivateOrbitingDaggers();
                     attackType--;
                 }
                 break;
@@ -303,21 +448,50 @@ public class ThorneBoss : EnemyBase
     {
         beatCount++;
 
-       
-
         switch (attackType)
         {
             case 0:
-                if (beatCount % 8 == 0)
+
+                if (CheckIfOrbitingDaggersReady(0))
                 {
-                   
+                    ActivateAllOrbitingDaggers();
+                }
+                if (!CheckIfDaggersReady())
+                {
+                    SummonHuntingDaggers();
+                }
+                if (beatCount % 2 == 0)
+                {
+                    //Debug.Log("Triggering Dagger " + currentDaggerIndex);
+                    TriggerDagger(currentDaggerIndex);
+
+                    if (currentDaggerIndex >= huntingDaggers.Length - 1)
+                    {
+                        currentDaggerIndex = 0;
+                    }
+                    else
+                        currentDaggerIndex++;
+                }
+
+                if (beatCount % 2 == 0)
+                {
+                    SummonArmament(player.transform.position);
+                }
+                if (beatCount % 32 == 0)
+                {
+                    DeactivateDaggers();
+                    DeactivateOrbitingDaggers();
                     attackType++;
                 }
                 break;
             case 1:
-                if (beatCount % 8 == 0)
+                if (beatCount % 16 == 0)
                 {
-                   
+                    ActivateAllClockworkSwords();
+                }
+                if (beatCount % 64 == 0)
+                {
+                    DeactivateClockworkSwords();
                     attackType--;
                 }
                 break;
@@ -329,29 +503,85 @@ public class ThorneBoss : EnemyBase
         beatCount++;
 
        
+        if (CheckIfOrbitingDaggersReady(0))
+        {
+            ActivateAllOrbitingDaggers();
+        }
+
+        if (beatCount % 32 == 0)
+        {
+            SpawnMelodiumCrystal(1);
+        }
 
         switch (attackType)
         {
             case 0:
                 if (beatCount % 8 == 0)
                 {
-                   
+                    FireScatterShot(8);
+                }
+
+                if (beatCount % 4 == 0)
+                {
+                    if (greatswordInstance != null)
+                        FireGreatsword();
+                    else
+                        SpawnGreatsword();
+                }
+                if (beatCount % 32 == 0)
+                {
+                    if (greatswordInstance != null)
+                        FireGreatsword();
                     attackType++;
                 }
                 break;
             case 1:
-                if (beatCount % 8 == 0)
+                if (!CheckIfDaggersReady())
                 {
-                   
+                    SummonHuntingDaggers();
+                }
+                if (beatCount % 2 == 0)
+                {
+                    //Debug.Log("Triggering Dagger " + currentDaggerIndex);
+                    TriggerDagger(currentDaggerIndex);
+
+                    if (currentDaggerIndex >= huntingDaggers.Length - 1)
+                    {
+                        currentDaggerIndex = 0;
+                    }
+                    else
+                        currentDaggerIndex++;
+                }
+                if (beatCount % 16 == 0)
+                {
+                    ActivateAllClockworkSwords();
+                    SummonArmamentVolley(armamentCountPerVolley / 3);
+                }
+                if (beatCount % 64 == 0)
+                {
+                    DeactivateClockworkSwords();
+                    DeactivateDaggers();
                     attackType--;
                 }
                 break;
         }
     }
 
+    IEnumerator PhaseTransition()
+    {
+        attacking = false;
+        StartCoroutine(PushPlayerAway());
+        yield return new WaitForSeconds(1f);
+        attacking = true;
+    }
+
     private void OnDrawGizmosSelected()
     {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, spawnRadius);
 
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, spawnBuffer);
     }
 
     public override void Attack()

@@ -192,7 +192,8 @@ public class Health : MonoBehaviour
         col.enabled = false;
         var rb = gameObject.GetComponent<Rigidbody2D>();
        // rb.linearVelocity = Vector3.zero;
-        deathParticles.Play();
+       if(deathParticles != null)
+            deathParticles.Play();
 
         yield return new WaitForSeconds(.5f);
         this.gameObject.SetActive(false);

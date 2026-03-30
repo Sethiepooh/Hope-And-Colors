@@ -553,6 +553,10 @@ PrefabInstance:
       propertyPath: enemyLayer.m_Bits
       value: 1344
       objectReference: {fileID: 0}
+    - target: {fileID: 1343899466568195588, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: hasHeartthrobsSolo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2184088789803479037, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0

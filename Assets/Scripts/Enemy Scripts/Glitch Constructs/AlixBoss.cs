@@ -121,7 +121,8 @@ public class AlixBoss : EnemyBase
             active = false;
             attackPhase = 3;
             StartCoroutine(PushPlayerAway());
-            
+            BeginPhaseThree();
+
         }
 
 
@@ -268,10 +269,10 @@ public class AlixBoss : EnemyBase
         player.GetComponent<PlayerMovement>().controlable = false;
         player.GetComponent<Rigidbody2D>().AddForce((player.transform.position - transform.position).normalized * 40, ForceMode2D.Impulse);
         yield return new WaitForSeconds(.5f);
-        if(attackPhase == 3 && !active)
-        {
-            TriggerDialogueBreak();
-        }
+        //if(attackPhase == 3 && !active)
+        //{
+        //    TriggerDialogueBreak();
+        //}
         player.GetComponent<PlayerMovement>().controlable = true;
     }
 

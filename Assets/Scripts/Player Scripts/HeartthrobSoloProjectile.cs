@@ -51,7 +51,7 @@ public class HeartthrobSoloProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy") || collision.CompareTag("Obstacle"))
+        if (collision.CompareTag("Enemy") || collision.CompareTag("Boss") || collision.CompareTag("Obstacle"))
         {
             Health hp = collision.GetComponent<Health>();
             hp.TakeDamage(damage);

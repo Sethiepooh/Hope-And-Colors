@@ -8,12 +8,14 @@ public class HuntingDaggers : MonoBehaviour
     int expirationCounter = 0;
     Rigidbody2D rb;
     [SerializeField] Transform playerTransform;
+    Vector2 returnPos;
     bool attacking = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        returnPos = transform.position;
         DeactivateDagger();
     }
 
@@ -58,6 +60,7 @@ public class HuntingDaggers : MonoBehaviour
 
     public void DeactivateDagger()
     {
+        transform.position = returnPos;
         gameObject.SetActive(false);
     }
 }

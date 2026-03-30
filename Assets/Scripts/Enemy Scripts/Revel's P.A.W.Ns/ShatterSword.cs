@@ -11,9 +11,19 @@ public class ShatterSword : ScatterShot
     [SerializeField] float timeToShatter;
     float shatterTimer = 0f;
 
+    [HideInInspector] public bool active = true;
+
     // Update is called once per frame
     void Update()
     {
+        if(!active) return;
+
+        if (projectilePool == null)
+        {
+            projectilePool = GameObject.FindWithTag("EnemyProjectilePool").GetComponent<ProjectilePool>();
+            return;
+        }
+
         shatterTimer += Time.deltaTime;
         if(shatterTimer >= timeToShatter && !isShattering)
         {
@@ -32,6 +42,7 @@ public class ShatterSword : ScatterShot
         isShattering = true;
         yield return new WaitForSeconds(0.5f);
         FireScatterShot();
+        Destroy(gameObject);
     }
 
     void OnDrawGizmosSelected()

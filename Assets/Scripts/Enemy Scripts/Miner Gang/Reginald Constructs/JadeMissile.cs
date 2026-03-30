@@ -9,6 +9,8 @@ public class JadeMissile : MonoBehaviour
     [SerializeField] int damage = 10;
     [SerializeField] LayerMask damageLayer;
     [SerializeField] ProjectilePool projectilePool; // Add this line
+    [SerializeField] int projectilesOnHit = 3;
+    [SerializeField] Transform spawnPoint;
 
     bool firing;
 
@@ -26,14 +28,19 @@ public class JadeMissile : MonoBehaviour
         firing = true;
     }
 
-    public void SpawnProjectiles()
+    public void SpawnProjectiles(int count)
     {
-        for (int i = 0; i < 2; i++)
+        if (count < 1) return;
+
+        Vector2 spawn = spawnPoint != null ? spawnPoint.position : transform.position;
+
+        float angleStep = 360f / count;
+        for (int i = 0; i < count; i++)
         {
-            Vector2 projDirection = Quaternion.Euler(0, 0, i == 0 ? 45 : -45) * -direction;
-            // Use the pool to get a projectile
+            float angle = i * angleStep;
+            Vector2 projDirection = Quaternion.Euler(0, 0, angle) * -direction;
             Projectile projectileInstance = projectilePool.GetProjectile(
-                transform.position,
+                spawn,
                 Quaternion.LookRotation(Vector3.forward, projDirection)
             );
             projectileInstance.Initialize(projectilePool, false, projDirection.normalized);
@@ -63,7 +70,7 @@ public class JadeMissile : MonoBehaviour
         }
         else
         {
-            SpawnProjectiles();
+            SpawnProjectiles(projectilesOnHit);
             Destroy(gameObject);
         }
     }

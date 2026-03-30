@@ -49,7 +49,7 @@ public class Projectile : MonoBehaviour
         if (collision.gameObject.CompareTag("Obstacle") || collision.gameObject.CompareTag("Bomb"))
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(damage);
-            Debug.Log("Projectile hit: " + collision.gameObject.name);
+            //Debug.Log("Projectile hit: " + collision.gameObject.name);
             ReturnToPool();
             return;
         }
@@ -61,7 +61,7 @@ public class Projectile : MonoBehaviour
                 if (collision.gameObject.GetComponent<Health>().damagable)
                     collision.gameObject.GetComponent<Health>().TakeDamage(damage);
             }
-            Debug.Log("Projectile hit: " + collision.gameObject.name);
+           // Debug.Log("Projectile hit: " + collision.gameObject.name);
             ReturnToPool();
         }
         else
@@ -70,7 +70,7 @@ public class Projectile : MonoBehaviour
             {
                 collision.gameObject.GetComponent<Health>().TakeDamage(damage);
             }
-            Debug.Log("Projectile hit: " + collision.gameObject.name);
+           // Debug.Log("Projectile hit: " + collision.gameObject.name);
             ReturnToPool();
         }
     }

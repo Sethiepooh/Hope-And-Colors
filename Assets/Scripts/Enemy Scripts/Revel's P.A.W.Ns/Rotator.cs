@@ -13,10 +13,27 @@ public class Rotator : MonoBehaviour
     public int numberOfRotations = 1;
 
     private float rotatedDegrees = 0f;
-    private bool isRotating = true;
+    [HideInInspector] public bool isRotating = true;
+
+    [SerializeField] bool startRotatingOnAwake = true;
+    [SerializeField] float rotationDelay = 0f;
+    float rotationTimer;
 
     void Update()
     {
+        if (!startRotatingOnAwake)
+        {
+            if (rotationTimer < rotationDelay)
+            {
+                rotationTimer += Time.deltaTime;
+                isRotating = false;
+            }
+            else
+            {
+                isRotating = true;
+            }
+        }
+       
         if (!isRotating) return;
 
         float deltaRotation = rotationSpeed * Time.deltaTime;
@@ -47,10 +64,12 @@ public class Rotator : MonoBehaviour
     {
         rotatedDegrees = 0f;
         isRotating = true;
+        rotationTimer = 0f;
     }
 
     public void ResetRotation()
     {
         this.transform.rotation = Quaternion.identity;
+
     }
 }

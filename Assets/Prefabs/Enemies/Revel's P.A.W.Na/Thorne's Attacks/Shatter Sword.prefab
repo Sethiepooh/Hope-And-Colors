@@ -103,7 +103,8 @@ MonoBehaviour:
   scatterCount: 8
   scatterAngle: 360
   projectilePool: {fileID: 0}
-  detectionRadius: 1.7
+  detectionRadius: 2
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
+  timeToShatter: 4

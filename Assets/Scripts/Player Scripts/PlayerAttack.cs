@@ -225,6 +225,15 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+    public void AddToCurrentInspiration(float inspiration)
+    {
+        currentInspiration += inspiration;
+        if (currentInspiration > maxInspiration)
+            currentInspiration = maxInspiration;
+        inspirationBar.value = currentInspiration / maxInspiration;
+        Debug.Log("Current Inspiration: " + currentInspiration);
+    }
+
     public void SetCanAttack(bool b)
     {
         if(stumble)
@@ -287,8 +296,25 @@ public class PlayerAttack : MonoBehaviour
 
     IEnumerator AngelBreakTimer()
     {
-        enemyManager.angelBreak = true;
         Projectile[] activeProjectiles = FindObjectsOfType<Projectile>();
+        ThorneBoss thorneBoss = FindObjectOfType<ThorneBoss>();
+        Rotator[] activeRotators = FindObjectsOfType<Rotator>();
+        ShatterSword[] activeShatterSwords = FindObjectsOfType<ShatterSword>();
+
+        if (thorneBoss != null)
+            thorneBoss.active = false;
+
+        enemyManager.angelBreak = true;
+
+        foreach (ShatterSword shatterSword in activeShatterSwords)
+        {
+            shatterSword.active = false;
+        }
+
+        foreach (Rotator rotator in activeRotators)
+        {
+            rotator.isRotating = false;
+        }
 
         foreach (Projectile projectile in activeProjectiles)
         {
@@ -301,6 +327,11 @@ public class PlayerAttack : MonoBehaviour
         
         yield return new WaitForSeconds(angelBreakTime);
 
+        foreach (ShatterSword shatterSword in activeShatterSwords)
+        {
+            shatterSword.active = true;
+        }
+
         foreach (Projectile projectile in activeProjectiles)
         {
             if (!projectile.fireFromPlayer)
@@ -308,6 +339,14 @@ public class PlayerAttack : MonoBehaviour
                 projectile.ToggleFreeze(false);
             }
         }
+
+        foreach (Rotator rotator in activeRotators)
+        {
+            rotator.isRotating = true;
+        }
+
+        if (thorneBoss != null)
+            thorneBoss.active = true;
         enemyManager.angelBreak = false;
     }
 

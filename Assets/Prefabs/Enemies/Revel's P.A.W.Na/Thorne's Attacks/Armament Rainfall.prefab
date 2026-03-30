@@ -50,5 +50,5 @@ MonoBehaviour:
   telegraph: {fileID: 4175704831827316338, guid: 931b9e01a6250924f8f42748f055cafa, type: 3}
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   hazard: {fileID: 4441756040163991709, guid: ca272b819d5968b4e892e1eb4967935b, type: 3}
