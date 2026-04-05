@@ -233,7 +233,7 @@ public class Health : MonoBehaviour
         turret.DeactivateTurret();
 
         yield return new WaitForSeconds(.5f);
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
     }
     #endregion
 

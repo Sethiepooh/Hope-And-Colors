@@ -146,6 +146,9 @@ public class EnemyManager : MonoBehaviour
                 {
                     if(e.enemyObject.activeInHierarchy)
                         e.enemyObject.GetComponent<EnemyBase>()?.AddToBeatCount();
+
+                    if(e.enemyObject.transform.GetChild(0).gameObject.activeInHierarchy)
+                        e.enemyObject.transform.GetChild(0).gameObject.GetComponent<EnemyBase>()?.AddToBeatCount();
                 }                  
             }              
         }

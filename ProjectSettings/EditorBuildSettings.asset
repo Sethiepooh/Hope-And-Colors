@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 723340b4ef76bf84abca6b8f78469519
   - enabled: 1
-    path: Assets/Scenes/Regis Mines 1.unity
+    path: Assets/Scenes/Act 1/Regis Mines 1.unity
     guid: f4a51880a2243984f9dca9bf671bfe75
   - enabled: 1
-    path: Assets/Scenes/Alix Boss Fight.unity
+    path: Assets/Scenes/Act 1/Alix Boss Fight.unity
     guid: 52d007cb3e19f3f42bb585bde941f46f
   - enabled: 0
     path: Assets/Scenes/Pre - Alpha/Story 1.unity

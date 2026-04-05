@@ -4,6 +4,10 @@ public class Turret : EnemyBase
 {
     [SerializeField] GameObject projectile;
     [SerializeField] Transform firePoint;
+    [SerializeField] ProjectilePool projectilePool;
+    [SerializeField] GameObject[] generators;
+    EnemyManager enemyManager;
+    PulseManager pulseManager;
 
     Vector3 playerPos;
     GameObject player;
@@ -21,6 +25,11 @@ public class Turret : EnemyBase
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
+        //enemyManager.AddEnemy(this.gameObject);
+        pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
+        pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
+        projectilePool = GameObject.FindGameObjectWithTag("EnemyProjectilePool").GetComponent<ProjectilePool>();
     }
 
     // Update is called once per frame
@@ -34,19 +43,30 @@ public class Turret : EnemyBase
 
     public void DeactivateTurret()
     {
+        foreach (GameObject generator in generators)
+        {
+            if(generator.activeInHierarchy)
+            {
+                return;
+            }
+        }
         active = false;
+        transform.parent.gameObject.SetActive(false);
     }
 
     public override void Attack()
     {
-        var proj = Instantiate(projectile, firePoint.position, Quaternion.identity);
-        Vector3 trajectory = playerPos - transform.position;
-        proj.GetComponent<Projectile>().direction = trajectory.normalized;
+        Projectile projectileInstance = projectilePool.GetProjectile(
+                firePoint.position,
+                Quaternion.LookRotation(Vector3.forward, (player.transform.position - transform.position).normalized)
+            );
+        projectileInstance.Initialize(projectilePool, false, (player.transform.position - transform.position).normalized);
     }
 
     public override void AddToBeatCount()
     {
         beatCount++;
+        Debug.Log("Turret beat count: " + beatCount);
 
         if (active)
         {
