@@ -18,38 +18,18 @@ public class Miner : EnemyBase
     [SerializeField] Transform attackPoint;
     [SerializeField] float dashDuration = 0.5f;
     public bool alternate = false;
-    int beatCount = 0;
     bool slash = false;
     bool alt = false;
 
     [Header("Movement Stats")]
     [SerializeField] float moveSpeed = 3.0f;
-    Rigidbody2D rb;
-    GameObject player;
     [SerializeField] LayerMask playerLayer;
     bool clutter;
 
-    EnemyManager enemyManager;
-    PulseManager pulseManager;
-    [Header("Effects")]
-    [SerializeField] Color attackColor;
-    TrailRenderer tRend;
-    Color defaultColor;
-    SpriteRenderer sRend;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        sRend = GetComponent<SpriteRenderer>();
-        defaultColor = sRend.color;
-        tRend = GetComponent<TrailRenderer>();
-        tRend.emitting = false;
-        rb = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player");
-        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
-        // enemyManager.AddEnemy(this.gameObject);
-        pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
-        pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
         currentGroundPoundRadius = groundPoundBaseRadius;
         currentGroundPoundDamage = groundPoundBaseDamage;
     }

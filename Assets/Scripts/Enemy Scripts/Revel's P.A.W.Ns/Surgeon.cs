@@ -5,30 +5,13 @@ public class Surgeon : EnemyBase
 
     [Header("Attack Stats")]
     [SerializeField] Transform projectileSpawn;
-    [SerializeField] ProjectilePool projectilePool;
     [SerializeField] GameObject grenade;
-    int beatCount = 0;
 
     [Header("Movement Stats")]
-    Rigidbody2D rb;
-    GameObject player;
     Vector2 direction;
 
-    EnemyManager enemyManager;
-    PulseManager pulseManager;
     [Header("Effects")]
     [SerializeField] ParticleSystem telegraph;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player");
-        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
-        //enemyManager.AddEnemy(this.gameObject);
-        pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
-        pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
-    }
 
     // Update is called once per frame
     void Update()

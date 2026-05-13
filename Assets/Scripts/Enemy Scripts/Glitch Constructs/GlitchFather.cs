@@ -7,42 +7,22 @@ public class GlitchFather : EnemyBase
     [SerializeField] float attackRange = 5f;
     [SerializeField] int damage = 20;
     [SerializeField] float dashDuration = 0.5f;
-    int beatCount = 0;
     bool clutter = false;
 
     [Header("Movement Stats")]
     [SerializeField] float moveSpeed = 3.0f;
-    Rigidbody2D rb;
-    GameObject player;
     [SerializeField] LayerMask playerLayer;
 
     [Header("Effects")]
-    [SerializeField] Color attackColor;
     [SerializeField] GameObject attackIndicator;
     [SerializeField]ParticleSystem telegraph;
     AttackIndicator aIndicate;
-    TrailRenderer tRend;
-    Color defaultColor;
-    SpriteRenderer sRend;
 
-
-    EnemyManager enemyManager;
-    PulseManager pulseManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         aIndicate = attackIndicator.GetComponent<AttackIndicator>();
-        sRend = GetComponent<SpriteRenderer>();
-        defaultColor = sRend.color;
-        tRend = GetComponent<TrailRenderer>();
-        tRend.emitting = false;
-        rb = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player");
-        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
-        //enemyManager.AddEnemy(this.gameObject);
-        pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
-        pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
     }
 
     public override void Attack()

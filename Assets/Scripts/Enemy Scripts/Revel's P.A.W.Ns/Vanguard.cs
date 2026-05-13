@@ -10,10 +10,8 @@ public class Vanguard : EnemyBase
     [SerializeField] int empoweredDamage = 10;
     int damage;
     [SerializeField] float dashDuration = 0.5f;
-    int beatCount = 0;
     bool alt;
     bool charging;
-    [SerializeField] ProjectilePool projectilePool;
 
     [Header("Shotgun Settings")]
     [SerializeField] GameObject shotgunPrefab;
@@ -22,36 +20,13 @@ public class Vanguard : EnemyBase
 
     [Header("Movement Stats")]
     [SerializeField] float moveSpeed = 3.0f;
-    Rigidbody2D rb;
-    GameObject player;
     [SerializeField] LayerMask playerLayer;
     bool clutter;
     public Transform facedDirection;
 
-    EnemyManager enemyManager;
-    PulseManager pulseManager;
     [Header("Effects")]
-    [SerializeField] Color attackColor;
-    TrailRenderer tRend;
-    Color defaultColor;
-    SpriteRenderer sRend;
     public GameObject attackIndicator;
     public AttackIndicator aIndicator;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        sRend = GetComponent<SpriteRenderer>();
-        defaultColor = sRend.color;
-        tRend = GetComponent<TrailRenderer>();
-        tRend.emitting = false;
-        rb = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player");
-        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
-        // enemyManager.AddEnemy(this.gameObject);
-        pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
-        pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
-    }
 
     // Update is called once per frame
     void Update()
@@ -83,7 +58,7 @@ public class Vanguard : EnemyBase
                         //Apply damage to player
                         Health hp = objects.gameObject.GetComponent<Health>();
                         hp.TakeDamage(damage);
-                        enemyManager.TriggerDoubleTime(5f);
+                        roomEncounterManager.TriggerDoubleTime(5f);
                     }
                 }
             }

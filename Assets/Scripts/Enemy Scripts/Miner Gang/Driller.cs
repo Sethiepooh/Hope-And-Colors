@@ -5,44 +5,16 @@ public class Driller : EnemyBase
 {
     [Header("Attack Stats")]
     [SerializeField] GameObject scatterBomb;
-    int beatCount = 0;
     Collider2D drillerCol;
 
     [Header("Movement Stats")]
     [SerializeField] float dashDuration = 0.5f;
     [SerializeField] float moveSpeed = 3.0f;
-    Rigidbody2D rb;
-    GameObject player;
     bool clutter;
 
-    EnemyManager enemyManager;
-    PulseManager pulseManager;
-    [Header("Effects")]
-    [SerializeField] Color attackColor;
-    TrailRenderer tRend;
-    Color defaultColor;
-    SpriteRenderer sRend;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        sRend = GetComponent<SpriteRenderer>();
-        defaultColor = sRend.color;
-        tRend = GetComponent<TrailRenderer>();
-        tRend.emitting = false;
-        rb = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player");
-        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
-        // enemyManager.AddEnemy(this.gameObject);
-        pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
-        pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
         drillerCol = GetComponent<Collider2D>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
     }
 
     IEnumerator DashTowardsPlayer()

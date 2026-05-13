@@ -62,7 +62,7 @@ public class SpawnPoint : MonoBehaviour
             hasEnemy = false;
             enemyManager.spawnedEnemies.Remove(currentEnemy);
             if(currentEnemy.activeSelf)
-                currentEnemy.GetComponent<Health>().HandleEnemyDeath();
+                currentEnemy.GetComponent<Health>().onDeathEvent.Invoke();
             Destroy(currentEnemy);
             currentEnemy = null;
         }    

@@ -12,18 +12,14 @@ public class Bishop : EnemyBase
     [SerializeField] ParticleSystem slowingFieldTelegraphEffect;
     [SerializeField] float slowingSpeed = 5f;
 
-    GameObject player;
     PlayerMovement PlayerMovement;
     Health protectedEnemyHealth;
     EnemyBase protectedEnemyBase;
     GameObject shieldEffect;
 
-    int beatCount;  
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        player = GameObject.FindWithTag("Player");
         PlayerMovement = player.GetComponent<PlayerMovement>();
         protectedEnemyHealth = protectedEnemy.GetComponent<Health>();
         protectedEnemyBase = protectedEnemy.GetComponent<EnemyBase>();

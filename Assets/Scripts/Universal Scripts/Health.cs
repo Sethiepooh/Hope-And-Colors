@@ -15,11 +15,9 @@ public class Health : MonoBehaviour
     [SerializeField] bool isBoss = false;
     [SerializeField] ParticleSystem deathParticles;
 
-    [Header("Bomb settings")]
-    [SerializeField] ParticleSystem blastParticles;
-    public float blastRadius;
     SpriteRenderer sRend;
     Color defaultColor;
+
      public bool damagable = true;
 
     RespawnManager r_Man;
@@ -42,6 +40,15 @@ public class Health : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
+        if (isPlayer && healthBar != null)
+        {
+            healthBar.value = (float)currentHealth / maxHealth;
+        }
+    }
+
+    public void HealToMax()
+    {
+        currentHealth = maxHealth;
         if (isPlayer && healthBar != null)
         {
             healthBar.value = (float)currentHealth / maxHealth;
@@ -111,32 +118,7 @@ public class Health : MonoBehaviour
 
     #region DEATH METHODS
 
-    public void HandleBombDeath()
-    {
-        StartCoroutine(DeathBlast());
-    }
-
-    IEnumerator DeathBlast()
-    {
-        blastParticles.Play();
-        yield return new WaitForSeconds(2f);
-        Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, blastRadius);
-        foreach (Collider2D target in targets)
-        {
-            var health = target.GetComponent<Health>();
-
-            if (health != null)
-                health.TakeDamage(20);
-
-        }
-        var aIndicate = transform.GetChild(0).GetComponent<AttackIndicator>();
-        sRend.enabled = false;
-        blastParticles.Stop();
-        aIndicate.AttackFlash();
-        onDamageEvent.Invoke();
-        yield return new WaitForSeconds(.5f);
-        this.gameObject.SetActive(false);
-    }
+   
 
     public void DeactivateCollision()
     {
@@ -157,28 +139,7 @@ public class Health : MonoBehaviour
     }
 
 
-    public void HandleEnemyDeath()
-    {
-        StartCoroutine(EnemyDeath());
-    }
-
-    IEnumerator EnemyDeath()
-    {
-        var enemyScript = gameObject.GetComponent<EnemyBase>();
-        enemyScript.active = false;
-        sRend.enabled = false;
-        var col = gameObject.GetComponent<Collider2D>();
-        col.enabled = false;
-        deathParticles.Play();
-        if (SceneManager.GetActiveScene().buildIndex == 4)
-        {
-            WaveSpawner waveSpawner = GameObject.FindFirstObjectByType<WaveSpawner>();
-            waveSpawner.enemiesSpawnedInCurrentWave--;
-        }
-
-        yield return new WaitForSeconds(.5f);
-        this.gameObject.SetActive(false);
-    }
+   
 
     public void HandleObstacleDeath()
     {
@@ -237,9 +198,5 @@ public class Health : MonoBehaviour
     }
     #endregion
 
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, blastRadius);
-    }
+   
 }

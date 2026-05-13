@@ -9,42 +9,15 @@ public class Bruiser : EnemyBase
     [SerializeField] float attackRange = 1.0f;
     [SerializeField] int damage = 5;
     [SerializeField] float dashDuration = 0.5f;
-    int beatCount = 0;
 
     [Header("Shotgun Settings")]
-    [SerializeField] ProjectilePool projectilePool;
     [SerializeField] int pelletCount = 3;
     [SerializeField] float spreadAngle = 45f;
 
     [Header("Movement Stats")]
     [SerializeField] float moveSpeed = 3.0f;
-    Rigidbody2D rb;
-    GameObject player;
     [SerializeField] LayerMask playerLayer;
     bool clutter;
-
-    EnemyManager enemyManager;
-    PulseManager pulseManager;
-    [Header("Effects")]
-    [SerializeField] Color attackColor;
-    TrailRenderer tRend;
-    Color defaultColor;
-    SpriteRenderer sRend;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        sRend = GetComponent<SpriteRenderer>();
-        defaultColor = sRend.color;
-        tRend = GetComponent<TrailRenderer>();
-        tRend.emitting = false;
-        rb = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player");
-        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
-        // enemyManager.AddEnemy(this.gameObject);
-        pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
-        pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
-    }
 
     // Update is called once per frame
     void Update()
