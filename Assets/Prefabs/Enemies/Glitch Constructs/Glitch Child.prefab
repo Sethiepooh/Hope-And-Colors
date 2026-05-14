@@ -258,8 +258,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65df45f570ba9cb48b0bb9d75bdb34bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ManagerDeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
   active: 0
   empowered: 0
+  attackColor: {r: 0.050980397, g: 0.5137255, b: 1, a: 1}
+  deathParticles: {fileID: 0}
   attackRange: 1.25
   damage: 10
   dashDuration: 0.25
@@ -269,7 +274,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 264
   facedDirection: {fileID: 6039657442650139134}
-  attackColor: {r: 0.050980397, g: 0.5137255, b: 1, a: 1}
   attackIndicator: {fileID: 6143426679287554279}
   aIndicator: {fileID: 1650472125726816236}
 --- !u!114 &1509623737287629639
@@ -300,29 +304,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onDeathEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8291094305311024947}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: HandleEnemyDeath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onDamageEvent:
     m_PersistentCalls:
       m_Calls: []
   maxHealth: 50
+  currentHealth: 0
   healthBar: {fileID: 0}
   isPlayer: 0
   isBoss: 0
   deathParticles: {fileID: 2810806838819713323}
-  blastParticles: {fileID: 0}
-  blastRadius: 0
   damagable: 1
 --- !u!96 &1647247700484166753
 TrailRenderer:

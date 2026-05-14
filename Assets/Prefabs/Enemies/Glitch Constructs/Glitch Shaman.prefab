@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7626522022212729548}
   - component: {fileID: 7868360748076545916}
   - component: {fileID: 2772393510789411756}
+  - component: {fileID: 6562593660310355100}
   m_Layer: 6
   m_Name: Glitch Shaman
   m_TagString: Enemy
@@ -142,7 +143,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   empowered: 0
-  protectedEnemy: {fileID: 0}
+  attackColor: {r: 0, g: 0, b: 0, a: 0}
+  deathParticles: {fileID: 0}
   shieldEffectPrefab: {fileID: 3434116371356178159, guid: 8fbeb78f9dc3c494bad7501f4b367685, type: 3}
 --- !u!114 &2772393510789411756
 MonoBehaviour:
@@ -156,44 +158,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onDeathEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7868360748076545916}
-        m_TargetAssemblyTypeName: GlitchShaman, Assembly-CSharp
-        m_MethodName: DeactivateShaman
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2772393510789411756}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: HandleEnemyDeath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   onDamageEvent:
     m_PersistentCalls:
       m_Calls: []
   maxHealth: 40
+  currentHealth: 0
   healthBar: {fileID: 0}
   isPlayer: 0
   isBoss: 0
   deathParticles: {fileID: 9148174929730696254}
-  blastParticles: {fileID: 0}
-  blastRadius: 0
   damagable: 1
+--- !u!114 &6562593660310355100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8921412870381785649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c596e2437a65bb84a9e8175ad9d5ab1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pulseScale: 1.2
+  returnSpeed: 5
 --- !u!1001 &9135857142351300396
 PrefabInstance:
   m_ObjectHideFlags: 0

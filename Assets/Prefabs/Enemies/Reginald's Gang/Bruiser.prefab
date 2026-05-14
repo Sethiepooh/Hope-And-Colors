@@ -109,25 +109,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onDeathEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4055398398140777308}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: HandleEnemyDeath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
   maxHealth: 70
+  currentHealth: 0
   healthBar: {fileID: 0}
   isPlayer: 0
+  isBoss: 0
   deathParticles: {fileID: 2108140741415770571}
-  blastParticles: {fileID: 0}
-  blastRadius: 0
   damagable: 1
 --- !u!61 &903979013842618495
 BoxCollider2D:
@@ -344,19 +335,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92161aa939a7cd04c84816e240c7c8a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ManagerDeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
   active: 1
   empowered: 0
+  attackColor: {r: 0, g: 1, b: 0, a: 1}
+  deathParticles: {fileID: 0}
   attackRange: 1
   damage: 5
   dashDuration: 0.5
-  shotgunPrefab: {fileID: 8608247141467209458, guid: 9c97f9594d4639743b4ff39cd126a5bf, type: 3}
   pelletCount: 3
   spreadAngle: 45
   moveSpeed: 10
   playerLayer:
     serializedVersion: 2
     m_Bits: 8
-  attackColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &6391217382877782828
 GameObject:
   m_ObjectHideFlags: 0

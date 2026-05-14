@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class RespawnManager : MonoBehaviour
 {
-    EnemyManager enemyManager;
+    RoomEncounterManager eManager;
     [SerializeField] List<GameObject> spawnPoints = new List<GameObject>();
     [SerializeField] float resetSpeed;
     GameObject player;
@@ -19,7 +19,7 @@ public class RespawnManager : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
+        eManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<RoomEncounterManager>();
     }
 
     // Update is called once per frame
@@ -31,13 +31,13 @@ public class RespawnManager : MonoBehaviour
 
     public void SetSpawnIndex(GameObject spawnPoint)
     {
-        if (enemyManager.CheckGroupDefeated(spawnIndex))
+        if (!eManager.CheckGroupState(spawnIndex))
         {
             spawnPoint.GetComponent<RespawnPoint>().active = true;
             spawnPoint.GetComponent<RespawnPoint>().SwitchColor();  
             spawnIndex = spawnPoints.IndexOf(spawnPoint);
         }        
-            enemyManager.ActivateGroup(spawnPoints.IndexOf(spawnPoint));
+        eManager.ToggleSpawnableGroupActivation(spawnPoints.IndexOf(spawnPoint), true);
     }
 
     public void ResetPlayer()
@@ -73,6 +73,7 @@ public class RespawnManager : MonoBehaviour
         player.GetComponent<Health>().Heal(100);
         player.GetComponent<PlayerMovement>().controlable = true;
 
-        enemyManager.RespawnEnemies(spawnIndex);
+        eManager.ResetSpawnableGroup(spawnIndex);
+        eManager.ToggleSpawnableGroupActivation(spawnIndex, true);
     }
 }

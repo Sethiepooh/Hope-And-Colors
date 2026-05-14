@@ -3,24 +3,23 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using System;
 
 public class Health : MonoBehaviour
 {
-    public UnityEvent onDeathEvent;
-    public UnityEvent onDamageEvent;
-    public float maxHealth = 100;
-    float currentHealth;
-    [SerializeField] Slider healthBar;
-    [SerializeField] bool isPlayer = false;
-    [SerializeField] bool isBoss = false;
+    public Action onDeathEvent;
+    public Action onDamageEvent;
+    public Action onHealEvent;
+    [SerializeField] float maxHealth = 100;
+    [SerializeField] float currentHealth;
     [SerializeField] ParticleSystem deathParticles;
 
     SpriteRenderer sRend;
     Color defaultColor;
 
-     public bool damagable = true;
+    public bool damagable = true;
 
-    RespawnManager r_Man;
+   
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -30,7 +29,7 @@ public class Health : MonoBehaviour
         currentHealth = maxHealth;
         if(deathParticles != null)
             deathParticles.startColor = defaultColor;
-        r_Man = GameObject.FindWithTag("RespawnManager").GetComponent<RespawnManager>();
+
     }
 
     public void Heal(float heal)
@@ -40,19 +39,13 @@ public class Health : MonoBehaviour
         {
             currentHealth = maxHealth;
         }
-        if (isPlayer && healthBar != null)
-        {
-            healthBar.value = (float)currentHealth / maxHealth;
-        }
+        onHealEvent?.Invoke();
     }
 
     public void HealToMax()
     {
         currentHealth = maxHealth;
-        if (isPlayer && healthBar != null)
-        {
-            healthBar.value = (float)currentHealth / maxHealth;
-        }
+        onHealEvent?.Invoke();
     }
 
     public void TakeDamage(int damage)
@@ -69,20 +62,7 @@ public class Health : MonoBehaviour
                 StartCoroutine(HitFlash(Color.white));
             }
 
-            if (isBoss || isPlayer)
-            {
-                onDamageEvent.Invoke();
-            }
-
-            if(isPlayer && !isBoss)
-            {
-                StartCoroutine(SetPlayerHitStun());
-            }
-
-            if (isPlayer && healthBar != null)
-            {
-                healthBar.value = (float)currentHealth / maxHealth;
-            }
+            onDamageEvent?.Invoke();
 
             if (currentHealth <= 0)
             {
@@ -91,13 +71,7 @@ public class Health : MonoBehaviour
         }      
     }
 
-    IEnumerator SetPlayerHitStun()
-    {
-        damagable = false;
-        yield return new WaitForSeconds(.2f);
-        Debug.Log("Player can be damaged again");   
-        damagable = true;
-    }
+   
 
     public void SetDamagable(bool b)
     {
@@ -116,30 +90,13 @@ public class Health : MonoBehaviour
         sRend.color = defaultColor;
     }
 
+    public void PlayDeathParticles()
+    {
+        if (deathParticles != null)
+            deathParticles.Play();
+    }
+
     #region DEATH METHODS
-
-   
-
-    public void DeactivateCollision()
-    {
-        var col = gameObject.GetComponent<Collider2D>();
-        col.enabled = false;
-    }
-
-    public void HandlePlayerDeath()
-    {
-        //handle player death
-        sRend.enabled = false;
-        var col = gameObject.GetComponent<Collider2D>();
-        col.enabled = false;
-        var rb = gameObject.GetComponent<Rigidbody2D>();
-        rb.linearVelocity = Vector3.zero;
-        deathParticles.Play();
-        r_Man.ResetPlayer();
-    }
-
-
-   
 
     public void HandleObstacleDeath()
     {
@@ -155,25 +112,6 @@ public class Health : MonoBehaviour
        // rb.linearVelocity = Vector3.zero;
        if(deathParticles != null)
             deathParticles.Play();
-
-        yield return new WaitForSeconds(.5f);
-        this.gameObject.SetActive(false);
-    }
-
-    public void HandleBossDeath()
-    {
-        StartCoroutine(BossDeath());
-    }
-    IEnumerator BossDeath()
-    {
-        sRend.enabled = false;
-        var col = gameObject.GetComponent<Collider2D>();
-        col.enabled = false;
-        var rb = gameObject.GetComponent<Rigidbody2D>();
-        rb.linearVelocity = Vector3.zero;
-        deathParticles.Play();
-        NextLevel nextLevel = GameObject.FindFirstObjectByType<NextLevel>();
-        nextLevel.LoadNextLevel();
 
         yield return new WaitForSeconds(.5f);
         this.gameObject.SetActive(false);

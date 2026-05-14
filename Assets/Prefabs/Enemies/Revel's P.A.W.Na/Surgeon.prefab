@@ -229,10 +229,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e8e740920a91704f96df9cf4753b5ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ManagerDeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
   active: 1
   empowered: 0
+  attackColor: {r: 0, g: 0, b: 0, a: 0}
+  deathParticles: {fileID: 0}
   projectileSpawn: {fileID: 1077764988887791448}
-  projectile: {fileID: 8608247141467209458, guid: 5fc164d93c9ff7446b45c0f230521b67, type: 3}
   grenade: {fileID: 8608247141467209458, guid: 588f07bd275502f4a8881acc84203ad8, type: 3}
   telegraph: {fileID: 787776708865328561}
 --- !u!114 &7968955089435760685
@@ -249,25 +253,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onDeathEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7968955089435760685}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: HandleEnemyDeath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
   maxHealth: 50
+  currentHealth: 0
   healthBar: {fileID: 0}
   isPlayer: 0
+  isBoss: 0
   deathParticles: {fileID: 2085114992980904170}
-  blastParticles: {fileID: 0}
-  blastRadius: 0
   damagable: 1
 --- !u!1001 &2076753173176663032
 PrefabInstance:

@@ -1,17 +1,17 @@
 using UnityEngine;
 
-public class GlitchShaman : EnemyBase
+public class GlitchShaman : EnemyBase, IProtector
 {
-    [SerializeField] GameObject protectedEnemy;
     [SerializeField] GameObject shieldEffectPrefab;
     Health protectedEnemyHealth;
     GameObject shieldEffect;
 
+    public EnemyBase protectedEnemyBase { get; set; }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if(protectedEnemy != null)
-            protectedEnemyHealth = protectedEnemy.GetComponent<Health>();
+       health.onDeathEvent += DeactivateShaman;
     }
 
     // Update is called once per frame
@@ -26,8 +26,8 @@ public class GlitchShaman : EnemyBase
 
             if(shieldEffect == null)
             {
-                shieldEffect = Instantiate(shieldEffectPrefab, protectedEnemy.transform.position, Quaternion.identity, protectedEnemy.transform);
-                shieldEffect.transform.localScale = protectedEnemy.transform.localScale * 1.5f;
+                shieldEffect = Instantiate(shieldEffectPrefab, protectedEnemyBase.transform.position, Quaternion.identity, protectedEnemyBase.transform);
+                shieldEffect.transform.localScale = protectedEnemyBase.transform.localScale * 1.5f;
             }
           
         }
@@ -35,8 +35,8 @@ public class GlitchShaman : EnemyBase
 
     public void SetProtectionTarget(GameObject enemy)
     {
-        protectedEnemy = enemy;
-        protectedEnemyHealth = protectedEnemy.GetComponent<Health>();
+        protectedEnemyBase = enemy.GetComponent<EnemyBase>();
+        protectedEnemyHealth = protectedEnemyBase.GetComponent<Health>();
     }
 
     public void DeactivateShaman()
@@ -56,5 +56,11 @@ public class GlitchShaman : EnemyBase
     public override void Attack()
     {
         // No implementation needed for this enemy
+    }
+
+    public void InitializeProteciton(EnemyBase e)
+    {
+        protectedEnemyBase = e;
+        protectedEnemyHealth = protectedEnemyBase.gameObject.GetComponent<Health>();
     }
 }

@@ -299,25 +299,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onDeathEvent:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4055398398140777308}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: HandleEnemyDeath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+  onDamageEvent:
+    m_PersistentCalls:
+      m_Calls: []
   maxHealth: 70
+  currentHealth: 0
   healthBar: {fileID: 0}
   isPlayer: 0
+  isBoss: 0
   deathParticles: {fileID: 2108140741415770571}
-  blastParticles: {fileID: 0}
-  blastRadius: 0
   damagable: 1
 --- !u!61 &903979013842618495
 BoxCollider2D:
@@ -534,8 +525,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11660c773575ceb40a395364f6de575a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ManagerDeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
   active: 0
   empowered: 0
+  attackColor: {r: 0.9622642, g: 0.9622641, b: 0.20425421, a: 1}
+  deathParticles: {fileID: 0}
   attackRange: 1
   defaultDamage: 5
   empoweredDamage: 10
@@ -548,7 +544,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   facedDirection: {fileID: 4841785742144528834}
-  attackColor: {r: 0.9622642, g: 0.9622641, b: 0.20425421, a: 1}
   attackIndicator: {fileID: 2475487123243059705}
   aIndicator: {fileID: 4105664744996109109}
 --- !u!1 &6391217382877782828

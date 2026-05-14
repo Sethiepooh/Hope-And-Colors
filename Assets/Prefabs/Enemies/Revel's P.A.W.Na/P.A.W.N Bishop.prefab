@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 7221097917265165309}
   - component: {fileID: 8541701786189098656}
   - component: {fileID: 6382030942176214586}
-  m_Layer: 0
+  - component: {fileID: 7029218509428902575}
+  m_Layer: 6
   m_Name: P.A.W.N Bishop
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -142,6 +143,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   empowered: 0
+  attackColor: {r: 0, g: 0, b: 0, a: 0}
+  deathParticles: {fileID: 0}
   protectedEnemy: {fileID: 0}
   shieldEffectPrefab: {fileID: 1612417209134173400, guid: cfb0c0d5c92a8f84c896ed74b5a95795, type: 3}
   slowingFieldPrefab: {fileID: 1612417209134173400, guid: cfb0c0d5c92a8f84c896ed74b5a95795, type: 3}
@@ -159,28 +162,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onDeathEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6382030942176214586}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: HandleEnemyDeath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   maxHealth: 40
-  healthBar: {fileID: 0}
-  isPlayer: 0
+  currentHealth: 0
   deathParticles: {fileID: 8774535793582167833}
-  blastParticles: {fileID: 0}
-  blastRadius: 0
   damagable: 1
+--- !u!114 &7029218509428902575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2805462246320573990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c596e2437a65bb84a9e8175ad9d5ab1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pulseScale: 1.2
+  returnSpeed: 5
 --- !u!1001 &8788955935335883787
 PrefabInstance:
   m_ObjectHideFlags: 0

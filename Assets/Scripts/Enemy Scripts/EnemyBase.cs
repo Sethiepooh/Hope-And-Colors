@@ -1,10 +1,11 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
+using System;
 
 public abstract class EnemyBase : MonoBehaviour
 {
-    public UnityEvent ManagerDeathEvent;
+    public Action ManagerDeathEvent;
 
     public bool active = false;
     public bool empowered = false;
@@ -33,10 +34,15 @@ public abstract class EnemyBase : MonoBehaviour
     {
         sRend = GetComponent<SpriteRenderer>();
         defaultColor = sRend.color;
+
         if (deathParticles != null)
             deathParticles.startColor = defaultColor;
+
         tRend = GetComponent<TrailRenderer>();
-        tRend.emitting = false;
+
+        if(tRend != null)
+            tRend.emitting = false;
+
         rb = GetComponent<Rigidbody2D>();
         health = GetComponent<Health>();
     }
@@ -50,6 +56,7 @@ public abstract class EnemyBase : MonoBehaviour
         pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
         this.projectilePool = pool;
         active = activeState;
+        health.onDeathEvent += OnDeath;
     }
 
     public void ResetEnemy()
@@ -57,7 +64,9 @@ public abstract class EnemyBase : MonoBehaviour
         health.HealToMax();
         beatCount = 0;
         sRend.color = defaultColor;
-        tRend.emitting = false;
+
+        if(tRend != null)
+            tRend.emitting = false;
     }
 
     public void OnDeath()

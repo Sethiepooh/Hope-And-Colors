@@ -13,12 +13,13 @@ GameObject:
   - component: {fileID: 5008431352243540716}
   - component: {fileID: 6509980359675747585}
   - component: {fileID: 1790186746024444953}
-  - component: {fileID: 5503930085471042008}
   - component: {fileID: 3835980306546884593}
   - component: {fileID: 1343899466568195588}
   - component: {fileID: 1244394498791022082}
   - component: {fileID: 8416406278610076491}
   - component: {fileID: 5244093815545858982}
+  - component: {fileID: 5503930085471042008}
+  - component: {fileID: 5826455484064311784}
   m_Layer: 3
   m_Name: Evie
   m_TagString: Player
@@ -429,44 +430,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &5503930085471042008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 907519279718243535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onDeathEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5503930085471042008}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: HandlePlayerDeath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onDamageEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  maxHealth: 100
-  healthBar: {fileID: 8462071036095440008}
-  isPlayer: 1
-  isBoss: 0
-  deathParticles: {fileID: 1047356095774757247}
-  blastParticles: {fileID: 0}
-  blastRadius: 0
-  damagable: 1
 --- !u!114 &3835980306546884593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,6 +646,36 @@ MonoBehaviour:
   PlayerInput: {fileID: 1790186746024444953}
   nearbyCallAndResponse: {fileID: 0}
   nearbyDialogue: {fileID: 0}
+--- !u!114 &5503930085471042008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907519279718243535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  deathParticles: {fileID: 1047356095774757247}
+  damagable: 1
+--- !u!114 &5826455484064311784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907519279718243535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cfe1aa8e6ddd04cb8c50b218161511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 8462071036095440008}
+  health: {fileID: 5503930085471042008}
 --- !u!1 &974786256713564959
 GameObject:
   m_ObjectHideFlags: 0

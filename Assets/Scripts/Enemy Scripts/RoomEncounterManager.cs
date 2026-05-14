@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using static RoomEncounterManager;
 using System.Collections;
+using System;
 
 public class RoomEncounterManager : MonoBehaviour
 {
@@ -38,24 +39,22 @@ public class RoomEncounterManager : MonoBehaviour
     void Start()
     {
         InitializeSpawnableGroups();
+        for (int i = 0; i < spawnableGroups.Count; i++)
+        {
+            ToggleSpawnableGroupActivation(i, false);
+        }
         bpmInteract = GameObject.FindWithTag("RhythmManager").GetComponent<BPMInteract>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void InitializeSpawnableGroups()
     {
         for (int i = 0; i < spawnableGroups.Count; i++)
         {
-            spawnableGroups[i].InitializeGroup();
+            spawnableGroups[i].InitializeGroup(this);
         }
     }
 
-    public void ActivateSpawnableGroup(int index)
+    public void ToggleSpawnableGroupActivation(int index, bool state)
     {
         if (index < 0 || index >= spawnableGroups.Count)
         {
@@ -63,7 +62,24 @@ public class RoomEncounterManager : MonoBehaviour
             return;
         }
 
-        spawnableGroups[index].SetGroupActivationState(true);
+        spawnableGroups[index].SetGroupActivationState(state);
+    }
+
+
+    public void ResetSpawnableGroup(int i)
+    {
+        spawnableGroups[i].ResetGroup();
+    }
+
+    public bool CheckGroupState(int i)
+    {
+        if (i < 0 || i >= spawnableGroups.Count)
+        {
+            Debug.LogError("Invalid spawnable group index: " + i);
+            return false;
+        }
+
+        return spawnableGroups[i].IsActive();
     }
 
     public void AddBeatToSpawnableGroups()
@@ -107,7 +123,8 @@ public class RoomEncounterManager : MonoBehaviour
     {
         foreach(EnemyBase enemy in enemyPrefabs)
         {
-            string enemyName = nameof(enemy);
+            string enemyName = enemy.GetType().Name;
+            //Debug.Log("Checking enemy prefab: " + enemyName + " against type: " + enemyType.ToString());
             if (enemyName == enemyType.ToString())
             {
                 return enemy;
@@ -134,33 +151,41 @@ public class RoomEncounterManager : MonoBehaviour
     }
 
     [System.Serializable]
-    public struct SpawnableGroup
+    public class SpawnableGroup
     {
         [SerializeField] List<Enemy> enemies;
         [SerializeField] List<BreakableObject> breakableObjects;
-        [SerializeField] RoomEncounterManager enounterMan;
         bool isActive;
-        GameObject door;
+        [SerializeField] GameObject door;
 
-        SpawnableGroup(List<Enemy> enemies, List<BreakableObject> breakableObjects, RoomEncounterManager eMan, GameObject door)
-        {
-            this.enemies = enemies;
-            this.breakableObjects = breakableObjects;
-            this.enounterMan = eMan;
-            this.door = door;
-            isActive = false;
-        }
 
-        public void InitializeGroup()
+        public void InitializeGroup(RoomEncounterManager eMan)
         {
             for (int i = 0; i < enemies.Count; i++)
             {
-                enemies[i].Initialize(enounterMan);
+                if (enemies[i].GetEnemyType() == EnemyType.GlitchShaman || enemies[i].GetEnemyType() == EnemyType.Bishop)
+                {
+                    continue; 
+                }
+                enemies[i].Initialize(eMan);
+                enemies[i].deathEvent += CheckLivingEnemies;
             }
+
+            FindProtectedEnemies();
+
+            for (int i = 0; i < enemies.Count; i++)
+            {
+                if (enemies[i].GetEnemyType() == EnemyType.GlitchShaman || enemies[i].GetEnemyType() == EnemyType.Bishop)
+                {
+                    enemies[i].Initialize(eMan);
+                    enemies[i].deathEvent += CheckLivingEnemies;
+                }
+            }
+
 
             for (int i = 0; i < breakableObjects.Count; i++)
             {
-                breakableObjects[i].Initialize(enounterMan);
+                breakableObjects[i].Initialize(eMan);
             }
         }
 
@@ -168,7 +193,7 @@ public class RoomEncounterManager : MonoBehaviour
         {
             for (int i = 0; i < enemies.Count; i++)
             {
-                enemies[i]. SetActivationState(state);
+                enemies[i].SetActivationState(state);
             }
 
             //breakable objects should be able to be active without the group being active, so they will never be forced to deactivate
@@ -181,6 +206,32 @@ public class RoomEncounterManager : MonoBehaviour
             }
 
             door.SetActive(state);
+            isActive = state;
+        }
+
+
+        void FindProtectedEnemies()
+        {
+            List<EnemyBase> protectedEnemies = new List<EnemyBase>();
+            for (int i = 0; i < enemies.Count; i++)
+            {
+                if (enemies[i].isProtected)
+                {
+                    protectedEnemies.Add(enemies[i].GetEnemyInstance());
+                }
+            }
+
+            for (int i = 0; i < protectedEnemies.Count; i++)
+            {
+               for(int j = 0; j < enemies.Count; j++)
+               {
+                    if (enemies[j].GetEnemyType() == EnemyType.GlitchShaman || enemies[j].GetEnemyType() == EnemyType.Bishop)
+                    {
+                        if(enemies[j].protectedEnemy == null)
+                            enemies[j].protectedEnemy = protectedEnemies[i];
+                    }
+               }
+            }
         }
 
         public void AddBeatToGroup()
@@ -188,7 +239,7 @@ public class RoomEncounterManager : MonoBehaviour
             for (int i = 0; i < enemies.Count; i++)
             {
                 if (!enemies[i].IsDead())
-                    enemies[i].enemyInstance.AddToBeatCount();
+                    enemies[i].GetEnemyInstance().AddToBeatCount();
             }
         }
 
@@ -209,7 +260,7 @@ public class RoomEncounterManager : MonoBehaviour
 
             SetGroupActivationState(false);
         }
-
+         
         public void ResetGroup()
         {
             for (int i = 0; i < enemies.Count; i++)
@@ -225,34 +276,42 @@ public class RoomEncounterManager : MonoBehaviour
     }
 
     [System.Serializable]
-    public struct Enemy 
+    class Enemy 
     {
         [SerializeField] Transform spawnPoint;
         [SerializeField] EnemyType enemyType;
-        public EnemyBase enemyInstance;
+        [SerializeField] EnemyBase enemyInstance;
         RoomEncounterManager encounterManager;
+        public bool isProtected;
+        public Action deathEvent;
         bool isDead;
 
-        Enemy(Transform spawnPoint, EnemyType enemyType, RoomEncounterManager eMan)
-        {
-            this.spawnPoint = spawnPoint;
-            this.enemyType = enemyType;
-            encounterManager = eMan;
-            enemyInstance = Instantiate(encounterManager.GetEnemyType(enemyType), spawnPoint.position, Quaternion.identity);
-            isDead = false;
-        }
+        //Protector Settings
+        [HideInInspector] public EnemyBase protectedEnemy;
 
         public void Initialize(RoomEncounterManager eMan)
         {
             encounterManager = eMan;
             enemyInstance = Instantiate(encounterManager.GetEnemyType(enemyType), spawnPoint.position, Quaternion.identity);
-            enemyInstance.ManagerDeathEvent.AddListener(HandleEnemyDeath);
+            enemyInstance.ManagerDeathEvent += HandleEnemyDeath;
             enemyInstance.Initialize(encounterManager.player, encounterManager.pulseManager, encounterManager.projectilePool, encounterManager, false);
+
+            if(enemyType == EnemyType.GlitchShaman || enemyType == EnemyType.Bishop)
+            {
+                //Debug.Log("Protecting " + protectedEnemy);
+                enemyInstance.GetComponent<IProtector>().InitializeProteciton(protectedEnemy);
+            }
+
             isDead = false;
         }
 
         public void SetActivationState(bool state)
         {
+            if(enemyInstance == null)
+            {
+                Debug.LogError("Enemy instance is null for enemy type: " + enemyType);
+                return;
+            }
             enemyInstance.gameObject.SetActive(state);
             enemyInstance.SetIsActive(state);
         }
@@ -260,6 +319,7 @@ public class RoomEncounterManager : MonoBehaviour
         public void HandleEnemyDeath()
         {
             isDead = true;
+            deathEvent?.Invoke();
         }
 
         public void HandleEnemyRespawn()
@@ -274,26 +334,26 @@ public class RoomEncounterManager : MonoBehaviour
         {
             return isDead;
         }
+
+        public EnemyBase GetEnemyInstance()
+        {
+            return enemyInstance;
+        }
+
+        public EnemyType GetEnemyType()
+        {
+            return enemyType;
+        }
     }
 
     [System.Serializable]
-    public struct BreakableObject
+    class BreakableObject
     {
         [SerializeField] Transform spawnPoint;
         [SerializeField] BreakableObjectType objectType;
         public BreakableObjectBase breakableObjInstance;
         RoomEncounterManager encounterManager;
         bool isDead;
-
-        BreakableObject(Transform spawnPoint, BreakableObjectType objectType, RoomEncounterManager eMan)
-        {
-            this.spawnPoint = spawnPoint;
-            this.objectType = objectType;
-            encounterManager = eMan;
-            breakableObjInstance = Instantiate(encounterManager.GetBreakableObjectType(objectType), spawnPoint.position, Quaternion.identity);
-            breakableObjInstance.Initialize();
-            isDead = false;
-        }
 
         public void Initialize(RoomEncounterManager eMan)
         {

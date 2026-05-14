@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Bishop : EnemyBase
+public class Bishop : EnemyBase, IProtector
 {
     [Header("Protected Enemy")]
     [SerializeField] GameObject protectedEnemy;
@@ -14,15 +14,14 @@ public class Bishop : EnemyBase
 
     PlayerMovement PlayerMovement;
     Health protectedEnemyHealth;
-    EnemyBase protectedEnemyBase;
+    public EnemyBase protectedEnemyBase { get; set; }
     GameObject shieldEffect;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         PlayerMovement = player.GetComponent<PlayerMovement>();
-        protectedEnemyHealth = protectedEnemy.GetComponent<Health>();
-        protectedEnemyBase = protectedEnemy.GetComponent<EnemyBase>();
+        health.onDeathEvent += DeactivateBishop;
     }
 
     // Update is called once per frame
@@ -36,8 +35,8 @@ public class Bishop : EnemyBase
             {
                 protectedEnemyHealth.damagable = false;
                 protectedEnemyBase.empowered = true;
-                shieldEffect = Instantiate(shieldEffectPrefab, protectedEnemy.transform.position, Quaternion.identity, protectedEnemy.transform);
-                shieldEffect.transform.localScale = protectedEnemy.transform.localScale * 1.5f;
+                shieldEffect = Instantiate(shieldEffectPrefab, protectedEnemyBase.transform.position, Quaternion.identity, protectedEnemyBase.transform);
+                shieldEffect.transform.localScale = protectedEnemyBase.transform.localScale * 1.5f;
             }
         }
     }
@@ -79,5 +78,11 @@ public class Bishop : EnemyBase
     public override void Attack()
     {
         // No implementation needed for this enemy
+    }
+
+    public void InitializeProteciton(EnemyBase e)
+    {
+        protectedEnemyBase = e;
+        protectedEnemyHealth = protectedEnemyBase.gameObject.GetComponent<Health>();
     }
 }
