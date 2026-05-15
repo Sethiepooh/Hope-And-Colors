@@ -52,7 +52,7 @@ public class WaveSpawner : MonoBehaviour
             {
                 int randEnemyIndex = Random.Range(0, enemies.Length);
                 spawnPoint.PlayEffect();
-                StartCoroutine(spawnPoint.SpawnEnemy(enemies[randEnemyIndex]));
+                //StartCoroutine(spawnPoint.SpawnEnemy(enemies[randEnemyIndex]));
                 if(randEnemyIndex != enemies.Length - 1)
                 {
                     enemiesSpawnedInCurrentWave++;

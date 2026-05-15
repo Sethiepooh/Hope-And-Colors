@@ -1,28 +1,18 @@
-using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
-using System.Linq;
 
 public class AlixBoss : EnemyBase
 {
     [Header("Attack Stats")]
     [SerializeField]bool section;
-    [SerializeField] float attackRange = 1.0f;
-    [SerializeField] int damage = 5;
     [SerializeField] Transform attackPoint;
-    int beatCount = 0;
-    int barBeatCount = -1;
-    bool slash = false;
-    [SerializeField] float dashDuration = 0.5f;
+
     [SerializeField] Transform projectileSpawn;
     [SerializeField] GameObject projectile;
     [SerializeField] ParticleSystem telegraphEffect;
 
     //Onslaught Settings
-    [Header("Onslaught")]
-    [SerializeField] ProjectilePool projectilePool;
-
     [Header("Scatter Onslaught Stats")]
     [SerializeField] int numberOfScatterProjectiles = 16;
 
@@ -42,7 +32,6 @@ public class AlixBoss : EnemyBase
     [HideInInspector]public List<GameObject> activeShockwaves = new List<GameObject>();
 
     [Header("Enemy Spawn Stats")]
-    [SerializeField] GameObject[] enemyPrefabs; //Shaman - 0, Child - 1, Mother - 2, Father - 3
     [SerializeField] SpawnPoint[] enemySpawnPoints;
 
     [Header("Phase Management")]
@@ -52,41 +41,20 @@ public class AlixBoss : EnemyBase
     Health bossHealth;
     int attacksDone = 0;
 
-
-    [Header("Movement Stats")]
-    [SerializeField] float moveSpeed = 15.0f;
-    Rigidbody2D rb;
-    GameObject player;
-    [SerializeField] LayerMask playerLayer;
-
     [Header("Dialogue")]
     [SerializeField] Dialogue dialogueScript;
     [SerializeField] InteractionManager interactManager;
   
-    EnemyManager enemyManager;
     [Header("Effects")]
-    [SerializeField] Color attackColor;
     [SerializeField] ParticleSystem chargeEffect;
-    TrailRenderer tRend;
-    Color defaultColor;
     public Color disabledColor = Color.purple;
-    SpriteRenderer sRend;
     BPMInteract bpmInteract;
     public GameObject[] spikes;
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        sRend = GetComponent<SpriteRenderer>();
-        defaultColor = sRend.color;
-        tRend = GetComponent<TrailRenderer>();
-        tRend.emitting = false;
-        rb = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player");
-        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
         bpmInteract = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<BPMInteract>();
-        bossHealth = GetComponent<Health>();
         ChangeColor(disabledColor);
         transform.position = arenaCenter.position;
     }
@@ -264,6 +232,7 @@ public class AlixBoss : EnemyBase
     {
       
     }
+
     IEnumerator PushPlayerAway()
     {
         player.GetComponent<PlayerMovement>().controlable = false;
@@ -278,39 +247,58 @@ public class AlixBoss : EnemyBase
 
     #region Enemy Spawn Methods
 
+    RoomEncounterManager.EnemySpawnConfig GenerateRandomEnemy(Transform spawnLocation)
+    {
+        EnemyType.ChosenEnemyType randomEnemyType = EnemyType.ChosenEnemyType.GlitchChild;
+        int enemyIndex = Random.Range(0, 3);
+
+        switch (enemyIndex)
+        {
+            case 0:
+                randomEnemyType = EnemyType.ChosenEnemyType.GlitchChild;
+                break;
+            case 1:
+                randomEnemyType = EnemyType.ChosenEnemyType.GlitchMother;
+                break;
+            case 2:
+                randomEnemyType = EnemyType.ChosenEnemyType.GlitchFather;
+                break;
+        }
+
+        return new RoomEncounterManager.EnemySpawnConfig(randomEnemyType, spawnLocation, false);
+    }
+
     void SpawnEnemies(int spawnIndex, int enemyCount)
     {
-        for(int i = 0; i < enemyCount; i++)
+        for (int i = 0; i < enemyCount; i++)
         {
-            int randPoint = Random.Range(0, enemySpawnPoints.Length);
+            SpawnPoint randomSpawnPoint = enemySpawnPoints[Random.Range(0, enemySpawnPoints.Length)];
 
-            if (!enemySpawnPoints[randPoint].HasEnemy())
+            if (!randomSpawnPoint.HasEnemy())
             {
-                enemySpawnPoints[randPoint].PlayEffect();
-                StartCoroutine(enemySpawnPoints[randPoint].SpawnEnemy(enemyPrefabs[spawnIndex]));
-
+                RoomEncounterManager.EnemySpawnConfig config = GenerateRandomEnemy(randomSpawnPoint.transform);
+                randomSpawnPoint.PlayEffect();
+                StartCoroutine(randomSpawnPoint.SpawnEnemy(config));
             }
             else
             {
                 i--;
                 continue;
-            }
-           
+            }          
         }        
     }
 
     void SpawnShamanDefense(int spawnNum)
     {
-
-        List<GameObject> shamans = new List<GameObject>();
         for (int i = 0; i < spawnNum; i++)
         {
-            int randIndex = Random.Range(0, enemySpawnPoints.Count());
-            if (!enemySpawnPoints[randIndex].HasEnemy())
+            SpawnPoint randomSpawnPoint = enemySpawnPoints[Random.Range(0, enemySpawnPoints.Length)];
+
+            if (!randomSpawnPoint.HasEnemy())
             {
-                enemySpawnPoints[randIndex].PlayEffect();
-                StartCoroutine(enemySpawnPoints[randIndex].SpawnAlixShaman(enemyPrefabs[0]));
-                //shamans.Add(enemySpawnPoints[randIndex].currentEnemy);
+                RoomEncounterManager.EnemySpawnConfig config = new RoomEncounterManager.EnemySpawnConfig(EnemyType.ChosenEnemyType.GlitchShaman, randomSpawnPoint.transform, false);
+                randomSpawnPoint.PlayEffect();
+                StartCoroutine(randomSpawnPoint.SpawnAlixShaman(config));
             }
             else
             {
@@ -448,23 +436,6 @@ public class AlixBoss : EnemyBase
         }
     }
 
-    public void AddToBarBeatCount()
-    {
-        if (active && attackPhase > 0)
-        {
-            barBeatCount++;
-            if (barBeatCount %8 == 0)
-            {
-               // section = !section;
-            }           
-        }
-    }
-
-    public void ReduceBarBeatCount()
-    {
-        barBeatCount--;
-    }
-
     void PhaseOneAttackRotation()
     {
         beatCount++;
@@ -575,9 +546,18 @@ public class AlixBoss : EnemyBase
         }
     }
 
-    private void OnDrawGizmosSelected()
+    protected override IEnumerator EnemyDeath()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+        sRend.enabled = false;
+        var col = gameObject.GetComponent<Collider2D>();
+        col.enabled = false;
+        var rb = gameObject.GetComponent<Rigidbody2D>();
+        rb.linearVelocity = Vector3.zero;
+        health.PlayDeathParticles();
+        NextLevel nextLevel = GameObject.FindFirstObjectByType<NextLevel>();
+        nextLevel.LoadNextLevel();
+
+        yield return new WaitForSeconds(.5f);
+        this.gameObject.SetActive(false);
     }
 }

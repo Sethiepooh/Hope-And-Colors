@@ -5,19 +5,12 @@ public class ThorneBoss : EnemyBase
 {
     [Header("Attack Stats")]
     [SerializeField] bool section;
-    [SerializeField] float attackRange = 1.0f;
-    [SerializeField] int damage = 5;
-    int beatCount = 0;
-    int barBeatCount = -1;
     [SerializeField] ParticleSystem telegraphEffect;
-    [SerializeField] GameObject player;
-    [SerializeField] ProjectilePool projectilePool;
     [SerializeField] ProjectilePool shatterSwordPool;
 
     [Header("Phase Management")]
     [SerializeField] int attackPhase = 0;
     [SerializeField] int attackType = 0;
-    [SerializeField] int attacksTillChange = 4;
     Health bossHealth;
     bool attacking = false;
 
@@ -53,24 +46,15 @@ public class ThorneBoss : EnemyBase
     [SerializeField] Dialogue dialogueScript;
     [SerializeField] InteractionManager interactManager;
 
-    EnemyManager enemyManager;
     [Header("Effects")]
-    [SerializeField] Color attackColor;
     [SerializeField] ParticleSystem chargeEffect;
-    Color defaultColor;
     public Color disabledColor = Color.purple;
-    SpriteRenderer sRend;
     BPMInteract bpmInteract;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        sRend = GetComponent<SpriteRenderer>();
-        defaultColor = sRend.color;
-        player = GameObject.FindGameObjectWithTag("Player");
-        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
         bpmInteract = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<BPMInteract>();
-        bossHealth = GetComponent<Health>();
         ChangeColor(disabledColor);
         Initialize();
         DeactivateClockworkSwords();
@@ -390,13 +374,6 @@ public class ThorneBoss : EnemyBase
         }
     }
 
-    public void AddToBarBeatCount()
-    {
-        if (active && attackPhase > 0)
-        {
-            barBeatCount++;
-        }
-    }
 
     void PhaseOneAttackRotation()
     {

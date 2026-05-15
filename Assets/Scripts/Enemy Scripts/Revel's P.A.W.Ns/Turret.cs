@@ -4,16 +4,10 @@ public class Turret : EnemyBase
 {
     [SerializeField] GameObject projectile;
     [SerializeField] Transform firePoint;
-    [SerializeField] ProjectilePool projectilePool;
     [SerializeField] GameObject[] generators;
-    EnemyManager enemyManager;
-    PulseManager pulseManager;
 
     Vector3 playerPos;
-    GameObject player;
-    int beatCount = 0;
     public TurretType intensity;
-
     public enum TurretType
     {
         Easy,
@@ -24,12 +18,7 @@ public class Turret : EnemyBase
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
-        //enemyManager.AddEnemy(this.gameObject);
-        pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
-        pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
-        projectilePool = GameObject.FindGameObjectWithTag("EnemyProjectilePool").GetComponent<ProjectilePool>();
+
     }
 
     // Update is called once per frame

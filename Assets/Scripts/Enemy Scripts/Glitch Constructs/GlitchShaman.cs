@@ -33,9 +33,9 @@ public class GlitchShaman : EnemyBase, IProtector
         }
     }
 
-    public void SetProtectionTarget(GameObject enemy)
+    public void SetProtectionTarget(EnemyBase enemy)
     {
-        protectedEnemyBase = enemy.GetComponent<EnemyBase>();
+        protectedEnemyBase = enemy;
         protectedEnemyHealth = protectedEnemyBase.GetComponent<Health>();
     }
 

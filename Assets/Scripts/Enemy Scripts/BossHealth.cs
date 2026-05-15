@@ -14,15 +14,12 @@ public class BossHealth : MonoBehaviour
         sRend = GetComponent<SpriteRenderer>();
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         health.onDamageEvent += UpdateUI;
         health.onDamageEvent += ActivateHitStun;
 
         health.onHealEvent += UpdateUI;
-
-        health.onDeathEvent += HandleBossDeath;
     }
 
     public void UpdateUI()
@@ -44,24 +41,5 @@ public class BossHealth : MonoBehaviour
         yield return new WaitForSeconds(.2f);
         Debug.Log("Player can be damaged again");
         health.damagable = true;
-    }
-
-    public void HandleBossDeath()
-    {
-        StartCoroutine(BossDeath());
-    }
-    IEnumerator BossDeath()
-    {
-        sRend.enabled = false;
-        var col = gameObject.GetComponent<Collider2D>();
-        col.enabled = false;
-        var rb = gameObject.GetComponent<Rigidbody2D>();
-        rb.linearVelocity = Vector3.zero;
-        health.PlayDeathParticles();
-        NextLevel nextLevel = GameObject.FindFirstObjectByType<NextLevel>();
-        nextLevel.LoadNextLevel();
-
-        yield return new WaitForSeconds(.5f);
-        this.gameObject.SetActive(false);
     }
 }

@@ -21,7 +21,6 @@ public class Vanguard : EnemyBase
     [Header("Movement Stats")]
     [SerializeField] float moveSpeed = 3.0f;
     [SerializeField] LayerMask playerLayer;
-    bool clutter;
     public Transform facedDirection;
 
     [Header("Effects")]
@@ -184,22 +183,6 @@ public class Vanguard : EnemyBase
             }
 
 
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            clutter = true;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            clutter = false;
         }
     }
 

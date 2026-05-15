@@ -7,7 +7,6 @@ public class Bruiser : EnemyBase
 {
     [Header("Attack Stats")]
     [SerializeField] float attackRange = 1.0f;
-    [SerializeField] int damage = 5;
     [SerializeField] float dashDuration = 0.5f;
 
     [Header("Shotgun Settings")]

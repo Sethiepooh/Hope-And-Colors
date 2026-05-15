@@ -7,13 +7,7 @@ public class ReginaldBoss : EnemyBase
 {
     [Header("Attack Stats")]
     [SerializeField] bool section;
-    [SerializeField] float attackRange = 1.0f;
-    [SerializeField] int damage = 5;
-    int beatCount = 0;
-    int barBeatCount = -1;
     [SerializeField] ParticleSystem telegraphEffect;
-    [SerializeField] GameObject player;
-    [SerializeField] ProjectilePool projectilePool;
 
     [Header("Shield")]
     [SerializeField] GameObject shield;
@@ -23,9 +17,7 @@ public class ReginaldBoss : EnemyBase
     [Header("Phase Management")]
     [SerializeField] int attackPhase = 0;
     [SerializeField] int attackType = 0;
-    [SerializeField] int attacksTillChange = 4;
     Health bossHealth;
-    int attacksDone = 0;
 
     [Header("Fragile Crystal Stats")]
     [SerializeField] FragileCrystal fragileCrystalPrefab;
@@ -51,25 +43,16 @@ public class ReginaldBoss : EnemyBase
     [SerializeField] Dialogue dialogueScript;
     [SerializeField] InteractionManager interactManager;
 
-    EnemyManager enemyManager;
     [Header("Effects")]
-    [SerializeField] Color attackColor;
     [SerializeField] ParticleSystem chargeEffect;
-    TrailRenderer tRend;
-    Color defaultColor;
     public Color disabledColor = Color.purple;
-    SpriteRenderer sRend;
+
     BPMInteract bpmInteract;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        sRend = GetComponent<SpriteRenderer>();
-        defaultColor = sRend.color;
-        player = GameObject.FindGameObjectWithTag("Player");
-        enemyManager = GameObject.FindGameObjectWithTag("EnemyManager").GetComponent<EnemyManager>();
         bpmInteract = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<BPMInteract>();
-        bossHealth = GetComponent<Health>();
         ChangeColor(disabledColor);
         Initialize();
     }
@@ -245,16 +228,6 @@ public class ReginaldBoss : EnemyBase
         }
     }
 
-    public void AddToBarBeatCount()
-    {
-        if (active && attackPhase > 0)
-        {
-            barBeatCount++;
-
-           
-        }
-    }
-
     void PhaseOneAttackRotation()
     {
         beatCount++;
@@ -356,11 +329,6 @@ public class ReginaldBoss : EnemyBase
                 }
                 break;
         }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-       
     }
 
     public override void Attack()

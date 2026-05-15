@@ -47,7 +47,6 @@ public abstract class EnemyBase : MonoBehaviour
         health = GetComponent<Health>();
     }
 
-    //for enemies that do shoot projectiles
     public void Initialize(GameObject player, PulseManager pMan, ProjectilePool pool, RoomEncounterManager eMan, bool activeState)
     {
         roomEncounterManager = eMan;
@@ -56,17 +55,25 @@ public abstract class EnemyBase : MonoBehaviour
         pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
         this.projectilePool = pool;
         active = activeState;
-        health.onDeathEvent += OnDeath;
+        if(health != null)
+            health.onDeathEvent += OnDeath;
     }
 
     public void ResetEnemy()
     {
-        health.HealToMax();
+        if (health != null)
+            health.HealToMax();
         beatCount = 0;
         sRend.color = defaultColor;
 
         if(tRend != null)
             tRend.emitting = false;
+    }
+
+    public void ObliterateEnemy()
+    {
+        if (health != null)
+            health.TakeDamage(int.MaxValue);
     }
 
     public void OnDeath()
@@ -75,10 +82,9 @@ public abstract class EnemyBase : MonoBehaviour
         ManagerDeathEvent.Invoke();
     }
    
-    IEnumerator EnemyDeath()
+    protected virtual IEnumerator EnemyDeath()
     {
-        var enemyScript = gameObject.GetComponent<EnemyBase>();
-        enemyScript.active = false;
+        active = false;
         sRend.enabled = false;
         var col = gameObject.GetComponent<Collider2D>();
         col.enabled = false;

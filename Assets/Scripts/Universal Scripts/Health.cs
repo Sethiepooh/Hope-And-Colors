@@ -98,42 +98,9 @@ public class Health : MonoBehaviour
 
     #region DEATH METHODS
 
-    public void HandleObstacleDeath()
-    {
-        StartCoroutine(DestroyObstacle());
-    }
+    
 
-    IEnumerator DestroyObstacle()
-    {
-        sRend.enabled = false;
-        var col = gameObject.GetComponent<Collider2D>();
-        col.enabled = false;
-        var rb = gameObject.GetComponent<Rigidbody2D>();
-       // rb.linearVelocity = Vector3.zero;
-       if(deathParticles != null)
-            deathParticles.Play();
-
-        yield return new WaitForSeconds(.5f);
-        this.gameObject.SetActive(false);
-    }
-
-    public void HandleTurretBatteryDeath(Turret turret)
-    {
-        StartCoroutine(DestroyTurretBattery(turret));
-    }
-
-    IEnumerator DestroyTurretBattery(Turret turret)
-    {
-        sRend.enabled = false;
-        var col = gameObject.GetComponent<Collider2D>();
-        col.enabled = false;
-        if(deathParticles != null)
-            deathParticles.Play();
-        turret.DeactivateTurret();
-
-        yield return new WaitForSeconds(.5f);
-        this.gameObject.SetActive(false);
-    }
+    
     #endregion
 
    

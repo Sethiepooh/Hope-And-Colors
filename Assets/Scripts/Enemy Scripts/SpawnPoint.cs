@@ -1,58 +1,38 @@
 using System.Collections;
+using System.Collections.Generic;
+using NUnit.Framework;
 using UnityEngine;
 using static EnemyManager;
 
 public class SpawnPoint : MonoBehaviour
 {
     [SerializeField] ParticleSystem spawnEffect;
-    EnemyManager enemyManager;
-    public GameObject currentEnemy;
+    [SerializeField] RoomEncounterManager roomEncounterManager;
+    EnemyBase currentEnemy;
     public bool hasEnemy;
 
-    private void Start()
+    public IEnumerator SpawnEnemy(RoomEncounterManager.EnemySpawnConfig enemy)
     {
-        enemyManager = GameObject.FindWithTag("EnemyManager").GetComponent<EnemyManager>();
-    }
+        List<RoomEncounterManager.EnemySpawnConfig> enemies = new List<RoomEncounterManager.EnemySpawnConfig>();
 
-    public IEnumerator SpawnEnemy(GameObject enemy)
-    {
-        if(currentEnemy != null)
-        {
-            yield break;
-        }
+        enemies.Add(enemy);
 
         hasEnemy = true;
 
         yield return new WaitForSeconds(4);
-        GameObject spawnedEnemy =  Instantiate(enemy, transform.position, Quaternion.identity);
-        currentEnemy = spawnedEnemy;
-        if(spawnedEnemy.GetComponent<EnemyBase>() != null)
-        {
-            spawnedEnemy.GetComponent<EnemyBase>().active = true;
-            enemyManager.spawnedEnemies.Add(spawnedEnemy);
-        }
+        currentEnemy = roomEncounterManager.SpawnEnemyGroup(enemies);
     }
 
-    public IEnumerator SpawnAlixShaman(GameObject shaman)
+    public IEnumerator SpawnAlixShaman(RoomEncounterManager.EnemySpawnConfig enemy)
     {
-        if (currentEnemy != null)
-        {
-            yield break;
-        }
+        List<RoomEncounterManager.EnemySpawnConfig> enemies = new List<RoomEncounterManager.EnemySpawnConfig>();
 
         hasEnemy = true;
 
         yield return new WaitForSeconds(4);
-        GameObject spawnedEnemy = Instantiate(shaman, transform.position, Quaternion.identity);
-        currentEnemy = spawnedEnemy;
-        if (spawnedEnemy.GetComponent<EnemyBase>() != null)
-        {
-            spawnedEnemy.GetComponent<EnemyBase>().active = true;
-            enemyManager.spawnedEnemies.Add(spawnedEnemy);
-        }
+        currentEnemy = roomEncounterManager.SpawnEnemyGroup(enemies);
 
-        GlitchShaman shamanScript =  spawnedEnemy.GetComponent<GlitchShaman>();
-        shamanScript.SetProtectionTarget(GameObject.FindWithTag("Boss"));
+        currentEnemy.GetComponent<GlitchShaman>().SetProtectionTarget(GameObject.FindWithTag("Boss").GetComponent<EnemyBase>());
     }
 
     public void DestroyEnemy()
@@ -60,10 +40,8 @@ public class SpawnPoint : MonoBehaviour
         if (currentEnemy != null)
         {
             hasEnemy = false;
-            enemyManager.spawnedEnemies.Remove(currentEnemy);
-            if(currentEnemy.activeSelf)
-                currentEnemy.GetComponent<Health>().onDeathEvent.Invoke();
-            Destroy(currentEnemy);
+            if (currentEnemy != null)
+                currentEnemy.ObliterateEnemy();
             currentEnemy = null;
         }    
     }

@@ -20,15 +20,11 @@ public class RoomEncounterManager : MonoBehaviour
 
     [Header("Encounter Settings")]
     [SerializeField] List<SpawnableGroup> spawnableGroups = new List<SpawnableGroup>();
+    SpawnableGroup dynamicallySpawnedGroup;
 
     bool angelBreakActive = false;
     bool doubleTimeActive = false;
-    public enum EnemyType
-    {
-        GlitchChild, GlitchMother, GlitchFather, GlitchShaman, 
-        Miner, Bruiser, Driller,
-        Enforcer, Surgeon, Vanguard, Bishop
-    }
+  
 
     public enum BreakableObjectType
     {
@@ -52,6 +48,13 @@ public class RoomEncounterManager : MonoBehaviour
         {
             spawnableGroups[i].InitializeGroup(this);
         }
+    }
+
+    public EnemyBase SpawnEnemyGroup(List<EnemySpawnConfig> configs)
+    {
+        dynamicallySpawnedGroup.BuildFromConfigs(configs, this);        
+        dynamicallySpawnedGroup.SetGroupActivationState(true);
+        return dynamicallySpawnedGroup.GetFirstEnemyInGroup();
     }
 
     public void ToggleSpawnableGroupActivation(int index, bool state)
@@ -119,7 +122,7 @@ public class RoomEncounterManager : MonoBehaviour
         doubleTimeActive = false;
     }
 
-    public EnemyBase GetEnemyType(EnemyType enemyType)
+    public EnemyBase GetEnemyType(EnemyType.ChosenEnemyType enemyType)
     {
         foreach(EnemyBase enemy in enemyPrefabs)
         {
@@ -158,12 +161,11 @@ public class RoomEncounterManager : MonoBehaviour
         bool isActive;
         [SerializeField] GameObject door;
 
-
         public void InitializeGroup(RoomEncounterManager eMan)
         {
             for (int i = 0; i < enemies.Count; i++)
             {
-                if (enemies[i].GetEnemyType() == EnemyType.GlitchShaman || enemies[i].GetEnemyType() == EnemyType.Bishop)
+                if (enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.GlitchShaman || enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.Bishop || enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.TurretGenerator)
                 {
                     continue; 
                 }
@@ -175,17 +177,30 @@ public class RoomEncounterManager : MonoBehaviour
 
             for (int i = 0; i < enemies.Count; i++)
             {
-                if (enemies[i].GetEnemyType() == EnemyType.GlitchShaman || enemies[i].GetEnemyType() == EnemyType.Bishop)
+                if (enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.GlitchShaman || enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.Bishop || enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.TurretGenerator)
                 {
                     enemies[i].Initialize(eMan);
                     enemies[i].deathEvent += CheckLivingEnemies;
                 }
             }
 
-
             for (int i = 0; i < breakableObjects.Count; i++)
             {
                 breakableObjects[i].Initialize(eMan);
+            }
+        }
+
+        public void BuildFromConfigs(List<EnemySpawnConfig> configs, RoomEncounterManager eMan)
+        {
+            enemies = new List<Enemy>();
+            FindProtectedEnemies();
+            foreach (var config in configs)
+            {
+                Enemy e = new Enemy();
+                e.BuildFromConfig(config);
+                e.Initialize(eMan);
+                e.deathEvent += CheckLivingEnemies;
+                enemies.Add(e);
             }
         }
 
@@ -205,19 +220,22 @@ public class RoomEncounterManager : MonoBehaviour
                 }
             }
 
-            door.SetActive(state);
+            if (door != null)
+                door.SetActive(state);
             isActive = state;
         }
 
 
         void FindProtectedEnemies()
         {
-            List<EnemyBase> protectedEnemies = new List<EnemyBase>();
+            List<Enemy> protectedEnemies = new List<Enemy>();
             for (int i = 0; i < enemies.Count; i++)
             {
                 if (enemies[i].isProtected)
                 {
-                    protectedEnemies.Add(enemies[i].GetEnemyInstance());
+                    if (enemies[i].CanAddProtector())
+                        protectedEnemies.Add(enemies[i]);
+                    //Debug.Log("Found protected enemy: " + enemies[i].GetEnemyType() + " at index: " + i);
                 }
             }
 
@@ -225,13 +243,29 @@ public class RoomEncounterManager : MonoBehaviour
             {
                for(int j = 0; j < enemies.Count; j++)
                {
-                    if (enemies[j].GetEnemyType() == EnemyType.GlitchShaman || enemies[j].GetEnemyType() == EnemyType.Bishop)
+                    if (enemies[j].GetEnemyType() == EnemyType.ChosenEnemyType.GlitchShaman || enemies[j].GetEnemyType() == EnemyType.ChosenEnemyType.Bishop || enemies[j].GetEnemyType() == EnemyType.ChosenEnemyType.TurretGenerator)
                     {
-                        if(enemies[j].protectedEnemy == null)
-                            enemies[j].protectedEnemy = protectedEnemies[i];
+                        //Debug.Log("Assigning protected enemy: " + protectedEnemies[i].name);
+                        if (enemies[j].protectedEnemy == null)
+                        {
+                            enemies[j].protectedEnemy = protectedEnemies[i].GetEnemyInstance();
+                            protectedEnemies[i].AddProtector();
+                            enemies[j].AddFuncToDeathEvent(protectedEnemies[i].RemoveProtector);
+                            break;
+                        }
                     }
                }
             }
+        }
+
+        public EnemyBase GetFirstEnemyInGroup()
+        {
+            for (int i = 0; i < enemies.Count; i++)
+            {
+                if (!enemies[i].IsDead())
+                    return enemies[i].GetEnemyInstance();
+            }
+            return null;
         }
 
         public void AddBeatToGroup()
@@ -251,16 +285,11 @@ public class RoomEncounterManager : MonoBehaviour
         public void CheckLivingEnemies()
         {
             foreach (Enemy enemy in enemies)
-            {
-                if (!enemy.IsDead())
-                {
-                    return;
-                }
-            }
+                if (!enemy.IsDead()) return;
 
             SetGroupActivationState(false);
         }
-         
+
         public void ResetGroup()
         {
             for (int i = 0; i < enemies.Count; i++)
@@ -279,14 +308,16 @@ public class RoomEncounterManager : MonoBehaviour
     class Enemy 
     {
         [SerializeField] Transform spawnPoint;
-        [SerializeField] EnemyType enemyType;
+        [SerializeField] EnemyType.ChosenEnemyType enemyType;
         [SerializeField] EnemyBase enemyInstance;
         RoomEncounterManager encounterManager;
-        public bool isProtected;
         public Action deathEvent;
         bool isDead;
 
         //Protector Settings
+        public bool isProtected;
+        [SerializeField] int maxProtectorsAllowed = 1;
+        int protectorsActive;
         [HideInInspector] public EnemyBase protectedEnemy;
 
         public void Initialize(RoomEncounterManager eMan)
@@ -296,13 +327,23 @@ public class RoomEncounterManager : MonoBehaviour
             enemyInstance.ManagerDeathEvent += HandleEnemyDeath;
             enemyInstance.Initialize(encounterManager.player, encounterManager.pulseManager, encounterManager.projectilePool, encounterManager, false);
 
-            if(enemyType == EnemyType.GlitchShaman || enemyType == EnemyType.Bishop)
+            if(enemyType == EnemyType.ChosenEnemyType.GlitchShaman || enemyType == EnemyType.ChosenEnemyType.Bishop || enemyType == EnemyType.ChosenEnemyType.TurretGenerator)
             {
-                //Debug.Log("Protecting " + protectedEnemy);
-                enemyInstance.GetComponent<IProtector>().InitializeProteciton(protectedEnemy);
+                if(protectedEnemy != null)
+                {
+                    Debug.Log("Protecting " + protectedEnemy);
+                    enemyInstance.GetComponent<IProtector>().InitializeProteciton(protectedEnemy);
+                }
             }
 
             isDead = false;
+        }
+
+        public void BuildFromConfig(EnemySpawnConfig config)
+        {
+            enemyType = config.enemyType;
+            spawnPoint = config.spawnPosition; 
+            isProtected = config.isProtected;
         }
 
         public void SetActivationState(bool state)
@@ -340,9 +381,35 @@ public class RoomEncounterManager : MonoBehaviour
             return enemyInstance;
         }
 
-        public EnemyType GetEnemyType()
+        public EnemyType.ChosenEnemyType GetEnemyType()
         {
             return enemyType;
+        }
+
+        public void AddFuncToDeathEvent(Action func)
+        {
+            deathEvent += func;
+        }
+
+        public void AddProtector()
+        {
+            if (protectorsActive < maxProtectorsAllowed)
+            {
+                protectorsActive++;
+            }
+        }
+
+        public void RemoveProtector()
+        {
+            if (protectorsActive > 0)
+            {
+                protectorsActive--;
+            }
+        }
+
+        public bool CanAddProtector()
+        {
+            return protectorsActive < maxProtectorsAllowed;
         }
     }
 
@@ -384,6 +451,21 @@ public class RoomEncounterManager : MonoBehaviour
         public bool IsDead()
         {
             return isDead;
+        }
+    }
+
+    [System.Serializable]
+    public class EnemySpawnConfig
+    {
+        public EnemyType.ChosenEnemyType enemyType;
+        public Transform spawnPosition;
+        public bool isProtected;
+
+        public EnemySpawnConfig(EnemyType.ChosenEnemyType enemyType, Transform spawnPosition, bool isProtected)
+        {
+            this.enemyType = enemyType;
+            this.spawnPosition = spawnPosition;
+            this.isProtected = isProtected;
         }
     }
 }
