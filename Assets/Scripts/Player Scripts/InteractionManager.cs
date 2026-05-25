@@ -12,13 +12,9 @@ public class InteractionManager : MonoBehaviour
     public PlayerInput PlayerInput;
 
     int controlScheme = 0; //0 - keyboard, 1 - gamepad
-    bool interacting;
-    InputDirection lastInputDirection;
+    [HideInInspector] public InputDirectionEnum.InputDirection lastInputDirection;
 
-    public CallAndResponse nearbyCallAndResponse;
-    public Dialogue nearbyDialogue;
-
-
+    [HideInInspector] public IInteractable nearbyInteractable;
 
     private void Awake()
     {
@@ -28,22 +24,18 @@ public class InteractionManager : MonoBehaviour
 
     private void Update()
     {
-        if (!interacting)
+        FindNearbyInteractables();
+
+        if (nearbyInteractable != null && nearbyInteractable.interactable && !nearbyInteractable.activeInteraction)
         {
-            FindNearbyInteractables();
-
-            if (nearbyDialogue != null && !nearbyDialogue.active && !nearbyDialogue.disabled && !nearbyDialogue.disableAfterUse || nearbyCallAndResponse != null && !nearbyCallAndResponse.active)
-            {
-                if (interactionPrompt.activeSelf == false)
-                    SetInteractionPrompt(true);
-            }
-            else
-            {
-                if (interactionPrompt.activeSelf == true)
-                    SetInteractionPrompt(false);
-            }
+            if (interactionPrompt.activeSelf == false)
+                SetInteractionPrompt(true);
         }
-
+        else
+        {
+            if (interactionPrompt.activeSelf == true)
+                SetInteractionPrompt(false);
+        }
     }
 
     public void SetInteractionPrompt(bool b)
@@ -57,63 +49,37 @@ public class InteractionManager : MonoBehaviour
         if (!context.performed) return;
 
         //Priority: Save points first, then chests, then doors
-        if (nearbyCallAndResponse != null && nearbyCallAndResponse.canInteract)
+        if (nearbyInteractable != null && nearbyInteractable.interactable)
         {
-            nearbyCallAndResponse.InteractWith();
+            nearbyInteractable.OnInteract();
             return;
         }
-
-        if (nearbyDialogue != null)
-        {
-            nearbyDialogue.InteractWith();
-            return;
-        }
-    }
-
-    public void ForceDialogueInteract(Dialogue forcedDialogue)
-    {
-        nearbyDialogue = forcedDialogue;
-        nearbyDialogue.InteractWith();
     }
 
     private void FindNearbyInteractables()
     {
         Collider2D[] nearby = Physics2D.OverlapCircleAll(transform.position, interactionRadius);
 
-        CallAndResponse closestCallAndResponse = null;
-        Dialogue closestDialogue = null;
-        float closestCallAndResponseDistance = float.MaxValue;
-        float closestDialogueDistance = float.MaxValue;     
+        IInteractable closestInteractable = null;
+        float closestInteractableDistance = Mathf.Infinity;
 
         foreach (var col in nearby)
         {
             //Find closest CallAndResponse
-            CallAndResponse callAndResponse = col.GetComponent<CallAndResponse>();
-            if (callAndResponse != null && callAndResponse.canInteract)
+            IInteractable interactableObj = col.GetComponent<IInteractable>();
+            if (interactableObj != null && interactableObj.interactable)
             {
-                float distance = Vector2.Distance(transform.position, callAndResponse.transform.position);
-                if (distance < closestCallAndResponseDistance)
+                float distance = Vector2.Distance(transform.position, interactableObj.position);
+                if (distance < closestInteractableDistance)
                 {
-                    closestCallAndResponseDistance = distance;
-                    closestCallAndResponse = callAndResponse;
+                    closestInteractableDistance = distance;
+                    closestInteractable = interactableObj;
                 }
-            }
-
-            //Find closest Dialogue
-            Dialogue dialogue = col.GetComponent<Dialogue>();
-            if (dialogue != null)
-            {
-                float distance = Vector2.Distance(transform.position, dialogue.transform.position);
-                if (distance < closestDialogueDistance)
-                {
-                    closestDialogueDistance = distance;
-                    closestDialogue = dialogue;
-                }
-            }           
+            }         
         }
 
-        nearbyCallAndResponse = closestCallAndResponse;
-        nearbyDialogue = closestDialogue;     
+        nearbyInteractable = closestInteractable;
+        //Debug.Log(nearbyInteractable);
     }
 
     public void OnRhythmInput(InputAction.CallbackContext context)
@@ -124,29 +90,29 @@ public class InteractionManager : MonoBehaviour
         {
             if (dir == Vector2.up)
             {
-                lastInputDirection = InputDirection.Up;
+                lastInputDirection = InputDirectionEnum.InputDirection.Up;
             }
             else if (dir == Vector2.down)
             {
-                lastInputDirection = InputDirection.Down;
+                lastInputDirection = InputDirectionEnum.InputDirection.Down;
             }
             else if (dir == Vector2.left)
             {
-                lastInputDirection = InputDirection.Left;
+                lastInputDirection = InputDirectionEnum.InputDirection.Left;
             }
             else if (dir == Vector2.right)
             {
-                lastInputDirection = InputDirection.Right;
+                lastInputDirection = InputDirectionEnum.InputDirection.Right;
             }
-
-            //Debug.Log(nearbyCallAndResponse);
-            nearbyCallAndResponse.rhythmPatterns[nearbyCallAndResponse.currentPatternIndex].CheckHitBeat(lastInputDirection);
+            else
+            {
+                lastInputDirection = InputDirectionEnum.InputDirection.None;
+            }
         }
         else
         {
-            lastInputDirection = InputDirection.None;
+            lastInputDirection = InputDirectionEnum.InputDirection.None;
         }
-
     }
 
     private void OnDrawGizmosSelected()

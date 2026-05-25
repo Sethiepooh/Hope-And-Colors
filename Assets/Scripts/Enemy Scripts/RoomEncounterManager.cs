@@ -10,7 +10,6 @@ public class RoomEncounterManager : MonoBehaviour
     [Header("References")]
     [SerializeField] ProjectilePool projectilePool;
     [SerializeField] BPMInteract bpmInteract;
-    [SerializeField] EnemyFactory enemyFactory;
     [SerializeField] GameObject player;
     [SerializeField] PulseManager pulseManager;
 

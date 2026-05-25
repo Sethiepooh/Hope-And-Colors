@@ -1,8 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using UnityEngine.Events;
 using System;
 
 public class Health : MonoBehaviour
@@ -20,7 +17,6 @@ public class Health : MonoBehaviour
     public bool damagable = true;
 
    
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -29,7 +25,6 @@ public class Health : MonoBehaviour
         currentHealth = maxHealth;
         if(deathParticles != null)
             deathParticles.startColor = defaultColor;
-
     }
 
     public void Heal(float heal)
@@ -71,8 +66,6 @@ public class Health : MonoBehaviour
         }      
     }
 
-   
-
     public void SetDamagable(bool b)
     {
         damagable = b;
@@ -95,13 +88,4 @@ public class Health : MonoBehaviour
         if (deathParticles != null)
             deathParticles.Play();
     }
-
-    #region DEATH METHODS
-
-    
-
-    
-    #endregion
-
-   
 }

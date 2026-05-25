@@ -40,10 +40,6 @@ public class AlixBoss : EnemyBase
     [SerializeField] int attacksTillChange = 4;
     Health bossHealth;
     int attacksDone = 0;
-
-    [Header("Dialogue")]
-    [SerializeField] Dialogue dialogueScript;
-    [SerializeField] InteractionManager interactManager;
   
     [Header("Effects")]
     [SerializeField] ParticleSystem chargeEffect;
@@ -121,7 +117,7 @@ public class AlixBoss : EnemyBase
 
     void TriggerDialogueBreak()
     {
-        interactManager.ForceDialogueInteract(dialogueScript);
+        //interactManager.ForceDialogueInteract(dialogueScript);
     }
 
     private void FixedUpdate()

@@ -248,7 +248,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5262897156400199557}
   - component: {fileID: 8801084534596274740}
-  - component: {fileID: 1139194414570384555}
   - component: {fileID: 3281430380003282468}
   m_Layer: 0
   m_Name: NPC
@@ -328,36 +327,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1139194414570384555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7205263822824410759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a3da6d75de9ac84d8f9548b38bb03eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerMovement: {fileID: 0}
-  dialogue:
-  - text: 'EVIE /What''s cookin good lookin''? '
-    profileSprite: {fileID: 0}
-  - text: 'TEST-NPC /What are you on about? '
-    profileSprite: {fileID: 0}
-  speakers:
-  - name: EVIE
-    textColor: {r: 0.86274517, g: 0.46274513, b: 0.9960785, a: 1}
-  - name: TEST-NPC
-    textColor: {r: 1, g: 0.94230855, b: 0, a: 1}
-  transitionDialogue: 0
-  delay: 0.05
-  dialogueCanvas: {fileID: 0}
-  text: {fileID: 0}
-  title: {fileID: 0}
-  canInteract: 1
-  active: 0
 --- !u!58 &3281430380003282468
 CircleCollider2D:
   m_ObjectHideFlags: 0

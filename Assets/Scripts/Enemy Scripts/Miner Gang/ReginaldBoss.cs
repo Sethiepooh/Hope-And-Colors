@@ -39,10 +39,6 @@ public class ReginaldBoss : EnemyBase
     [SerializeField] int drillsPerSalvo = 5;
     [SerializeField] float drillSpawnRadius;
 
-    [Header("Dialogue")]
-    [SerializeField] Dialogue dialogueScript;
-    [SerializeField] InteractionManager interactManager;
-
     [Header("Effects")]
     [SerializeField] ParticleSystem chargeEffect;
     public Color disabledColor = Color.purple;
@@ -113,7 +109,7 @@ public class ReginaldBoss : EnemyBase
 
     void TriggerDialogueBreak()
     {
-        interactManager.ForceDialogueInteract(dialogueScript);
+        //interactManager.ForceDialogueInteract(dialogueScript);
     }
 
     IEnumerator PushPlayerAway()
@@ -334,5 +330,19 @@ public class ReginaldBoss : EnemyBase
     public override void Attack()
     {
         throw new System.NotImplementedException();
+    }
+    protected override IEnumerator EnemyDeath()
+    {
+        sRend.enabled = false;
+        var col = gameObject.GetComponent<Collider2D>();
+        col.enabled = false;
+        var rb = gameObject.GetComponent<Rigidbody2D>();
+        rb.linearVelocity = Vector3.zero;
+        health.PlayDeathParticles();
+        NextLevel nextLevel = GameObject.FindFirstObjectByType<NextLevel>();
+        nextLevel.LoadNextLevel();
+
+        yield return new WaitForSeconds(.5f);
+        this.gameObject.SetActive(false);
     }
 }
