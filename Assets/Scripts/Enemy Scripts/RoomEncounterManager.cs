@@ -141,7 +141,7 @@ public class RoomEncounterManager : MonoBehaviour
     {
         foreach (BreakableObjectBase breakableObj in breakableObjectPrefabs)
         {
-            string objName = nameof(breakableObj);
+            string objName = breakableObj.GetType().Name;
             if (objName == objectType.ToString())
             {
                 return breakableObj;
@@ -466,5 +466,18 @@ public class RoomEncounterManager : MonoBehaviour
             this.spawnPosition = spawnPosition;
             this.isProtected = isProtected;
         }
+    }
+
+    [System.Serializable]
+    public class BossSpawnConfig
+    {
+        public EnemyType.ChosenEnemyType bossType;
+        public Transform spawnPosition;
+        public bool isProtected;
+
+        // Add whatever boss-specific fields you need, e.g:
+        public int phase;
+        public float enrageTimer;
+        public List<EnemySpawnConfig> minionWaves;
     }
 }

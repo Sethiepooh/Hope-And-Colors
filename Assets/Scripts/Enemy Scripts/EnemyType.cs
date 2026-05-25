@@ -6,6 +6,7 @@ public static class EnemyType
     {
         GlitchChild, GlitchMother, GlitchFather, GlitchShaman,
         Miner, Bruiser, Driller,
-        Enforcer, Surgeon, Vanguard, Bishop, Turret, TurretGenerator
+        Enforcer, Surgeon, Vanguard, Bishop, Turret, TurretGenerator,
+        Alix, Reginald, Thorne
     }
 }

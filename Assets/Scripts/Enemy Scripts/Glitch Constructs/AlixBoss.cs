@@ -21,8 +21,8 @@ public class AlixBoss : EnemyBase
     [SerializeField] float spreadAngle = 30f;
 
     [Header("Teleportation")]
-    [SerializeField] Transform[] teleportPoints;
-    [SerializeField] Transform arenaCenter;
+    [SerializeField] List<Transform> teleportPoints = new List<Transform>();
+    Vector3 arenaCenter;
     Transform lastPosition;
 
     [Header("Shockwave Spawn Stats")]
@@ -32,7 +32,7 @@ public class AlixBoss : EnemyBase
     [HideInInspector]public List<GameObject> activeShockwaves = new List<GameObject>();
 
     [Header("Enemy Spawn Stats")]
-    [SerializeField] SpawnPoint[] enemySpawnPoints;
+    [SerializeField] List<SpawnPoint> enemySpawnPoints = new List<SpawnPoint>();
 
     [Header("Phase Management")]
     [SerializeField] int attackPhase = 0;
@@ -52,7 +52,13 @@ public class AlixBoss : EnemyBase
     {
         bpmInteract = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<BPMInteract>();
         ChangeColor(disabledColor);
-        transform.position = arenaCenter.position;
+        enemySpawnPoints = new List<SpawnPoint>(FindObjectsOfType<SpawnPoint>());
+        foreach (SpawnPoint spawn in enemySpawnPoints)
+        {
+            teleportPoints.Add(spawn.transform);
+        }
+        GetAveragePosition(teleportPoints);
+        transform.position = arenaCenter;
     }
 
     // Update is called once per frame
@@ -241,6 +247,16 @@ public class AlixBoss : EnemyBase
         player.GetComponent<PlayerMovement>().controlable = true;
     }
 
+    void GetAveragePosition(List<Transform> transforms)
+    {
+        Vector3 sum = Vector3.zero;
+        foreach (Transform t in transforms)
+        {
+            sum += t.position;
+        }
+        arenaCenter =  sum / transforms.Count;
+    }
+
     #region Enemy Spawn Methods
 
     RoomEncounterManager.EnemySpawnConfig GenerateRandomEnemy(Transform spawnLocation)
@@ -268,7 +284,7 @@ public class AlixBoss : EnemyBase
     {
         for (int i = 0; i < enemyCount; i++)
         {
-            SpawnPoint randomSpawnPoint = enemySpawnPoints[Random.Range(0, enemySpawnPoints.Length)];
+            SpawnPoint randomSpawnPoint = enemySpawnPoints[Random.Range(0, enemySpawnPoints.Count)];
 
             if (!randomSpawnPoint.HasEnemy())
             {
@@ -288,7 +304,7 @@ public class AlixBoss : EnemyBase
     {
         for (int i = 0; i < spawnNum; i++)
         {
-            SpawnPoint randomSpawnPoint = enemySpawnPoints[Random.Range(0, enemySpawnPoints.Length)];
+            SpawnPoint randomSpawnPoint = enemySpawnPoints[Random.Range(0, enemySpawnPoints.Count)];
 
             if (!randomSpawnPoint.HasEnemy())
             {
@@ -384,11 +400,11 @@ public class AlixBoss : EnemyBase
     #region Teleportation Methods
     void Teleport()
     {
-        int randPoint = Random.Range(0, teleportPoints.Length);
+        int randPoint = Random.Range(0, teleportPoints.Count);
         if(teleportPoints[randPoint] == lastPosition)
         {
             randPoint++;
-            if (randPoint >= teleportPoints.Length)
+            if (randPoint >= teleportPoints.Count)
             {
                 randPoint = 0;
             }
@@ -399,7 +415,7 @@ public class AlixBoss : EnemyBase
 
     void TeleportToCenter()
     {
-        transform.position = arenaCenter.position;
+        transform.position = arenaCenter;
     }
     #endregion
 
