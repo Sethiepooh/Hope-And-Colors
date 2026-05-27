@@ -67,6 +67,16 @@ public class RoomEncounterManager : MonoBehaviour
         spawnableGroups[index].SetGroupActivationState(state);
     }
 
+    public void AddBossToSpawnableGroup(int groupIndex, BossSpawnConfig config)
+    {
+        if (groupIndex < 0 || groupIndex >= spawnableGroups.Count)
+        {
+            Debug.LogError("Invalid spawnable group index: " + groupIndex);
+            return;
+        }
+
+        spawnableGroups[groupIndex].AddBossToGroup(config, this);
+    }
 
     public void ResetSpawnableGroup(int i)
     {
@@ -168,6 +178,10 @@ public class RoomEncounterManager : MonoBehaviour
                 {
                     continue; 
                 }
+                if (enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.AlixBoss || enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.ThorneBoss || enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.ReginaldBoss)
+                {
+                    continue; 
+                }
                 enemies[i].Initialize(eMan);
                 enemies[i].deathEvent += CheckLivingEnemies;
             }
@@ -257,6 +271,16 @@ public class RoomEncounterManager : MonoBehaviour
             }
         }
 
+
+        public void AddBossToGroup(BossSpawnConfig config, RoomEncounterManager eMan)
+        {
+            Enemy e = new Enemy();
+            e.BuildFromBossConfig(config);
+            e.InitializeExisting(eMan);
+            e.deathEvent += CheckLivingEnemies;
+            enemies.Add(e);
+        }
+
         public EnemyBase GetFirstEnemyInGroup()
         {
             for (int i = 0; i < enemies.Count; i++)
@@ -343,6 +367,29 @@ public class RoomEncounterManager : MonoBehaviour
             enemyType = config.enemyType;
             spawnPoint = config.spawnPosition; 
             isProtected = config.isProtected;
+        }
+
+        public void BuildFromBossConfig(BossSpawnConfig config)
+        {
+            enemyType = config.type;
+            spawnPoint = config.spawnPosition;
+            isProtected = config.isProtected;
+            enemyInstance = config.bossInstance;        // use the existing instance directly
+        }
+
+        public void InitializeExisting(RoomEncounterManager eMan)
+        {
+            encounterManager = eMan;
+            // Don't Instantiate — just wire up events on the existing instance
+            enemyInstance.ManagerDeathEvent += HandleEnemyDeath;
+            enemyInstance.Initialize(
+                encounterManager.player,
+                encounterManager.pulseManager,
+                encounterManager.projectilePool,
+                encounterManager,
+                false
+            );
+            isDead = false;
         }
 
         public void SetActivationState(bool state)
@@ -471,13 +518,17 @@ public class RoomEncounterManager : MonoBehaviour
     [System.Serializable]
     public class BossSpawnConfig
     {
-        public EnemyType.ChosenEnemyType bossType;
+        public EnemyBase bossInstance;   // drag in your pre-placed scene object
         public Transform spawnPosition;
         public bool isProtected;
+        public EnemyType.ChosenEnemyType type; // Optional: if you want to specify the boss type for any reason
 
-        // Add whatever boss-specific fields you need, e.g:
-        public int phase;
-        public float enrageTimer;
-        public List<EnemySpawnConfig> minionWaves;
+        public BossSpawnConfig(EnemyBase bossInstance, Transform spawnPosition, bool isProtected, EnemyType.ChosenEnemyType type)
+        {
+            this.bossInstance = bossInstance;
+            this.spawnPosition = spawnPosition;
+            this.isProtected = isProtected;
+            this.type = type;
+        }
     }
 }

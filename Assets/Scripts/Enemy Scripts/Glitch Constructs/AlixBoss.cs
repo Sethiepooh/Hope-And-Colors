@@ -21,7 +21,7 @@ public class AlixBoss : EnemyBase
     [SerializeField] float spreadAngle = 30f;
 
     [Header("Teleportation")]
-    [SerializeField] List<Transform> teleportPoints = new List<Transform>();
+    List<Transform> teleportPoints = new List<Transform>();
     Vector3 arenaCenter;
     Transform lastPosition;
 
@@ -38,7 +38,6 @@ public class AlixBoss : EnemyBase
     [SerializeField] int attackPhase = 0;
     [SerializeField] int attackType = 0;
     [SerializeField] int attacksTillChange = 4;
-    Health bossHealth;
     int attacksDone = 0;
   
     [Header("Effects")]
@@ -52,19 +51,25 @@ public class AlixBoss : EnemyBase
     {
         bpmInteract = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<BPMInteract>();
         ChangeColor(disabledColor);
-        enemySpawnPoints = new List<SpawnPoint>(FindObjectsOfType<SpawnPoint>());
         foreach (SpawnPoint spawn in enemySpawnPoints)
         {
-            teleportPoints.Add(spawn.transform);
+            //Debug.Log("Added Spawn Point " + spawn.transform);
+            teleportPoints.Add(spawn.gameObject.transform);
         }
         GetAveragePosition(teleportPoints);
         transform.position = arenaCenter;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(bpmInteract.GetCurrentSection() == 2 && !active)
+        if(bpmInteract.GetCurrentMovement() == 1 && !bpmInteract.transitionQueued)
+        {
+            bpmInteract.QueueTransitionToNextSection();
+        }
+
+        if(bpmInteract.GetCurrentSectionIndex() == 1 && !active)
         {
             ChangeColor(defaultColor);
             attackPhase = 1;
@@ -73,10 +78,10 @@ public class AlixBoss : EnemyBase
             StartCoroutine(PushPlayerAway());
             SpawnShamanDefense(1);
             active = true;
-            bossHealth.SetDamagable(true);
+            health.SetDamagable(true);
         }
 
-        if (bossHealth.GetHealthPercent() <= .66f && attackPhase == 1)
+        if (health.GetHealthPercent() <= .66f && attackPhase == 1)
         {
             attackPhase = 2;
             attackType = 0;
@@ -84,9 +89,9 @@ public class AlixBoss : EnemyBase
             attacksDone = 0;
             StartCoroutine(PushPlayerAway());
             SpawnShamanDefense(2);
-            bpmInteract.currentMovement++;
+            bpmInteract.QueueTransitionToNextSection();
         }
-        else if (bossHealth.GetHealthPercent() <= .33f && attackPhase == 2)
+        else if (health.GetHealthPercent() <= .33f && attackPhase == 2)
         {
             active = false;
             attackPhase = 3;
@@ -118,7 +123,7 @@ public class AlixBoss : EnemyBase
         SpawnShamanDefense(2);
         SpawnEnemies(1, 2);
         numberOfProjectiles++;
-        bpmInteract.currentMovement++;
+        bpmInteract.QueueTransitionToNextSection();
     }
 
     void TriggerDialogueBreak()
@@ -154,8 +159,9 @@ public class AlixBoss : EnemyBase
         }
 
         //Phase one actions
-        if(bossHealth.GetHealthPercent() >= .66f)
+        if(health.GetHealthPercent() >= .66f)
         {
+            Debug.Log("Phase One Attack Type: " + attackType);
             if (attackPhase == 1 && attackType == 0 && attacksDone == 0)
             {
                 StopAllCoroutines();
@@ -175,7 +181,7 @@ public class AlixBoss : EnemyBase
 
 
         //Phase Two actions
-        if (bossHealth.GetHealthPercent() >= .33f)
+        if (health.GetHealthPercent() >= .33f)
         {
             if (attackPhase == 2 && attackType == 0 && attacksDone == 0)
             {
@@ -197,7 +203,7 @@ public class AlixBoss : EnemyBase
 
 
         //Phase 3 Actions
-        if (bossHealth.GetHealthPercent() >= 0f)
+        if (health.GetHealthPercent() >= 0f)
         {
             if (attackPhase == 3 && attackType == 0 && attacksDone == 0)
             {

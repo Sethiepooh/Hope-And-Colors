@@ -84,7 +84,7 @@ public class ThorneBoss : EnemyBase
             attackPhase = 2;
             attackType = 0;
             beatCount = 0;
-            bpmInteract.currentMovement++;
+            bpmInteract.QueueTransitionToNextSection();
         }
         else if (bossHealth.GetHealthPercent() <= .33f && attackPhase == 2)
         {
@@ -95,7 +95,7 @@ public class ThorneBoss : EnemyBase
             attackPhase = 3;
             attackType = 0;
             beatCount = 0;
-            bpmInteract.currentMovement++;
+            bpmInteract.QueueTransitionToNextSection();
         }
 
         if (attackPhase > 0)

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -5,68 +6,49 @@ using UnityEngine.UI;
 public class NextLevel : MonoBehaviour
 {
     public Image blackFade;
-    int fade = 0;
-    bool restart = false;
+
 
     private void Start()
     {
-        fade = 0;
+        StartCoroutine(FadeScreen(true, false));
     }
 
-    private void Update()
+    public IEnumerator FadeScreen(bool fadeIn, bool nextLevel)
     {
-        switch(fade)
+        if (fadeIn)
         {
-            case 0:
-
-                if (blackFade.color.a > 0)
-                {
-                    Color color = blackFade.color;
-                    color.a -= Time.deltaTime / 2;
-                    blackFade.color = color;
-                    
-                }
-                else
-                {
-                    blackFade.gameObject.SetActive(false);
-                    fade = 2;
-                }
-                break;
-            case 1:
-                if(blackFade.color.a < 1)
-                {
-                    if(!blackFade.gameObject.activeSelf)
-                    {
-                        blackFade.gameObject.SetActive(true);
-                    }
-                    Color color = blackFade.color;
-                    color.a += Time.deltaTime / 2;
-                    blackFade.color = color;
-                }
-                else
-                {
-                    if (restart)
-                    {
-                        SceneManager.LoadScene(0);
-                        return;
-                    }
-                    int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-                    SceneManager.LoadScene(currentSceneIndex + 1);
-                }
-                break;
-            case 2:
-                break;
+            while (blackFade.color.a > 0)
+            {
+                Color color = blackFade.color;
+                color.a -= Time.deltaTime / 2;
+                blackFade.color = color;
+                yield return null;
+            }
+            blackFade.gameObject.SetActive(false);
         }
-    }
-    public void StartGame()
-    {
-        restart = true;
-        fade = 1;
+        else
+        {
+            while (blackFade.color.a < 1)
+            {
+                if (!blackFade.gameObject.activeSelf)
+                {
+                    blackFade.gameObject.SetActive(true);
+                }
+                Color color = blackFade.color;
+                color.a += Time.deltaTime / 2;
+                blackFade.color = color;
+                yield return null;
+            }
+        }
+        if (nextLevel)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     public void LoadNextLevel()
     {
-        fade = 1;
+        StartCoroutine(FadeScreen(false, true));
     }
 
     public void QuitGame()
@@ -79,7 +61,7 @@ public class NextLevel : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            LoadNextLevel();
+            StartCoroutine(FadeScreen(false, true));
         }
     }
 }

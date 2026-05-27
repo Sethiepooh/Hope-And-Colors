@@ -828,6 +828,7 @@ GameObject:
   - component: {fileID: 1781232687353705310}
   - component: {fileID: 5918158452626878059}
   - component: {fileID: 2017716875236678867}
+  - component: {fileID: 329579906437282210}
   m_Layer: 6
   m_Name: Alix
   m_TagString: Boss
@@ -1013,7 +1014,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  arenaCenter: {fileID: 0}
   shockwavePrefab: {fileID: 6346115159475032783, guid: a2bb4388f7f08f34fb341972a294ab65, type: 3}
   spawnRange: 20
   nearSpawnRange: 3
@@ -1187,6 +1187,20 @@ MonoBehaviour:
   currentHealth: 0
   deathParticles: {fileID: 17395424686764818, guid: 1bf268b4549f83f4097f0078cbc3cb17, type: 3}
   damagable: 0
+--- !u!114 &329579906437282210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5767513707483755938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5105a0d5f51ce0549aececbd496d11ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 0}
+  health: {fileID: 2017716875236678867}
 --- !u!1 &5948358129662818217
 GameObject:
   m_ObjectHideFlags: 0
