@@ -1,228 +1,260 @@
 ﻿using System;
-using System.Collections;
-using NUnit.Framework.Constraints;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.SceneManagement;
+using FMODUnity;
+using FMOD.Studio;
 
+/// <summary>
+/// Drives Unity beat events from an FMOD event's timeline and provides
+/// rhythm-accuracy scoring for player input.
+///
+/// Setup:
+///   1. Attach this component to any GameObject.
+///   2. Assign your FMOD event reference to 'FmodEventRef'.
+///   3. Set 'BPM' to match your track.
+///   4. Wire up OnBeat / OnHalfBeat Unity Events in the Inspector.
+///   5. Optionally tune the Perfect / Good timing windows.
+/// </summary>
 public class BPMInteract : MonoBehaviour
 {
-    [SerializeField] private float bpm;
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private Intervals[] intervals;
-    [SerializeField] private SongSection[] sections;        // Define sections in Inspector
+    [Header("FMOD")]
+    [Tooltip("The FMOD Studio event to play and sync with.")]
+    [SerializeField] private EventReference fmodEventRef;
 
-    float clipLengthInBeats;
-    [HideInInspector]public bool attackWindow;
-   // public bool adaptive;
+    [Header("BPM")]
+    [Tooltip("Beats per minute of the track. Must match the FMOD event.")]
+    [SerializeField] private float bpm = 120f;
 
-    private int currentSectionIndex = 0;
-    public bool transitionQueued = false;
+    [Header("Beat Events")]
+    [Tooltip("Fired once per beat (whole-time).")]
+    public UnityEvent OnBeat;
 
-    // 32 beats = 1 movement
-    private const int BEATS_PER_MOVEMENT = 32;
-    private int lastMovement = -1;
+    [Tooltip("Fired twice per beat (double-time / eighth-note grid).")]
+    public UnityEvent OnHalfBeat;
 
-    public event Action<int> OnMovementChanged;          // fires with new movement index
-    public event Action<SongSection> OnSectionChanged;   // fires when section transitions
+    [Header("Timing Windows")]
+    [Tooltip("Seconds from a beat centre counted as PERFECT (returns 0).")]
+    [SerializeField] private float perfectWindow = 0.06f;   // ± 60 ms
+
+    [Tooltip("Seconds from a beat centre counted as GOOD (returns 1). Anything beyond returns 2.")]
+    [SerializeField] private float goodWindow = 0.15f;      // ± 150 ms
+
+    [Header("Loop Detection")]
+    [Tooltip("If the FMOD timeline jumps backward by more than this many seconds, a loop is detected and the accumulator resyncs.")]
+    [SerializeField] private float loopDetectionThreshold = 0.2f;
+
+
+    private EventInstance _instance;
+    int musicPhase = 0;
+    private bool _isPlaying;
+
+    // Seconds for one full beat / half beat
+    private double BeatInterval => 60.0 / bpm;
+    private double HalfBeatInterval => 30.0 / bpm;
+
+    // Time accumulator that advances with deltaTime and resyncs on loop/seek.
+    // Beat detection and ScoreInput both read from this value.
+    private double _accumulatedTime;
+
+    // Last raw FMOD position (seconds) — used to detect discontinuities.
+    private double _lastFmodPosition;
+
+    // The accumulated-time values at which the last beat/half-beat fired,
+    // used to avoid double-firing within the same interval.
+    private double _lastBeatFiredAt;
+    private double _lastHalfBeatFiredAt;
+
+    // -------------------------------------------------------------------------
+    // Unity lifecycle
+    // -------------------------------------------------------------------------
+
+    private void Start()
+    {
+        Play();
+    }
 
     private void Update()
     {
-        if (audioSource == null) return;
+        if (!_isPlaying) return;
 
-        foreach (Intervals interval in intervals)
+        UpdateAccumulatedTime();
+        CheckBeats();
+    }
+
+    private void OnDestroy()
+    {
+        Stop();
+    }
+
+    // -------------------------------------------------------------------------
+    // Playback control
+    // -------------------------------------------------------------------------
+
+    /// <summary>Starts playback from the beginning and resets all beat counters.</summary>
+    public void Play()
+    {
+        Stop();
+
+        _instance = RuntimeManager.CreateInstance(fmodEventRef);
+        _instance.start();
+        _isPlaying = true;
+
+        _accumulatedTime = 0;
+        _lastFmodPosition = 0;
+        _lastBeatFiredAt = -BeatInterval;     // ensure first beat fires immediately
+        _lastHalfBeatFiredAt = -HalfBeatInterval;
+    }
+
+    /// <summary>Stops playback and releases the FMOD instance.</summary>
+    public void Stop()
+    {
+        if (_isPlaying)
         {
-            float sampledTime = (audioSource.timeSamples /
-                (audioSource.clip.frequency * interval.GetIntervalLength(bpm)));
-            interval.CheckForNewInterval(sampledTime);
-        }
-
-        Check();
-        TrackMovement();
-        HandleSectionLooping();
-    }
-
-    #region Movement Tracking
-
-    /// <summary>Returns the current movement number (0-based). Every 32 beats = 1 movement.</summary>
-    public int GetCurrentMovement()
-    {
-        if (audioSource == null) return 0;
-        float currentBeat = GetCurrentBeat();
-        return Mathf.FloorToInt(currentBeat / BEATS_PER_MOVEMENT);
-    }
-
-    /// <summary>Returns the current beat position in the audio clip.</summary>
-    public float GetCurrentBeat()
-    {
-        if (audioSource == null) return 0f;
-        float secondsPerBeat = 60f / bpm;
-        return audioSource.timeSamples / (float)audioSource.clip.frequency / secondsPerBeat;
-    }
-
-    /// <summary>Returns which beat we're on within the current movement (0–31).</summary>
-    public int GetBeatWithinMovement()
-    {
-        return Mathf.FloorToInt(GetCurrentBeat()) % BEATS_PER_MOVEMENT;
-    }
-
-    private void TrackMovement()
-    {
-        int currentMovement = GetCurrentMovement();
-        if (currentMovement != lastMovement)
-        {
-            lastMovement = currentMovement;
-            OnMovementChanged?.Invoke(currentMovement);
-
-            // Check if current section wants to transition at the start of a new movement
-            if (transitionQueued && GetBeatWithinMovement() == 0)
-                ExecuteTransition();
+            _instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            _instance.release();
+            _isPlaying = false;
         }
     }
-    #endregion
 
-    #region Section Management
+    /// <summary>Pauses or resumes the FMOD event.</summary>
+    public void SetPaused(bool paused)
+    {
+        if (_isPlaying)
+            _instance.setPaused(paused);
+    }
 
-    /// <summary>Returns the currently active SongSection.</summary>
-    public SongSection GetCurrentSection() => sections[currentSectionIndex];
+    public void TriggerNextPhase()
+    {
+        musicPhase++;
+        _instance.setParameterByName("Phase", musicPhase);
+    }
 
-    /// <summary>Returns the index of the currently active section.</summary>
-    public int GetCurrentSectionIndex() => currentSectionIndex;
+    public int GetMusicPhase()
+    {
+        return musicPhase;
+    }
+
+    // -------------------------------------------------------------------------
+    // Beat tracking
+    // -------------------------------------------------------------------------
+
+    private void UpdateAccumulatedTime()
+    {
+        _instance.getTimelinePosition(out int posMs);
+        double fmodPos = posMs / 1000.0;
+
+        double delta = fmodPos - _lastFmodPosition;
+
+        if (delta < 0 || delta > loopDetectionThreshold)
+        {
+            // A loop or seek has occurred — resync the accumulator so that
+            // _accumulatedTime % beatInterval still lines up with the beat grid
+            // at the new playback position.
+            //
+            // Strategy: keep the fractional beat phase from fmodPos so the very
+            // next beat fires exactly one beat-length after the loop point.
+            double beatPhase = fmodPos % BeatInterval;
+            double halfBeatPhase = fmodPos % HalfBeatInterval;
+
+            // Snap _accumulatedTime to the nearest multiple of BeatInterval
+            // that preserves the new phase.
+            double snappedBeats = Math.Floor(_accumulatedTime / BeatInterval) * BeatInterval + beatPhase;
+            // If snapping moved us backwards, step forward one interval.
+            if (snappedBeats < _accumulatedTime)
+                snappedBeats += BeatInterval;
+
+            _accumulatedTime = snappedBeats;
+            _lastFmodPosition = fmodPos;
+
+            // Rearm the fired-at guards so beats fire normally from the new position.
+            _lastBeatFiredAt = _accumulatedTime - BeatInterval + beatPhase - BeatInterval;
+            _lastHalfBeatFiredAt = _accumulatedTime - HalfBeatInterval + halfBeatPhase - HalfBeatInterval;
+        }
+        else
+        {
+            // Normal frame — advance by real elapsed time.
+            _accumulatedTime += Time.deltaTime;
+            _lastFmodPosition = fmodPos;
+        }
+    }
+
+    private void CheckBeats()
+    {
+        // --- Whole beats ---
+        // A beat is due when _accumulatedTime has passed the next expected beat time.
+        double nextBeat = _lastBeatFiredAt + BeatInterval;
+        while (_accumulatedTime >= nextBeat)
+        {
+            _lastBeatFiredAt = nextBeat;
+            OnBeat?.Invoke();
+            nextBeat += BeatInterval;
+        }
+
+        // --- Half beats (double time) ---
+        double nextHalf = _lastHalfBeatFiredAt + HalfBeatInterval;
+        while (_accumulatedTime >= nextHalf)
+        {
+            _lastHalfBeatFiredAt = nextHalf;
+            OnHalfBeat?.Invoke();
+            nextHalf += HalfBeatInterval;
+        }
+    }
+
+    // -------------------------------------------------------------------------
+    // Rhythm accuracy scoring
+    // -------------------------------------------------------------------------
 
     /// <summary>
-    /// Queues a transition to the next section. The transition happens at the
-    /// start of the next movement boundary so the music stays on the grid.
+    /// Call this from player input code to score how close to a beat the call was.
     /// </summary>
-    public void QueueTransitionToNextSection()
+    /// <param name="useHalfBeats">
+    ///   If true, measures distance against the double-time (half-beat) grid.
+    ///   If false, measures against the whole-beat grid.
+    /// </param>
+    /// <returns>
+    ///   0 — Perfect  (within ±perfectWindow seconds of the nearest beat)<br/>
+    ///   1 — Good     (within ±goodWindow seconds of the nearest beat)<br/>
+    ///   2 — Miss     (outside the good window)
+    /// </returns>
+    public int CheckInput(bool useHalfBeats = false)
     {
-        Debug.Log("Queueing transition to next section...");
-        if (currentSectionIndex < sections.Length - 1)
-            transitionQueued = true;
+        double interval = useHalfBeats ? HalfBeatInterval : BeatInterval;
+        double offset = _accumulatedTime % interval;
+
+        // Fold to the nearest beat edge.
+        double distanceToNearest = Math.Min(offset, interval - offset);
+
+        if (distanceToNearest <= perfectWindow) return 0;
+        if (distanceToNearest <= goodWindow) return 1;
+        return 2;
     }
 
-    /// <summary>Queues a transition to a specific section index.</summary>
-    public void QueueTransitionToSection(int sectionIndex)
+    // -------------------------------------------------------------------------
+    // Debug helpers
+    // -------------------------------------------------------------------------
+
+    /// <summary>Returns the loop-safe accumulated playback time in seconds.</summary>
+    public double GetTrackTime() => _accumulatedTime;
+
+    /// <summary>Returns the raw FMOD timeline position in seconds.</summary>
+    public double GetFmodPosition() => _lastFmodPosition;
+
+#if UNITY_EDITOR
+    private void OnValidate()
     {
-        if (sectionIndex >= 0 && sectionIndex < sections.Length && sectionIndex != currentSectionIndex)
-        {
-            sections[currentSectionIndex].pendingTransitionTarget = sectionIndex;
-            transitionQueued = true;
-        }
+        bpm = Mathf.Max(1f, bpm);
+        perfectWindow = Mathf.Clamp(perfectWindow, 0f, 0.5f);
+        goodWindow = Mathf.Clamp(goodWindow, perfectWindow, 0.5f);
+        loopDetectionThreshold = Mathf.Max(0.05f, loopDetectionThreshold);
     }
 
-    private void HandleSectionLooping()
+    [ContextMenu("Debug – Log Beat Timing")]
+    private void DebugLogTiming()
     {
-        if (audioSource == null || sections == null || sections.Length == 0) return;
-
-        SongSection current = sections[currentSectionIndex];
-        float currentBeat = GetCurrentBeat();
-
-        // If we've reached the end beat of this section's loop range, jump back to loop point
-        if (currentBeat >= current.loopEndBeat && !transitionQueued)
-        {
-            Debug.Log($"Looping section '{current.name}' back to beat {current.loopStartBeat}...");
-            SeekToBeat(current.loopStartBeat);
-        }
-        // If a transition is queued and we've hit the loop end, execute it now
-        else if (currentBeat >= current.loopEndBeat && transitionQueued)
-        {
-            ExecuteTransition();
-        }
+        Debug.Log($"[BPMInteract] BPM: {bpm}  Beat: {BeatInterval:F4}s  HalfBeat: {HalfBeatInterval:F4}s  " +
+                  $"Perfect: ±{perfectWindow * 1000:F0}ms  Good: ±{goodWindow * 1000:F0}ms  " +
+                  $"AccumulatedTime: {_accumulatedTime:F3}s  FmodPos: {_lastFmodPosition:F3}s");
     }
-
-    private void ExecuteTransition()
-    {
-        SongSection current = sections[currentSectionIndex];
-
-        // Use a specific target if one was set, otherwise just go to next
-        int targetIndex = current.pendingTransitionTarget >= 0
-            ? current.pendingTransitionTarget
-            : currentSectionIndex + 1;
-
-        current.pendingTransitionTarget = -1;
-        transitionQueued = false;
-
-        if (targetIndex >= sections.Length) return;
-
-        currentSectionIndex = targetIndex;
-        SongSection next = sections[currentSectionIndex];
-        Debug.Log($"Executing section transition to '{next.name}'");
-        SeekToBeat(next.loopStartBeat);
-
-        OnSectionChanged?.Invoke(next);
-    }
-
-    /// <summary>Seeks the audio to an exact beat position.</summary>
-    public void SeekToBeat(float beat)
-    {
-        float secondsPerBeat = 60f / bpm;
-        int targetSample = Mathf.RoundToInt(beat * secondsPerBeat * audioSource.clip.frequency);
-        targetSample = Mathf.Clamp(targetSample, 0, audioSource.clip.samples - 1);
-        audioSource.timeSamples = targetSample;
-    }
-
-    #endregion
-
-    // ─── Existing Methods (unchanged) ────────────────────────────────────────
-
-    public int CheckInput()
-    {
-        if (audioSource == null) return -1;
-        float sampledTime = (audioSource.timeSamples /
-            (audioSource.clip.frequency * intervals[0].GetIntervalLength(bpm)));
-        float lastInterval = intervals[0].GetLastInterval();
-        float nextInterval = lastInterval + 1;
-
-        if (sampledTime < lastInterval + .2f || sampledTime > nextInterval - .2f) return 0;
-        else if (sampledTime < lastInterval + .4f || sampledTime > nextInterval - .4f) return 1;
-        else return 2;
-    }
-
-    public void Check()
-    {
-        float sampledTime = (audioSource.timeSamples /
-            (audioSource.clip.frequency * intervals[0].GetIntervalLength(bpm)));
-        attackWindow = sampledTime < intervals[0].GetLastInterval() - .2f
-                    || sampledTime > intervals[0].GetLastInterval() + .8f;
-    }
-
-    public float GetBPM() => bpm;
-}
-
-// ─── Song Section Definition ─────────────────────────────────────────────────
-
-[System.Serializable]
-public class SongSection
-{
-    public string name;
-    public float loopStartBeat;     // Beat to loop back to (e.g. 0, 32, 64)
-    public float loopEndBeat;       // Beat at which to loop/transition (e.g. 32, 64, 96)
-
-    [HideInInspector] public int pendingTransitionTarget = -1;
-
-    /// <summary>How many full movements this section spans.</summary>
-    public int MovementCount => Mathf.RoundToInt((loopEndBeat - loopStartBeat) / 32f);
-}
-
-// ─── Intervals ───────────────────────────────────────────────────
-
-[System.Serializable]
-public class Intervals
-{
-    [SerializeField] private float steps;
-    [SerializeField] private UnityEvent trigger;
-    private int lastInterval;
-
-    public float GetIntervalLength(float bpm) => 60f / (bpm * steps);
-
-    public void CheckForNewInterval(float interval)
-    {
-        if (Mathf.FloorToInt(interval) != lastInterval)
-        {
-            lastInterval = Mathf.FloorToInt(interval);
-            trigger.Invoke();
-        }
-    }
-
-    public int GetLastInterval() => lastInterval;
+#endif
 }

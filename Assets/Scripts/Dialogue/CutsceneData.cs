@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [System.Serializable]
@@ -13,6 +14,12 @@ public class CutsceneData
     public GameObject actionTarget;
     public Transform endPos;
     public float actionDuration;
+
+    [Header("Camera Settings")]
+    [SerializeField] CameraEnum.ChangeCameraState cameraState;
+    public float cameraTransitionTime;
+    public Transform cameraTarget;
+    public float cameraFocus;
 
     [Header("Scene Management Settings")]
     [SerializeField] bool changeScene;
@@ -31,6 +38,11 @@ public class CutsceneData
     public string GetSpeakerName()
     {
         return speaker.ToString();
+    }
+
+    private void Reset()
+    {
+        dialogueLine = "Default Text";
     }
 
     public Color GetSpeakerColor()
@@ -73,6 +85,11 @@ public class CutsceneData
     public ActionEnum.Action GetAction()
     {
         return action;
+    }
+
+    public CameraEnum.ChangeCameraState GetCameraState()
+    {
+        return cameraState;
     }
 }
  

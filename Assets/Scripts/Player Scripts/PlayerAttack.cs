@@ -131,7 +131,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (context.performed)
         {         
-            if (bpmInteract.CheckInput() == 0)
+            if (bpmInteract.CheckInput(false) == 0)
             {
                 cIndicator.AttackFlash();
                 inspirationGainOnHit = inspirationGainOnBeat;
@@ -152,7 +152,7 @@ public class PlayerAttack : MonoBehaviour
                         currentDamage = baseDamage;
                 }
             }
-            else if (bpmInteract.CheckInput() == 1)
+            else if (bpmInteract.CheckInput(false) == 1)
             {
                 aIndicator.AttackFlash();
                 inspirationGainOnHit = inspirationGainOnBeat;
@@ -173,7 +173,7 @@ public class PlayerAttack : MonoBehaviour
                         currentDamage = baseDamage;
                 }
             }
-            else if(bpmInteract.CheckInput() == 2)
+            else if(bpmInteract.CheckInput(false) == 2)
             {
                 Debug.Log("Missed Attack");
                 StopCoroutine(AttackCooldown());    

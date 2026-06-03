@@ -27,6 +27,13 @@ public class DialogueSystem : MonoBehaviour
 
     [Header("References")]
     [SerializeField] PlayerMovement playerMovement;
+    [SerializeField] InteractionManager interactionManager;
+    [SerializeField] ManualCameraControl cameraControl;
+
+    public void SetInteractable(IInteractable interactable)
+    {
+        interactionManager.nearbyInteractable = interactable;
+    }
 
     public void UpdateDialogueUI(string name, Color nameColor, string dialogueLine, Sprite characterSprite, bool UIactiveState = true)
     {
@@ -135,6 +142,16 @@ public class DialogueSystem : MonoBehaviour
             yield return null;
         }
         actor.transform.position = endPos; // Ensure final position is set
+    }
+
+    public void ReturnCamToPlayer(float time)
+    {
+        cameraControl.StartCoroutine(cameraControl.RepositionCamera(playerMovement.transform, time, true));
+    }
+
+    public void MoveCamToPoint(Transform point, float time, float focus = 10f)
+    {
+        cameraControl.StartCoroutine(cameraControl.RepositionCamera(point, time, false, focus));
     }
 
     public void ChangeScene(int sceneIndex)

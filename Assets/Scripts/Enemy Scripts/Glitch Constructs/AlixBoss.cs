@@ -64,12 +64,8 @@ public class AlixBoss : EnemyBase
     // Update is called once per frame
     void Update()
     {
-        if(bpmInteract.GetCurrentMovement() == 1 && !bpmInteract.transitionQueued)
-        {
-            bpmInteract.QueueTransitionToNextSection();
-        }
-
-        if(bpmInteract.GetCurrentSectionIndex() == 1 && !active)
+        
+        if(bpmInteract.GetMusicPhase() == 0 && !active)
         {
             ChangeColor(defaultColor);
             attackPhase = 1;
@@ -79,6 +75,7 @@ public class AlixBoss : EnemyBase
             SpawnShamanDefense(1);
             active = true;
             health.SetDamagable(true);
+            bpmInteract.TriggerNextPhase();
         }
 
         if (health.GetHealthPercent() <= .66f && attackPhase == 1)
@@ -89,7 +86,7 @@ public class AlixBoss : EnemyBase
             attacksDone = 0;
             StartCoroutine(PushPlayerAway());
             SpawnShamanDefense(2);
-            bpmInteract.QueueTransitionToNextSection();
+            bpmInteract.TriggerNextPhase();
         }
         else if (health.GetHealthPercent() <= .33f && attackPhase == 2)
         {
@@ -97,7 +94,7 @@ public class AlixBoss : EnemyBase
             attackPhase = 3;
             StartCoroutine(PushPlayerAway());
             BeginPhaseThree();
-
+            bpmInteract.TriggerNextPhase();
         }
 
 
@@ -123,7 +120,7 @@ public class AlixBoss : EnemyBase
         SpawnShamanDefense(2);
         SpawnEnemies(1, 2);
         numberOfProjectiles++;
-        bpmInteract.QueueTransitionToNextSection();
+        bpmInteract.TriggerNextPhase();
     }
 
     void TriggerDialogueBreak()

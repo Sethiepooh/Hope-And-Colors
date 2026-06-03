@@ -24,7 +24,10 @@ public class InteractionManager : MonoBehaviour
 
     private void Update()
     {
-        FindNearbyInteractables();
+        if(nearbyInteractable == null)
+        {
+            FindNearbyInteractables();
+        }
 
         if (nearbyInteractable != null && nearbyInteractable.interactable && !nearbyInteractable.activeInteraction)
         {

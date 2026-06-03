@@ -43,6 +43,15 @@ public class CutsceneActivator : MonoBehaviour, IInteractable
         }
     }  
 
+    public void OnEventTrigger()
+    {
+        if (interactable)
+        {
+            dialogueSystem.SetInteractable(this);
+            TriggerCutscene();
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!interactable) { return; }
@@ -126,7 +135,20 @@ public class CutsceneActivator : MonoBehaviour, IInteractable
                 if (cutsceneData[currentLine].GetAction() != ActionEnum.Action.None)
                     dialogueSystem.HandleAction(cutsceneData[currentLine].actionTarget, cutsceneData[currentLine].endPos.position, cutsceneData[currentLine].actionDuration);
 
-                currentLine++;
+                if (cutsceneData[currentLine].GetCameraState() != CameraEnum.ChangeCameraState.None)
+                {
+                    if (cutsceneData[currentLine].GetCameraState() == CameraEnum.ChangeCameraState.FollowPlayer)
+                    {
+                        dialogueSystem.ReturnCamToPlayer(cutsceneData[currentLine].cameraTransitionTime);
+                    }
+                    else
+                    {
+                        dialogueSystem.MoveCamToPoint(cutsceneData[currentLine].cameraTarget, cutsceneData[currentLine].cameraTransitionTime, cutsceneData[currentLine].cameraFocus);
+                    }
+                }
+
+
+                    currentLine++;
             }
             else
             {
@@ -150,6 +172,7 @@ public class CutsceneActivator : MonoBehaviour, IInteractable
 
     private void OnDrawGizmosSelected()
     {
+        if(cutsceneData == null) { return; }
         foreach (CutsceneData data in cutsceneData)
         {
             if (data.GetAction() != ActionEnum.Action.None)

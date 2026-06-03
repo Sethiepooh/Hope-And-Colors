@@ -1,10 +1,15 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class RespawnPoint : MonoBehaviour
 {
     RespawnManager r_Man;
     public bool active;
+
+    public UnityEvent onActivate;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -36,6 +41,7 @@ public class RespawnPoint : MonoBehaviour
         if (collision.CompareTag("Player") && !active)
         {
             r_Man.SetSpawnIndex(this.gameObject);
+            onActivate.Invoke();
         }
     }
 }

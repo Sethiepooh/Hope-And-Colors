@@ -74,7 +74,7 @@ public class ReginaldBoss : EnemyBase
             attackPhase = 2;
             attackType = 0;
             beatCount = 0;
-            bpmInteract.QueueTransitionToNextSection();
+            bpmInteract.TriggerNextPhase();
             missilesPerSalvo += 1;
         }
         else if (bossHealth.GetHealthPercent() <= .33f && attackPhase == 2)
@@ -84,7 +84,7 @@ public class ReginaldBoss : EnemyBase
             attackPhase = 3;
             attackType = 0;
             beatCount = 0;
-            bpmInteract.QueueTransitionToNextSection();
+            bpmInteract.TriggerNextPhase();
         }
 
         if (attackPhase > 0)
