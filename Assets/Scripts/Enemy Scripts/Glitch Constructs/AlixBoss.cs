@@ -35,7 +35,7 @@ public class AlixBoss : EnemyBase
     [SerializeField] List<SpawnPoint> enemySpawnPoints = new List<SpawnPoint>();
 
     [Header("Phase Management")]
-    [SerializeField] int attackPhase = 0;
+    [SerializeField] int attackPhase = -1;
     [SerializeField] int attackType = 0;
     [SerializeField] int attacksTillChange = 4;
     int attacksDone = 0;
@@ -65,7 +65,7 @@ public class AlixBoss : EnemyBase
     void Update()
     {
         
-        if(bpmInteract.GetMusicPhase() == 0 && !active)
+        if(bpmInteract.GetMusicPhase() == 1 && attackPhase == -1)
         {
             ChangeColor(defaultColor);
             attackPhase = 1;
@@ -75,7 +75,6 @@ public class AlixBoss : EnemyBase
             SpawnShamanDefense(1);
             active = true;
             health.SetDamagable(true);
-            bpmInteract.TriggerNextPhase();
         }
 
         if (health.GetHealthPercent() <= .66f && attackPhase == 1)
@@ -109,6 +108,11 @@ public class AlixBoss : EnemyBase
                ChangeColor(defaultColor);
             }
         }
+    }
+
+    public void BeginPhaseOne()
+    {
+        bpmInteract.TriggerNextPhase();
     }
 
     public void BeginPhaseThree()

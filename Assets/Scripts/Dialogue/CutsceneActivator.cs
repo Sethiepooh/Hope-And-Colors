@@ -147,8 +147,8 @@ public class CutsceneActivator : MonoBehaviour, IInteractable
                     }
                 }
 
-
-                    currentLine++;
+                cutsceneData[currentLine].TriggerEvents();
+                currentLine++;
             }
             else
             {

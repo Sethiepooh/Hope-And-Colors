@@ -26,11 +26,12 @@ public class SpawnPoint : MonoBehaviour
     public IEnumerator SpawnAlixShaman(RoomEncounterManager.EnemySpawnConfig enemy)
     {
         List<RoomEncounterManager.EnemySpawnConfig> enemies = new List<RoomEncounterManager.EnemySpawnConfig>();
+        enemies.Add(enemy);
 
         hasEnemy = true;
 
         yield return new WaitForSeconds(4);
-        currentEnemy = roomEncounterManager.SpawnEnemyGroup(enemies);
+        currentEnemy = roomEncounterManager.SpawnEnemyGroup(enemies, true, 0);
 
         currentEnemy.GetComponent<GlitchShaman>().SetProtectionTarget(GameObject.FindWithTag("Boss").GetComponent<EnemyBase>());
     }

@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
 using static RoomEncounterManager;
@@ -19,7 +18,7 @@ public class RoomEncounterManager : MonoBehaviour
 
     [Header("Encounter Settings")]
     [SerializeField] List<SpawnableGroup> spawnableGroups = new List<SpawnableGroup>();
-    SpawnableGroup dynamicallySpawnedGroup;
+    List<SpawnableGroup> dynamicallySpawnedGroups = new List<SpawnableGroup>(); // This list is for groups that are built dynamically at runtime (e.g. from configs) and won't be set up in the inspector
 
     bool angelBreakActive = false;
     bool doubleTimeActive = false;
@@ -30,7 +29,6 @@ public class RoomEncounterManager : MonoBehaviour
         Crate, Bomb, Crystal
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         InitializeSpawnableGroups();
@@ -38,7 +36,6 @@ public class RoomEncounterManager : MonoBehaviour
         {
             ToggleSpawnableGroupActivation(i, false);
         }
-        bpmInteract = GameObject.FindWithTag("RhythmManager").GetComponent<BPMInteract>();
     }
 
     public void InitializeSpawnableGroups()
@@ -49,49 +46,86 @@ public class RoomEncounterManager : MonoBehaviour
         }
     }
 
-    public EnemyBase SpawnEnemyGroup(List<EnemySpawnConfig> configs)
+    public EnemyBase SpawnEnemyGroup(List<EnemySpawnConfig> configs, bool existingGroup = false, int existingGroupIndex = -1, int returnEnemy = -1)
     {
-        dynamicallySpawnedGroup.BuildFromConfigs(configs, this);        
-        dynamicallySpawnedGroup.SetGroupActivationState(true);
-        return dynamicallySpawnedGroup.GetFirstEnemyInGroup();
+        if (existingGroup)
+        {
+            if (existingGroupIndex >= 0 && existingGroupIndex < dynamicallySpawnedGroups.Count)
+            {
+                if (configs is { Count: > 0 })
+                {
+                    dynamicallySpawnedGroups[existingGroupIndex].BuildFromConfigs(configs, this);
+                    dynamicallySpawnedGroups[existingGroupIndex].SetGroupActivationState(true);
+                }
+
+                if (returnEnemy == -1)
+                    return dynamicallySpawnedGroups[existingGroupIndex].GetLastEnemyInGroup();
+                else
+                    return dynamicallySpawnedGroups[existingGroupIndex].GetEnemyByIndex(returnEnemy);
+            }
+            Debug.LogWarning("Invalid dynamic group index: " + existingGroupIndex + ". Creating new group instead.");
+        }
+
+        SpawnableGroup group = new SpawnableGroup();
+        dynamicallySpawnedGroups.Add(group);
+
+        if (configs is { Count: > 0 })
+            group.BuildFromConfigs(configs, this);     
+        
+        group.SetGroupActivationState(true);
+
+        if (returnEnemy == -1)
+            return group.GetLastEnemyInGroup();
+        else
+            return group.GetEnemyByIndex(returnEnemy);
     }
 
-    public void ToggleSpawnableGroupActivation(int index, bool state)
+    public void ToggleSpawnableGroupActivation(int index, bool state, bool isDynamic = false)
     {
-        if (index < 0 || index >= spawnableGroups.Count)
+        var groups = isDynamic ? dynamicallySpawnedGroups : spawnableGroups;
+        if (index < 0 || index >= groups.Count)
         {
-            Debug.LogError("Invalid spawnable group index: " + index);
+            Debug.LogError($"Invalid {(isDynamic ? "dynamic" : "spawnable")} group index: {index}");
             return;
         }
 
-        spawnableGroups[index].SetGroupActivationState(state);
+        groups[index].SetGroupActivationState(state);
     }
 
-    public void AddBossToSpawnableGroup(int groupIndex, BossSpawnConfig config)
+    public void AddBossToSpawnableGroup(int groupIndex, BossSpawnConfig config, bool isDynamic = false)
     {
-        if (groupIndex < 0 || groupIndex >= spawnableGroups.Count)
+        var groups = isDynamic ? dynamicallySpawnedGroups : spawnableGroups;
+        if (groupIndex < 0 || groupIndex >= groups.Count)
         {
-            Debug.LogError("Invalid spawnable group index: " + groupIndex);
+            Debug.LogError($"Invalid {(isDynamic ? "dynamic" : "spawnable")} group index: {groupIndex}");
             return;
         }
 
-        spawnableGroups[groupIndex].AddBossToGroup(config, this);
+        groups[groupIndex].AddBossToGroup(config, this);
     }
 
-    public void ResetSpawnableGroup(int i)
+    public void ResetSpawnableGroup(int i, bool isDynamic = false)
     {
-        spawnableGroups[i].ResetGroup();
-    }
-
-    public bool CheckGroupState(int i)
-    {
-        if (i < 0 || i >= spawnableGroups.Count)
+        var groups = isDynamic ? dynamicallySpawnedGroups : spawnableGroups;
+        if (i < 0 || i >= groups.Count)
         {
-            Debug.LogError("Invalid spawnable group index: " + i);
+            Debug.LogError($"Invalid {(isDynamic ? "dynamic" : "spawnable")} group index: {i}");
+            return;
+        }
+
+        groups[i].ResetGroup();
+    }
+
+    public bool CheckGroupState(int i, bool isDynamic = false)
+    {
+        var groups = isDynamic ? dynamicallySpawnedGroups : spawnableGroups;
+        if (i < 0 || i >= groups.Count)
+        {
+            Debug.LogError($"Invalid {(isDynamic ? "dynamic" : "spawnable")} group index: {i}");
             return false;
         }
 
-        return spawnableGroups[i].IsActive();
+        return groups[i].IsActive();
     }
 
     public void AddBeatToSpawnableGroups()
@@ -102,6 +136,10 @@ public class RoomEncounterManager : MonoBehaviour
         for (int i = 0; i < spawnableGroups.Count; i++)
         {
             spawnableGroups[i].AddBeatToGroup();
+        }
+        for (int i = 0; i < dynamicallySpawnedGroups.Count; i++)
+        {
+            dynamicallySpawnedGroups[i].AddBeatToGroup();
         }
     }
 
@@ -114,6 +152,10 @@ public class RoomEncounterManager : MonoBehaviour
         {
             spawnableGroups[i].AddBeatToGroup();
         }
+        for (int i = 0; i < dynamicallySpawnedGroups.Count; i++)
+        {
+            dynamicallySpawnedGroups[i].AddBeatToGroup();
+        }
     }
 
     public void TriggerDoubleTime(float sec)
@@ -124,7 +166,7 @@ public class RoomEncounterManager : MonoBehaviour
     IEnumerator DoubleTimeForSeconds(float sec)
     {
         if (doubleTimeActive)
-            yield return null;
+            yield break;
 
         doubleTimeActive = true;
         yield return new WaitForSeconds(sec);
@@ -172,6 +214,8 @@ public class RoomEncounterManager : MonoBehaviour
 
         public void InitializeGroup(RoomEncounterManager eMan)
         {
+
+
             for (int i = 0; i < enemies.Count; i++)
             {
                 if (enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.GlitchShaman || enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.Bishop || enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.TurretGenerator)
@@ -205,20 +249,54 @@ public class RoomEncounterManager : MonoBehaviour
 
         public void BuildFromConfigs(List<EnemySpawnConfig> configs, RoomEncounterManager eMan)
         {
-            enemies = new List<Enemy>();
-            FindProtectedEnemies();
+            if (enemies == null)
+                enemies = new List<Enemy>();
+            if (breakableObjects == null)
+                breakableObjects = new List<BreakableObject>();
+
+            for (int i = 0; i < enemies.Count; i++)
+            {
+                if (enemies[i].GetEnemyInstance() != null)
+                    UnityEngine.Object.Destroy(enemies[i].GetEnemyInstance().gameObject);
+            }
+            enemies.Clear();
+
             foreach (var config in configs)
             {
                 Enemy e = new Enemy();
                 e.BuildFromConfig(config);
-                e.Initialize(eMan);
-                e.deathEvent += CheckLivingEnemies;
                 enemies.Add(e);
+            }
+
+            for (int i = 0; i < enemies.Count; i++)
+            {
+                if (enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.GlitchShaman || enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.Bishop || enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.TurretGenerator)
+                    continue;
+
+                enemies[i].Initialize(eMan);
+                enemies[i].deathEvent += CheckLivingEnemies;
+            }
+
+            FindProtectedEnemies();
+
+            for (int i = 0; i < enemies.Count; i++)
+            {
+                if (enemies[i].GetEnemyType() != EnemyType.ChosenEnemyType.GlitchShaman && enemies[i].GetEnemyType() != EnemyType.ChosenEnemyType.Bishop && enemies[i].GetEnemyType() != EnemyType.ChosenEnemyType.TurretGenerator)
+                    continue;
+
+                enemies[i].Initialize(eMan);
+                enemies[i].deathEvent += CheckLivingEnemies;
             }
         }
 
         public void SetGroupActivationState(bool state)
         {
+            if (enemies == null || breakableObjects == null)
+            {
+                Debug.LogError("Enemies or breakable objects list is null in SpawnableGroup. Make sure to initialize them before setting activation state.");
+                return;
+            }
+
             for (int i = 0; i < enemies.Count; i++)
             {
                 enemies[i].SetActivationState(state);
@@ -288,6 +366,34 @@ public class RoomEncounterManager : MonoBehaviour
                 if (!enemies[i].IsDead())
                     return enemies[i].GetEnemyInstance();
             }
+            return null;
+        }
+
+        public EnemyBase GetLastEnemyInGroup()
+        {
+            if(enemies == null || enemies.Count == 0)
+            {
+                Debug.LogError("Enemy list is null or empty in GetLastEnemyInGroup. Make sure to initialize the group with enemies before trying to get an enemy.");
+                return null;
+            }
+
+            for (int i = enemies.Count - 1; i >= 0; i--)
+            {
+                if (!enemies[i].IsDead())
+                    return enemies[i].GetEnemyInstance();
+            }
+            return null;
+        }
+
+        public EnemyBase GetEnemyByIndex(int index)
+        {
+            if (index < 0 || index >= enemies.Count)
+            {
+                Debug.LogError("Invalid enemy index: " + index);
+                return null;
+            }
+            if (!enemies[index].IsDead())
+                return enemies[index].GetEnemyInstance();
             return null;
         }
 
@@ -380,7 +486,7 @@ public class RoomEncounterManager : MonoBehaviour
         public void InitializeExisting(RoomEncounterManager eMan)
         {
             encounterManager = eMan;
-            // Don't Instantiate — just wire up events on the existing instance
+            // Don't Instantiate ï¿½ just wire up events on the existing instance
             enemyInstance.ManagerDeathEvent += HandleEnemyDeath;
             enemyInstance.Initialize(
                 encounterManager.player,

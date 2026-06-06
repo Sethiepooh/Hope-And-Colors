@@ -1,9 +1,11 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 [System.Serializable]
 public class CutsceneData
 {
+    public string dialogueLine;
     public bool DialogueUIState;
     public bool unskippable;
     public bool goToNextLineAutomatically;
@@ -29,11 +31,13 @@ public class CutsceneData
     [SerializeField] CharacterData[] speakerData;
     [SerializeField] CharacterEnum.Character speaker;
     [SerializeField] ExpressionEnum.Expression speakerExpression;
-    public string dialogueLine;
 
     [Header("Effect Settings")]
     [SerializeField] ScreenEffectEnum.ScreenEffect screenEffect;
     [SerializeField] SoundEffectEnum.SoundEffect soundEffect;
+
+    [Header("Cutscene Events")]
+    [SerializeField] UnityEvent lineEvents;
 
     public string GetSpeakerName()
     {
@@ -70,6 +74,11 @@ public class CutsceneData
             }
         }
         return null; // Default sprite if speaker not found
+    }
+
+    public void TriggerEvents()
+    {
+        lineEvents.Invoke();
     }
 
     public SoundEffectEnum.SoundEffect GetSoundEffect()
