@@ -43,6 +43,11 @@ public class BPMInteract : MonoBehaviour
     [Header("Loop Detection")]
     [Tooltip("If the FMOD timeline jumps backward by more than this many seconds, a loop is detected and the accumulator resyncs.")]
     [SerializeField] private float loopDetectionThreshold = 0.2f;
+    [Tooltip("Fired when a loop or seek is detected and the internal clock resyncs.")]
+    public UnityEvent OnLoopDetected;
+
+    [Header("Event Markers")]
+    [SerializeField] MusicMarker[] musicMarkers;
 
 
     private EventInstance _instance;
@@ -80,6 +85,8 @@ public class BPMInteract : MonoBehaviour
 
         UpdateAccumulatedTime();
         CheckBeats();
+
+        Debug.Log("Current Beat: " + GetCurrentBeat());
     }
 
     private void OnDestroy()
@@ -148,6 +155,7 @@ public class BPMInteract : MonoBehaviour
 
         if (delta < 0 || delta > loopDetectionThreshold)
         {
+            //.($"Loop or seek detected! FMOD position jumped from {_lastFmodPosition:F3}s to {fmodPos:F3}s (delta {delta:F3}s). Resyncing accumulator.");
             // A loop or seek has occurred — resync the accumulator so that
             // _accumulatedTime % beatInterval still lines up with the beat grid
             // at the new playback position.
@@ -170,6 +178,8 @@ public class BPMInteract : MonoBehaviour
             // Rearm the fired-at guards so beats fire normally from the new position.
             _lastBeatFiredAt = _accumulatedTime - BeatInterval + beatPhase - BeatInterval;
             _lastHalfBeatFiredAt = _accumulatedTime - HalfBeatInterval + halfBeatPhase - HalfBeatInterval;
+
+            OnLoopDetected?.Invoke();
         }
         else
         {
@@ -199,6 +209,37 @@ public class BPMInteract : MonoBehaviour
             OnHalfBeat?.Invoke();
             nextHalf += HalfBeatInterval;
         }
+    }
+
+    public bool CheckIfMarkerPassed(string marker)
+    {
+        if (musicMarkers == null || musicMarkers.Length == 0) return false;
+        if (marker == null) return false;
+
+        foreach (var m in musicMarkers)
+        {
+            if (m.name == marker)
+            {
+                int currentBeat = GetCurrentBeat();
+                if (currentBeat >= m.beat)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    public int GetCurrentBeat()
+    {
+        _instance.getTimelinePosition(out int posMs);
+        double fmodPos = posMs / 1000.0;
+        return (int)(fmodPos / BeatInterval);
     }
 
     // -------------------------------------------------------------------------
@@ -257,4 +298,11 @@ public class BPMInteract : MonoBehaviour
                   $"AccumulatedTime: {_accumulatedTime:F3}s  FmodPos: {_lastFmodPosition:F3}s");
     }
 #endif
+}
+
+[System.Serializable]
+public class MusicMarker
+{
+    public string name;
+    public float beat;
 }

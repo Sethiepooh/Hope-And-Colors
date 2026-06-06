@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6159017234479701061}
   - component: {fileID: 856982214003901779}
   - component: {fileID: 7741231565899930747}
+  - component: {fileID: 413026689035780493}
   m_Layer: 0
   m_Name: Call & Response
   m_TagString: Untagged
@@ -134,3 +135,71 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &413026689035780493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7814776392057685051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b866b83d614e6e48b562852bfa1ca4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactable: 1
+  BPM: 120
+  inputPromptCenter: {fileID: 0}
+  beatTimerDisplay: {fileID: 41575225111671317, guid: d2fb31a86281f854a934e4c47c45b140, type: 3}
+  inputPromptDisplay: {fileID: 2926515740889602260, guid: 20eee807e87d38240a654f28423f9598, type: 3}
+  inputPromptSprites:
+  - {fileID: -7811592241528581441, guid: 757dcf25668353a4893735a28282c8a1, type: 3}
+  - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+  - {fileID: 4007970429118387849, guid: 3ade097adc6f20b4a8a33e199c141ca5, type: 3}
+  - {fileID: -8872749539151123167, guid: dc05a63b32e56ab49bfd7e023ae1f297, type: 3}
+  - {fileID: 847790144819061882, guid: 54c0e47ed96a2364791e3900662c8af9, type: 3}
+  - {fileID: -8542428479106556405, guid: 56294bcea110f8e41832435537bc45bd, type: 3}
+  - {fileID: -4729387377383539518, guid: d86b5b307b1982143ba3a7b78854fc1b, type: 3}
+  - {fileID: 6172366414365283072, guid: d2b6cc377816bc345b3fa933a524337e, type: 3}
+  - {fileID: 1599085665935576135, guid: cd7890cf00224f3428f28d31fef08926, type: 3}
+  - {fileID: 1195187215361655679, guid: 3c78858e5f297ff4483b97d2f009e2ca, type: 3}
+  - {fileID: -7383735051433012234, guid: ec3a10982b738c142b49fef40192ce4d, type: 3}
+  - {fileID: 6133333576937382170, guid: a7b2cc85b81f0e0448554f073afb800e, type: 3}
+  - {fileID: 596378053500030502, guid: 4bec9906eeee11d4c840c371de762847, type: 3}
+  - {fileID: 189109534364618555, guid: 94522a2211204c24ea4704be38f57fe8, type: 3}
+  - {fileID: 1449666264928873236, guid: 02264e16d1279c447a3c27cf1e26a472, type: 3}
+  - {fileID: 352974439605797276, guid: 650ebba5d2355514ebbafb707c17d8a8, type: 3}
+  beatSpacing: 2.5
+  interactionManager: {fileID: 0}
+  playerInput: {fileID: 0}
+  patternsInSequence: []
+  onBeatHit:
+    m_PersistentCalls:
+      m_Calls: []
+  onBeatEarly:
+    m_PersistentCalls:
+      m_Calls: []
+  onBeatMissed:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 413026689035780493}
+        m_TargetAssemblyTypeName: RhythmMinigame, Assembly-CSharp
+        m_MethodName: MissedBeat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onPatternCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMinigameCompleted:
+    m_PersistentCalls:
+      m_Calls: []
+  OnMinigameFailed:
+    m_PersistentCalls:
+      m_Calls: []

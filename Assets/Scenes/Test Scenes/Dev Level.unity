@@ -836,11 +836,6 @@ ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 1047356095774757247, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
   m_PrefabInstance: {fileID: 1125140983}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1874893562 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7814776392057685051, guid: 9ef9368324a6e794ab3c78815b0542c8, type: 3}
-  m_PrefabInstance: {fileID: 3749185354959032930}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1898894484 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 82233404559197544, guid: 860b33f328e9237488ac9d2fabd4b111, type: 3}
@@ -1016,96 +1011,17 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
---- !u!114 &2062358035
+--- !u!114 &2062358035 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 413026689035780493, guid: 9ef9368324a6e794ab3c78815b0542c8, type: 3}
+  m_PrefabInstance: {fileID: 3749185354959032930}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1874893562}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b866b83d614e6e48b562852bfa1ca4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactable: 1
-  BPM: 120
-  inputPromptCenter: {fileID: 85376718}
-  beatTimerDisplay: {fileID: 41575225111671317, guid: d2fb31a86281f854a934e4c47c45b140, type: 3}
-  inputPromptDisplay: {fileID: 2926515740889602260, guid: 20eee807e87d38240a654f28423f9598, type: 3}
-  inputPromptSprites:
-  - {fileID: -7811592241528581441, guid: 757dcf25668353a4893735a28282c8a1, type: 3}
-  - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
-  - {fileID: 4007970429118387849, guid: 3ade097adc6f20b4a8a33e199c141ca5, type: 3}
-  - {fileID: -8872749539151123167, guid: dc05a63b32e56ab49bfd7e023ae1f297, type: 3}
-  - {fileID: 847790144819061882, guid: 54c0e47ed96a2364791e3900662c8af9, type: 3}
-  - {fileID: -8542428479106556405, guid: 56294bcea110f8e41832435537bc45bd, type: 3}
-  - {fileID: -4729387377383539518, guid: d86b5b307b1982143ba3a7b78854fc1b, type: 3}
-  - {fileID: 6172366414365283072, guid: d2b6cc377816bc345b3fa933a524337e, type: 3}
-  - {fileID: 1599085665935576135, guid: cd7890cf00224f3428f28d31fef08926, type: 3}
-  - {fileID: 1195187215361655679, guid: 3c78858e5f297ff4483b97d2f009e2ca, type: 3}
-  - {fileID: -7383735051433012234, guid: ec3a10982b738c142b49fef40192ce4d, type: 3}
-  - {fileID: 6133333576937382170, guid: a7b2cc85b81f0e0448554f073afb800e, type: 3}
-  - {fileID: 596378053500030502, guid: 4bec9906eeee11d4c840c371de762847, type: 3}
-  - {fileID: 189109534364618555, guid: 94522a2211204c24ea4704be38f57fe8, type: 3}
-  - {fileID: 1449666264928873236, guid: 02264e16d1279c447a3c27cf1e26a472, type: 3}
-  - {fileID: 352974439605797276, guid: 650ebba5d2355514ebbafb707c17d8a8, type: 3}
-  beatSpacing: 2.5
-  interactionManager: {fileID: 1911327841}
-  playerInput: {fileID: 1125140984}
-  patternsInSequence:
-  - beatsToHit:
-    - beatType: 3
-      direction: 0
-    - beatType: 0
-      direction: 3
-    - beatType: 1
-      direction: 0
-    - beatType: 1
-      direction: 1
-    - beatType: 0
-      direction: 1
-    patternDuration: 0
-  - beatsToHit:
-    - beatType: 0
-      direction: 1
-    - beatType: 0
-      direction: 0
-    - beatType: 0
-      direction: 0
-    - beatType: 0
-      direction: 1
-    patternDuration: 0
-  onBeatHit:
-    m_PersistentCalls:
-      m_Calls: []
-  onBeatEarly:
-    m_PersistentCalls:
-      m_Calls: []
-  onBeatMissed:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2062358035}
-        m_TargetAssemblyTypeName: RhythmMinigame, Assembly-CSharp
-        m_MethodName: MissedBeat
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onPatternCompleted:
-    m_PersistentCalls:
-      m_Calls: []
-  OnMinigameCompleted:
-    m_PersistentCalls:
-      m_Calls: []
-  OnMinigameFailed:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &2136911073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,6 +1279,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 413026689035780493, guid: 9ef9368324a6e794ab3c78815b0542c8, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 1125140984}
+    - target: {fileID: 413026689035780493, guid: 9ef9368324a6e794ab3c78815b0542c8, type: 3}
+      propertyPath: inputPromptCenter
+      value: 
+      objectReference: {fileID: 85376718}
+    - target: {fileID: 413026689035780493, guid: 9ef9368324a6e794ab3c78815b0542c8, type: 3}
+      propertyPath: interactionManager
+      value: 
+      objectReference: {fileID: 1911327841}
     - target: {fileID: 6159017234479701061, guid: 9ef9368324a6e794ab3c78815b0542c8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -202.1
@@ -1434,10 +1362,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7814776392057685051, guid: 9ef9368324a6e794ab3c78815b0542c8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2062358035}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ef9368324a6e794ab3c78815b0542c8, type: 3}
 --- !u!1001 &8142177847465287259
 PrefabInstance:
@@ -1669,7 +1594,8 @@ MonoBehaviour:
   triggerType: 2
   DisableAfterTrigger: 1
   cutsceneData:
-  - DialogueUIState: 1
+  - dialogueLine: Hi there this is a long line because seth wants to test something
+    DialogueUIState: 1
     unskippable: 0
     goToNextLineAutomatically: 0
     autoAdvanceDelay: 0
@@ -1677,6 +1603,10 @@ MonoBehaviour:
     actionTarget: {fileID: 1125140985}
     endPos: {fileID: 1691762290}
     actionDuration: 0.5
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
     changeScene: 0
     sceneIndex: 0
     speakerData:
@@ -1689,10 +1619,13 @@ MonoBehaviour:
       textColor: {r: 1, g: 0.84751457, b: 0, a: 1}
     speaker: 0
     speakerExpression: 0
-    dialogueLine: Hi there this is a long line because seth wants to test something
     screenEffect: 0
     soundEffect: 0
-  - DialogueUIState: 1
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Piss off
+    DialogueUIState: 1
     unskippable: 0
     goToNextLineAutomatically: 0
     autoAdvanceDelay: 0
@@ -1700,6 +1633,10 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
     changeScene: 0
     sceneIndex: 0
     speakerData:
@@ -1713,9 +1650,11 @@ MonoBehaviour:
       textColor: {r: 1, g: 0.84751457, b: 0, a: 1}
     speaker: 2
     speakerExpression: 0
-    dialogueLine: Piss off
     screenEffect: 4
     soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
   dialogueSystem: {fileID: 1457757999}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

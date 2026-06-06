@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using UnityEngine.Events;
 
 public class AlixBoss : EnemyBase
 {
@@ -35,16 +36,27 @@ public class AlixBoss : EnemyBase
     [SerializeField] List<SpawnPoint> enemySpawnPoints = new List<SpawnPoint>();
 
     [Header("Phase Management")]
-    [SerializeField] int attackPhase = -1;
+    [SerializeField] int attackPhase = 0;
     [SerializeField] int attackType = 0;
     [SerializeField] int attacksTillChange = 4;
+    int attacksTillNextPhase = 6;
+    int storedAttacks = 0;
     int attacksDone = 0;
-  
+
+    BPMInteract bpmInteract;
+
+    [Header("Dialogue Settings")]
+    [SerializeField] UnityEvent[] cutscenes;
+
+    [Header("Rhythm Minigame Settings")]
+    [SerializeField] UnityEvent[] minigame;
+
     [Header("Effects")]
     [SerializeField] ParticleSystem chargeEffect;
     public Color disabledColor = Color.purple;
-    BPMInteract bpmInteract;
     public GameObject[] spikes;
+
+    int delayBeats = 0;
 
 
     void Start()
@@ -58,43 +70,37 @@ public class AlixBoss : EnemyBase
         }
         GetAveragePosition(teleportPoints);
         transform.position = arenaCenter;
-
+        health.onDamageEvent += AddToAttacksDone;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-        if(bpmInteract.GetMusicPhase() == 1 && attackPhase == -1)
+        if (delayBeats > 0) return;
+
+        if (bpmInteract.CheckIfMarkerPassed("Intro"))
         {
-            ChangeColor(defaultColor);
-            attackPhase = 1;
-            beatCount = 0;
-            attacksDone = 0;
-            StartCoroutine(PushPlayerAway());
-            SpawnShamanDefense(1);
-            active = true;
-            health.SetDamagable(true);
+            Debug.Log("Intro Marker Passed");
         }
 
-        if (health.GetHealthPercent() <= .66f && attackPhase == 1)
-        {
-            attackPhase = 2;
-            attackType = 0;
-            beatCount = 0;
-            attacksDone = 0;
-            StartCoroutine(PushPlayerAway());
-            SpawnShamanDefense(2);
-            bpmInteract.TriggerNextPhase();
-        }
-        else if (health.GetHealthPercent() <= .33f && attackPhase == 2)
-        {
-            active = false;
-            attackPhase = 3;
-            StartCoroutine(PushPlayerAway());
-            BeginPhaseThree();
-            bpmInteract.TriggerNextPhase();
-        }
+        //if (health.GetHealthPercent() <= .66f && attackPhase == 1)
+        //{
+        //    attackPhase = 2;
+        //    attackType = 0;
+        //    beatCount = 0;
+        //    attacksDone = 0;
+        //    StartCoroutine(PushPlayerAway());
+        //    SpawnShamanDefense(2);
+        //    bpmInteract.TriggerNextPhase();
+        //}
+        //else if (health.GetHealthPercent() <= .33f && attackPhase == 2)
+        //{
+        //    active = false;
+        //    attackPhase = 3;
+        //    StartCoroutine(PushPlayerAway());
+        //    BeginPhaseThree();
+        //    bpmInteract.TriggerNextPhase();
+        //}
 
 
         if(attackPhase > 0)
@@ -110,9 +116,47 @@ public class AlixBoss : EnemyBase
         }
     }
 
-    public void BeginPhaseOne()
+    public void TriggerNextPhase()
     {
-        bpmInteract.TriggerNextPhase();
+        switch (attackPhase)
+        {
+            case 0:
+                Debug.Log("Phase 1 Starting");
+                attackPhase = 1;
+                delayBeats = 32;
+                bpmInteract.TriggerNextPhase();
+                break;
+            case 1:
+                Debug.Log("Phase 2 Starting");
+                active = true;
+
+                health.SetDamagable(true);
+                ChangeColor(defaultColor);
+                StartCoroutine(PushPlayerAway());
+                SpawnShamanDefense(1);
+
+                attackPhase = 2;
+                beatCount = 0;
+                attacksDone = 0;
+
+                bpmInteract.TriggerNextPhase();
+                break;
+            case 2:
+                Debug.Log("Phase 3 Starting");
+                attackPhase = 3;
+                delayBeats = 40;
+
+                cutscenes[0].Invoke();
+                StartCoroutine(PushPlayerAway());
+                bpmInteract.TriggerNextPhase();
+                break;
+            case 3:
+                Debug.Log("Phase 4 Starting");
+                minigame[0].Invoke();
+                StartCoroutine(PushPlayerAway());
+                bpmInteract.TriggerNextPhase();
+                break;
+        }
     }
 
     public void BeginPhaseThree()
@@ -140,11 +184,17 @@ public class AlixBoss : EnemyBase
 
     public void AddToAttacksDone()
     {
-        if(!active)
-            { return; }
+        if(!active) return;
 
-       // Debug.Log("Attack Completed");
         attacksDone++;
+        storedAttacks++;
+        if(storedAttacks >= attacksTillNextPhase)
+        {
+            storedAttacks = 0;
+            attacksDone = 0;
+            TriggerNextPhase();
+            return;
+        }
         if (attacksDone >= attacksTillChange)
         {
             if (attackType >= 2)
@@ -160,10 +210,10 @@ public class AlixBoss : EnemyBase
         }
 
         //Phase one actions
-        if(health.GetHealthPercent() >= .66f)
+        if(attackPhase == 2)
         {
             Debug.Log("Phase One Attack Type: " + attackType);
-            if (attackPhase == 1 && attackType == 0 && attacksDone == 0)
+            if (attackType == 0 && attacksDone == 0)
             {
                 StopAllCoroutines();
                 DestroyEnemies();
@@ -172,7 +222,7 @@ public class AlixBoss : EnemyBase
                 SpawnShamanDefense(1);
             }
 
-            if (attackPhase == 1 && attackType == 1 && attacksDone == 0)
+            if (attackType == 1 && attacksDone == 0)
             {
                 StopAllCoroutines();
                 DestroyEnemies();
@@ -181,50 +231,50 @@ public class AlixBoss : EnemyBase
         }
 
 
-        //Phase Two actions
-        if (health.GetHealthPercent() >= .33f)
-        {
-            if (attackPhase == 2 && attackType == 0 && attacksDone == 0)
-            {
-                StopAllCoroutines();
-                DestroyEnemies();
-                TeleportToCenter();
-                StartCoroutine(PushPlayerAway());
-                SpawnShamanDefense(2);
-            }
+        ////Phase Two actions
+        //if (health.GetHealthPercent() >= .33f)
+        //{
+        //    if (attackPhase == 2 && attackType == 0 && attacksDone == 0)
+        //    {
+        //        StopAllCoroutines();
+        //        DestroyEnemies();
+        //        TeleportToCenter();
+        //        StartCoroutine(PushPlayerAway());
+        //        SpawnShamanDefense(2);
+        //    }
 
-            if (attackPhase == 2 && attackType == 1 && attacksDone == 0)
-            {
-                StopAllCoroutines();
-                DestroyEnemies();
-                Teleport();
-                SpawnEnemies(1, 2);
-            }
-        }
+        //    if (attackPhase == 2 && attackType == 1 && attacksDone == 0)
+        //    {
+        //        StopAllCoroutines();
+        //        DestroyEnemies();
+        //        Teleport();
+        //        SpawnEnemies(1, 2);
+        //    }
+        //}
 
 
-        //Phase 3 Actions
-        if (health.GetHealthPercent() >= 0f)
-        {
-            if (attackPhase == 3 && attackType == 0 && attacksDone == 0)
-            {
-                StopAllCoroutines();
-                DestroyEnemies();
-                TeleportToCenter();
-                StartCoroutine(PushPlayerAway());
-                SpawnShamanDefense(3);
-                SpawnEnemies(1, 2);
-            }
+        ////Phase 3 Actions
+        //if (health.GetHealthPercent() >= 0f)
+        //{
+        //    if (attackPhase == 3 && attackType == 0 && attacksDone == 0)
+        //    {
+        //        StopAllCoroutines();
+        //        DestroyEnemies();
+        //        TeleportToCenter();
+        //        StartCoroutine(PushPlayerAway());
+        //        SpawnShamanDefense(3);
+        //        SpawnEnemies(1, 2);
+        //    }
 
-            if (attackPhase == 3 && attackType == 1 && attacksDone == 0)
-            {
-                StopAllCoroutines();
-                DestroyEnemies();
-                Teleport();
-                SpawnEnemies(1, 2);
-                SpawnEnemies(2, 1);
-            }
-        }          
+        //    if (attackPhase == 3 && attackType == 1 && attacksDone == 0)
+        //    {
+        //        StopAllCoroutines();
+        //        DestroyEnemies();
+        //        Teleport();
+        //        SpawnEnemies(1, 2);
+        //        SpawnEnemies(2, 1);
+        //    }
+        //}          
     }
 
     public void ChangeColor(Color newColor)
@@ -439,12 +489,39 @@ public class AlixBoss : EnemyBase
             }
         }
 
-        if(attackPhase == 1)
+        if(delayBeats > 0)
+        {
+            if(attackPhase == 1)
+            {
+                if (bpmInteract.CheckIfMarkerPassed("Intro"))
+                {
+                    delayBeats--;
+                    if (delayBeats == 0)
+                    {
+                        TriggerNextPhase();
+                    }
+                }
+            }
+            if(attackPhase == 3)
+            {
+                if (bpmInteract.CheckIfMarkerPassed("Dialogue 1"))
+                {
+                    delayBeats--;
+                    if (delayBeats == 0)
+                    {
+                        TriggerNextPhase();
+                    }
+                }
+            }
+            
+            return;
+        }
+
+        if (attackPhase == 2)
         {
             PhaseOneAttackRotation();
-
         }
-        else if (attackPhase == 2)
+        else if (attackPhase == 5)
         {
             PhaseTwoAttackRotation();
 

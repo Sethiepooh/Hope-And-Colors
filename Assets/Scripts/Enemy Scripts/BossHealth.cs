@@ -39,7 +39,7 @@ public class BossHealth : MonoBehaviour
     {
         health.damagable = false;
         yield return new WaitForSeconds(.2f);
-        Debug.Log("Player can be damaged again");
+        Debug.Log("Boss can be damaged again");
         health.damagable = true;
     }
 }

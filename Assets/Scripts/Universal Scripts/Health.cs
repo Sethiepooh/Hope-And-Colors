@@ -45,10 +45,12 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (!this.isActiveAndEnabled) return;
+
         if (damagable)
         {
             currentHealth -= damage;
-            if(sRend.color == Color.white)
+            if (sRend.color == Color.white)
             {
                 StartCoroutine(HitFlash(Color.red));
             }
@@ -63,7 +65,7 @@ public class Health : MonoBehaviour
             {
                 onDeathEvent.Invoke();
             }
-        }      
+        }
     }
 
     public void SetDamagable(bool b)
