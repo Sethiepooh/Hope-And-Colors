@@ -65,6 +65,14 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         playerInput.SwitchCurrentActionMap("CallResponse");
     }
 
+    public void OnEventInteract()
+    {
+        interactionManager.nearbyInteractable = this;
+        activeInteraction = true;
+        waitingForDownbeat = true;
+        playerInput.SwitchCurrentActionMap("CallResponse");
+    }
+
     public void OnRhythmInput()
     {
         if(!activeInteraction) return;
@@ -96,8 +104,12 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
             onBeatMissed.Invoke();
         }
         StopCoroutine(activeCoroutines[nextNote]);
-        nextNote++;
+        NextNote();
+    }
 
+    void NextNote()
+    {
+        nextNote++;
         if (nextNote >= beatInputTimings.Count)
         {
             if (patternIndex >= patternsInSequence.Length - 1)
@@ -260,5 +272,6 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
     public void MissedBeat()
     {
         Debug.Log("Beat Missed!");  
+        NextNote();
     }
 }

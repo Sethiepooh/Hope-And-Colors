@@ -86,7 +86,7 @@ public class BPMInteract : MonoBehaviour
         UpdateAccumulatedTime();
         CheckBeats();
 
-        Debug.Log("Current Beat: " + GetCurrentBeat());
+        //Debug.Log("Current Beat: " + GetCurrentBeat());
     }
 
     private void OnDestroy()

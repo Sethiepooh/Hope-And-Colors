@@ -13,6 +13,11 @@ public class AlixBoss : EnemyBase
     [SerializeField] GameObject projectile;
     [SerializeField] ParticleSystem telegraphEffect;
 
+    [Header("Projectile Pools")]
+    [SerializeField] ProjectilePool onslaughtProjectilePool;
+    [SerializeField] ProjectilePool shockOrbProjectilePool;
+    [SerializeField] ProjectilePool blastWaveProjectilePool;
+
     //Onslaught Settings
     [Header("Scatter Onslaught Stats")]
     [SerializeField] int numberOfScatterProjectiles = 16;
@@ -78,31 +83,6 @@ public class AlixBoss : EnemyBase
     {
         if (delayBeats > 0) return;
 
-        if (bpmInteract.CheckIfMarkerPassed("Intro"))
-        {
-            Debug.Log("Intro Marker Passed");
-        }
-
-        //if (health.GetHealthPercent() <= .66f && attackPhase == 1)
-        //{
-        //    attackPhase = 2;
-        //    attackType = 0;
-        //    beatCount = 0;
-        //    attacksDone = 0;
-        //    StartCoroutine(PushPlayerAway());
-        //    SpawnShamanDefense(2);
-        //    bpmInteract.TriggerNextPhase();
-        //}
-        //else if (health.GetHealthPercent() <= .33f && attackPhase == 2)
-        //{
-        //    active = false;
-        //    attackPhase = 3;
-        //    StartCoroutine(PushPlayerAway());
-        //    BeginPhaseThree();
-        //    bpmInteract.TriggerNextPhase();
-        //}
-
-
         if(attackPhase > 0)
         {
             if (!section)
@@ -144,7 +124,7 @@ public class AlixBoss : EnemyBase
             case 2:
                 Debug.Log("Phase 3 Starting");
                 attackPhase = 3;
-                delayBeats = 40;
+                delayBeats = 34;
 
                 cutscenes[0].Invoke();
                 StartCoroutine(PushPlayerAway());
@@ -154,6 +134,52 @@ public class AlixBoss : EnemyBase
                 Debug.Log("Phase 4 Starting");
                 minigame[0].Invoke();
                 StartCoroutine(PushPlayerAway());
+                bpmInteract.TriggerNextPhase();
+                break;
+            case 4:
+                Debug.Log("Phase 5 Starting");
+
+                StartCoroutine(PushPlayerAway());
+                SpawnShamanDefense(2);
+
+                attackPhase = 5;
+                beatCount = 0;
+                attacksDone = 0;
+
+                bpmInteract.TriggerNextPhase();
+                break;
+            case 5:
+                Debug.Log("Phase 6 Starting");
+                attackPhase = 6;
+                delayBeats = 34;
+
+                cutscenes[1].Invoke();
+                StartCoroutine(PushPlayerAway());
+                bpmInteract.TriggerNextPhase();
+                break;
+            case 6:
+                Debug.Log("Phase 7 Starting");
+                attackPhase = 7;
+                minigame[1].Invoke();
+                StartCoroutine(PushPlayerAway());
+                bpmInteract.TriggerNextPhase();
+                break;
+            case 7:
+                Debug.Log("Phase 8 Starting");
+                StartCoroutine(PushPlayerAway());
+                SpawnShamanDefense(3);
+                SpawnEnemies(1, 2);
+
+                attackPhase = 8;
+                beatCount = 0;
+                attacksDone = 0;
+
+                bpmInteract.TriggerNextPhase();
+                break;
+            case 8:
+                Debug.Log("Phase 9 Starting");
+                attackPhase = 9;
+                cutscenes[2].Invoke();
                 bpmInteract.TriggerNextPhase();
                 break;
         }
@@ -169,11 +195,6 @@ public class AlixBoss : EnemyBase
         SpawnEnemies(1, 2);
         numberOfProjectiles++;
         bpmInteract.TriggerNextPhase();
-    }
-
-    void TriggerDialogueBreak()
-    {
-        //interactManager.ForceDialogueInteract(dialogueScript);
     }
 
     private void FixedUpdate()
@@ -209,7 +230,6 @@ public class AlixBoss : EnemyBase
             beatCount = 0;  
         }
 
-        //Phase one actions
         if(attackPhase == 2)
         {
             Debug.Log("Phase One Attack Type: " + attackType);
@@ -230,51 +250,47 @@ public class AlixBoss : EnemyBase
             }
         }
 
+        if(attackPhase == 5)
+        {
+            if (attackType == 0 && attacksDone == 0)
+            {
+                StopAllCoroutines();
+                DestroyEnemies();
+                TeleportToCenter();
+                StartCoroutine(PushPlayerAway());
+                SpawnShamanDefense(2);
+            }
 
-        ////Phase Two actions
-        //if (health.GetHealthPercent() >= .33f)
-        //{
-        //    if (attackPhase == 2 && attackType == 0 && attacksDone == 0)
-        //    {
-        //        StopAllCoroutines();
-        //        DestroyEnemies();
-        //        TeleportToCenter();
-        //        StartCoroutine(PushPlayerAway());
-        //        SpawnShamanDefense(2);
-        //    }
+            if ( attackType == 1 && attacksDone == 0)
+            {
+                StopAllCoroutines();
+                DestroyEnemies();
+                Teleport();
+                SpawnEnemies(1, 2);
+            }
+        }
 
-        //    if (attackPhase == 2 && attackType == 1 && attacksDone == 0)
-        //    {
-        //        StopAllCoroutines();
-        //        DestroyEnemies();
-        //        Teleport();
-        //        SpawnEnemies(1, 2);
-        //    }
-        //}
+        if(attackPhase == 8)
+        {
+            if (attackType == 0 && attacksDone == 0)
+            {
+                StopAllCoroutines();
+                DestroyEnemies();
+                TeleportToCenter();
+                StartCoroutine(PushPlayerAway());
+                SpawnShamanDefense(3);
+                SpawnEnemies(1, 2);
+            }
 
-
-        ////Phase 3 Actions
-        //if (health.GetHealthPercent() >= 0f)
-        //{
-        //    if (attackPhase == 3 && attackType == 0 && attacksDone == 0)
-        //    {
-        //        StopAllCoroutines();
-        //        DestroyEnemies();
-        //        TeleportToCenter();
-        //        StartCoroutine(PushPlayerAway());
-        //        SpawnShamanDefense(3);
-        //        SpawnEnemies(1, 2);
-        //    }
-
-        //    if (attackPhase == 3 && attackType == 1 && attacksDone == 0)
-        //    {
-        //        StopAllCoroutines();
-        //        DestroyEnemies();
-        //        Teleport();
-        //        SpawnEnemies(1, 2);
-        //        SpawnEnemies(2, 1);
-        //    }
-        //}          
+            if (attackType == 1 && attacksDone == 0)
+            {
+                StopAllCoroutines();
+                DestroyEnemies();
+                Teleport();
+                SpawnEnemies(1, 2);
+                SpawnEnemies(2, 1);
+            }
+        }
     }
 
     public void ChangeColor(Color newColor)
@@ -297,10 +313,6 @@ public class AlixBoss : EnemyBase
         player.GetComponent<PlayerMovement>().controlable = false;
         player.GetComponent<Rigidbody2D>().AddForce((player.transform.position - transform.position).normalized * 40, ForceMode2D.Impulse);
         yield return new WaitForSeconds(.5f);
-        //if(attackPhase == 3 && !active)
-        //{
-        //    TriggerDialogueBreak();
-        //}
         player.GetComponent<PlayerMovement>().controlable = true;
     }
 
@@ -411,7 +423,6 @@ public class AlixBoss : EnemyBase
     #region Onslaught Methods
     void FireScatterOnslaught()
     {
-
         float angleStep = 360f / numberOfScatterProjectiles;
         float angle = 0f;
         for (int i = 0; i < numberOfScatterProjectiles; i++)
@@ -526,7 +537,7 @@ public class AlixBoss : EnemyBase
             PhaseTwoAttackRotation();
 
         }
-        else if (attackPhase == 3)
+        else if (attackPhase == 7)
         {
             PhaseThreeAttackRotation();
         }
@@ -544,7 +555,6 @@ public class AlixBoss : EnemyBase
                     chargeEffect.Stop();
                     TeleportToCenter();
                     FireScatterOnslaught();
-                    Debug.Log("Phase One Attacks");
                 }
                 break;
             case 1:
@@ -553,7 +563,7 @@ public class AlixBoss : EnemyBase
                     Teleport();
                     AddToAttacksDone();
                 }
-                if (beatCount % 4 == 0)
+                if (beatCount % 2 == 0)
                 {
                     FireSingleSlashOnslaught();
                 }
