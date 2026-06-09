@@ -9108,7 +9108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: -7720408383684513645, guid: 52da29d0bd4ad894c8202ada0d1f493d, type: 3}
-  poolSize: 20
+  poolSize: 50
 --- !u!4 &1559487400
 Transform:
   m_ObjectHideFlags: 0
@@ -9245,7 +9245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: -7720408383684513645, guid: d9c6cc685e457074ca8a4cb1c577a5c4, type: 3}
-  poolSize: 20
+  poolSize: 30
 --- !u!4 &1660051698
 Transform:
   m_ObjectHideFlags: 0
@@ -9551,6 +9551,52 @@ ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 2528120033004858638, guid: 157514ed347a68548b3789dd038b1989, type: 3}
   m_PrefabInstance: {fileID: 3777781801842756327}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1947935160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1947935162}
+  - component: {fileID: 1947935161}
+  m_Layer: 0
+  m_Name: Blast Wave Object Pool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1947935161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947935160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23b8c945f63f6374dab621aee0244950, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: -7720408383684513645, guid: 9a56679021e1ea142924bb612a9abd88, type: 3}
+  poolSize: 30
+--- !u!4 &1947935162
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947935160}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -106.74055, y: -15.16496, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1985376973
 GameObject:
   m_ObjectHideFlags: 0
@@ -9876,6 +9922,18 @@ PrefabInstance:
       propertyPath: cutscenes.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5103025091426464629, guid: 1bda0235fb99b7043968ff5b8d308ecd, type: 3}
+      propertyPath: shockOrbProjectilePool
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103025091426464629, guid: 1bda0235fb99b7043968ff5b8d308ecd, type: 3}
+      propertyPath: blastWaveProjectilePool
+      value: 
+      objectReference: {fileID: 1947935161}
+    - target: {fileID: 5103025091426464629, guid: 1bda0235fb99b7043968ff5b8d308ecd, type: 3}
+      propertyPath: onslaughtProjectilePool
+      value: 
+      objectReference: {fileID: 1660051697}
     - target: {fileID: 5103025091426464629, guid: 1bda0235fb99b7043968ff5b8d308ecd, type: 3}
       propertyPath: 'teleportPoints.Array.data[0]'
       value: 
@@ -15197,6 +15255,7 @@ SceneRoots:
   - {fileID: 788262607}
   - {fileID: 577779133}
   - {fileID: 1660051698}
+  - {fileID: 1947935162}
   - {fileID: 1559487400}
   - {fileID: 957743796}
   - {fileID: 249333025}

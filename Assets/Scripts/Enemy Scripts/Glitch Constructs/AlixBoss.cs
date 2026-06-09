@@ -421,6 +421,28 @@ public class AlixBoss : EnemyBase
     #endregion
 
     #region Onslaught Methods
+    void FireBlastWave()
+    {
+        float angleStep = 360f / numberOfScatterProjectiles;
+        float angle = 0f;
+        for (int i = 0; i < numberOfScatterProjectiles; i++)
+        {
+            float projectileDirXPosition = transform.position.x + Mathf.Sin((angle * Mathf.PI) / 180);
+            float projectileDirYPosition = transform.position.y + Mathf.Cos((angle * Mathf.PI) / 180);
+            Vector3 projectileVector = new Vector3(projectileDirXPosition, projectileDirYPosition, 0);
+            Vector3 projectileMoveDirection = (projectileVector - transform.position).normalized;
+
+            // Use the pool to get a projectile
+            Projectile proj = blastWaveProjectilePool.GetProjectile(
+                attackPoint.position + (projectileMoveDirection * 2),
+                Quaternion.LookRotation(Vector3.forward, projectileMoveDirection)
+            );
+            proj.Initialize(blastWaveProjectilePool, false, projectileMoveDirection);
+
+            angle += angleStep;
+        }
+    }
+
     void FireScatterOnslaught()
     {
         float angleStep = 360f / numberOfScatterProjectiles;
@@ -433,11 +455,11 @@ public class AlixBoss : EnemyBase
             Vector3 projectileMoveDirection = (projectileVector - transform.position).normalized;
 
             // Use the pool to get a projectile
-            Projectile proj = projectilePool.GetProjectile(
+            Projectile proj = onslaughtProjectilePool.GetProjectile(
                 attackPoint.position + (projectileMoveDirection * 4),
                 Quaternion.LookRotation(Vector3.forward, projectileMoveDirection)
             );
-            proj.Initialize(projectilePool, false, projectileMoveDirection);
+            proj.Initialize(onslaughtProjectilePool, false, projectileMoveDirection);
 
             angle += angleStep;
         }
@@ -456,11 +478,11 @@ public class AlixBoss : EnemyBase
             Vector2 pelletDir = rotation * direction;
 
             // Use the pool to get a projectile
-            Projectile pellet = projectilePool.GetProjectile(
+            Projectile pellet = onslaughtProjectilePool.GetProjectile(
                 (Vector2)transform.position + (direction * 4),
                 Quaternion.LookRotation(Vector3.forward, pelletDir)
             );
-            pellet.Initialize(projectilePool, false, pelletDir.normalized);
+            pellet.Initialize(onslaughtProjectilePool, false, pelletDir.normalized);
         }
     }
     #endregion
@@ -550,29 +572,42 @@ public class AlixBoss : EnemyBase
         switch(attackType)
         {
             case 0:
-                if(beatCount % 4 == 0)
+                if(beatCount % 8 == 0)
                 {
                     chargeEffect.Stop();
                     TeleportToCenter();
-                    FireScatterOnslaught();
+                    FireBlastWave();
+                }
+                if (beatCount % 4 == 0)
+                {
+                    FireSingleSlashOnslaught();
                 }
                 break;
             case 1:
-                if(beatCount % 8 == 0)
+                if (beatCount % 16 == 0)
                 {
-                    Teleport();
                     AddToAttacksDone();
                 }
-                if (beatCount % 2 == 0)
+                if (beatCount % 4 == 0)
+                {
+                    Teleport();
+
+                }
+                if (beatCount % 1 == 0)
                 {
                     FireSingleSlashOnslaught();
                 }
                 break;
             case 2:
-                if (beatCount % 4 == 0)
+                if(beatCount % 4 == 0)
+                {
+                    FireScatterOnslaught();
+                }
+                if (beatCount % 2 == 0)
                 {
                     TeleportToCenter();
                     SpawnShockwaveNearPlayer();
+                    
                 }
                 break;
         }
