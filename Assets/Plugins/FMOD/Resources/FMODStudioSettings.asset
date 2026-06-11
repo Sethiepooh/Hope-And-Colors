@@ -635,7 +635,8 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Background Music
-  Banks: []
+  Banks:
+  - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

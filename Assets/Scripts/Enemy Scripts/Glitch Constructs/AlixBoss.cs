@@ -11,7 +11,9 @@ public class AlixBoss : EnemyBase
 
     [SerializeField] Transform projectileSpawn;
     [SerializeField] GameObject projectile;
+    [SerializeField] GameObject orbLine;
     [SerializeField] ParticleSystem telegraphEffect;
+    bool alt;
 
     [Header("Projectile Pools")]
     [SerializeField] ProjectilePool onslaughtProjectilePool;
@@ -114,6 +116,7 @@ public class AlixBoss : EnemyBase
                 ChangeColor(defaultColor);
                 StartCoroutine(PushPlayerAway());
                 SpawnShamanDefense(1);
+                orbLine.SetActive(true);
 
                 attackPhase = 2;
                 beatCount = 0;
@@ -124,7 +127,7 @@ public class AlixBoss : EnemyBase
             case 2:
                 Debug.Log("Phase 3 Starting");
                 attackPhase = 3;
-                delayBeats = 34;
+                delayBeats = 35;
 
                 cutscenes[0].Invoke();
                 StartCoroutine(PushPlayerAway());
@@ -160,8 +163,8 @@ public class AlixBoss : EnemyBase
             case 6:
                 Debug.Log("Phase 7 Starting");
                 attackPhase = 7;
-                minigame[1].Invoke();
-                StartCoroutine(PushPlayerAway());
+                //minigame[1].Invoke();
+                //StartCoroutine(PushPlayerAway());
                 bpmInteract.TriggerNextPhase();
                 break;
             case 7:
@@ -240,10 +243,12 @@ public class AlixBoss : EnemyBase
                 TeleportToCenter();
                 StartCoroutine(PushPlayerAway());
                 SpawnShamanDefense(1);
+                orbLine.SetActive(true);
             }
 
             if (attackType == 1 && attacksDone == 0)
             {
+                orbLine.SetActive(false);
                 StopAllCoroutines();
                 DestroyEnemies();
                 Teleport();
@@ -259,6 +264,7 @@ public class AlixBoss : EnemyBase
                 TeleportToCenter();
                 StartCoroutine(PushPlayerAway());
                 SpawnShamanDefense(2);
+                orbLine.SetActive(true);
             }
 
             if ( attackType == 1 && attacksDone == 0)
@@ -267,6 +273,7 @@ public class AlixBoss : EnemyBase
                 DestroyEnemies();
                 Teleport();
                 SpawnEnemies(1, 2);
+                orbLine.SetActive(false);
             }
         }
 
@@ -280,6 +287,7 @@ public class AlixBoss : EnemyBase
                 StartCoroutine(PushPlayerAway());
                 SpawnShamanDefense(3);
                 SpawnEnemies(1, 2);
+                orbLine.SetActive(true);
             }
 
             if (attackType == 1 && attacksDone == 0)
@@ -289,6 +297,7 @@ public class AlixBoss : EnemyBase
                 Teleport();
                 SpawnEnemies(1, 2);
                 SpawnEnemies(2, 1);
+                orbLine.SetActive(false);
             }
         }
     }
@@ -421,6 +430,19 @@ public class AlixBoss : EnemyBase
     #endregion
 
     #region Onslaught Methods
+
+    void FireShockOrb()
+    {
+        Vector2 playerPos = player.transform.position;
+        Vector2 direction = (playerPos - (Vector2)transform.position).normalized;
+
+        Projectile proj = shockOrbProjectilePool.GetProjectile(
+            (Vector2)attackPoint.position + (direction * 4),
+            Quaternion.LookRotation(Vector3.forward, direction)
+        );
+        proj.Initialize(shockOrbProjectilePool, false, direction);
+    }
+
     void FireBlastWave()
     {
         float angleStep = 360f / numberOfScatterProjectiles;
@@ -572,15 +594,20 @@ public class AlixBoss : EnemyBase
         switch(attackType)
         {
             case 0:
-                if(beatCount % 8 == 0)
+                if(beatCount % 4 == 0)
                 {
                     chargeEffect.Stop();
                     TeleportToCenter();
-                    FireBlastWave();
-                }
-                if (beatCount % 4 == 0)
-                {
-                    FireSingleSlashOnslaught();
+
+                    alt = !alt;
+                    if (alt)
+                    {
+                        FireBlastWave();
+                    }
+                    else
+                    {
+                        FireSingleSlashOnslaught();
+                    }
                 }
                 break;
             case 1:
@@ -593,7 +620,7 @@ public class AlixBoss : EnemyBase
                     Teleport();
 
                 }
-                if (beatCount % 1 == 0)
+                if (beatCount % 2 == 0)
                 {
                     FireSingleSlashOnslaught();
                 }
@@ -606,8 +633,7 @@ public class AlixBoss : EnemyBase
                 if (beatCount % 2 == 0)
                 {
                     TeleportToCenter();
-                    SpawnShockwaveNearPlayer();
-                    
+                    SpawnShockwaveNearPlayer();                 
                 }
                 break;
         }
@@ -630,12 +656,15 @@ public class AlixBoss : EnemyBase
                 }
                 break;
             case 1:
-                if (beatCount % 8 == 0)
+                if (beatCount % 16 == 0)
                 {
-                    Teleport();
                     AddToAttacksDone();
                 }
-                if (beatCount % 4 == 0)
+                if(beatCount % 4 == 0)
+                {
+                    Teleport();
+                }
+                if (beatCount % 1 == 0)
                 {
                     FireSingleSlashOnslaught();
                 }
@@ -660,19 +689,23 @@ public class AlixBoss : EnemyBase
                 {
                     chargeEffect.Stop();
                     TeleportToCenter();
+                    FireBlastWave();
                 }
-                if (beatCount % 2 == 0)
+                if(beatCount % 2 == 0)
                 {
-                    FireScatterOnslaught();
+                    FireShockOrb();
                 }
                 break;
             case 1:
-                if (beatCount % 8 == 0)
+                if (beatCount % 16 == 0)
                 {
-                    Teleport();
                     AddToAttacksDone();
                 }
                 if (beatCount % 4 == 0)
+                {
+                    Teleport();
+                }
+                if (beatCount % 1 == 0)
                 {
                     FireSingleSlashOnslaught();
                 }
@@ -680,8 +713,13 @@ public class AlixBoss : EnemyBase
             case 2:
                 if (beatCount % 4 == 0)
                 {
+                    FireScatterOnslaught();
+                }
+                if (beatCount % 2 == 0)
+                {
                     TeleportToCenter();
                     ShockwaveRampage();
+                    SpawnShockwaveNearPlayer();
                 }
                 break;
         }

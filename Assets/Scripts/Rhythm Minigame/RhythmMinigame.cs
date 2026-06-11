@@ -3,6 +3,7 @@ using UnityEngine.Events;
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.InputSystem;
+using FMODUnity;
 
 public class RhythmMinigame : MonoBehaviour, IInteractable
 {
@@ -13,6 +14,7 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
 
     int patternIndex = -1;
     int nextNote = 0;
+    float totalCompletionPercent;
 
     [Header("Minigame Settings")]
     [SerializeField] float BPM;
@@ -47,6 +49,12 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
     public UnityEvent OnMinigameCompleted;
     public UnityEvent OnMinigameFailed;
 
+    [Header("SFX")]
+    [SerializeField] EventReference _beatSpawnSfx;
+    [SerializeField] EventReference _beatHitSfx;
+    [SerializeField] EventReference _beatEarlySfx;
+    [SerializeField] EventReference _beatMissSfx;
+
     private void Start()
     {
         foreach(RhythmPattern pattern in patternsInSequence)
@@ -80,28 +88,33 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         if(interactionManager.nearbyInteractable != this) return;
 
         if (interactionManager.lastInputDirection == InputDirectionEnum.InputDirection.None) return;
+        if (patternIndex < 0) return;
 
         if (interactionManager.lastInputDirection == patternsInSequence[patternIndex].GetCurrentBeat(nextNote).direction)
         {
             if(beatInputTimings[nextNote] < (patternsInSequence[patternIndex].patternDuration / 2))
             {
-                Debug.Log("Beat Hit! " + beatInputTimings[nextNote]);
+                //Debug.Log("Beat Hit! " + beatInputTimings[nextNote]);
                 onBeatMissed.Invoke();
+                if (!_beatMissSfx.IsNull) RuntimeManager.PlayOneShot(_beatMissSfx);
             }
             else if(beatInputTimings[nextNote] < ((patternsInSequence[patternIndex].patternDuration / 4) * 3))
             {
-                Debug.Log("Beat Hit! " + beatInputTimings[nextNote]);
+                //Debug.Log("Beat Hit! " + beatInputTimings[nextNote]);
                 onBeatEarly.Invoke();
+                if (!_beatEarlySfx.IsNull) RuntimeManager.PlayOneShot(_beatEarlySfx);
             }
             else
             {
                 Debug.Log("Beat Hit! " + beatInputTimings[nextNote]);
                 onBeatHit.Invoke();
+                if (!_beatHitSfx.IsNull) RuntimeManager.PlayOneShot(_beatHitSfx);
             }
         }
         else
         {
             onBeatMissed.Invoke();
+            if (!_beatMissSfx.IsNull) RuntimeManager.PlayOneShot(_beatMissSfx);
         }
         StopCoroutine(activeCoroutines[nextNote]);
         NextNote();
@@ -114,22 +127,36 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         {
             if (patternIndex >= patternsInSequence.Length - 1)
             {
-                Debug.Log("Minigame Completed!");
-                OnMinigameCompleted.Invoke();
-                EjectFromMinigame();
-                interactable = false;
-            }
-            else if (patternsInSequence[patternIndex].CalculateCompletionPercent() < .5f)
-            {
-                Debug.Log("Minigame Failed");
-                OnMinigameFailed.Invoke();
+                if (ValidateTotalCompletion())
+                {
+                    Debug.Log("Minigame Completed!");
+                    OnMinigameCompleted.Invoke();
+                }
+                else
+                {
+                    Debug.Log("Minigame Failed");
+                    OnMinigameFailed.Invoke();
+                }
                 EjectFromMinigame();
             }
             else
             {
                 NextPattern();
+
             }
         }
+    }
+
+    bool ValidateTotalCompletion()
+    {
+        float totalPercent = 0;
+        foreach (RhythmPattern pattern in patternsInSequence)
+        {
+            totalPercent += pattern.CalculateCompletionPercent();
+        }
+        totalCompletionPercent = totalPercent / patternsInSequence.Length;
+
+        return totalCompletionPercent >= .5f;
     }
 
     void EjectFromMinigame()
@@ -159,7 +186,7 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
 
         if (!activeInteraction) return;
 
-        if(waitingForDownbeat)
+        if (waitingForDownbeat)
         {
             if (eigthNoteIndex % 2 == 0)
             {
@@ -169,6 +196,7 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         }
         else
         {
+            if (patternIndex < 0) return;
             RhythmPatternBeat nextBeat = patternsInSequence[patternIndex].GetNextBeat(beatCount);
             if (nextBeat != null)
             {
@@ -194,6 +222,8 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
 
     public void AddToDisplayedBeats(RhythmPatternBeat beat)
     {
+        Debug.Log("Adding Beat: " + beat.beatType + " " + beat.direction);
+
         GameObject newBeat = Instantiate(inputPromptDisplay, inputPromptCenter.position, Quaternion.identity, inputPromptCenter);
         GameObject newBeatTimer = Instantiate(beatTimerDisplay, inputPromptCenter.position, Quaternion.identity, newBeat.transform);
 
@@ -204,6 +234,7 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         displayedBeatTimers.Add(newBeatTimer);
         beatInputTimings.Add(patternsInSequence[patternIndex].patternDuration);
         activeCoroutines.Add(StartCoroutine(HandleTimer(Vector3.one, beatInputTimings.Count - 1, newBeatTimer)));
+        if (!_beatSpawnSfx.IsNull) RuntimeManager.PlayOneShot(_beatSpawnSfx);
         RecenterBeats();
     }
 
@@ -267,6 +298,7 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         // Ensure final value is exact
         obj.transform.localScale = targetScale;
         onBeatMissed.Invoke();
+        if (!_beatMissSfx.IsNull) RuntimeManager.PlayOneShot(_beatMissSfx);
     }
 
     public void MissedBeat()
