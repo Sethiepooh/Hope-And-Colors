@@ -1,10 +1,12 @@
+using NUnit.Framework;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class Turret : EnemyBase
 {
     [SerializeField] GameObject projectile;
     [SerializeField] Transform firePoint;
-    [SerializeField] GameObject[] generators;
+    [SerializeField] List<GameObject> generators = new List<GameObject>();
 
     Vector3 playerPos;
     public TurretType intensity;
@@ -13,12 +15,6 @@ public class Turret : EnemyBase
         Easy,
         Medium,
         Hard
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
     }
 
     // Update is called once per frame
@@ -30,17 +26,55 @@ public class Turret : EnemyBase
         transform.rotation = Quaternion.LookRotation(Vector3.forward, offset);
     }
 
+    public void AddGenerator(GameObject generator)
+    {
+        generators.Add(generator);
+        switch (generators.Count)
+        {
+            case 1:
+                intensity = TurretType.Easy;
+                break;
+            case 2:
+                intensity = TurretType.Medium;
+                break;
+            case 3:
+                intensity = TurretType.Hard;
+                break;
+        }
+    }
+
     public void DeactivateTurret()
     {
+        int activeGenerators = 0;
         foreach (GameObject generator in generators)
         {
             if(generator.activeInHierarchy)
             {
-                return;
+                activeGenerators++;
             }
         }
-        active = false;
-        transform.parent.gameObject.SetActive(false);
+
+        if(activeGenerators == 0)
+        {
+            active = false;
+            health.onDeathEvent.Invoke();
+        }
+        else
+        {
+            switch (activeGenerators)
+            {
+                case 1:
+                    intensity = TurretType.Easy;
+                    break;
+                case 2:
+                    intensity = TurretType.Medium;
+                    break;
+                case 3:
+                    intensity = TurretType.Hard;
+                    break;
+            }
+            Debug.Log("Turret deactivated, remaining generators: " + activeGenerators + "New Intensity: " + intensity);
+        }
     }
 
     public override void Attack()
@@ -55,7 +89,7 @@ public class Turret : EnemyBase
     public override void AddToBeatCount()
     {
         beatCount++;
-        Debug.Log("Turret beat count: " + beatCount);
+        //Debug.Log("Turret beat count: " + beatCount);
 
         if (active)
         {

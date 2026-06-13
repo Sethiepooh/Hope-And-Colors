@@ -5,10 +5,15 @@ public class BeatPulse : MonoBehaviour
     [SerializeField] float pulseScale = 1.2f;
     [SerializeField] float returnSpeed = 5f;
     Vector3 originalScale;
+    bool scaleInitialized = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void OnEnable()
     {
-        originalScale = transform.localScale;
+        if(!scaleInitialized)
+        {
+            originalScale = transform.localScale;
+            scaleInitialized = true;
+        }
     }
 
     // Update is called once per frame

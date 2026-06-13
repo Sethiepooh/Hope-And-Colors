@@ -203,3 +203,31 @@ MonoBehaviour:
   OnMinigameFailed:
     m_PersistentCalls:
       m_Calls: []
+  _beatSpawnSfx:
+    Guid:
+      Data1: 1358776062
+      Data2: 1113455590
+      Data3: 1478855615
+      Data4: 1264859089
+    Path: event:/DDR Drum Hit
+  _beatHitSfx:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  _beatEarlySfx:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  _beatMissSfx:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 

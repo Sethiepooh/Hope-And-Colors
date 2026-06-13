@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7312282348359328174}
   - component: {fileID: 4723525568942836}
   - component: {fileID: 4823767565032269320}
+  - component: {fileID: -7267595613720370722}
   m_Layer: 6
   m_Name: Turret
   m_TagString: Enemy
@@ -105,9 +106,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   empowered: 0
+  attackColor: {r: 0, g: 0, b: 0, a: 0}
+  deathParticles: {fileID: 0}
   projectile: {fileID: 8608247141467209458, guid: 5fc164d93c9ff7446b45c0f230521b67, type: 3}
   firePoint: {fileID: 1418163218324396248}
-  projectilePool: {fileID: 0}
+  generators: []
   intensity: 0
 --- !u!114 &4823767565032269320
 MonoBehaviour:
@@ -123,6 +126,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pulseScale: 1.2
   returnSpeed: 5
+--- !u!114 &-7267595613720370722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825169678386118306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 1
+  currentHealth: 0
+  deathParticles: {fileID: 0}
+  damagable: 1
 --- !u!1 &1986348195293298727
 GameObject:
   m_ObjectHideFlags: 0

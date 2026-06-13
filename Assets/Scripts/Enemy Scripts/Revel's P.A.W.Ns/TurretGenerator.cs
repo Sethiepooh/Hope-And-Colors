@@ -22,6 +22,7 @@ public class TurretGenerator : EnemyBase, IProtector
     public void InitializeProteciton(EnemyBase enemy)
     {
         protectedEnemyBase = enemy;
+        protectedEnemyBase.GetComponent<Turret>().AddGenerator(this.gameObject);
         Debug.Log("Initializing protection for " + protectedEnemyBase.name);
     }
 
@@ -30,7 +31,7 @@ public class TurretGenerator : EnemyBase, IProtector
         if(protectedEnemyBase != null)
         {
             transform.gameObject.SetActive(false);
-            protectedEnemyBase.active = false;
+            protectedEnemyBase.GetComponent<Turret>().DeactivateTurret();
         }
     }    
 }

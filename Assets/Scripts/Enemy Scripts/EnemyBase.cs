@@ -87,7 +87,9 @@ public abstract class EnemyBase : MonoBehaviour
         active = false;
         sRend.enabled = false;
         var col = gameObject.GetComponent<Collider2D>();
-        col.enabled = false;
+
+        if (col != null)
+            col.enabled = false;
 
         if(deathParticles != null)
             deathParticles.Play();

@@ -342,6 +342,10 @@ public class RoomEncounterManager : MonoBehaviour
                             enemies[j].protectedEnemy = protectedEnemies[i].GetEnemyInstance();
                             protectedEnemies[i].AddProtector();
                             enemies[j].AddFuncToDeathEvent(protectedEnemies[i].RemoveProtector);
+                            if (enemies[i].protectorsActive < enemies[i].maxProtectorsAllowed)
+                            {
+                                i--;
+                            }
                             break;
                         }
                     }
@@ -445,14 +449,15 @@ public class RoomEncounterManager : MonoBehaviour
 
         //Protector Settings
         public bool isProtected;
-        [SerializeField] int maxProtectorsAllowed = 1;
-        int protectorsActive;
+        public int maxProtectorsAllowed = 1;
+        [HideInInspector]public int protectorsActive;
         [HideInInspector] public EnemyBase protectedEnemy;
 
         public void Initialize(RoomEncounterManager eMan)
         {
             encounterManager = eMan;
             enemyInstance = Instantiate(encounterManager.GetEnemyType(enemyType), spawnPoint.position, Quaternion.identity);
+            //enemyInstance.gameObject.transform.localScale = Vector3.one; // Ensure default scale
             enemyInstance.ManagerDeathEvent += HandleEnemyDeath;
             enemyInstance.Initialize(encounterManager.player, encounterManager.pulseManager, encounterManager.projectilePool, encounterManager, false);
 
@@ -548,6 +553,7 @@ public class RoomEncounterManager : MonoBehaviour
             if (protectorsActive < maxProtectorsAllowed)
             {
                 protectorsActive++;
+                Debug.Log("Adding protector to " + enemyType + ". Current protectors: " + protectorsActive + "/" + maxProtectorsAllowed);
             }
         }
 
@@ -561,6 +567,7 @@ public class RoomEncounterManager : MonoBehaviour
 
         public bool CanAddProtector()
         {
+            Debug.Log("Checking if protector can be added to " + enemyType + ". Current protectors: " + protectorsActive + "/" + maxProtectorsAllowed);
             return protectorsActive < maxProtectorsAllowed;
         }
     }
