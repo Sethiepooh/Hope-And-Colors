@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 
 public class RespawnManager : MonoBehaviour
@@ -14,6 +15,7 @@ public class RespawnManager : MonoBehaviour
     public int spawnIndex;
     public int lives = 3;
     public Image[] lifeCount;
+    [SerializeField] UnityEvent OnRespawn;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -75,5 +77,6 @@ public class RespawnManager : MonoBehaviour
 
         eManager.ResetSpawnableGroup(spawnIndex);
         eManager.ToggleSpawnableGroupActivation(spawnIndex, true);
+        OnRespawn.Invoke();
     }
 }
