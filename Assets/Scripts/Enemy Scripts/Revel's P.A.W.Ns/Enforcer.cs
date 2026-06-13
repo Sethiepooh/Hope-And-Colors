@@ -61,6 +61,7 @@ public class Enforcer : EnemyBase
 
     IEnumerator DashTowardsPlayer()
     {
+        rb.bodyType = RigidbodyType2D.Dynamic;
         Vector2 direction;
         if (!clutter)
         {
@@ -88,6 +89,7 @@ public class Enforcer : EnemyBase
         swing = false;
         rb.linearVelocity = Vector2.zero;
         tRend.emitting = false;
+        rb.bodyType = RigidbodyType2D.Kinematic;
     }
 
     public override void Attack()
@@ -111,6 +113,7 @@ public class Enforcer : EnemyBase
             if(beatCount %2 == 0 && beatCount < 9)
             {
                 sRend.color = attackColor;
+                StopAllCoroutines();
                 Attack();
             }
         }
