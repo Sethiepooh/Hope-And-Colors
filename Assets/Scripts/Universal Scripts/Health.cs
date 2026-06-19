@@ -63,7 +63,7 @@ public class Health : MonoBehaviour
 
             if (currentHealth <= 0)
             {
-                onDeathEvent.Invoke();
+                onDeathEvent?.Invoke();
             }
         }
     }

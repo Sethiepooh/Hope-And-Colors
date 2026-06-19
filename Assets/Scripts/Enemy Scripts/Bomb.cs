@@ -6,13 +6,21 @@ public class Bomb : BreakableObjectBase
     [Header("Bomb settings")]
     [SerializeField] ParticleSystem blastParticles;
     public float blastRadius;
+    Collider2D col;
 
     [SerializeField] GameObject projectile;
     [SerializeField] int projectileNum;
 
+    bool exploding;
+
+    private void Start()
+    {
+        col = GetComponent<Collider2D>();
+    }
+
     public void ScatterShot()
     {
-        
+        Debug.Log("ScatterShot");
         float angleStep = 360f / (float)projectileNum;
         float angle = 0f;
         for (int i = 0; i < projectileNum; i++)
@@ -30,14 +38,21 @@ public class Bomb : BreakableObjectBase
 
     public override void OnDeath()
     {
+        if(exploding) return;
+
         StartCoroutine(DeathBlast());
         ManagerDeathEvent.Invoke();
+        exploding = true;
+
     }
 
     IEnumerator DeathBlast()
     {
+        blastParticles.Play();
         deathParticles.Play();
         yield return new WaitForSeconds(2f);
+        col.enabled = false;
+        ScatterShot();
         Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, blastRadius);
         foreach (Collider2D target in targets)
         {

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3421081677284874455}
   - component: {fileID: 2368345608241294814}
   - component: {fileID: 2588723965038241073}
-  - component: {fileID: 6144554763951469995}
+  - component: {fileID: 6978818018960487279}
   m_Layer: 8
   m_Name: Melodium Crystal
   m_TagString: Obstacle
@@ -138,81 +138,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onDeathEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6144554763951469995}
-        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
-        m_MethodName: Spawn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6144554763951469995}
-        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
-        m_MethodName: Spawn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6144554763951469995}
-        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
-        m_MethodName: Spawn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 6144554763951469995}
-        m_TargetAssemblyTypeName: Spawner, Assembly-CSharp
-        m_MethodName: Spawn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2588723965038241073}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: HandleObstacleDeath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onDamageEvent:
-    m_PersistentCalls:
-      m_Calls: []
   maxHealth: 50
-  healthBar: {fileID: 0}
-  isPlayer: 0
-  isBoss: 0
+  currentHealth: 0
   deathParticles: {fileID: 0}
-  blastParticles: {fileID: 0}
-  blastRadius: 0
   damagable: 1
---- !u!114 &6144554763951469995
+--- !u!114 &6978818018960487279
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,4 +154,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ca5d2af57ace40468a91c1c966c8b12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ManagerDeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  deathParticles: {fileID: 0}
   spawnPrefab: {fileID: 3437416606067499166, guid: 429c443eb8b08a245a12d1d8710d830b, type: 3}
+  col: {fileID: 0}
+  minSpawnAmount: 2
+  maxSpawnAmount: 3

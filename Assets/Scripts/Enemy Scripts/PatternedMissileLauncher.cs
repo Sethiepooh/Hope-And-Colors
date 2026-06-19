@@ -12,6 +12,7 @@ public class PatternedMissileLauncher : MonoBehaviour
     [SerializeField] GameObject player;
 
     [Header("Missile Settings")]
+    [SerializeField] int startupDelayBeats;
     [SerializeField] Transform[] missileSpawnPoints;
     [SerializeField] GameObject[] telegraphObjects;
     [SerializeField] MissilePattern[] missilePatterns;
@@ -28,15 +29,31 @@ public class PatternedMissileLauncher : MonoBehaviour
         }
     }
 
-    public void Activate()
+    public void ToggleActivate(bool state)
     {
-        active = true;
-        GetNewPattern();
+        active = state;
+        if (active)
+        {
+            GetNewPattern();
+        }
+        else
+        {
+            for (int i = 0; i < telegraphObjects.Length; i++)
+            {
+                telegraphObjects[i].SetActive(false);
+            }
+        }
     }
 
     public void AddBeatToAllMissiles()
     {
         if(!active) return;
+
+        if (startupDelayBeats > 0)
+        {
+            startupDelayBeats--;
+            return;
+        }
 
         if (CheckAllFired())
         {

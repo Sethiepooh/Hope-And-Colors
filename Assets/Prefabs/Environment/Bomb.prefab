@@ -169,55 +169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onDeathEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8547791182588152964}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: DeactivateCollision
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8547791182588152964}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: HandleBombDeath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onDamageEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3346215899805471154}
-        m_TargetAssemblyTypeName: Bomb, Assembly-CSharp
-        m_MethodName: ScatterShot
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   maxHealth: 1
-  healthBar: {fileID: 0}
-  isPlayer: 0
-  isBoss: 0
+  currentHealth: 0
   deathParticles: {fileID: 1242498882784088164}
-  blastParticles: {fileID: 7740997876832393360}
-  blastRadius: 4
   damagable: 1
 --- !u!114 &3346215899805471154
 MonoBehaviour:
@@ -231,6 +185,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a8ddd992fa68f84caa3f5a71e913e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ManagerDeathEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  deathParticles: {fileID: 1242498882784088164}
+  blastParticles: {fileID: 7740997876832393360}
+  blastRadius: 4
   projectile: {fileID: 8608247141467209458, guid: 4b96b9563396aa74ba9a3fcf2de4447c, type: 3}
   projectileNum: 4
 --- !u!1 &7569980808906041635

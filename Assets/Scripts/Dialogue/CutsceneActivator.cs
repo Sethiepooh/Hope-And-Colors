@@ -133,7 +133,12 @@ public class CutsceneActivator : MonoBehaviour, IInteractable
                     dialogueSystem.PlaySoundEffect(cutsceneData[currentLine].GetSoundEffect());
 
                 if (cutsceneData[currentLine].GetAction() != ActionEnum.Action.None)
+                {
+                    if (cutsceneData[currentLine].activateBeforeAction)
+                        cutsceneData[currentLine].actionTarget.SetActive(true);
+
                     dialogueSystem.HandleAction(cutsceneData[currentLine].actionTarget, cutsceneData[currentLine].endPos.position, cutsceneData[currentLine].actionDuration);
+                }
 
                 if (cutsceneData[currentLine].GetCameraState() != CameraEnum.ChangeCameraState.None)
                 {

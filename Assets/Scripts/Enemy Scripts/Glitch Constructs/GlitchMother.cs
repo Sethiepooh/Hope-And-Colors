@@ -16,8 +16,12 @@ public class GlitchMother : EnemyBase
     // Update is called once per frame
     void Update()
     {
-        Vector3 offset = player.transform.position - transform.position;
-        transform.rotation = Quaternion.LookRotation(Vector3.forward, offset);
+        if(player != null)
+        {
+            Vector3 offset = player.transform.position - transform.position;
+            transform.rotation = Quaternion.LookRotation(Vector3.forward, offset);
+        }
+            
     }
 
     public override void Attack()

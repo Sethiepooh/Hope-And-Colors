@@ -13,6 +13,7 @@ public class CutsceneData
 
     [Header("Action Settings")]
     [SerializeField] ActionEnum.Action action;
+    public bool activateBeforeAction;
     public GameObject actionTarget;
     public Transform endPos;
     public float actionDuration;

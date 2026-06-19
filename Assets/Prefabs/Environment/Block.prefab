@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5369334857042884244}
   - component: {fileID: 2604972544175269884}
   - component: {fileID: 3201540153647927793}
+  - component: {fileID: 4994589175552463380}
   m_Layer: 8
   m_Name: Block
   m_TagString: Obstacle
@@ -148,32 +149,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onDeathEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3201540153647927793}
-        m_TargetAssemblyTypeName: Health, Assembly-CSharp
-        m_MethodName: HandleObstacleDeath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  onDamageEvent:
+  maxHealth: 20
+  currentHealth: 0
+  deathParticles: {fileID: 4244326570544176369}
+  damagable: 1
+--- !u!114 &4994589175552463380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5120705075066689590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de46b233b0e6c8c479a9240d4cc7a68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ManagerDeathEvent:
     m_PersistentCalls:
       m_Calls: []
-  maxHealth: 20
-  healthBar: {fileID: 0}
-  isPlayer: 0
-  isBoss: 0
   deathParticles: {fileID: 4244326570544176369}
-  blastParticles: {fileID: 0}
-  blastRadius: 0
-  damagable: 1
 --- !u!1001 &4241033556121513955
 PrefabInstance:
   m_ObjectHideFlags: 0

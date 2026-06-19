@@ -40,7 +40,7 @@ public class ThorneBoss : EnemyBase
     [SerializeField] JadeMissile greatswordInstance;
 
     [Header("Melodium Crystal Spawn")]
-    [SerializeField] Spawner melodiumSpawner;
+    [SerializeField] Crystal melodiumSpawner;
 
     [Header("Effects")]
     [SerializeField] ParticleSystem chargeEffect;
