@@ -90,7 +90,7 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         bpmInteract = GameObject.Find("Rhythm Manager").GetComponent<BPMInteract>();
-        enemyManager = GameObject.FindWithTag("EnemyManager").GetComponent<EnemyManager>();
+        enemyManager = GameObject.FindWithTag("EnemyManager")?.GetComponent<EnemyManager>();
     }
 
     // Update is called once per frame

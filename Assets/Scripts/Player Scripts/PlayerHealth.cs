@@ -16,7 +16,7 @@ public class PlayerHealth : MonoBehaviour
     private void Awake()
     {
         sRend = GetComponent<SpriteRenderer>();
-        r_Man = GameObject.FindWithTag("RespawnManager").GetComponent<RespawnManager>();
+        r_Man = GameObject.FindWithTag("RespawnManager")?.GetComponent<RespawnManager>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

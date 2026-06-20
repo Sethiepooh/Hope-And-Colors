@@ -24,9 +24,18 @@ public class InteractionManager : MonoBehaviour
 
     private void Update()
     {
-        if(nearbyInteractable == null)
+        //Debug.Log(nearbyInteractable);
+        if (nearbyInteractable == null)
         {
             FindNearbyInteractables();
+        }
+        else
+        {
+            Collider2D[] nearby = Physics2D.OverlapCircleAll(transform.position, interactionRadius);
+            if(!CheckForInteractables(nearby))
+            {
+                nearbyInteractable = null;
+            }
         }
 
         if (nearbyInteractable != null && nearbyInteractable.interactable && !nearbyInteractable.activeInteraction)
@@ -122,5 +131,17 @@ public class InteractionManager : MonoBehaviour
     {
         Gizmos.color = Color.cyan;
         Gizmos.DrawWireSphere(transform.position, interactionRadius);
+    }
+
+    bool CheckForInteractables(Collider2D[] nearby)
+    {
+        foreach (var col in nearby)
+        {
+            if (col.GetComponent<IInteractable>() != null)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

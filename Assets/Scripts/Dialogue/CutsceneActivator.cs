@@ -167,6 +167,7 @@ public class CutsceneActivator : MonoBehaviour, IInteractable
             activeInteraction = false;
             currentLine = 0;
             dialogueSystem.ToggleFreezePlayer(false);
+            dialogueSystem.SetInteractable(null);
             if (DisableAfterTrigger)
             {
                 interactable = false;

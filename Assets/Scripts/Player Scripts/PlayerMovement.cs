@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Dash variables
     [Header("Dash Stats")]
+    public bool dashDisabled;
     public float dashSpeed;
     public float dashTime;
     public float dashCooldown;
@@ -94,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Sprint(InputAction.CallbackContext context)
     {
-        if(!slowed) return;
+        if(slowed) return;
 
         if (context.performed)
         {
@@ -123,6 +124,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Dash(InputAction.CallbackContext context)
     {
+        if(dashDisabled) return;
         if (context.performed && !freeze && canDash && controlable)
         {
             StartCoroutine(HandleDash());
