@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 6b0d9d927401f4c49afa9e961c8013b0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -881821931908883079
+    second: H&C Logo_0
+  - first:
+      213: -3299661678356303600
+    second: H&C Logo_1
+  - first:
+      213: 4727926278304569264
+    second: H&C Logo_2
+  - first:
+      213: 8471221552357715273
+    second: H&C Logo_3
+  - first:
+      213: -7261509670171233288
+    second: H&C Logo_4
+  - first:
+      213: -3794244900258675517
+    second: H&C Logo_5
+  - first:
+      213: -2311495976097534748
+    second: H&C Logo_6
+  - first:
+      213: 3108534160303507410
+    second: H&C Logo_7
+  - first:
+      213: 191388396420705019
+    second: H&C Logo_8
+  - first:
+      213: -401445183675386871
+    second: H&C Logo_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: H&C Logo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1789
+        width: 1324
+        height: 1573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d1c6100a323c3f0800000000000000
+      internalID: -881821931908883079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H&C Logo_1
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 1789
+        width: 1179
+        height: 1573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0117a969f2f3532d0800000000000000
+      internalID: -3299661678356303600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H&C Logo_2
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 1789
+        width: 1253
+        height: 1573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b7149686e7fc9140800000000000000
+      internalID: 4727926278304569264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H&C Logo_3
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 1789
+        width: 1182
+        height: 1573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d2ae19e13df8570800000000000000
+      internalID: 8471221552357715273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H&C Logo_4
+      rect:
+        serializedVersion: 2
+        x: 5257
+        y: 1789
+        width: 1407
+        height: 1603
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f331689d6fe93b90800000000000000
+      internalID: -7261509670171233288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H&C Logo_5
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 0
+        width: 1412
+        height: 1630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c48e31bd52285bc0800000000000000
+      internalID: -3794244900258675517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H&C Logo_6
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 0
+        width: 1509
+        height: 1630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec26f418aaebefd0800000000000000
+      internalID: -2311495976097534748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H&C Logo_7
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 0
+        width: 912
+        height: 1630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7ce0d595bb32b20800000000000000
+      internalID: 3108534160303507410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H&C Logo_8
+      rect:
+        serializedVersion: 2
+        x: 3421
+        y: 0
+        width: 1301
+        height: 1630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfaa9c68bb2f7a200800000000000000
+      internalID: 191388396420705019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: H&C Logo_9
+      rect:
+        serializedVersion: 2
+        x: 4486
+        y: 0
+        width: 2639
+        height: 1630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 904bc3e7bb7cd6af0800000000000000
+      internalID: -401445183675386871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      H&C Logo_0: -881821931908883079
+      H&C Logo_1: -3299661678356303600
+      H&C Logo_2: 4727926278304569264
+      H&C Logo_3: 8471221552357715273
+      H&C Logo_4: -7261509670171233288
+      H&C Logo_5: -3794244900258675517
+      H&C Logo_6: -2311495976097534748
+      H&C Logo_7: 3108534160303507410
+      H&C Logo_8: 191388396420705019
+      H&C Logo_9: -401445183675386871
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

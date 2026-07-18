@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 094a758208d0f5841b1b4c42b2993451
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8527198988014577631
+    second: Inspired Difficulty Button_0
+  - first:
+      213: 7435472073954828982
+    second: Inspired Difficulty Button_1
+  - first:
+      213: -5212956896195553649
+    second: Inspired Difficulty Button_2
+  - first:
+      213: -2416732957391116663
+    second: Inspired Difficulty Button_3
+  - first:
+      213: -8097963528088028656
+    second: Inspired Difficulty Button_4
+  - first:
+      213: 3289461370664515671
+    second: Inspired Difficulty Button_5
+  - first:
+      213: -2293958192476584740
+    second: Inspired Difficulty Button_6
+  - first:
+      213: 6534571158283281696
+    second: Inspired Difficulty Button_7
+  - first:
+      213: 2520581463355354294
+    second: Inspired Difficulty Button_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Inspired Difficulty Button_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 37
+        width: 154
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 128125e03bd49a980800000000000000
+      internalID: -8527198988014577631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Difficulty Button_1
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 318
+        width: 77
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b22a69d47a103760800000000000000
+      internalID: 7435472073954828982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Difficulty Button_2
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 37
+        width: 288
+        height: 363
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8657d4825bd7a7b0800000000000000
+      internalID: -5212956896195553649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Difficulty Button_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 37
+        width: 277
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98629bdfd2a067ed0800000000000000
+      internalID: -2416732957391116663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Difficulty Button_4
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 37
+        width: 254
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a7e3873114e9f80800000000000000
+      internalID: -8097963528088028656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Difficulty Button_5
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 0
+        width: 273
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 758f3d430b386ad20800000000000000
+      internalID: 3289461370664515671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Difficulty Button_6
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 37
+        width: 128
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd406d78d293a20e0800000000000000
+      internalID: -2293958192476584740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Difficulty Button_7
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 37
+        width: 277
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025ecf8c8d57faa50800000000000000
+      internalID: 6534571158283281696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Difficulty Button_8
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 37
+        width: 246
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bceabe7c77eaf220800000000000000
+      internalID: 2520581463355354294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Inspired Difficulty Button_0: -8527198988014577631
+      Inspired Difficulty Button_1: 7435472073954828982
+      Inspired Difficulty Button_2: -5212956896195553649
+      Inspired Difficulty Button_3: -2416732957391116663
+      Inspired Difficulty Button_4: -8097963528088028656
+      Inspired Difficulty Button_5: 3289461370664515671
+      Inspired Difficulty Button_6: -2293958192476584740
+      Inspired Difficulty Button_7: 6534571158283281696
+      Inspired Difficulty Button_8: 2520581463355354294
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

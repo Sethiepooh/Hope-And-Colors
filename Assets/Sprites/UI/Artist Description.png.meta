@@ -1,0 +1,1599 @@
+fileFormatVersion: 2
+guid: cc62fc21cd11f1344a03b681a0d2357f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2831741769553865100
+    second: Artist Description_0
+  - first:
+      213: -1698218714762228159
+    second: Artist Description_1
+  - first:
+      213: -8771983337003548103
+    second: Artist Description_2
+  - first:
+      213: -3669934364901671677
+    second: Artist Description_3
+  - first:
+      213: -9177902548318870950
+    second: Artist Description_4
+  - first:
+      213: -7037982509414217648
+    second: Artist Description_5
+  - first:
+      213: -7845105175148440482
+    second: Artist Description_6
+  - first:
+      213: 977931169582141317
+    second: Artist Description_7
+  - first:
+      213: -8641257057077850110
+    second: Artist Description_8
+  - first:
+      213: 2733476102835617162
+    second: Artist Description_9
+  - first:
+      213: -5315096231206729242
+    second: Artist Description_10
+  - first:
+      213: -5618959212297798390
+    second: Artist Description_11
+  - first:
+      213: 8942103773645998219
+    second: Artist Description_12
+  - first:
+      213: 718202013868040711
+    second: Artist Description_13
+  - first:
+      213: -5422530066703258361
+    second: Artist Description_14
+  - first:
+      213: 8437552882781903817
+    second: Artist Description_15
+  - first:
+      213: -2569937254017479649
+    second: Artist Description_16
+  - first:
+      213: -6644150961495723957
+    second: Artist Description_17
+  - first:
+      213: -1139524101429935355
+    second: Artist Description_18
+  - first:
+      213: -516461206682639071
+    second: Artist Description_19
+  - first:
+      213: -229981765022775400
+    second: Artist Description_20
+  - first:
+      213: 8696910384295395135
+    second: Artist Description_21
+  - first:
+      213: 8302032769257394533
+    second: Artist Description_22
+  - first:
+      213: -4559956557423545832
+    second: Artist Description_23
+  - first:
+      213: -2056211112805879342
+    second: Artist Description_24
+  - first:
+      213: 8655745887608618378
+    second: Artist Description_25
+  - first:
+      213: 1576023108516766433
+    second: Artist Description_26
+  - first:
+      213: 4529681064616998096
+    second: Artist Description_27
+  - first:
+      213: -5479302381702796233
+    second: Artist Description_28
+  - first:
+      213: -6617116864904692690
+    second: Artist Description_29
+  - first:
+      213: -3587028276417570528
+    second: Artist Description_30
+  - first:
+      213: -1315705961028236641
+    second: Artist Description_31
+  - first:
+      213: 7342823312784108807
+    second: Artist Description_32
+  - first:
+      213: 4054127060377902413
+    second: Artist Description_33
+  - first:
+      213: -1306777185114260296
+    second: Artist Description_34
+  - first:
+      213: -5473995905381411809
+    second: Artist Description_35
+  - first:
+      213: -8312658882950993712
+    second: Artist Description_36
+  - first:
+      213: 8567135279661648053
+    second: Artist Description_37
+  - first:
+      213: -6442586920455158802
+    second: Artist Description_38
+  - first:
+      213: -8414642140385915695
+    second: Artist Description_39
+  - first:
+      213: -6630212459584892221
+    second: Artist Description_40
+  - first:
+      213: 3624847720390518394
+    second: Artist Description_41
+  - first:
+      213: 7290284608026114720
+    second: Artist Description_42
+  - first:
+      213: -7971332138290823875
+    second: Artist Description_43
+  - first:
+      213: 8626077021638926663
+    second: Artist Description_44
+  - first:
+      213: -9158468099030309925
+    second: Artist Description_45
+  - first:
+      213: -4002260153299606344
+    second: Artist Description_46
+  - first:
+      213: 310468212638329115
+    second: Artist Description_47
+  - first:
+      213: -3196461948863915126
+    second: Artist Description_48
+  - first:
+      213: 6794680456984902044
+    second: Artist Description_49
+  - first:
+      213: -3956497920262106669
+    second: Artist Description_50
+  - first:
+      213: -2557490588754720456
+    second: Artist Description_51
+  - first:
+      213: -7938328045886259210
+    second: Artist Description_52
+  - first:
+      213: -7223370363478155287
+    second: Artist Description_53
+  - first:
+      213: 8110149256158325404
+    second: Artist Description_54
+  - first:
+      213: 5952155753708795894
+    second: Artist Description_55
+  - first:
+      213: -5023914356054830066
+    second: Artist Description_56
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Artist Description_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 449
+        width: 99
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4761b122dd1a3b8d0800000000000000
+      internalID: -2831741769553865100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_1
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14e4da39317be68e0800000000000000
+      internalID: -1698218714762228159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_2
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 932024681a7a34680800000000000000
+      internalID: -8771983337003548103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_3
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 449
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30d7907a326c11dc0800000000000000
+      internalID: -3669934364901671677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_4
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a522d48424a81a080800000000000000
+      internalID: -9177902548318870950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_5
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05804fe4230145e90800000000000000
+      internalID: -7037982509414217648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_6
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e54d2b98866902390800000000000000
+      internalID: -7845105175148440482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_7
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 449
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58fc9b9a73f429d00800000000000000
+      internalID: 977931169582141317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_8
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 200990c6d76141880800000000000000
+      internalID: -8641257057077850110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_9
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d398f68024fe520800000000000000
+      internalID: 2733476102835617162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_10
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9c7e7632cfc36b0800000000000000
+      internalID: -5315096231206729242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_11
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0db49fed527502b0800000000000000
+      internalID: -5618959212297798390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_12
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 449
+        width: 100
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8889dc310cb81c70800000000000000
+      internalID: 8942103773645998219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_13
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70223992de097f900800000000000000
+      internalID: 718202013868040711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_14
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70de64652ad4fb4b0800000000000000
+      internalID: -5422530066703258361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_15
+      rect:
+        serializedVersion: 2
+        x: 1933
+        y: 449
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cbd9cf84a5381570800000000000000
+      internalID: 8437552882781903817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_16
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1cce3ffeafb55cd0800000000000000
+      internalID: -2569937254017479649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_17
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b403af917eb3bc3a0800000000000000
+      internalID: -6644150961495723957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_18
+      rect:
+        serializedVersion: 2
+        x: 2277
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 503c5410ed89f20f0800000000000000
+      internalID: -1139524101429935355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_19
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1256963d44925d8f0800000000000000
+      internalID: -516461206682639071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_20
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 449
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 897000f9dc0feccf0800000000000000
+      internalID: -229981765022775400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_21
+      rect:
+        serializedVersion: 2
+        x: 2689
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f35539ae1a1b870800000000000000
+      internalID: 8696910384295395135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_22
+      rect:
+        serializedVersion: 2
+        x: 2867
+        y: 449
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5615d3d41deb63370800000000000000
+      internalID: 8302032769257394533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_23
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8127e83bba7c7b0c0800000000000000
+      internalID: -4559956557423545832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_24
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1befd13eed673e0800000000000000
+      internalID: -2056211112805879342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_25
+      rect:
+        serializedVersion: 2
+        x: 3217
+        y: 449
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8db5f056036f1870800000000000000
+      internalID: 8655745887608618378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_26
+      rect:
+        serializedVersion: 2
+        x: 3267
+        y: 449
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e2e2f4caa82fd510800000000000000
+      internalID: 1576023108516766433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_27
+      rect:
+        serializedVersion: 2
+        x: 3383
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d43f42dde8acde30800000000000000
+      internalID: 4529681064616998096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_28
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 449
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c27a1b38b95f3b0800000000000000
+      internalID: -5479302381702796233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_29
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 16
+        width: 68
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2cfb1635474b24a0800000000000000
+      internalID: -6617116864904692690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_30
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 16
+        width: 100
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02959d899c0583ec0800000000000000
+      internalID: -3587028276417570528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_31
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a4c0c366cadbde0800000000000000
+      internalID: -1315705961028236641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_32
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d24f626e2f6e560800000000000000
+      internalID: 7342823312784108807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_33
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d9f1ce417234830800000000000000
+      internalID: 4054127060377902413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_34
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 0
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bcfda0e2156ddde0800000000000000
+      internalID: -1306777185114260296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_35
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f145ccdf9b57804b0800000000000000
+      internalID: -5473995905381411809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_36
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d8e5bec9c083ac80800000000000000
+      internalID: -8312658882950993712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_37
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b803fe652494e670800000000000000
+      internalID: 8567135279661648053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_38
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 16
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee341b384555796a0800000000000000
+      internalID: -6442586920455158802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_39
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 16
+        width: 100
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dcc3465e8f293b80800000000000000
+      internalID: -8414642140385915695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_40
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c2d21975e0ccf3a0800000000000000
+      internalID: -6630212459584892221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_41
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a76e2c2ebcb0e4230800000000000000
+      internalID: 3624847720390518394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_42
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aaf4e4b93b4c2560800000000000000
+      internalID: 7290284608026114720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_43
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d358677a3206190800000000000000
+      internalID: -7971332138290823875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_44
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741a2f7295bf5b770800000000000000
+      internalID: 8626077021638926663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_45
+      rect:
+        serializedVersion: 2
+        x: 2052
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd32d8e99c596e080800000000000000
+      internalID: -9158468099030309925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_46
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b460ef689d1578c0800000000000000
+      internalID: -4002260153299606344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_47
+      rect:
+        serializedVersion: 2
+        x: 2219
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19ab58c1310f4400800000000000000
+      internalID: 310468212638329115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_48
+      rect:
+        serializedVersion: 2
+        x: 2336
+        y: 16
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8bd9e70bc2e3a3d0800000000000000
+      internalID: -3196461948863915126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_49
+      rect:
+        serializedVersion: 2
+        x: 2452
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99bfd830ed8b4e50800000000000000
+      internalID: 6794680456984902044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_50
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1943c9a12b719c0800000000000000
+      internalID: -3956497920262106669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_51
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 839ced41cd7f18cd0800000000000000
+      internalID: -2557490588754720456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_52
+      rect:
+        serializedVersion: 2
+        x: 2736
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ffbd6a83b465d190800000000000000
+      internalID: -7938328045886259210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_53
+      rect:
+        serializedVersion: 2
+        x: 2914
+        y: 16
+        width: 100
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9efdccbecee61cb90800000000000000
+      internalID: -7223370363478155287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_54
+      rect:
+        serializedVersion: 2
+        x: 3030
+        y: 16
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9a27b077c90d8070800000000000000
+      internalID: 8110149256158325404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_55
+      rect:
+        serializedVersion: 2
+        x: 3147
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f73c934f1e4a9250800000000000000
+      internalID: 5952155753708795894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Artist Description_56
+      rect:
+        serializedVersion: 2
+        x: 3197
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e04dd51d288774ab0800000000000000
+      internalID: -5023914356054830066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Artist Description_0: -2831741769553865100
+      Artist Description_1: -1698218714762228159
+      Artist Description_10: -5315096231206729242
+      Artist Description_11: -5618959212297798390
+      Artist Description_12: 8942103773645998219
+      Artist Description_13: 718202013868040711
+      Artist Description_14: -5422530066703258361
+      Artist Description_15: 8437552882781903817
+      Artist Description_16: -2569937254017479649
+      Artist Description_17: -6644150961495723957
+      Artist Description_18: -1139524101429935355
+      Artist Description_19: -516461206682639071
+      Artist Description_2: -8771983337003548103
+      Artist Description_20: -229981765022775400
+      Artist Description_21: 8696910384295395135
+      Artist Description_22: 8302032769257394533
+      Artist Description_23: -4559956557423545832
+      Artist Description_24: -2056211112805879342
+      Artist Description_25: 8655745887608618378
+      Artist Description_26: 1576023108516766433
+      Artist Description_27: 4529681064616998096
+      Artist Description_28: -5479302381702796233
+      Artist Description_29: -6617116864904692690
+      Artist Description_3: -3669934364901671677
+      Artist Description_30: -3587028276417570528
+      Artist Description_31: -1315705961028236641
+      Artist Description_32: 7342823312784108807
+      Artist Description_33: 4054127060377902413
+      Artist Description_34: -1306777185114260296
+      Artist Description_35: -5473995905381411809
+      Artist Description_36: -8312658882950993712
+      Artist Description_37: 8567135279661648053
+      Artist Description_38: -6442586920455158802
+      Artist Description_39: -8414642140385915695
+      Artist Description_4: -9177902548318870950
+      Artist Description_40: -6630212459584892221
+      Artist Description_41: 3624847720390518394
+      Artist Description_42: 7290284608026114720
+      Artist Description_43: -7971332138290823875
+      Artist Description_44: 8626077021638926663
+      Artist Description_45: -9158468099030309925
+      Artist Description_46: -4002260153299606344
+      Artist Description_47: 310468212638329115
+      Artist Description_48: -3196461948863915126
+      Artist Description_49: 6794680456984902044
+      Artist Description_5: -7037982509414217648
+      Artist Description_50: -3956497920262106669
+      Artist Description_51: -2557490588754720456
+      Artist Description_52: -7938328045886259210
+      Artist Description_53: -7223370363478155287
+      Artist Description_54: 8110149256158325404
+      Artist Description_55: 5952155753708795894
+      Artist Description_56: -5023914356054830066
+      Artist Description_6: -7845105175148440482
+      Artist Description_7: 977931169582141317
+      Artist Description_8: -8641257057077850110
+      Artist Description_9: 2733476102835617162
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

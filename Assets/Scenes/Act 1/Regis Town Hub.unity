@@ -699,7 +699,7 @@ MonoBehaviour:
   triggerType: 3
   DisableAfterTrigger: 0
   cutsceneData:
-  - dialogueLine: fallback
+  - dialogueLine: '*The TV flickers in static*'
     DialogueUIState: 1
     unskippable: 0
     goToNextLineAutomatically: 0
@@ -715,7 +715,67 @@ MonoBehaviour:
     cameraFocus: 0
     changeScene: 0
     sceneIndex: 0
-    speakerData: []
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 0.83921576, g: 0.47450984, b: 0.7411765, a: 1}
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Oh crap I think I broke it
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 0.83921576, g: 0.47450984, b: 0.7411765, a: 1}
+    speaker: 0
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: I should probably get moving before someone notices.
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 0.83921576, g: 0.47450984, b: 0.7411765, a: 1}
     speaker: 0
     speakerExpression: 0
     screenEffect: 0
@@ -1789,6 +1849,312 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1386590181}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1 &209492769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 209492770}
+  - component: {fileID: 209492772}
+  - component: {fileID: 209492771}
+  m_Layer: 0
+  m_Name: Miiner Trio Convo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &209492770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209492769}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 89.34, y: -44.17, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 251798113}
+  - {fileID: 527627818}
+  - {fileID: 857850149}
+  m_Father: {fileID: 681372194}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &209492771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209492769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d4b847116ebc7469f1f90ebc3d366f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactable: 1
+  triggerType: 0
+  DisableAfterTrigger: 0
+  cutsceneData:
+  - dialogueLine: Is it just me or is Chief Horner really on edge today?
+    DialogueUIState: 0
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Must be that kid who tore up Nakamura's backyard
+    DialogueUIState: 0
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: You kidding me? He's all bent out of shape over a kid?
+    DialogueUIState: 0
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Apparently she fought the angel and lived to tell the tale.
+    DialogueUIState: 0
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: 'I don''t care if she fought the Dissenter! '
+    DialogueUIState: 0
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Some terrorist in the capital ain't got a damn thing to do with
+      Regis
+    DialogueUIState: 0
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: 'If Horner would stop kissing her majesty''s ass for five seconds... '
+    DialogueUIState: 0
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Maybe we'd have some real gear, Instead of jade knockoffs
+    DialogueUIState: 0
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: You might be right about that...
+    DialogueUIState: 0
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueSystem: {fileID: 784717209}
+--- !u!58 &209492772
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209492769}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.15101624, y: -0.18586159}
+  m_Radius: 3.369238
 --- !u!1 &225274687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2107,11 +2473,11 @@ Transform:
   m_GameObject: {fileID: 251798110}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 93.57774, y: -43.24197, z: 0}
+  m_LocalPosition: {x: 2.48, y: -0.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 681372194}
+  m_Father: {fileID: 209492770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &314271444
 GameObject:
@@ -2637,6 +3003,83 @@ Transform:
   m_Children: []
   m_Father: {fileID: 681372194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &450381949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 450381950}
+  - component: {fileID: 450381951}
+  m_Layer: 0
+  m_Name: fallback
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &450381950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450381949}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1903685290}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &450381951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450381949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d4b847116ebc7469f1f90ebc3d366f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactable: 1
+  triggerType: 2
+  DisableAfterTrigger: 0
+  cutsceneData:
+  - dialogueLine: Probably not smart to hang out near this thing for too long
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 0.83921576, g: 0.47450984, b: 0.7411765, a: 1}
+    speaker: 0
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueSystem: {fileID: 784717209}
 --- !u!1001 &466661426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3211,11 +3654,11 @@ Transform:
   m_GameObject: {fileID: 527627815}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 88.22774, y: -43.311974, z: 0}
+  m_LocalPosition: {x: -2.8700104, y: -0.33999634, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 681372194}
+  m_Father: {fileID: 209492770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &535983625
 GameObject:
@@ -4005,19 +4448,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1383510288}
   - {fileID: 40243046}
   - {fileID: 571088052}
   - {fileID: 436483577}
-  - {fileID: 1350598361}
-  - {fileID: 251798113}
   - {fileID: 840424946}
   - {fileID: 62449954}
-  - {fileID: 527627818}
   - {fileID: 501005196}
-  - {fileID: 699517862}
-  - {fileID: 857850149}
+  - {fileID: 1383510288}
+  - {fileID: 1903685290}
   - {fileID: 585991511}
+  - {fileID: 2090429052}
+  - {fileID: 209492770}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &699517859
@@ -4138,11 +4579,11 @@ Transform:
   m_GameObject: {fileID: 699517859}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.612274, y: -51.561974, z: 0}
+  m_LocalPosition: {x: -1.55, y: 0.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 681372194}
+  m_Father: {fileID: 2090429052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &707787729
 GameObject:
@@ -4845,6 +5286,167 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &822740935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 822740936}
+  - component: {fileID: 822740937}
+  m_Layer: 0
+  m_Name: First Interact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &822740936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822740935}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1903685290}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &822740937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822740935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d4b847116ebc7469f1f90ebc3d366f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactable: 1
+  triggerType: 2
+  DisableAfterTrigger: 1
+  cutsceneData:
+  - dialogueLine: '*The melodine crystal hums with a warm familiar power*'
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 0.83921576, g: 0.47450984, b: 0.7411765, a: 1}
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Woah...
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 0.83921576, g: 0.47450984, b: 0.7411765, a: 1}
+    speaker: 0
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: This has got to be the biggest crystal I've ever seen
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 0.83921576, g: 0.47450984, b: 0.7411765, a: 1}
+    speaker: 0
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: It probably has enough power for the whole town to run on
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 0.83921576, g: 0.47450984, b: 0.7411765, a: 1}
+    speaker: 0
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueSystem: {fileID: 784717209}
 --- !u!1001 &829091542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5287,11 +5889,11 @@ Transform:
   m_GameObject: {fileID: 857850146}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 90.52774, y: -40.561974, z: 0}
+  m_LocalPosition: {x: -0.057739258, y: 2.09803, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 681372194}
+  m_Father: {fileID: 209492770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &873839088
 PrefabInstance:
@@ -6272,7 +6874,8 @@ MonoBehaviour:
   triggerType: 3
   DisableAfterTrigger: 1
   cutsceneData:
-  - dialogueLine: line two
+  - dialogueLine: '*The TV channel changes to show a grave looking reporter with
+      footage of the torn up iridescent castle behind him* '
     DialogueUIState: 1
     unskippable: 0
     goToNextLineAutomatically: 0
@@ -6288,7 +6891,182 @@ MonoBehaviour:
     cameraFocus: 0
     changeScene: 0
     sceneIndex: 0
-    speakerData: []
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.83413935, a: 1}
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: 'Sources say shortly after the incident a pink haired figure was
+      seen fleeing the scene on a motorcycle  '
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.83413935, a: 1}
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: 'Revel''s PAWN''s are currently in pursuit of the suspect. Nakamura
+      Industries has turned down interviews for the time being. '
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.83413935, a: 1}
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: However rest assured citizens of Aleko, our Diva has full confidence
+      the terrorist will be apprehended shortly
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.83413935, a: 1}
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: All hail the angel of Aleko.
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.83413935, a: 1}
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Terrorist?! Thorne's swords did most of the damage!
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.83413935, a: 1}
+    speaker: 0
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: '*sigh* I need to get out of here before more people see this...'
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.83413935, a: 1}
     speaker: 0
     speakerExpression: 0
     screenEffect: 0
@@ -6401,7 +7179,7 @@ MonoBehaviour:
   triggerType: 3
   DisableAfterTrigger: 1
   cutsceneData:
-  - dialogueLine: line three
+  - dialogueLine: '*The TV channel changes to show a PSA on melodine poisoning*'
     DialogueUIState: 1
     unskippable: 0
     goToNextLineAutomatically: 0
@@ -6417,7 +7195,212 @@ MonoBehaviour:
     cameraFocus: 0
     changeScene: 0
     sceneIndex: 0
-    speakerData: []
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.8227806, a: 1}
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Remember kids, in the case of Melodine Poisoning always remember
+      the three I's!
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.8227806, a: 1}
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Inform! Isolate! Immolate!
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.8227806, a: 1}
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: 'Inform! Let the nearest adult know if you notice purple smoke
+      coming from your body! '
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.8227806, a: 1}
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: 'Isolate! Once you let people know one of our angel''s PAWNs will
+      give you a special ride to one of our treatment towns! '
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.8227806, a: 1}
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Immolate! Once you're safe and sound in a place where you won't
+      infect others Revel herself will cleanse the infection from you and you'll
+      be good as new!
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.8227806, a: 1}
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Treatment towns? I thought melodine poisoning was incurable...
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.8227806, a: 1}
+    speaker: 0
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: 'At least those poor kids can get help. '
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.8227806, a: 1}
     speaker: 0
     speakerExpression: 0
     screenEffect: 0
@@ -7872,11 +8855,11 @@ Transform:
   m_GameObject: {fileID: 1350598358}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.5222473, y: -51.561974, z: 0}
+  m_LocalPosition: {x: 2.5400465, y: 0.12999916, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 681372194}
+  m_Father: {fileID: 2090429052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1359430120
 GameObject:
@@ -8089,8 +9072,9 @@ GameObject:
   - component: {fileID: 1383510288}
   - component: {fileID: 1383510287}
   - component: {fileID: 1383510286}
+  - component: {fileID: 1383510289}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Busker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8202,6 +9186,216 @@ Transform:
   m_Children: []
   m_Father: {fileID: 681372194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1383510289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383510284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d4b847116ebc7469f1f90ebc3d366f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactable: 1
+  triggerType: 2
+  DisableAfterTrigger: 0
+  cutsceneData:
+  - dialogueLine: You don't look like you're from around here little lady
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: You lose your way outside the capital?
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Haha... not quite...
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 0
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Though I guess you could say I'm a little lost.
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 0
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: 'Aren''t we all '
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: The whole lot of us are just lost souls in the search for the homeward
+      path
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: ...
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 0
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Sure... I guess that makes sense.
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 0
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueSystem: {fileID: 784717209}
 --- !u!1 &1386590180
 GameObject:
   m_ObjectHideFlags: 0
@@ -8276,7 +9470,6 @@ Transform:
   - {fileID: 1069589160}
   - {fileID: 1045768739}
   - {fileID: 1205798676}
-  - {fileID: 1903685290}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1454156614
@@ -10329,7 +11522,7 @@ MonoBehaviour:
   triggerType: 3
   DisableAfterTrigger: 1
   cutsceneData:
-  - dialogueLine: number one
+  - dialogueLine: '*The TV channel changes to show reruns of one of thorne''s concerts*'
     DialogueUIState: 1
     unskippable: 0
     goToNextLineAutomatically: 0
@@ -10345,8 +11538,68 @@ MonoBehaviour:
     cameraFocus: 0
     changeScene: 0
     sceneIndex: 0
-    speakerData: []
-    speaker: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.88149357, a: 1}
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: ' Her shows are always so beautiful... '
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.88149357, a: 1}
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Almost makes you forget how scary she really is...
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData:
+    - characterName: Evie
+      characterExpressions:
+      - {fileID: -2188487534540904033, guid: 67fdca92d782cf04e907b5bdb2dad201, type: 3}
+      textColor: {r: 1, g: 0, b: 0.88149357, a: 1}
+    speaker: 4
     speakerExpression: 0
     screenEffect: 0
     soundEffect: 0
@@ -10835,11 +12088,13 @@ Transform:
   m_GameObject: {fileID: 1903685288}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -55.07509, y: 3.4628592, z: 0}
+  m_LocalPosition: {x: -4.8122864, y: -29.42197, z: 0}
   m_LocalScale: {x: 11.776933, y: 11.776933, z: 11.776933}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1386590181}
+  m_Children:
+  - {fileID: 822740936}
+  - {fileID: 450381950}
+  m_Father: {fileID: 681372194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1903685291
 CircleCollider2D:
@@ -10886,14 +12141,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1903685288}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71d4b847116ebc7469f1f90ebc3d366f, type: 3}
+  m_Script: {fileID: 11500000, guid: f706ce8b1f6878f4eb7465b85047e24c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactable: 0
-  triggerType: 0
-  DisableAfterTrigger: 0
-  cutsceneData: []
-  dialogueSystem: {fileID: 0}
+  triggerableCutscenes:
+  - {fileID: 822740937}
+  fallbackCutscene: {fileID: 450381951}
+  readSetting: 0
+  canInteract: 1
 --- !u!1001 &1917548116
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11839,6 +13094,191 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52eddbbdf5f3c9846b0b479e4e8b3a2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2090429051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2090429052}
+  - component: {fileID: 2090429053}
+  - component: {fileID: 2090429054}
+  m_Layer: 0
+  m_Name: Truck Miner Convo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2090429052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090429051}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.48, y: -52.51, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1350598361}
+  - {fileID: 699517862}
+  m_Father: {fileID: 681372194}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &2090429053
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090429051}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.45417786, y: 0.11774731}
+  m_Radius: 2.6867323
+--- !u!114 &2090429054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090429051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71d4b847116ebc7469f1f90ebc3d366f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactable: 1
+  triggerType: 2
+  DisableAfterTrigger: 0
+  cutsceneData:
+  - dialogueLine: When's that damn mechanic getting here?
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: The longer this shipment takes the deeper shit well be in with
+      Horner!
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: ' How the hell am I supposed to know?'
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - dialogueLine: Just sit tight and shut up all this melodine is giving me a migraine.
+    DialogueUIState: 1
+    unskippable: 0
+    goToNextLineAutomatically: 0
+    autoAdvanceDelay: 0
+    action: 2
+    activateBeforeAction: 0
+    actionTarget: {fileID: 0}
+    endPos: {fileID: 0}
+    actionDuration: 0
+    cameraState: 0
+    cameraTransitionTime: 0
+    cameraTarget: {fileID: 0}
+    cameraFocus: 0
+    changeScene: 0
+    sceneIndex: 0
+    speakerData: []
+    speaker: 4
+    speakerExpression: 0
+    screenEffect: 0
+    soundEffect: 0
+    lineEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogueSystem: {fileID: 784717209}
 --- !u!114 &2105097709 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3242970789357216149, guid: 860b33f328e9237488ac9d2fabd4b111, type: 3}

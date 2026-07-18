@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 4ea167ada46cda24e99912cd562c798b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5812047897253254144
+    second: Master Volume Txt_0
+  - first:
+      213: -1047782045656811617
+    second: Master Volume Txt_1
+  - first:
+      213: -5159481144782006724
+    second: Master Volume Txt_2
+  - first:
+      213: 3122970016493580628
+    second: Master Volume Txt_3
+  - first:
+      213: 7366741231079170269
+    second: Master Volume Txt_4
+  - first:
+      213: -6037376086308783916
+    second: Master Volume Txt_5
+  - first:
+      213: 8439158732374638856
+    second: Master Volume Txt_6
+  - first:
+      213: -3137555380376614466
+    second: Master Volume Txt_7
+  - first:
+      213: 2873600342624846450
+    second: Master Volume Txt_8
+  - first:
+      213: 600607869902230132
+    second: Master Volume Txt_9
+  - first:
+      213: -7227714353238697563
+    second: Master Volume Txt_10
+  - first:
+      213: 83671484914302896
+    second: Master Volume Txt_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Master Volume Txt_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 421
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00ce9a22b35775fa0800000000000000
+      internalID: -5812047897253254144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Master Volume Txt_1
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 0
+        width: 262
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f97f796e7c78571f0800000000000000
+      internalID: -1047782045656811617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Master Volume Txt_2
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 0
+        width: 253
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3651f32c37d568b0800000000000000
+      internalID: -5159481144782006724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Master Volume Txt_3
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 0
+        width: 165
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 451bb4d0fa4075b20800000000000000
+      internalID: 3122970016493580628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Master Volume Txt_4
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 0
+        width: 246
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0a2b67e1ceb3660800000000000000
+      internalID: 7366741231079170269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Master Volume Txt_5
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 0
+        width: 277
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d87028df6ee63ca0800000000000000
+      internalID: -6037376086308783916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Master Volume Txt_6
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 0
+        width: 229
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801835e872aed1570800000000000000
+      internalID: 8439158732374638856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Master Volume Txt_7
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 0
+        width: 245
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb94989410a2574d0800000000000000
+      internalID: -3137555380376614466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Master Volume Txt_8
+      rect:
+        serializedVersion: 2
+        x: 2279
+        y: 0
+        width: 139
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2724890694411e720800000000000000
+      internalID: 2873600342624846450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Master Volume Txt_9
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 0
+        width: 279
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47293deeca9c55800800000000000000
+      internalID: 600607869902230132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Master Volume Txt_10
+      rect:
+        serializedVersion: 2
+        x: 2658
+        y: 0
+        width: 394
+        height: 257
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9173df61002bb90800000000000000
+      internalID: -7227714353238697563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Master Volume Txt_11
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 0
+        width: 245
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf7520b5c2492100800000000000000
+      internalID: 83671484914302896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Master Volume Txt_0: -5812047897253254144
+      Master Volume Txt_1: -1047782045656811617
+      Master Volume Txt_10: -7227714353238697563
+      Master Volume Txt_11: 83671484914302896
+      Master Volume Txt_2: -5159481144782006724
+      Master Volume Txt_3: 3122970016493580628
+      Master Volume Txt_4: 7366741231079170269
+      Master Volume Txt_5: -6037376086308783916
+      Master Volume Txt_6: 8439158732374638856
+      Master Volume Txt_7: -3137555380376614466
+      Master Volume Txt_8: 2873600342624846450
+      Master Volume Txt_9: 600607869902230132
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2379 @@
+fileFormatVersion: 2
+guid: fe109c94a6e374348bdae59663ce73ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3986887483813017627
+    second: Story Description_0
+  - first:
+      213: -5502109481081660712
+    second: Story Description_1
+  - first:
+      213: 2166791832074351568
+    second: Story Description_2
+  - first:
+      213: 8424888529652779459
+    second: Story Description_3
+  - first:
+      213: -9094226625331462026
+    second: Story Description_4
+  - first:
+      213: -1527436736730865676
+    second: Story Description_5
+  - first:
+      213: -6232398042029404418
+    second: Story Description_6
+  - first:
+      213: -3636400924365131425
+    second: Story Description_7
+  - first:
+      213: -7380110096769872408
+    second: Story Description_8
+  - first:
+      213: 8157921769579052102
+    second: Story Description_9
+  - first:
+      213: -8279307444449945857
+    second: Story Description_10
+  - first:
+      213: 5615568010729333123
+    second: Story Description_11
+  - first:
+      213: 2552992180292804009
+    second: Story Description_12
+  - first:
+      213: 1492385241189677633
+    second: Story Description_13
+  - first:
+      213: -1870991763200229523
+    second: Story Description_14
+  - first:
+      213: 6226460679100570907
+    second: Story Description_15
+  - first:
+      213: 5619519408943925865
+    second: Story Description_16
+  - first:
+      213: -8639841955999124724
+    second: Story Description_17
+  - first:
+      213: 7734273958504914096
+    second: Story Description_18
+  - first:
+      213: -7220392898129891406
+    second: Story Description_19
+  - first:
+      213: 1944407071214093788
+    second: Story Description_20
+  - first:
+      213: 1643708405186171909
+    second: Story Description_21
+  - first:
+      213: -4708862250533951073
+    second: Story Description_22
+  - first:
+      213: 9088864346876796131
+    second: Story Description_23
+  - first:
+      213: 4791011569419651426
+    second: Story Description_24
+  - first:
+      213: 5812315256072504496
+    second: Story Description_25
+  - first:
+      213: 6315883496507548897
+    second: Story Description_26
+  - first:
+      213: 4272038149968252755
+    second: Story Description_27
+  - first:
+      213: 5988154185307031082
+    second: Story Description_28
+  - first:
+      213: 406413159196323980
+    second: Story Description_29
+  - first:
+      213: -350661905935171058
+    second: Story Description_30
+  - first:
+      213: 4097331207169012335
+    second: Story Description_31
+  - first:
+      213: -1193375350629170209
+    second: Story Description_32
+  - first:
+      213: -3232880291764659294
+    second: Story Description_33
+  - first:
+      213: 4656242789776679289
+    second: Story Description_34
+  - first:
+      213: -8395409165061522245
+    second: Story Description_35
+  - first:
+      213: 7680166696287550760
+    second: Story Description_36
+  - first:
+      213: 2037022223648800078
+    second: Story Description_37
+  - first:
+      213: -5307131478607963711
+    second: Story Description_38
+  - first:
+      213: 4454412213386016091
+    second: Story Description_39
+  - first:
+      213: -2403384327174305126
+    second: Story Description_40
+  - first:
+      213: 4083771802660790244
+    second: Story Description_41
+  - first:
+      213: 2548224795937935601
+    second: Story Description_42
+  - first:
+      213: 535271810182994174
+    second: Story Description_43
+  - first:
+      213: -7506665323050994020
+    second: Story Description_44
+  - first:
+      213: -2429825761022911783
+    second: Story Description_45
+  - first:
+      213: 5797746304315644311
+    second: Story Description_46
+  - first:
+      213: -7166548999279189353
+    second: Story Description_47
+  - first:
+      213: 1686014218917113921
+    second: Story Description_48
+  - first:
+      213: 2202367660212589808
+    second: Story Description_49
+  - first:
+      213: 3517853161011009811
+    second: Story Description_50
+  - first:
+      213: 4242268359000465386
+    second: Story Description_51
+  - first:
+      213: -3422163562808743462
+    second: Story Description_52
+  - first:
+      213: -4797793907222821438
+    second: Story Description_53
+  - first:
+      213: 6268906358189982179
+    second: Story Description_54
+  - first:
+      213: 1966069819053058286
+    second: Story Description_55
+  - first:
+      213: -7062343265137272016
+    second: Story Description_56
+  - first:
+      213: -3198699979591969722
+    second: Story Description_57
+  - first:
+      213: 7525784946205408209
+    second: Story Description_58
+  - first:
+      213: 527237755408428021
+    second: Story Description_59
+  - first:
+      213: -710556808764998342
+    second: Story Description_60
+  - first:
+      213: -7288525000429787827
+    second: Story Description_61
+  - first:
+      213: -2859221732160628748
+    second: Story Description_62
+  - first:
+      213: -1658854047579212940
+    second: Story Description_63
+  - first:
+      213: 8473893518618412597
+    second: Story Description_64
+  - first:
+      213: -8167284104758049983
+    second: Story Description_65
+  - first:
+      213: -8225395088352856028
+    second: Story Description_66
+  - first:
+      213: -879882924027904803
+    second: Story Description_67
+  - first:
+      213: 224292078708080771
+    second: Story Description_68
+  - first:
+      213: 3406749147563018227
+    second: Story Description_69
+  - first:
+      213: 1770642294963871982
+    second: Story Description_70
+  - first:
+      213: 6452751467926495133
+    second: Story Description_71
+  - first:
+      213: -9013223907049580631
+    second: Story Description_72
+  - first:
+      213: 5604338283362151251
+    second: Story Description_73
+  - first:
+      213: 5394645942982400607
+    second: Story Description_74
+  - first:
+      213: 9153283673760794251
+    second: Story Description_75
+  - first:
+      213: 5799957077073265905
+    second: Story Description_76
+  - first:
+      213: -7699503846240660680
+    second: Story Description_77
+  - first:
+      213: -259699641568961253
+    second: Story Description_78
+  - first:
+      213: -5879668211313510829
+    second: Story Description_79
+  - first:
+      213: 2611584477716105139
+    second: Story Description_80
+  - first:
+      213: -7096101696513958786
+    second: Story Description_81
+  - first:
+      213: -701838342564262454
+    second: Story Description_82
+  - first:
+      213: -1553870907030252185
+    second: Story Description_83
+  - first:
+      213: 7365775975763484873
+    second: Story Description_84
+  - first:
+      213: 7450650331139369398
+    second: Story Description_85
+  - first:
+      213: -4030486704997543828
+    second: Story Description_86
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Story Description_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 831
+        width: 99
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e7cfd7f4fabba8c0800000000000000
+      internalID: -3986887483813017627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da91d0149494a3b0800000000000000
+      internalID: -5502109481081660712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_2
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 831
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d3720de0bdf11e10800000000000000
+      internalID: 2166791832074351568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_3
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 831
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c987321b773be470800000000000000
+      internalID: 8424888529652779459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_4
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 831
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670083a4111dac180800000000000000
+      internalID: -9094226625331462026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_5
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff564271647dcae0800000000000000
+      internalID: -1527436736730865676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_6
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe4ffd50031289a0800000000000000
+      internalID: -6232398042029404418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_7
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 831
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51705230a8e88dc0800000000000000
+      internalID: -3636400924365131425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_8
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 831
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed02cee7f4949990800000000000000
+      internalID: -7380110096769872408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_9
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c7f2d70a2c63170800000000000000
+      internalID: 8157921769579052102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_10
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff65053bebdf91d80800000000000000
+      internalID: -8279307444449945857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_11
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381a19b6a518eed40800000000000000
+      internalID: 5615568010729333123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_12
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9add3b49cdc0e6320800000000000000
+      internalID: 2552992180292804009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_13
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a7529487406b410800000000000000
+      internalID: 1492385241189677633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_14
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6fb4c087e6e806e0800000000000000
+      internalID: -1870991763200229523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_15
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 831
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d1ab99ff4d86650800000000000000
+      internalID: 6226460679100570907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_16
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a0482012b8cfd40800000000000000
+      internalID: 5619519408943925865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_17
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03f721548d191880800000000000000
+      internalID: -8639841955999124724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_18
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc5d34ff29a55b60800000000000000
+      internalID: 7734273958504914096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_19
+      rect:
+        serializedVersion: 2
+        x: 2333
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bfe6381ae20ccb90800000000000000
+      internalID: -7220392898129891406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_20
+      rect:
+        serializedVersion: 2
+        x: 2450
+        y: 831
+        width: 100
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5497aedebebfa10800000000000000
+      internalID: 1944407071214093788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_21
+      rect:
+        serializedVersion: 2
+        x: 2566
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5041275f510afc610800000000000000
+      internalID: 1643708405186171909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_22
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 831
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f996da45bb2c6aeb0800000000000000
+      internalID: -4708862250533951073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_23
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ecdd47f7f1222e70800000000000000
+      internalID: 9088864346876796131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_24
+      rect:
+        serializedVersion: 2
+        x: 2978
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2698b0673a71d7240800000000000000
+      internalID: 4791011569419651426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_25
+      rect:
+        serializedVersion: 2
+        x: 3156
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b409c03eed79a050800000000000000
+      internalID: 5812315256072504496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_26
+      rect:
+        serializedVersion: 2
+        x: 3273
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e4a51cb39686a750800000000000000
+      internalID: 6315883496507548897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_27
+      rect:
+        serializedVersion: 2
+        x: 3389
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f46cb2014594b30800000000000000
+      internalID: 4272038149968252755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_28
+      rect:
+        serializedVersion: 2
+        x: 3506
+        y: 831
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a268e7341823a1350800000000000000
+      internalID: 5988154185307031082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_29
+      rect:
+        serializedVersion: 2
+        x: 3623
+        y: 831
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80f0f17d9ed3a500800000000000000
+      internalID: 406413159196323980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_30
+      rect:
+        serializedVersion: 2
+        x: 3801
+        y: 831
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02097cbad2322bf0800000000000000
+      internalID: -350661905935171058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_31
+      rect:
+        serializedVersion: 2
+        x: 3917
+        y: 831
+        width: 99
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f627e6a3605acd830800000000000000
+      internalID: 4097331207169012335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_32
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 448
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd38a0ef077407fe0800000000000000
+      internalID: -1193375350629170209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_33
+      rect:
+        serializedVersion: 2
+        x: 1084
+        y: 448
+        width: 100
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ab9100d0808223d0800000000000000
+      internalID: -3232880291764659294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_34
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 448
+        width: 100
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971ec90c52c4e9040800000000000000
+      internalID: 4656242789776679289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_35
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 448
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbcf27c58d38d7b80800000000000000
+      internalID: -8395409165061522245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_36
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 448
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d31044bee659a60800000000000000
+      internalID: 7680166696287550760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_37
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 448
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4db9287be4f44c10800000000000000
+      internalID: 2037022223648800078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_38
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 448
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c95741e9084956b0800000000000000
+      internalID: -5307131478607963711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_39
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 448
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b55f80ebe4041dd30800000000000000
+      internalID: 4454412213386016091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_40
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 448
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ac80820b675aed0800000000000000
+      internalID: -2403384327174305126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_41
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 448
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ef5a5951d87ca830800000000000000
+      internalID: 4083771802660790244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_42
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 448
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f019b963fc1d5320800000000000000
+      internalID: 2548224795937935601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_43
+      rect:
+        serializedVersion: 2
+        x: 2435
+        y: 448
+        width: 164
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef8dc3810eaad6700800000000000000
+      internalID: 535271810182994174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_44
+      rect:
+        serializedVersion: 2
+        x: 2615
+        y: 448
+        width: 101
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c967dc329a7f2d790800000000000000
+      internalID: -7506665323050994020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_45
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 448
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dad2281856874ed0800000000000000
+      internalID: -2429825761022911783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_46
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 448
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7995196cb8bb57050800000000000000
+      internalID: 5797746304315644311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_47
+      rect:
+        serializedVersion: 2
+        x: 2899
+        y: 448
+        width: 100
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7926888b7ad4b8c90800000000000000
+      internalID: -7166548999279189353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_48
+      rect:
+        serializedVersion: 2
+        x: 3016
+        y: 449
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140ffcccffce56710800000000000000
+      internalID: 1686014218917113921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_49
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 16
+        width: 35
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f497c3e7b1609e10800000000000000
+      internalID: 2202367660212589808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_50
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 319db02cfcce1d030800000000000000
+      internalID: 3517853161011009811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_51
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef1a1498909fda30800000000000000
+      internalID: 4242268359000465386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_52
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 16
+        width: 36
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad9ef7bfe580280d0800000000000000
+      internalID: -3422163562808743462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_53
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c543767cdfca6db0800000000000000
+      internalID: -4797793907222821438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_54
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e10a126e11aff650800000000000000
+      internalID: 6268906358189982179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_55
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee826407512e84b10800000000000000
+      internalID: 1966069819053058286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_56
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03bde9fd7348dfd90800000000000000
+      internalID: -7062343265137272016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_57
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6441f55e05feb93d0800000000000000
+      internalID: -3198699979591969722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_58
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 16
+        width: 36
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db3e860985f07860800000000000000
+      internalID: 7525784946205408209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_59
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 16
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb2b43f1ff115700800000000000000
+      internalID: 527237755408428021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_60
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3db3dcd8589326f0800000000000000
+      internalID: -710556808764998342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_61
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 16
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4524dcd025f9da90800000000000000
+      internalID: -7288525000429787827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_62
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 0
+        width: 36
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f71d70cbf00258d0800000000000000
+      internalID: -2859221732160628748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_63
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47372df58019af8e0800000000000000
+      internalID: -1658854047579212940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_64
+      rect:
+        serializedVersion: 2
+        x: 1483
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5364cb13241599570800000000000000
+      internalID: 8473893518618412597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_65
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 143c33cf06af7ae80800000000000000
+      internalID: -8167284104758049983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_66
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4283c754fb689dd80800000000000000
+      internalID: -8225395088352856028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_67
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc726574270ac3f0800000000000000
+      internalID: -879882924027904803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_68
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 16
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 380445d0578dc1300800000000000000
+      internalID: 224292078708080771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_69
+      rect:
+        serializedVersion: 2
+        x: 2066
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7cb5bcc44374f20800000000000000
+      internalID: 3406749147563018227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_70
+      rect:
+        serializedVersion: 2
+        x: 2183
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0aa9739c5929810800000000000000
+      internalID: 1770642294963871982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_71
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9f93ad9547cc8950800000000000000
+      internalID: 6452751467926495133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_72
+      rect:
+        serializedVersion: 2
+        x: 2478
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a750435c989ae280800000000000000
+      internalID: -9013223907049580631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_73
+      rect:
+        serializedVersion: 2
+        x: 2528
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35b6ce4c9fb96cd40800000000000000
+      internalID: 5604338283362151251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_74
+      rect:
+        serializedVersion: 2
+        x: 2644
+        y: 16
+        width: 101
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ad77037e1adda40800000000000000
+      internalID: 5394645942982400607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_75
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8605ee410ff60f70800000000000000
+      internalID: 9153283673760794251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_76
+      rect:
+        serializedVersion: 2
+        x: 2878
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4077b6b369d7050800000000000000
+      internalID: 5799957077073265905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_77
+      rect:
+        serializedVersion: 2
+        x: 2928
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 833521aab0ed52590800000000000000
+      internalID: -7699503846240660680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_78
+      rect:
+        serializedVersion: 2
+        x: 3045
+        y: 16
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d5cfb4d8c556cf0800000000000000
+      internalID: -259699641568961253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_79
+      rect:
+        serializedVersion: 2
+        x: 3161
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3567083e9e8376ea0800000000000000
+      internalID: -5879668211313510829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_80
+      rect:
+        serializedVersion: 2
+        x: 3278
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b74137ee363e3420800000000000000
+      internalID: 2611584477716105139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_81
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c1d319a15958d90800000000000000
+      internalID: -7096101696513958786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_82
+      rect:
+        serializedVersion: 2
+        x: 3445
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd45b5feb19246f0800000000000000
+      internalID: -701838342564262454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_83
+      rect:
+        serializedVersion: 2
+        x: 3623
+        y: 16
+        width: 100
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 765d5af84aa8f6ae0800000000000000
+      internalID: -1553870907030252185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_84
+      rect:
+        serializedVersion: 2
+        x: 3739
+        y: 16
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c02d72793e783660800000000000000
+      internalID: 7365775975763484873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_85
+      rect:
+        serializedVersion: 2
+        x: 3856
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9653d3007066760800000000000000
+      internalID: 7450650331139369398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Story Description_86
+      rect:
+        serializedVersion: 2
+        x: 3906
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c60dfac32b5d018c0800000000000000
+      internalID: -4030486704997543828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Story Description_0: -3986887483813017627
+      Story Description_1: -5502109481081660712
+      Story Description_10: -8279307444449945857
+      Story Description_11: 5615568010729333123
+      Story Description_12: 2552992180292804009
+      Story Description_13: 1492385241189677633
+      Story Description_14: -1870991763200229523
+      Story Description_15: 6226460679100570907
+      Story Description_16: 5619519408943925865
+      Story Description_17: -8639841955999124724
+      Story Description_18: 7734273958504914096
+      Story Description_19: -7220392898129891406
+      Story Description_2: 2166791832074351568
+      Story Description_20: 1944407071214093788
+      Story Description_21: 1643708405186171909
+      Story Description_22: -4708862250533951073
+      Story Description_23: 9088864346876796131
+      Story Description_24: 4791011569419651426
+      Story Description_25: 5812315256072504496
+      Story Description_26: 6315883496507548897
+      Story Description_27: 4272038149968252755
+      Story Description_28: 5988154185307031082
+      Story Description_29: 406413159196323980
+      Story Description_3: 8424888529652779459
+      Story Description_30: -350661905935171058
+      Story Description_31: 4097331207169012335
+      Story Description_32: -1193375350629170209
+      Story Description_33: -3232880291764659294
+      Story Description_34: 4656242789776679289
+      Story Description_35: -8395409165061522245
+      Story Description_36: 7680166696287550760
+      Story Description_37: 2037022223648800078
+      Story Description_38: -5307131478607963711
+      Story Description_39: 4454412213386016091
+      Story Description_4: -9094226625331462026
+      Story Description_40: -2403384327174305126
+      Story Description_41: 4083771802660790244
+      Story Description_42: 2548224795937935601
+      Story Description_43: 535271810182994174
+      Story Description_44: -7506665323050994020
+      Story Description_45: -2429825761022911783
+      Story Description_46: 5797746304315644311
+      Story Description_47: -7166548999279189353
+      Story Description_48: 1686014218917113921
+      Story Description_49: 2202367660212589808
+      Story Description_5: -1527436736730865676
+      Story Description_50: 3517853161011009811
+      Story Description_51: 4242268359000465386
+      Story Description_52: -3422163562808743462
+      Story Description_53: -4797793907222821438
+      Story Description_54: 6268906358189982179
+      Story Description_55: 1966069819053058286
+      Story Description_56: -7062343265137272016
+      Story Description_57: -3198699979591969722
+      Story Description_58: 7525784946205408209
+      Story Description_59: 527237755408428021
+      Story Description_6: -6232398042029404418
+      Story Description_60: -710556808764998342
+      Story Description_61: -7288525000429787827
+      Story Description_62: -2859221732160628748
+      Story Description_63: -1658854047579212940
+      Story Description_64: 8473893518618412597
+      Story Description_65: -8167284104758049983
+      Story Description_66: -8225395088352856028
+      Story Description_67: -879882924027904803
+      Story Description_68: 224292078708080771
+      Story Description_69: 3406749147563018227
+      Story Description_7: -3636400924365131425
+      Story Description_70: 1770642294963871982
+      Story Description_71: 6452751467926495133
+      Story Description_72: -9013223907049580631
+      Story Description_73: 5604338283362151251
+      Story Description_74: 5394645942982400607
+      Story Description_75: 9153283673760794251
+      Story Description_76: 5799957077073265905
+      Story Description_77: -7699503846240660680
+      Story Description_78: -259699641568961253
+      Story Description_79: -5879668211313510829
+      Story Description_8: -7380110096769872408
+      Story Description_80: 2611584477716105139
+      Story Description_81: -7096101696513958786
+      Story Description_82: -701838342564262454
+      Story Description_83: -1553870907030252185
+      Story Description_84: 7365775975763484873
+      Story Description_85: 7450650331139369398
+      Story Description_86: -4030486704997543828
+      Story Description_9: 8157921769579052102
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

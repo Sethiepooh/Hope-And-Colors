@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 1657135864147514c83cf042590600f2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6635147577980926683
+    second: Alix Health Bar_0
+  - first:
+      213: 5186268136661539180
+    second: Alix Health Bar_1
+  - first:
+      213: -4413722948867192825
+    second: Alix Health Bar_2
+  - first:
+      213: -4688466544885943025
+    second: Alix Health Bar_3
+  - first:
+      213: 6454097141122254584
+    second: Alix Health Bar_4
+  - first:
+      213: -1420877154304264733
+    second: Alix Health Bar_5
+  - first:
+      213: -118326211337559759
+    second: Alix Health Bar_6
+  - first:
+      213: -6107637629200845220
+    second: Alix Health Bar_7
+  - first:
+      213: 8949856683575117871
+    second: Alix Health Bar_8
+  - first:
+      213: -8006454740304776969
+    second: Alix Health Bar_9
+  - first:
+      213: -2552557073768218375
+    second: Alix Health Bar_10
+  - first:
+      213: 3848362065201440638
+    second: Alix Health Bar_11
+  - first:
+      213: -3940204700388363366
+    second: Alix Health Bar_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alix Health Bar_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 371
+        width: 1163
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdab8d15197c41c50800000000000000
+      internalID: 6635147577980926683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alix Health Bar_1
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 591
+        width: 2686
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6953ab646359f740800000000000000
+      internalID: 5186268136661539180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alix Health Bar_2
+      rect:
+        serializedVersion: 2
+        x: 3887
+        y: 591
+        width: 2889
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70808c7ec5e4fb2c0800000000000000
+      internalID: -4413722948867192825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alix Health Bar_3
+      rect:
+        serializedVersion: 2
+        x: 6794
+        y: 591
+        width: 2337
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0535ca94883feeb0800000000000000
+      internalID: -4688466544885943025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alix Health Bar_4
+      rect:
+        serializedVersion: 2
+        x: 8308
+        y: 371
+        width: 1917
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6c472972f819950800000000000000
+      internalID: 6454097141122254584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alix Health Bar_5
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 371
+        width: 1795
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e5f93c91c7084ce0800000000000000
+      internalID: -1420877154304264733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alix Health Bar_6
+      rect:
+        serializedVersion: 2
+        x: 3001
+        y: 371
+        width: 3164
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1316b9d00fe9b5ef0800000000000000
+      internalID: -118326211337559759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alix Health Bar_7
+      rect:
+        serializedVersion: 2
+        x: 6185
+        y: 371
+        width: 2101
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c56bca69fef4d3ba0800000000000000
+      internalID: -6107637629200845220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alix Health Bar_8
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 81
+        width: 192
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f28862f3c37443c70800000000000000
+      internalID: 8949856683575117871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alix Health Bar_9
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 81
+        width: 123
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f034ed65db53e090800000000000000
+      internalID: -8006454740304776969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alix Health Bar_10
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 81
+        width: 104
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0822d8dde739cd0800000000000000
+      internalID: -2552557073768218375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alix Health Bar_11
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 81
+        width: 215
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77ab67a8e0286530800000000000000
+      internalID: 3848362065201440638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alix Health Bar_12
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 0
+        width: 605
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a93f60b73b49159c0800000000000000
+      internalID: -3940204700388363366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Alix Health Bar_0: 6635147577980926683
+      Alix Health Bar_1: 5186268136661539180
+      Alix Health Bar_10: -2552557073768218375
+      Alix Health Bar_11: 3848362065201440638
+      Alix Health Bar_12: -3940204700388363366
+      Alix Health Bar_2: -4413722948867192825
+      Alix Health Bar_3: -4688466544885943025
+      Alix Health Bar_4: 6454097141122254584
+      Alix Health Bar_5: -1420877154304264733
+      Alix Health Bar_6: -118326211337559759
+      Alix Health Bar_7: -6107637629200845220
+      Alix Health Bar_8: 8949856683575117871
+      Alix Health Bar_9: -8006454740304776969
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

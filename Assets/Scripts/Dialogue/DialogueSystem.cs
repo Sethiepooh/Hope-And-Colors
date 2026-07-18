@@ -20,7 +20,7 @@ public class DialogueSystem : MonoBehaviour
 
     [SerializeField] float textScrollSpeed;
     Coroutine rollingTextCoroutine;
-    bool isScrolling;
+    [SerializeField] bool isScrolling;
 
     [Header("Audio")]
     [SerializeField] AudioClip[] soundEffects;

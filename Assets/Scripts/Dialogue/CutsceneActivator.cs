@@ -30,8 +30,17 @@ public class CutsceneActivator : MonoBehaviour, IInteractable
         {
             if (activeInteraction)
             {
-                if (!cutsceneData[currentLine - 1].goToNextLineAutomatically)
+                if(currentLine == 0)
+                {
                     TriggerCutscene();
+                }
+                else
+                {
+                    if (!cutsceneData[currentLine - 1].goToNextLineAutomatically)
+                        TriggerCutscene();
+                }
+         
+
             }
             else
             {
@@ -107,6 +116,13 @@ public class CutsceneActivator : MonoBehaviour, IInteractable
 
     public void TriggerCutscene()
     {
+
+        if (cutsceneData == null || cutsceneData.Length == 0)
+        {
+            Debug.LogError("CutsceneData is not assigned or empty on " + name);
+            return;
+        }
+
         if (!activeInteraction)
         {
             activeInteraction = true;  
@@ -121,6 +137,7 @@ public class CutsceneActivator : MonoBehaviour, IInteractable
         {
             if (!dialogueSystem.IsScrollingText())
             {
+                Debug.Log("Cutscene Line: " + currentLine);
                 dialogueSystem.UpdateDialogueUI(cutsceneData[currentLine].GetSpeakerName(), cutsceneData[currentLine].GetSpeakerColor(), 
                     cutsceneData[currentLine].dialogueLine, cutsceneData[currentLine].GetSpeakerExpression(), cutsceneData[currentLine].DialogueUIState);
 
@@ -157,22 +174,39 @@ public class CutsceneActivator : MonoBehaviour, IInteractable
             }
             else
             {
-                if (cutsceneData[currentLine - 1].unskippable) { return; }
+                if(currentLine != 0)
+                {
+                     if (cutsceneData[currentLine - 1].unskippable) { return; }
+                }
                 dialogueSystem.SkipRollingText();
+                Debug.Log("Skipping Line: " + (currentLine - 1));
             }            
         }
         else
         {
-            dialogueSystem.UpdateDialogueUI("", Color.white, "", null, false);
-            activeInteraction = false;
-            currentLine = 0;
-            dialogueSystem.ToggleFreezePlayer(false);
-            dialogueSystem.SetInteractable(null);
-            if (DisableAfterTrigger)
+            if (!dialogueSystem.IsScrollingText())
             {
-                interactable = false;
-                this.enabled = false;
+                dialogueSystem.SkipRollingText();
+                dialogueSystem.UpdateDialogueUI("", Color.white, "", null, false);
+                activeInteraction = false;
+                currentLine = 0;
+                dialogueSystem.ToggleFreezePlayer(false);
+                dialogueSystem.SetInteractable(null);
+                if (DisableAfterTrigger)
+                {
+                    interactable = false;
+                    this.enabled = false;
+                }
             }
+            else
+            {
+                if (currentLine != 0)
+                {
+                    if (cutsceneData[currentLine - 1].unskippable) { return; }
+                }
+                dialogueSystem.SkipRollingText();
+                Debug.Log("Skipping Line: " + (currentLine - 1));
+            }               
         }
     }
 

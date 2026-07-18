@@ -1,0 +1,1105 @@
+fileFormatVersion: 2
+guid: c55c393091d5ab549a8ff6d9ebeedf1c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3558940237290852087
+    second: Diva Description_0
+  - first:
+      213: 8755445255916152922
+    second: Diva Description_1
+  - first:
+      213: 300161470703247061
+    second: Diva Description_2
+  - first:
+      213: -3743519166742739086
+    second: Diva Description_3
+  - first:
+      213: -4401743264298451366
+    second: Diva Description_4
+  - first:
+      213: -210351189537784340
+    second: Diva Description_5
+  - first:
+      213: -203273797984880073
+    second: Diva Description_6
+  - first:
+      213: -5632844533947370868
+    second: Diva Description_7
+  - first:
+      213: -9208704485165076633
+    second: Diva Description_8
+  - first:
+      213: 5325125905076900576
+    second: Diva Description_9
+  - first:
+      213: 5331788186847648440
+    second: Diva Description_10
+  - first:
+      213: -5946426937576941497
+    second: Diva Description_11
+  - first:
+      213: 3330309505999430195
+    second: Diva Description_12
+  - first:
+      213: -2561670989514531867
+    second: Diva Description_13
+  - first:
+      213: -3210651949274376316
+    second: Diva Description_14
+  - first:
+      213: -9097838951589621307
+    second: Diva Description_15
+  - first:
+      213: -5874689864318475511
+    second: Diva Description_16
+  - first:
+      213: 917451409089008051
+    second: Diva Description_17
+  - first:
+      213: 4785609188029733471
+    second: Diva Description_18
+  - first:
+      213: -5864840023741636323
+    second: Diva Description_19
+  - first:
+      213: 4512039150378422782
+    second: Diva Description_20
+  - first:
+      213: -8061361181004335026
+    second: Diva Description_21
+  - first:
+      213: 9206951289649841167
+    second: Diva Description_22
+  - first:
+      213: 1171920521166005109
+    second: Diva Description_23
+  - first:
+      213: -4203553794327797359
+    second: Diva Description_24
+  - first:
+      213: 114385141205589459
+    second: Diva Description_25
+  - first:
+      213: -3977002714193300279
+    second: Diva Description_26
+  - first:
+      213: -4826201089222676995
+    second: Diva Description_27
+  - first:
+      213: -2730239478740684574
+    second: Diva Description_28
+  - first:
+      213: 8825263447069101658
+    second: Diva Description_29
+  - first:
+      213: -8887916111733659546
+    second: Diva Description_30
+  - first:
+      213: -9119642967776498720
+    second: Diva Description_31
+  - first:
+      213: -3241048405176952636
+    second: Diva Description_32
+  - first:
+      213: 4123202002076018467
+    second: Diva Description_33
+  - first:
+      213: -1308149443432169151
+    second: Diva Description_34
+  - first:
+      213: 7479442650939774909
+    second: Diva Description_35
+  - first:
+      213: 2181322035137048183
+    second: Diva Description_36
+  - first:
+      213: 8431277022934234408
+    second: Diva Description_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Diva Description_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 449
+        width: 99
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fec09c2a45e36130800000000000000
+      internalID: 3558940237290852087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 449
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58e2496217918970800000000000000
+      internalID: 8755445255916152922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_2
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de968c64436a2400800000000000000
+      internalID: 300161470703247061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_3
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277ce60e6295c0cc0800000000000000
+      internalID: -3743519166742739086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_4
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5eb50392ddd9e2c0800000000000000
+      internalID: -4401743264298451366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_5
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 449
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cedf48525bea41df0800000000000000
+      internalID: -210351189537784340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_6
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a77f6ce83dd2df0800000000000000
+      internalID: -203273797984880073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_7
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c82f01f8dbd14d1b0800000000000000
+      internalID: -5632844533947370868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_8
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f60308f0c143080800000000000000
+      internalID: -9208704485165076633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_9
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2d6540cc5a6e940800000000000000
+      internalID: 5325125905076900576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_10
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 449
+        width: 101
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba9dae5b115ef940800000000000000
+      internalID: 5331788186847648440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_11
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74899eea43c0a7da0800000000000000
+      internalID: -5946426937576941497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_12
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 449
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 332e339d9d2a73e20800000000000000
+      internalID: 3330309505999430195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_13
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eb109eaecd137cd0800000000000000
+      internalID: -2561670989514531867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_14
+      rect:
+        serializedVersion: 2
+        x: 1689
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 487d51a10197173d0800000000000000
+      internalID: -3210651949274376316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_15
+      rect:
+        serializedVersion: 2
+        x: 1805
+        y: 449
+        width: 101
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1d9ca0dabfdb180800000000000000
+      internalID: -9097838951589621307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_16
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 449
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 903a5bf91b8e87ea0800000000000000
+      internalID: -5874689864318475511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_17
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b19e6912317bbc00800000000000000
+      internalID: 917451409089008051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_18
+      rect:
+        serializedVersion: 2
+        x: 2156
+        y: 449
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a9b568336e96240800000000000000
+      internalID: 4785609188029733471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_19
+      rect:
+        serializedVersion: 2
+        x: 2272
+        y: 449
+        width: 36
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d11e2685217eb9ea0800000000000000
+      internalID: -5864840023741636323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_20
+      rect:
+        serializedVersion: 2
+        x: 2322
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef116f293bbfd9e30800000000000000
+      internalID: 4512039150378422782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_21
+      rect:
+        serializedVersion: 2
+        x: 2439
+        y: 449
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e48fc1087ba402090800000000000000
+      internalID: -8061361181004335026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_22
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 16
+        width: 68
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0447ebda69a5cf70800000000000000
+      internalID: 9206951289649841167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_23
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 16
+        width: 100
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5732711418f734010800000000000000
+      internalID: 1171920521166005109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_24
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 16
+        width: 36
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 191a8de681af9a5c0800000000000000
+      internalID: -4203553794327797359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_25
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd542d0ea0669100800000000000000
+      internalID: 114385141205589459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_26
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c47ebd3a19dec8c0800000000000000
+      internalID: -3977002714193300279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_27
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 0
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd674efda3e50db0800000000000000
+      internalID: -4826201089222676995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_28
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 16
+        width: 100
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0f9e5d8ad3c1ad0800000000000000
+      internalID: -2730239478740684574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_29
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5e0bcbc852a97a70800000000000000
+      internalID: 8825263447069101658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_30
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668e4a6f267c7a480800000000000000
+      internalID: -8887916111733659546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_31
+      rect:
+        serializedVersion: 2
+        x: 1306
+        y: 16
+        width: 165
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ebea4be905807180800000000000000
+      internalID: -9119642967776498720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_32
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 16
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c8d495b5ab7503d0800000000000000
+      internalID: -3241048405176952636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_33
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 327abee006e883930800000000000000
+      internalID: 4123202002076018467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_34
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 141c917130588dde0800000000000000
+      internalID: -1308149443432169151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_35
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 16
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7db2796715cc760800000000000000
+      internalID: 7479442650939774909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_36
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77e631575dc954e10800000000000000
+      internalID: 2181322035137048183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diva Description_37
+      rect:
+        serializedVersion: 2
+        x: 2071
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82578e218c9e10570800000000000000
+      internalID: 8431277022934234408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Diva Description_0: 3558940237290852087
+      Diva Description_1: 8755445255916152922
+      Diva Description_10: 5331788186847648440
+      Diva Description_11: -5946426937576941497
+      Diva Description_12: 3330309505999430195
+      Diva Description_13: -2561670989514531867
+      Diva Description_14: -3210651949274376316
+      Diva Description_15: -9097838951589621307
+      Diva Description_16: -5874689864318475511
+      Diva Description_17: 917451409089008051
+      Diva Description_18: 4785609188029733471
+      Diva Description_19: -5864840023741636323
+      Diva Description_2: 300161470703247061
+      Diva Description_20: 4512039150378422782
+      Diva Description_21: -8061361181004335026
+      Diva Description_22: 9206951289649841167
+      Diva Description_23: 1171920521166005109
+      Diva Description_24: -4203553794327797359
+      Diva Description_25: 114385141205589459
+      Diva Description_26: -3977002714193300279
+      Diva Description_27: -4826201089222676995
+      Diva Description_28: -2730239478740684574
+      Diva Description_29: 8825263447069101658
+      Diva Description_3: -3743519166742739086
+      Diva Description_30: -8887916111733659546
+      Diva Description_31: -9119642967776498720
+      Diva Description_32: -3241048405176952636
+      Diva Description_33: 4123202002076018467
+      Diva Description_34: -1308149443432169151
+      Diva Description_35: 7479442650939774909
+      Diva Description_36: 2181322035137048183
+      Diva Description_37: 8431277022934234408
+      Diva Description_4: -4401743264298451366
+      Diva Description_5: -210351189537784340
+      Diva Description_6: -203273797984880073
+      Diva Description_7: -5632844533947370868
+      Diva Description_8: -9208704485165076633
+      Diva Description_9: 5325125905076900576
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

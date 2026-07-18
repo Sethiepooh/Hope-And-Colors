@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 92ae772f59525394d953e62a467e6122
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2837215216620617493
+    second: Thorne Health Bar_0
+  - first:
+      213: 73030266086040356
+    second: Thorne Health Bar_1
+  - first:
+      213: 8987525729085240883
+    second: Thorne Health Bar_2
+  - first:
+      213: -8779255467549298413
+    second: Thorne Health Bar_3
+  - first:
+      213: -2145796294479640850
+    second: Thorne Health Bar_4
+  - first:
+      213: 3888747562772387345
+    second: Thorne Health Bar_5
+  - first:
+      213: 3719392857307172734
+    second: Thorne Health Bar_6
+  - first:
+      213: -4585576324734063089
+    second: Thorne Health Bar_7
+  - first:
+      213: -8204945912040188063
+    second: Thorne Health Bar_8
+  - first:
+      213: 6829718405790188913
+    second: Thorne Health Bar_9
+  - first:
+      213: 2450322776040356660
+    second: Thorne Health Bar_10
+  - first:
+      213: -7963520323176083733
+    second: Thorne Health Bar_11
+  - first:
+      213: 4757690285831043985
+    second: Thorne Health Bar_12
+  - first:
+      213: 6503413547887246177
+    second: Thorne Health Bar_13
+  - first:
+      213: 800636260778331402
+    second: Thorne Health Bar_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Thorne Health Bar_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 860
+        width: 384
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0cefdeacf20a8d0800000000000000
+      internalID: -2837215216620617493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thorne Health Bar_1
+      rect:
+        serializedVersion: 2
+        x: 4447
+        y: 974
+        width: 614
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42329ebd3a4730100800000000000000
+      internalID: 73030266086040356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thorne Health Bar_2
+      rect:
+        serializedVersion: 2
+        x: 5119
+        y: 1102
+        width: 290
+        height: 511
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3363fcb580b1abc70800000000000000
+      internalID: 8987525729085240883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thorne Health Bar_3
+      rect:
+        serializedVersion: 2
+        x: 5468
+        y: 974
+        width: 614
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3117150baa1d92680800000000000000
+      internalID: -8779255467549298413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thorne Health Bar_4
+      rect:
+        serializedVersion: 2
+        x: 10145
+        y: 860
+        width: 384
+        height: 614
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee6013b93a99832e0800000000000000
+      internalID: -2145796294479640850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thorne Health Bar_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 384
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 116d63c0e4b97f530800000000000000
+      internalID: 3888747562772387345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thorne Health Bar_6
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 587
+        width: 10149
+        height: 298
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f4be7f810fd9330800000000000000
+      internalID: 3719392857307172734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thorne Health Bar_7
+      rect:
+        serializedVersion: 2
+        x: 10145
+        y: 0
+        width: 384
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ee8c9c0a2cc50c0800000000000000
+      internalID: -4585576324734063089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thorne Health Bar_8
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 210
+        width: 160
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1671d872a2d222e80800000000000000
+      internalID: -8204945912040188063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thorne Health Bar_9
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 210
+        width: 204
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175421564b808ce50800000000000000
+      internalID: 6829718405790188913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thorne Health Bar_10
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 210
+        width: 182
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43b3fea159b410220800000000000000
+      internalID: 2450322776040356660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thorne Health Bar_11
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 210
+        width: 192
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee4c776574eb7190800000000000000
+      internalID: -7963520323176083733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thorne Health Bar_12
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 210
+        width: 202
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b394e8b16b60240800000000000000
+      internalID: 4757690285831043985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thorne Health Bar_13
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 210
+        width: 182
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b384d4a24c04a50800000000000000
+      internalID: 6503413547887246177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Thorne Health Bar_14
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 139
+        width: 997
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0d4dfdef6e6c1b00800000000000000
+      internalID: 800636260778331402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Thorne Health Bar_0: -2837215216620617493
+      Thorne Health Bar_1: 73030266086040356
+      Thorne Health Bar_10: 2450322776040356660
+      Thorne Health Bar_11: -7963520323176083733
+      Thorne Health Bar_12: 4757690285831043985
+      Thorne Health Bar_13: 6503413547887246177
+      Thorne Health Bar_14: 800636260778331402
+      Thorne Health Bar_2: 8987525729085240883
+      Thorne Health Bar_3: -8779255467549298413
+      Thorne Health Bar_4: -2145796294479640850
+      Thorne Health Bar_5: 3888747562772387345
+      Thorne Health Bar_6: 3719392857307172734
+      Thorne Health Bar_7: -4585576324734063089
+      Thorne Health Bar_8: -8204945912040188063
+      Thorne Health Bar_9: 6829718405790188913
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

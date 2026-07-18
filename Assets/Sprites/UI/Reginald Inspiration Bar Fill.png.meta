@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 4bc4f766dfe57fd409fe486ebdda69f1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5163705139357120257
+    second: Reginald Inspiration Bar Fill_0
+  - first:
+      213: -1909604144744201601
+    second: Reginald Inspiration Bar Fill_1
+  - first:
+      213: 5994478073785511546
+    second: Reginald Inspiration Bar Fill_2
+  - first:
+      213: -3623175366485807038
+    second: Reginald Inspiration Bar Fill_3
+  - first:
+      213: -3072670457496081763
+    second: Reginald Inspiration Bar Fill_4
+  - first:
+      213: -7061634254256744277
+    second: Reginald Inspiration Bar Fill_5
+  - first:
+      213: 7247278615498394190
+    second: Reginald Inspiration Bar Fill_6
+  - first:
+      213: 6933527314958123868
+    second: Reginald Inspiration Bar Fill_7
+  - first:
+      213: 5302444599958494305
+    second: Reginald Inspiration Bar Fill_8
+  - first:
+      213: -3293125097045254020
+    second: Reginald Inspiration Bar Fill_9
+  - first:
+      213: 2607188061439113970
+    second: Reginald Inspiration Bar Fill_10
+  - first:
+      213: 34193631039981517
+    second: Reginald Inspiration Bar Fill_11
+  - first:
+      213: -8209615040662145486
+    second: Reginald Inspiration Bar Fill_12
+  - first:
+      213: 7046703358001083784
+    second: Reginald Inspiration Bar Fill_13
+  - first:
+      213: 563159143739173293
+    second: Reginald Inspiration Bar Fill_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Reginald Inspiration Bar Fill_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 857
+        width: 640
+        height: 533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff882c3c885d658b0800000000000000
+      internalID: -5163705139357120257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Inspiration Bar Fill_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1355
+        width: 109
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7288ead529bf75e0800000000000000
+      internalID: -1909604144744201601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Inspiration Bar Fill_2
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 1366
+        width: 99
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e6ad94c0aa03350800000000000000
+      internalID: 5994478073785511546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Inspiration Bar Fill_3
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 1336
+        width: 131
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240faa95335e7bdc0800000000000000
+      internalID: -3623175366485807038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Inspiration Bar Fill_4
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1076
+        width: 80
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9aeb15af7eab55d0800000000000000
+      internalID: -3072670457496081763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Inspiration Bar Fill_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 863
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba8db455f09000e90800000000000000
+      internalID: -7061634254256744277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Inspiration Bar Fill_6
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 372
+        width: 451
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a0119c081839460800000000000000
+      internalID: 7247278615498394190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Inspiration Bar Fill_7
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 573
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c530c888b56d83060800000000000000
+      internalID: 6933527314958123868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Inspiration Bar Fill_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 274
+        width: 239
+        height: 544
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cd6b52541169940800000000000000
+      internalID: 5302444599958494305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Inspiration Bar Fill_9
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 194
+        width: 195
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c70a1b50c287c42d0800000000000000
+      internalID: -3293125097045254020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Inspiration Bar Fill_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 422
+        width: 38
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fab7b87ab79e2420800000000000000
+      internalID: 2607188061439113970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Inspiration Bar Fill_11
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 479
+        width: 38
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc708bf1dea797000800000000000000
+      internalID: 34193631039981517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Inspiration Bar Fill_12
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 47
+        width: 202
+        height: 348
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236f0aeed96911e80800000000000000
+      internalID: -8209615040662145486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Inspiration Bar Fill_13
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 0
+        width: 270
+        height: 455
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 885f43b7e5beac160800000000000000
+      internalID: 7046703358001083784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Inspiration Bar Fill_14
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 31
+        width: 213
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da9269ae14eb0d700800000000000000
+      internalID: 563159143739173293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Reginald Inspiration Bar Fill_0: -5163705139357120257
+      Reginald Inspiration Bar Fill_1: -1909604144744201601
+      Reginald Inspiration Bar Fill_10: 2607188061439113970
+      Reginald Inspiration Bar Fill_11: 34193631039981517
+      Reginald Inspiration Bar Fill_12: -8209615040662145486
+      Reginald Inspiration Bar Fill_13: 7046703358001083784
+      Reginald Inspiration Bar Fill_14: 563159143739173293
+      Reginald Inspiration Bar Fill_2: 5994478073785511546
+      Reginald Inspiration Bar Fill_3: -3623175366485807038
+      Reginald Inspiration Bar Fill_4: -3072670457496081763
+      Reginald Inspiration Bar Fill_5: -7061634254256744277
+      Reginald Inspiration Bar Fill_6: 7247278615498394190
+      Reginald Inspiration Bar Fill_7: 6933527314958123868
+      Reginald Inspiration Bar Fill_8: 5302444599958494305
+      Reginald Inspiration Bar Fill_9: -3293125097045254020
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -15,6 +15,11 @@ public class NextLevel : MonoBehaviour
 
     public IEnumerator FadeScreen(bool fadeIn, bool nextLevel)
     {
+        if(blackFade == null)
+        {
+            yield break;
+        }
+
         if (fadeIn)
         {
             while (blackFade.color.a > 0)

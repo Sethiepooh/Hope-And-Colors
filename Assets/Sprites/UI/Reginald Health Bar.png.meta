@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 129654d1b7f8de9419134c23af024446
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4999314381769900400
+    second: Reginald Health Bar_0
+  - first:
+      213: 6465199455225539442
+    second: Reginald Health Bar_1
+  - first:
+      213: -7335647633162394345
+    second: Reginald Health Bar_2
+  - first:
+      213: 4000496331922720706
+    second: Reginald Health Bar_3
+  - first:
+      213: -1490159950913124961
+    second: Reginald Health Bar_4
+  - first:
+      213: 1647488021336600203
+    second: Reginald Health Bar_5
+  - first:
+      213: 9179475891751262879
+    second: Reginald Health Bar_6
+  - first:
+      213: 7018055857898231317
+    second: Reginald Health Bar_7
+  - first:
+      213: 4391349468522997756
+    second: Reginald Health Bar_8
+  - first:
+      213: -6685982175155000873
+    second: Reginald Health Bar_9
+  - first:
+      213: -7106423369691878580
+    second: Reginald Health Bar_10
+  - first:
+      213: -8979903019061440838
+    second: Reginald Health Bar_11
+  - first:
+      213: -2737319555968766892
+    second: Reginald Health Bar_12
+  - first:
+      213: 1459371953341194229
+    second: Reginald Health Bar_13
+  - first:
+      213: 4217718572470797768
+    second: Reginald Health Bar_14
+  - first:
+      213: 5337606466598581130
+    second: Reginald Health Bar_15
+  - first:
+      213: -6320855325990767013
+    second: Reginald Health Bar_16
+  - first:
+      213: -6107383273001747650
+    second: Reginald Health Bar_17
+  - first:
+      213: 177351214043880110
+    second: Reginald Health Bar_18
+  - first:
+      213: 5522770045261383633
+    second: Reginald Health Bar_19
+  - first:
+      213: -8447007214312304998
+    second: Reginald Health Bar_20
+  - first:
+      213: -8050483271988260585
+    second: Reginald Health Bar_21
+  - first:
+      213: 5749291747037905578
+    second: Reginald Health Bar_22
+  - first:
+      213: -7519646556094653391
+    second: Reginald Health Bar_23
+  - first:
+      213: 5912510260150550835
+    second: Reginald Health Bar_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Reginald Health Bar_0
+      rect:
+        serializedVersion: 2
+        x: 6611
+        y: 1009
+        width: 80
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e7a1aae0ede9ab0800000000000000
+      internalID: -4999314381769900400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_1
+      rect:
+        serializedVersion: 2
+        x: 6731
+        y: 985
+        width: 108
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b64c286a009b950800000000000000
+      internalID: 6465199455225539442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_2
+      rect:
+        serializedVersion: 2
+        x: 7307
+        y: 966
+        width: 82
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715abe3f75b823a90800000000000000
+      internalID: -7335647633162394345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_3
+      rect:
+        serializedVersion: 2
+        x: 7414
+        y: 1021
+        width: 82
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7c185e73e948730800000000000000
+      internalID: 4000496331922720706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_4
+      rect:
+        serializedVersion: 2
+        x: 1852
+        y: 945
+        width: 198
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f954f4b7b63e15be0800000000000000
+      internalID: -1490159950913124961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 469
+        width: 1081
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8eaa7b60ad0dd610800000000000000
+      internalID: 1647488021336600203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_6
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 807
+        width: 2631
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9a981840bc046f70800000000000000
+      internalID: 9179475891751262879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_7
+      rect:
+        serializedVersion: 2
+        x: 3483
+        y: 818
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5169fd79e94256160800000000000000
+      internalID: 7018055857898231317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_8
+      rect:
+        serializedVersion: 2
+        x: 3553
+        y: 807
+        width: 2591
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7e9e3431531fc30800000000000000
+      internalID: 4391349468522997756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_9
+      rect:
+        serializedVersion: 2
+        x: 6158
+        y: 850
+        width: 2625
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9ea43b2ae9633a0800000000000000
+      internalID: -6685982175155000873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_10
+      rect:
+        serializedVersion: 2
+        x: 8794
+        y: 469
+        width: 1467
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b2bf1c899e06d90800000000000000
+      internalID: -7106423369691878580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_11
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 405
+        width: 2353
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe826f18c9f06380800000000000000
+      internalID: -8979903019061440838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_12
+      rect:
+        serializedVersion: 2
+        x: 3468
+        y: 469
+        width: 2892
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c60c5ed56130ad0800000000000000
+      internalID: -2737319555968766892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_13
+      rect:
+        serializedVersion: 2
+        x: 6393
+        y: 469
+        width: 2473
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ffd11a3f0bb04410800000000000000
+      internalID: 1459371953341194229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_14
+      rect:
+        serializedVersion: 2
+        x: 6291
+        y: 403
+        width: 69
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c580baf1b8588a30800000000000000
+      internalID: 4217718572470797768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_15
+      rect:
+        serializedVersion: 2
+        x: 10212
+        y: 395
+        width: 94
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83bf603dccf21a40800000000000000
+      internalID: 5337606466598581130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_16
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 112
+        width: 193
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b563fa1029fc748a0800000000000000
+      internalID: -6320855325990767013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_17
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 112
+        width: 181
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b719185473e3ba0800000000000000
+      internalID: -6107383273001747650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_18
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 112
+        width: 175
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaad1915df3167200800000000000000
+      internalID: 177351214043880110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_19
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 112
+        width: 104
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d709f36812d4ac40800000000000000
+      internalID: 5522770045261383633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_20
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 112
+        width: 201
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ec0c751b336ca80800000000000000
+      internalID: -8447007214312304998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_21
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 112
+        width: 192
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7115aee0e10f64090800000000000000
+      internalID: -8050483271988260585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_22
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 112
+        width: 122
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa28744026699cf40800000000000000
+      internalID: 5749291747037905578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_23
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 112
+        width: 193
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c1d7b4c49d4a790800000000000000
+      internalID: -7519646556094653391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Reginald Health Bar_24
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 0
+        width: 1384
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 331402b71c47d0250800000000000000
+      internalID: 5912510260150550835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Reginald Health Bar_0: -4999314381769900400
+      Reginald Health Bar_1: 6465199455225539442
+      Reginald Health Bar_10: -7106423369691878580
+      Reginald Health Bar_11: -8979903019061440838
+      Reginald Health Bar_12: -2737319555968766892
+      Reginald Health Bar_13: 1459371953341194229
+      Reginald Health Bar_14: 4217718572470797768
+      Reginald Health Bar_15: 5337606466598581130
+      Reginald Health Bar_16: -6320855325990767013
+      Reginald Health Bar_17: -6107383273001747650
+      Reginald Health Bar_18: 177351214043880110
+      Reginald Health Bar_19: 5522770045261383633
+      Reginald Health Bar_2: -7335647633162394345
+      Reginald Health Bar_20: -8447007214312304998
+      Reginald Health Bar_21: -8050483271988260585
+      Reginald Health Bar_22: 5749291747037905578
+      Reginald Health Bar_23: -7519646556094653391
+      Reginald Health Bar_24: 5912510260150550835
+      Reginald Health Bar_3: 4000496331922720706
+      Reginald Health Bar_4: -1490159950913124961
+      Reginald Health Bar_5: 1647488021336600203
+      Reginald Health Bar_6: 9179475891751262879
+      Reginald Health Bar_7: 7018055857898231317
+      Reginald Health Bar_8: 4391349468522997756
+      Reginald Health Bar_9: -6685982175155000873
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

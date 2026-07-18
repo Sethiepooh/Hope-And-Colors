@@ -1,0 +1,1781 @@
+fileFormatVersion: 2
+guid: 4ce53da3a0a297f4c88d3c679297e09f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -795858601723186229
+    second: Inspired Description_0
+  - first:
+      213: -2617136197235404574
+    second: Inspired Description_1
+  - first:
+      213: 8305331790400986814
+    second: Inspired Description_2
+  - first:
+      213: 4732226717832599975
+    second: Inspired Description_3
+  - first:
+      213: -3338491015645229450
+    second: Inspired Description_4
+  - first:
+      213: 5840464348153872807
+    second: Inspired Description_5
+  - first:
+      213: -6704614827471484305
+    second: Inspired Description_6
+  - first:
+      213: 8403059806733872124
+    second: Inspired Description_7
+  - first:
+      213: -152818660341075594
+    second: Inspired Description_8
+  - first:
+      213: -1703154946313302982
+    second: Inspired Description_9
+  - first:
+      213: 723911886130772025
+    second: Inspired Description_10
+  - first:
+      213: -958738679954606396
+    second: Inspired Description_11
+  - first:
+      213: 7903703332846023333
+    second: Inspired Description_12
+  - first:
+      213: -6284579834690208502
+    second: Inspired Description_13
+  - first:
+      213: -3700179553843525120
+    second: Inspired Description_14
+  - first:
+      213: -4713589690180504837
+    second: Inspired Description_15
+  - first:
+      213: -1183795335312235605
+    second: Inspired Description_16
+  - first:
+      213: 8322913953819362383
+    second: Inspired Description_17
+  - first:
+      213: -4804842073321266052
+    second: Inspired Description_18
+  - first:
+      213: 7280518536470685999
+    second: Inspired Description_19
+  - first:
+      213: 4664672476572895227
+    second: Inspired Description_20
+  - first:
+      213: -2318893074250883131
+    second: Inspired Description_21
+  - first:
+      213: -7646526339915105438
+    second: Inspired Description_22
+  - first:
+      213: 7425392932030336835
+    second: Inspired Description_23
+  - first:
+      213: 1679992348223126534
+    second: Inspired Description_24
+  - first:
+      213: -7604995709670468533
+    second: Inspired Description_25
+  - first:
+      213: 7811772249641462215
+    second: Inspired Description_26
+  - first:
+      213: 3971517955322653570
+    second: Inspired Description_27
+  - first:
+      213: -3341718865591287078
+    second: Inspired Description_28
+  - first:
+      213: -2293614648358118788
+    second: Inspired Description_29
+  - first:
+      213: -607853228741472755
+    second: Inspired Description_30
+  - first:
+      213: -9064476187516543585
+    second: Inspired Description_31
+  - first:
+      213: -7505085565214430366
+    second: Inspired Description_32
+  - first:
+      213: -3533713592500688439
+    second: Inspired Description_33
+  - first:
+      213: -5200668749468889919
+    second: Inspired Description_34
+  - first:
+      213: -2567608205394324021
+    second: Inspired Description_35
+  - first:
+      213: -4213216876320454325
+    second: Inspired Description_36
+  - first:
+      213: 176282409810846707
+    second: Inspired Description_37
+  - first:
+      213: 7806555601652335474
+    second: Inspired Description_38
+  - first:
+      213: -3977609406660725040
+    second: Inspired Description_39
+  - first:
+      213: -2696943800422095282
+    second: Inspired Description_40
+  - first:
+      213: -5202584378047259091
+    second: Inspired Description_41
+  - first:
+      213: 5566498234550828401
+    second: Inspired Description_42
+  - first:
+      213: -6735729188203593813
+    second: Inspired Description_43
+  - first:
+      213: 5368828467918270922
+    second: Inspired Description_44
+  - first:
+      213: 3773490713814525667
+    second: Inspired Description_45
+  - first:
+      213: 876533627383869207
+    second: Inspired Description_46
+  - first:
+      213: -1321436400830025149
+    second: Inspired Description_47
+  - first:
+      213: 8508029548858956951
+    second: Inspired Description_48
+  - first:
+      213: -5400135900613642648
+    second: Inspired Description_49
+  - first:
+      213: -5368713780404263076
+    second: Inspired Description_50
+  - first:
+      213: -5030962623903445873
+    second: Inspired Description_51
+  - first:
+      213: -957830797778679154
+    second: Inspired Description_52
+  - first:
+      213: 4154924802814879964
+    second: Inspired Description_53
+  - first:
+      213: 615504911707493684
+    second: Inspired Description_54
+  - first:
+      213: 8496011834417408090
+    second: Inspired Description_55
+  - first:
+      213: 8540744044159757191
+    second: Inspired Description_56
+  - first:
+      213: 2586167711243594979
+    second: Inspired Description_57
+  - first:
+      213: 2676794350671038558
+    second: Inspired Description_58
+  - first:
+      213: -6815627355956136505
+    second: Inspired Description_59
+  - first:
+      213: -7042227422228252922
+    second: Inspired Description_60
+  - first:
+      213: 305428178643736051
+    second: Inspired Description_61
+  - first:
+      213: -2156729368273603496
+    second: Inspired Description_62
+  - first:
+      213: -5502924406936718416
+    second: Inspired Description_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Inspired Description_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 449
+        width: 99
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3b9d081da84f4f0800000000000000
+      internalID: -795858601723186229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e097faae701eabd0800000000000000
+      internalID: -2617136197235404574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_2
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe1c948247724370800000000000000
+      internalID: 8305331790400986814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_3
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 449
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a95601a02f3ca140800000000000000
+      internalID: 4732226717832599975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_4
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e02aefb1c4ba1d0800000000000000
+      internalID: -3338491015645229450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_5
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a18b0b616f7d0150800000000000000
+      internalID: 5840464348153872807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_6
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6aceb4465c64f2a0800000000000000
+      internalID: -6704614827471484305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_7
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfb2cb67f5aad9470800000000000000
+      internalID: 8403059806733872124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_8
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 671b153fc3411edf0800000000000000
+      internalID: -152818660341075594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_9
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ccb8b999d2d58e0800000000000000
+      internalID: -1703154946313302982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_10
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 938f185660adb0a00800000000000000
+      internalID: 723911886130772025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_11
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6f0ec0040e1b2f0800000000000000
+      internalID: -958738679954606396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_12
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2bb5c3e489fad60800000000000000
+      internalID: 7903703332846023333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_13
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0df4beffefa8c8a0800000000000000
+      internalID: -6284579834690208502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_14
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a4ef7dc4256acc0800000000000000
+      internalID: -3700179553843525120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_15
+      rect:
+        serializedVersion: 2
+        x: 1866
+        y: 449
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf2f8d38627f59eb0800000000000000
+      internalID: -4713589690180504837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_16
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba323ff1a60529fe0800000000000000
+      internalID: -1183795335312235605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_17
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f448b81f42ee08370800000000000000
+      internalID: 8322913953819362383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_18
+      rect:
+        serializedVersion: 2
+        x: 2278
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c74a5d96795c15db0800000000000000
+      internalID: -4804842073321266052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_19
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f296bfaf809990560800000000000000
+      internalID: 7280518536470685999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_20
+      rect:
+        serializedVersion: 2
+        x: 2511
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf74ba727ee3cb040800000000000000
+      internalID: 4664672476572895227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_21
+      rect:
+        serializedVersion: 2
+        x: 2628
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf9925f803a1dfd0800000000000000
+      internalID: -2318893074250883131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_22
+      rect:
+        serializedVersion: 2
+        x: 2744
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b31bf8ec412e590800000000000000
+      internalID: -7646526339915105438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_23
+      rect:
+        serializedVersion: 2
+        x: 2861
+        y: 449
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f4d5fb78b4c0760800000000000000
+      internalID: 7425392932030336835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_24
+      rect:
+        serializedVersion: 2
+        x: 3039
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60cb635c328805710800000000000000
+      internalID: 1679992348223126534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_25
+      rect:
+        serializedVersion: 2
+        x: 3156
+        y: 449
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b44d8bee1b0a57690800000000000000
+      internalID: -7604995709670468533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_26
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c92226f87df86c60800000000000000
+      internalID: 7811772249641462215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_27
+      rect:
+        serializedVersion: 2
+        x: 3389
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28ba712d98aad1730800000000000000
+      internalID: 3971517955322653570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_28
+      rect:
+        serializedVersion: 2
+        x: 3506
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2c53d9564df91d0800000000000000
+      internalID: -3341718865591287078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_29
+      rect:
+        serializedVersion: 2
+        x: 3622
+        y: 449
+        width: 36
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7a5bf021a17b20e0800000000000000
+      internalID: -2293614648358118788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_30
+      rect:
+        serializedVersion: 2
+        x: 3672
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0e4a4185b87097f0800000000000000
+      internalID: -607853228741472755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_31
+      rect:
+        serializedVersion: 2
+        x: 3789
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9dd610eee2843280800000000000000
+      internalID: -9064476187516543585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_32
+      rect:
+        serializedVersion: 2
+        x: 3906
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b6b7c217498d790800000000000000
+      internalID: -7505085565214430366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_33
+      rect:
+        serializedVersion: 2
+        x: 4022
+        y: 449
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9e605c53ab5fec0800000000000000
+      internalID: -3533713592500688439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_34
+      rect:
+        serializedVersion: 2
+        x: 4139
+        y: 449
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc8e61a35383d7b0800000000000000
+      internalID: -5200668749468889919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_35
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 16
+        width: 100
+        height: 230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5d713e0f50e5cd0800000000000000
+      internalID: -2567608205394324021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_36
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 16
+        width: 100
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b490d35d295a785c0800000000000000
+      internalID: -4213216876320454325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_37
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f3ece0fae7427200800000000000000
+      internalID: 176282409810846707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_38
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 16
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273c2d375f4765c60800000000000000
+      internalID: 7806555601652335474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_39
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d63cb4a151bcc8c0800000000000000
+      internalID: -3977609406660725040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_40
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4626ac07e7829ad0800000000000000
+      internalID: -2696943800422095282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_41
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 0
+        width: 35
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e1f789215bcc7b0800000000000000
+      internalID: -5202584378047259091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_42
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17dbd39d6ac204d40800000000000000
+      internalID: 5566498234550828401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_43
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baff4e1adf1e582a0800000000000000
+      internalID: -6735729188203593813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_44
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac1f54adb09e18a40800000000000000
+      internalID: 5368828467918270922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_45
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 16
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e66628bfc12e5430800000000000000
+      internalID: 3773490713814525667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_46
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 16
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f66e5a0b21a2c00800000000000000
+      internalID: 876533627383869207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_47
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 16
+        width: 100
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342714f389059ade0800000000000000
+      internalID: -1321436400830025149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_48
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79cd3461cc7921670800000000000000
+      internalID: 8508029548858956951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_49
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 866f611720dde05b0800000000000000
+      internalID: -5400135900613642648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_50
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57624ae24f7e75b0800000000000000
+      internalID: -5368713780404263076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_51
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8cc7f3162e6e2ab0800000000000000
+      internalID: -5030962623903445873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_52
+      rect:
+        serializedVersion: 2
+        x: 2447
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a0977d6f915b2f0800000000000000
+      internalID: -957830797778679154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_53
+      rect:
+        serializedVersion: 2
+        x: 2564
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd8ad3c281249a930800000000000000
+      internalID: 4154924802814879964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_54
+      rect:
+        serializedVersion: 2
+        x: 2614
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43555d3c476ba8800800000000000000
+      internalID: 615504911707493684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_55
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 16
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a58e6f5efb5e7e570800000000000000
+      internalID: 8496011834417408090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_56
+      rect:
+        serializedVersion: 2
+        x: 2847
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78beca51571d68670800000000000000
+      internalID: 8540744044159757191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_57
+      rect:
+        serializedVersion: 2
+        x: 2964
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec624ec4d9e3e320800000000000000
+      internalID: 2586167711243594979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_58
+      rect:
+        serializedVersion: 2
+        x: 3014
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5805889742e52520800000000000000
+      internalID: 2676794350671038558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_59
+      rect:
+        serializedVersion: 2
+        x: 3130
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c5bccec7070a61a0800000000000000
+      internalID: -6815627355956136505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_60
+      rect:
+        serializedVersion: 2
+        x: 3308
+        y: 16
+        width: 100
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 607f196887bf44e90800000000000000
+      internalID: -7042227422228252922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_61
+      rect:
+        serializedVersion: 2
+        x: 3425
+        y: 16
+        width: 100
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f5547c6f491d3400800000000000000
+      internalID: 305428178643736051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_62
+      rect:
+        serializedVersion: 2
+        x: 3542
+        y: 16
+        width: 35
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854366ff012c112e0800000000000000
+      internalID: -2156729368273603496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inspired Description_63
+      rect:
+        serializedVersion: 2
+        x: 3592
+        y: 16
+        width: 100
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b3b5ba586fa1a3b0800000000000000
+      internalID: -5502924406936718416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Inspired Description_0: -795858601723186229
+      Inspired Description_1: -2617136197235404574
+      Inspired Description_10: 723911886130772025
+      Inspired Description_11: -958738679954606396
+      Inspired Description_12: 7903703332846023333
+      Inspired Description_13: -6284579834690208502
+      Inspired Description_14: -3700179553843525120
+      Inspired Description_15: -4713589690180504837
+      Inspired Description_16: -1183795335312235605
+      Inspired Description_17: 8322913953819362383
+      Inspired Description_18: -4804842073321266052
+      Inspired Description_19: 7280518536470685999
+      Inspired Description_2: 8305331790400986814
+      Inspired Description_20: 4664672476572895227
+      Inspired Description_21: -2318893074250883131
+      Inspired Description_22: -7646526339915105438
+      Inspired Description_23: 7425392932030336835
+      Inspired Description_24: 1679992348223126534
+      Inspired Description_25: -7604995709670468533
+      Inspired Description_26: 7811772249641462215
+      Inspired Description_27: 3971517955322653570
+      Inspired Description_28: -3341718865591287078
+      Inspired Description_29: -2293614648358118788
+      Inspired Description_3: 4732226717832599975
+      Inspired Description_30: -607853228741472755
+      Inspired Description_31: -9064476187516543585
+      Inspired Description_32: -7505085565214430366
+      Inspired Description_33: -3533713592500688439
+      Inspired Description_34: -5200668749468889919
+      Inspired Description_35: -2567608205394324021
+      Inspired Description_36: -4213216876320454325
+      Inspired Description_37: 176282409810846707
+      Inspired Description_38: 7806555601652335474
+      Inspired Description_39: -3977609406660725040
+      Inspired Description_4: -3338491015645229450
+      Inspired Description_40: -2696943800422095282
+      Inspired Description_41: -5202584378047259091
+      Inspired Description_42: 5566498234550828401
+      Inspired Description_43: -6735729188203593813
+      Inspired Description_44: 5368828467918270922
+      Inspired Description_45: 3773490713814525667
+      Inspired Description_46: 876533627383869207
+      Inspired Description_47: -1321436400830025149
+      Inspired Description_48: 8508029548858956951
+      Inspired Description_49: -5400135900613642648
+      Inspired Description_5: 5840464348153872807
+      Inspired Description_50: -5368713780404263076
+      Inspired Description_51: -5030962623903445873
+      Inspired Description_52: -957830797778679154
+      Inspired Description_53: 4154924802814879964
+      Inspired Description_54: 615504911707493684
+      Inspired Description_55: 8496011834417408090
+      Inspired Description_56: 8540744044159757191
+      Inspired Description_57: 2586167711243594979
+      Inspired Description_58: 2676794350671038558
+      Inspired Description_59: -6815627355956136505
+      Inspired Description_6: -6704614827471484305
+      Inspired Description_60: -7042227422228252922
+      Inspired Description_61: 305428178643736051
+      Inspired Description_62: -2156729368273603496
+      Inspired Description_63: -5502924406936718416
+      Inspired Description_7: 8403059806733872124
+      Inspired Description_8: -152818660341075594
+      Inspired Description_9: -1703154946313302982
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
