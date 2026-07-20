@@ -72,6 +72,7 @@ public class RespawnManager : MonoBehaviour
         player.GetComponent<SpriteRenderer>().enabled = true;
         player.GetComponent<Collider2D>().enabled = true;
         player.GetComponent<PlayerAttack>().currentInspiration = 0;
+        player.GetComponent<PlayerAttack>().UpdateInspirationUI();
         player.GetComponent<Health>().Heal(100);
         player.GetComponent<PlayerMovement>().controlable = true;
 

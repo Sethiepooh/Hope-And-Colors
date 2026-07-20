@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] Slider healthBar;
+    [SerializeField] Image healthBar;
     [SerializeField] Health health;
 
     SpriteRenderer sRend;
@@ -34,7 +34,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (healthBar != null)
         {
-            healthBar.value = health.GetHealthPercent();
+            healthBar.fillAmount = health.GetHealthPercent();
         }
     }
 

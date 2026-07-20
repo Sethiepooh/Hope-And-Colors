@@ -77,6 +77,10 @@ public class MenuPageHandler : MonoBehaviour
         }
 
         rect.anchoredPosition = endPos;
+        if (movable.obj.GetComponent<UIBeatPulse>())
+        {
+            movable.obj.GetComponent<UIBeatPulse>().SetOriginalScale(endScale);
+        }
         rect.sizeDelta = endScale;
         AnimationCoroutine = null;
     }

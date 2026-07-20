@@ -37,7 +37,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] float inspirationGainOffBeat = 1f;
     [SerializeField] float maxInspiration = 100f;
     [SerializeField] float inspirationConsumptionRate = 5f;
-    [SerializeField] Slider inspirationBar;
+    [SerializeField] Image[] inspirationBars;
     float inspirationGainOnHit;
      public float currentInspiration = 0f;
     PlayerMovement playerMovement;
@@ -109,11 +109,11 @@ public class PlayerAttack : MonoBehaviour
             if(!stumble)
                 sRend.color = allegroColor;
             currentInspiration -= inspirationConsumptionRate * Time.deltaTime;
-            inspirationBar.value = currentInspiration / maxInspiration;
-            if (inspirationBar.value <= 0)
+            UpdateInspirationUI();
+            if (currentInspiration / maxInspiration <= 0)
             {
                 sRend.color = defaultColor;
-                inspirationBar.value = 0;
+                UpdateInspirationUI();
                 allegroMode = false;
             }
         }
@@ -205,7 +205,7 @@ public class PlayerAttack : MonoBehaviour
                             currentInspiration += inspirationGainOnHit;
                         if (currentInspiration > maxInspiration)
                             currentInspiration = maxInspiration;
-                        inspirationBar.value = currentInspiration / maxInspiration;
+                        UpdateInspirationUI();
                     }
                 }
                 else if (enemy.gameObject.CompareTag("Obstacle") || enemy.gameObject.CompareTag("Bomb"))
@@ -224,12 +224,50 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
+    public void UpdateInspirationUI()
+    {
+        float inspirationRatio = currentInspiration / maxInspiration;
+
+        if(inspirationRatio <= .25)
+        {
+            inspirationBars[0].fillAmount = inspirationRatio * 4;
+            inspirationBars[1].fillAmount = 0;
+            inspirationBars[2].fillAmount = 0;
+            inspirationBars[3].fillAmount = 0;
+            if(inspirationRatio < 0)
+            {
+                inspirationBars[0].fillAmount = 0;
+            }
+        }
+        else if(inspirationRatio > .25f && inspirationRatio <= .50f)
+        {
+            inspirationBars[0].fillAmount = 1;
+            inspirationBars[1].fillAmount = (inspirationRatio - .25f) * 4;
+            inspirationBars[2].fillAmount = 0;
+            inspirationBars[3].fillAmount = 0;
+        }
+        else if(inspirationRatio > .50f && inspirationRatio <= .75f)
+        {
+            inspirationBars[0].fillAmount = 1;
+            inspirationBars[1].fillAmount = 1;
+            inspirationBars[2].fillAmount = (inspirationRatio - .50f) * 4;
+            inspirationBars[3].fillAmount = 0;
+        }
+        else if(inspirationRatio >= .75f)
+        {
+            inspirationBars[0].fillAmount = 1;
+            inspirationBars[1].fillAmount = 1;
+            inspirationBars[2].fillAmount = 1;
+            inspirationBars[3].fillAmount = (inspirationRatio - .75f) * 4;
+        }
+    }
+
     public void AddToCurrentInspiration(float inspiration)
     {
         currentInspiration += inspiration;
         if (currentInspiration > maxInspiration)
             currentInspiration = maxInspiration;
-        inspirationBar.value = currentInspiration / maxInspiration;
+        UpdateInspirationUI();
         Debug.Log("Current Inspiration: " + currentInspiration);
     }
 
@@ -258,7 +296,7 @@ public class PlayerAttack : MonoBehaviour
 
         if (context.performed)
         {
-            if (inspirationBar.value >= .25f && !allegroMode)
+            if (currentInspiration / maxInspiration >= .25f && !allegroMode)
             {
                 allegroMode = true;
                 playerMovement.allegro = true;
@@ -287,7 +325,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 StartCoroutine(AngelBreakTimer());
                 currentInspiration -= maxInspiration;
-                inspirationBar.value = currentInspiration / maxInspiration;
+                UpdateInspirationUI();
             }
         }
        
@@ -362,7 +400,7 @@ public class PlayerAttack : MonoBehaviour
                 proj.GetComponent<HeartthrobSoloProjectile>().Initialize(this, (facedDirection.position - transform.position).normalized, this.gameObject);
                 soloActive = true;
                 currentInspiration -= (maxInspiration / 4);
-                inspirationBar.value = currentInspiration / maxInspiration;
+                UpdateInspirationUI();
             }
         }       
     }
@@ -395,7 +433,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 playerMovement.Dive();
                 currentInspiration -= (maxInspiration / 4);
-                inspirationBar.value = currentInspiration / maxInspiration;
+                UpdateInspirationUI();
             }
         }      
     }

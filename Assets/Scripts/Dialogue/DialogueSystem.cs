@@ -32,7 +32,8 @@ public class DialogueSystem : MonoBehaviour
 
     public void SetInteractable(IInteractable interactable)
     {
-        interactionManager.nearbyInteractable = interactable;
+        interactionManager.assignedInteractable = interactable;
+        Debug.Log(interactionManager.nearbyInteractable);
     }
 
     public void UpdateDialogueUI(string name, Color nameColor, string dialogueLine, Sprite characterSprite, bool UIactiveState = true)

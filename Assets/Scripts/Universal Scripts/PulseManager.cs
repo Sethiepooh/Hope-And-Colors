@@ -6,6 +6,7 @@ public class PulseManager : MonoBehaviour
 {
     public List<GameObject> entitiesToPulse = new List<GameObject>();
     public List<GameObject> entitiesToFlash = new List<GameObject>();
+    public List<GameObject> UIElementsToPulse = new List<GameObject>();
 
     public void AddEntity(GameObject entity, List<GameObject> list)
     {
@@ -23,6 +24,12 @@ public class PulseManager : MonoBehaviour
         {
             if (entity != null)
                 entity.GetComponent<BeatPulse>().Pulse();
+        }
+
+        foreach (GameObject entity in UIElementsToPulse)
+        {
+            if(entity != null)
+                entity.GetComponent<UIBeatPulse>().Pulse();
         }
     }
 

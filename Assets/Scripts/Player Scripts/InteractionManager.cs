@@ -15,6 +15,7 @@ public class InteractionManager : MonoBehaviour
     [HideInInspector] public InputDirectionEnum.InputDirection lastInputDirection;
 
     [HideInInspector] public IInteractable nearbyInteractable;
+    public IInteractable assignedInteractable;
 
     private void Awake()
     {
@@ -59,8 +60,14 @@ public class InteractionManager : MonoBehaviour
     public void OnInteract(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
+        Debug.Log(nearbyInteractable);
+        
+        if(assignedInteractable != null && assignedInteractable.interactable)
+        {
+            assignedInteractable.OnInteract();
+            return;
+        }
 
-        //Priority: Save points first, then chests, then doors
         if (nearbyInteractable != null && nearbyInteractable.interactable)
         {
             nearbyInteractable.OnInteract();

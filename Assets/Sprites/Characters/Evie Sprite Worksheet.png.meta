@@ -1,0 +1,4433 @@
+fileFormatVersion: 2
+guid: 7271372aa2cbdae448eae51ac28394cf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -791551986236226333
+    second: Evie Sprite Worksheet_0
+  - first:
+      213: 4178799110846854958
+    second: Evie Sprite Worksheet_1
+  - first:
+      213: 4917865212567655827
+    second: Evie Sprite Worksheet_2
+  - first:
+      213: 3694373142433232711
+    second: Evie Sprite Worksheet_3
+  - first:
+      213: 5354340996303704687
+    second: Evie Sprite Worksheet_4
+  - first:
+      213: -8087483680167164973
+    second: Evie Sprite Worksheet_5
+  - first:
+      213: -3474426934115114408
+    second: Evie Sprite Worksheet_6
+  - first:
+      213: -612570268623155749
+    second: Evie Sprite Worksheet_7
+  - first:
+      213: 1385236488054989799
+    second: Evie Sprite Worksheet_8
+  - first:
+      213: -3725671994320988982
+    second: Evie Sprite Worksheet_9
+  - first:
+      213: 2013503459110433125
+    second: Evie Sprite Worksheet_10
+  - first:
+      213: 2986147254979082849
+    second: Evie Sprite Worksheet_11
+  - first:
+      213: 7784302421097797483
+    second: Evie Sprite Worksheet_12
+  - first:
+      213: -9194932864422122243
+    second: Evie Sprite Worksheet_13
+  - first:
+      213: 9023682139463945693
+    second: Evie Sprite Worksheet_14
+  - first:
+      213: 1904769616183816460
+    second: Evie Sprite Worksheet_15
+  - first:
+      213: 4781587833816781895
+    second: Evie Sprite Worksheet_16
+  - first:
+      213: 2091810182664077377
+    second: Evie Sprite Worksheet_17
+  - first:
+      213: -4499223474871473535
+    second: Evie Sprite Worksheet_18
+  - first:
+      213: -1254927418978081361
+    second: Evie Sprite Worksheet_19
+  - first:
+      213: 3049731515989989913
+    second: Evie Sprite Worksheet_20
+  - first:
+      213: -4766403457053367887
+    second: Evie Sprite Worksheet_21
+  - first:
+      213: 886757479258654215
+    second: Evie Sprite Worksheet_22
+  - first:
+      213: -4206485971447578221
+    second: Evie Sprite Worksheet_23
+  - first:
+      213: 3095129100003033832
+    second: Evie Sprite Worksheet_24
+  - first:
+      213: 8943493633572749346
+    second: Evie Sprite Worksheet_25
+  - first:
+      213: -8240294912097784439
+    second: Evie Sprite Worksheet_26
+  - first:
+      213: 5046356876257201618
+    second: Evie Sprite Worksheet_27
+  - first:
+      213: -7783000955464298477
+    second: Evie Sprite Worksheet_28
+  - first:
+      213: 6957508530931211378
+    second: Evie Sprite Worksheet_29
+  - first:
+      213: 2019801772561905971
+    second: Evie Sprite Worksheet_30
+  - first:
+      213: 4771407299802769079
+    second: Evie Sprite Worksheet_31
+  - first:
+      213: -4913721004935752438
+    second: Evie Sprite Worksheet_32
+  - first:
+      213: -2761316615644176966
+    second: Evie Sprite Worksheet_33
+  - first:
+      213: -19017084135746357
+    second: Evie Sprite Worksheet_34
+  - first:
+      213: -1879496197261652472
+    second: Evie Sprite Worksheet_35
+  - first:
+      213: -1531191170162913787
+    second: Evie Sprite Worksheet_36
+  - first:
+      213: 2578504482359644610
+    second: Evie Sprite Worksheet_37
+  - first:
+      213: 9035592062373976576
+    second: Evie Sprite Worksheet_38
+  - first:
+      213: -7668287871903830176
+    second: Evie Sprite Worksheet_39
+  - first:
+      213: 9069283696784512548
+    second: Evie Sprite Worksheet_40
+  - first:
+      213: 5737725330990125068
+    second: Evie Sprite Worksheet_41
+  - first:
+      213: 4427882777026369857
+    second: Evie Sprite Worksheet_42
+  - first:
+      213: 5922703321431368827
+    second: Evie Sprite Worksheet_43
+  - first:
+      213: 1970751239023055655
+    second: Evie Sprite Worksheet_44
+  - first:
+      213: -8048318171433151661
+    second: Evie Sprite Worksheet_45
+  - first:
+      213: 5393945130566487921
+    second: Evie Sprite Worksheet_46
+  - first:
+      213: -3441018844950863914
+    second: Evie Sprite Worksheet_47
+  - first:
+      213: 4883519693559207147
+    second: Evie Sprite Worksheet_48
+  - first:
+      213: -9069381441619349071
+    second: Evie Sprite Worksheet_49
+  - first:
+      213: 2121394565013118206
+    second: Evie Sprite Worksheet_50
+  - first:
+      213: -5939740981877651637
+    second: Evie Sprite Worksheet_51
+  - first:
+      213: 532369860345525030
+    second: Evie Sprite Worksheet_52
+  - first:
+      213: -4337804995404640004
+    second: Evie Sprite Worksheet_53
+  - first:
+      213: 5928893140296092580
+    second: Evie Sprite Worksheet_54
+  - first:
+      213: -5404847949191733355
+    second: Evie Sprite Worksheet_55
+  - first:
+      213: 2505737440105163253
+    second: Evie Sprite Worksheet_56
+  - first:
+      213: 7025747005889952995
+    second: Evie Sprite Worksheet_57
+  - first:
+      213: 3724691687679401514
+    second: Evie Sprite Worksheet_58
+  - first:
+      213: 3391251872500255944
+    second: Evie Sprite Worksheet_59
+  - first:
+      213: 5475061709816167470
+    second: Evie Sprite Worksheet_60
+  - first:
+      213: 1044261017142824502
+    second: Evie Sprite Worksheet_61
+  - first:
+      213: 8485215300350370125
+    second: Evie Sprite Worksheet_62
+  - first:
+      213: 2869235144854436012
+    second: Evie Sprite Worksheet_63
+  - first:
+      213: -6221636103167697536
+    second: Evie Sprite Worksheet_64
+  - first:
+      213: 2687945528252121714
+    second: Evie Sprite Worksheet_65
+  - first:
+      213: 7383622088823063639
+    second: Evie Sprite Worksheet_66
+  - first:
+      213: 5714174522886265185
+    second: Evie Sprite Worksheet_67
+  - first:
+      213: -8920175324997973920
+    second: Evie Sprite Worksheet_68
+  - first:
+      213: 7392127948165022489
+    second: Evie Sprite Worksheet_69
+  - first:
+      213: -8571067459396625262
+    second: Evie Sprite Worksheet_70
+  - first:
+      213: 151954306697736776
+    second: Evie Sprite Worksheet_71
+  - first:
+      213: 297994627405291673
+    second: Evie Sprite Worksheet_72
+  - first:
+      213: 6063209119046868259
+    second: Evie Sprite Worksheet_73
+  - first:
+      213: -1127033508606341410
+    second: Evie Sprite Worksheet_74
+  - first:
+      213: 1698704688746001008
+    second: Evie Sprite Worksheet_75
+  - first:
+      213: 6147266154308364740
+    second: Evie Sprite Worksheet_76
+  - first:
+      213: 4082768689654707593
+    second: Evie Sprite Worksheet_77
+  - first:
+      213: 3965731206764529718
+    second: Evie Sprite Worksheet_78
+  - first:
+      213: -2136696856781165363
+    second: Evie Sprite Worksheet_79
+  - first:
+      213: 7742810358596503830
+    second: Evie Sprite Worksheet_80
+  - first:
+      213: -8908218638651272701
+    second: Evie Sprite Worksheet_81
+  - first:
+      213: -7138627597172738195
+    second: Evie Sprite Worksheet_82
+  - first:
+      213: -4895930511756700628
+    second: Evie Sprite Worksheet_83
+  - first:
+      213: 3774181096237463042
+    second: Evie Sprite Worksheet_84
+  - first:
+      213: 2680634460399490825
+    second: Evie Sprite Worksheet_85
+  - first:
+      213: -7910869297447768103
+    second: Evie Sprite Worksheet_86
+  - first:
+      213: -1701613907910981183
+    second: Evie Sprite Worksheet_87
+  - first:
+      213: 1100215848778571399
+    second: Evie Sprite Worksheet_88
+  - first:
+      213: -3747194717158307342
+    second: Evie Sprite Worksheet_89
+  - first:
+      213: 9208612920773121652
+    second: Evie Sprite Worksheet_90
+  - first:
+      213: 1610154174957384433
+    second: Evie Sprite Worksheet_91
+  - first:
+      213: -3759966912309268279
+    second: Evie Sprite Worksheet_92
+  - first:
+      213: -2657490726181296516
+    second: Evie Sprite Worksheet_93
+  - first:
+      213: -4238184303743686475
+    second: Evie Sprite Worksheet_94
+  - first:
+      213: 7780222601807852798
+    second: Evie Sprite Worksheet_95
+  - first:
+      213: -3218422767179685859
+    second: Evie Sprite Worksheet_96
+  - first:
+      213: 7676810550202323910
+    second: Evie Sprite Worksheet_97
+  - first:
+      213: -9089338547398771738
+    second: Evie Sprite Worksheet_98
+  - first:
+      213: 1899867362493972951
+    second: Evie Sprite Worksheet_99
+  - first:
+      213: -7422223564995127334
+    second: Evie Sprite Worksheet_100
+  - first:
+      213: -8428068226452668389
+    second: Evie Sprite Worksheet_101
+  - first:
+      213: 4261613524970377043
+    second: Evie Sprite Worksheet_102
+  - first:
+      213: -6651929146623722993
+    second: Evie Sprite Worksheet_103
+  - first:
+      213: -3328530798072819027
+    second: Evie Sprite Worksheet_104
+  - first:
+      213: -1850319893730339819
+    second: Evie Sprite Worksheet_105
+  - first:
+      213: -1233389483994547708
+    second: Evie Sprite Worksheet_106
+  - first:
+      213: 7841442012431914654
+    second: Evie Sprite Worksheet_107
+  - first:
+      213: -8792393531077177108
+    second: Evie Sprite Worksheet_108
+  - first:
+      213: 3051856927960465870
+    second: Evie Sprite Worksheet_109
+  - first:
+      213: 7702010155904676785
+    second: Evie Sprite Worksheet_110
+  - first:
+      213: 60631822355321979
+    second: Evie Sprite Worksheet_111
+  - first:
+      213: -2928419554736629682
+    second: Evie Sprite Worksheet_112
+  - first:
+      213: 6432502654473429647
+    second: Evie Sprite Worksheet_113
+  - first:
+      213: -2909291917945154226
+    second: Evie Sprite Worksheet_114
+  - first:
+      213: 8322482569490060521
+    second: Evie Sprite Worksheet_115
+  - first:
+      213: 7367951996854170987
+    second: Evie Sprite Worksheet_116
+  - first:
+      213: 838937994271957849
+    second: Evie Sprite Worksheet_117
+  - first:
+      213: -228581017839469469
+    second: Evie Sprite Worksheet_118
+  - first:
+      213: 5650668996160949779
+    second: Evie Sprite Worksheet_119
+  - first:
+      213: 7716007003352764011
+    second: Evie Sprite Worksheet_120
+  - first:
+      213: 3718183142213089491
+    second: Evie Sprite Worksheet_121
+  - first:
+      213: 5261344551052788947
+    second: Evie Sprite Worksheet_122
+  - first:
+      213: 2352113039753321803
+    second: Evie Sprite Worksheet_123
+  - first:
+      213: -4265181146016036401
+    second: Evie Sprite Worksheet_124
+  - first:
+      213: 3635709329599175352
+    second: Evie Sprite Worksheet_125
+  - first:
+      213: 5658326116753938718
+    second: Evie Sprite Worksheet_126
+  - first:
+      213: 2322356516797739663
+    second: Evie Sprite Worksheet_127
+  - first:
+      213: 4111660484489617879
+    second: Evie Sprite Worksheet_128
+  - first:
+      213: -6340762174266505039
+    second: Evie Sprite Worksheet_129
+  - first:
+      213: 101511070081681950
+    second: Evie Sprite Worksheet_130
+  - first:
+      213: -4803106391745012535
+    second: Evie Sprite Worksheet_131
+  - first:
+      213: 9106897634981431053
+    second: Evie Sprite Worksheet_132
+  - first:
+      213: -48922604733421175
+    second: Evie Sprite Worksheet_133
+  - first:
+      213: -7081103080713486115
+    second: Evie Sprite Worksheet_134
+  - first:
+      213: -3619236596631557627
+    second: Evie Sprite Worksheet_135
+  - first:
+      213: 6830099249196584626
+    second: Evie Sprite Worksheet_136
+  - first:
+      213: -213805228312426901
+    second: Evie Sprite Worksheet_137
+  - first:
+      213: -4243627062714725356
+    second: Evie Sprite Worksheet_138
+  - first:
+      213: 497755982425164746
+    second: Evie Sprite Worksheet_139
+  - first:
+      213: -8610846733783678891
+    second: Evie Sprite Worksheet_140
+  - first:
+      213: 235079177788737888
+    second: Evie Sprite Worksheet_141
+  - first:
+      213: -1679611595904522359
+    second: Evie Sprite Worksheet_142
+  - first:
+      213: -755994689170603854
+    second: Evie Sprite Worksheet_143
+  - first:
+      213: 1640658727188620592
+    second: Evie Sprite Worksheet_144
+  - first:
+      213: 3196363596223378307
+    second: Evie Sprite Worksheet_145
+  - first:
+      213: 6160310856609178678
+    second: Evie Sprite Worksheet_146
+  - first:
+      213: 2470884612444591489
+    second: Evie Sprite Worksheet_147
+  - first:
+      213: 3103838701596425692
+    second: Evie Sprite Worksheet_148
+  - first:
+      213: 4086231898061550738
+    second: Evie Sprite Worksheet_149
+  - first:
+      213: 6181915017208673896
+    second: Evie Sprite Worksheet_150
+  - first:
+      213: 3895122022128594829
+    second: Evie Sprite Worksheet_151
+  - first:
+      213: -3472544429464654869
+    second: Evie Sprite Worksheet_152
+  - first:
+      213: -783896355058938938
+    second: Evie Sprite Worksheet_153
+  - first:
+      213: -3284111548784984851
+    second: Evie Sprite Worksheet_154
+  - first:
+      213: -2749733607298974371
+    second: Evie Sprite Worksheet_155
+  - first:
+      213: 8344374999474518080
+    second: Evie Sprite Worksheet_156
+  - first:
+      213: -1591681243567830411
+    second: Evie Sprite Worksheet_157
+  - first:
+      213: -3778478226040406062
+    second: Evie Sprite Worksheet_158
+  - first:
+      213: 1844527901986686394
+    second: Evie Sprite Worksheet_159
+  - first:
+      213: 93106228325708157
+    second: Evie Sprite Worksheet_160
+  - first:
+      213: 1947586823724776492
+    second: Evie Sprite Worksheet_161
+  - first:
+      213: 5105907416024055432
+    second: Evie Sprite Worksheet_162
+  - first:
+      213: -938271560064396856
+    second: Evie Sprite Worksheet_163
+  - first:
+      213: -167101968220686085
+    second: Evie Sprite Worksheet_164
+  - first:
+      213: -9142528922964340155
+    second: Evie Sprite Worksheet_165
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 2519
+        width: 242
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4822f89a7d305f0800000000000000
+      internalID: -791551986236226333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_1
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 2569
+        width: 242
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e27bebda6a31ef930800000000000000
+      internalID: 4178799110846854958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_2
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 2519
+        width: 252
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3959858da54cf3440800000000000000
+      internalID: 4917865212567655827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_3
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 2589
+        width: 252
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 747f976accc054330800000000000000
+      internalID: 3694373142433232711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_4
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 2519
+        width: 262
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f625ef284c07e4a40800000000000000
+      internalID: 5354340996303704687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_5
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 2519
+        width: 142
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d30ed4317c73cf80800000000000000
+      internalID: -8087483680167164973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_6
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 2519
+        width: 142
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852e40a9c1b58cfc0800000000000000
+      internalID: -3474426934115114408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_7
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 2519
+        width: 252
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd40c21696bf77f0800000000000000
+      internalID: -612570268623155749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_8
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 2519
+        width: 252
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e36d602f39593310800000000000000
+      internalID: 1385236488054989799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_9
+      rect:
+        serializedVersion: 2
+        x: 2509
+        y: 2519
+        width: 252
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac450e48f01cb4cc0800000000000000
+      internalID: -3725671994320988982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_10
+      rect:
+        serializedVersion: 2
+        x: 2779
+        y: 2519
+        width: 252
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5613c426ab661fb10800000000000000
+      internalID: 2013503459110433125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_11
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 2519
+        width: 332
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a390c6b1de07920800000000000000
+      internalID: 2986147254979082849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_12
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 2519
+        width: 332
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b675fb91fc5670c60800000000000000
+      internalID: 7784302421097797483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_13
+      rect:
+        serializedVersion: 2
+        x: 3789
+        y: 2519
+        width: 252
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfced82d649056080800000000000000
+      internalID: -9194932864422122243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_14
+      rect:
+        serializedVersion: 2
+        x: 4059
+        y: 2519
+        width: 172
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd09c8a81f8a3d70800000000000000
+      internalID: 9023682139463945693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_15
+      rect:
+        serializedVersion: 2
+        x: 4269
+        y: 2519
+        width: 172
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01f79fbfd91f6a10800000000000000
+      internalID: 1904769616183816460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_16
+      rect:
+        serializedVersion: 2
+        x: 4469
+        y: 2519
+        width: 252
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7449af80dcc9b5240800000000000000
+      internalID: 4781587833816781895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_17
+      rect:
+        serializedVersion: 2
+        x: 4739
+        y: 2579
+        width: 252
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140cc3b374a970d10800000000000000
+      internalID: 2091810182664077377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_18
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 2039
+        width: 152
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18aef27661c8f81c0800000000000000
+      internalID: -4499223474871473535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_19
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 2039
+        width: 152
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa5e9ec492a959ee0800000000000000
+      internalID: -1254927418978081361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_20
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 2039
+        width: 142
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91a95e6d7a2d25a20800000000000000
+      internalID: 3049731515989989913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_21
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 2039
+        width: 142
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1e32e2f455addb0800000000000000
+      internalID: -4766403457053367887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_22
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 2039
+        width: 142
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7060229aa356e4c00800000000000000
+      internalID: 886757479258654215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_23
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 2039
+        width: 152
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 391043fbb4f8f95c0800000000000000
+      internalID: -4206485971447578221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_24
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 2039
+        width: 142
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e2c7ab848b14fa20800000000000000
+      internalID: 3095129100003033832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_25
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 2039
+        width: 142
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2204218331cad1c70800000000000000
+      internalID: 8943493633572749346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_26
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 2039
+        width: 142
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98de3f7bf6794ad80800000000000000
+      internalID: -8240294912097784439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_27
+      rect:
+        serializedVersion: 2
+        x: 1699
+        y: 2039
+        width: 142
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dd092b97d2480640800000000000000
+      internalID: 5046356876257201618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_28
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 2039
+        width: 332
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310560bfdd93df390800000000000000
+      internalID: -7783000955464298477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_29
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 2039
+        width: 332
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c97eb75290e8060800000000000000
+      internalID: 6957508530931211378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_30
+      rect:
+        serializedVersion: 2
+        x: 2689
+        y: 2039
+        width: 272
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339b142c207c70c10800000000000000
+      internalID: 2019801772561905971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_31
+      rect:
+        serializedVersion: 2
+        x: 3049
+        y: 2039
+        width: 432
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b6237fb8a1773240800000000000000
+      internalID: 4771407299802769079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_32
+      rect:
+        serializedVersion: 2
+        x: 3549
+        y: 2039
+        width: 252
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05dd6fa7c4fecbb0800000000000000
+      internalID: -4913721004935752438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_33
+      rect:
+        serializedVersion: 2
+        x: 3839
+        y: 2009
+        width: 392
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd152c0b25dda9d0800000000000000
+      internalID: -2761316615644176966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_34
+      rect:
+        serializedVersion: 2
+        x: 4289
+        y: 2039
+        width: 312
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4dc6f00107cbff0800000000000000
+      internalID: -19017084135746357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_35
+      rect:
+        serializedVersion: 2
+        x: 4649
+        y: 2039
+        width: 252
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e8585aa20bae5e0800000000000000
+      internalID: -1879496197261652472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_36
+      rect:
+        serializedVersion: 2
+        x: 2099
+        y: 1659
+        width: 282
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e893b4ebd10cae0800000000000000
+      internalID: -1531191170162913787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_37
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 1659
+        width: 312
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c19cca4a20b8c320800000000000000
+      internalID: 2578504482359644610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_38
+      rect:
+        serializedVersion: 2
+        x: 2839
+        y: 1659
+        width: 282
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00ad32dab1fd46d70800000000000000
+      internalID: 9035592062373976576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_39
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 1949
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f6cbf0fc4c49590800000000000000
+      internalID: -7668287871903830176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_40
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 1649
+        width: 292
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 426151a98719cdd70800000000000000
+      internalID: 9069283696784512548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_41
+      rect:
+        serializedVersion: 2
+        x: 3369
+        y: 1949
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c005d6ce9ce70af40800000000000000
+      internalID: 5737725330990125068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_42
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 1879
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1491abffceff27d30800000000000000
+      internalID: 4427882777026369857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_43
+      rect:
+        serializedVersion: 2
+        x: 3539
+        y: 1559
+        width: 242
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7461ff7a4ba13250800000000000000
+      internalID: 5922703321431368827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_44
+      rect:
+        serializedVersion: 2
+        x: 4049
+        y: 1559
+        width: 242
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72351a67fc3895b10800000000000000
+      internalID: 1970751239023055655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_45
+      rect:
+        serializedVersion: 2
+        x: 4659
+        y: 1559
+        width: 252
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353d760d341ae4090800000000000000
+      internalID: -8048318171433151661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_46
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1559
+        width: 172
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f0d5594842bda40800000000000000
+      internalID: 5393945130566487921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_47
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1559
+        width: 182
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df5741879b0f30d0800000000000000
+      internalID: -3441018844950863914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_48
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1559
+        width: 182
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4983c894fb5c340800000000000000
+      internalID: 4883519693559207147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_49
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 1559
+        width: 172
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b132c761a5132280800000000000000
+      internalID: -9069381441619349071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_50
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1559
+        width: 172
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efc1d040e15b07d10800000000000000
+      internalID: 2121394565013118206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_51
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 1559
+        width: 172
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b474a5d0c0dc19da0800000000000000
+      internalID: -5939740981877651637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_52
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1559
+        width: 172
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623f40f319b536700800000000000000
+      internalID: 532369860345525030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_53
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 1559
+        width: 182
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf0ddffd6550dc3c0800000000000000
+      internalID: -4337804995404640004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_54
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 1559
+        width: 182
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ab499206e8a74250800000000000000
+      internalID: 5928893140296092580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_55
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 1559
+        width: 172
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f9d632d6f1ef4b0800000000000000
+      internalID: -5404847949191733355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_56
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1849
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f96dd10dea26c220800000000000000
+      internalID: 2505737440105163253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_57
+      rect:
+        serializedVersion: 2
+        x: 3119
+        y: 1809
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ecb5d78da7708160800000000000000
+      internalID: 7025747005889952995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_58
+      rect:
+        serializedVersion: 2
+        x: 3829
+        y: 1559
+        width: 192
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2e1bfd0b53c0b330800000000000000
+      internalID: 3724691687679401514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_59
+      rect:
+        serializedVersion: 2
+        x: 4349
+        y: 1559
+        width: 192
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc81444c95201f20800000000000000
+      internalID: 3391251872500255944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_60
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 1759
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c7fe0fd935bfb40800000000000000
+      internalID: 5475061709816167470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_61
+      rect:
+        serializedVersion: 2
+        x: 3189
+        y: 1749
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63e0693ccd5fd7e00800000000000000
+      internalID: 1044261017142824502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_62
+      rect:
+        serializedVersion: 2
+        x: 3129
+        y: 1719
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d41e71ceb5a81c570800000000000000
+      internalID: 8485215300350370125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_63
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 1649
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca87d12992291d720800000000000000
+      internalID: 2869235144854436012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_64
+      rect:
+        serializedVersion: 2
+        x: 2519
+        y: 1639
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d91f48dee48a9a0800000000000000
+      internalID: -6221636103167697536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_65
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 1269
+        width: 282
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 272411377308d4520800000000000000
+      internalID: 2687945528252121714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_66
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 1469
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754c6007b25e77660800000000000000
+      internalID: 7383622088823063639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_67
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 1509
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169193d1473dc4f40800000000000000
+      internalID: 5714174522886265185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_68
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 1519
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0688a439dcb253480800000000000000
+      internalID: -8920175324997973920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_69
+      rect:
+        serializedVersion: 2
+        x: 2809
+        y: 1509
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9130d94243d169660800000000000000
+      internalID: 7392127948165022489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_70
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 1469
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c11c0ae837d0980800000000000000
+      internalID: -8571067459396625262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_71
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1069
+        width: 142
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8423fc803a9db1200800000000000000
+      internalID: 151954306697736776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_72
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1069
+        width: 142
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 990a777e880b22400800000000000000
+      internalID: 297994627405291673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_73
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1069
+        width: 132
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d92bbc198d42450800000000000000
+      internalID: 6063209119046868259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_74
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 1069
+        width: 132
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede8e85cef8fb50f0800000000000000
+      internalID: -1127033508606341410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_75
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1069
+        width: 132
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072fefe0ae2039710800000000000000
+      internalID: 1698704688746001008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_76
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 1069
+        width: 132
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c9e45b6ff97f4550800000000000000
+      internalID: 6147266154308364740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_77
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1079
+        width: 142
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 985b4f6ed78e8a830800000000000000
+      internalID: 4082768689654707593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_78
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 1079
+        width: 132
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63881ed658b190730800000000000000
+      internalID: 3965731206764529718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_79
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 1079
+        width: 132
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc6dda878de852e0800000000000000
+      internalID: -2136696856781165363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_80
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 1079
+        width: 132
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6190c5b7ffcf37b60800000000000000
+      internalID: 7742810358596503830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_81
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 1079
+        width: 132
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3025dad8856af5480800000000000000
+      internalID: -8908218638651272701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_82
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 1079
+        width: 132
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d67f7beb5008eec90800000000000000
+      internalID: -7138627597172738195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_83
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 1379
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c24deb9a3292e0cb0800000000000000
+      internalID: -4895930511756700628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_84
+      rect:
+        serializedVersion: 2
+        x: 2649
+        y: 1289
+        width: 222
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2067a37e5b5906430800000000000000
+      internalID: 3774181096237463042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_85
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 1379
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90758c0d6d6833520800000000000000
+      internalID: 2680634460399490825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_86
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1079
+        width: 322
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dfe41d9942f63290800000000000000
+      internalID: -7910869297447768103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_87
+      rect:
+        serializedVersion: 2
+        x: 3589
+        y: 1079
+        width: 222
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c90a129a27a268e0800000000000000
+      internalID: -1701613907910981183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_88
+      rect:
+        serializedVersion: 2
+        x: 3919
+        y: 1079
+        width: 362
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78e93ba3c70c44f00800000000000000
+      internalID: 1100215848778571399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_89
+      rect:
+        serializedVersion: 2
+        x: 4289
+        y: 1079
+        width: 362
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f90f8b124a4ffbc0800000000000000
+      internalID: -3747194717158307342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_90
+      rect:
+        serializedVersion: 2
+        x: 4739
+        y: 1079
+        width: 242
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47611c089a09bcf70800000000000000
+      internalID: 9208612920773121652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_91
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 1319
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f272ffe0ba685610800000000000000
+      internalID: 1610154174957384433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_92
+      rect:
+        serializedVersion: 2
+        x: 2629
+        y: 1259
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c07590b30ae1dbc0800000000000000
+      internalID: -3759966912309268279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_93
+      rect:
+        serializedVersion: 2
+        x: 2839
+        y: 1259
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c76a118b342be1bd0800000000000000
+      internalID: -2657490726181296516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_94
+      rect:
+        serializedVersion: 2
+        x: 2869
+        y: 1319
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8a8b2a4d1fe25c0800000000000000
+      internalID: -4238184303743686475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_95
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 1159
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef4f8362c37e8fb60800000000000000
+      internalID: 7780222601807852798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_96
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 1199
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10a9319b8dd553d0800000000000000
+      internalID: -3218422767179685859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_97
+      rect:
+        serializedVersion: 2
+        x: 2459
+        y: 1159
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3d7cc9582898a60800000000000000
+      internalID: 7676810550202323910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_98
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 1109
+        width: 72
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ebf70f9fbe2cd180800000000000000
+      internalID: -9089338547398771738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_99
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 989
+        width: 202
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1cfcddc4fad5a10800000000000000
+      internalID: 1899867362493972951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_100
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 1129
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad79ee40ef6fef890800000000000000
+      internalID: -7422223564995127334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_101
+      rect:
+        serializedVersion: 2
+        x: 2729
+        y: 1119
+        width: 42
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1048831a9c790b80800000000000000
+      internalID: -8428068226452668389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_102
+      rect:
+        serializedVersion: 2
+        x: 2929
+        y: 1159
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f0cd50cea442b30800000000000000
+      internalID: 4261613524970377043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_103
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 1139
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0afc604fa99fa3a0800000000000000
+      internalID: -6651929146623722993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_104
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 1079
+        width: 42
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da21cecdfdeaec1d0800000000000000
+      internalID: -3328530798072819027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_105
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 1079
+        width: 42
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5145d5d2cd75256e0800000000000000
+      internalID: -1850319893730339819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_106
+      rect:
+        serializedVersion: 2
+        x: 2629
+        y: 1099
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a7dc09cce12eee0800000000000000
+      internalID: -1233389483994547708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_107
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 1089
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9614dde6f562dc60800000000000000
+      internalID: 7841442012431914654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_108
+      rect:
+        serializedVersion: 2
+        x: 2849
+        y: 999
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0d3b6eaa42bf580800000000000000
+      internalID: -8792393531077177108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_109
+      rect:
+        serializedVersion: 2
+        x: 2869
+        y: 1099
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec10660e4bf5a5a20800000000000000
+      internalID: 3051856927960465870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_110
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 969
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b336270e6903ea60800000000000000
+      internalID: 7702010155904676785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_111
+      rect:
+        serializedVersion: 2
+        x: 2459
+        y: 969
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b74d299325867d000800000000000000
+      internalID: 60631822355321979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_112
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 999
+        width: 52
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e489d9e2ee92c57d0800000000000000
+      internalID: -2928419554736629682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_113
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 999
+        width: 82
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8265a85517d44950800000000000000
+      internalID: 6432502654473429647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_114
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 949
+        width: 112
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e45d6fa2a6e10a7d0800000000000000
+      internalID: -2909291917945154226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_115
+      rect:
+        serializedVersion: 2
+        x: 2999
+        y: 1009
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4d5d37dc56f7370800000000000000
+      internalID: 8322482569490060521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_116
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 939
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b657f96dd49304660800000000000000
+      internalID: 7367951996854170987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_117
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 949
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 953a82139a184ab00800000000000000
+      internalID: 838937994271957849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_118
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 599
+        width: 242
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36cf74d76cae3dcf0800000000000000
+      internalID: -228581017839469469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_119
+      rect:
+        serializedVersion: 2
+        x: 4239
+        y: 519
+        width: 42
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31e8c7373853b6e40800000000000000
+      internalID: 5650668996160949779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_120
+      rect:
+        serializedVersion: 2
+        x: 4349
+        y: 519
+        width: 42
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e84470d73c41b60800000000000000
+      internalID: 7716007003352764011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_121
+      rect:
+        serializedVersion: 2
+        x: 2589
+        y: 839
+        width: 92
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8f4793ed3a99330800000000000000
+      internalID: 3718183142213089491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_122
+      rect:
+        serializedVersion: 2
+        x: 2659
+        y: 919
+        width: 42
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4407e4efc040940800000000000000
+      internalID: 5261344551052788947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_123
+      rect:
+        serializedVersion: 2
+        x: 2829
+        y: 879
+        width: 72
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4d9f0ef85264a020800000000000000
+      internalID: 2352113039753321803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_124
+      rect:
+        serializedVersion: 2
+        x: 3379
+        y: 599
+        width: 362
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc9450978580fc4c0800000000000000
+      internalID: -4265181146016036401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_125
+      rect:
+        serializedVersion: 2
+        x: 3779
+        y: 599
+        width: 362
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba15595f52a47230800000000000000
+      internalID: 3635709329599175352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_126
+      rect:
+        serializedVersion: 2
+        x: 4619
+        y: 599
+        width: 142
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e191f64cf99668e40800000000000000
+      internalID: 5658326116753938718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_127
+      rect:
+        serializedVersion: 2
+        x: 4799
+        y: 599
+        width: 142
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82fa8992faaa3020800000000000000
+      internalID: 2322356516797739663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_128
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 599
+        width: 162
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1a3071d6d8f0930800000000000000
+      internalID: 4111660484489617879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_129
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 599
+        width: 172
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b88c95b5661108a0800000000000000
+      internalID: -6340762174266505039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_130
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 599
+        width: 172
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a0df8c7c3a86100800000000000000
+      internalID: 101511070081681950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_131
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 599
+        width: 162
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc51a54f20f75db0800000000000000
+      internalID: -4803106391745012535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_132
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 599
+        width: 162
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d07c9ea0623326e70800000000000000
+      internalID: 9106897634981431053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_133
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 599
+        width: 162
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989a0637621325ff0800000000000000
+      internalID: -48922604733421175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_134
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 599
+        width: 162
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd00620f34edabd90800000000000000
+      internalID: -7081103080713486115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_135
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 599
+        width: 172
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50aaeabad73e5cdc0800000000000000
+      internalID: -3619236596631557627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_136
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 599
+        width: 172
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2be4609641369ce50800000000000000
+      internalID: 6830099249196584626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_137
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 599
+        width: 162
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6601531749680df0800000000000000
+      internalID: -213805228312426901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_138
+      rect:
+        serializedVersion: 2
+        x: 2689
+        y: 849
+        width: 82
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c87af8bab9b15c0800000000000000
+      internalID: -4243627062714725356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_139
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 859
+        width: 62
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acb0745cd6268e600800000000000000
+      internalID: 497755982425164746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_140
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 859
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550cd719480208880800000000000000
+      internalID: -8610846733783678891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_141
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 769
+        width: 32
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0694036444b234300800000000000000
+      internalID: 235079177788737888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_142
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 119
+        width: 312
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987eb790722d0b8e0800000000000000
+      internalID: -1679611595904522359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_143
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 439
+        width: 332
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b087ebe5da2285f0800000000000000
+      internalID: -755994689170603854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_144
+      rect:
+        serializedVersion: 2
+        x: 2459
+        y: 439
+        width: 332
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035e8b77b6ac4c610800000000000000
+      internalID: 1640658727188620592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_145
+      rect:
+        serializedVersion: 2
+        x: 4679
+        y: 119
+        width: 312
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38372e571c3cb5c20800000000000000
+      internalID: 3196363596223378307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_146
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 119
+        width: 332
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6342c2ad512dd7550800000000000000
+      internalID: 6160310856609178678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_147
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 119
+        width: 332
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1851db5b6785a4220800000000000000
+      internalID: 2470884612444591489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_148
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 119
+        width: 272
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cddb3c0badc031b20800000000000000
+      internalID: 3103838701596425692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_149
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 119
+        width: 432
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29434d1f24635b830800000000000000
+      internalID: 4086231898061550738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_150
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 119
+        width: 372
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 866306874f29ac550800000000000000
+      internalID: 6181915017208673896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_151
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 119
+        width: 262
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8fa6c587d04e0630800000000000000
+      internalID: 3895122022128594829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_152
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 119
+        width: 182
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb6ffe5d3b0fcfc0800000000000000
+      internalID: -3472544429464654869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_153
+      rect:
+        serializedVersion: 2
+        x: 2789
+        y: 119
+        width: 142
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb0df71b6a0f15f0800000000000000
+      internalID: -783896355058938938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_154
+      rect:
+        serializedVersion: 2
+        x: 2969
+        y: 119
+        width: 112
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: decb9e342fd7c62d0800000000000000
+      internalID: -3284111548784984851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_155
+      rect:
+        serializedVersion: 2
+        x: 3099
+        y: 119
+        width: 52
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5dbdf55adbf6d9d0800000000000000
+      internalID: -2749733607298974371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_156
+      rect:
+        serializedVersion: 2
+        x: 3179
+        y: 129
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04834540adc2dc370800000000000000
+      internalID: 8344374999474518080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_157
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 139
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57acc71975639e9e0800000000000000
+      internalID: -1591681243567830411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_158
+      rect:
+        serializedVersion: 2
+        x: 3289
+        y: 139
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df30599216209bc0800000000000000
+      internalID: -3778478226040406062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_159
+      rect:
+        serializedVersion: 2
+        x: 3329
+        y: 129
+        width: 42
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab58638aa54199910800000000000000
+      internalID: 1844527901986686394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_160
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 119
+        width: 52
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d71fab11f97ca4100800000000000000
+      internalID: 93106228325708157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_161
+      rect:
+        serializedVersion: 2
+        x: 3469
+        y: 119
+        width: 112
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2cb85db5e7370b10800000000000000
+      internalID: 1947586823724776492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_162
+      rect:
+        serializedVersion: 2
+        x: 3619
+        y: 119
+        width: 142
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e752c1eb3dbd640800000000000000
+      internalID: 5105907416024055432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_163
+      rect:
+        serializedVersion: 2
+        x: 3799
+        y: 119
+        width: 182
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c1928fbcf69af2f0800000000000000
+      internalID: -938271560064396856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_164
+      rect:
+        serializedVersion: 2
+        x: 4019
+        y: 119
+        width: 262
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf8ffee25a55eadf0800000000000000
+      internalID: -167101968220686085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Sprite Worksheet_165
+      rect:
+        serializedVersion: 2
+        x: 4269
+        y: 119
+        width: 372
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542d9fd32663f1180800000000000000
+      internalID: -9142528922964340155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Evie Sprite Worksheet_0: -791551986236226333
+      Evie Sprite Worksheet_1: 4178799110846854958
+      Evie Sprite Worksheet_10: 2013503459110433125
+      Evie Sprite Worksheet_100: -7422223564995127334
+      Evie Sprite Worksheet_101: -8428068226452668389
+      Evie Sprite Worksheet_102: 4261613524970377043
+      Evie Sprite Worksheet_103: -6651929146623722993
+      Evie Sprite Worksheet_104: -3328530798072819027
+      Evie Sprite Worksheet_105: -1850319893730339819
+      Evie Sprite Worksheet_106: -1233389483994547708
+      Evie Sprite Worksheet_107: 7841442012431914654
+      Evie Sprite Worksheet_108: -8792393531077177108
+      Evie Sprite Worksheet_109: 3051856927960465870
+      Evie Sprite Worksheet_11: 2986147254979082849
+      Evie Sprite Worksheet_110: 7702010155904676785
+      Evie Sprite Worksheet_111: 60631822355321979
+      Evie Sprite Worksheet_112: -2928419554736629682
+      Evie Sprite Worksheet_113: 6432502654473429647
+      Evie Sprite Worksheet_114: -2909291917945154226
+      Evie Sprite Worksheet_115: 8322482569490060521
+      Evie Sprite Worksheet_116: 7367951996854170987
+      Evie Sprite Worksheet_117: 838937994271957849
+      Evie Sprite Worksheet_118: -228581017839469469
+      Evie Sprite Worksheet_119: 5650668996160949779
+      Evie Sprite Worksheet_12: 7784302421097797483
+      Evie Sprite Worksheet_120: 7716007003352764011
+      Evie Sprite Worksheet_121: 3718183142213089491
+      Evie Sprite Worksheet_122: 5261344551052788947
+      Evie Sprite Worksheet_123: 2352113039753321803
+      Evie Sprite Worksheet_124: -4265181146016036401
+      Evie Sprite Worksheet_125: 3635709329599175352
+      Evie Sprite Worksheet_126: 5658326116753938718
+      Evie Sprite Worksheet_127: 2322356516797739663
+      Evie Sprite Worksheet_128: 4111660484489617879
+      Evie Sprite Worksheet_129: -6340762174266505039
+      Evie Sprite Worksheet_13: -9194932864422122243
+      Evie Sprite Worksheet_130: 101511070081681950
+      Evie Sprite Worksheet_131: -4803106391745012535
+      Evie Sprite Worksheet_132: 9106897634981431053
+      Evie Sprite Worksheet_133: -48922604733421175
+      Evie Sprite Worksheet_134: -7081103080713486115
+      Evie Sprite Worksheet_135: -3619236596631557627
+      Evie Sprite Worksheet_136: 6830099249196584626
+      Evie Sprite Worksheet_137: -213805228312426901
+      Evie Sprite Worksheet_138: -4243627062714725356
+      Evie Sprite Worksheet_139: 497755982425164746
+      Evie Sprite Worksheet_14: 9023682139463945693
+      Evie Sprite Worksheet_140: -8610846733783678891
+      Evie Sprite Worksheet_141: 235079177788737888
+      Evie Sprite Worksheet_142: -1679611595904522359
+      Evie Sprite Worksheet_143: -755994689170603854
+      Evie Sprite Worksheet_144: 1640658727188620592
+      Evie Sprite Worksheet_145: 3196363596223378307
+      Evie Sprite Worksheet_146: 6160310856609178678
+      Evie Sprite Worksheet_147: 2470884612444591489
+      Evie Sprite Worksheet_148: 3103838701596425692
+      Evie Sprite Worksheet_149: 4086231898061550738
+      Evie Sprite Worksheet_15: 1904769616183816460
+      Evie Sprite Worksheet_150: 6181915017208673896
+      Evie Sprite Worksheet_151: 3895122022128594829
+      Evie Sprite Worksheet_152: -3472544429464654869
+      Evie Sprite Worksheet_153: -783896355058938938
+      Evie Sprite Worksheet_154: -3284111548784984851
+      Evie Sprite Worksheet_155: -2749733607298974371
+      Evie Sprite Worksheet_156: 8344374999474518080
+      Evie Sprite Worksheet_157: -1591681243567830411
+      Evie Sprite Worksheet_158: -3778478226040406062
+      Evie Sprite Worksheet_159: 1844527901986686394
+      Evie Sprite Worksheet_16: 4781587833816781895
+      Evie Sprite Worksheet_160: 93106228325708157
+      Evie Sprite Worksheet_161: 1947586823724776492
+      Evie Sprite Worksheet_162: 5105907416024055432
+      Evie Sprite Worksheet_163: -938271560064396856
+      Evie Sprite Worksheet_164: -167101968220686085
+      Evie Sprite Worksheet_165: -9142528922964340155
+      Evie Sprite Worksheet_17: 2091810182664077377
+      Evie Sprite Worksheet_18: -4499223474871473535
+      Evie Sprite Worksheet_19: -1254927418978081361
+      Evie Sprite Worksheet_2: 4917865212567655827
+      Evie Sprite Worksheet_20: 3049731515989989913
+      Evie Sprite Worksheet_21: -4766403457053367887
+      Evie Sprite Worksheet_22: 886757479258654215
+      Evie Sprite Worksheet_23: -4206485971447578221
+      Evie Sprite Worksheet_24: 3095129100003033832
+      Evie Sprite Worksheet_25: 8943493633572749346
+      Evie Sprite Worksheet_26: -8240294912097784439
+      Evie Sprite Worksheet_27: 5046356876257201618
+      Evie Sprite Worksheet_28: -7783000955464298477
+      Evie Sprite Worksheet_29: 6957508530931211378
+      Evie Sprite Worksheet_3: 3694373142433232711
+      Evie Sprite Worksheet_30: 2019801772561905971
+      Evie Sprite Worksheet_31: 4771407299802769079
+      Evie Sprite Worksheet_32: -4913721004935752438
+      Evie Sprite Worksheet_33: -2761316615644176966
+      Evie Sprite Worksheet_34: -19017084135746357
+      Evie Sprite Worksheet_35: -1879496197261652472
+      Evie Sprite Worksheet_36: -1531191170162913787
+      Evie Sprite Worksheet_37: 2578504482359644610
+      Evie Sprite Worksheet_38: 9035592062373976576
+      Evie Sprite Worksheet_39: -7668287871903830176
+      Evie Sprite Worksheet_4: 5354340996303704687
+      Evie Sprite Worksheet_40: 9069283696784512548
+      Evie Sprite Worksheet_41: 5737725330990125068
+      Evie Sprite Worksheet_42: 4427882777026369857
+      Evie Sprite Worksheet_43: 5922703321431368827
+      Evie Sprite Worksheet_44: 1970751239023055655
+      Evie Sprite Worksheet_45: -8048318171433151661
+      Evie Sprite Worksheet_46: 5393945130566487921
+      Evie Sprite Worksheet_47: -3441018844950863914
+      Evie Sprite Worksheet_48: 4883519693559207147
+      Evie Sprite Worksheet_49: -9069381441619349071
+      Evie Sprite Worksheet_5: -8087483680167164973
+      Evie Sprite Worksheet_50: 2121394565013118206
+      Evie Sprite Worksheet_51: -5939740981877651637
+      Evie Sprite Worksheet_52: 532369860345525030
+      Evie Sprite Worksheet_53: -4337804995404640004
+      Evie Sprite Worksheet_54: 5928893140296092580
+      Evie Sprite Worksheet_55: -5404847949191733355
+      Evie Sprite Worksheet_56: 2505737440105163253
+      Evie Sprite Worksheet_57: 7025747005889952995
+      Evie Sprite Worksheet_58: 3724691687679401514
+      Evie Sprite Worksheet_59: 3391251872500255944
+      Evie Sprite Worksheet_6: -3474426934115114408
+      Evie Sprite Worksheet_60: 5475061709816167470
+      Evie Sprite Worksheet_61: 1044261017142824502
+      Evie Sprite Worksheet_62: 8485215300350370125
+      Evie Sprite Worksheet_63: 2869235144854436012
+      Evie Sprite Worksheet_64: -6221636103167697536
+      Evie Sprite Worksheet_65: 2687945528252121714
+      Evie Sprite Worksheet_66: 7383622088823063639
+      Evie Sprite Worksheet_67: 5714174522886265185
+      Evie Sprite Worksheet_68: -8920175324997973920
+      Evie Sprite Worksheet_69: 7392127948165022489
+      Evie Sprite Worksheet_7: -612570268623155749
+      Evie Sprite Worksheet_70: -8571067459396625262
+      Evie Sprite Worksheet_71: 151954306697736776
+      Evie Sprite Worksheet_72: 297994627405291673
+      Evie Sprite Worksheet_73: 6063209119046868259
+      Evie Sprite Worksheet_74: -1127033508606341410
+      Evie Sprite Worksheet_75: 1698704688746001008
+      Evie Sprite Worksheet_76: 6147266154308364740
+      Evie Sprite Worksheet_77: 4082768689654707593
+      Evie Sprite Worksheet_78: 3965731206764529718
+      Evie Sprite Worksheet_79: -2136696856781165363
+      Evie Sprite Worksheet_8: 1385236488054989799
+      Evie Sprite Worksheet_80: 7742810358596503830
+      Evie Sprite Worksheet_81: -8908218638651272701
+      Evie Sprite Worksheet_82: -7138627597172738195
+      Evie Sprite Worksheet_83: -4895930511756700628
+      Evie Sprite Worksheet_84: 3774181096237463042
+      Evie Sprite Worksheet_85: 2680634460399490825
+      Evie Sprite Worksheet_86: -7910869297447768103
+      Evie Sprite Worksheet_87: -1701613907910981183
+      Evie Sprite Worksheet_88: 1100215848778571399
+      Evie Sprite Worksheet_89: -3747194717158307342
+      Evie Sprite Worksheet_9: -3725671994320988982
+      Evie Sprite Worksheet_90: 9208612920773121652
+      Evie Sprite Worksheet_91: 1610154174957384433
+      Evie Sprite Worksheet_92: -3759966912309268279
+      Evie Sprite Worksheet_93: -2657490726181296516
+      Evie Sprite Worksheet_94: -4238184303743686475
+      Evie Sprite Worksheet_95: 7780222601807852798
+      Evie Sprite Worksheet_96: -3218422767179685859
+      Evie Sprite Worksheet_97: 7676810550202323910
+      Evie Sprite Worksheet_98: -9089338547398771738
+      Evie Sprite Worksheet_99: 1899867362493972951
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

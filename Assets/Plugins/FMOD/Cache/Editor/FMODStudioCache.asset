@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: FMOD/Desktop/Background Music.strings.bank
   Name: Background Music.strings
   StudioPath: bank:/Background Music.strings
-  lastModified: 639167029255746567
+  lastModified: 639201524991073559
   FileSizes:
   - Name: 
-    Value: 934
+    Value: 1074
   Exists: 1
 --- !u!114 &-7969243230707366187
 MonoBehaviour:
@@ -40,6 +40,58 @@ MonoBehaviour:
   ID:
     data1: 1873131352
     data2: 2294106575
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5227589495416571011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Get The Girl
+  m_EditorClassIdentifier: 
+  Path: event:/Get The Girl
+  Guid:
+    Data1: 1404425255
+    Data2: 1314929088
+    Data3: -1060719222
+    Data4: 880053181
+  Banks:
+  - {fileID: 515287114710024937}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4835007602099107643}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 240300
+--- !u!114 &-4625879332491766086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Regis Town/Track Select
+  m_EditorClassIdentifier: 
+  Name: Track Select
+  StudioPath: 
+  Min: 1
+  Max: 3
+  Default: 1
+  ID:
+    data1: 1698491331
+    data2: 2351206150
   Type: 0
   IsGlobal: 0
   Labels: []
@@ -90,18 +142,24 @@ MonoBehaviour:
   EditorEvents:
   - {fileID: 4765031248533879086}
   - {fileID: -2999229627763900525}
+  - {fileID: -5227589495416571011}
+  - {fileID: 2346804939274229571}
   EditorParameters: []
   MasterBanks:
   - {fileID: 515287114710024937}
   StringsBanks:
   - {fileID: -9069240245403856139}
   cacheVersion: 131859
-  cacheTime: 639167029256440172
+  cacheTime: 639201524991073559
   SerializableEventsDict:
   - key: event:/Alix Boss Music
     index: 0
   - key: event:/DDR Drum Hit
     index: 1
+  - key: event:/Get The Girl
+    index: 2
+  - key: event:/Regis Town
+    index: 3
 --- !u!114 &515287114710024937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,7 +175,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Background Music.bank
   Name: Background Music
   StudioPath: bank:/Background Music
-  lastModified: 639167029255733231
+  lastModified: 639201524991058445
   FileSizes: []
   Exists: 1
 --- !u!114 &1776035571126275794
@@ -138,6 +196,34 @@ MonoBehaviour:
   lastModified: 639167029256440172
   FileSizes: []
   Exists: 1
+--- !u!114 &2346804939274229571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Regis Town
+  m_EditorClassIdentifier: 
+  Path: event:/Regis Town
+  Guid:
+    Data1: 1047961862
+    Data2: 1148424722
+    Data3: 349148336
+    Data4: -1596473499
+  Banks:
+  - {fileID: 515287114710024937}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -4625879332491766086}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 170396
 --- !u!114 &4765031248533879086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,3 +252,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 345720
+--- !u!114 &4835007602099107643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Get The Girl/Phase
+  m_EditorClassIdentifier: 
+  Name: Phase
+  StudioPath: 
+  Min: 0
+  Max: 9
+  Default: 0
+  ID:
+    data1: 1873131352
+    data2: 2294106575
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1

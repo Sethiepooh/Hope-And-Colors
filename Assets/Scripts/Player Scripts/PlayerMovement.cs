@@ -62,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (allegro)
                 {
-                    rb.linearVelocity = new Vector2(movement.x * currentSpeed, movement.y * currentSpeed * 2);
+                    rb.linearVelocity = new Vector2(movement.x * currentSpeed * 2, movement.y * currentSpeed * 2);
                 }
                 else
                 {

@@ -93,8 +93,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.8189554, g: 0.3537736, b: 1, a: 1}
+  m_Sprite: {fileID: -791551986236226333, guid: 7271372aa2cbdae448eae51ac28394cf, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -424,6 +424,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 403ea17b-1a15-47c6-9ae2-a412ead775ac
     m_ActionName: 'Player/Angel Break[/Keyboard/q]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3e66b001-0de3-45fd-972f-7dbfbed3c380
+    m_ActionName: 'Player/Pause[/DualShock4GamepadHID/buttonEast,/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -447,6 +451,7 @@ MonoBehaviour:
   sprintByDefault: 1
   allegro: 0
   controlable: 1
+  dashDisabled: 0
   dashSpeed: 30
   dashTime: 0.1
   dashCooldown: 0.2
@@ -481,7 +486,7 @@ MonoBehaviour:
   inspirationGainOffBeat: 1
   maxInspiration: 100
   inspirationConsumptionRate: 5
-  inspirationBar: {fileID: 0}
+  inspirationBars: []
   currentInspiration: 0
   healthRegenRate: 3
   projectile: {fileID: 5588636457592541432, guid: f50cf0eda1572914cbf4ae80473409e6, type: 3}
@@ -643,6 +648,7 @@ MonoBehaviour:
   - {fileID: -8768982026757796989, guid: 59be9bc76eae3c44da757fd2ad85ff2f, type: 3}
   - {fileID: -2719535540235802642, guid: fe09e7d19b6b7e041b4ec9ecec3b05e0, type: 3}
   PlayerInput: {fileID: 1790186746024444953}
+  lastInputDirection: 0
 --- !u!114 &5503930085471042008
 MonoBehaviour:
   m_ObjectHideFlags: 0
