@@ -9,6 +9,13 @@ using UnityEngine.UI;
 public class MenuPageHandler : MonoBehaviour
 {
     [SerializeField] MenuMovable[] menuMovables;
+    [SerializeField] ParticleSystem menuParticles;
+    [SerializeField] Color particleColor;
+    [SerializeField] float particleColorChangeTime;
+
+    Coroutine AnimationCoroutine;
+    Coroutine ColorChangeCoroutine;
+    Coroutine ParticleColorChange;
 
     public void TriggerTransition()
     {
@@ -23,11 +30,12 @@ public class MenuPageHandler : MonoBehaviour
             {
                 if (obj.targetTransform != null)
                 {
-                    StartCoroutine(AnimateMovable(obj));
+                    AnimationCoroutine = StartCoroutine(AnimateMovable(obj));
                 }
-                StartCoroutine(ChangeColor(obj));
+                ColorChangeCoroutine = StartCoroutine(ChangeColor(obj));
             }        
         }
+        ParticleColorChange = StartCoroutine(ChangeParticleColor());
         yield return null;
     }
 
@@ -70,11 +78,13 @@ public class MenuPageHandler : MonoBehaviour
 
         rect.anchoredPosition = endPos;
         rect.sizeDelta = endScale;
+        AnimationCoroutine = null;
     }
 
     IEnumerator ChangeColor(MenuMovable movable)
     {
         Image sRend = movable.obj.GetComponent<Image>();
+
         Color startColor = sRend.color;
         Color endColor = movable.endColor;
 
@@ -83,11 +93,40 @@ public class MenuPageHandler : MonoBehaviour
         {
             float t = elapsed / movable.duration;
             sRend.color = Color.Lerp(startColor, endColor, t);
+
             elapsed += Time.deltaTime;
             yield return null;
         }
 
         sRend.color = endColor;
+        ColorChangeCoroutine = null;
+    }
+
+    IEnumerator ChangeParticleColor()
+    {
+        Color startColor = menuParticles.startColor;
+        Color endColor = particleColor;
+
+        float elapsed = 0f;
+        while (elapsed < particleColorChangeTime)
+        {
+            float t = elapsed / particleColorChangeTime;
+            menuParticles.startColor = Color.Lerp(startColor, endColor, t);
+
+            elapsed += Time.deltaTime;
+            yield return null;
+        }      
+        ParticleColorChange = null;
+    }
+
+    public bool CheckActiveCoroutines()
+    {
+        if(AnimationCoroutine != null && ColorChangeCoroutine != null && ParticleColorChange != null)
+        {
+            return true;
+        }
+
+        return false;
     }
 }
 [System.Serializable]

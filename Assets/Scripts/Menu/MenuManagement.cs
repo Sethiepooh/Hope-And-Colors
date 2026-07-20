@@ -17,6 +17,19 @@ public class MenuManagement : MonoBehaviour
 
     public void PageTransition(int targetPageIndex)
     {
+        if (CheckActiveTransitions() == true) return;
         menuPages[targetPageIndex].TriggerTransition();
+    }
+
+    bool CheckActiveTransitions()
+    {
+        foreach(var page in menuPages)
+        {
+            if(page.CheckActiveCoroutines() == true)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

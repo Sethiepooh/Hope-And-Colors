@@ -6,6 +6,7 @@ public class ButtonHighlight : MonoBehaviour
 {
     Button thisButton;
     [SerializeField] Image[] targetImages;
+    bool toggled;
 
     private void Start()
     {
@@ -29,6 +30,26 @@ public class ButtonHighlight : MonoBehaviour
             {
                 image.color = new Color(0, 0, 0, 0);
             }
+        }
+    }
+
+    public void FlipImageState()
+    {
+        if (!toggled)
+        {
+            foreach (Image image in targetImages)
+            {
+                image.color = Color.white;
+            }
+            toggled = true;
+        }
+        else
+        {
+            foreach(Image image in targetImages)
+            {
+                image.color = new Color(0, 0, 0, 0);
+            }
+            toggled= false;
         }
     }
 }
