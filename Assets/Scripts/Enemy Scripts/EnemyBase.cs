@@ -9,6 +9,7 @@ public abstract class EnemyBase : MonoBehaviour
 
     public bool active = false;
     public bool empowered = false;
+    public bool dissappearOnDeath= true;
 
     public abstract void Attack();
     public abstract void AddToBeatCount();
@@ -85,7 +86,8 @@ public abstract class EnemyBase : MonoBehaviour
     protected virtual IEnumerator EnemyDeath()
     {
         active = false;
-        sRend.enabled = false;
+        if (dissappearOnDeath == true)
+            sRend.enabled = false;
         var col = gameObject.GetComponent<Collider2D>();
 
         if (col != null)
@@ -95,7 +97,9 @@ public abstract class EnemyBase : MonoBehaviour
             deathParticles.Play();
 
         yield return new WaitForSeconds(.5f);
-        this.gameObject.SetActive(false);
+
+        if(dissappearOnDeath == true)
+            this.gameObject.SetActive(false);
     }
 
     public void SetIsActive(bool state)

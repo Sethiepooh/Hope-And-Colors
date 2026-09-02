@@ -80,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 3425746721467378911, guid: 55b4651eb0f9d834e9db994367c84cda, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -106,6 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   empowered: 0
+  dissappearOnDeath: 0
   attackColor: {r: 0, g: 0, b: 0, a: 0}
   deathParticles: {fileID: 0}
   projectile: {fileID: 8608247141467209458, guid: 5fc164d93c9ff7446b45c0f230521b67, type: 3}

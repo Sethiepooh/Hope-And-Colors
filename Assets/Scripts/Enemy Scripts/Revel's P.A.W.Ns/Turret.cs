@@ -1,6 +1,7 @@
 using NUnit.Framework;
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class Turret : EnemyBase
 {
@@ -86,15 +87,23 @@ public class Turret : EnemyBase
 
     public override void Attack()
     {
-        foreach (Animator animator in animators)
-        {
-            animator.SetBool("Attacking", true);
-        }
+       StartCoroutine(HandleAttackAnim());
         Projectile projectileInstance = projectilePool.GetProjectile(
                 firePoint.position,
                 Quaternion.LookRotation(Vector3.forward, (player.transform.position - transform.position).normalized)
             );
-        projectileInstance.Initialize(projectilePool, false, (player.transform.position - transform.position).normalized);
+        projectileInstance.Initialize(projectilePool, false, (player.transform.position - transform.position).normalized);      
+    }
+
+    IEnumerator HandleAttackAnim()
+    {
+        foreach (Animator animator in animators)
+        {
+            animator.SetBool("Attacking", true);
+        }
+
+        yield return new WaitForSeconds(.2f);
+
         foreach (Animator animator in animators)
         {
             animator.SetBool("Attacking", false);
