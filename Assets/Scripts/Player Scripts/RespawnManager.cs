@@ -16,6 +16,7 @@ public class RespawnManager : MonoBehaviour
     public int lives = 3;
     public Image[] lifeCount;
     [SerializeField] UnityEvent OnRespawn;
+    [SerializeField] Animator animator;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -75,6 +76,7 @@ public class RespawnManager : MonoBehaviour
         player.GetComponent<PlayerAttack>().UpdateInspirationUI();
         player.GetComponent<Health>().Heal(100);
         player.GetComponent<PlayerMovement>().controlable = true;
+        animator.SetBool("Death", false);
 
         eManager.ResetSpawnableGroup(spawnIndex);
         eManager.ToggleSpawnableGroupActivation(spawnIndex, true);

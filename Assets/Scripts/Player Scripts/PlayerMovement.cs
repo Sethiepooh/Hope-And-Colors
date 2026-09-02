@@ -7,10 +7,11 @@ public class PlayerMovement : MonoBehaviour
     // Components
     Rigidbody2D rb;
     Vector2 movement;
-    PulseManager pulseManager;
+    //PulseManager pulseManager;
     Health health;
     PlayerAttack playerAttack;
     Vector2 lastPos;
+    Animator animator;
 
     // Movement variables
     [Header("Movement Stats")]
@@ -19,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     public bool slowed = false;
     public bool sprintByDefault;
     public bool allegro;
+    public float allegroAfterimageInterval;
+    float afterimageIntervalTimer;
     float currentSpeed;
     bool freeze;
     [HideInInspector] public bool controlable = true;
@@ -33,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
     bool canDash = true;
     Collider2D playerCollider;
     [SerializeField] LayerMask dodgeLayer;
+    [SerializeField] AfterimageEffect effect;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -41,9 +45,9 @@ public class PlayerMovement : MonoBehaviour
         health = GetComponent<Health>();
         rb = GetComponent<Rigidbody2D>();
         playerCollider = GetComponent<Collider2D>();
-        pulseManager = GameObject.FindGameObjectWithTag("RhythmManager").GetComponent<PulseManager>();
-        pulseManager.AddEntity(this.gameObject, pulseManager.entitiesToPulse);
         currentSpeed = sprintSpeed;
+        animator = GetComponent<Animator>();
+        animator.SetBool("Sprinting", sprintByDefault);
     }
 
     // Update is called once per frame
@@ -62,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (allegro)
                 {
-                    rb.linearVelocity = new Vector2(movement.x * currentSpeed * 2, movement.y * currentSpeed * 2);
+                    rb.linearVelocity = new Vector2(movement.x * currentSpeed, movement.y * currentSpeed) * 2;
                 }
                 else
                 {
@@ -71,6 +75,16 @@ public class PlayerMovement : MonoBehaviour
             }
             else
                 rb.linearVelocity = Vector2.zero;
+        }
+
+        if (allegro)
+        {
+            afterimageIntervalTimer += Time.fixedDeltaTime;
+            if(afterimageIntervalTimer > allegroAfterimageInterval)
+            {
+                effect.GenerateAfterimage();
+                afterimageIntervalTimer = 0;
+            }
         }
     }
 
@@ -90,7 +104,24 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
+        if (context.performed)
+        {
+            animator.SetBool("Moving", true);
+        }
+        else
+        {
+            animator.SetBool("Moving", false);
+        }
             movement = context.ReadValue<Vector2>();
+        
+        if(movement.x > 0)
+        {
+            animator.SetFloat("Dir", 0);
+        }
+        else if(movement.x < 0)
+        {
+            animator.SetFloat("Dir", 1);
+        }
     }
 
     public void Sprint(InputAction.CallbackContext context)
@@ -101,10 +132,12 @@ public class PlayerMovement : MonoBehaviour
         {
             if (sprintByDefault)
             {
+                animator.SetBool("Sprinting", false);
                 currentSpeed = walkSpeed;
             }
             else
             {
+                animator.SetBool("Sprinting", true);
                 currentSpeed = sprintSpeed;
             }
            
@@ -113,10 +146,12 @@ public class PlayerMovement : MonoBehaviour
         {
             if (sprintByDefault)
             {
+                animator.SetBool("Sprinting", true);
                 currentSpeed = sprintSpeed;
             }
             else
             {
+                animator.SetBool("Sprinting", false);
                 currentSpeed = walkSpeed;
             }
         }
@@ -159,6 +194,7 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator HandleDash()
     {
+        StartCoroutine(HandleAfterimages(1));
         Vector2 dir = movement;
         dashing = true;
         playerCollider.excludeLayers = dodgeLayer;
@@ -174,6 +210,15 @@ public class PlayerMovement : MonoBehaviour
         health.damagable = true;
     }
 
+    IEnumerator HandleAfterimages(int amount)
+    {
+        for(int i = 0; i < amount; i++)
+        {
+            effect.GenerateAfterimage();
+            yield return new WaitForSeconds(dashTime/amount);
+        }
+    }
+
     IEnumerator HandleDive()
     {
         dashing = true;
@@ -183,7 +228,8 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         dashing = false;
         canDash = true;
-        playerAttack.sErupt.ReleaseAttack();
+        animator.SetBool("Stage Dive", false);
+        playerAttack.FireDiveWave();
     }
 
     IEnumerator DashCooldown()

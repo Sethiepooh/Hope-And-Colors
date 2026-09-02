@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &421474377111164720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8235577599998506519}
+  - component: {fileID: 3927479120916938436}
+  m_Layer: 0
+  m_Name: Evie Character Data
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8235577599998506519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421474377111164720}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -215.51294, y: -13.58013, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3927479120916938436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421474377111164720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3a485d2c6eb10748b0dd87b07487b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: Evie
+  characterExpressions:
+  - {fileID: -3611668804082688209, guid: 99f16468fb53719419f9dd2ad509e7d0, type: 3}
+  - {fileID: 3990444034832323644, guid: 99f16468fb53719419f9dd2ad509e7d0, type: 3}
+  - {fileID: 33947857345045675, guid: 8601e7a79ed41a6488c806e8070054ab, type: 3}
+  - {fileID: 462494603095241737, guid: 8601e7a79ed41a6488c806e8070054ab, type: 3}
+  - {fileID: 828143094691446759, guid: 7118bd0e5f8754748b3590feec1c4874, type: 3}
+  - {fileID: -736421133818598279, guid: 7118bd0e5f8754748b3590feec1c4874, type: 3}
+  textColor: {r: 1, g: 0.3803922, b: 0.82745105, a: 1}

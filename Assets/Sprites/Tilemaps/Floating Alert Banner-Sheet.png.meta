@@ -1,0 +1,423 @@
+fileFormatVersion: 2
+guid: 6f16e9c7a4e49824a93a479315f86535
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2387971828089581781
+    second: Floating Alert Banner-Sheet_0
+  - first:
+      213: -7485918221585391253
+    second: Floating Alert Banner-Sheet_1
+  - first:
+      213: 2693631597736192567
+    second: Floating Alert Banner-Sheet_2
+  - first:
+      213: -2200616590273192656
+    second: Floating Alert Banner-Sheet_3
+  - first:
+      213: 534707092018087136
+    second: Floating Alert Banner-Sheet_4
+  - first:
+      213: -6795776471973409995
+    second: Floating Alert Banner-Sheet_5
+  - first:
+      213: -5114763527582868668
+    second: Floating Alert Banner-Sheet_6
+  - first:
+      213: -7589800065933737287
+    second: Floating Alert Banner-Sheet_7
+  - first:
+      213: -7590181411903091486
+    second: Floating Alert Banner-Sheet_8
+  - first:
+      213: 1384931745035176299
+    second: Floating Alert Banner-Sheet_9
+  - first:
+      213: -5534630473201511377
+    second: Floating Alert Banner-Sheet_10
+  - first:
+      213: 7858691451497949634
+    second: Floating Alert Banner-Sheet_11
+  - first:
+      213: -4441731552065080554
+    second: Floating Alert Banner-Sheet_12
+  - first:
+      213: 4124137436695747716
+    second: Floating Alert Banner-Sheet_13
+  - first:
+      213: -5691176837526886771
+    second: Floating Alert Banner-Sheet_14
+  - first:
+      213: -5499324046898868195
+    second: Floating Alert Banner-Sheet_15
+  - first:
+      213: 2100951932469089096
+    second: Floating Alert Banner-Sheet_16
+  - first:
+      213: -83613034002153930
+    second: Floating Alert Banner-Sheet_17
+  - first:
+      213: -4906111649075569373
+    second: Floating Alert Banner-Sheet_18
+  - first:
+      213: -8333821758933593216
+    second: Floating Alert Banner-Sheet_19
+  - first:
+      213: 3388537007649536836
+    second: Floating Alert Banner-Sheet_20
+  - first:
+      213: 7566323285207205647
+    second: Floating Alert Banner-Sheet_21
+  - first:
+      213: -9033600886983456335
+    second: Floating Alert Banner-Sheet_22
+  - first:
+      213: 4209553788077922883
+    second: Floating Alert Banner-Sheet_23
+  - first:
+      213: 6768741632973858306
+    second: Floating Alert Banner-Sheet_24
+  - first:
+      213: -2381002358151589840
+    second: Floating Alert Banner-Sheet_25
+  - first:
+      213: 7679174490487686044
+    second: Floating Alert Banner-Sheet_26
+  - first:
+      213: 5530623583442237562
+    second: Floating Alert Banner-Sheet_27
+  - first:
+      213: 8577632667979452602
+    second: Floating Alert Banner-Sheet_28
+  - first:
+      213: 8857149213186090952
+    second: Floating Alert Banner-Sheet_29
+  - first:
+      213: 635534735900314196
+    second: Floating Alert Banner-Sheet_30
+  - first:
+      213: 6843630165597084790
+    second: Floating Alert Banner-Sheet_31
+  - first:
+      213: 2057871485938371915
+    second: Floating Alert Banner-Sheet_32
+  - first:
+      213: -4915765816583926054
+    second: Floating Alert Banner-Sheet_33
+  - first:
+      213: -7227474462408683492
+    second: Floating Alert Banner-Sheet_34
+  - first:
+      213: 626555628697847532
+    second: Floating Alert Banner-Sheet_35
+  - first:
+      213: 6120054779896174969
+    second: Floating Alert Banner-Sheet_36
+  - first:
+      213: 2846214669584992782
+    second: Floating Alert Banner-Sheet_37
+  - first:
+      213: 1608069111075986510
+    second: Floating Alert Banner-Sheet_38
+  - first:
+      213: -5058179607932980907
+    second: Floating Alert Banner-Sheet_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Floating Alert Banner-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 784
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d07be2c9b7c32120800000000000000
+      internalID: 2387971828089581781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floating Alert Banner-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 0
+        width: 784
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6167c02a0dac1890800000000000000
+      internalID: -7485918221585391253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floating Alert Banner-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 0
+        width: 784
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a65daaaa3b16520800000000000000
+      internalID: 2693631597736192567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floating Alert Banner-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 0
+        width: 784
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d5fe9ded6d571e0800000000000000
+      internalID: -2200616590273192656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floating Alert Banner-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3136
+        y: 0
+        width: 784
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4ce966449ab6700800000000000000
+      internalID: 534707092018087136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floating Alert Banner-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3920
+        y: 0
+        width: 784
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b4117ed4d80b1a0800000000000000
+      internalID: -6795776471973409995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floating Alert Banner-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 4704
+        y: 0
+        width: 784
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b9c4cbba5b409b0800000000000000
+      internalID: -5114763527582868668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Floating Alert Banner-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 5488
+        y: 0
+        width: 784
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b288c17d0d9ba690800000000000000
+      internalID: -7589800065933737287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b76bff1bd6327b64cb3ba94a63efe402
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":784.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Floating Alert Banner-Sheet_0: 2387971828089581781
+      Floating Alert Banner-Sheet_1: -7485918221585391253
+      Floating Alert Banner-Sheet_2: 2693631597736192567
+      Floating Alert Banner-Sheet_3: -2200616590273192656
+      Floating Alert Banner-Sheet_4: 534707092018087136
+      Floating Alert Banner-Sheet_5: -6795776471973409995
+      Floating Alert Banner-Sheet_6: -5114763527582868668
+      Floating Alert Banner-Sheet_7: -7589800065933737287
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
@@ -9,6 +8,7 @@ public class PlayerAttack : MonoBehaviour
     PlayerMovement p_Mov;
     BPMInteract bpmInteract;
     EnemyManager enemyManager;
+    Animator animator;
 
     //Combo system variables
     int comboStep = 0;
@@ -85,6 +85,7 @@ public class PlayerAttack : MonoBehaviour
         currentDamage = baseDamage;
         attackRange = Vector2.Distance(transform.position, facedDirection.position);
         playerMovement = GetComponent<PlayerMovement>();
+        animator = GetComponent<Animator>();
     }
 
     void Start()
@@ -115,6 +116,7 @@ public class PlayerAttack : MonoBehaviour
                 sRend.color = defaultColor;
                 UpdateInspirationUI();
                 allegroMode = false;
+                playerMovement.allegro = false;
             }
         }
         else
@@ -130,9 +132,12 @@ public class PlayerAttack : MonoBehaviour
             return;
 
         if (context.performed)
-        {         
+        {
+           
             if (bpmInteract.CheckInput(false) == 0)
             {
+                animator.SetBool("Attacking", true);
+                
                 cIndicator.AttackFlash();
                 inspirationGainOnHit = inspirationGainOnBeat;
                 if(comboStep < maxComboStep)
@@ -154,6 +159,8 @@ public class PlayerAttack : MonoBehaviour
             }
             else if (bpmInteract.CheckInput(false) == 1)
             {
+                animator.SetBool("Attacking", true);
+                
                 aIndicator.AttackFlash();
                 inspirationGainOnHit = inspirationGainOnBeat;
                 if (comboStep < maxComboStep)
@@ -276,6 +283,7 @@ public class PlayerAttack : MonoBehaviour
         if(stumble)
             return;
         canAttack = b;
+        animator.SetBool("Attacking", false);
     }
 
     IEnumerator AttackCooldown()
@@ -308,11 +316,6 @@ public class PlayerAttack : MonoBehaviour
             }           
         }
     }
-
-    //IEnumerator ResetAngelBreak()
-    //{
-
-    //}
 
     public void AngelBreak(InputAction.CallbackContext context)
     {
@@ -396,13 +399,21 @@ public class PlayerAttack : MonoBehaviour
         {
             if (context.performed)
             {
+                animator.SetBool("Heartthrobs Solo", true);
                 var proj = Instantiate(projectile, projectileSpawnPoint.position, Quaternion.identity);
                 proj.GetComponent<HeartthrobSoloProjectile>().Initialize(this, (facedDirection.position - transform.position).normalized, this.gameObject);
                 soloActive = true;
                 currentInspiration -= (maxInspiration / 4);
                 UpdateInspirationUI();
+                StartCoroutine(StopHeartthrobAnim());
             }
         }       
+    }
+
+    IEnumerator StopHeartthrobAnim()
+    {
+        yield return new WaitForSeconds(.2f);
+        animator.SetBool("Heartthrobs Solo", false);
     }
 
     public void SetComboButton(InputAction.CallbackContext context)
@@ -431,11 +442,18 @@ public class PlayerAttack : MonoBehaviour
         {
             if (context.performed)
             {
+                animator.SetBool("Stage Dive", true);
                 playerMovement.Dive();
                 currentInspiration -= (maxInspiration / 4);
                 UpdateInspirationUI();
             }
         }      
+    }
+
+    public void FireDiveWave()
+    {
+        var proj = Instantiate(sErupt, projectileSpawnPoint.position, Quaternion.identity);
+        proj.Initialize((facedDirection.position - transform.position).normalized);
     }
 
     private void OnDrawGizmos()

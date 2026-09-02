@@ -5,8 +5,11 @@ using System.Collections.Generic;
 public class Turret : EnemyBase
 {
     [SerializeField] GameObject projectile;
+    [SerializeField] GameObject barrel;
     [SerializeField] Transform firePoint;
     [SerializeField] List<GameObject> generators = new List<GameObject>();
+    [SerializeField]
+    Animator[] animators;
 
     Vector3 playerPos;
     public TurretType intensity;
@@ -23,7 +26,7 @@ public class Turret : EnemyBase
         if(!active) return;
         playerPos = player.transform.position;
         Vector3 offset = playerPos - transform.position;
-        transform.rotation = Quaternion.LookRotation(Vector3.forward, offset);
+        barrel.transform.rotation = Quaternion.LookRotation(Vector3.forward, offset);
     }
 
     public void AddGenerator(GameObject generator)
@@ -58,6 +61,10 @@ public class Turret : EnemyBase
         {
             active = false;
             health.onDeathEvent.Invoke();
+            foreach(Animator animator in animators)
+            {
+                animator.SetBool("Deactivate", true);
+            }
         }
         else
         {
@@ -79,11 +86,19 @@ public class Turret : EnemyBase
 
     public override void Attack()
     {
+        foreach (Animator animator in animators)
+        {
+            animator.SetBool("Attacking", true);
+        }
         Projectile projectileInstance = projectilePool.GetProjectile(
                 firePoint.position,
                 Quaternion.LookRotation(Vector3.forward, (player.transform.position - transform.position).normalized)
             );
         projectileInstance.Initialize(projectilePool, false, (player.transform.position - transform.position).normalized);
+        foreach (Animator animator in animators)
+        {
+            animator.SetBool("Attacking", false);
+        }
     }
 
     public override void AddToBeatCount()

@@ -1,0 +1,984 @@
+fileFormatVersion: 2
+guid: 9e51fa655e44cac4cb60e9591f7c099d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -932899486707895480
+    second: iridecent Castle Outside Props_0
+  - first:
+      213: -8382092921629799348
+    second: iridecent Castle Outside Props_1
+  - first:
+      213: 1003804261930165965
+    second: iridecent Castle Outside Props_2
+  - first:
+      213: 7059730659860379097
+    second: iridecent Castle Outside Props_3
+  - first:
+      213: 822013643793888513
+    second: iridecent Castle Outside Props_4
+  - first:
+      213: 3934431388805053160
+    second: iridecent Castle Outside Props_5
+  - first:
+      213: 2205929743004129551
+    second: iridecent Castle Outside Props_6
+  - first:
+      213: -6905259518950637976
+    second: iridecent Castle Outside Props_7
+  - first:
+      213: 5640127923198739690
+    second: iridecent Castle Outside Props_8
+  - first:
+      213: -5783147768274852585
+    second: iridecent Castle Outside Props_9
+  - first:
+      213: -5538310371328758400
+    second: iridecent Castle Outside Props_10
+  - first:
+      213: 1778226685112929827
+    second: iridecent Castle Outside Props_11
+  - first:
+      213: 1413403406049515790
+    second: iridecent Castle Outside Props_12
+  - first:
+      213: 3619400918666653379
+    second: iridecent Castle Outside Props_13
+  - first:
+      213: 6281539840351131359
+    second: iridecent Castle Outside Props_14
+  - first:
+      213: 612883576847209938
+    second: iridecent Castle Outside Props_15
+  - first:
+      213: -2086954952279861472
+    second: iridecent Castle Outside Props_16
+  - first:
+      213: -5625262926243123600
+    second: iridecent Castle Outside Props_17
+  - first:
+      213: -829850659341757679
+    second: iridecent Castle Outside Props_18
+  - first:
+      213: 8895632024603570753
+    second: iridecent Castle Outside Props_19
+  - first:
+      213: -4645170467374789188
+    second: iridecent Castle Outside Props_20
+  - first:
+      213: 6143223229694782213
+    second: iridecent Castle Outside Props_21
+  - first:
+      213: -9190358324482839899
+    second: iridecent Castle Outside Props_22
+  - first:
+      213: 2187032103454302546
+    second: iridecent Castle Outside Props_23
+  - first:
+      213: -4348239375282834985
+    second: iridecent Castle Outside Props_24
+  - first:
+      213: 6146132563930466215
+    second: iridecent Castle Outside Props_25
+  - first:
+      213: 6521825711183352179
+    second: iridecent Castle Outside Props_26
+  - first:
+      213: 8954535475289219969
+    second: iridecent Castle Outside Props_27
+  - first:
+      213: 2454637660243638677
+    second: iridecent Castle Outside Props_28
+  - first:
+      213: 5240586496377883744
+    second: iridecent Castle Outside Props_29
+  - first:
+      213: 446132947010292749
+    second: iridecent Castle Outside Props_30
+  - first:
+      213: 6045474394509467363
+    second: iridecent Castle Outside Props_31
+  - first:
+      213: -1365621509146913349
+    second: iridecent Castle Outside Props_32
+  - first:
+      213: -1968303118831643331
+    second: iridecent Castle Outside Props_33
+  - first:
+      213: -1797261875760843118
+    second: iridecent Castle Outside Props_34
+  - first:
+      213: 7223581653524275596
+    second: iridecent Castle Outside Props_35
+  - first:
+      213: -3380179461342717896
+    second: iridecent Castle Outside Props_36
+  - first:
+      213: -5841453135529811293
+    second: iridecent Castle Outside Props_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843b1ab0cdcad03f0800000000000000
+      internalID: -932899486707895480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1344
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c80f3e5e2dcab80800000000000000
+      internalID: -8382092921629799348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1344
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6ee5868aa3eed00800000000000000
+      internalID: 1003804261930165965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1344
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d579ee81a339f160800000000000000
+      internalID: 7059730659860379097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1344
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 105fbd6cd01686b00800000000000000
+      internalID: 822013643793888513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1344
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea3fdaa088e99630800000000000000
+      internalID: 3934431388805053160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1344
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09da3be9690d9e10800000000000000
+      internalID: 2205929743004129551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1344
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86eff0b9d079b20a0800000000000000
+      internalID: -6905259518950637976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_8
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 192
+        width: 56
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae4c506a672c54e40800000000000000
+      internalID: 5640127923198739690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_9
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 1263
+        width: 280
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7156264ceb12ebfa0800000000000000
+      internalID: -5783147768274852585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_11
+      rect:
+        serializedVersion: 2
+        x: 2864
+        y: 1360
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32ec648afb78da810800000000000000
+      internalID: 1778226685112929827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_23
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 1096
+        width: 104
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251e4c65c16e95e10800000000000000
+      internalID: 2187032103454302546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_47
+      rect:
+        serializedVersion: 2
+        x: 3079
+        y: 592
+        width: 121
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b4bf469c4c48b4ebf83d3f1a63f38d
+      internalID: -362619302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_65
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 448
+        width: 56
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e31c1f9c0da7b384f8df4f6f2b464fb9
+      internalID: -1884593649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_66
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 320
+        width: 104
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a8a89f1bd35d34ebfd54fd1e0ebfbb
+      internalID: 1801221755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_68
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 320
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c773a5711ebcec4fa0d7107609ba1c2
+      internalID: 279966619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_69
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 320
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd67bf7b387dcda4fac0e779554576cf
+      internalID: -580192148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_70
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 320
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c92c2ff15256b746baf9277235182e1
+      internalID: 395533146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_71
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 320
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c9ee4c26eadec49b8e32898fed5062
+      internalID: 1929430534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_72
+      rect:
+        serializedVersion: 2
+        x: 4352
+        y: 320
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb01de0bc8df7154e96c91b5eea48b0d
+      internalID: -2127525022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_73
+      rect:
+        serializedVersion: 2
+        x: 4608
+        y: 320
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6be52377969c446b53772e334321df
+      internalID: 1250149356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_74
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 320
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b179cfd4683722e45a95f61616c8b0f4
+      internalID: -1083299775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_81
+      rect:
+        serializedVersion: 2
+        x: 2728
+        y: 320
+        width: 56
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b443cd77e4f7084881a6368cc30ea8c
+      internalID: 1611411878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_82
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 192
+        width: 104
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092f889c4281560469809a83dec35308
+      internalID: -1069075417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_84
+      rect:
+        serializedVersion: 2
+        x: 3328
+        y: 64
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc32d42d697c714982e8ba86cbe6d45
+      internalID: 1032072019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_85
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 64
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9279f85452c21ae4196382d9eef4175c
+      internalID: -129805949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_86
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 64
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d57cf99229bde4b8950e058c8a39d1
+      internalID: 1178460344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_87
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 64
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df2d6b80ed21dc48bc91fb456b934de
+      internalID: 335246565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_89
+      rect:
+        serializedVersion: 2
+        x: 4864
+        y: 64
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d381e6449138741aa8dfe4d397e83c
+      internalID: 671689919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: iridecent Castle Outside Props_10
+      rect:
+        serializedVersion: 2
+        x: 2832
+        y: 448
+        width: 104
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460911134606b7948ac9ab0901556d6a
+      internalID: -5538310371328758400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 368db9190d2fdb2428ac26236a5938bd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      iridecent Castle Outside Props_0: -932899486707895480
+      iridecent Castle Outside Props_1: -8382092921629799348
+      iridecent Castle Outside Props_10: -5538310371328758400
+      iridecent Castle Outside Props_11: 1778226685112929827
+      iridecent Castle Outside Props_12: 1413403406049515790
+      iridecent Castle Outside Props_13: 3619400918666653379
+      iridecent Castle Outside Props_14: 6281539840351131359
+      iridecent Castle Outside Props_15: 612883576847209938
+      iridecent Castle Outside Props_16: -2086954952279861472
+      iridecent Castle Outside Props_17: -5625262926243123600
+      iridecent Castle Outside Props_18: -829850659341757679
+      iridecent Castle Outside Props_19: 8895632024603570753
+      iridecent Castle Outside Props_2: 1003804261930165965
+      iridecent Castle Outside Props_20: -4645170467374789188
+      iridecent Castle Outside Props_21: 6143223229694782213
+      iridecent Castle Outside Props_22: -9190358324482839899
+      iridecent Castle Outside Props_23: 2187032103454302546
+      iridecent Castle Outside Props_24: -4348239375282834985
+      iridecent Castle Outside Props_25: 6146132563930466215
+      iridecent Castle Outside Props_26: 6521825711183352179
+      iridecent Castle Outside Props_27: 8954535475289219969
+      iridecent Castle Outside Props_28: 2454637660243638677
+      iridecent Castle Outside Props_29: 5240586496377883744
+      iridecent Castle Outside Props_3: 7059730659860379097
+      iridecent Castle Outside Props_30: 446132947010292749
+      iridecent Castle Outside Props_31: 6045474394509467363
+      iridecent Castle Outside Props_32: -1365621509146913349
+      iridecent Castle Outside Props_33: -1968303118831643331
+      iridecent Castle Outside Props_34: -1797261875760843118
+      iridecent Castle Outside Props_35: 7223581653524275596
+      iridecent Castle Outside Props_36: -3380179461342717896
+      iridecent Castle Outside Props_37: -5841453135529811293
+      iridecent Castle Outside Props_38: 205054796
+      iridecent Castle Outside Props_39: -2089285926
+      iridecent Castle Outside Props_4: 822013643793888513
+      iridecent Castle Outside Props_40: -1649401815
+      iridecent Castle Outside Props_41: -855256358
+      iridecent Castle Outside Props_42: -199886098
+      iridecent Castle Outside Props_43: -1253327553
+      iridecent Castle Outside Props_44: -849665178
+      iridecent Castle Outside Props_45: 1077126900
+      iridecent Castle Outside Props_46: -887224596
+      iridecent Castle Outside Props_47: -362619302
+      iridecent Castle Outside Props_48: -1109418591
+      iridecent Castle Outside Props_49: -288977011
+      iridecent Castle Outside Props_5: 3934431388805053160
+      iridecent Castle Outside Props_50: -233040562
+      iridecent Castle Outside Props_51: -139667445
+      iridecent Castle Outside Props_52: -1203249044
+      iridecent Castle Outside Props_53: -1146969079
+      iridecent Castle Outside Props_54: -747886270
+      iridecent Castle Outside Props_55: -239771897
+      iridecent Castle Outside Props_56: -661172422
+      iridecent Castle Outside Props_57: 129445338
+      iridecent Castle Outside Props_58: 184226735
+      iridecent Castle Outside Props_59: -1549824996
+      iridecent Castle Outside Props_6: 2205929743004129551
+      iridecent Castle Outside Props_60: 1498860367
+      iridecent Castle Outside Props_61: 1140081150
+      iridecent Castle Outside Props_62: -1080655744
+      iridecent Castle Outside Props_63: -1144468212
+      iridecent Castle Outside Props_64: 530518569
+      iridecent Castle Outside Props_65: -1884593649
+      iridecent Castle Outside Props_66: 1801221755
+      iridecent Castle Outside Props_67: -922556811
+      iridecent Castle Outside Props_68: 279966619
+      iridecent Castle Outside Props_69: -580192148
+      iridecent Castle Outside Props_7: -6905259518950637976
+      iridecent Castle Outside Props_70: 395533146
+      iridecent Castle Outside Props_71: 1929430534
+      iridecent Castle Outside Props_72: -2127525022
+      iridecent Castle Outside Props_73: 1250149356
+      iridecent Castle Outside Props_74: -1083299775
+      iridecent Castle Outside Props_75: 962960724
+      iridecent Castle Outside Props_76: 588469193
+      iridecent Castle Outside Props_77: 2132469777
+      iridecent Castle Outside Props_78: 715034339
+      iridecent Castle Outside Props_79: 1206781928
+      iridecent Castle Outside Props_8: 5640127923198739690
+      iridecent Castle Outside Props_80: -2015741210
+      iridecent Castle Outside Props_81: 1611411878
+      iridecent Castle Outside Props_82: -1069075417
+      iridecent Castle Outside Props_83: -1581210376
+      iridecent Castle Outside Props_84: 1032072019
+      iridecent Castle Outside Props_85: -129805949
+      iridecent Castle Outside Props_86: 1178460344
+      iridecent Castle Outside Props_87: 335246565
+      iridecent Castle Outside Props_88: 686933943
+      iridecent Castle Outside Props_89: 671689919
+      iridecent Castle Outside Props_9: -5783147768274852585
+      iridecent Castle Outside Props_90: 822494746
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

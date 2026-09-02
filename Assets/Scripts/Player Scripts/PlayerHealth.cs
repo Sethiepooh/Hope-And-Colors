@@ -7,6 +7,7 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] Image healthBar;
     [SerializeField] Health health;
+    Animator animator;
 
     SpriteRenderer sRend;
 
@@ -17,6 +18,7 @@ public class PlayerHealth : MonoBehaviour
     {
         sRend = GetComponent<SpriteRenderer>();
         r_Man = GameObject.FindWithTag("RespawnManager")?.GetComponent<RespawnManager>();
+        animator = GetComponent<Animator>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
         
         health.onHealEvent += UpdateUI;
 
-        health.onDeathEvent += HandlePlayerDeath;
+        health.onDeathEvent += TriggerDeath;
     }
 
     public void UpdateUI()
@@ -49,6 +51,18 @@ public class PlayerHealth : MonoBehaviour
         yield return new WaitForSeconds(.2f);
         Debug.Log("Player can be damaged again");
         health.damagable = true;
+    }
+
+    public void TriggerDeath()
+    {
+        StartCoroutine(PlayDeathAnim());
+    }
+
+    IEnumerator PlayDeathAnim()
+    {
+        animator.SetBool("Death", true);
+        yield return new WaitForSeconds(.9f);
+        HandlePlayerDeath();
     }
 
     public void HandlePlayerDeath()

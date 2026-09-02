@@ -3,40 +3,51 @@ using UnityEngine;
 
 public class SonicEruption : MonoBehaviour
 {
-    public AttackIndicator indicator;
+    Vector3 direction;
+    Rigidbody2D rb;
+    Collider2D col;
+    SpriteRenderer sRend;
 
-    [Header("Damage Control")]
-    [SerializeField] int damage = 15;
+    [Header("Settings")]
+    [SerializeField] int damage = 50;
+    [SerializeField] float speed = 15;
+    [SerializeField] float lifetime = 1;
 
     private void Awake()
     {
-
+        rb = GetComponent<Rigidbody2D>();
+        col = GetComponent<Collider2D>();
+        sRend = GetComponent<SpriteRenderer>();
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Initialize(Vector3 dir)
     {
-        
+        this.direction = dir;
+
+        if(dir.x < 0)
+        {
+            sRend.flipX = true;
+        }
+        StartCoroutine(DestroyAfterLifetime());
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        rb.linearVelocity = direction.normalized * speed;
+    }
+  
+    private void OnTriggerEnter2D(Collider2D enemy)
+    {
+        if(enemy.CompareTag("Enemy") || enemy.CompareTag("Boss") || enemy.CompareTag("Obstacle") || enemy.CompareTag("Shield"))
+        {
+            enemy.GetComponent<Health>().TakeDamage(damage);
+        }
     }
 
-    public void ReleaseAttack()
+    IEnumerator DestroyAfterLifetime()
     {
-        indicator.AttackFlash();
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, transform.localScale.x / 2);
-        foreach (Collider2D enemy in hitEnemies)
-        {
-            if (enemy.CompareTag("Enemy") || enemy.CompareTag("Boss") || enemy.CompareTag("Obstacle") || enemy.CompareTag("Shield"))
-            {
-                enemy.GetComponent<Health>().TakeDamage(damage);
-                enemy.GetComponent<EnemyBase>().active = false;
-                enemy.GetComponent<EnemyBase>().ResetActiveForEnemy(1);
-            }
-        }
+        yield return new WaitForSeconds(lifetime);
+        Destroy(this.gameObject);
     }
 }

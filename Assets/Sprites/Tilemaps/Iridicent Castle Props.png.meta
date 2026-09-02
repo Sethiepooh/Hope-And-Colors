@@ -1,0 +1,716 @@
+fileFormatVersion: 2
+guid: 166bf667462ba0443b2ab3fd7cee68fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2587598015620792497
+    second: Iridicent Castle Props_0
+  - first:
+      213: -3862000934921902813
+    second: Iridicent Castle Props_1
+  - first:
+      213: 7259008696108866116
+    second: Iridicent Castle Props_2
+  - first:
+      213: -514062675235253593
+    second: Iridicent Castle Props_3
+  - first:
+      213: -3717257599328248748
+    second: Iridicent Castle Props_4
+  - first:
+      213: -5223882787934683793
+    second: Iridicent Castle Props_5
+  - first:
+      213: -3751751309468875356
+    second: Iridicent Castle Props_6
+  - first:
+      213: -8750464544313347961
+    second: Iridicent Castle Props_7
+  - first:
+      213: -6277278928616725106
+    second: Iridicent Castle Props_8
+  - first:
+      213: -5163862556940295441
+    second: Iridicent Castle Props_9
+  - first:
+      213: -2834167803495625121
+    second: Iridicent Castle Props_10
+  - first:
+      213: 3555460955539265111
+    second: Iridicent Castle Props_11
+  - first:
+      213: 7306886940994635684
+    second: Iridicent Castle Props_12
+  - first:
+      213: -7022067963323723712
+    second: Iridicent Castle Props_13
+  - first:
+      213: -8621804537597468174
+    second: Iridicent Castle Props_14
+  - first:
+      213: 3568677644899424465
+    second: Iridicent Castle Props_15
+  - first:
+      213: 8568706820593870507
+    second: Iridicent Castle Props_16
+  - first:
+      213: 2124752746061688572
+    second: Iridicent Castle Props_17
+  - first:
+      213: -7930505225961938205
+    second: Iridicent Castle Props_18
+  - first:
+      213: 7765343958498143608
+    second: Iridicent Castle Props_19
+  - first:
+      213: 6987109891210326662
+    second: Iridicent Castle Props_20
+  - first:
+      213: 3569135390792579618
+    second: Iridicent Castle Props_21
+  - first:
+      213: 560296409501843863
+    second: Iridicent Castle Props_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Iridicent Castle Props_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2303
+        width: 482
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b0459e7faef8e320800000000000000
+      internalID: 2587598015620792497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 512
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44a5a0103fd2db460800000000000000
+      internalID: 7259008696108866116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_4
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 2431
+        width: 82
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c1b6588e5a96cc0800000000000000
+      internalID: -3717257599328248748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_5
+      rect:
+        serializedVersion: 2
+        x: 1687
+        y: 2431
+        width: 146
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d30ec184a0187b0800000000000000
+      internalID: -5223882787934683793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_6
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 2431
+        width: 74
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a54089cf0a1febc0800000000000000
+      internalID: -3751751309468875356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_7
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 2303
+        width: 98
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7807d80ebda109680800000000000000
+      internalID: -8750464544313347961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_8
+      rect:
+        serializedVersion: 2
+        x: 1439
+        y: 2303
+        width: 98
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8561c7a210a2e8a0800000000000000
+      internalID: -6277278928616725106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_9
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 2311
+        width: 58
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe222a02d564658b0800000000000000
+      internalID: -5163862556940295441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_10
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 2311
+        width: 82
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e4bc616630ba8d0800000000000000
+      internalID: -2834167803495625121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 767
+        width: 256
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75650b3c6e8875130800000000000000
+      internalID: 3555460955539265111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1792
+        width: 144
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a70de395f6476560800000000000000
+      internalID: 7306886940994635684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 256
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0405071546a9c8e90800000000000000
+      internalID: -7022067963323723712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_14
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 1663
+        width: 642
+        height: 642
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f1e6ad0472395880800000000000000
+      internalID: -8621804537597468174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d89b1e096d768130800000000000000
+      internalID: 3568677644899424465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_16
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 1663
+        width: 282
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6e6f154792ae670800000000000000
+      internalID: 8568706820593870507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_17
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 847
+        width: 642
+        height: 314
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfeea887d53ac7d10800000000000000
+      internalID: 2124752746061688572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_18
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 1007
+        width: 290
+        height: 466
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e2e82db38f21f190800000000000000
+      internalID: -7930505225961938205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_19
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 1007
+        width: 290
+        height: 466
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87de10d003b04cb60800000000000000
+      internalID: 7765343958498143608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_20
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 528
+        width: 384
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 682b5304d6337f060800000000000000
+      internalID: 6987109891210326662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_21
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 527
+        width: 290
+        height: 466
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a77735abd188130800000000000000
+      internalID: 3569135390792579618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_22
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 527
+        width: 290
+        height: 466
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791c849ad9296c700800000000000000
+      internalID: 560296409501843863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 767
+        width: 256
+        height: 513
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22fb000a0f696794ab6045b6d3ef1027
+      internalID: -477515483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Iridicent Castle Props_1
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 1008
+        width: 384
+        height: 488
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fd44c81e0da47347b90c6cf28f53b5e
+      internalID: -3862000934921902813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0d330a9e64fdd2f4cad350ed501f5f17
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Iridicent Castle Props_0: 2587598015620792497
+      Iridicent Castle Props_1: -3862000934921902813
+      Iridicent Castle Props_10: -2834167803495625121
+      Iridicent Castle Props_11: 3555460955539265111
+      Iridicent Castle Props_12: 7306886940994635684
+      Iridicent Castle Props_13: -7022067963323723712
+      Iridicent Castle Props_14: -8621804537597468174
+      Iridicent Castle Props_15: 3568677644899424465
+      Iridicent Castle Props_16: 8568706820593870507
+      Iridicent Castle Props_17: 2124752746061688572
+      Iridicent Castle Props_18: -7930505225961938205
+      Iridicent Castle Props_19: 7765343958498143608
+      Iridicent Castle Props_2: 7259008696108866116
+      Iridicent Castle Props_20: 6987109891210326662
+      Iridicent Castle Props_21: 3569135390792579618
+      Iridicent Castle Props_22: 560296409501843863
+      Iridicent Castle Props_23: -477515483
+      Iridicent Castle Props_3: -514062675235253593
+      Iridicent Castle Props_4: -3717257599328248748
+      Iridicent Castle Props_5: -5223882787934683793
+      Iridicent Castle Props_6: -3751751309468875356
+      Iridicent Castle Props_7: -8750464544313347961
+      Iridicent Castle Props_8: -6277278928616725106
+      Iridicent Castle Props_9: -5163862556940295441
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
