@@ -1,0 +1,1183 @@
+fileFormatVersion: 2
+guid: 53d8511f3fdb00e4d98912229dc1c454
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5643900595724885487
+    second: Bat Guy Animations_0
+  - first:
+      213: -6210848851692309154
+    second: Bat Guy Animations_1
+  - first:
+      213: 1852373233046222876
+    second: Bat Guy Animations_2
+  - first:
+      213: 4672150163134962066
+    second: Bat Guy Animations_3
+  - first:
+      213: -5439273347133928545
+    second: Bat Guy Animations_4
+  - first:
+      213: -6962201497023342372
+    second: Bat Guy Animations_5
+  - first:
+      213: -1929648168831014370
+    second: Bat Guy Animations_6
+  - first:
+      213: -6059539616002812044
+    second: Bat Guy Animations_7
+  - first:
+      213: 6447016172664041867
+    second: Bat Guy Animations_8
+  - first:
+      213: 700469857329549604
+    second: Bat Guy Animations_9
+  - first:
+      213: -7891043603416264930
+    second: Bat Guy Animations_10
+  - first:
+      213: 4641051228493792642
+    second: Bat Guy Animations_11
+  - first:
+      213: 4433144603532161966
+    second: Bat Guy Animations_12
+  - first:
+      213: 4143569151876637398
+    second: Bat Guy Animations_13
+  - first:
+      213: -7920394973976969768
+    second: Bat Guy Animations_14
+  - first:
+      213: -6993232958114456832
+    second: Bat Guy Animations_15
+  - first:
+      213: -3692191140537391758
+    second: Bat Guy Animations_16
+  - first:
+      213: -2274115442587379459
+    second: Bat Guy Animations_17
+  - first:
+      213: 9176013589804989205
+    second: Bat Guy Animations_18
+  - first:
+      213: 7712922240134875849
+    second: Bat Guy Animations_19
+  - first:
+      213: -6161397296989001106
+    second: Bat Guy Animations_20
+  - first:
+      213: 1223961683825015909
+    second: Bat Guy Animations_21
+  - first:
+      213: -3667400059078953017
+    second: Bat Guy Animations_22
+  - first:
+      213: -9135293995933032019
+    second: Bat Guy Animations_23
+  - first:
+      213: 6646981072903749927
+    second: Bat Guy Animations_24
+  - first:
+      213: 5140495430642967584
+    second: Bat Guy Animations_25
+  - first:
+      213: 854893247636776494
+    second: Bat Guy Animations_26
+  - first:
+      213: 5287575110794947224
+    second: Bat Guy Animations_27
+  - first:
+      213: -3366291966571948266
+    second: Bat Guy Animations_28
+  - first:
+      213: 4921010076657307996
+    second: Bat Guy Animations_29
+  - first:
+      213: -156658006245449795
+    second: Bat Guy Animations_30
+  - first:
+      213: -3058835616394373199
+    second: Bat Guy Animations_31
+  - first:
+      213: -8667730013120440129
+    second: Bat Guy Animations_32
+  - first:
+      213: 679060869697286456
+    second: Bat Guy Animations_33
+  - first:
+      213: 1747332629470765071
+    second: Bat Guy Animations_34
+  - first:
+      213: -3522706744261032006
+    second: Bat Guy Animations_35
+  - first:
+      213: -342940529140777473
+    second: Bat Guy Animations_36
+  - first:
+      213: -3991365028869954203
+    second: Bat Guy Animations_37
+  - first:
+      213: -8095327540393329201
+    second: Bat Guy Animations_38
+  - first:
+      213: 7094588186249245875
+    second: Bat Guy Animations_39
+  - first:
+      213: 8318009831247610966
+    second: Bat Guy Animations_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bat Guy Animations_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1519
+        width: 222
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed1ccb60b9235e40800000000000000
+      internalID: 5643900595724885487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_1
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1519
+        width: 222
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55bc3930e1aec9a0800000000000000
+      internalID: -6210848851692309154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_2
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 1519
+        width: 432
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18792324a3f4b910800000000000000
+      internalID: 1852373233046222876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_3
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 1599
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29951fab1dfc6d040800000000000000
+      internalID: 4672150163134962066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_4
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 1519
+        width: 382
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b05d395b1d384b0800000000000000
+      internalID: -5439273347133928545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_5
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 1519
+        width: 562
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd81b3330aa416f90800000000000000
+      internalID: -6962201497023342372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_6
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 1519
+        width: 352
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a2853d6338835e0800000000000000
+      internalID: -1929648168831014370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_7
+      rect:
+        serializedVersion: 2
+        x: 2329
+        y: 1519
+        width: 352
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 477deb5f2d038eba0800000000000000
+      internalID: -6059539616002812044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_8
+      rect:
+        serializedVersion: 2
+        x: 2709
+        y: 1519
+        width: 222
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b81b6d02d07687950800000000000000
+      internalID: 6447016172664041867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_9
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 1519
+        width: 222
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4211ffdbf9198b900800000000000000
+      internalID: 700469857329549604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_10
+      rect:
+        serializedVersion: 2
+        x: 3179
+        y: 1519
+        width: 222
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f4147b6a16d7290800000000000000
+      internalID: -7891043603416264930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_11
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 1519
+        width: 222
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28543c2c083586040800000000000000
+      internalID: 4641051228493792642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_12
+      rect:
+        serializedVersion: 2
+        x: 3649
+        y: 1519
+        width: 472
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea379737781b58d30800000000000000
+      internalID: 4433144603532161966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_13
+      rect:
+        serializedVersion: 2
+        x: 4159
+        y: 1519
+        width: 222
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2afd7a03ae08930800000000000000
+      internalID: 4143569151876637398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_14
+      rect:
+        serializedVersion: 2
+        x: 4399
+        y: 1519
+        width: 472
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd30573cba151290800000000000000
+      internalID: -7920394973976969768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_15
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1569
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b98042dab03fe90800000000000000
+      internalID: -6993232958114456832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_16
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1039
+        width: 222
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 275ac6148b3b2ccc0800000000000000
+      internalID: -3692191140537391758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_17
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1039
+        width: 222
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df85952cd08b070e0800000000000000
+      internalID: -2274115442587379459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_18
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 709
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51bbb7a4ebfb75f70800000000000000
+      internalID: 9176013589804989205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_19
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 659
+        width: 62
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca037f99edc90b60800000000000000
+      internalID: 7712922240134875849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_20
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 559
+        width: 222
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6a2be88dc15e7aa0800000000000000
+      internalID: -6161397296989001106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_21
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 559
+        width: 222
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56c3417aaa26cf010800000000000000
+      internalID: 1223961683825015909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_22
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 559
+        width: 222
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c73a55b317ca1dc0800000000000000
+      internalID: -3667400059078953017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_23
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 559
+        width: 222
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da127a5f28ae83180800000000000000
+      internalID: -9135293995933032019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_24
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 79
+        width: 222
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7214c2f8112de3c50800000000000000
+      internalID: 6646981072903749927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_25
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 79
+        width: 222
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0242ef0db55b65740800000000000000
+      internalID: 5140495430642967584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_26
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 159
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e26254a11e03ddb00800000000000000
+      internalID: 854893247636776494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_27
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 79
+        width: 382
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a212a6c8d316940800000000000000
+      internalID: 5287575110794947224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_28
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 79
+        width: 352
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6175a32ba478841d0800000000000000
+      internalID: -3366291966571948266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_29
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 79
+        width: 352
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51d6439790fa4440800000000000000
+      internalID: 4921010076657307996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_30
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 79
+        width: 352
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbfd4829f5073ddf0800000000000000
+      internalID: -156658006245449795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_31
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 79
+        width: 222
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7108a9635dc85d0800000000000000
+      internalID: -3058835616394373199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_32
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 79
+        width: 222
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8d6f60a7906b780800000000000000
+      internalID: -8667730013120440129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_33
+      rect:
+        serializedVersion: 2
+        x: 2889
+        y: 79
+        width: 222
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831bc2f53428c6900800000000000000
+      internalID: 679060869697286456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_34
+      rect:
+        serializedVersion: 2
+        x: 3129
+        y: 79
+        width: 222
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f00ed0cc4c5cf3810800000000000000
+      internalID: 1747332629470765071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_35
+      rect:
+        serializedVersion: 2
+        x: 3369
+        y: 79
+        width: 432
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab7c27451e4dc1fc0800000000000000
+      internalID: -3522706744261032006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_36
+      rect:
+        serializedVersion: 2
+        x: 3809
+        y: 79
+        width: 222
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffdba7dd761ad3bf0800000000000000
+      internalID: -342940529140777473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_37
+      rect:
+        serializedVersion: 2
+        x: 4049
+        y: 79
+        width: 432
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5652a4547a2db98c0800000000000000
+      internalID: -3991365028869954203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_38
+      rect:
+        serializedVersion: 2
+        x: 4499
+        y: 79
+        width: 222
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd3b6e2e7e97af80800000000000000
+      internalID: -8095327540393329201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_39
+      rect:
+        serializedVersion: 2
+        x: 4729
+        y: 79
+        width: 222
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4b11ddd5a057260800000000000000
+      internalID: 7094588186249245875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat Guy Animations_40
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 129
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65488bdeed18f6370800000000000000
+      internalID: 8318009831247610966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bat Guy Animations_0: 5643900595724885487
+      Bat Guy Animations_1: -6210848851692309154
+      Bat Guy Animations_10: -7891043603416264930
+      Bat Guy Animations_11: 4641051228493792642
+      Bat Guy Animations_12: 4433144603532161966
+      Bat Guy Animations_13: 4143569151876637398
+      Bat Guy Animations_14: -7920394973976969768
+      Bat Guy Animations_15: -6993232958114456832
+      Bat Guy Animations_16: -3692191140537391758
+      Bat Guy Animations_17: -2274115442587379459
+      Bat Guy Animations_18: 9176013589804989205
+      Bat Guy Animations_19: 7712922240134875849
+      Bat Guy Animations_2: 1852373233046222876
+      Bat Guy Animations_20: -6161397296989001106
+      Bat Guy Animations_21: 1223961683825015909
+      Bat Guy Animations_22: -3667400059078953017
+      Bat Guy Animations_23: -9135293995933032019
+      Bat Guy Animations_24: 6646981072903749927
+      Bat Guy Animations_25: 5140495430642967584
+      Bat Guy Animations_26: 854893247636776494
+      Bat Guy Animations_27: 5287575110794947224
+      Bat Guy Animations_28: -3366291966571948266
+      Bat Guy Animations_29: 4921010076657307996
+      Bat Guy Animations_3: 4672150163134962066
+      Bat Guy Animations_30: -156658006245449795
+      Bat Guy Animations_31: -3058835616394373199
+      Bat Guy Animations_32: -8667730013120440129
+      Bat Guy Animations_33: 679060869697286456
+      Bat Guy Animations_34: 1747332629470765071
+      Bat Guy Animations_35: -3522706744261032006
+      Bat Guy Animations_36: -342940529140777473
+      Bat Guy Animations_37: -3991365028869954203
+      Bat Guy Animations_38: -8095327540393329201
+      Bat Guy Animations_39: 7094588186249245875
+      Bat Guy Animations_4: -5439273347133928545
+      Bat Guy Animations_40: 8318009831247610966
+      Bat Guy Animations_5: -6962201497023342372
+      Bat Guy Animations_6: -1929648168831014370
+      Bat Guy Animations_7: -6059539616002812044
+      Bat Guy Animations_8: 6447016172664041867
+      Bat Guy Animations_9: 700469857329549604
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

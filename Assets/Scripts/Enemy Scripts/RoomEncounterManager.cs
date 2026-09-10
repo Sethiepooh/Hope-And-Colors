@@ -210,12 +210,10 @@ public class RoomEncounterManager : MonoBehaviour
         [SerializeField] List<Enemy> enemies;
         [SerializeField] List<BreakableObject> breakableObjects;
         bool isActive;
-        [SerializeField] GameObject door;
+        [SerializeField] DoorHandler[] doors;
 
         public void InitializeGroup(RoomEncounterManager eMan)
         {
-
-
             for (int i = 0; i < enemies.Count; i++)
             {
                 if (enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.GlitchShaman || enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.Bishop || enemies[i].GetEnemyType() == EnemyType.ChosenEnemyType.TurretGenerator)
@@ -291,6 +289,15 @@ public class RoomEncounterManager : MonoBehaviour
 
         public void SetGroupActivationState(bool state)
         {
+                Debug.Log("Toggle");
+            foreach (DoorHandler door in doors)
+            {
+                if (door != null)
+                {
+                    door.ToggleDoor(state);
+                }
+            }
+
             if (enemies == null || breakableObjects == null)
             {
                 Debug.LogError("Enemies or breakable objects list is null in SpawnableGroup. Make sure to initialize them before setting activation state.");
@@ -311,8 +318,6 @@ public class RoomEncounterManager : MonoBehaviour
                 }
             }
 
-            if (door != null)
-                door.SetActive(state);
             isActive = state;
         }
 
