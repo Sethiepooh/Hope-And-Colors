@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Background Music.strings.bank
   Name: Background Music.strings
   StudioPath: bank:/Background Music.strings
-  lastModified: 639241209689348731
+  lastModified: 639248058622595660
   FileSizes:
   - Name: 
     Value: 1074
@@ -71,7 +71,7 @@ MonoBehaviour:
   - {fileID: 4835007602099107643}
   MinDistance: 1
   MaxDistance: 20
-  Length: 240379
+  Length: 240300
 --- !u!114 &-4625879332491766086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -9069240245403856139}
   cacheVersion: 131859
-  cacheTime: 639241209689348731
+  cacheTime: 639248058622595660
   SerializableEventsDict:
   - key: event:/Alix Boss Music
     index: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Background Music.bank
   Name: Background Music
   StudioPath: bank:/Background Music
-  lastModified: 639241209689325283
+  lastModified: 639248058622584330
   FileSizes: []
   Exists: 1
 --- !u!114 &1776035571126275794

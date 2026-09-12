@@ -242,6 +242,12 @@ public class BPMInteract : MonoBehaviour
         return (int)(fmodPos / BeatInterval);
     }
 
+    public bool IsOnBeat(double tolerance)
+    {
+        double offset = _accumulatedTime % BeatInterval;
+        return offset <= tolerance || BeatInterval - offset <= tolerance;
+    }
+
     // -------------------------------------------------------------------------
     // Rhythm accuracy scoring
     // -------------------------------------------------------------------------
@@ -264,10 +270,10 @@ public class BPMInteract : MonoBehaviour
         double offset = _accumulatedTime % interval;
 
         // Fold to the nearest beat edge.
-        double distanceToNearest = Math.Min(offset, interval - offset);
+        double distanceToNext = interval - offset;
 
-        if (distanceToNearest <= perfectWindow) return 0;
-        if (distanceToNearest <= goodWindow) return 1;
+        if (distanceToNext <= perfectWindow) return 0;
+        if (distanceToNext <= goodWindow) return 1;
         return 2;
     }
 

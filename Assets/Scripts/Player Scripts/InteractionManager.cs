@@ -16,11 +16,13 @@ public class InteractionManager : MonoBehaviour
 
     [HideInInspector] public IInteractable nearbyInteractable;
     public IInteractable assignedInteractable;
+    public RhythmMinigame currentMinigame;
 
     private void Awake()
     {
         PlayerInput = GetComponent<PlayerInput>();
         controlScheme = PlayerInput.currentControlScheme == "Keyboard&Mouse" ? 0 : 1;
+        lastInputDirection = InputDirectionEnum.InputDirection.None;
     }
 
     private void Update()
@@ -105,7 +107,9 @@ public class InteractionManager : MonoBehaviour
     {
         Vector2 dir = context.ReadValue<Vector2>();
 
-        if (context.performed)
+        if (!context.started) return;       
+
+        if (context.started)
         {
             if (dir == Vector2.up)
             {
@@ -123,10 +127,9 @@ public class InteractionManager : MonoBehaviour
             {
                 lastInputDirection = InputDirectionEnum.InputDirection.Right;
             }
-            else
-            {
-                lastInputDirection = InputDirectionEnum.InputDirection.None;
-            }
+            currentMinigame.OnRhythmInput();
+            Debug.Log("Input Direction: " + lastInputDirection);
+            lastInputDirection = InputDirectionEnum.InputDirection.None;
         }
         else
         {

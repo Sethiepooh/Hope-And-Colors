@@ -22,7 +22,7 @@ public class DoorHandler : MonoBehaviour
     {
         if (!state)
         {
-            Debug.Log("Door Anim Length: " + openAnimClip.length);
+           // Debug.Log("Door Anim Length: " + openAnimClip.length);
             openAnim.SetBool("Open", true);
             StartCoroutine(WaitForAnimation(openAnimClip.length));
         }

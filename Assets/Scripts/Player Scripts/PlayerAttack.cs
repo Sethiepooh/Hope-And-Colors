@@ -134,7 +134,7 @@ public class PlayerAttack : MonoBehaviour
         if (context.performed)
         {
            
-            if (bpmInteract.CheckInput(false) == 0)
+            if (bpmInteract.CheckInput(true) == 0)
             {
                 animator.SetBool("Attacking", true);
                 
@@ -157,7 +157,7 @@ public class PlayerAttack : MonoBehaviour
                         currentDamage = baseDamage;
                 }
             }
-            else if (bpmInteract.CheckInput(false) == 1)
+            else if (bpmInteract.CheckInput(true) == 1)
             {
                 animator.SetBool("Attacking", true);
                 
@@ -180,7 +180,7 @@ public class PlayerAttack : MonoBehaviour
                         currentDamage = baseDamage;
                 }
             }
-            else if(bpmInteract.CheckInput(false) == 2)
+            else if(bpmInteract.CheckInput(true) == 2)
             {
                 Debug.Log("Missed Attack");
                 StopCoroutine(AttackCooldown());    

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class RhythmPattern
 {
     [SerializeField] RhythmPatternBeat[] beatsToHit;
+    public int beatAmount { get { return beatsToHit.Length; } }
     List<int> beatTimings = new List<int>();
     int currentBeatIndex = 0;
 

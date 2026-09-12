@@ -22,6 +22,9 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
     [SerializeField] GameObject beatTimerDisplay;
     [SerializeField] GameObject inputPromptDisplay;
     [SerializeField] Sprite[] inputPromptSprites;
+    [SerializeField] BPMInteract bpmInteract;
+    [SerializeField] float beatStartTolerance = 0.05f;
+    bool patternStartPending;
     //0 = up, 1 = down, 2 = right, 3 = left,
     //4 = up eigth, 5 = down eigth, 6 = right eigth, 7 = left eigth
     //8 = up dotted, 9 = down dotted, 10 = right dotted, 11 = left dotted
@@ -37,8 +40,11 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
     List<GameObject> displayedBeatTimers = new List<GameObject>();
     List<float> beatInputTimings = new List<float>();
     List<Coroutine> activeCoroutines = new List<Coroutine>();
+    List<bool> beatResolved = new List<bool>();
+
     int beatCount = 0;
-    int eigthNoteIndex = 0;
+    int startupIndex;
+   // int eigthNoteIndex = 1;
     bool waitingForDownbeat = false;
 
     [Header("Rhythm Pattern Events")]
@@ -70,6 +76,7 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
     {
         activeInteraction = true;
         waitingForDownbeat = true;
+        interactionManager.currentMinigame = this;
         playerInput.SwitchCurrentActionMap("CallResponse");
     }
 
@@ -78,6 +85,7 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         interactionManager.nearbyInteractable = this;
         activeInteraction = true;
         waitingForDownbeat = true;
+        interactionManager.currentMinigame = this;
         playerInput.SwitchCurrentActionMap("CallResponse");
     }
 
@@ -89,16 +97,21 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
 
         if (interactionManager.lastInputDirection == InputDirectionEnum.InputDirection.None) return;
         if (patternIndex < 0) return;
+        if (displayedBeats.Count != patternsInSequence[patternIndex].beatAmount) return;
 
-        if (interactionManager.lastInputDirection == patternsInSequence[patternIndex].GetCurrentBeat(nextNote).direction)
+        int currentNote = nextNote;
+        if (beatResolved[currentNote]) return;
+
+        if (interactionManager.lastInputDirection == patternsInSequence[patternIndex].GetCurrentBeat(currentNote).direction)
         {
-            if(beatInputTimings[nextNote] < (patternsInSequence[patternIndex].patternDuration / 2))
+            if(beatInputTimings[currentNote] < (patternsInSequence[patternIndex].patternDuration / 2))
             {
-                //Debug.Log("Beat Hit! " + beatInputTimings[nextNote]);
+                Debug.Log("Beat Missed! " + currentNote);
                 onBeatMissed.Invoke();
                 if (!_beatMissSfx.IsNull) RuntimeManager.PlayOneShot(_beatMissSfx);
+                displayedBeatTimers[currentNote].GetComponent<SpriteRenderer>().color = Color.red;
             }
-            else if(beatInputTimings[nextNote] < ((patternsInSequence[patternIndex].patternDuration / 4) * 3))
+            else if(beatInputTimings[currentNote] < ((patternsInSequence[patternIndex].patternDuration / 4) * 3))
             {
                 //Debug.Log("Beat Hit! " + beatInputTimings[nextNote]);
                 onBeatEarly.Invoke();
@@ -106,23 +119,27 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
             }
             else
             {
-                Debug.Log("Beat Hit! " + beatInputTimings[nextNote]);
+                Debug.Log("Beat Hit! " + currentNote);
                 onBeatHit.Invoke();
                 if (!_beatHitSfx.IsNull) RuntimeManager.PlayOneShot(_beatHitSfx);
             }
         }
         else
         {
+            Debug.Log("Beat Hit! " + currentNote);
             onBeatMissed.Invoke();
             if (!_beatMissSfx.IsNull) RuntimeManager.PlayOneShot(_beatMissSfx);
+            displayedBeatTimers[currentNote].GetComponent<SpriteRenderer>().color = Color.red;
         }
-        StopCoroutine(activeCoroutines[nextNote]);
+        beatResolved[currentNote] = true;
+        StopCoroutine(activeCoroutines[currentNote]);
         NextNote();
+        //Debug.Log("Note" + nextNote);
     }
 
     void NextNote()
     {
-        nextNote++;
+        nextNote++;       
         if (nextNote >= beatInputTimings.Count)
         {
             if (patternIndex >= patternsInSequence.Length - 1)
@@ -141,9 +158,20 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
             }
             else
             {
-                NextPattern();
-
+                RequestNextPattern();
             }
+        }
+    }
+
+    void RequestNextPattern()
+    {
+        if (bpmInteract.IsOnBeat(beatStartTolerance))
+        {
+            NextPattern();
+        }
+        else
+        {
+            patternStartPending = true;
         }
     }
 
@@ -159,6 +187,8 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         return totalCompletionPercent >= .5f;
     }
 
+  
+
     void EjectFromMinigame()
     {
         ClearDisplayedBeats();
@@ -166,7 +196,10 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         playerInput.SwitchCurrentActionMap("Player");
         beatCount = 0;
         patternIndex = -1;
-        eigthNoteIndex = 0;
+        //eigthNoteIndex = 0;
+        startupIndex = 0;
+        patternStartPending = false;
+        interactionManager.currentMinigame = null;
     }
 
     public void NextPattern()
@@ -178,21 +211,18 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
 
         patternIndex++;
         beatCount = 0;
+        //Debug.Log(nextNote);
     }
 
     public void AddBeatToRhythmPattern()
     { 
-        eigthNoteIndex++;
+        //eigthNoteIndex++;
 
         if (!activeInteraction) return;
 
         if (waitingForDownbeat)
         {
-            if (eigthNoteIndex % 2 == 0)
-            {
-                waitingForDownbeat = false;
-                NextPattern();  
-            }
+            return;
         }
         else
         {
@@ -207,6 +237,32 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         }           
     }
 
+    public void TriggerPatternStart()
+    {
+        //Debug.Log("Triggering Pattern Start");  
+        if (!waitingForDownbeat) return;
+
+        if (patternStartPending) 
+        { 
+            patternStartPending = false;
+            NextPattern();        
+        }
+
+        if (startupIndex < 1)
+        {
+            startupIndex++;
+            return;
+        }
+        waitingForDownbeat = false;
+        NextPattern();
+        if (patternIndex < 0) return;
+        RhythmPatternBeat nextBeat = patternsInSequence[patternIndex].GetNextBeat(beatCount);
+        if (nextBeat != null)
+        {
+            AddToDisplayedBeats(nextBeat);
+        }
+    }
+
     public void ClearDisplayedBeats()
     {
         foreach (GameObject beat in displayedBeats)
@@ -217,6 +273,7 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         displayedBeatTimers.Clear();
         beatInputTimings.Clear();
         activeCoroutines.Clear();
+        beatResolved.Clear();
         nextNote = 0;
     }
 
@@ -232,6 +289,7 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
 
         displayedBeats.Add(newBeat);
         displayedBeatTimers.Add(newBeatTimer);
+        beatResolved.Add(false);
         beatInputTimings.Add(patternsInSequence[patternIndex].patternDuration);
         activeCoroutines.Add(StartCoroutine(HandleTimer(Vector3.one, beatInputTimings.Count - 1, newBeatTimer)));
         if (!_beatSpawnSfx.IsNull) RuntimeManager.PlayOneShot(_beatSpawnSfx);
@@ -293,17 +351,17 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
             float t = beatInputTimings[timerIndex] / duration; // Normalized time from 0 to 1
             obj.transform.localScale = Vector3.Lerp(startScale, targetScale, t);
             beatInputTimings[timerIndex] += Time.deltaTime;
+            //Debug.Log(t);
+            //Debug.Log("Timer " + timerIndex + ": " + beatInputTimings[timerIndex]);
             yield return null;
         }
         // Ensure final value is exact
         obj.transform.localScale = targetScale;
-        onBeatMissed.Invoke();
-        if (!_beatMissSfx.IsNull) RuntimeManager.PlayOneShot(_beatMissSfx);
-    }
-
-    public void MissedBeat()
-    {
-        Debug.Log("Beat Missed!");  
-        NextNote();
+        if (!beatResolved[timerIndex])
+        {
+            beatResolved[timerIndex] = true;
+            NextNote();
+            if (!_beatMissSfx.IsNull) RuntimeManager.PlayOneShot(_beatMissSfx);
+        }
     }
 }

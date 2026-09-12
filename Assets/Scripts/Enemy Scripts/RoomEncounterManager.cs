@@ -289,7 +289,7 @@ public class RoomEncounterManager : MonoBehaviour
 
         public void SetGroupActivationState(bool state)
         {
-                Debug.Log("Toggle");
+                //Debug.Log("Toggle");
             foreach (DoorHandler door in doors)
             {
                 if (door != null)
