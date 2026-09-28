@@ -1,0 +1,1677 @@
+fileFormatVersion: 2
+guid: 9477361922b7077438fd3b152d6d1c8c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3846683794882523822
+    second: PAWN Tank Animation_0
+  - first:
+      213: -2255273413493236642
+    second: PAWN Tank Animation_1
+  - first:
+      213: -6409509088822152011
+    second: PAWN Tank Animation_2
+  - first:
+      213: 1600089002756793445
+    second: PAWN Tank Animation_3
+  - first:
+      213: -5386902249337041088
+    second: PAWN Tank Animation_4
+  - first:
+      213: 8171611244034344589
+    second: PAWN Tank Animation_5
+  - first:
+      213: 5502752202959837856
+    second: PAWN Tank Animation_6
+  - first:
+      213: -7277215840656485960
+    second: PAWN Tank Animation_7
+  - first:
+      213: -8449750002455818555
+    second: PAWN Tank Animation_8
+  - first:
+      213: -3516174843321307849
+    second: PAWN Tank Animation_9
+  - first:
+      213: -5123409219955698156
+    second: PAWN Tank Animation_10
+  - first:
+      213: -2587345361331611317
+    second: PAWN Tank Animation_11
+  - first:
+      213: -7963448371866539353
+    second: PAWN Tank Animation_12
+  - first:
+      213: -2974002741018142910
+    second: PAWN Tank Animation_13
+  - first:
+      213: 4955936869684489427
+    second: PAWN Tank Animation_14
+  - first:
+      213: -2773016869923421799
+    second: PAWN Tank Animation_15
+  - first:
+      213: 1392737542896312834
+    second: PAWN Tank Animation_16
+  - first:
+      213: -838181770428223970
+    second: PAWN Tank Animation_17
+  - first:
+      213: -7422487926038682770
+    second: PAWN Tank Animation_18
+  - first:
+      213: 1453013179363049346
+    second: PAWN Tank Animation_19
+  - first:
+      213: -7355499357375464721
+    second: PAWN Tank Animation_20
+  - first:
+      213: -5468350664168429847
+    second: PAWN Tank Animation_21
+  - first:
+      213: -8960794228881139398
+    second: PAWN Tank Animation_22
+  - first:
+      213: 6082421376692733680
+    second: PAWN Tank Animation_23
+  - first:
+      213: 4432512578899690146
+    second: PAWN Tank Animation_24
+  - first:
+      213: -2532412024182211059
+    second: PAWN Tank Animation_25
+  - first:
+      213: -3558936301394758567
+    second: PAWN Tank Animation_26
+  - first:
+      213: 206200806311377269
+    second: PAWN Tank Animation_27
+  - first:
+      213: 6378568999188567722
+    second: PAWN Tank Animation_28
+  - first:
+      213: 8703330481023638388
+    second: PAWN Tank Animation_29
+  - first:
+      213: -898657024911449457
+    second: PAWN Tank Animation_30
+  - first:
+      213: -2819301305962600357
+    second: PAWN Tank Animation_31
+  - first:
+      213: 1115249268083811040
+    second: PAWN Tank Animation_32
+  - first:
+      213: 7277268365007260022
+    second: PAWN Tank Animation_33
+  - first:
+      213: 9126631265550158503
+    second: PAWN Tank Animation_34
+  - first:
+      213: 4261051827053351826
+    second: PAWN Tank Animation_35
+  - first:
+      213: 2191671739379771091
+    second: PAWN Tank Animation_36
+  - first:
+      213: -2732348046138064301
+    second: PAWN Tank Animation_37
+  - first:
+      213: 8313620660094579073
+    second: PAWN Tank Animation_38
+  - first:
+      213: 895837431771551720
+    second: PAWN Tank Animation_39
+  - first:
+      213: 4398797915928374303
+    second: PAWN Tank Animation_40
+  - first:
+      213: 5218254578798203038
+    second: PAWN Tank Animation_41
+  - first:
+      213: -6444624148169104158
+    second: PAWN Tank Animation_42
+  - first:
+      213: 2208296374297977608
+    second: PAWN Tank Animation_43
+  - first:
+      213: -1916837251610356845
+    second: PAWN Tank Animation_44
+  - first:
+      213: -5148926701164782375
+    second: PAWN Tank Animation_45
+  - first:
+      213: -5449732895757276603
+    second: PAWN Tank Animation_46
+  - first:
+      213: -6528865076495547700
+    second: PAWN Tank Animation_47
+  - first:
+      213: 2895553058541070408
+    second: PAWN Tank Animation_48
+  - first:
+      213: -4562386487993241373
+    second: PAWN Tank Animation_49
+  - first:
+      213: 476419504107727997
+    second: PAWN Tank Animation_50
+  - first:
+      213: 2249253406474008410
+    second: PAWN Tank Animation_51
+  - first:
+      213: -8003473593449755088
+    second: PAWN Tank Animation_52
+  - first:
+      213: 1870953196333387048
+    second: PAWN Tank Animation_53
+  - first:
+      213: -8265264083071099122
+    second: PAWN Tank Animation_54
+  - first:
+      213: -2636736620931109349
+    second: PAWN Tank Animation_55
+  - first:
+      213: -89350843730076957
+    second: PAWN Tank Animation_56
+  - first:
+      213: 7753346870759402808
+    second: PAWN Tank Animation_57
+  - first:
+      213: -5521501503448928548
+    second: PAWN Tank Animation_58
+  - first:
+      213: 2878531905942225189
+    second: PAWN Tank Animation_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PAWN Tank Animation_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 2449
+        width: 352
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea27935e78a226530800000000000000
+      internalID: 3846683794882523822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_1
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 2449
+        width: 352
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5c5a5587c8a3b0e0800000000000000
+      internalID: -2255273413493236642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_2
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 2449
+        width: 352
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b43e185179dc07a0800000000000000
+      internalID: -6409509088822152011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_3
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 2449
+        width: 342
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564e35a6878a43610800000000000000
+      internalID: 1600089002756793445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_4
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 2449
+        width: 342
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04f438cf1f0ed35b0800000000000000
+      internalID: -5386902249337041088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_5
+      rect:
+        serializedVersion: 2
+        x: 1959
+        y: 2449
+        width: 342
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d864143a125676170800000000000000
+      internalID: 8171611244034344589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_6
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 2449
+        width: 342
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa5b6849f3bd5c40800000000000000
+      internalID: 5502752202959837856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_7
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 2449
+        width: 342
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b113dfcfb2220b90800000000000000
+      internalID: -7277215840656485960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_8
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 2449
+        width: 342
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cec3c634257cba80800000000000000
+      internalID: -8449750002455818555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_9
+      rect:
+        serializedVersion: 2
+        x: 3569
+        y: 2449
+        width: 332
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d2ba70c99043fc0800000000000000
+      internalID: -3516174843321307849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_10
+      rect:
+        serializedVersion: 2
+        x: 3969
+        y: 2449
+        width: 332
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416549d957ef5e8b0800000000000000
+      internalID: -5123409219955698156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_11
+      rect:
+        serializedVersion: 2
+        x: 4349
+        y: 2449
+        width: 332
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b49139a2a17e71cd0800000000000000
+      internalID: -2587345361331611317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_12
+      rect:
+        serializedVersion: 2
+        x: 4719
+        y: 2449
+        width: 402
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa6bbfd5e52c7190800000000000000
+      internalID: -7963448371866539353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_13
+      rect:
+        serializedVersion: 2
+        x: 5139
+        y: 2449
+        width: 502
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247539493483ab6d0800000000000000
+      internalID: -2974002741018142910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_14
+      rect:
+        serializedVersion: 2
+        x: 5659
+        y: 2449
+        width: 502
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc2ec6435607c440800000000000000
+      internalID: 4955936869684489427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_15
+      rect:
+        serializedVersion: 2
+        x: 6199
+        y: 2449
+        width: 502
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9918c0059d34489d0800000000000000
+      internalID: -2773016869923421799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_16
+      rect:
+        serializedVersion: 2
+        x: 6729
+        y: 2449
+        width: 482
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2026fad8a6ff35310800000000000000
+      internalID: 1392737542896312834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_17
+      rect:
+        serializedVersion: 2
+        x: 7249
+        y: 2449
+        width: 482
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1eea64ee1e2e54f0800000000000000
+      internalID: -838181770428223970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_18
+      rect:
+        serializedVersion: 2
+        x: 7759
+        y: 2449
+        width: 482
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e63a6daae860ef890800000000000000
+      internalID: -7422487926038682770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_19
+      rect:
+        serializedVersion: 2
+        x: 8279
+        y: 2449
+        width: 472
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f35e9c9c32a2410800000000000000
+      internalID: 1453013179363049346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_20
+      rect:
+        serializedVersion: 2
+        x: 8779
+        y: 2449
+        width: 472
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea750a3e440ce990800000000000000
+      internalID: -7355499357375464721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_21
+      rect:
+        serializedVersion: 2
+        x: 9279
+        y: 2449
+        width: 472
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e628f22b048c14b0800000000000000
+      internalID: -5468350664168429847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_22
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1969
+        width: 492
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a395b2a002dd4a380800000000000000
+      internalID: -8960794228881139398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_23
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1969
+        width: 492
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6430c140a196450800000000000000
+      internalID: 6082421376692733680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_24
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 1969
+        width: 492
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a244cfb4b2738d30800000000000000
+      internalID: 4432512578899690146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_25
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 1969
+        width: 492
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ef0b96ea01bdcd0800000000000000
+      internalID: -2532412024182211059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_26
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 2279
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9547f193a4e1c9ec0800000000000000
+      internalID: -3558936301394758567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_27
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 1969
+        width: 552
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579b6947a829cd200800000000000000
+      internalID: 206200806311377269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_28
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 1969
+        width: 492
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa614fba5ba358850800000000000000
+      internalID: 6378568999188567722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_29
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1969
+        width: 492
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b5e34d5f078c870800000000000000
+      internalID: 8703330481023638388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_30
+      rect:
+        serializedVersion: 2
+        x: 3769
+        y: 1969
+        width: 492
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f826e3772345783f0800000000000000
+      internalID: -898657024911449457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_31
+      rect:
+        serializedVersion: 2
+        x: 4279
+        y: 1969
+        width: 492
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b58ed474664dfd8d0800000000000000
+      internalID: -2819301305962600357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_32
+      rect:
+        serializedVersion: 2
+        x: 4779
+        y: 1969
+        width: 492
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e2662cec492a7f00800000000000000
+      internalID: 1115249268083811040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_33
+      rect:
+        serializedVersion: 2
+        x: 5279
+        y: 1969
+        width: 492
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6790277750d0ef460800000000000000
+      internalID: 7277268365007260022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_34
+      rect:
+        serializedVersion: 2
+        x: 5809
+        y: 1969
+        width: 402
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa4713f7ce48ae70800000000000000
+      internalID: 9126631265550158503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_35
+      rect:
+        serializedVersion: 2
+        x: 6249
+        y: 1969
+        width: 332
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2935b098f0c422b30800000000000000
+      internalID: 4261051827053351826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_36
+      rect:
+        serializedVersion: 2
+        x: 6639
+        y: 1969
+        width: 332
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d66ef1c5d16a6e10800000000000000
+      internalID: 2191671739379771091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_37
+      rect:
+        serializedVersion: 2
+        x: 7019
+        y: 1969
+        width: 342
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352453bbdefb41ad0800000000000000
+      internalID: -2732348046138064301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_38
+      rect:
+        serializedVersion: 2
+        x: 7409
+        y: 1969
+        width: 342
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 181394261f9ef5370800000000000000
+      internalID: 8313620660094579073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_39
+      rect:
+        serializedVersion: 2
+        x: 7799
+        y: 1969
+        width: 342
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e7dd39d567ae6c00800000000000000
+      internalID: 895837431771551720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_40
+      rect:
+        serializedVersion: 2
+        x: 8179
+        y: 1969
+        width: 342
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ca3a1166bab0d30800000000000000
+      internalID: 4398797915928374303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_41
+      rect:
+        serializedVersion: 2
+        x: 8559
+        y: 1969
+        width: 342
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9092d454e6fa6840800000000000000
+      internalID: 5218254578798203038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_42
+      rect:
+        serializedVersion: 2
+        x: 8939
+        y: 1969
+        width: 342
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4e9797b781096a0800000000000000
+      internalID: -6444624148169104158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_43
+      rect:
+        serializedVersion: 2
+        x: 9329
+        y: 1969
+        width: 352
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80360d43ad175ae10800000000000000
+      internalID: 2208296374297977608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_44
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 2249
+        width: 62
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393578deca60665e0800000000000000
+      internalID: -1916837251610356845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_45
+      rect:
+        serializedVersion: 2
+        x: 2729
+        y: 2249
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc9c8a02765b88b0800000000000000
+      internalID: -5148926701164782375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_46
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1569
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54a60a32ec8ae54b0800000000000000
+      internalID: -5449732895757276603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_47
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1519
+        width: 62
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc28709edcfc465a0800000000000000
+      internalID: -6528865076495547700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_48
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1399
+        width: 352
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848e2aa5a221f2820800000000000000
+      internalID: 2895553058541070408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_49
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1399
+        width: 342
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0fe1769a52fa0c0800000000000000
+      internalID: -4562386487993241373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_50
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 1399
+        width: 352
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ca86ac3059c9600800000000000000
+      internalID: 476419504107727997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_51
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 1399
+        width: 342
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5778be5e04f63f10800000000000000
+      internalID: 2249253406474008410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_52
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 759
+        width: 352
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03e4535cb23fde090800000000000000
+      internalID: -8003473593449755088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_53
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 759
+        width: 642
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d45d2f406f6f910800000000000000
+      internalID: 1870953196333387048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_54
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 759
+        width: 612
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0f90c19b12eb4d80800000000000000
+      internalID: -8265264083071099122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_55
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 759
+        width: 342
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e2327630e686bd0800000000000000
+      internalID: -2636736620931109349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_56
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 119
+        width: 352
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea561b81ef82cef0800000000000000
+      internalID: -89350843730076957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_57
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 119
+        width: 342
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83d200466eb699b60800000000000000
+      internalID: 7753346870759402808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_58
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 119
+        width: 342
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde242403afaf53b0800000000000000
+      internalID: -5521501503448928548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN Tank Animation_59
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 119
+        width: 332
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5218050748992f720800000000000000
+      internalID: 2878531905942225189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PAWN Tank Animation_0: 3846683794882523822
+      PAWN Tank Animation_1: -2255273413493236642
+      PAWN Tank Animation_10: -5123409219955698156
+      PAWN Tank Animation_11: -2587345361331611317
+      PAWN Tank Animation_12: -7963448371866539353
+      PAWN Tank Animation_13: -2974002741018142910
+      PAWN Tank Animation_14: 4955936869684489427
+      PAWN Tank Animation_15: -2773016869923421799
+      PAWN Tank Animation_16: 1392737542896312834
+      PAWN Tank Animation_17: -838181770428223970
+      PAWN Tank Animation_18: -7422487926038682770
+      PAWN Tank Animation_19: 1453013179363049346
+      PAWN Tank Animation_2: -6409509088822152011
+      PAWN Tank Animation_20: -7355499357375464721
+      PAWN Tank Animation_21: -5468350664168429847
+      PAWN Tank Animation_22: -8960794228881139398
+      PAWN Tank Animation_23: 6082421376692733680
+      PAWN Tank Animation_24: 4432512578899690146
+      PAWN Tank Animation_25: -2532412024182211059
+      PAWN Tank Animation_26: -3558936301394758567
+      PAWN Tank Animation_27: 206200806311377269
+      PAWN Tank Animation_28: 6378568999188567722
+      PAWN Tank Animation_29: 8703330481023638388
+      PAWN Tank Animation_3: 1600089002756793445
+      PAWN Tank Animation_30: -898657024911449457
+      PAWN Tank Animation_31: -2819301305962600357
+      PAWN Tank Animation_32: 1115249268083811040
+      PAWN Tank Animation_33: 7277268365007260022
+      PAWN Tank Animation_34: 9126631265550158503
+      PAWN Tank Animation_35: 4261051827053351826
+      PAWN Tank Animation_36: 2191671739379771091
+      PAWN Tank Animation_37: -2732348046138064301
+      PAWN Tank Animation_38: 8313620660094579073
+      PAWN Tank Animation_39: 895837431771551720
+      PAWN Tank Animation_4: -5386902249337041088
+      PAWN Tank Animation_40: 4398797915928374303
+      PAWN Tank Animation_41: 5218254578798203038
+      PAWN Tank Animation_42: -6444624148169104158
+      PAWN Tank Animation_43: 2208296374297977608
+      PAWN Tank Animation_44: -1916837251610356845
+      PAWN Tank Animation_45: -5148926701164782375
+      PAWN Tank Animation_46: -5449732895757276603
+      PAWN Tank Animation_47: -6528865076495547700
+      PAWN Tank Animation_48: 2895553058541070408
+      PAWN Tank Animation_49: -4562386487993241373
+      PAWN Tank Animation_5: 8171611244034344589
+      PAWN Tank Animation_50: 476419504107727997
+      PAWN Tank Animation_51: 2249253406474008410
+      PAWN Tank Animation_52: -8003473593449755088
+      PAWN Tank Animation_53: 1870953196333387048
+      PAWN Tank Animation_54: -8265264083071099122
+      PAWN Tank Animation_55: -2636736620931109349
+      PAWN Tank Animation_56: -89350843730076957
+      PAWN Tank Animation_57: 7753346870759402808
+      PAWN Tank Animation_58: -5521501503448928548
+      PAWN Tank Animation_59: 2878531905942225189
+      PAWN Tank Animation_6: 5502752202959837856
+      PAWN Tank Animation_7: -7277215840656485960
+      PAWN Tank Animation_8: -8449750002455818555
+      PAWN Tank Animation_9: -3516174843321307849
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

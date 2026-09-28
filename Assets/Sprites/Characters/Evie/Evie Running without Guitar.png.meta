@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 00f00be5c6f79124c980d501f13245a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4613671345490237591
+    second: Evie Running without Guitar_0
+  - first:
+      213: -8089598630538135489
+    second: Evie Running without Guitar_1
+  - first:
+      213: -6054559312818787891
+    second: Evie Running without Guitar_2
+  - first:
+      213: -7237065474503955265
+    second: Evie Running without Guitar_3
+  - first:
+      213: -5196384811509099661
+    second: Evie Running without Guitar_4
+  - first:
+      213: 7555606961061187517
+    second: Evie Running without Guitar_5
+  - first:
+      213: 2743171109757308161
+    second: Evie Running without Guitar_6
+  - first:
+      213: -7410311450945397899
+    second: Evie Running without Guitar_7
+  - first:
+      213: -3864011739693214692
+    second: Evie Running without Guitar_8
+  - first:
+      213: 6271299845785895151
+    second: Evie Running without Guitar_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Evie Running without Guitar_0
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 559
+        width: 182
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 967e7a50b52f8ffb0800000000000000
+      internalID: -4613671345490237591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Running without Guitar_1
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 559
+        width: 172
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38b943f7e8fbbf80800000000000000
+      internalID: -8089598630538135489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Running without Guitar_2
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 559
+        width: 192
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc927e72262e9fba0800000000000000
+      internalID: -6054559312818787891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Running without Guitar_3
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 559
+        width: 162
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbca2f76b47c09b90800000000000000
+      internalID: -7237065474503955265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Running without Guitar_4
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 559
+        width: 182
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373d3c9ab8bb2e7b0800000000000000
+      internalID: -5196384811509099661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Running without Guitar_5
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 79
+        width: 182
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf4580ff78ead860800000000000000
+      internalID: 7555606961061187517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Running without Guitar_6
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 79
+        width: 162
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10dc2332793b11620800000000000000
+      internalID: 2743171109757308161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Running without Guitar_7
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 79
+        width: 192
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57bd3633ff8492990800000000000000
+      internalID: -7410311450945397899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Running without Guitar_8
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 79
+        width: 172
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1495af8bc5406ac0800000000000000
+      internalID: -3864011739693214692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Running without Guitar_9
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 79
+        width: 182
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe0c704abf1280750800000000000000
+      internalID: 6271299845785895151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Evie Running without Guitar_0: -4613671345490237591
+      Evie Running without Guitar_1: -8089598630538135489
+      Evie Running without Guitar_2: -6054559312818787891
+      Evie Running without Guitar_3: -7237065474503955265
+      Evie Running without Guitar_4: -5196384811509099661
+      Evie Running without Guitar_5: 7555606961061187517
+      Evie Running without Guitar_6: 2743171109757308161
+      Evie Running without Guitar_7: -7410311450945397899
+      Evie Running without Guitar_8: -3864011739693214692
+      Evie Running without Guitar_9: 6271299845785895151
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

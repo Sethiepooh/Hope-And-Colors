@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 0c0b56aecd859e9498a1295e99f38b76
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4851801214971015077
+    second: Glove Guy and Tank dash_0
+  - first:
+      213: -1086979873807051119
+    second: Glove Guy and Tank dash_1
+  - first:
+      213: -4681065044368390508
+    second: Glove Guy and Tank dash_2
+  - first:
+      213: -3276144086743313917
+    second: Glove Guy and Tank dash_3
+  - first:
+      213: 8745965164333704991
+    second: Glove Guy and Tank dash_4
+  - first:
+      213: 7152409196507664339
+    second: Glove Guy and Tank dash_5
+  - first:
+      213: -1260602506323619517
+    second: Glove Guy and Tank dash_6
+  - first:
+      213: -6891918520298353063
+    second: Glove Guy and Tank dash_7
+  - first:
+      213: 5365257094032865346
+    second: Glove Guy and Tank dash_8
+  - first:
+      213: 5060697516445685422
+    second: Glove Guy and Tank dash_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Glove Guy and Tank dash_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 809
+        width: 342
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5018dc3080faacb0800000000000000
+      internalID: -4851801214971015077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy and Tank dash_1
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 819
+        width: 432
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1965bb750954ae0f0800000000000000
+      internalID: -1086979873807051119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy and Tank dash_2
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 429
+        width: 312
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4968cebb424890fb0800000000000000
+      internalID: -4681065044368390508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy and Tank dash_3
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 429
+        width: 292
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3021ba49f4cc882d0800000000000000
+      internalID: -3276144086743313917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy and Tank dash_4
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 429
+        width: 292
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f172d069af8ef5970800000000000000
+      internalID: 8745965164333704991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy and Tank dash_5
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 559
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df8316e446724360800000000000000
+      internalID: 7152409196507664339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy and Tank dash_6
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 429
+        width: 262
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3411d9f03b0718ee0800000000000000
+      internalID: -1260602506323619517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy and Tank dash_7
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 9
+        width: 312
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95e4ea8ee9cfa50a0800000000000000
+      internalID: -6891918520298353063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy and Tank dash_8
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 319
+        width: 112
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 248397296e8357a40800000000000000
+      internalID: 5365257094032865346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy and Tank dash_9
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 9
+        width: 342
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea6527714953b3640800000000000000
+      internalID: 5060697516445685422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Glove Guy and Tank dash_0: -4851801214971015077
+      Glove Guy and Tank dash_1: -1086979873807051119
+      Glove Guy and Tank dash_2: -4681065044368390508
+      Glove Guy and Tank dash_3: -3276144086743313917
+      Glove Guy and Tank dash_4: 8745965164333704991
+      Glove Guy and Tank dash_5: 7152409196507664339
+      Glove Guy and Tank dash_6: -1260602506323619517
+      Glove Guy and Tank dash_7: -6891918520298353063
+      Glove Guy and Tank dash_8: 5365257094032865346
+      Glove Guy and Tank dash_9: 5060697516445685422
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

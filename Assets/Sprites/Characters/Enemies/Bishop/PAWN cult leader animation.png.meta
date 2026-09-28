@@ -1,0 +1,1911 @@
+fileFormatVersion: 2
+guid: 99c49beb3f208d446b2aeb6fbb94b6d1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4301632183435449290
+    second: PAWN cult leader animation_0
+  - first:
+      213: 8039975852263445056
+    second: PAWN cult leader animation_1
+  - first:
+      213: 5072135686340294418
+    second: PAWN cult leader animation_2
+  - first:
+      213: -9129841703654084417
+    second: PAWN cult leader animation_3
+  - first:
+      213: 4166474439962295924
+    second: PAWN cult leader animation_4
+  - first:
+      213: -3248759463544567991
+    second: PAWN cult leader animation_5
+  - first:
+      213: -733396257703187981
+    second: PAWN cult leader animation_6
+  - first:
+      213: 7321664744992053189
+    second: PAWN cult leader animation_7
+  - first:
+      213: -3666439304287665877
+    second: PAWN cult leader animation_8
+  - first:
+      213: 454123621017002558
+    second: PAWN cult leader animation_9
+  - first:
+      213: -8335927967467876291
+    second: PAWN cult leader animation_10
+  - first:
+      213: -3262044916361734749
+    second: PAWN cult leader animation_11
+  - first:
+      213: -2686126351118292343
+    second: PAWN cult leader animation_12
+  - first:
+      213: 804338831795443849
+    second: PAWN cult leader animation_13
+  - first:
+      213: 6287893843510726539
+    second: PAWN cult leader animation_14
+  - first:
+      213: 1965786557896040578
+    second: PAWN cult leader animation_15
+  - first:
+      213: 4090604022667438545
+    second: PAWN cult leader animation_16
+  - first:
+      213: -4936296399821444358
+    second: PAWN cult leader animation_17
+  - first:
+      213: 466233722849542999
+    second: PAWN cult leader animation_18
+  - first:
+      213: 8974889080574516934
+    second: PAWN cult leader animation_19
+  - first:
+      213: -3282002655340866345
+    second: PAWN cult leader animation_20
+  - first:
+      213: -3382246496836453462
+    second: PAWN cult leader animation_21
+  - first:
+      213: 3961114300041854263
+    second: PAWN cult leader animation_22
+  - first:
+      213: 4400566755251069763
+    second: PAWN cult leader animation_23
+  - first:
+      213: 4451605654481746366
+    second: PAWN cult leader animation_24
+  - first:
+      213: -1457147665238553002
+    second: PAWN cult leader animation_25
+  - first:
+      213: 1751881157982314219
+    second: PAWN cult leader animation_26
+  - first:
+      213: -5758531564950989340
+    second: PAWN cult leader animation_27
+  - first:
+      213: 7385566448106167287
+    second: PAWN cult leader animation_28
+  - first:
+      213: -5115062303780486739
+    second: PAWN cult leader animation_29
+  - first:
+      213: -2731184941857835054
+    second: PAWN cult leader animation_30
+  - first:
+      213: -8227520460198245312
+    second: PAWN cult leader animation_31
+  - first:
+      213: 1670616606197360310
+    second: PAWN cult leader animation_32
+  - first:
+      213: 1685570410859363024
+    second: PAWN cult leader animation_33
+  - first:
+      213: 2333768794662882437
+    second: PAWN cult leader animation_34
+  - first:
+      213: -5255356674470576944
+    second: PAWN cult leader animation_35
+  - first:
+      213: 6491673807996527526
+    second: PAWN cult leader animation_36
+  - first:
+      213: 6929887060185103823
+    second: PAWN cult leader animation_37
+  - first:
+      213: -3540921935336145155
+    second: PAWN cult leader animation_38
+  - first:
+      213: -3236198868386424689
+    second: PAWN cult leader animation_39
+  - first:
+      213: 3411159959140254939
+    second: PAWN cult leader animation_40
+  - first:
+      213: -7835639375750714655
+    second: PAWN cult leader animation_41
+  - first:
+      213: -4978410277812410230
+    second: PAWN cult leader animation_42
+  - first:
+      213: -4849140572079871989
+    second: PAWN cult leader animation_43
+  - first:
+      213: -8676666137426176416
+    second: PAWN cult leader animation_44
+  - first:
+      213: 5563419018306803941
+    second: PAWN cult leader animation_45
+  - first:
+      213: 4848953661614683072
+    second: PAWN cult leader animation_46
+  - first:
+      213: -2014905769453388143
+    second: PAWN cult leader animation_47
+  - first:
+      213: -2445534893061723965
+    second: PAWN cult leader animation_48
+  - first:
+      213: 932345487731086176
+    second: PAWN cult leader animation_49
+  - first:
+      213: 1128019628814868072
+    second: PAWN cult leader animation_50
+  - first:
+      213: -3478855850747486394
+    second: PAWN cult leader animation_51
+  - first:
+      213: 2727115531579307683
+    second: PAWN cult leader animation_52
+  - first:
+      213: 4411212463130867616
+    second: PAWN cult leader animation_53
+  - first:
+      213: -576106944267701538
+    second: PAWN cult leader animation_54
+  - first:
+      213: -2239653398866573296
+    second: PAWN cult leader animation_55
+  - first:
+      213: 2980597714799983979
+    second: PAWN cult leader animation_56
+  - first:
+      213: -172778631523063947
+    second: PAWN cult leader animation_57
+  - first:
+      213: 7261598783091845689
+    second: PAWN cult leader animation_58
+  - first:
+      213: 2398860054146444823
+    second: PAWN cult leader animation_59
+  - first:
+      213: 8681260335361034961
+    second: PAWN cult leader animation_60
+  - first:
+      213: -8697138601259373384
+    second: PAWN cult leader animation_61
+  - first:
+      213: 4225072018441404724
+    second: PAWN cult leader animation_62
+  - first:
+      213: 4844587473888905724
+    second: PAWN cult leader animation_63
+  - first:
+      213: -818244420793232030
+    second: PAWN cult leader animation_64
+  - first:
+      213: 8624114329174124828
+    second: PAWN cult leader animation_65
+  - first:
+      213: -8760743209912054713
+    second: PAWN cult leader animation_66
+  - first:
+      213: 8282169864177066474
+    second: PAWN cult leader animation_67
+  - first:
+      213: 449882517335871533
+    second: PAWN cult leader animation_68
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PAWN cult leader animation_0
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 1889
+        width: 202
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c21f7f1588d44c0800000000000000
+      internalID: -4301632183435449290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_1
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 1919
+        width: 322
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04291e4a07bb39f60800000000000000
+      internalID: 8039975852263445056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_2
+      rect:
+        serializedVersion: 2
+        x: 1609
+        y: 1779
+        width: 482
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21735ec8888d36640800000000000000
+      internalID: 5072135686340294418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_3
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 1779
+        width: 482
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb0b62ea7594c4180800000000000000
+      internalID: -9129841703654084417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_4
+      rect:
+        serializedVersion: 2
+        x: 2629
+        y: 1779
+        width: 482
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47e72bf9d6a42d930800000000000000
+      internalID: 4166474439962295924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_5
+      rect:
+        serializedVersion: 2
+        x: 3159
+        y: 1919
+        width: 322
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947ccb60b761ae2d0800000000000000
+      internalID: -3248759463544567991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_6
+      rect:
+        serializedVersion: 2
+        x: 3599
+        y: 1889
+        width: 202
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f920044df372d5f0800000000000000
+      internalID: -733396257703187981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_7
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1289
+        width: 182
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c790c13b47cb9560800000000000000
+      internalID: 7321664744992053189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_8
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1299
+        width: 262
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b21476dd0e03e1dc0800000000000000
+      internalID: -3666439304287665877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_9
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 1309
+        width: 322
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3225daf60f5d4600800000000000000
+      internalID: 454123621017002558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_10
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 1319
+        width: 362
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3055d1eda5d05c80800000000000000
+      internalID: -8335927967467876291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_11
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 1359
+        width: 362
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a5d3ee7e63eab2d0800000000000000
+      internalID: -3262044916361734749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_12
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 1369
+        width: 362
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a27cbb056f8bad0800000000000000
+      internalID: -2686126351118292343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_13
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 1369
+        width: 362
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988583ce7e5992b00800000000000000
+      internalID: 804338831795443849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_14
+      rect:
+        serializedVersion: 2
+        x: 2689
+        y: 1369
+        width: 362
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8f82dfc226134750800000000000000
+      internalID: 6287893843510726539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_15
+      rect:
+        serializedVersion: 2
+        x: 3139
+        y: 1359
+        width: 362
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 280a1af8570e74b10800000000000000
+      internalID: 1965786557896040578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_16
+      rect:
+        serializedVersion: 2
+        x: 3519
+        y: 1319
+        width: 362
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d960e78faeb4c830800000000000000
+      internalID: 4090604022667438545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_17
+      rect:
+        serializedVersion: 2
+        x: 3919
+        y: 1309
+        width: 322
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa6a96f390ce7bb0800000000000000
+      internalID: -4936296399821444358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_18
+      rect:
+        serializedVersion: 2
+        x: 4259
+        y: 1299
+        width: 262
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75341c8c915687600800000000000000
+      internalID: 466233722849542999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_19
+      rect:
+        serializedVersion: 2
+        x: 4539
+        y: 1289
+        width: 182
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce1d2a51163d8c70800000000000000
+      internalID: 8974889080574516934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_20
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 599
+        width: 182
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4d48849fbf372d0800000000000000
+      internalID: -3282002655340866345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_21
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 609
+        width: 182
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aabf0452bb8df01d0800000000000000
+      internalID: -3382246496836453462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_22
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 619
+        width: 222
+        height: 552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73df6b01874b8f630800000000000000
+      internalID: 3961114300041854263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_23
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 629
+        width: 262
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34322211624f11d30800000000000000
+      internalID: 4400566755251069763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_24
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 659
+        width: 342
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb93183d1c747cd30800000000000000
+      internalID: 4451605654481746366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_25
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 659
+        width: 342
+        height: 632
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e8a243beb27cbe0800000000000000
+      internalID: -1457147665238553002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_26
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 659
+        width: 342
+        height: 622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bee5c3e91aeef4810800000000000000
+      internalID: 1751881157982314219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_27
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 629
+        width: 262
+        height: 572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5d83b3d069510b0800000000000000
+      internalID: -5758531564950989340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_28
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 619
+        width: 222
+        height: 552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb596cdd8dce7660800000000000000
+      internalID: 7385566448106167287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_29
+      rect:
+        serializedVersion: 2
+        x: 2679
+        y: 609
+        width: 182
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da14c2b7fe5a309b0800000000000000
+      internalID: -5115062303780486739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_30
+      rect:
+        serializedVersion: 2
+        x: 2899
+        y: 599
+        width: 182
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d7faac04c1e81ad0800000000000000
+      internalID: -2731184941857835054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_31
+      rect:
+        serializedVersion: 2
+        x: 4189
+        y: 719
+        width: 222
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c00a39bb9f1dd80800000000000000
+      internalID: -8227520460198245312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_32
+      rect:
+        serializedVersion: 2
+        x: 4449
+        y: 719
+        width: 232
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b62348b3f83f2710800000000000000
+      internalID: 1670616606197360310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_33
+      rect:
+        serializedVersion: 2
+        x: 4699
+        y: 719
+        width: 292
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0da7e2fab59546710800000000000000
+      internalID: 1685570410859363024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_34
+      rect:
+        serializedVersion: 2
+        x: 4999
+        y: 719
+        width: 292
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58cc5c99a56336020800000000000000
+      internalID: 2333768794662882437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_35
+      rect:
+        serializedVersion: 2
+        x: 5309
+        y: 1089
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dcf33ad2f83117b0800000000000000
+      internalID: -5255356674470576944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_36
+      rect:
+        serializedVersion: 2
+        x: 5339
+        y: 719
+        width: 292
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3275b1fee071a50800000000000000
+      internalID: 6491673807996527526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_37
+      rect:
+        serializedVersion: 2
+        x: 5679
+        y: 719
+        width: 222
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcdb8eba097eb2060800000000000000
+      internalID: 6929887060185103823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_38
+      rect:
+        serializedVersion: 2
+        x: 5289
+        y: 989
+        width: 62
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe76eaa24e1cdec0800000000000000
+      internalID: -3540921935336145155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_39
+      rect:
+        serializedVersion: 2
+        x: 5299
+        y: 1069
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f885e4b7646b613d0800000000000000
+      internalID: -3236198868386424689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_40
+      rect:
+        serializedVersion: 2
+        x: 4989
+        y: 1019
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd44794e8efd65f20800000000000000
+      internalID: 3411159959140254939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_41
+      rect:
+        serializedVersion: 2
+        x: 5629
+        y: 999
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eaa054b087324390800000000000000
+      internalID: -7835639375750714655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_42
+      rect:
+        serializedVersion: 2
+        x: 5639
+        y: 979
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8866d4aa3229eab0800000000000000
+      internalID: -4978410277812410230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_43
+      rect:
+        serializedVersion: 2
+        x: 5659
+        y: 989
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b08ae3f675464bcb0800000000000000
+      internalID: -4849140572079871989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_44
+      rect:
+        serializedVersion: 2
+        x: 5319
+        y: 969
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0665d047e1a469780800000000000000
+      internalID: -8676666137426176416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_45
+      rect:
+        serializedVersion: 2
+        x: 4679
+        y: 939
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e854d2fe1c353d40800000000000000
+      internalID: 5563419018306803941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_46
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 19
+        width: 182
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c37fd41aa1fa4340800000000000000
+      internalID: 4848953661614683072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_47
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 29
+        width: 182
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19e78dbc0ed9904e0800000000000000
+      internalID: -2014905769453388143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_48
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 39
+        width: 182
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c8ab35c8f6bf0ed0800000000000000
+      internalID: -2445534893061723965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_49
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 49
+        width: 182
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0635624084b50fc00800000000000000
+      internalID: 932345487731086176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_50
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 79
+        width: 182
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86e9d2b30e787af00800000000000000
+      internalID: 1128019628814868072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_51
+      rect:
+        serializedVersion: 2
+        x: 1129
+        y: 79
+        width: 182
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f1867190f98bfc0800000000000000
+      internalID: -3478855850747486394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_52
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 79
+        width: 182
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a63c398029a8d520800000000000000
+      internalID: 2727115531579307683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_53
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 49
+        width: 182
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7f0b51d56c73d30800000000000000
+      internalID: 4411212463130867616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_54
+      rect:
+        serializedVersion: 2
+        x: 1789
+        y: 39
+        width: 182
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed2b94a59c14108f0800000000000000
+      internalID: -576106944267701538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_55
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 29
+        width: 182
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018cf8499172be0e0800000000000000
+      internalID: -2239653398866573296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_56
+      rect:
+        serializedVersion: 2
+        x: 2219
+        y: 19
+        width: 182
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d7ef864d53d5920800000000000000
+      internalID: 2980597714799983979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_57
+      rect:
+        serializedVersion: 2
+        x: 2439
+        y: 19
+        width: 182
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5772a4300ca2a9df0800000000000000
+      internalID: -172778631523063947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_58
+      rect:
+        serializedVersion: 2
+        x: 2649
+        y: 19
+        width: 222
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a299f9e9166c460800000000000000
+      internalID: 7261598783091845689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_59
+      rect:
+        serializedVersion: 2
+        x: 2929
+        y: 19
+        width: 222
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ee54172867a4120800000000000000
+      internalID: 2398860054146444823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_60
+      rect:
+        serializedVersion: 2
+        x: 3209
+        y: 19
+        width: 222
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da02eb97480a7870800000000000000
+      internalID: 8681260335361034961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_61
+      rect:
+        serializedVersion: 2
+        x: 3459
+        y: 19
+        width: 222
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bce895858e8d4780800000000000000
+      internalID: -8697138601259373384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_62
+      rect:
+        serializedVersion: 2
+        x: 3719
+        y: 19
+        width: 222
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43184a98d9872aa30800000000000000
+      internalID: 4225072018441404724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_63
+      rect:
+        serializedVersion: 2
+        x: 3969
+        y: 19
+        width: 222
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf98478c3ae6b3340800000000000000
+      internalID: 4844587473888905724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_64
+      rect:
+        serializedVersion: 2
+        x: 4579
+        y: 119
+        width: 182
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2659c27d80305a4f0800000000000000
+      internalID: -818244420793232030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_65
+      rect:
+        serializedVersion: 2
+        x: 4799
+        y: 129
+        width: 182
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19a7c43a420fa770800000000000000
+      internalID: 8624114329174124828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_66
+      rect:
+        serializedVersion: 2
+        x: 5019
+        y: 159
+        width: 182
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74cc6cc87769b6680800000000000000
+      internalID: -8760743209912054713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_67
+      rect:
+        serializedVersion: 2
+        x: 5449
+        y: 239
+        width: 222
+        height: 382
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae128b35c9d20f270800000000000000
+      internalID: 8282169864177066474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PAWN cult leader animation_68
+      rect:
+        serializedVersion: 2
+        x: 5699
+        y: 239
+        width: 222
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20967414cd4e3600800000000000000
+      internalID: 449882517335871533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PAWN cult leader animation_0: -4301632183435449290
+      PAWN cult leader animation_1: 8039975852263445056
+      PAWN cult leader animation_10: -8335927967467876291
+      PAWN cult leader animation_11: -3262044916361734749
+      PAWN cult leader animation_12: -2686126351118292343
+      PAWN cult leader animation_13: 804338831795443849
+      PAWN cult leader animation_14: 6287893843510726539
+      PAWN cult leader animation_15: 1965786557896040578
+      PAWN cult leader animation_16: 4090604022667438545
+      PAWN cult leader animation_17: -4936296399821444358
+      PAWN cult leader animation_18: 466233722849542999
+      PAWN cult leader animation_19: 8974889080574516934
+      PAWN cult leader animation_2: 5072135686340294418
+      PAWN cult leader animation_20: -3282002655340866345
+      PAWN cult leader animation_21: -3382246496836453462
+      PAWN cult leader animation_22: 3961114300041854263
+      PAWN cult leader animation_23: 4400566755251069763
+      PAWN cult leader animation_24: 4451605654481746366
+      PAWN cult leader animation_25: -1457147665238553002
+      PAWN cult leader animation_26: 1751881157982314219
+      PAWN cult leader animation_27: -5758531564950989340
+      PAWN cult leader animation_28: 7385566448106167287
+      PAWN cult leader animation_29: -5115062303780486739
+      PAWN cult leader animation_3: -9129841703654084417
+      PAWN cult leader animation_30: -2731184941857835054
+      PAWN cult leader animation_31: -8227520460198245312
+      PAWN cult leader animation_32: 1670616606197360310
+      PAWN cult leader animation_33: 1685570410859363024
+      PAWN cult leader animation_34: 2333768794662882437
+      PAWN cult leader animation_35: -5255356674470576944
+      PAWN cult leader animation_36: 6491673807996527526
+      PAWN cult leader animation_37: 6929887060185103823
+      PAWN cult leader animation_38: -3540921935336145155
+      PAWN cult leader animation_39: -3236198868386424689
+      PAWN cult leader animation_4: 4166474439962295924
+      PAWN cult leader animation_40: 3411159959140254939
+      PAWN cult leader animation_41: -7835639375750714655
+      PAWN cult leader animation_42: -4978410277812410230
+      PAWN cult leader animation_43: -4849140572079871989
+      PAWN cult leader animation_44: -8676666137426176416
+      PAWN cult leader animation_45: 5563419018306803941
+      PAWN cult leader animation_46: 4848953661614683072
+      PAWN cult leader animation_47: -2014905769453388143
+      PAWN cult leader animation_48: -2445534893061723965
+      PAWN cult leader animation_49: 932345487731086176
+      PAWN cult leader animation_5: -3248759463544567991
+      PAWN cult leader animation_50: 1128019628814868072
+      PAWN cult leader animation_51: -3478855850747486394
+      PAWN cult leader animation_52: 2727115531579307683
+      PAWN cult leader animation_53: 4411212463130867616
+      PAWN cult leader animation_54: -576106944267701538
+      PAWN cult leader animation_55: -2239653398866573296
+      PAWN cult leader animation_56: 2980597714799983979
+      PAWN cult leader animation_57: -172778631523063947
+      PAWN cult leader animation_58: 7261598783091845689
+      PAWN cult leader animation_59: 2398860054146444823
+      PAWN cult leader animation_6: -733396257703187981
+      PAWN cult leader animation_60: 8681260335361034961
+      PAWN cult leader animation_61: -8697138601259373384
+      PAWN cult leader animation_62: 4225072018441404724
+      PAWN cult leader animation_63: 4844587473888905724
+      PAWN cult leader animation_64: -818244420793232030
+      PAWN cult leader animation_65: 8624114329174124828
+      PAWN cult leader animation_66: -8760743209912054713
+      PAWN cult leader animation_67: 8282169864177066474
+      PAWN cult leader animation_68: 449882517335871533
+      PAWN cult leader animation_7: 7321664744992053189
+      PAWN cult leader animation_8: -3666439304287665877
+      PAWN cult leader animation_9: 454123621017002558
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

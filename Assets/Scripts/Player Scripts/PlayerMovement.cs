@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -37,6 +38,10 @@ public class PlayerMovement : MonoBehaviour
     Collider2D playerCollider;
     [SerializeField] LayerMask dodgeLayer;
     [SerializeField] AfterimageEffect effect;
+    [SerializeField] int afterimageAmount;
+    [SerializeField] float warpAmount;
+    [SerializeField] ParticleSystem dashParticles;
+    [SerializeField] CinemachineImpulseSource screenShakeSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -194,20 +199,53 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator HandleDash()
     {
-        StartCoroutine(HandleAfterimages(1));
+        StartCoroutine(HandleAfterimages(afterimageAmount));
+        StartCoroutine(HandleDashWarp(warpAmount));
+        ScreenShake();
         Vector2 dir = movement;
         dashing = true;
         playerCollider.excludeLayers = dodgeLayer;
         health.damagable = false;
         rb.AddForce(dir * dashSpeed, ForceMode2D.Impulse);
         canDash = false;
+        dashParticles.Play();
         yield return new WaitForSeconds(dashTime);
+        dashParticles.Stop();
         rb.linearVelocity = Vector2.zero;
         dashing = false;
         StartCoroutine(DashCooldown());
         yield return new WaitForSeconds(.1f);
         playerCollider.excludeLayers = 0;
         health.damagable = true;
+    }
+
+    void ScreenShake()
+    {
+        screenShakeSource.GenerateImpulse();
+    }
+
+
+    IEnumerator HandleDashWarp(float warpAmount)
+    {
+        float defaultY = transform.localScale.y;
+        float warpedY = defaultY - warpAmount;
+        float currentTime = 0;
+
+        while (currentTime < (dashTime /2))
+        {
+            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y - warpAmount, transform.localScale.x);
+            currentTime += Time.deltaTime;
+            yield return null;
+        }
+        Debug.Log("Current Time: " + currentTime);
+        while (currentTime > (dashTime / 2) && currentTime < dashTime)
+        {
+            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y + warpAmount, transform.localScale.x);
+            currentTime += Time.deltaTime;
+            yield return null;
+        }
+        Debug.Log("Current Time: " + currentTime);
+        transform.localScale = new Vector3(transform.localScale.x, defaultY, transform.localScale.x);
     }
 
     IEnumerator HandleAfterimages(int amount)

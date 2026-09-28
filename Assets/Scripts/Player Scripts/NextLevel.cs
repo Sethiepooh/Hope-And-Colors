@@ -10,10 +10,10 @@ public class NextLevel : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(FadeScreen(true, false));
+        StartCoroutine(FadeScreen(true, false, false));
     }
 
-    public IEnumerator FadeScreen(bool fadeIn, bool nextLevel)
+    public IEnumerator FadeScreen(bool fadeIn, bool nextLevel, bool menu)
     {
         if(blackFade == null)
         {
@@ -45,15 +45,27 @@ public class NextLevel : MonoBehaviour
                 yield return null;
             }
         }
+
         if (nextLevel)
         {
+            if(menu)
+            {
+                Debug.Log("Back To Menu");
+                SceneManager.LoadScene(0);
+                yield break;
+            }
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
+    public void LoadMenu()
+    {
+        StartCoroutine(FadeScreen(false, false, true));
+    }
+
     public void LoadNextLevel()
     {
-        StartCoroutine(FadeScreen(false, true));
+        StartCoroutine(FadeScreen(false, true, false));
     }
 
     public void QuitGame()
@@ -66,7 +78,7 @@ public class NextLevel : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            StartCoroutine(FadeScreen(false, true));
+            StartCoroutine(FadeScreen(false, true, false));
         }
     }
 }

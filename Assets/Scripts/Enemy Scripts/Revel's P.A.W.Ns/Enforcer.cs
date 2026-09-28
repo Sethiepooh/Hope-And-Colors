@@ -10,6 +10,7 @@ public class Enforcer : EnemyBase
     int damage;
     [SerializeField] float dashDuration = 0.5f;
     bool swing;
+    [SerializeField] bool canDoubleTime;
 
     [Header("Movement Stats")]
     [SerializeField] float moveSpeed = 3.0f;
@@ -51,6 +52,8 @@ public class Enforcer : EnemyBase
                         //Apply damage to player
                         Health hp = objects.gameObject.GetComponent<Health>();
                         hp.TakeDamage(damage);
+
+                        if(canDoubleTime)
                         roomEncounterManager.TriggerDoubleTime(5f);
                     }
                 }

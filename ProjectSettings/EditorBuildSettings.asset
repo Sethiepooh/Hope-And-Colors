@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 723340b4ef76bf84abca6b8f78469519
   - enabled: 1
+    path: Assets/Scenes/Act 1/Iridicent Castle.unity
+    guid: fa8fdfb09b0f428448ef30fe0a672bdd
+  - enabled: 0
     path: Assets/Scenes/Act 1/Regis Mines 1.unity
     guid: f4a51880a2243984f9dca9bf671bfe75
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Act 1/Alix Boss Fight.unity
     guid: 52d007cb3e19f3f42bb585bde941f46f
   - enabled: 0

@@ -69,6 +69,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] GameObject criticalIndicator;
     AttackIndicator cIndicator;
     AttackIndicator aIndicator;
+    [SerializeField] ParticleSystem perfectParticles;
+    [SerializeField] ParticleSystem allegroParticles;
 
     bool allegroMode;
 
@@ -117,6 +119,7 @@ public class PlayerAttack : MonoBehaviour
                 UpdateInspirationUI();
                 allegroMode = false;
                 playerMovement.allegro = false;
+                allegroParticles.Stop();
             }
         }
         else
@@ -137,7 +140,8 @@ public class PlayerAttack : MonoBehaviour
             if (bpmInteract.CheckInput(true) == 0)
             {
                 animator.SetBool("Attacking", true);
-                
+                StartCoroutine(StopAttackAnim(3));
+
                 cIndicator.AttackFlash();
                 inspirationGainOnHit = inspirationGainOnBeat;
                 if(comboStep < maxComboStep)
@@ -156,11 +160,13 @@ public class PlayerAttack : MonoBehaviour
                     else
                         currentDamage = baseDamage;
                 }
+                perfectParticles.Play();
             }
             else if (bpmInteract.CheckInput(true) == 1)
             {
                 animator.SetBool("Attacking", true);
-                
+                StartCoroutine(StopAttackAnim(3));
+
                 aIndicator.AttackFlash();
                 inspirationGainOnHit = inspirationGainOnBeat;
                 if (comboStep < maxComboStep)
@@ -278,12 +284,22 @@ public class PlayerAttack : MonoBehaviour
         Debug.Log("Current Inspiration: " + currentInspiration);
     }
 
+    IEnumerator StopAttackAnim(int framesToWait)
+    {
+        for (int i = 0; i < framesToWait; i++)
+        {
+            yield return null; // Pauses here and resumes on the next frame
+        }
+        animator.SetBool("Attacking", false);
+        canAttack = true;
+    }
+
     public void SetCanAttack(bool b)
     {
         if(stumble)
             return;
         canAttack = b;
-        animator.SetBool("Attacking", false);
+        //animator.SetBool("Attacking", false);
     }
 
     IEnumerator AttackCooldown()
@@ -308,11 +324,13 @@ public class PlayerAttack : MonoBehaviour
             {
                 allegroMode = true;
                 playerMovement.allegro = true;
+                allegroParticles.Play();
             }
             else if (allegroMode)
             {
                 allegroMode = false;
                 playerMovement.allegro = false;
+                allegroParticles.Play();
             }           
         }
     }
@@ -414,6 +432,7 @@ public class PlayerAttack : MonoBehaviour
     {
         yield return new WaitForSeconds(.2f);
         animator.SetBool("Heartthrobs Solo", false);
+        animator.SetBool("Guitar", false);
     }
 
     public void SetComboButton(InputAction.CallbackContext context)
@@ -431,6 +450,7 @@ public class PlayerAttack : MonoBehaviour
     public void ResetHearttrhobSolo()
     {
         soloActive = false;
+        animator.SetBool("Guitar", true);
     }
 
     public void StageDive(InputAction.CallbackContext context)

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using FMODUnity;
 using FMOD.Studio;
+using Unity.VisualScripting;
 
 /// <summary>
 /// Drives Unity beat events from an FMOD event's timeline and provides
@@ -35,10 +36,10 @@ public class BPMInteract : MonoBehaviour
 
     [Header("Timing Windows")]
     [Tooltip("Seconds from a beat centre counted as PERFECT (returns 0).")]
-    [SerializeField] private float perfectWindow = 0.06f;   // ± 60 ms
+    [SerializeField] private float perfectWindow = 0.24f;   // ± 60 ms
 
     [Tooltip("Seconds from a beat centre counted as GOOD (returns 1). Anything beyond returns 2.")]
-    [SerializeField] private float goodWindow = 0.15f;      // ± 150 ms
+    [SerializeField] private float goodWindow = 0.30f;      // ± 150 ms
 
     [Header("Loop Detection")]
     [Tooltip("If the FMOD timeline jumps backward by more than this many seconds, a loop is detected and the accumulator resyncs.")]
@@ -48,6 +49,7 @@ public class BPMInteract : MonoBehaviour
 
     [Header("Event Markers")]
     [SerializeField] MusicMarker[] musicMarkers;
+    [SerializeField] SpriteRenderer test;
 
 
     private EventInstance _instance;
@@ -86,6 +88,14 @@ public class BPMInteract : MonoBehaviour
         UpdateAccumulatedTime();
         CheckBeats();
 
+        if (CheckInput() == 0)
+        {
+            test.color = Color.blue;
+        }
+        else
+        {
+            test.color = Color.red;
+        }
         //Debug.Log("Current Beat: " + GetCurrentBeat());
     }
 
@@ -272,9 +282,8 @@ public class BPMInteract : MonoBehaviour
         // Fold to the nearest beat edge.
         double distanceToNext = interval - offset;
 
-        if (distanceToNext <= perfectWindow) return 0;
-        if (distanceToNext <= goodWindow) return 1;
-        return 2;
+        if (distanceToNext <= perfectWindow) return 0;       
+        return 1;
     }
 
     // -------------------------------------------------------------------------

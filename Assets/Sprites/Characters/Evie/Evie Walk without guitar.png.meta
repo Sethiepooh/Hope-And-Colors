@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: e410d5837acb8c54d9b0c23b2012d8d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7661619429408312017
+    second: Evie Walk without guitar_0
+  - first:
+      213: 3441075138743310170
+    second: Evie Walk without guitar_1
+  - first:
+      213: -768469775086904435
+    second: Evie Walk without guitar_2
+  - first:
+      213: -2766330233051792171
+    second: Evie Walk without guitar_3
+  - first:
+      213: 8404590759034841546
+    second: Evie Walk without guitar_4
+  - first:
+      213: 4583473594546792648
+    second: Evie Walk without guitar_5
+  - first:
+      213: 3426151106682887845
+    second: Evie Walk without guitar_6
+  - first:
+      213: -7172965354295832599
+    second: Evie Walk without guitar_7
+  - first:
+      213: -2653233635776613576
+    second: Evie Walk without guitar_8
+  - first:
+      213: -741001346918558135
+    second: Evie Walk without guitar_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Evie Walk without guitar_0
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 599
+        width: 192
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25f2e1d8b57ca590800000000000000
+      internalID: -7661619429408312017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Walk without guitar_1
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 599
+        width: 152
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a57193a6b9721cf20800000000000000
+      internalID: 3441075138743310170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Walk without guitar_2
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 599
+        width: 132
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b1253afc8d555f0800000000000000
+      internalID: -768469775086904435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Walk without guitar_3
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 599
+        width: 152
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dc36874f450c99d0800000000000000
+      internalID: -2766330233051792171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Walk without guitar_4
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 599
+        width: 182
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac96dc214ca13a470800000000000000
+      internalID: 8404590759034841546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Walk without guitar_5
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 39
+        width: 192
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c8285033f4cb9f30800000000000000
+      internalID: 4583473594546792648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Walk without guitar_6
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 39
+        width: 142
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae15ac67422c8f20800000000000000
+      internalID: 3426151106682887845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Walk without guitar_7
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 39
+        width: 132
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef4307a302847c90800000000000000
+      internalID: -7172965354295832599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Walk without guitar_8
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 39
+        width: 152
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 833ba61d012dd2bd0800000000000000
+      internalID: -2653233635776613576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Evie Walk without guitar_9
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 39
+        width: 192
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94655d2733f67b5f0800000000000000
+      internalID: -741001346918558135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Evie Walk without guitar_0: -7661619429408312017
+      Evie Walk without guitar_1: 3441075138743310170
+      Evie Walk without guitar_2: -768469775086904435
+      Evie Walk without guitar_3: -2766330233051792171
+      Evie Walk without guitar_4: 8404590759034841546
+      Evie Walk without guitar_5: 4583473594546792648
+      Evie Walk without guitar_6: 3426151106682887845
+      Evie Walk without guitar_7: -7172965354295832599
+      Evie Walk without guitar_8: -2653233635776613576
+      Evie Walk without guitar_9: -741001346918558135
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

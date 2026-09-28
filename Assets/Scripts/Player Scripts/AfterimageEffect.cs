@@ -48,7 +48,7 @@ public class AfterimageEffect : MonoBehaviour
         spriteRenderer = targetImage.GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = playerSpriteRenderer.sprite;
         targetImage.transform.position = player.transform.position;
-        targetImage.transform.localScale = player.transform.localScale;
+        //targetImage.transform.localScale = player.transform.localScale;
         spriteRenderer.color = initColor;
         activeAfterImages.Add(targetImage);
     }

@@ -12,7 +12,7 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
     public bool activeInteraction { get; set; }
     public Vector2 position { get; }
 
-    int patternIndex = -1;
+    [SerializeField] int patternIndex = -1;
     int nextNote = 0;
     float totalCompletionPercent;
 
@@ -63,10 +63,11 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
 
     private void Start()
     {
-        foreach(RhythmPattern pattern in patternsInSequence)
+        foreach (RhythmPattern pattern in patternsInSequence)
         {
             onBeatHit.AddListener(pattern.AddSuccessfulHit);
             onBeatEarly.AddListener(pattern.AddEarlyfulHit);
+            pattern.ResetPattern(); 
             pattern.InitializePattern();
             pattern.CalculatePatternDuration(BPM);
         }
@@ -77,6 +78,10 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         activeInteraction = true;
         waitingForDownbeat = true;
         interactionManager.currentMinigame = this;
+        foreach (RhythmPattern pattern in patternsInSequence)
+        {
+            pattern.ResetPattern();
+        }
         playerInput.SwitchCurrentActionMap("CallResponse");
     }
 
@@ -86,6 +91,10 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         activeInteraction = true;
         waitingForDownbeat = true;
         interactionManager.currentMinigame = this;
+        foreach (RhythmPattern pattern in patternsInSequence)
+        {
+            pattern.ResetPattern();
+        }
         playerInput.SwitchCurrentActionMap("CallResponse");
     }
 
@@ -148,6 +157,7 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
                 {
                     Debug.Log("Minigame Completed!");
                     OnMinigameCompleted.Invoke();
+                    interactable = false;
                 }
                 else
                 {

@@ -11,6 +11,7 @@ public class JadeMissile : MonoBehaviour
     [SerializeField] ProjectilePool projectilePool; // Add this line
     [SerializeField] int projectilesOnHit = 3;
     [SerializeField] Transform spawnPoint;
+    [SerializeField] bool spawnShards;
 
     bool firing;
 
@@ -70,7 +71,8 @@ public class JadeMissile : MonoBehaviour
         }
         else
         {
-            SpawnProjectiles(projectilesOnHit);
+            if(spawnShards)
+                SpawnProjectiles(projectilesOnHit);
             Destroy(gameObject);
         }
     }

@@ -1,0 +1,2509 @@
+fileFormatVersion: 2
+guid: c56f363df4b20bd429746de1cab87de8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7292832753800210513
+    second: Glove Guy animations_0
+  - first:
+      213: -5166862217581396146
+    second: Glove Guy animations_1
+  - first:
+      213: 350559467441863991
+    second: Glove Guy animations_2
+  - first:
+      213: 6154650841342407927
+    second: Glove Guy animations_3
+  - first:
+      213: -8396632714503726577
+    second: Glove Guy animations_4
+  - first:
+      213: -1986967780820418094
+    second: Glove Guy animations_5
+  - first:
+      213: -7081028711075020910
+    second: Glove Guy animations_6
+  - first:
+      213: -2527496936381120684
+    second: Glove Guy animations_7
+  - first:
+      213: -861900511490255748
+    second: Glove Guy animations_8
+  - first:
+      213: 9186875102981879571
+    second: Glove Guy animations_9
+  - first:
+      213: -667933376532530393
+    second: Glove Guy animations_10
+  - first:
+      213: -3687108226236177067
+    second: Glove Guy animations_11
+  - first:
+      213: 5765482527720732784
+    second: Glove Guy animations_12
+  - first:
+      213: -6640656401086038690
+    second: Glove Guy animations_13
+  - first:
+      213: 8905018138588162425
+    second: Glove Guy animations_14
+  - first:
+      213: 7833052202812243523
+    second: Glove Guy animations_15
+  - first:
+      213: 6125715955900604582
+    second: Glove Guy animations_16
+  - first:
+      213: 8070310187936993942
+    second: Glove Guy animations_17
+  - first:
+      213: 4873932062147877943
+    second: Glove Guy animations_18
+  - first:
+      213: -2641795039124642952
+    second: Glove Guy animations_19
+  - first:
+      213: -5365575193450469557
+    second: Glove Guy animations_20
+  - first:
+      213: -5944509410237266978
+    second: Glove Guy animations_21
+  - first:
+      213: -1296902026461989471
+    second: Glove Guy animations_22
+  - first:
+      213: -3310508187275318580
+    second: Glove Guy animations_23
+  - first:
+      213: 178485637427978382
+    second: Glove Guy animations_24
+  - first:
+      213: -2213930538700740475
+    second: Glove Guy animations_25
+  - first:
+      213: -7793666944611519472
+    second: Glove Guy animations_26
+  - first:
+      213: -5043943070994132795
+    second: Glove Guy animations_27
+  - first:
+      213: -8254530660811029328
+    second: Glove Guy animations_28
+  - first:
+      213: 5280270604404766969
+    second: Glove Guy animations_29
+  - first:
+      213: -5218834741011870149
+    second: Glove Guy animations_30
+  - first:
+      213: 2920998926545735032
+    second: Glove Guy animations_31
+  - first:
+      213: -4623225030001164056
+    second: Glove Guy animations_32
+  - first:
+      213: 4233903901752077434
+    second: Glove Guy animations_33
+  - first:
+      213: 1693259847245050101
+    second: Glove Guy animations_34
+  - first:
+      213: 960893055061902852
+    second: Glove Guy animations_35
+  - first:
+      213: -285734225271334073
+    second: Glove Guy animations_36
+  - first:
+      213: 8059969082028609777
+    second: Glove Guy animations_37
+  - first:
+      213: -3583528012913701506
+    second: Glove Guy animations_38
+  - first:
+      213: -610411800488884100
+    second: Glove Guy animations_39
+  - first:
+      213: -5967578524734594361
+    second: Glove Guy animations_40
+  - first:
+      213: -5067984924072554668
+    second: Glove Guy animations_41
+  - first:
+      213: -6565743887928298875
+    second: Glove Guy animations_42
+  - first:
+      213: 3732113549559571276
+    second: Glove Guy animations_43
+  - first:
+      213: 5291920840848354957
+    second: Glove Guy animations_44
+  - first:
+      213: -678389515633547417
+    second: Glove Guy animations_45
+  - first:
+      213: -446245250562344201
+    second: Glove Guy animations_46
+  - first:
+      213: -3686527567002280394
+    second: Glove Guy animations_47
+  - first:
+      213: -7188900357427653763
+    second: Glove Guy animations_48
+  - first:
+      213: 3176619506443609852
+    second: Glove Guy animations_49
+  - first:
+      213: -7052392722871464996
+    second: Glove Guy animations_50
+  - first:
+      213: 4499859555591195988
+    second: Glove Guy animations_51
+  - first:
+      213: -671172643161904481
+    second: Glove Guy animations_52
+  - first:
+      213: -1741954799479860583
+    second: Glove Guy animations_53
+  - first:
+      213: -8233693578108993310
+    second: Glove Guy animations_54
+  - first:
+      213: 2430830429773782844
+    second: Glove Guy animations_55
+  - first:
+      213: 8828909704143314501
+    second: Glove Guy animations_56
+  - first:
+      213: 8008514949121013935
+    second: Glove Guy animations_57
+  - first:
+      213: 4986373112897477091
+    second: Glove Guy animations_58
+  - first:
+      213: -6492785619272396986
+    second: Glove Guy animations_59
+  - first:
+      213: -2427765536535508177
+    second: Glove Guy animations_60
+  - first:
+      213: -1629850291293902371
+    second: Glove Guy animations_61
+  - first:
+      213: -8588077036125851410
+    second: Glove Guy animations_62
+  - first:
+      213: 4550313574098084366
+    second: Glove Guy animations_63
+  - first:
+      213: -4849898228322240639
+    second: Glove Guy animations_64
+  - first:
+      213: -7363379794472995673
+    second: Glove Guy animations_65
+  - first:
+      213: -1178532980000282491
+    second: Glove Guy animations_66
+  - first:
+      213: -3846385847713168099
+    second: Glove Guy animations_67
+  - first:
+      213: -7631257037613704119
+    second: Glove Guy animations_68
+  - first:
+      213: -2081119349926083265
+    second: Glove Guy animations_69
+  - first:
+      213: -5408835350934141885
+    second: Glove Guy animations_70
+  - first:
+      213: -815101388887934914
+    second: Glove Guy animations_71
+  - first:
+      213: 2972372427598545241
+    second: Glove Guy animations_72
+  - first:
+      213: 3991696548716983646
+    second: Glove Guy animations_73
+  - first:
+      213: -7129030058037196504
+    second: Glove Guy animations_74
+  - first:
+      213: 7716723150036239148
+    second: Glove Guy animations_75
+  - first:
+      213: 7126758510022934058
+    second: Glove Guy animations_76
+  - first:
+      213: 1805093440532753680
+    second: Glove Guy animations_77
+  - first:
+      213: -3676474581200462933
+    second: Glove Guy animations_78
+  - first:
+      213: 3336698623794602828
+    second: Glove Guy animations_79
+  - first:
+      213: -1780856015308164223
+    second: Glove Guy animations_80
+  - first:
+      213: -3966394095678938822
+    second: Glove Guy animations_81
+  - first:
+      213: 8663791966636276919
+    second: Glove Guy animations_82
+  - first:
+      213: 700885460965441467
+    second: Glove Guy animations_83
+  - first:
+      213: -7776463987067759932
+    second: Glove Guy animations_84
+  - first:
+      213: -4935169980197991250
+    second: Glove Guy animations_85
+  - first:
+      213: 9083432055135027446
+    second: Glove Guy animations_86
+  - first:
+      213: 5658683680171655123
+    second: Glove Guy animations_87
+  - first:
+      213: -3395409610777826481
+    second: Glove Guy animations_88
+  - first:
+      213: 4525787742145014814
+    second: Glove Guy animations_89
+  - first:
+      213: 4213570617367615575
+    second: Glove Guy animations_90
+  - first:
+      213: -2611086567366962696
+    second: Glove Guy animations_91
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Glove Guy animations_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1679
+        width: 212
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 158689020c8553560800000000000000
+      internalID: 7292832753800210513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_1
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1679
+        width: 242
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4f7ca5303e9b48b0800000000000000
+      internalID: -5166862217581396146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_2
+      rect:
+        serializedVersion: 2
+        x: 3909
+        y: 1909
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73db5817aff6dd400800000000000000
+      internalID: 350559467441863991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_3
+      rect:
+        serializedVersion: 2
+        x: 3919
+        y: 1879
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f4f5cad456b96550800000000000000
+      internalID: 6154650841342407927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_4
+      rect:
+        serializedVersion: 2
+        x: 3619
+        y: 1809
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ad49e880b297b80800000000000000
+      internalID: -8396632714503726577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_5
+      rect:
+        serializedVersion: 2
+        x: 3659
+        y: 1519
+        width: 572
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d18d0ca45fdc64e0800000000000000
+      internalID: -1986967780820418094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_6
+      rect:
+        serializedVersion: 2
+        x: 3649
+        y: 1789
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ff70877e12bbd90800000000000000
+      internalID: -7081028711075020910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_7
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 1519
+        width: 202
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f7d187de68cecd0800000000000000
+      internalID: -2527496936381120684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_8
+      rect:
+        serializedVersion: 2
+        x: 4469
+        y: 1629
+        width: 262
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7455e42d0ae904f0800000000000000
+      internalID: -861900511490255748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_9
+      rect:
+        serializedVersion: 2
+        x: 4739
+        y: 1669
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3177d156b365e7f70800000000000000
+      internalID: 9186875102981879571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_10
+      rect:
+        serializedVersion: 2
+        x: 3609
+        y: 1629
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72bb62602260bb6f0800000000000000
+      internalID: -667933376532530393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_11
+      rect:
+        serializedVersion: 2
+        x: 3539
+        y: 1589
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 555a5c67a92c4dcc0800000000000000
+      internalID: -3687108226236177067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_12
+      rect:
+        serializedVersion: 2
+        x: 4319
+        y: 1519
+        width: 102
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 078f387efcb130050800000000000000
+      internalID: 5765482527720732784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_13
+      rect:
+        serializedVersion: 2
+        x: 4429
+        y: 1609
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5db7d9df26a7d3a0800000000000000
+      internalID: -6640656401086038690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_14
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 1569
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97925f4f0daf49b70800000000000000
+      internalID: 8905018138588162425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_15
+      rect:
+        serializedVersion: 2
+        x: 3479
+        y: 1579
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ef6b72a7794bc60800000000000000
+      internalID: 7833052202812243523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_16
+      rect:
+        serializedVersion: 2
+        x: 3499
+        y: 1539
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0e56ad43ae20550800000000000000
+      internalID: 6125715955900604582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_17
+      rect:
+        serializedVersion: 2
+        x: 3619
+        y: 1549
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 692533b8b508fff60800000000000000
+      internalID: 8070310187936993942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_18
+      rect:
+        serializedVersion: 2
+        x: 3639
+        y: 1539
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73c16b7236fa3a340800000000000000
+      internalID: 4873932062147877943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_19
+      rect:
+        serializedVersion: 2
+        x: 4249
+        y: 1529
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8732693a865765bd0800000000000000
+      internalID: -2641795039124642952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_20
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1359
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b47acb22ac5a985b0800000000000000
+      internalID: -5365575193450469557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_21
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 1309
+        width: 62
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed347decf2cd08da0800000000000000
+      internalID: -5944509410237266978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_22
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1199
+        width: 212
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a5bf3c6a7a700ee0800000000000000
+      internalID: -1296902026461989471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_23
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 1199
+        width: 242
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccaae6fe756be02d0800000000000000
+      internalID: -3310508187275318580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_24
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1199
+        width: 242
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e806768ddbb1a7200800000000000000
+      internalID: 178485637427978382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_25
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 1199
+        width: 242
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5886a5ba7e98641e0800000000000000
+      internalID: -2213930538700740475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_26
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 1199
+        width: 212
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014f9bcd43557d390800000000000000
+      internalID: -7793666944611519472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_27
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1199
+        width: 212
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c01a1a3080500ab0800000000000000
+      internalID: -5043943070994132795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_28
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 1039
+        width: 242
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b4c9ce2914027d80800000000000000
+      internalID: -8254530660811029328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_29
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 1039
+        width: 242
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8bb7d732a474940800000000000000
+      internalID: 5280270604404766969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_30
+      rect:
+        serializedVersion: 2
+        x: 3499
+        y: 1039
+        width: 212
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e05802479f297b0800000000000000
+      internalID: -5218834741011870149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_31
+      rect:
+        serializedVersion: 2
+        x: 3729
+        y: 1039
+        width: 212
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d4e0e2c09798820800000000000000
+      internalID: 2920998926545735032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_32
+      rect:
+        serializedVersion: 2
+        x: 3959
+        y: 1039
+        width: 312
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e00612845107dfb0800000000000000
+      internalID: -4623225030001164056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_33
+      rect:
+        serializedVersion: 2
+        x: 4279
+        y: 1039
+        width: 312
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7ca21d9a29d1ca30800000000000000
+      internalID: 4233903901752077434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_34
+      rect:
+        serializedVersion: 2
+        x: 4599
+        y: 1039
+        width: 312
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f0397b1cdaaf7710800000000000000
+      internalID: 1693259847245050101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_35
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 719
+        width: 242
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406ca1e7427c55d00800000000000000
+      internalID: 960893055061902852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_36
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 719
+        width: 452
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74bd78a6c3ed80cf0800000000000000
+      internalID: -285734225271334073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_37
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 719
+        width: 312
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f052f23d23cadf60800000000000000
+      internalID: 8059969082028609777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_38
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 719
+        width: 522
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d0e933240c44ec0800000000000000
+      internalID: -3583528012913701506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_39
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 719
+        width: 212
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78472993b16787f0800000000000000
+      internalID: -610411800488884100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_40
+      rect:
+        serializedVersion: 2
+        x: 1859
+        y: 719
+        width: 212
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c2e1f703f6ee2da0800000000000000
+      internalID: -5967578524734594361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_41
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 719
+        width: 242
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45fce991096eaa9b0800000000000000
+      internalID: -5067984924072554668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_42
+      rect:
+        serializedVersion: 2
+        x: 2909
+        y: 919
+        width: 52
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58277d188bac1e4a0800000000000000
+      internalID: -6565743887928298875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_43
+      rect:
+        serializedVersion: 2
+        x: 2979
+        y: 719
+        width: 322
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43abeeef712bc330800000000000000
+      internalID: 3732113549559571276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_44
+      rect:
+        serializedVersion: 2
+        x: 3309
+        y: 719
+        width: 312
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8ea04a87fda07940800000000000000
+      internalID: 5291920840848354957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_45
+      rect:
+        serializedVersion: 2
+        x: 3659
+        y: 719
+        width: 262
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767205d6450e596f0800000000000000
+      internalID: -678389515633547417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_46
+      rect:
+        serializedVersion: 2
+        x: 3959
+        y: 719
+        width: 212
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fab6851f4e9ec9f0800000000000000
+      internalID: -446245250562344201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_47
+      rect:
+        serializedVersion: 2
+        x: 4189
+        y: 719
+        width: 212
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63ed42ab5b2d6dcc0800000000000000
+      internalID: -3686527567002280394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_48
+      rect:
+        serializedVersion: 2
+        x: 4419
+        y: 719
+        width: 242
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7398dd9635eb3c90800000000000000
+      internalID: -7188900357427653763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_49
+      rect:
+        serializedVersion: 2
+        x: 4669
+        y: 719
+        width: 242
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6e5245c9e951c20800000000000000
+      internalID: 3176619506443609852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_50
+      rect:
+        serializedVersion: 2
+        x: 3629
+        y: 849
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdb42b80f2ed02e90800000000000000
+      internalID: -7052392722871464996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_51
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 429
+        width: 122
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d092eac66b27e30800000000000000
+      internalID: 4499859555591195988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_52
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 369
+        width: 262
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9aef5d79048fa6f0800000000000000
+      internalID: -671172643161904481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_53
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 389
+        width: 222
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9925732d65553d7e0800000000000000
+      internalID: -1741954799479860583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_54
+      rect:
+        serializedVersion: 2
+        x: 1639
+        y: 399
+        width: 182
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e0066f805b0cbd80800000000000000
+      internalID: -8233693578108993310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_55
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 499
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f50e3956b0cb120800000000000000
+      internalID: 2430830429773782844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_56
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 509
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54e167d2996968a70800000000000000
+      internalID: 8828909704143314501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_57
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 509
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa873c05ae5f32f60800000000000000
+      internalID: 8008514949121013935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_58
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 519
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e910df5de7233540800000000000000
+      internalID: 4986373112897477091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_59
+      rect:
+        serializedVersion: 2
+        x: 2039
+        y: 439
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f018821edf4e5a0800000000000000
+      internalID: -6492785619272396986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_60
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 499
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2b8ddc7b18de4ed0800000000000000
+      internalID: -2427765536535508177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_61
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 489
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd92c5e9bcb9169e0800000000000000
+      internalID: -1629850291293902371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_62
+      rect:
+        serializedVersion: 2
+        x: 2359
+        y: 439
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0770eef6501d880800000000000000
+      internalID: -8588077036125851410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_63
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 499
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0221c84616f52f30800000000000000
+      internalID: 4550313574098084366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_64
+      rect:
+        serializedVersion: 2
+        x: 2699
+        y: 439
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1877e08d143b1bcb0800000000000000
+      internalID: -4849898228322240639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_65
+      rect:
+        serializedVersion: 2
+        x: 3019
+        y: 449
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4f52cf61500d990800000000000000
+      internalID: -7363379794472995673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_66
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 469
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5882003bf7205afe0800000000000000
+      internalID: -1178532980000282491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_67
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 459
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1587f55374ee9ac0800000000000000
+      internalID: -3846385847713168099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_68
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 449
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94cd55b0824581690800000000000000
+      internalID: -7631257037613704119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_69
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 459
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f35c67c3af06e13e0800000000000000
+      internalID: -2081119349926083265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_70
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 459
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 344cef2d7e4ffe4b0800000000000000
+      internalID: -5408835350934141885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_71
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 429
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38386bfa9d20b4f0800000000000000
+      internalID: -815101388887934914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_72
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 409
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9514d2f79fcff3920800000000000000
+      internalID: 2972372427598545241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_73
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 429
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55bd65bcda556730800000000000000
+      internalID: 3991696548716983646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_74
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 429
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8294c95fee8901d90800000000000000
+      internalID: -7129030058037196504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_75
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 429
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2381fbe1de471b60800000000000000
+      internalID: 7716723150036239148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_76
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 429
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2eb8ed0b1557e260800000000000000
+      internalID: 7126758510022934058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_77
+      rect:
+        serializedVersion: 2
+        x: 3309
+        y: 79
+        width: 312
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01da75d9beafc0910800000000000000
+      internalID: 1805093440532753680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_78
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 409
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab1bc1e8d98afcc0800000000000000
+      internalID: -3676474581200462933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_79
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 79
+        width: 292
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43efc148b55e4e20800000000000000
+      internalID: 3336698623794602828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_80
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 79
+        width: 292
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1837073b3e02947e0800000000000000
+      internalID: -1780856015308164223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_81
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 79
+        width: 312
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a31a9d7b59984f8c0800000000000000
+      internalID: -3966394095678938822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_82
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 79
+        width: 312
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bcfc3314e8fb3870800000000000000
+      internalID: 8663791966636276919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_83
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 79
+        width: 292
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfb4110d9b0ab900800000000000000
+      internalID: 700885460965441467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_84
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 79
+        width: 292
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c2553a8433741490800000000000000
+      internalID: -7776463987067759932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_85
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 79
+        width: 312
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac8028fc01c28bb0800000000000000
+      internalID: -4935169980197991250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_86
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 79
+        width: 312
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f048bbf355de0e70800000000000000
+      internalID: 9083432055135027446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_87
+      rect:
+        serializedVersion: 2
+        x: 2669
+        y: 79
+        width: 292
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df7eec73dea78e40800000000000000
+      internalID: 5658683680171655123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_88
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 79
+        width: 292
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4be3aad2f411e0d0800000000000000
+      internalID: -3395409610777826481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_89
+      rect:
+        serializedVersion: 2
+        x: 3639
+        y: 79
+        width: 312
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1cee5b09f3dece30800000000000000
+      internalID: 4525787742145014814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_90
+      rect:
+        serializedVersion: 2
+        x: 3959
+        y: 79
+        width: 292
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 758583ce62c997a30800000000000000
+      internalID: 4213570617367615575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glove Guy animations_91
+      rect:
+        serializedVersion: 2
+        x: 4299
+        y: 79
+        width: 272
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f15c42e99e83cbd0800000000000000
+      internalID: -2611086567366962696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Glove Guy animations_0: 7292832753800210513
+      Glove Guy animations_1: -5166862217581396146
+      Glove Guy animations_10: -667933376532530393
+      Glove Guy animations_11: -3687108226236177067
+      Glove Guy animations_12: 5765482527720732784
+      Glove Guy animations_13: -6640656401086038690
+      Glove Guy animations_14: 8905018138588162425
+      Glove Guy animations_15: 7833052202812243523
+      Glove Guy animations_16: 6125715955900604582
+      Glove Guy animations_17: 8070310187936993942
+      Glove Guy animations_18: 4873932062147877943
+      Glove Guy animations_19: -2641795039124642952
+      Glove Guy animations_2: 350559467441863991
+      Glove Guy animations_20: -5365575193450469557
+      Glove Guy animations_21: -5944509410237266978
+      Glove Guy animations_22: -1296902026461989471
+      Glove Guy animations_23: -3310508187275318580
+      Glove Guy animations_24: 178485637427978382
+      Glove Guy animations_25: -2213930538700740475
+      Glove Guy animations_26: -7793666944611519472
+      Glove Guy animations_27: -5043943070994132795
+      Glove Guy animations_28: -8254530660811029328
+      Glove Guy animations_29: 5280270604404766969
+      Glove Guy animations_3: 6154650841342407927
+      Glove Guy animations_30: -5218834741011870149
+      Glove Guy animations_31: 2920998926545735032
+      Glove Guy animations_32: -4623225030001164056
+      Glove Guy animations_33: 4233903901752077434
+      Glove Guy animations_34: 1693259847245050101
+      Glove Guy animations_35: 960893055061902852
+      Glove Guy animations_36: -285734225271334073
+      Glove Guy animations_37: 8059969082028609777
+      Glove Guy animations_38: -3583528012913701506
+      Glove Guy animations_39: -610411800488884100
+      Glove Guy animations_4: -8396632714503726577
+      Glove Guy animations_40: -5967578524734594361
+      Glove Guy animations_41: -5067984924072554668
+      Glove Guy animations_42: -6565743887928298875
+      Glove Guy animations_43: 3732113549559571276
+      Glove Guy animations_44: 5291920840848354957
+      Glove Guy animations_45: -678389515633547417
+      Glove Guy animations_46: -446245250562344201
+      Glove Guy animations_47: -3686527567002280394
+      Glove Guy animations_48: -7188900357427653763
+      Glove Guy animations_49: 3176619506443609852
+      Glove Guy animations_5: -1986967780820418094
+      Glove Guy animations_50: -7052392722871464996
+      Glove Guy animations_51: 4499859555591195988
+      Glove Guy animations_52: -671172643161904481
+      Glove Guy animations_53: -1741954799479860583
+      Glove Guy animations_54: -8233693578108993310
+      Glove Guy animations_55: 2430830429773782844
+      Glove Guy animations_56: 8828909704143314501
+      Glove Guy animations_57: 8008514949121013935
+      Glove Guy animations_58: 4986373112897477091
+      Glove Guy animations_59: -6492785619272396986
+      Glove Guy animations_6: -7081028711075020910
+      Glove Guy animations_60: -2427765536535508177
+      Glove Guy animations_61: -1629850291293902371
+      Glove Guy animations_62: -8588077036125851410
+      Glove Guy animations_63: 4550313574098084366
+      Glove Guy animations_64: -4849898228322240639
+      Glove Guy animations_65: -7363379794472995673
+      Glove Guy animations_66: -1178532980000282491
+      Glove Guy animations_67: -3846385847713168099
+      Glove Guy animations_68: -7631257037613704119
+      Glove Guy animations_69: -2081119349926083265
+      Glove Guy animations_7: -2527496936381120684
+      Glove Guy animations_70: -5408835350934141885
+      Glove Guy animations_71: -815101388887934914
+      Glove Guy animations_72: 2972372427598545241
+      Glove Guy animations_73: 3991696548716983646
+      Glove Guy animations_74: -7129030058037196504
+      Glove Guy animations_75: 7716723150036239148
+      Glove Guy animations_76: 7126758510022934058
+      Glove Guy animations_77: 1805093440532753680
+      Glove Guy animations_78: -3676474581200462933
+      Glove Guy animations_79: 3336698623794602828
+      Glove Guy animations_8: -861900511490255748
+      Glove Guy animations_80: -1780856015308164223
+      Glove Guy animations_81: -3966394095678938822
+      Glove Guy animations_82: 8663791966636276919
+      Glove Guy animations_83: 700885460965441467
+      Glove Guy animations_84: -7776463987067759932
+      Glove Guy animations_85: -4935169980197991250
+      Glove Guy animations_86: 9083432055135027446
+      Glove Guy animations_87: 5658683680171655123
+      Glove Guy animations_88: -3395409610777826481
+      Glove Guy animations_89: 4525787742145014814
+      Glove Guy animations_9: 9186875102981879571
+      Glove Guy animations_90: 4213570617367615575
+      Glove Guy animations_91: -2611086567366962696
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

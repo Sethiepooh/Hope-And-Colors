@@ -34,7 +34,7 @@ public class RoomEncounterManager : MonoBehaviour
         InitializeSpawnableGroups();
         for (int i = 0; i < spawnableGroups.Count; i++)
         {
-            ToggleSpawnableGroupActivation(i, false);
+            InitialSpawnableGroupActivation(i);
         }
     }
 
@@ -55,7 +55,7 @@ public class RoomEncounterManager : MonoBehaviour
                 if (configs is { Count: > 0 })
                 {
                     dynamicallySpawnedGroups[existingGroupIndex].BuildFromConfigs(configs, this);
-                    dynamicallySpawnedGroups[existingGroupIndex].SetGroupActivationState(true);
+                    dynamicallySpawnedGroups[existingGroupIndex].SetGroupActivationState(true, true);
                 }
 
                 if (returnEnemy == -1)
@@ -72,7 +72,7 @@ public class RoomEncounterManager : MonoBehaviour
         if (configs is { Count: > 0 })
             group.BuildFromConfigs(configs, this);     
         
-        group.SetGroupActivationState(true);
+        group.SetGroupActivationState(true, true);
 
         if (returnEnemy == -1)
             return group.GetLastEnemyInGroup();
@@ -89,7 +89,19 @@ public class RoomEncounterManager : MonoBehaviour
             return;
         }
 
-        groups[index].SetGroupActivationState(state);
+        groups[index].SetGroupActivationState(state, state);
+    }
+
+    public void InitialSpawnableGroupActivation(int index, bool isDynamic = false)
+    {
+        var groups = isDynamic ? dynamicallySpawnedGroups : spawnableGroups;
+        if (index < 0 || index >= groups.Count)
+        {
+            Debug.LogError($"Invalid {(isDynamic ? "dynamic" : "spawnable")} group index: {index}");
+            return;
+        }
+
+        groups[index].SetGroupActivationState(false, true);
     }
 
     public void AddBossToSpawnableGroup(int groupIndex, BossSpawnConfig config, bool isDynamic = false)
@@ -287,14 +299,14 @@ public class RoomEncounterManager : MonoBehaviour
             }
         }
 
-        public void SetGroupActivationState(bool state)
+        public void SetGroupActivationState(bool state, bool doorState)
         {
-                //Debug.Log("Toggle");
+            //Debug.Log("Toggle");
             foreach (DoorHandler door in doors)
             {
                 if (door != null)
                 {
-                    door.ToggleDoor(state);
+                    door.ToggleDoor(doorState);
                 }
             }
 
@@ -425,7 +437,7 @@ public class RoomEncounterManager : MonoBehaviour
             foreach (Enemy enemy in enemies)
                 if (!enemy.IsDead()) return;
 
-            SetGroupActivationState(false);
+            SetGroupActivationState(false, false);
         }
 
         public void ResetGroup()

@@ -17,7 +17,7 @@ public class PatternedMissileLauncher : MonoBehaviour
     [SerializeField] GameObject[] telegraphObjects;
     [SerializeField] MissilePattern[] missilePatterns;
 
-    Vector2 missileDirection = Vector2.right;
+    [SerializeField] Vector2 missileDirection = Vector2.right;
     List<MissileData> currentPattern = new List<MissileData>();
     [SerializeField] bool active;
 
@@ -31,6 +31,7 @@ public class PatternedMissileLauncher : MonoBehaviour
 
     public void ToggleActivate(bool state)
     {
+        Debug.Log("activate");
         active = state;
         if (active)
         {
@@ -113,7 +114,7 @@ public class PatternedMissileLauncher : MonoBehaviour
 
     void FireMissile(int missileIndex)
     {
-        JadeMissile missile = Instantiate(missilePrefab, missileSpawnPoints[missileIndex].position, Quaternion.LookRotation(Vector3.forward, missileDirection));
+        JadeMissile missile = Instantiate(missilePrefab, missileSpawnPoints[missileIndex].position, Quaternion.identity);
         missile.Initialize(player, missilePool);
         missile.Fire(missileDirection);
     }

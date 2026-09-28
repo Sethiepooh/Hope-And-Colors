@@ -39,6 +39,14 @@ public class RhythmPattern
         }
     }
 
+    public void ResetPattern()
+    {
+        currentBeatIndex = 0;
+        successfulBeatsHit = 0;
+        earlyfulBeatsHit = 0;
+        //beatTimings.Clear();
+    }
+
     public float CalculateCompletionPercent()
     {
         float totalPoints = 0;
