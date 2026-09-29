@@ -127,14 +127,23 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
-    public void HandleAction(GameObject actor, Vector2 actionEnd,  float duration)
+    public void HandleAction(GameObject actor, Vector2 actionEnd,  float duration, bool flip)
     {
         // Simple movement action - can be expanded with more complex actions as needed
-        StartCoroutine(MoveActor(actor, actor.transform.position, actionEnd, duration));
+        StartCoroutine(MoveActor(actor, actor.transform.position, actionEnd, duration, flip));
     }
 
-    IEnumerator MoveActor(GameObject actor, Vector3 startPos, Vector3 endPos, float duration)
+    IEnumerator MoveActor(GameObject actor, Vector3 startPos, Vector3 endPos, float duration, bool flip)
     {
+        Animator anim = actor.GetComponent<Animator>(); 
+        
+        if(anim != null)
+        {
+            anim.SetBool("Moving", true);
+            Vector2 direction = (startPos - endPos).normalized;
+            anim.SetFloat("Dir", direction.x); // Assuming horizontal movement for simplicity
+        }
+
         float elapsed = 0f;
         while (elapsed < duration)
         {
@@ -143,6 +152,31 @@ public class DialogueSystem : MonoBehaviour
             yield return null;
         }
         actor.transform.position = endPos; // Ensure final position is set
+
+        if (anim != null)
+        {
+            anim.SetBool("Moving", false); // Stop walking animation  
+
+            if(flip)
+                anim.SetFloat("Dir", GetFlipDir(anim));
+        }
+    }
+
+    float GetFlipDir(Animator anim)
+    {
+        if (anim != null)
+        {
+            float dir = anim.GetFloat("Dir");
+            if (dir > 0)
+            {
+                return 0f; // Facing right
+            }
+            else
+            {
+                return 1f; // Facing right
+            }
+        }
+        return 0f; // Default to facing right if no animator is found
     }
 
     public void ReturnCamToPlayer(float time)
@@ -163,6 +197,7 @@ public class DialogueSystem : MonoBehaviour
     public void ToggleFreezePlayer(bool freeze)
     {
         playerMovement.SetFreeze(freeze);
+        playerMovement.controlable = !freeze;
     }
 
     public bool IsPlayerControllable()

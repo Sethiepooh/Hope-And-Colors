@@ -154,7 +154,7 @@ public class CutsceneActivator : MonoBehaviour, IInteractable
                     if (cutsceneData[currentLine].activateBeforeAction)
                         cutsceneData[currentLine].actionTarget.SetActive(true);
 
-                    dialogueSystem.HandleAction(cutsceneData[currentLine].actionTarget, cutsceneData[currentLine].endPos.position, cutsceneData[currentLine].actionDuration);
+                    dialogueSystem.HandleAction(cutsceneData[currentLine].actionTarget, cutsceneData[currentLine].endPos.position, cutsceneData[currentLine].actionDuration, cutsceneData[currentLine].flipSprite);
                 }
 
                 if (cutsceneData[currentLine].GetCameraState() != CameraEnum.ChangeCameraState.None)

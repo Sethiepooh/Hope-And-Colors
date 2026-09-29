@@ -17,6 +17,7 @@ public class CutsceneData
     public GameObject actionTarget;
     public Transform endPos;
     public float actionDuration;
+    public bool flipSprite;
 
     [Header("Camera Settings")]
     [SerializeField] CameraEnum.ChangeCameraState cameraState;

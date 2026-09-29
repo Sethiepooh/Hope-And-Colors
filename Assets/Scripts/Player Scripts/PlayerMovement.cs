@@ -109,6 +109,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
+        if(!controlable) return;
         if (context.performed)
         {
             animator.SetBool("Moving", true);
@@ -298,6 +299,7 @@ public class PlayerMovement : MonoBehaviour
     public void SetFreeze(bool b)
     {
         freeze = b;
+        rb.linearVelocity = Vector2.zero;
     }
 
     public void SetCanDash(bool b)

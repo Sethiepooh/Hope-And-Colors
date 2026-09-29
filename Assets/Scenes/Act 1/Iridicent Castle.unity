@@ -8478,7 +8478,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -30.982178, y: -0.22289276, z: 0}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1694438577}
@@ -17541,6 +17541,7 @@ MonoBehaviour:
     actionTarget: {fileID: 898841780}
     endPos: {fileID: 1847909991}
     actionDuration: 2
+    flipSprite: 1
     cameraState: 2
     cameraTransitionTime: 2
     cameraTarget: {fileID: 1787471616}
@@ -17567,6 +17568,7 @@ MonoBehaviour:
     actionTarget: {fileID: 183747114}
     endPos: {fileID: 1123381849}
     actionDuration: 2
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17593,6 +17595,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 0
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17619,6 +17622,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 0
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17646,6 +17650,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 0
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17672,6 +17677,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 0
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17698,6 +17704,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 0
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17724,6 +17731,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 0
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17750,6 +17758,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 0
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17776,6 +17785,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 0
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17802,6 +17812,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 0
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17829,6 +17840,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 0
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17855,6 +17867,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 0
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17881,6 +17894,7 @@ MonoBehaviour:
     actionTarget: {fileID: 183747114}
     endPos: {fileID: 919747049}
     actionDuration: 1
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17907,6 +17921,7 @@ MonoBehaviour:
     actionTarget: {fileID: 898841780}
     endPos: {fileID: 1545002896}
     actionDuration: 1
+    flipSprite: 1
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17933,6 +17948,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 1
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17959,6 +17975,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 1
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -17985,6 +18002,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 1
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -18011,6 +18029,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 1
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -18037,6 +18056,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 1
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -18063,6 +18083,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 1
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -18089,6 +18110,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 1
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -18115,6 +18137,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 1
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -18141,6 +18164,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 1
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -18167,6 +18191,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 1
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -18193,6 +18218,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 1
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -18219,6 +18245,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 1
+    flipSprite: 0
     cameraState: 0
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -18245,6 +18272,7 @@ MonoBehaviour:
     actionTarget: {fileID: 0}
     endPos: {fileID: 0}
     actionDuration: 1
+    flipSprite: 0
     cameraState: 1
     cameraTransitionTime: 0
     cameraTarget: {fileID: 0}
@@ -202441,6 +202469,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.1628418
       objectReference: {fileID: 0}
+    - target: {fileID: 8416406278610076491, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].time
+      value: 0.44613647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416406278610076491, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8550052404127597592, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -202449,7 +202485,8 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8416406278610076491, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5940960966160364567, guid: d7e5972dcd8829b448ae04e99feac9ce, type: 3}
@@ -236295,7 +236332,7 @@ GameObject:
   - component: {fileID: 1318556512}
   - component: {fileID: 1318556511}
   - component: {fileID: 1318556510}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
