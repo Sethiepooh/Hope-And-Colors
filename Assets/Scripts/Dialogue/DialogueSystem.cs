@@ -10,6 +10,7 @@ public class DialogueSystem : MonoBehaviour
 {
     [Header("UI Elements")]
     [SerializeField] GameObject dialogueUI;
+    [SerializeField] GameObject[] otherUI;
     [SerializeField] TMP_Text nameText;
     [SerializeField] TMP_Text dialogueText;
     [SerializeField] Image characterSprite;
@@ -102,6 +103,10 @@ public class DialogueSystem : MonoBehaviour
     public void ToggleDialogueUI(bool state)
     {
         dialogueUI.SetActive(state);
+        foreach(GameObject ui in otherUI)
+        {
+            ui.SetActive(!state);
+        }
     }
 
     public void PlayScreenEffect(ScreenEffectEnum.ScreenEffect effect)

@@ -36,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
     bool dashing;
     bool canDash = true;
     Collider2D playerCollider;
+    float colPos;
     [SerializeField] LayerMask dodgeLayer;
     [SerializeField] AfterimageEffect effect;
     [SerializeField] int afterimageAmount;
@@ -53,6 +54,8 @@ public class PlayerMovement : MonoBehaviour
         currentSpeed = sprintSpeed;
         animator = GetComponent<Animator>();
         animator.SetBool("Sprinting", sprintByDefault);
+        colPos = playerCollider.offset.x;
+        Debug.Log("Collider Offset: " + -colPos);
     }
 
     // Update is called once per frame
@@ -123,10 +126,20 @@ public class PlayerMovement : MonoBehaviour
         if(movement.x > 0)
         {
             animator.SetFloat("Dir", 0);
+            if(playerCollider.offset.x > 0)
+            {
+                playerCollider.offset = new Vector2(colPos, playerCollider.offset.y);
+                Debug.Log("Collider Offset: " + playerCollider.offset); 
+            }
         }
         else if(movement.x < 0)
         {
             animator.SetFloat("Dir", 1);
+            if (playerCollider.offset.x < 0)
+            {
+                playerCollider.offset = new Vector2(-colPos, playerCollider.offset.y);
+                Debug.Log("Collider Offset: " + playerCollider.offset);
+            }
         }
     }
 
