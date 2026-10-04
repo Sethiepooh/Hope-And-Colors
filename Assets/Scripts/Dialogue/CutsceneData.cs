@@ -27,6 +27,7 @@ public class CutsceneData
     [Header("Speaker Settings")]
     [SerializeField] CharacterData[] speakerData;
     public bool obscureSpeaker;
+    public string speakerName;
     [SerializeField] CharacterEnum.Character speaker;
     [SerializeField] ExpressionEnum.Expression speakerExpression;
 
@@ -43,6 +44,12 @@ public class CutsceneData
         {
             return "???";
         }
+
+        if(speaker.ToString() == "None")
+        {
+            return speakerName;
+        }
+
         return speaker.ToString();
     }
 
