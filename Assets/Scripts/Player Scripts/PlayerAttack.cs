@@ -140,7 +140,7 @@ public class PlayerAttack : MonoBehaviour
             if (bpmInteract.CheckInput(true) == 0)
             {
                 animator.SetBool("Attacking", true);
-                StartCoroutine(StopAttackAnim(3));
+                StartCoroutine(StopAttackAnim(2));
 
                 cIndicator.AttackFlash();
                 inspirationGainOnHit = inspirationGainOnBeat;
@@ -165,7 +165,7 @@ public class PlayerAttack : MonoBehaviour
             else if (bpmInteract.CheckInput(true) == 1)
             {
                 animator.SetBool("Attacking", true);
-                StartCoroutine(StopAttackAnim(3));
+                StartCoroutine(StopAttackAnim(2));
 
                 aIndicator.AttackFlash();
                 inspirationGainOnHit = inspirationGainOnBeat;

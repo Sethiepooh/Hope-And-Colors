@@ -139,7 +139,7 @@ public class CutsceneActivator : MonoBehaviour, IInteractable
             {
                 Debug.Log("Cutscene Line: " + currentLine);
                 dialogueSystem.UpdateDialogueUI(cutsceneData[currentLine].GetSpeakerName(), cutsceneData[currentLine].GetSpeakerColor(), 
-                    cutsceneData[currentLine].dialogueLine, cutsceneData[currentLine].GetSpeakerExpression(), cutsceneData[currentLine].DialogueUIState);
+                cutsceneData[currentLine].dialogueLine, cutsceneData[currentLine].GetSpeakerExpression(), cutsceneData[currentLine].DialogueUIState);
 
                 dialogueSystem.StartRollingText();
 
@@ -149,12 +149,16 @@ public class CutsceneActivator : MonoBehaviour, IInteractable
                 if(cutsceneData[currentLine].GetSoundEffect() != SoundEffectEnum.SoundEffect.None)
                     dialogueSystem.PlaySoundEffect(cutsceneData[currentLine].GetSoundEffect());
 
-                if (cutsceneData[currentLine].GetAction() != ActionEnum.Action.None)
+                foreach(CutsceneAction act in cutsceneData[currentLine].actions)
                 {
-                    if (cutsceneData[currentLine].activateBeforeAction)
-                        cutsceneData[currentLine].actionTarget.SetActive(true);
+                    if (act.action != ActionEnum.Action.None)
+                    {
+                        if (act.activateBeforeAction)
+                            act.actionTarget.SetActive(true);
 
-                    dialogueSystem.HandleAction(cutsceneData[currentLine].actionTarget, cutsceneData[currentLine].endPos.position, cutsceneData[currentLine].actionDuration, cutsceneData[currentLine].flipSprite);
+                        if(act.action != ActionEnum.Action.Idle)
+                            dialogueSystem.HandleAction(act.actionTarget, act.endPos.position, act.actionDuration, act.flipSprite, act.deactivateAfterAction);
+                    }
                 }
 
                 if (cutsceneData[currentLine].GetCameraState() != CameraEnum.ChangeCameraState.None)
@@ -215,11 +219,15 @@ public class CutsceneActivator : MonoBehaviour, IInteractable
         if(cutsceneData == null) { return; }
         foreach (CutsceneData data in cutsceneData)
         {
-            if (data.GetAction() != ActionEnum.Action.None)
+
+            foreach (CutsceneAction act in data.actions)
             {
-                Gizmos.color = Color.red;
-                Gizmos.DrawLine(data.actionTarget.transform.position, data.endPos.position);
-                Gizmos.DrawWireSphere(data.endPos.position, .2f);
+                if (act.action != ActionEnum.Action.None)
+                {
+                    Gizmos.color = Color.yellow;
+                    Gizmos.DrawLine(act.actionTarget.transform.position, act.endPos.position);
+                    Gizmos.DrawWireSphere(act.endPos.position, .2f);
+                }
             }
         }
     }

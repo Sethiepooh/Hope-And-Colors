@@ -11,6 +11,7 @@ public class ExpressionEnum
         EXP_4, //EVIE: embarrassed
         EXP_5, //EVIE: angry
         EXP_6,
-        EXP_7
+        EXP_7,
+        NULL
     }
 }

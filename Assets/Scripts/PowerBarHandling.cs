@@ -2,16 +2,13 @@ using UnityEngine;
 
 public class PowerBarHandling : MonoBehaviour
 {
-    [SerializeField] GameObject[] bars;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] SpriteSwitch[] bars;
+    
+    public void SwitchBar(bool b)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        for (int i = 0; i < bars.Length; i++)
+        {
+            bars[i].SwitchSprite(b);
+        }
     }
 }

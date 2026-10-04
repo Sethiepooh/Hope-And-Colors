@@ -12,12 +12,7 @@ public class CutsceneData
     public float autoAdvanceDelay;
 
     [Header("Action Settings")]
-    [SerializeField] ActionEnum.Action action;
-    public bool activateBeforeAction;
-    public GameObject actionTarget;
-    public Transform endPos;
-    public float actionDuration;
-    public bool flipSprite;
+    public CutsceneAction[] actions;
 
     [Header("Camera Settings")]
     [SerializeField] CameraEnum.ChangeCameraState cameraState;
@@ -31,6 +26,7 @@ public class CutsceneData
 
     [Header("Speaker Settings")]
     [SerializeField] CharacterData[] speakerData;
+    public bool obscureSpeaker;
     [SerializeField] CharacterEnum.Character speaker;
     [SerializeField] ExpressionEnum.Expression speakerExpression;
 
@@ -43,6 +39,10 @@ public class CutsceneData
 
     public string GetSpeakerName()
     {
+        if(obscureSpeaker)
+        {
+            return "???";
+        }
         return speaker.ToString();
     }
 
@@ -65,6 +65,10 @@ public class CutsceneData
 
     public Sprite GetSpeakerExpression()
     {
+        if(speakerExpression == ExpressionEnum.Expression.NULL)
+        {
+            return null; // No expression to display
+        }
         foreach (CharacterData character in speakerData)
         {
             if (character.characterName == speaker.ToString())
@@ -93,14 +97,21 @@ public class CutsceneData
         return screenEffect; 
     }
 
-    public ActionEnum.Action GetAction()
-    {
-        return action;
-    }
-
     public CameraEnum.ChangeCameraState GetCameraState()
     {
         return cameraState;
     }
 }
+
+[System.Serializable]
+public class CutsceneAction
+{
+    public ActionEnum.Action action;
+    public bool activateBeforeAction;
+    public bool deactivateAfterAction;
+    public GameObject actionTarget;
+    public Transform endPos;
+    public float actionDuration;
+    public bool flipSprite;
+} 
  

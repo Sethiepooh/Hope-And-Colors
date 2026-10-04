@@ -1,16 +1,18 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class NextLevel : MonoBehaviour
 {
     public Image blackFade;
+    public UnityEvent levelStartEvents;
 
 
     private void Start()
     {
-        StartCoroutine(FadeScreen(true, false, false));
+        levelStartEvents?.Invoke();
     }
 
     public IEnumerator FadeScreen(bool fadeIn, bool nextLevel, bool menu)
@@ -72,6 +74,12 @@ public class NextLevel : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Quit");
+    }
+
+    public void ToggleFade(bool b)
+    {
+        Debug.Log("Fade");
+        StartCoroutine(FadeScreen(b, false, false));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

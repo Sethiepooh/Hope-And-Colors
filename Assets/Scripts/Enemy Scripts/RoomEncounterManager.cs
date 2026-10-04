@@ -463,10 +463,12 @@ public class RoomEncounterManager : MonoBehaviour
         RoomEncounterManager encounterManager;
         public Action deathEvent;
         bool isDead;
+        [SerializeField] bool dissappearOnDeath = true;
 
         //Protector Settings
         public bool isProtected;
         public int maxProtectorsAllowed = 1;
+        public PowerBarHandling powerBars;
         [HideInInspector]public int protectorsActive;
         [HideInInspector] public EnemyBase protectedEnemy;
 
@@ -484,6 +486,13 @@ public class RoomEncounterManager : MonoBehaviour
                 {
                     Debug.Log("Protecting " + protectedEnemy);
                     enemyInstance.GetComponent<IProtector>().InitializeProteciton(protectedEnemy);
+                    if(enemyType == EnemyType.ChosenEnemyType.TurretGenerator)
+                    {
+                        if (powerBars != null)
+                        {
+                            enemyInstance.GetComponent<TurretGenerator>().InitializePowerBars(powerBars);
+                        }
+                    }
                 }
             }
 
@@ -527,8 +536,20 @@ public class RoomEncounterManager : MonoBehaviour
                 Debug.LogError("Enemy instance is null for enemy type: " + enemyType);
                 return;
             }
-            enemyInstance.gameObject.SetActive(state);
-            enemyInstance.SetIsActive(state);
+
+            if(state == false)
+            {
+                if(dissappearOnDeath)
+                {
+                    enemyInstance.gameObject.SetActive(state);
+                }
+            }
+            else
+            {
+                enemyInstance.gameObject.SetActive(state);
+            }
+
+                enemyInstance.SetIsActive(state);
         }
 
         public void HandleEnemyDeath()

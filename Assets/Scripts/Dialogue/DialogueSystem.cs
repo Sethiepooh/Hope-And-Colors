@@ -1,6 +1,7 @@
 using System.Collections;
 using TMPro;
 using Unity.Cinemachine;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -41,7 +42,15 @@ public class DialogueSystem : MonoBehaviour
         nameText.text = name;
         nameText.color = nameColor;
         dialogueText.text = dialogueLine;
-        this.characterSprite.sprite = characterSprite;
+        if(characterSprite != null)
+        {
+            this.characterSprite.gameObject.SetActive(true);
+            this.characterSprite.sprite = characterSprite;
+        }
+        else
+        {
+            this.characterSprite.gameObject.SetActive(false);
+        }
         ToggleDialogueUI(UIactiveState);
     }
 
@@ -127,13 +136,13 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
-    public void HandleAction(GameObject actor, Vector2 actionEnd,  float duration, bool flip)
+    public void HandleAction(GameObject actor, Vector2 actionEnd,  float duration, bool flip, bool deactivate)
     {
         // Simple movement action - can be expanded with more complex actions as needed
-        StartCoroutine(MoveActor(actor, actor.transform.position, actionEnd, duration, flip));
+        StartCoroutine(MoveActor(actor, actor.transform.position, actionEnd, duration, flip, deactivate));
     }
 
-    IEnumerator MoveActor(GameObject actor, Vector3 startPos, Vector3 endPos, float duration, bool flip)
+    IEnumerator MoveActor(GameObject actor, Vector3 startPos, Vector3 endPos, float duration, bool flip, bool deactivate)
     {
         Animator anim = actor.GetComponent<Animator>(); 
         
@@ -152,6 +161,10 @@ public class DialogueSystem : MonoBehaviour
             yield return null;
         }
         actor.transform.position = endPos; // Ensure final position is set
+        if (deactivate)
+        {
+            actor.SetActive(false);
+        }
 
         if (anim != null)
         {

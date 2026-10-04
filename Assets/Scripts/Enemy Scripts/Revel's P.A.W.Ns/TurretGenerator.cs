@@ -3,6 +3,7 @@ using UnityEngine;
 public class TurretGenerator : EnemyBase, IProtector
 {
     public EnemyBase protectedEnemyBase { get; set; }
+    [SerializeField] PowerBarHandling powerBarHandling;
 
     private void Start()
     {
@@ -26,12 +27,20 @@ public class TurretGenerator : EnemyBase, IProtector
         Debug.Log("Initializing protection for " + protectedEnemyBase.name);
     }
 
+    public void InitializePowerBars(PowerBarHandling bar)
+    {
+        powerBarHandling = bar;
+    }
+
+
     public void DeactivateGenerator()
     {
         if(protectedEnemyBase != null)
         {
             transform.gameObject.SetActive(false);
             protectedEnemyBase.GetComponent<Turret>().DeactivateTurret();
+            if(powerBarHandling != null)
+                powerBarHandling.SwitchBar(true);
         }
     }    
 }

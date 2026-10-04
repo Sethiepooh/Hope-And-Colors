@@ -2,15 +2,26 @@ using UnityEngine;
 
 public class SpriteSwitch : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    SpriteRenderer sRend;
+    Sprite defaultSprite;
+    [SerializeField] Sprite switchSprite;
+
+
+    private void Awake()
     {
-        
+        sRend = GetComponent<SpriteRenderer>();
+        defaultSprite = sRend.sprite;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SwitchSprite(bool b)
     {
-        
+        if (b)
+        {
+            sRend.sprite = switchSprite;
+        }
+        else
+        {
+            sRend.sprite = defaultSprite;
+        }
     }
 }

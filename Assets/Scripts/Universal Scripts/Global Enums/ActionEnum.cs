@@ -6,6 +6,7 @@ public class ActionEnum
     {
         Walking,
         Running,
+        Idle,
         None
     }
 }

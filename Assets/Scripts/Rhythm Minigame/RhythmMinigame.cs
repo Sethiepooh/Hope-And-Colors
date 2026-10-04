@@ -78,6 +78,7 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         activeInteraction = true;
         waitingForDownbeat = true;
         interactionManager.currentMinigame = this;
+        interactable = false;
         foreach (RhythmPattern pattern in patternsInSequence)
         {
             pattern.ResetPattern();
@@ -111,6 +112,13 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         int currentNote = nextNote;
         if (beatResolved[currentNote]) return;
 
+        // Atomically resolve the beat
+        //beatResolved[currentNote] = true;
+
+        // ... rest of your input handling logic ...
+
+        //StopCoroutine(activeCoroutines[currentNote]);
+
         if (interactionManager.lastInputDirection == patternsInSequence[patternIndex].GetCurrentBeat(currentNote).direction)
         {
             if(beatInputTimings[currentNote] < (patternsInSequence[patternIndex].patternDuration / 2))
@@ -135,14 +143,16 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         }
         else
         {
-            Debug.Log("Beat Hit! " + currentNote);
+            Debug.Log("Beat Missed! " + currentNote);
             onBeatMissed.Invoke();
             if (!_beatMissSfx.IsNull) RuntimeManager.PlayOneShot(_beatMissSfx);
             displayedBeatTimers[currentNote].GetComponent<SpriteRenderer>().color = Color.red;
         }
         beatResolved[currentNote] = true;
         StopCoroutine(activeCoroutines[currentNote]);
+        interactionManager.lastInputDirection = InputDirectionEnum.InputDirection.None;
         NextNote();
+
         //Debug.Log("Note" + nextNote);
     }
 
@@ -171,6 +181,8 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
                 RequestNextPattern();
             }
         }
+
+        Debug.Log("Next Note: " + nextNote);
     }
 
     void RequestNextPattern()
@@ -210,6 +222,7 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         startupIndex = 0;
         patternStartPending = false;
         interactionManager.currentMinigame = null;
+        interactable = true;
     }
 
     public void NextPattern()
@@ -371,6 +384,7 @@ public class RhythmMinigame : MonoBehaviour, IInteractable
         {
             beatResolved[timerIndex] = true;
             NextNote();
+            onBeatMissed.Invoke();
             if (!_beatMissSfx.IsNull) RuntimeManager.PlayOneShot(_beatMissSfx);
         }
     }

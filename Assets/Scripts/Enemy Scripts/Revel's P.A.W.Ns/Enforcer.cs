@@ -19,8 +19,11 @@ public class Enforcer : EnemyBase
     public Transform facedDirection;
 
     [Header("Effects")]
-    public GameObject attackIndicator;
-    public AttackIndicator aIndicator;
+    //public GameObject attackIndicator;
+    //public AttackIndicator aIndicator;
+    public Animator anim;
+    [SerializeField] ParticleSystem dashParticles;
+    [SerializeField] DashEffectHandler dashEffectHandler;
 
 
     // Update is called once per frame
@@ -58,7 +61,7 @@ public class Enforcer : EnemyBase
                     }
                 }
             }
-            aIndicator.AttackFlash();
+            //aIndicator.AttackFlash();
         }
     }
 
@@ -80,18 +83,35 @@ public class Enforcer : EnemyBase
                 direction = -direction;
         }
 
-        facedDirection.position = new Vector2(transform.position.x + direction.normalized.x,transform.position.y + direction.normalized.y);
-        attackIndicator.transform.rotation = Quaternion.LookRotation(Vector3.forward, facedDirection.position - transform.position);
-        
-        tRend.emitting = true;
+        anim.SetBool("Hold", false);
+
+        facedDirection.position = new Vector2(transform.position.x + direction.normalized.x,transform.position.y);
+        this.GetComponent<SpriteRenderer>().flipX = direction.x > 0;
+        if(direction.x > 0)
+        {
+            dashEffectHandler.FlipDashEffect(true);
+        }
+        else
+        {
+            dashEffectHandler.FlipDashEffect(false);
+        }
+        //attackIndicator.transform.rotation = Quaternion.LookRotation(Vector3.forward, facedDirection.position - transform.position);
+
+        //tRend.emitting = true;
+        dashEffectHandler.SetDashEffect();
         rb.linearVelocity = direction * moveSpeed;
         swing = true;
+        anim.SetBool("Hold", true);
+        dashParticles.Play();
 
-        
+
         yield return new WaitForSeconds(dashDuration);
+        dashEffectHandler.SetDashEffect(0, false);
+        dashParticles.Stop();
         swing = false;
+        anim.SetBool("Hold", false);
         rb.linearVelocity = Vector2.zero;
-        tRend.emitting = false;
+        //tRend.emitting = false;
         rb.bodyType = RigidbodyType2D.Kinematic;
     }
 
@@ -113,12 +133,23 @@ public class Enforcer : EnemyBase
                 beatCount++;
             }
 
-            if(beatCount %2 == 0 && beatCount < 9)
+            if(beatCount < 9)
             {
-                sRend.color = attackColor;
-                StopAllCoroutines();
-                Attack();
+
+                if (beatCount % 2 == 0)
+                {
+                    anim.SetBool("Attack", true);
+                    sRend.color = attackColor;
+                    StopAllCoroutines();
+                    Attack();
+                }
             }
+            else
+            {
+                anim.SetBool("Attack", false);
+                sRend.color = defaultColor;
+            }
+
         }
     }
 

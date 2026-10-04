@@ -88,14 +88,14 @@ public class BPMInteract : MonoBehaviour
         UpdateAccumulatedTime();
         CheckBeats();
 
-        if (CheckInput() == 0)
-        {
-            test.color = Color.blue;
-        }
-        else
-        {
-            test.color = Color.red;
-        }
+        //if (CheckInput() == 0)
+        //{
+        //    test.color = Color.blue;
+        //}
+        //else
+        //{
+        //    test.color = Color.red;
+        //}
         //Debug.Log("Current Beat: " + GetCurrentBeat());
     }
 

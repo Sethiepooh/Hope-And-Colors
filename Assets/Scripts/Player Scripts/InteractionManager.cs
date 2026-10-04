@@ -62,7 +62,7 @@ public class InteractionManager : MonoBehaviour
     public void OnInteract(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
-        Debug.Log(nearbyInteractable);
+        //Debug.Log(nearbyInteractable);
         
         if(assignedInteractable != null && assignedInteractable.interactable)
         {
