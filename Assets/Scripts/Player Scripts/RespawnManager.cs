@@ -66,17 +66,17 @@ public class RespawnManager : MonoBehaviour
         playerRb.linearVelocity = Vector2.zero;
         Vector2 spawnPos = spawnPoints[spawnIndex].transform.position;
         player.transform.position = spawnPos;
-        player.GetComponent<TrailRenderer>().Clear();
+        //player.GetComponent<TrailRenderer>().Clear();
 
         yield return new WaitForSeconds(1f);
 
+        animator.SetBool("Death", false);
         player.GetComponent<SpriteRenderer>().enabled = true;
         player.GetComponent<Collider2D>().enabled = true;
         player.GetComponent<PlayerAttack>().currentInspiration = 0;
         player.GetComponent<PlayerAttack>().UpdateInspirationUI();
         player.GetComponent<Health>().Heal(100);
         player.GetComponent<PlayerMovement>().controlable = true;
-        animator.SetBool("Death", false);
 
         eManager.ResetSpawnableGroup(spawnIndex);
         eManager.ToggleSpawnableGroupActivation(spawnIndex, true);

@@ -134,7 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   afterImage: {fileID: 5440340654759857185}
   player: {fileID: 0}
-  fadeStep: 0.002
+  fadeStep: 0.004
   afterImagePool:
   - {fileID: 5440340654759857185}
   initColor: {r: 0, g: 0.8865156, b: 1, a: 0.7490196}

@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     bool canDash = true;
     Collider2D playerCollider;
     float colPos;
+    [SerializeField] float dashCancelDistance;
     [SerializeField] LayerMask dodgeLayer;
     [SerializeField] AfterimageEffect effect;
     [SerializeField] int afterimageAmount;
@@ -65,6 +66,23 @@ public class PlayerMovement : MonoBehaviour
         {
             canDash = false;
             currentSpeed = walkSpeed;
+        }
+
+        if (dashing)
+        {
+            Vector2 startPos = transform.position;
+            Vector2 direction = movement;
+
+            RaycastHit2D hit = Physics2D.Raycast(startPos, direction, dashCancelDistance);
+
+            if (hit.collider != null)
+            {
+                if (hit.collider.CompareTag("Wall"))
+                {
+                    Debug.Log("Canceling Dash");
+                    movement = Vector2.zero;
+                }
+            }
         }
             
 
@@ -128,8 +146,8 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("Dir", 0);
             if(playerCollider.offset.x > 0)
             {
-                playerCollider.offset = new Vector2(colPos, playerCollider.offset.y);
-                Debug.Log("Collider Offset: " + playerCollider.offset); 
+                //playerCollider.offset = new Vector2(colPos, playerCollider.offset.y);
+                //Debug.Log("Collider Offset: " + playerCollider.offset); 
             }
         }
         else if(movement.x < 0)
@@ -137,8 +155,8 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("Dir", 1);
             if (playerCollider.offset.x < 0)
             {
-                playerCollider.offset = new Vector2(-colPos, playerCollider.offset.y);
-                Debug.Log("Collider Offset: " + playerCollider.offset);
+                //playerCollider.offset = new Vector2(-colPos, playerCollider.offset.y);
+                //Debug.Log("Collider Offset: " + playerCollider.offset);
             }
         }
     }
@@ -251,14 +269,14 @@ public class PlayerMovement : MonoBehaviour
             currentTime += Time.deltaTime;
             yield return null;
         }
-        Debug.Log("Current Time: " + currentTime);
+        //Debug.Log("Current Time: " + currentTime);
         while (currentTime > (dashTime / 2) && currentTime < dashTime)
         {
             transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y + warpAmount, transform.localScale.x);
             currentTime += Time.deltaTime;
             yield return null;
         }
-        Debug.Log("Current Time: " + currentTime);
+        //Debug.Log("Current Time: " + currentTime);
         transform.localScale = new Vector3(transform.localScale.x, defaultY, transform.localScale.x);
     }
 
@@ -319,4 +337,6 @@ public class PlayerMovement : MonoBehaviour
     {
         canDash = b;
     }
+
+   
 }

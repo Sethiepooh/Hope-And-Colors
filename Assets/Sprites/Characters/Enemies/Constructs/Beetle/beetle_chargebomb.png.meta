@@ -1,0 +1,529 @@
+fileFormatVersion: 2
+guid: bc91b25441f358f4db666168338dddce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2929674538996290900
+    second: beetle_chargebomb_0
+  - first:
+      213: 470831402425926500
+    second: beetle_chargebomb_1
+  - first:
+      213: -6646670998755871782
+    second: beetle_chargebomb_2
+  - first:
+      213: -1186926262440104779
+    second: beetle_chargebomb_3
+  - first:
+      213: 3083831183104107249
+    second: beetle_chargebomb_4
+  - first:
+      213: 9139652703183281255
+    second: beetle_chargebomb_5
+  - first:
+      213: 8753153155827998001
+    second: beetle_chargebomb_6
+  - first:
+      213: -7246280047011955968
+    second: beetle_chargebomb_7
+  - first:
+      213: -1737573248097467791
+    second: beetle_chargebomb_8
+  - first:
+      213: -7900536119401876936
+    second: beetle_chargebomb_9
+  - first:
+      213: 4494200351368071167
+    second: beetle_chargebomb_10
+  - first:
+      213: -9153247951875672013
+    second: beetle_chargebomb_11
+  - first:
+      213: 3146830601725899749
+    second: beetle_chargebomb_12
+  - first:
+      213: -1501073955559520310
+    second: beetle_chargebomb_13
+  - first:
+      213: 2971567803473835514
+    second: beetle_chargebomb_14
+  - first:
+      213: 488423019235882784
+    second: beetle_chargebomb_15
+  - first:
+      213: 8081961588195216657
+    second: beetle_chargebomb_16
+  - first:
+      213: 4070187109812972911
+    second: beetle_chargebomb_17
+  - first:
+      213: 2880224194871966094
+    second: beetle_chargebomb_18
+  - first:
+      213: -3521215471736031872
+    second: beetle_chargebomb_19
+  - first:
+      213: -3413198026208322147
+    second: beetle_chargebomb_20
+  - first:
+      213: -1281548652199556145
+    second: beetle_chargebomb_21
+  - first:
+      213: -7410052575668683934
+    second: beetle_chargebomb_22
+  - first:
+      213: 3550459190104358903
+    second: beetle_chargebomb_23
+  - first:
+      213: 4237337452822296422
+    second: beetle_chargebomb_24
+  - first:
+      213: -5771764589552908892
+    second: beetle_chargebomb_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: beetle_chargebomb_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 420
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caaae936784b757d0800000000000000
+      internalID: -2929674538996290900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetle_chargebomb_1
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 0
+        width: 420
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46342ba7aaab88600800000000000000
+      internalID: 470831402425926500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetle_chargebomb_2
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 0
+        width: 420
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3f34431f742c3a0800000000000000
+      internalID: -6646670998755871782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetle_chargebomb_3
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 0
+        width: 420
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bceca85ad0378fe0800000000000000
+      internalID: -1186926262440104779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetle_chargebomb_4
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 0
+        width: 420
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f261384f18fbca20800000000000000
+      internalID: 3083831183104107249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetle_chargebomb_5
+      rect:
+        serializedVersion: 2
+        x: 2232
+        y: 0
+        width: 420
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c9da7a5b196de70800000000000000
+      internalID: 9139652703183281255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetle_chargebomb_7
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 0
+        width: 420
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00bf9de80ba007b90800000000000000
+      internalID: -7246280047011955968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetle_chargebomb_8
+      rect:
+        serializedVersion: 2
+        x: 3116
+        y: 0
+        width: 420
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 172cdef3656e2e7e0800000000000000
+      internalID: -1737573248097467791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetle_chargebomb_9
+      rect:
+        serializedVersion: 2
+        x: 3558
+        y: 0
+        width: 420
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83278eb1248ab5290800000000000000
+      internalID: -7900536119401876936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetle_chargebomb_10
+      rect:
+        serializedVersion: 2
+        x: 3993
+        y: 0
+        width: 420
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff7cab4886b9e5e30800000000000000
+      internalID: 4494200351368071167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetle_chargebomb_11
+      rect:
+        serializedVersion: 2
+        x: 4439
+        y: 0
+        width: 420
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338f067db7129f080800000000000000
+      internalID: -9153247951875672013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetle_chargebomb_12
+      rect:
+        serializedVersion: 2
+        x: 4897
+        y: 0
+        width: 420
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e3733872c9cbab20800000000000000
+      internalID: 3146830601725899749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetle_chargebomb_13
+      rect:
+        serializedVersion: 2
+        x: 5370
+        y: 0
+        width: 420
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac7c841c03d1b2be0800000000000000
+      internalID: -1501073955559520310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetle_chargebomb_15
+      rect:
+        serializedVersion: 2
+        x: 5849
+        y: 0
+        width: 420
+        height: 360
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 027bda1f52a37c600800000000000000
+      internalID: 488423019235882784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f8a7cabfb16170d4a9ec514b889a816a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      beetle_chargebomb_0: -2929674538996290900
+      beetle_chargebomb_1: 470831402425926500
+      beetle_chargebomb_10: 4494200351368071167
+      beetle_chargebomb_11: -9153247951875672013
+      beetle_chargebomb_12: 3146830601725899749
+      beetle_chargebomb_13: -1501073955559520310
+      beetle_chargebomb_14: 2971567803473835514
+      beetle_chargebomb_15: 488423019235882784
+      beetle_chargebomb_16: 8081961588195216657
+      beetle_chargebomb_17: 4070187109812972911
+      beetle_chargebomb_18: 2880224194871966094
+      beetle_chargebomb_19: -3521215471736031872
+      beetle_chargebomb_2: -6646670998755871782
+      beetle_chargebomb_20: -3413198026208322147
+      beetle_chargebomb_21: -1281548652199556145
+      beetle_chargebomb_22: -7410052575668683934
+      beetle_chargebomb_23: 3550459190104358903
+      beetle_chargebomb_24: 4237337452822296422
+      beetle_chargebomb_25: -5771764589552908892
+      beetle_chargebomb_3: -1186926262440104779
+      beetle_chargebomb_4: 3083831183104107249
+      beetle_chargebomb_5: 9139652703183281255
+      beetle_chargebomb_6: 8753153155827998001
+      beetle_chargebomb_7: -7246280047011955968
+      beetle_chargebomb_8: -1737573248097467791
+      beetle_chargebomb_9: -7900536119401876936
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

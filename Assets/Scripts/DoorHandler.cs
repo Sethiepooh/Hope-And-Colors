@@ -24,7 +24,10 @@ public class DoorHandler : MonoBehaviour
         {
            // Debug.Log("Door Anim Length: " + openAnimClip.length);
             openAnim.SetBool("Open", true);
-            StartCoroutine(WaitForAnimation(openAnimClip.length));
+            if(openAnimClip != null )
+                StartCoroutine(WaitForAnimation(openAnimClip.length));
+            else
+                StartCoroutine(WaitForAnimation(0.5f));
         }
         else
         {
@@ -37,7 +40,8 @@ public class DoorHandler : MonoBehaviour
 
     IEnumerator WaitForAnimation(float animTime)
     {
-        yield return new WaitForSeconds(animTime);
+        if (openAnim != null)
+            yield return new WaitForSeconds(animTime);
         col.enabled = false;
         //sRend.sprite = openSprite;
 

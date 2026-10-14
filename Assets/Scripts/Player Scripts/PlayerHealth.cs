@@ -55,6 +55,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TriggerDeath()
     {
+        gameObject.GetComponent<Collider2D>().enabled = false;
         StartCoroutine(PlayDeathAnim());
     }
 

@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 5b82f082821d0d942a0e6893e5318368
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4686748968705664958
+    second: wasp_teleport_0
+  - first:
+      213: 5396336935226459131
+    second: wasp_teleport_1
+  - first:
+      213: 8084736476140425023
+    second: wasp_teleport_2
+  - first:
+      213: 6358548305024334768
+    second: wasp_teleport_3
+  - first:
+      213: 1844272843949033886
+    second: wasp_teleport_4
+  - first:
+      213: 8865916527642455110
+    second: wasp_teleport_5
+  - first:
+      213: -4961197494895467649
+    second: wasp_teleport_6
+  - first:
+      213: -103507506884405074
+    second: wasp_teleport_7
+  - first:
+      213: 2303678080550326083
+    second: wasp_teleport_8
+  - first:
+      213: 3983720883043482370
+    second: wasp_teleport_9
+  - first:
+      213: -1389995933337654246
+    second: wasp_teleport_10
+  - first:
+      213: -694419659416411144
+    second: wasp_teleport_11
+  - first:
+      213: 6467453327560938010
+    second: wasp_teleport_12
+  - first:
+      213: -7033190720955515979
+    second: wasp_teleport_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wasp_teleport_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 179
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 248ded8f4a255feb0800000000000000
+      internalID: -4686748968705664958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp_teleport_1
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 139
+        width: 42
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf34e700ad3a3ea40800000000000000
+      internalID: 5396336935226459131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp_teleport_2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 99
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f4ef28df0c23070800000000000000
+      internalID: 8084736476140425023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp_teleport_3
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 49
+        width: 262
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bb33209ef91e3850800000000000000
+      internalID: 6358548305024334768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp_teleport_4
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 19
+        width: 302
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e994b74516c289910800000000000000
+      internalID: 1844272843949033886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp_teleport_5
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 19
+        width: 302
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64ca466bb101a0b70800000000000000
+      internalID: 8865916527642455110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp_teleport_6
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 19
+        width: 282
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f73a238f929462bb0800000000000000
+      internalID: -4961197494895467649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp_teleport_7
+      rect:
+        serializedVersion: 2
+        x: 1909
+        y: 19
+        width: 302
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea8919c8874409ef0800000000000000
+      internalID: -103507506884405074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp_teleport_8
+      rect:
+        serializedVersion: 2
+        x: 2269
+        y: 19
+        width: 302
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f4e04420f48ff10800000000000000
+      internalID: 2303678080550326083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp_teleport_9
+      rect:
+        serializedVersion: 2
+        x: 2629
+        y: 49
+        width: 262
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20bbc165905094730800000000000000
+      internalID: 3983720883043482370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp_teleport_10
+      rect:
+        serializedVersion: 2
+        x: 2989
+        y: 99
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ceb2a201eb5bce0800000000000000
+      internalID: -1389995933337654246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp_teleport_11
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 179
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3ef6bbffcec56f0800000000000000
+      internalID: -694419659416411144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp_teleport_12
+      rect:
+        serializedVersion: 2
+        x: 3289
+        y: 139
+        width: 32
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1210be098201c950800000000000000
+      internalID: 6467453327560938010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wasp_teleport_13
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 159
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb7fdf7d46156e90800000000000000
+      internalID: -7033190720955515979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      wasp_teleport_0: -4686748968705664958
+      wasp_teleport_1: 5396336935226459131
+      wasp_teleport_10: -1389995933337654246
+      wasp_teleport_11: -694419659416411144
+      wasp_teleport_12: 6467453327560938010
+      wasp_teleport_13: -7033190720955515979
+      wasp_teleport_2: 8084736476140425023
+      wasp_teleport_3: 6358548305024334768
+      wasp_teleport_4: 1844272843949033886
+      wasp_teleport_5: 8865916527642455110
+      wasp_teleport_6: -4961197494895467649
+      wasp_teleport_7: -103507506884405074
+      wasp_teleport_8: 2303678080550326083
+      wasp_teleport_9: 3983720883043482370
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

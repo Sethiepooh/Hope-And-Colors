@@ -1,0 +1,4173 @@
+fileFormatVersion: 2
+guid: f9c45b591eec84c4eb16ffa1bff08fad
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7996847560823771611
+    second: bugconstruct_spritegrid_0
+  - first:
+      213: -1768272942176648540
+    second: bugconstruct_spritegrid_1
+  - first:
+      213: -5183688455131706792
+    second: bugconstruct_spritegrid_2
+  - first:
+      213: 4837635146252146220
+    second: bugconstruct_spritegrid_3
+  - first:
+      213: 1743362092309626412
+    second: bugconstruct_spritegrid_4
+  - first:
+      213: 454414151927953681
+    second: bugconstruct_spritegrid_5
+  - first:
+      213: 1477655305707183095
+    second: bugconstruct_spritegrid_6
+  - first:
+      213: -925097517757227367
+    second: bugconstruct_spritegrid_7
+  - first:
+      213: 5403706642931149661
+    second: bugconstruct_spritegrid_8
+  - first:
+      213: -4930896262054966547
+    second: bugconstruct_spritegrid_9
+  - first:
+      213: 4283417000075136580
+    second: bugconstruct_spritegrid_10
+  - first:
+      213: -5755526233629414302
+    second: bugconstruct_spritegrid_11
+  - first:
+      213: -72587358861825627
+    second: bugconstruct_spritegrid_12
+  - first:
+      213: -5187762150577494594
+    second: bugconstruct_spritegrid_13
+  - first:
+      213: -7165005653113635622
+    second: bugconstruct_spritegrid_14
+  - first:
+      213: 5885404268239577014
+    second: bugconstruct_spritegrid_15
+  - first:
+      213: -3579112663748796799
+    second: bugconstruct_spritegrid_16
+  - first:
+      213: -7021109165923811875
+    second: bugconstruct_spritegrid_17
+  - first:
+      213: 6804911829520283776
+    second: bugconstruct_spritegrid_18
+  - first:
+      213: 7215996453542541131
+    second: bugconstruct_spritegrid_19
+  - first:
+      213: 6122085127831210885
+    second: bugconstruct_spritegrid_20
+  - first:
+      213: -3461651712553741707
+    second: bugconstruct_spritegrid_21
+  - first:
+      213: 8265495362071765778
+    second: bugconstruct_spritegrid_22
+  - first:
+      213: -8827605814168701134
+    second: bugconstruct_spritegrid_23
+  - first:
+      213: -1336525587511476754
+    second: bugconstruct_spritegrid_24
+  - first:
+      213: -3744335368172092179
+    second: bugconstruct_spritegrid_25
+  - first:
+      213: -1159167568552292876
+    second: bugconstruct_spritegrid_26
+  - first:
+      213: 62977908121602534
+    second: bugconstruct_spritegrid_27
+  - first:
+      213: 1598463028211430037
+    second: bugconstruct_spritegrid_28
+  - first:
+      213: 6757177616239421307
+    second: bugconstruct_spritegrid_29
+  - first:
+      213: 404115834399483633
+    second: bugconstruct_spritegrid_30
+  - first:
+      213: -3184044462024931876
+    second: bugconstruct_spritegrid_31
+  - first:
+      213: 952053321500397112
+    second: bugconstruct_spritegrid_32
+  - first:
+      213: 7645588389729752667
+    second: bugconstruct_spritegrid_33
+  - first:
+      213: -2287676290696215974
+    second: bugconstruct_spritegrid_34
+  - first:
+      213: -775915138219855639
+    second: bugconstruct_spritegrid_35
+  - first:
+      213: -9205866312303136079
+    second: bugconstruct_spritegrid_36
+  - first:
+      213: -3309269034121115296
+    second: bugconstruct_spritegrid_37
+  - first:
+      213: -7049426887088634335
+    second: bugconstruct_spritegrid_38
+  - first:
+      213: 4883112988302160851
+    second: bugconstruct_spritegrid_39
+  - first:
+      213: 8727551150828234582
+    second: bugconstruct_spritegrid_40
+  - first:
+      213: 5091235720146709347
+    second: bugconstruct_spritegrid_41
+  - first:
+      213: -9073399806856158452
+    second: bugconstruct_spritegrid_42
+  - first:
+      213: 3047986787240370155
+    second: bugconstruct_spritegrid_43
+  - first:
+      213: -5550529375423053521
+    second: bugconstruct_spritegrid_44
+  - first:
+      213: 8106578510394184030
+    second: bugconstruct_spritegrid_45
+  - first:
+      213: 3946609611015064817
+    second: bugconstruct_spritegrid_46
+  - first:
+      213: -1916895980352295978
+    second: bugconstruct_spritegrid_47
+  - first:
+      213: -667226473005592309
+    second: bugconstruct_spritegrid_48
+  - first:
+      213: -7124808451110407180
+    second: bugconstruct_spritegrid_49
+  - first:
+      213: -7254472482088431769
+    second: bugconstruct_spritegrid_50
+  - first:
+      213: 3251301625359545791
+    second: bugconstruct_spritegrid_51
+  - first:
+      213: 6385989461606678183
+    second: bugconstruct_spritegrid_52
+  - first:
+      213: 864210599976716503
+    second: bugconstruct_spritegrid_53
+  - first:
+      213: -3990765418643037916
+    second: bugconstruct_spritegrid_54
+  - first:
+      213: -5350308271355625054
+    second: bugconstruct_spritegrid_55
+  - first:
+      213: 1170436280002003212
+    second: bugconstruct_spritegrid_56
+  - first:
+      213: -5277572432069424030
+    second: bugconstruct_spritegrid_57
+  - first:
+      213: -501882960508122254
+    second: bugconstruct_spritegrid_58
+  - first:
+      213: -6488586227433599049
+    second: bugconstruct_spritegrid_59
+  - first:
+      213: 3422477063209337122
+    second: bugconstruct_spritegrid_60
+  - first:
+      213: 5454663002371420967
+    second: bugconstruct_spritegrid_61
+  - first:
+      213: -505478910611858722
+    second: bugconstruct_spritegrid_62
+  - first:
+      213: 5206516722038797025
+    second: bugconstruct_spritegrid_63
+  - first:
+      213: 1292625493669162144
+    second: bugconstruct_spritegrid_64
+  - first:
+      213: -3110481984154320111
+    second: bugconstruct_spritegrid_65
+  - first:
+      213: 3161277352433827789
+    second: bugconstruct_spritegrid_66
+  - first:
+      213: -1042131131765953009
+    second: bugconstruct_spritegrid_67
+  - first:
+      213: 3577603438279071475
+    second: bugconstruct_spritegrid_68
+  - first:
+      213: -9076245651765241930
+    second: bugconstruct_spritegrid_69
+  - first:
+      213: 1993268121492271164
+    second: bugconstruct_spritegrid_70
+  - first:
+      213: -6071586264996484532
+    second: bugconstruct_spritegrid_71
+  - first:
+      213: -5156711068373613820
+    second: bugconstruct_spritegrid_72
+  - first:
+      213: -2399478192479260181
+    second: bugconstruct_spritegrid_73
+  - first:
+      213: -5681184563316861641
+    second: bugconstruct_spritegrid_74
+  - first:
+      213: 4375171532972318206
+    second: bugconstruct_spritegrid_75
+  - first:
+      213: 7435087577105292359
+    second: bugconstruct_spritegrid_76
+  - first:
+      213: 3051545534674844153
+    second: bugconstruct_spritegrid_77
+  - first:
+      213: -3320683468785563074
+    second: bugconstruct_spritegrid_78
+  - first:
+      213: 4913987766183880018
+    second: bugconstruct_spritegrid_79
+  - first:
+      213: 5886012900637807046
+    second: bugconstruct_spritegrid_80
+  - first:
+      213: 818642020595898937
+    second: bugconstruct_spritegrid_81
+  - first:
+      213: 3814919495683535673
+    second: bugconstruct_spritegrid_82
+  - first:
+      213: -6118813155324512622
+    second: bugconstruct_spritegrid_83
+  - first:
+      213: -2791199815893786871
+    second: bugconstruct_spritegrid_84
+  - first:
+      213: 6226033348785943764
+    second: bugconstruct_spritegrid_85
+  - first:
+      213: 1269332025764781526
+    second: bugconstruct_spritegrid_86
+  - first:
+      213: 8012714531098958503
+    second: bugconstruct_spritegrid_87
+  - first:
+      213: -8883572367997537379
+    second: bugconstruct_spritegrid_88
+  - first:
+      213: -464386055010003372
+    second: bugconstruct_spritegrid_89
+  - first:
+      213: 4855240642792976360
+    second: bugconstruct_spritegrid_90
+  - first:
+      213: -6192864918570690855
+    second: bugconstruct_spritegrid_91
+  - first:
+      213: -2552011349040272733
+    second: bugconstruct_spritegrid_92
+  - first:
+      213: 6927323325678304580
+    second: bugconstruct_spritegrid_93
+  - first:
+      213: -9108905956969831725
+    second: bugconstruct_spritegrid_94
+  - first:
+      213: -5385423491132349082
+    second: bugconstruct_spritegrid_95
+  - first:
+      213: -7708056520405237809
+    second: bugconstruct_spritegrid_96
+  - first:
+      213: 4563151640586977331
+    second: bugconstruct_spritegrid_97
+  - first:
+      213: -8950238047339226520
+    second: bugconstruct_spritegrid_98
+  - first:
+      213: 1889822982496832500
+    second: bugconstruct_spritegrid_99
+  - first:
+      213: 6172113876611995371
+    second: bugconstruct_spritegrid_100
+  - first:
+      213: 5564063814082868376
+    second: bugconstruct_spritegrid_101
+  - first:
+      213: -1174487832722247306
+    second: bugconstruct_spritegrid_102
+  - first:
+      213: 6305757289805880911
+    second: bugconstruct_spritegrid_103
+  - first:
+      213: 7699463327080089747
+    second: bugconstruct_spritegrid_104
+  - first:
+      213: -5425411982893773397
+    second: bugconstruct_spritegrid_105
+  - first:
+      213: -6658549942200832917
+    second: bugconstruct_spritegrid_106
+  - first:
+      213: -7788866384892660976
+    second: bugconstruct_spritegrid_107
+  - first:
+      213: 8290537501702288359
+    second: bugconstruct_spritegrid_108
+  - first:
+      213: 2498725305452408151
+    second: bugconstruct_spritegrid_109
+  - first:
+      213: -188243749665332989
+    second: bugconstruct_spritegrid_110
+  - first:
+      213: -6309195923715953720
+    second: bugconstruct_spritegrid_111
+  - first:
+      213: -7880692421879360624
+    second: bugconstruct_spritegrid_112
+  - first:
+      213: -4614605752834767991
+    second: bugconstruct_spritegrid_113
+  - first:
+      213: -1193128210872916710
+    second: bugconstruct_spritegrid_114
+  - first:
+      213: 1514399091906474672
+    second: bugconstruct_spritegrid_115
+  - first:
+      213: 4490310634357668961
+    second: bugconstruct_spritegrid_116
+  - first:
+      213: 8111064726382025663
+    second: bugconstruct_spritegrid_117
+  - first:
+      213: 1968530988789399892
+    second: bugconstruct_spritegrid_118
+  - first:
+      213: -2168765025651051291
+    second: bugconstruct_spritegrid_119
+  - first:
+      213: -4005118013813089559
+    second: bugconstruct_spritegrid_120
+  - first:
+      213: -5087846053946474128
+    second: bugconstruct_spritegrid_121
+  - first:
+      213: -4789101130611634300
+    second: bugconstruct_spritegrid_122
+  - first:
+      213: 9168241294603888924
+    second: bugconstruct_spritegrid_123
+  - first:
+      213: 7052240216303635838
+    second: bugconstruct_spritegrid_124
+  - first:
+      213: -5731879427997122393
+    second: bugconstruct_spritegrid_125
+  - first:
+      213: 6641942884310599686
+    second: bugconstruct_spritegrid_126
+  - first:
+      213: -277116441341078513
+    second: bugconstruct_spritegrid_127
+  - first:
+      213: 3004817789355521497
+    second: bugconstruct_spritegrid_128
+  - first:
+      213: -4552817017339559870
+    second: bugconstruct_spritegrid_129
+  - first:
+      213: -6881000509472952855
+    second: bugconstruct_spritegrid_130
+  - first:
+      213: -1627796844559051546
+    second: bugconstruct_spritegrid_131
+  - first:
+      213: 3853411678407499791
+    second: bugconstruct_spritegrid_132
+  - first:
+      213: 4846419206092214738
+    second: bugconstruct_spritegrid_133
+  - first:
+      213: 1161293509296242455
+    second: bugconstruct_spritegrid_134
+  - first:
+      213: 7041515571867493397
+    second: bugconstruct_spritegrid_135
+  - first:
+      213: 882775625345145963
+    second: bugconstruct_spritegrid_136
+  - first:
+      213: 2155779166024340860
+    second: bugconstruct_spritegrid_137
+  - first:
+      213: -8626891510119246855
+    second: bugconstruct_spritegrid_138
+  - first:
+      213: 1658746195386624356
+    second: bugconstruct_spritegrid_139
+  - first:
+      213: 2676604434566497439
+    second: bugconstruct_spritegrid_140
+  - first:
+      213: 6820666717261026734
+    second: bugconstruct_spritegrid_141
+  - first:
+      213: 2428725201554401982
+    second: bugconstruct_spritegrid_142
+  - first:
+      213: 1608426195187677042
+    second: bugconstruct_spritegrid_143
+  - first:
+      213: 6345216187431768887
+    second: bugconstruct_spritegrid_144
+  - first:
+      213: -3089088586030320442
+    second: bugconstruct_spritegrid_145
+  - first:
+      213: -6171676458631751053
+    second: bugconstruct_spritegrid_146
+  - first:
+      213: -3386912217101270006
+    second: bugconstruct_spritegrid_147
+  - first:
+      213: -5370603513166217726
+    second: bugconstruct_spritegrid_148
+  - first:
+      213: 2849235056565840733
+    second: bugconstruct_spritegrid_149
+  - first:
+      213: 7236958250189427565
+    second: bugconstruct_spritegrid_150
+  - first:
+      213: 4261825434287918761
+    second: bugconstruct_spritegrid_151
+  - first:
+      213: -1636168385826126263
+    second: bugconstruct_spritegrid_152
+  - first:
+      213: 2757556381351385514
+    second: bugconstruct_spritegrid_153
+  - first:
+      213: 106453398345480382
+    second: bugconstruct_spritegrid_154
+  - first:
+      213: 1168358894756599152
+    second: bugconstruct_spritegrid_155
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 3266
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e6626338d750190800000000000000
+      internalID: -7996847560823771611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 3230
+        width: 38
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a240a7b025d577e0800000000000000
+      internalID: -1768272942176648540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 3194
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85ac49d70d6df08b0800000000000000
+      internalID: -5183688455131706792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_3
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 3149
+        width: 236
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c26dd4dd88bb22340800000000000000
+      internalID: 4837635146252146220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 3122
+        width: 272
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e3ff2169aa13810800000000000000
+      internalID: 1743362092309626412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_5
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 3122
+        width: 272
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 119739a73476e4600800000000000000
+      internalID: 454414151927953681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_6
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 3122
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fbd52debafa18410800000000000000
+      internalID: 1477655305707183095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_7
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 3122
+        width: 272
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99e1c7f75b46923f0800000000000000
+      internalID: -925097517757227367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_8
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 3122
+        width: 272
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b645acf82ddfa40800000000000000
+      internalID: 5403706642931149661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_9
+      rect:
+        serializedVersion: 2
+        x: 2438
+        y: 3149
+        width: 236
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea89e389ffe19bb0800000000000000
+      internalID: -4930896262054966547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_10
+      rect:
+        serializedVersion: 2
+        x: 2753
+        y: 3194
+        width: 137
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e095a2111c17b30800000000000000
+      internalID: 4283417000075136580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_11
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 3266
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ca31572634020b0800000000000000
+      internalID: -5755526233629414302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_12
+      rect:
+        serializedVersion: 2
+        x: 3005
+        y: 3230
+        width: 38
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a96bd38e2e1efef0800000000000000
+      internalID: -72587358861825627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 2915
+        width: 74
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5ac9b5fcd5108b0800000000000000
+      internalID: -5187762150577494594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_14
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 2852
+        width: 182
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adcfe700259c09c90800000000000000
+      internalID: -7165005653113635622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_15
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 2816
+        width: 254
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bfdcffeff72da150800000000000000
+      internalID: 5885404268239577014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_16
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 2807
+        width: 272
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e962aceff645ec0800000000000000
+      internalID: -3579112663748796799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_17
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 2807
+        width: 263
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd3fdbb962009e90800000000000000
+      internalID: -7021109165923811875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_18
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 2807
+        width: 263
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088f8664147ef6e50800000000000000
+      internalID: 6804911829520283776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_19
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 2807
+        width: 263
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b47b1e1ea8e542460800000000000000
+      internalID: 7215996453542541131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_20
+      rect:
+        serializedVersion: 2
+        x: 1898
+        y: 2807
+        width: 272
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58bc411dcf306f450800000000000000
+      internalID: 6122085127831210885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_21
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 2816
+        width: 254
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5729c19ab1eb5ffc0800000000000000
+      internalID: -3461651712553741707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_22
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 2852
+        width: 182
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2132de44d30f4b270800000000000000
+      internalID: 8265495362071765778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_23
+      rect:
+        serializedVersion: 2
+        x: 2789
+        y: 2915
+        width: 74
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2373d4d584b0e7580800000000000000
+      internalID: -8827605814168701134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_24
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 2591
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed78233f05b37de0800000000000000
+      internalID: -1336525587511476754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_25
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 2537
+        width: 164
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4cb2c22d2790cc0800000000000000
+      internalID: -3744335368172092179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_26
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 2501
+        width: 236
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd8949ec3fc9efe0800000000000000
+      internalID: -1159167568552292876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_27
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 2492
+        width: 299
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e90942e21ebfd000800000000000000
+      internalID: 62977908121602534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_28
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 2501
+        width: 299
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5923327b7a1ee2610800000000000000
+      internalID: 1598463028211430037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_29
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 2501
+        width: 299
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77eb2cad3156cd50800000000000000
+      internalID: 6757177616239421307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_30
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 2501
+        width: 299
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f6ed75d535bb9500800000000000000
+      internalID: 404115834399483633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_31
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 2492
+        width: 299
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd544fb7e6000d3d0800000000000000
+      internalID: -3184044462024931876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_32
+      rect:
+        serializedVersion: 2
+        x: 2285
+        y: 2501
+        width: 236
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e0343a37f563d00800000000000000
+      internalID: 952053321500397112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_33
+      rect:
+        serializedVersion: 2
+        x: 2573
+        y: 2537
+        width: 164
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5651b4e1269a1a60800000000000000
+      internalID: 7645588389729752667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_34
+      rect:
+        serializedVersion: 2
+        x: 2807
+        y: 2591
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5208f3c88a8040e0800000000000000
+      internalID: -2287676290696215974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_35
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 2276
+        width: 47
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0be82fa456b35f0800000000000000
+      internalID: -775915138219855639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_36
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 2249
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b2bf6d1d513e3080800000000000000
+      internalID: -9205866312303136079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_37
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 2195
+        width: 209
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069c203c85d1312d0800000000000000
+      internalID: -3309269034121115296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_38
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2159
+        width: 227
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1268efc78976b2e90800000000000000
+      internalID: -7049426887088634335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_39
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 2159
+        width: 155
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3b8d9146d44c340800000000000000
+      internalID: 4883112988302160851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_40
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 2159
+        width: 137
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6572b28f78d7e1970800000000000000
+      internalID: 8727551150828234582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_41
+      rect:
+        serializedVersion: 2
+        x: 1628
+        y: 2159
+        width: 137
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36bef17b9e3b7a640800000000000000
+      internalID: 5091235720146709347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_42
+      rect:
+        serializedVersion: 2
+        x: 1907
+        y: 2159
+        width: 173
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c03ad37d2fec41280800000000000000
+      internalID: -9073399806856158452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_43
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 2168
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: befdb8585df9c4a20800000000000000
+      internalID: 3047986787240370155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_44
+      rect:
+        serializedVersion: 2
+        x: 2447
+        y: 2177
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f21c986e0fe88f2b0800000000000000
+      internalID: -5550529375423053521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_45
+      rect:
+        serializedVersion: 2
+        x: 2744
+        y: 2186
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e515cd7643a508070800000000000000
+      internalID: 8106578510394184030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_46
+      rect:
+        serializedVersion: 2
+        x: 3041
+        y: 2177
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc02bbf78c25c630800000000000000
+      internalID: 3946609611015064817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_47
+      rect:
+        serializedVersion: 2
+        x: 3338
+        y: 2168
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db2ab31341d565e0800000000000000
+      internalID: -1916895980352295978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_48
+      rect:
+        serializedVersion: 2
+        x: 3689
+        y: 2159
+        width: 173
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b01d3c3de098db6f0800000000000000
+      internalID: -667226473005592309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_49
+      rect:
+        serializedVersion: 2
+        x: 4004
+        y: 2159
+        width: 137
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3fcda66789f1d90800000000000000
+      internalID: -7124808451110407180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_50
+      rect:
+        serializedVersion: 2
+        x: 4292
+        y: 2159
+        width: 155
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76fc540a6bfe25b90800000000000000
+      internalID: -7254472482088431769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_51
+      rect:
+        serializedVersion: 2
+        x: 4553
+        y: 2159
+        width: 227
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb5b4352a91fe1d20800000000000000
+      internalID: 3251301625359545791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_52
+      rect:
+        serializedVersion: 2
+        x: 4823
+        y: 2195
+        width: 209
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae3476b4979f9850800000000000000
+      internalID: 6385989461606678183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_53
+      rect:
+        serializedVersion: 2
+        x: 5093
+        y: 2249
+        width: 101
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d84dbe36fa4efb00800000000000000
+      internalID: 864210599976716503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_54
+      rect:
+        serializedVersion: 2
+        x: 5264
+        y: 2276
+        width: 47
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4216ed7eef3fd98c0800000000000000
+      internalID: -3990765418643037916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_55
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1763
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1830f69f2efb5b0800000000000000
+      internalID: -5350308271355625054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_56
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 1772
+        width: 272
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c01cfbd68993e3010800000000000000
+      internalID: 1170436280002003212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_57
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1781
+        width: 254
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26c8b16b5db42c6b0800000000000000
+      internalID: -5277572432069424030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_58
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1790
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b87144b14f809f0800000000000000
+      internalID: -501882960508122254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_59
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 1790
+        width: 272
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf04534439e3f5a0800000000000000
+      internalID: -6488586227433599049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_60
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 1781
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 221c38481c41f7f20800000000000000
+      internalID: 3422477063209337122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_61
+      rect:
+        serializedVersion: 2
+        x: 2006
+        y: 1781
+        width: 272
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72370d1c91bd2bb40800000000000000
+      internalID: 5454663002371420967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_62
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 1772
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda5783eb9d2cf8f0800000000000000
+      internalID: -505478910611858722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_63
+      rect:
+        serializedVersion: 2
+        x: 2654
+        y: 1763
+        width: 272
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e2f0469f53414840800000000000000
+      internalID: 5206516722038797025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_64
+      rect:
+        serializedVersion: 2
+        x: 2978
+        y: 1763
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aca3c1b90450f110800000000000000
+      internalID: 1292625493669162144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_65
+      rect:
+        serializedVersion: 2
+        x: 3410
+        y: 1763
+        width: 263
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113ca3e8d1955d4d0800000000000000
+      internalID: -3110481984154320111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_66
+      rect:
+        serializedVersion: 2
+        x: 3698
+        y: 1763
+        width: 263
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf3e4cb00d1fdb20800000000000000
+      internalID: 3161277352433827789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_67
+      rect:
+        serializedVersion: 2
+        x: 3986
+        y: 1763
+        width: 263
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ee6b1d14b9981f0800000000000000
+      internalID: -1042131131765953009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_68
+      rect:
+        serializedVersion: 2
+        x: 4265
+        y: 1763
+        width: 272
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f617d54f5336a130800000000000000
+      internalID: 3577603438279071475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_69
+      rect:
+        serializedVersion: 2
+        x: 4553
+        y: 1763
+        width: 272
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b75950faa2ba0280800000000000000
+      internalID: -9076245651765241930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_70
+      rect:
+        serializedVersion: 2
+        x: 4841
+        y: 1763
+        width: 272
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3038a3bbc289ab10800000000000000
+      internalID: 1993268121492271164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_71
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1448
+        width: 299
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4a6ebbe5746dbba0800000000000000
+      internalID: -6071586264996484532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_72
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1448
+        width: 299
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4030440da9eaf68b0800000000000000
+      internalID: -5156711068373613820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_73
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1448
+        width: 299
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be13af20c4753bed0800000000000000
+      internalID: -2399478192479260181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_74
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 1448
+        width: 299
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735d0186db06821b0800000000000000
+      internalID: -5681184563316861641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_75
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 1448
+        width: 299
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efd573e145bb7bc30800000000000000
+      internalID: 4375171532972318206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_76
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 1448
+        width: 299
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74cd74332ccbe2760800000000000000
+      internalID: 7435087577105292359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_77
+      rect:
+        serializedVersion: 2
+        x: 2141
+        y: 1421
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f9393afe74495a20800000000000000
+      internalID: 3051545534674844153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_78
+      rect:
+        serializedVersion: 2
+        x: 2438
+        y: 1421
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a46879aff8ae1d0800000000000000
+      internalID: -3320683468785563074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_79
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 1421
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 255610286ddf13440800000000000000
+      internalID: 4913987766183880018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_80
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 1412
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c112e53c815fa150800000000000000
+      internalID: 5886012900637807046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_81
+      rect:
+        serializedVersion: 2
+        x: 3329
+        y: 1412
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a93d394966c5b00800000000000000
+      internalID: 818642020595898937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_82
+      rect:
+        serializedVersion: 2
+        x: 3626
+        y: 1412
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933fdeaa11151f430800000000000000
+      internalID: 3814919495683535673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_83
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1115
+        width: 335
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29635e5aadb951ba0800000000000000
+      internalID: -6118813155324512622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_84
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 1115
+        width: 470
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90fd38c4e8aa349d0800000000000000
+      internalID: -2791199815893786871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_85
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 1115
+        width: 335
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d43f120850576650800000000000000
+      internalID: 6226033348785943764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_86
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 1124
+        width: 299
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd9cb190c29d9110800000000000000
+      internalID: 1269332025764781526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_87
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 1097
+        width: 272
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa93c0b961e23f60800000000000000
+      internalID: 8012714531098958503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_88
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 1097
+        width: 290
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93f70d9ff537b480800000000000000
+      internalID: -8883572367997537379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_89
+      rect:
+        serializedVersion: 2
+        x: 2366
+        y: 1097
+        width: 290
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456db78e75b2e89f0800000000000000
+      internalID: -464386055010003372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_90
+      rect:
+        serializedVersion: 2
+        x: 2672
+        y: 1097
+        width: 380
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8efe6b4f3a7416340800000000000000
+      internalID: 4855240642792976360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_91
+      rect:
+        serializedVersion: 2
+        x: 3068
+        y: 1097
+        width: 326
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d69d92fa268e0aa0800000000000000
+      internalID: -6192864918570690855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_92
+      rect:
+        serializedVersion: 2
+        x: 3410
+        y: 1097
+        width: 398
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aa60bdf23f659cd0800000000000000
+      internalID: -2552011349040272733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_93
+      rect:
+        serializedVersion: 2
+        x: 3824
+        y: 1097
+        width: 290
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44d3557bcdbc22060800000000000000
+      internalID: 6927323325678304580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_94
+      rect:
+        serializedVersion: 2
+        x: 4130
+        y: 1097
+        width: 272
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2af5e0b4aa69180800000000000000
+      internalID: -9108905956969831725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_95
+      rect:
+        serializedVersion: 2
+        x: 4418
+        y: 1097
+        width: 263
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66523063ed12345b0800000000000000
+      internalID: -5385423491132349082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_96
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 791
+        width: 299
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcfbc980f6b770590800000000000000
+      internalID: -7708056520405237809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_97
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 791
+        width: 299
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3308d619d32935f30800000000000000
+      internalID: 4563151640586977331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_98
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 791
+        width: 299
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ad8259aed5ac380800000000000000
+      internalID: -8950238047339226520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_99
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 791
+        width: 362
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fbc7186dfff93a10800000000000000
+      internalID: 1889822982496832500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_100
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 791
+        width: 299
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be697b89ed0c7a550800000000000000
+      internalID: 6172113876611995371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_101
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 791
+        width: 299
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 894b30a2f86873d40800000000000000
+      internalID: 5564063814082868376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_102
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 989
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6717291f98163bfe0800000000000000
+      internalID: -1174487832722247306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_103
+      rect:
+        serializedVersion: 2
+        x: 2384
+        y: 791
+        width: 299
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4e95b288dc828750800000000000000
+      internalID: 6305757289805880911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_104
+      rect:
+        serializedVersion: 2
+        x: 2744
+        y: 791
+        width: 299
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39881cb3a1df9da60800000000000000
+      internalID: 7699463327080089747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_105
+      rect:
+        serializedVersion: 2
+        x: 3131
+        y: 791
+        width: 299
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bad087feb8015b4b0800000000000000
+      internalID: -5425411982893773397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_106
+      rect:
+        serializedVersion: 2
+        x: 3518
+        y: 791
+        width: 299
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6cebe72b141893a0800000000000000
+      internalID: -6658549942200832917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_107
+      rect:
+        serializedVersion: 2
+        x: 3905
+        y: 773
+        width: 362
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013fd754a4368e390800000000000000
+      internalID: -7788866384892660976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_108
+      rect:
+        serializedVersion: 2
+        x: 4328
+        y: 764
+        width: 344
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e3f402cee7ed0370800000000000000
+      internalID: 8290537501702288359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_109
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 764
+        width: 335
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d25ce2d614da220800000000000000
+      internalID: 2498725305452408151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_110
+      rect:
+        serializedVersion: 2
+        x: 4967
+        y: 980
+        width: 29
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 301a20a9e49336df0800000000000000
+      internalID: -188243749665332989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_111
+      rect:
+        serializedVersion: 2
+        x: 5174
+        y: 791
+        width: 362
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb61942cbb3178a0800000000000000
+      internalID: -6309195923715953720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_112
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 899
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09394c9fef722a290800000000000000
+      internalID: -7880692421879360624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_113
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 899
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9834fcb5480a5ffb0800000000000000
+      internalID: -4614605752834767991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_114
+      rect:
+        serializedVersion: 2
+        x: 2636
+        y: 899
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a152c63b638217fe0800000000000000
+      internalID: -1193128210872916710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_115
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 899
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b2724153f9340510800000000000000
+      internalID: 1514399091906474672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_116
+      rect:
+        serializedVersion: 2
+        x: 3383
+        y: 899
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c3c043bb9c05e30800000000000000
+      internalID: 4490310634357668961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_117
+      rect:
+        serializedVersion: 2
+        x: 3770
+        y: 899
+        width: 56
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbb9336f46a409070800000000000000
+      internalID: 8111064726382025663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_118
+      rect:
+        serializedVersion: 2
+        x: 4733
+        y: 836
+        width: 29
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 451042c2180a15b10800000000000000
+      internalID: 1968530988789399892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_119
+      rect:
+        serializedVersion: 2
+        x: 5102
+        y: 881
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e437c423bff6e1e0800000000000000
+      internalID: -2168765025651051291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_120
+      rect:
+        serializedVersion: 2
+        x: 5084
+        y: 782
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ea172fe266fa68c0800000000000000
+      internalID: -4005118013813089559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_121
+      rect:
+        serializedVersion: 2
+        x: 5417
+        y: 764
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071c5a278f65469b0800000000000000
+      internalID: -5087846053946474128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_122
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 413
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48fc87c35e1b98db0800000000000000
+      internalID: -4789101130611634300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_123
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 413
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19aeebc1e22c3f70800000000000000
+      internalID: 9168241294603888924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_124
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 404
+        width: 191
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d8083cc179ed160800000000000000
+      internalID: 7052240216303635838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_125
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 395
+        width: 173
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a0ccde67064470b0800000000000000
+      internalID: -5731879427997122393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_126
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 395
+        width: 173
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60844cddcdbec2c50800000000000000
+      internalID: 6641942884310599686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_127
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 395
+        width: 209
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04d178901c772cf0800000000000000
+      internalID: -277116441341078513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_128
+      rect:
+        serializedVersion: 2
+        x: 1529
+        y: 413
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d57f45fbd143b920800000000000000
+      internalID: 3004817789355521497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_129
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 413
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2404f1a6b0521d0c0800000000000000
+      internalID: -4552817017339559870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_130
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 422
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed25956e76c180a0800000000000000
+      internalID: -6881000509472952855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_131
+      rect:
+        serializedVersion: 2
+        x: 2438
+        y: 413
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e45e81f467e869e0800000000000000
+      internalID: -1627796844559051546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_132
+      rect:
+        serializedVersion: 2
+        x: 2735
+        y: 413
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0022d851811a7530800000000000000
+      internalID: 3853411678407499791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_133
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 413
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1d1cb2790f14340800000000000000
+      internalID: 4846419206092214738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_134
+      rect:
+        serializedVersion: 2
+        x: 3329
+        y: 422
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71fb19d3b4ebd1010800000000000000
+      internalID: 1161293509296242455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_135
+      rect:
+        serializedVersion: 2
+        x: 3626
+        y: 422
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5142b85ea1d78b160800000000000000
+      internalID: 7041515571867493397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_136
+      rect:
+        serializedVersion: 2
+        x: 3923
+        y: 422
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c121d01cf304c00800000000000000
+      internalID: 882775625345145963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_137
+      rect:
+        serializedVersion: 2
+        x: 4220
+        y: 413
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75911dcabddaed10800000000000000
+      internalID: 2155779166024340860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_138
+      rect:
+        serializedVersion: 2
+        x: 4517
+        y: 413
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f35287f0ef174880800000000000000
+      internalID: -8626891510119246855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_139
+      rect:
+        serializedVersion: 2
+        x: 4814
+        y: 413
+        width: 281
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469ec8450ec050710800000000000000
+      internalID: 1658746195386624356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_140
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 35
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f94429e4d85352520800000000000000
+      internalID: 2676604434566497439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_141
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 44
+        width: 272
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea55caded30e7ae50800000000000000
+      internalID: 6820666717261026734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_142
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 53
+        width: 254
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba60bfe3b094b120800000000000000
+      internalID: 2428725201554401982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_143
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 62
+        width: 272
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277389b4a17425610800000000000000
+      internalID: 1608426195187677042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_144
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 215
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733ddea018cbe0850800000000000000
+      internalID: 6345216187431768887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_145
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 62
+        width: 272
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4f2f53c4a5125d0800000000000000
+      internalID: -3089088586030320442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_146
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 62
+        width: 263
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a1d96b5fcc95aa0800000000000000
+      internalID: -6171676458631751053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_147
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 62
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a048f3e78454ff0d0800000000000000
+      internalID: -3386912217101270006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_148
+      rect:
+        serializedVersion: 2
+        x: 2321
+        y: 62
+        width: 272
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20e33483f88c775b0800000000000000
+      internalID: -5370603513166217726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_149
+      rect:
+        serializedVersion: 2
+        x: 2636
+        y: 62
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b623420348a8720800000000000000
+      internalID: 2849235056565840733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_150
+      rect:
+        serializedVersion: 2
+        x: 2960
+        y: 62
+        width: 272
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d639fdc7f27de6460800000000000000
+      internalID: 7236958250189427565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_151
+      rect:
+        serializedVersion: 2
+        x: 3284
+        y: 53
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aec47107ab052b30800000000000000
+      internalID: 4261825434287918761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_152
+      rect:
+        serializedVersion: 2
+        x: 3608
+        y: 53
+        width: 272
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9460c1a95892b49e0800000000000000
+      internalID: -1636168385826126263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_153
+      rect:
+        serializedVersion: 2
+        x: 3932
+        y: 44
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa99f8e2beec44620800000000000000
+      internalID: 2757556381351385514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_154
+      rect:
+        serializedVersion: 2
+        x: 4256
+        y: 35
+        width: 272
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb8f3814dc23a7100800000000000000
+      internalID: 106453398345480382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bugconstruct_spritegrid_155
+      rect:
+        serializedVersion: 2
+        x: 4580
+        y: 35
+        width: 254
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 075922c7938d63010800000000000000
+      internalID: 1168358894756599152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bugconstruct_spritegrid_0: -7996847560823771611
+      bugconstruct_spritegrid_1: -1768272942176648540
+      bugconstruct_spritegrid_10: 4283417000075136580
+      bugconstruct_spritegrid_100: 6172113876611995371
+      bugconstruct_spritegrid_101: 5564063814082868376
+      bugconstruct_spritegrid_102: -1174487832722247306
+      bugconstruct_spritegrid_103: 6305757289805880911
+      bugconstruct_spritegrid_104: 7699463327080089747
+      bugconstruct_spritegrid_105: -5425411982893773397
+      bugconstruct_spritegrid_106: -6658549942200832917
+      bugconstruct_spritegrid_107: -7788866384892660976
+      bugconstruct_spritegrid_108: 8290537501702288359
+      bugconstruct_spritegrid_109: 2498725305452408151
+      bugconstruct_spritegrid_11: -5755526233629414302
+      bugconstruct_spritegrid_110: -188243749665332989
+      bugconstruct_spritegrid_111: -6309195923715953720
+      bugconstruct_spritegrid_112: -7880692421879360624
+      bugconstruct_spritegrid_113: -4614605752834767991
+      bugconstruct_spritegrid_114: -1193128210872916710
+      bugconstruct_spritegrid_115: 1514399091906474672
+      bugconstruct_spritegrid_116: 4490310634357668961
+      bugconstruct_spritegrid_117: 8111064726382025663
+      bugconstruct_spritegrid_118: 1968530988789399892
+      bugconstruct_spritegrid_119: -2168765025651051291
+      bugconstruct_spritegrid_12: -72587358861825627
+      bugconstruct_spritegrid_120: -4005118013813089559
+      bugconstruct_spritegrid_121: -5087846053946474128
+      bugconstruct_spritegrid_122: -4789101130611634300
+      bugconstruct_spritegrid_123: 9168241294603888924
+      bugconstruct_spritegrid_124: 7052240216303635838
+      bugconstruct_spritegrid_125: -5731879427997122393
+      bugconstruct_spritegrid_126: 6641942884310599686
+      bugconstruct_spritegrid_127: -277116441341078513
+      bugconstruct_spritegrid_128: 3004817789355521497
+      bugconstruct_spritegrid_129: -4552817017339559870
+      bugconstruct_spritegrid_13: -5187762150577494594
+      bugconstruct_spritegrid_130: -6881000509472952855
+      bugconstruct_spritegrid_131: -1627796844559051546
+      bugconstruct_spritegrid_132: 3853411678407499791
+      bugconstruct_spritegrid_133: 4846419206092214738
+      bugconstruct_spritegrid_134: 1161293509296242455
+      bugconstruct_spritegrid_135: 7041515571867493397
+      bugconstruct_spritegrid_136: 882775625345145963
+      bugconstruct_spritegrid_137: 2155779166024340860
+      bugconstruct_spritegrid_138: -8626891510119246855
+      bugconstruct_spritegrid_139: 1658746195386624356
+      bugconstruct_spritegrid_14: -7165005653113635622
+      bugconstruct_spritegrid_140: 2676604434566497439
+      bugconstruct_spritegrid_141: 6820666717261026734
+      bugconstruct_spritegrid_142: 2428725201554401982
+      bugconstruct_spritegrid_143: 1608426195187677042
+      bugconstruct_spritegrid_144: 6345216187431768887
+      bugconstruct_spritegrid_145: -3089088586030320442
+      bugconstruct_spritegrid_146: -6171676458631751053
+      bugconstruct_spritegrid_147: -3386912217101270006
+      bugconstruct_spritegrid_148: -5370603513166217726
+      bugconstruct_spritegrid_149: 2849235056565840733
+      bugconstruct_spritegrid_15: 5885404268239577014
+      bugconstruct_spritegrid_150: 7236958250189427565
+      bugconstruct_spritegrid_151: 4261825434287918761
+      bugconstruct_spritegrid_152: -1636168385826126263
+      bugconstruct_spritegrid_153: 2757556381351385514
+      bugconstruct_spritegrid_154: 106453398345480382
+      bugconstruct_spritegrid_155: 1168358894756599152
+      bugconstruct_spritegrid_16: -3579112663748796799
+      bugconstruct_spritegrid_17: -7021109165923811875
+      bugconstruct_spritegrid_18: 6804911829520283776
+      bugconstruct_spritegrid_19: 7215996453542541131
+      bugconstruct_spritegrid_2: -5183688455131706792
+      bugconstruct_spritegrid_20: 6122085127831210885
+      bugconstruct_spritegrid_21: -3461651712553741707
+      bugconstruct_spritegrid_22: 8265495362071765778
+      bugconstruct_spritegrid_23: -8827605814168701134
+      bugconstruct_spritegrid_24: -1336525587511476754
+      bugconstruct_spritegrid_25: -3744335368172092179
+      bugconstruct_spritegrid_26: -1159167568552292876
+      bugconstruct_spritegrid_27: 62977908121602534
+      bugconstruct_spritegrid_28: 1598463028211430037
+      bugconstruct_spritegrid_29: 6757177616239421307
+      bugconstruct_spritegrid_3: 4837635146252146220
+      bugconstruct_spritegrid_30: 404115834399483633
+      bugconstruct_spritegrid_31: -3184044462024931876
+      bugconstruct_spritegrid_32: 952053321500397112
+      bugconstruct_spritegrid_33: 7645588389729752667
+      bugconstruct_spritegrid_34: -2287676290696215974
+      bugconstruct_spritegrid_35: -775915138219855639
+      bugconstruct_spritegrid_36: -9205866312303136079
+      bugconstruct_spritegrid_37: -3309269034121115296
+      bugconstruct_spritegrid_38: -7049426887088634335
+      bugconstruct_spritegrid_39: 4883112988302160851
+      bugconstruct_spritegrid_4: 1743362092309626412
+      bugconstruct_spritegrid_40: 8727551150828234582
+      bugconstruct_spritegrid_41: 5091235720146709347
+      bugconstruct_spritegrid_42: -9073399806856158452
+      bugconstruct_spritegrid_43: 3047986787240370155
+      bugconstruct_spritegrid_44: -5550529375423053521
+      bugconstruct_spritegrid_45: 8106578510394184030
+      bugconstruct_spritegrid_46: 3946609611015064817
+      bugconstruct_spritegrid_47: -1916895980352295978
+      bugconstruct_spritegrid_48: -667226473005592309
+      bugconstruct_spritegrid_49: -7124808451110407180
+      bugconstruct_spritegrid_5: 454414151927953681
+      bugconstruct_spritegrid_50: -7254472482088431769
+      bugconstruct_spritegrid_51: 3251301625359545791
+      bugconstruct_spritegrid_52: 6385989461606678183
+      bugconstruct_spritegrid_53: 864210599976716503
+      bugconstruct_spritegrid_54: -3990765418643037916
+      bugconstruct_spritegrid_55: -5350308271355625054
+      bugconstruct_spritegrid_56: 1170436280002003212
+      bugconstruct_spritegrid_57: -5277572432069424030
+      bugconstruct_spritegrid_58: -501882960508122254
+      bugconstruct_spritegrid_59: -6488586227433599049
+      bugconstruct_spritegrid_6: 1477655305707183095
+      bugconstruct_spritegrid_60: 3422477063209337122
+      bugconstruct_spritegrid_61: 5454663002371420967
+      bugconstruct_spritegrid_62: -505478910611858722
+      bugconstruct_spritegrid_63: 5206516722038797025
+      bugconstruct_spritegrid_64: 1292625493669162144
+      bugconstruct_spritegrid_65: -3110481984154320111
+      bugconstruct_spritegrid_66: 3161277352433827789
+      bugconstruct_spritegrid_67: -1042131131765953009
+      bugconstruct_spritegrid_68: 3577603438279071475
+      bugconstruct_spritegrid_69: -9076245651765241930
+      bugconstruct_spritegrid_7: -925097517757227367
+      bugconstruct_spritegrid_70: 1993268121492271164
+      bugconstruct_spritegrid_71: -6071586264996484532
+      bugconstruct_spritegrid_72: -5156711068373613820
+      bugconstruct_spritegrid_73: -2399478192479260181
+      bugconstruct_spritegrid_74: -5681184563316861641
+      bugconstruct_spritegrid_75: 4375171532972318206
+      bugconstruct_spritegrid_76: 7435087577105292359
+      bugconstruct_spritegrid_77: 3051545534674844153
+      bugconstruct_spritegrid_78: -3320683468785563074
+      bugconstruct_spritegrid_79: 4913987766183880018
+      bugconstruct_spritegrid_8: 5403706642931149661
+      bugconstruct_spritegrid_80: 5886012900637807046
+      bugconstruct_spritegrid_81: 818642020595898937
+      bugconstruct_spritegrid_82: 3814919495683535673
+      bugconstruct_spritegrid_83: -6118813155324512622
+      bugconstruct_spritegrid_84: -2791199815893786871
+      bugconstruct_spritegrid_85: 6226033348785943764
+      bugconstruct_spritegrid_86: 1269332025764781526
+      bugconstruct_spritegrid_87: 8012714531098958503
+      bugconstruct_spritegrid_88: -8883572367997537379
+      bugconstruct_spritegrid_89: -464386055010003372
+      bugconstruct_spritegrid_9: -4930896262054966547
+      bugconstruct_spritegrid_90: 4855240642792976360
+      bugconstruct_spritegrid_91: -6192864918570690855
+      bugconstruct_spritegrid_92: -2552011349040272733
+      bugconstruct_spritegrid_93: 6927323325678304580
+      bugconstruct_spritegrid_94: -9108905956969831725
+      bugconstruct_spritegrid_95: -5385423491132349082
+      bugconstruct_spritegrid_96: -7708056520405237809
+      bugconstruct_spritegrid_97: 4563151640586977331
+      bugconstruct_spritegrid_98: -8950238047339226520
+      bugconstruct_spritegrid_99: 1889822982496832500
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
