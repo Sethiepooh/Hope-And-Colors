@@ -8,6 +8,7 @@ public class NextLevel : MonoBehaviour
 {
     public Image blackFade;
     public UnityEvent levelStartEvents;
+    [SerializeField] GameObject[] UIElements;
 
 
     private void Start()
@@ -62,7 +63,12 @@ public class NextLevel : MonoBehaviour
 
     public void LoadMenu()
     {
-        StartCoroutine(FadeScreen(false, false, true));
+        Time.timeScale = 1f;
+        foreach (var uiElement in UIElements)
+        {
+            uiElement.SetActive(false); // Show other UI elements
+        }
+        StartCoroutine(FadeScreen(false, true, true));
     }
 
     public void LoadNextLevel()

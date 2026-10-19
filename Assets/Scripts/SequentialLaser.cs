@@ -6,8 +6,29 @@ public class SequentialLaser : MonoBehaviour
     [SerializeField] GameObject[] laserParts;
     [SerializeField] float delayBetweenParts = 0.5f;
     [SerializeField] int beatInterval = 4; // Number of beats between each part activation
+    [SerializeField] bool startActive = false;
     int currentBeat = 0;
     bool isLaserActive = false;
+
+    private void Start()
+    {
+        if(startActive)
+        {
+            isLaserActive = true;
+            for (int i = 0; i < laserParts.Length; i++)
+            {
+                laserParts[i].SetActive(true);
+            }
+        }
+        else
+        {
+            isLaserActive = false;
+            for (int i = 0; i < laserParts.Length; i++)
+            {
+                laserParts[i].SetActive(false);
+            }
+        }
+    }
 
     public void ToggleLaserActivation()
     {
