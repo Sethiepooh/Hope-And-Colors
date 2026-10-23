@@ -8,11 +8,14 @@ public class HuntingCrystal : MonoBehaviour
     [SerializeField] SeekerProjectile seekerProjectilePrefab;
     int beatCount = 0;
     [SerializeField] int fireRate = 4; // Fire every 4 beats
+    [SerializeField] float fireRange = 10f;
 
     public void FireScatterShot()
     {
         beatCount++;
         if (beatCount % fireRate != 0)
+            return;
+        if(Vector2.Distance(transform.position, player.transform.position) > fireRange)
             return;
         float angleStep = crystalSpread / projectileCount;
         float angle = 0f;
