@@ -19,6 +19,10 @@ public class GlitchChild : EnemyBase
     [Header("Effects")]  
     public GameObject attackIndicator;
     public AttackIndicator aIndicator;
+    [SerializeField] Animator anim;
+
+    static readonly int DespawnHash = Animator.StringToHash("Despawn");
+    static readonly int AttackHash = Animator.StringToHash("Attacking");
 
     // Update is called once per frame
     void Update()
@@ -42,7 +46,7 @@ public class GlitchChild : EnemyBase
                     }
                 }
             }
-            aIndicator.AttackFlash();
+            //aIndicator.AttackFlash();
         }
     }
 
@@ -64,14 +68,24 @@ public class GlitchChild : EnemyBase
                 direction = -direction;
         }
 
-        facedDirection.position = new Vector2(transform.position.x + direction.normalized.x, transform.position.y + direction.normalized.y);
-        attackIndicator.transform.rotation = Quaternion.LookRotation(Vector3.forward, facedDirection.position - transform.position);
+        facedDirection.position = new Vector2(transform.position.x + direction.normalized.x, transform.position.y);
+        //attackIndicator.transform.rotation = Quaternion.LookRotation(Vector3.forward, facedDirection.position - transform.position);
+
+        Vector3 offset = player.transform.position - transform.position;
+        if (offset.x > 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
 
         tRend.emitting = true;
         rb.linearVelocity = direction * moveSpeed;
         swing = true;
 
-
+        anim.SetTrigger(AttackHash);
         yield return new WaitForSeconds(dashDuration);
         swing = false;
         rb.linearVelocity = Vector2.zero;

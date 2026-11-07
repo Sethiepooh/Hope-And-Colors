@@ -3,8 +3,12 @@ using UnityEngine;
 public class GlitchShaman : EnemyBase, IProtector
 {
     [SerializeField] GameObject shieldEffectPrefab;
+    [SerializeField] Animator anim;
     Health protectedEnemyHealth;
     GameObject shieldEffect;
+
+    static readonly int DespawnHash = Animator.StringToHash("Despawn");
+    static readonly int ProtectHash = Animator.StringToHash("Protect");
 
     public EnemyBase protectedEnemyBase { get; set; }
 
@@ -35,6 +39,7 @@ public class GlitchShaman : EnemyBase, IProtector
 
     public void SetProtectionTarget(EnemyBase enemy)
     {
+        anim.SetTrigger(ProtectHash);
         protectedEnemyBase = enemy;
         protectedEnemyHealth = protectedEnemyBase.GetComponent<Health>();
     }

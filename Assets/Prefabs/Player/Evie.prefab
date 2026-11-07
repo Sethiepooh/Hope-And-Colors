@@ -5180,7 +5180,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1343899466568195588}
         m_TargetAssemblyTypeName: PlayerAttack, Assembly-CSharp
-        m_MethodName: StageDive
+        m_MethodName: SummonWaspTurret
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5256,6 +5256,7 @@ MonoBehaviour:
   dashSpeed: 30
   dashTime: 0.1
   dashCooldown: 0.2
+  dashCancelDistance: 0
   dodgeLayer:
     serializedVersion: 2
     m_Bits: 960
@@ -5306,6 +5307,9 @@ MonoBehaviour:
   hasHeartthrobsSolo: 1
   hasAngelBreak: 1
   hasStageDive: 1
+  hasAlixAbilities: 0
+  waspTurretPrefab: {fileID: 0}
+  beetleBombPrefab: {fileID: 0}
   allegroColor: {r: 0.97394437, g: 0.61698115, b: 1, a: 1}
   stumbleColor: {r: 0.277, g: 0.277, b: 0.277, a: 1}
   attackIndicator: {fileID: 2004006489262682754}

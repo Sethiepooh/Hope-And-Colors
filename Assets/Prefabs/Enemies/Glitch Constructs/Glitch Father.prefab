@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2406948429584957899}
   - component: {fileID: 5396374462838952040}
   - component: {fileID: 3392758250918636527}
+  - component: {fileID: 324779569266084138}
   m_Layer: 6
   m_Name: Glitch Father
   m_TagString: Enemy
@@ -85,8 +86,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0.24705884, b: 0.50980395, a: 1}
+  m_Sprite: {fileID: -871915428978257283, guid: 18a66596db4b2ea4cb9658a2cd7a73dc, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -108,12 +109,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de801039f91c0f4449667748f7cac55b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ManagerDeathEvent:
-    m_PersistentCalls:
-      m_Calls: []
   active: 0
   empowered: 0
-  attackColor: {r: 0.08235294, g: 0.59607846, b: 0.9960785, a: 1}
+  dissappearOnDeath: 1
+  attackColor: {r: 1, g: 1, b: 1, a: 1}
   deathParticles: {fileID: 0}
   attackRange: 2.5
   damage: 20
@@ -124,6 +123,7 @@ MonoBehaviour:
     m_Bits: 776
   attackIndicator: {fileID: 6046962375557612737}
   telegraph: {fileID: 1879216858034227692}
+  anim: {fileID: 324779569266084138}
 --- !u!114 &4055398398140777308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,17 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onDeathEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  onDamageEvent:
-    m_PersistentCalls:
-      m_Calls: []
   maxHealth: 70
   currentHealth: 0
-  healthBar: {fileID: 0}
-  isPlayer: 0
-  isBoss: 0
   deathParticles: {fileID: 2108140741415770571}
   damagable: 1
 --- !u!61 &903979013842618495
@@ -187,7 +178,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.48, y: 1.6266667}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -352,6 +343,28 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
+--- !u!95 &324779569266084138
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5690663883746622439}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 268afa58ff781af4e974b7aa9b0e73f6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6046962375557612737
 GameObject:
   m_ObjectHideFlags: 0

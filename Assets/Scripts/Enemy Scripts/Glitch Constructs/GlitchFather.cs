@@ -17,6 +17,11 @@ public class GlitchFather : EnemyBase
     [SerializeField] GameObject attackIndicator;
     [SerializeField]ParticleSystem telegraph;
     AttackIndicator aIndicate;
+    [SerializeField] Animator anim;
+
+    static readonly int DespawnHash = Animator.StringToHash("Despawn");
+    static readonly int ExplodeHash = Animator.StringToHash("Explode");
+    static readonly int DashHash = Animator.StringToHash("Dashing");
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,8 +31,8 @@ public class GlitchFather : EnemyBase
     }
 
     public override void Attack()
-    {
-        aIndicate.AttackFlash();
+    {    
+        //aIndicate.AttackFlash();
         Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(transform.position, attackRange, playerLayer);
         foreach(Collider2D hitPlayer in hitPlayers)
         {
@@ -57,8 +62,19 @@ public class GlitchFather : EnemyBase
         tRend.emitting = true;
         rb.linearVelocity = direction * moveSpeed;
 
+        Vector3 offset = player.transform.position - transform.position;
+        if (offset.x > 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
 
+        anim.SetBool(DashHash, true);
         yield return new WaitForSeconds(dashDuration);
+        anim.SetBool(DashHash, false);
         rb.linearVelocity = Vector2.zero;
         tRend.emitting = false;
         rb.bodyType = RigidbodyType2D.Kinematic;
@@ -73,6 +89,10 @@ public class GlitchFather : EnemyBase
                 telegraph.Play();
             }
 
+            if (beatCount == 6)
+            {
+                anim.SetTrigger(ExplodeHash);
+            }
             if (beatCount == 7)
             {
                 sRend.color = attackColor;

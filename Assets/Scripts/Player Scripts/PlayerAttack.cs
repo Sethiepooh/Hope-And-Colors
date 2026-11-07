@@ -32,6 +32,11 @@ public class PlayerAttack : MonoBehaviour
     float attackRange;
     int currentDamage;
 
+    [Header("Attack Delay")]
+    [SerializeField] float attackDelay = 0.25f;   // tune in the Inspector
+    float nextAttackTime = 0f;
+    Coroutine cooldownCoroutine;
+
     [Header("Inspiration Stats")]
     [SerializeField] float inspirationGainOnBeat = 5f;
     [SerializeField] float inspirationGainOffBeat = 1f;
@@ -57,7 +62,12 @@ public class PlayerAttack : MonoBehaviour
     public bool hasHeartthrobsSolo;
     public bool hasAngelBreak;
     public bool hasStageDive;
+    //TEST
+    public bool hasAlixAbilities;
 
+    [Header("Wasp Turret Stats")]
+    public WaspTurret waspTurretPrefab;
+    public BeetleBomb beetleBombPrefab;
 
     [Header("Effects")]
     [SerializeField]Color allegroColor;
@@ -136,8 +146,14 @@ public class PlayerAttack : MonoBehaviour
 
         if (context.performed)
         {
-           
-            if (bpmInteract.CheckInput(true) == 0)
+            if (Time.time < nextAttackTime)
+                return;
+
+            nextAttackTime = Time.time + attackDelay;
+
+            int result = bpmInteract.CheckInput(true);
+
+            if (result == 0)
             {
                 animator.SetBool("Attacking", true);
                 StartCoroutine(StopAttackAnim(2));
@@ -162,7 +178,7 @@ public class PlayerAttack : MonoBehaviour
                 }
                 perfectParticles.Play();
             }
-            else if (bpmInteract.CheckInput(true) == 1)
+            else if (result == 1)
             {
                 animator.SetBool("Attacking", true);
                 StartCoroutine(StopAttackAnim(2));
@@ -186,11 +202,14 @@ public class PlayerAttack : MonoBehaviour
                         currentDamage = baseDamage;
                 }
             }
-            else if(bpmInteract.CheckInput(true) == 2)
+            else if(result == 2)
             {
                 Debug.Log("Missed Attack");
-                StopCoroutine(AttackCooldown());    
-                StartCoroutine(AttackCooldown());
+
+                if(cooldownCoroutine != null)
+                    StopCoroutine(AttackCooldown());  
+                
+                cooldownCoroutine = StartCoroutine(AttackCooldown());
                 inspirationGainOnHit = inspirationGainOffBeat;
                 currentDamage = baseDamage;
                 comboStep = 0;
@@ -287,11 +306,9 @@ public class PlayerAttack : MonoBehaviour
     IEnumerator StopAttackAnim(int framesToWait)
     {
         for (int i = 0; i < framesToWait; i++)
-        {
-            yield return null; // Pauses here and resumes on the next frame
-        }
+            yield return null;
         animator.SetBool("Attacking", false);
-        canAttack = true;
+        // removed: canAttack = true;
     }
 
     public void SetCanAttack(bool b)
@@ -333,6 +350,23 @@ public class PlayerAttack : MonoBehaviour
                 allegroParticles.Play();
             }           
         }
+    }
+
+    public void SummonWaspTurret(InputAction.CallbackContext context)
+    {
+        if (!hasAlixAbilities)
+            return;
+
+        if(context.performed)
+        {
+            if (currentInspiration >= (maxInspiration / 4))
+            {
+                waspTurretPrefab.gameObject.SetActive(true);
+                waspTurretPrefab.Initialize(projectileSpawnPoint);
+                currentInspiration -= (maxInspiration / 4);
+                UpdateInspirationUI();
+            }
+        }     
     }
 
     public void AngelBreak(InputAction.CallbackContext context)
@@ -426,6 +460,23 @@ public class PlayerAttack : MonoBehaviour
                 StartCoroutine(StopHeartthrobAnim());
             }
         }       
+    }
+
+    public void SummonBeetleBomb(InputAction.CallbackContext context)
+    {
+        if (!hasAlixAbilities)
+            return;
+
+        if (context.performed)
+        {
+            if (currentInspiration >= (maxInspiration / 4))
+            {
+                beetleBombPrefab.gameObject.SetActive(true);
+                beetleBombPrefab.Initialize(projectileSpawnPoint, (facedDirection.position - transform.position).normalized);
+                currentInspiration -= (maxInspiration / 4);
+                UpdateInspirationUI();
+            }
+        }
     }
 
     IEnumerator StopHeartthrobAnim()
