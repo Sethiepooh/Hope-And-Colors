@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class FragileCrystal : ScatterShot
+public class FragileCrystal : BreakableObjectBase
 {
     Transform wanderCenterPoint;
     Vector2 currentTarget;
@@ -12,6 +12,8 @@ public class FragileCrystal : ScatterShot
     float timer;
 
     [SerializeField] float scatterDelay;
+    [SerializeField] int projectileNum;
+    [SerializeField] GameObject projectile;
     float delayTimer;
 
     [SerializeField] float triggerRadius;
@@ -20,7 +22,6 @@ public class FragileCrystal : ScatterShot
     public void Initialize(Transform point, ProjectilePool pool)
     {
         wanderCenterPoint = point;
-        projectilePool = pool;
         rb = GetComponent<Rigidbody2D>();
         ChooseNewWanderPoint();
     }
@@ -60,7 +61,7 @@ public class FragileCrystal : ScatterShot
         Debug.Log("New Wander Point: " + currentTarget);
     }
 
-    protected override void FireScatterShot()
+    void FireScatterShot()
     {
         StartCoroutine(ScatterShotCoroutine());
     }
@@ -70,28 +71,33 @@ public class FragileCrystal : ScatterShot
         // Add a short delay before firing
         yield return new WaitForSeconds(0.2f);
 
-        float angleStep = 360f / 8;
+        Debug.Log("ScatterShot");
+        float angleStep = 360f / (float)projectileNum;
         float angle = 0f;
-        for (int i = 0; i < 8; i++)
+        for (int i = 0; i < projectileNum; i++)
         {
             float projectileDirXPosition = transform.position.x + Mathf.Sin((angle * Mathf.PI) / 180);
             float projectileDirYPosition = transform.position.y + Mathf.Cos((angle * Mathf.PI) / 180);
             Vector3 projectileVector = new Vector3(projectileDirXPosition, projectileDirYPosition, 0);
             Vector3 projectileMoveDirection = (projectileVector - transform.position).normalized;
-            Projectile projectileInstance = projectilePool.GetProjectile(
-                transform.position,
-                Quaternion.LookRotation(Vector3.forward, projectileVector)
-            );
-            projectileInstance.Initialize(projectilePool, false, projectileMoveDirection);
+            GameObject tmpObj = Instantiate(projectile, transform.position, Quaternion.identity);
+            tmpObj.GetComponent<Projectile>().direction = projectileMoveDirection;
+            Debug.Log("ScatterShot");
             angle += angleStep;
         }
 
-        Destroy(this.gameObject);
+        OnDeath();
     }
 
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, triggerRadius);
+    }
+
+    public override void OnDeath()
+    {
+        ManagerDeathEvent.Invoke();
+        gameObject.SetActive(false);
     }
 }

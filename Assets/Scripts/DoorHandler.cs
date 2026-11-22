@@ -8,12 +8,9 @@ public class DoorHandler : MonoBehaviour
     //[SerializeField] Sprite closedSprite;
     //[SerializeField] Sprite openSprite;
     Collider2D col;
-    SpriteRenderer sRend;
-    bool opened;
 
     private void Awake()
     {
-        sRend = GetComponent<SpriteRenderer>();
         col = GetComponent<Collider2D>();
         openAnim = GetComponent<Animator>();   
     }
@@ -23,7 +20,9 @@ public class DoorHandler : MonoBehaviour
         if (!state)
         {
            // Debug.Log("Door Anim Length: " + openAnimClip.length);
-            openAnim.SetBool("Open", true);
+           if(openAnim != null)
+                openAnim.SetBool("Open", true);
+
             if(openAnimClip != null )
                 StartCoroutine(WaitForAnimation(openAnimClip.length));
             else
@@ -31,7 +30,8 @@ public class DoorHandler : MonoBehaviour
         }
         else
         {
-            openAnim.SetBool("Open", false);
+            if (openAnim != null)
+                openAnim.SetBool("Open", false);
             col.enabled = true;
             //sRend.sprite = closedSprite;
         }

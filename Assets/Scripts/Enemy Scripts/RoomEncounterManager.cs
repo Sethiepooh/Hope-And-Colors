@@ -26,7 +26,7 @@ public class RoomEncounterManager : MonoBehaviour
 
     public enum BreakableObjectType
     {
-        Crate, Bomb, Crystal
+        Crate, Bomb, Crystal, FragileCrystal
     }
 
     void Start()
