@@ -7,6 +7,8 @@ public class DamageZone : MonoBehaviour
     [SerializeField] int damage;
     [SerializeField] LayerMask damageLayer;
     [SerializeField] bool canDamage = true;
+    [SerializeField] float damageInterval = 1f;
+    public bool damageFirst;
 
     [Header("Crumble Settings")]
     [SerializeField] bool crumbleOnContact;
@@ -59,8 +61,18 @@ public class DamageZone : MonoBehaviour
     {
         while (canDamage)
         {
-            target.GetComponent<Health>().TakeDamage(damage);
-            yield return new WaitForSeconds(1f);
+            if (damageFirst)
+            {
+                target.GetComponent<Health>().TakeDamage(damage);
+                yield return new WaitForSeconds(damageInterval);
+            }
+            else
+            {
+                yield return new WaitForSeconds(damageInterval);
+                if (!canDamage) yield break;
+                target.GetComponent<Health>().TakeDamage(damage);
+            }
+
         }
     }
 

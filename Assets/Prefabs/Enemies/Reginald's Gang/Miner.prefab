@@ -183,17 +183,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db0dc6e71093a07479948d7fab18eab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onDeathEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  onDamageEvent:
-    m_PersistentCalls:
-      m_Calls: []
   maxHealth: 50
   currentHealth: 0
-  healthBar: {fileID: 0}
-  isPlayer: 0
-  isBoss: 0
   deathParticles: {fileID: 2810806838819713323}
   damagable: 1
 --- !u!96 &1647247700484166753
@@ -324,11 +315,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f44bc0a48a7aa20499d34f50760f69df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ManagerDeathEvent:
-    m_PersistentCalls:
-      m_Calls: []
   active: 0
   empowered: 0
+  dissappearOnDeath: 1
   attackColor: {r: 0, g: 0.62352943, b: 0.22352943, a: 1}
   deathParticles: {fileID: 0}
   groundPoundRadiusIncrease: 2
@@ -341,7 +330,7 @@ MonoBehaviour:
   attackPoint: {fileID: 3982889337910326974}
   dashDuration: 0.5
   alternate: 0
-  moveSpeed: 3
+  moveSpeed: 20
   playerLayer:
     serializedVersion: 2
     m_Bits: 0

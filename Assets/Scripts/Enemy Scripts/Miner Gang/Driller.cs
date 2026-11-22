@@ -19,7 +19,8 @@ public class Driller : EnemyBase
 
     IEnumerator DashTowardsPlayer()
     {
-        Instantiate(scatterBomb, transform.position, Quaternion.identity);
+        GameObject mine = Instantiate(scatterBomb, transform.position, Quaternion.identity);
+        mine.GetComponent<ScatterShot>().Initialize(projectilePool);
         drillerCol.enabled = false;
         Vector2 direction;
         if (!clutter)

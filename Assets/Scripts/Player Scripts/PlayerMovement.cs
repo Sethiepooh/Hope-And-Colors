@@ -2,6 +2,7 @@ using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -44,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float warpAmount;
     [SerializeField] ParticleSystem dashParticles;
     [SerializeField] CinemachineImpulseSource screenShakeSource;
+    public UnityAction dashAction;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -200,6 +202,7 @@ public class PlayerMovement : MonoBehaviour
         if (context.performed && !freeze && canDash && controlable)
         {
             StartCoroutine(HandleDash());
+            dashAction?.Invoke();
         }
     }
 

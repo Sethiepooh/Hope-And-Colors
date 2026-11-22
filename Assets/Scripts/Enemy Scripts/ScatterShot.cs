@@ -10,6 +10,12 @@ public abstract class ScatterShot : MonoBehaviour
     /// <summary>
     /// Fires projectiles in a scatter pattern from the current position.
     /// </summary>
+    /// 
+    public void Initialize(ProjectilePool pool)
+    {
+        projectilePool = pool;
+    }
+
     protected virtual void FireScatterShot()
     {
         float angleStep = scatterAngle / scatterCount;
