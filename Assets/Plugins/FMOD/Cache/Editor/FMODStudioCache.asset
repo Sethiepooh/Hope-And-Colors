@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Background Music.strings.bank
   Name: Background Music.strings
   StudioPath: bank:/Background Music.strings
-  lastModified: 639309561344241060
+  lastModified: 639266517029754854
   FileSizes:
   - Name: 
     Value: 1074
@@ -149,7 +149,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -9069240245403856139}
   cacheVersion: 131859
-  cacheTime: 639309561344251213
+  cacheTime: 639266517029754854
   SerializableEventsDict:
   - key: event:/Alix Boss Music
     index: 0
@@ -174,7 +174,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/Background Music.bank
   Name: Background Music
   StudioPath: bank:/Background Music
-  lastModified: 639309561344060770
+  lastModified: 639266517029744833
   FileSizes: []
   Exists: 1
 --- !u!114 &1776035571126275794
@@ -192,7 +192,7 @@ MonoBehaviour:
   Path: FMOD/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 639309561344251213
+  lastModified: 639166957256440172
   FileSizes: []
   Exists: 1
 --- !u!114 &2346804939274229571

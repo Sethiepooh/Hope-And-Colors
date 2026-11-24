@@ -70,6 +70,7 @@ public class Bishop : EnemyBase, IProtector
         beatCount++;
         if (beatCount % 4 == 0)
         {
+            if (!isActiveAndEnabled) return;
             StartCoroutine(SpawnSlowingField());
             beatCount = 0;
         }
